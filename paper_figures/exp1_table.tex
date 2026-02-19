@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Scoring matrix accuracy (\%) at decision checkpoints. Mean $\pm$ std over 10 seeds. Compounding uses 20:1 asymmetric learning with $1/t$ decay.}
+\label{tab:exp1}
+\begin{tabular}{lccccccc}
+\toprule
+Method & 50 & 100 & 200 & 500 & 1000 & 2000 & 5000 \\
+\midrule
+Compounding (ours) & 27.2 $\pm$ 4.0 & 35.3 $\pm$ 3.2 & 41.1 $\pm$ 5.1 & 53.3 $\pm$ 3.6 & 60.2 $\pm$ 3.4 & 66.0 $\pm$ 2.2 & 69.4 $\pm$ 1.1 \\
+Symmetric (1:1) & 31.0 $\pm$ 6.1 & 33.9 $\pm$ 5.5 & 36.0 $\pm$ 3.8 & 38.4 $\pm$ 4.8 & 39.6 $\pm$ 3.4 & 39.7 $\pm$ 2.2 & 39.7 $\pm$ 1.8 \\
+Periodic retrain & 27.2 $\pm$ 4.0 & 35.3 $\pm$ 3.2 & 41.1 $\pm$ 5.1 & 53.3 $\pm$ 3.6 & 52.9 $\pm$ 3.2 & 53.4 $\pm$ 2.1 & 53.8 $\pm$ 1.2 \\
+Fixed weight & 16.4 $\pm$ 3.5 & 17.7 $\pm$ 4.7 & 16.8 $\pm$ 1.9 & 17.1 $\pm$ 2.0 & 17.1 $\pm$ 1.5 & 16.9 $\pm$ 1.2 & 16.9 $\pm$ 0.5 \\
+Random policy & 26.8 $\pm$ 5.0 & 25.2 $\pm$ 4.3 & 25.2 $\pm$ 2.9 & 25.2 $\pm$ 1.8 & 25.1 $\pm$ 1.0 & 24.7 $\pm$ 0.5 & 25.0 $\pm$ 0.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

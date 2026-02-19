@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Cross-graph discovery: best F1 (mean $\pm$ std over 10 seeds), precision, and recall per method. Best threshold configuration selected per method. Evaluated on 50 ground-truth signal pairs across 40\,000 candidate entity pairs.}
+\label{tab:exp2}
+\begin{tabular}{lccc}
+\toprule
+Method & F1 & Precision & Recall \\
+\midrule
+\textbf{Two-stage (ours)} & 0.0698 $\pm$ 0.0238 & 0.0459 & 0.1589 \\
+Logit only & 0.0685 $\pm$ 0.0240 & 0.0449 & 0.1589 \\
+Top-K only & 0.0493 $\pm$ 0.0102 & 0.0266 & 0.3556 \\
+Cosine & 0.0597 $\pm$ 0.0099 & 0.0323 & 0.4394 \\
+\midrule
+Random & 0.0006 $\pm$ 0.0000 & 0.0004 & 0.0053 \\
+\bottomrule
+\end{tabular}
+\end{table}
