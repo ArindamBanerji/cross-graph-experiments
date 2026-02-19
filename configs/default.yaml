@@ -1,0 +1,105 @@
+experiment_1:
+  # Alert generation
+  n_alerts: 5000
+  n_alert_types: 6
+  n_factors: 6
+  n_actions: 4
+  noise_rate: 0.03
+
+  # Scoring matrix
+  temperature: 0.25
+  alpha_correct: 0.002
+  alpha_incorrect: 0.04
+  weight_clamp: 5.0
+  init_method: "uniform"
+  decay_rate: 0.001
+
+  # Measurement
+  checkpoints: [50, 100, 200, 500, 1000, 2000, 5000]
+  n_seeds: 10
+  seeds: [42, 123, 456, 789, 1024, 2048, 3072, 4096, 5120, 6144]
+
+  # Baselines
+  baselines:
+    - name: "compounding"
+      description: "Full asymmetric learning (main method)"
+    - name: "fixed_weight"
+      description: "No weight updates after initialization"
+    - name: "random_policy"
+      description: "Uniform random action selection"
+    - name: "periodic_retrain"
+      description: "Reset weights every 500 decisions"
+      reset_interval: 500
+    - name: "symmetric"
+      description: "Equal learning rates (alpha_correct = alpha_incorrect = 0.002)"
+      alpha_correct: 0.002
+      alpha_incorrect: 0.002
+
+experiment_2:
+  # Entity generation
+  domains:
+    security:
+      n_entities: 200
+      semantic_dims: ["asset_type", "criticality", "network_zone", "patch_status", "owner_role", "geographic_region"]
+    decision_history:
+      n_entities: 300
+      semantic_dims: ["decision_type", "outcome", "confidence", "alert_type", "geographic_region", "timestamp_bucket"]
+    threat_intel:
+      n_entities: 200
+      semantic_dims: ["threat_type", "severity", "geographic_scope", "recency", "campaign_id", "TTP_category"]
+  embedding_dim: 64
+  shared_dims: ["geographic_region", "timestamp_bucket"]
+
+  # Ground truth signals
+  n_signals:
+    security_threat: 20
+    decision_threat: 15
+    security_decision: 15
+  signal_strength: 8.0
+
+  # Discovery thresholds
+  theta_logit_range: [0.01, 0.02, 0.03, 0.04, 0.05, 0.06]
+  cosine_thresholds: [0.10, 0.15, 0.20, 0.25, 0.30, 0.35]
+  top_k_range: [1, 2, 3, 5]
+
+  # Measurement
+  n_seeds: 10
+  seeds: [42, 123, 456, 789, 1024, 2048, 3072, 4096, 5120, 6144]
+
+experiment_3:
+  domain_counts: [2, 3, 4, 5, 6]
+  entities_per_domain: 200
+  embedding_dim: 64
+  signals_per_pair: 5
+  n_seeds: 10
+
+experiment_4:
+  # Scoring matrix sensitivity
+  asymmetry_ratios: [1, 5, 10, 20, 50]
+  temperatures: [0.1, 0.25, 0.5, 1.0, 2.0]
+  noise_rates: [0.0, 0.03, 0.05, 0.10, 0.20, 0.30]
+
+  # Discovery sensitivity
+  embedding_dims: [16, 32, 64, 128, 256]
+  n_seeds: 5
+
+visualization:
+  dpi: 300
+  figsize_single: [8, 5]
+  figsize_wide: [10, 5.5]
+  figsize_double: [12, 5]
+  style: "seaborn-v0_8-whitegrid"
+  colors:
+    main: "#1E3A5F"
+    baseline_fixed: "#94A3B8"
+    baseline_random: "#CBD5E1"
+    baseline_periodic: "#EA580C"
+    baseline_symmetric: "#DC2626"
+    discovery: "#D97706"
+    gap: "#7C3AED"
+    savings: "#059669"
+  font_sizes:
+    title: 13
+    label: 11
+    tick: 9
+    annotation: 8.5

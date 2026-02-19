@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+*.egg-info/
+
+# Results (large files)
+experiments/*/results/*.png
+experiments/*/results/*.pdf
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep paper figures in git
+!paper_figures/*.pdf
+!paper_figures/*.png
