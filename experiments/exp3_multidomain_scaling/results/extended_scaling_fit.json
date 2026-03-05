@@ -1,0 +1,65 @@
+{
+  "original_range": {
+    "domain_counts": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "fitted_exponent": 2.3043,
+    "r_squared": 0.999498,
+    "a": 145.6168,
+    "sse": 22755.6243,
+    "aic": 46.1156,
+    "bic": 45.3345,
+    "ci_95_lower": 2.1643,
+    "ci_95_upper": 2.4442
+  },
+  "extended_range": {
+    "domain_counts": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      15
+    ],
+    "fitted_exponent": 2.1127,
+    "r_squared": 0.999883,
+    "a": 206.8988,
+    "sse": 421586.8603,
+    "aic": 120.0927,
+    "bic": 120.8885,
+    "ci_95_lower": 2.0894,
+    "ci_95_upper": 2.1361
+  },
+  "comparison": {
+    "exponent_shift": -0.1916,
+    "ci_95_lower": 2.0894,
+    "ci_95_upper": 2.1361
+  },
+  "alternative_models_full_range": {
+    "pure_quadratic": {
+      "model": "a * n^2",
+      "a": 274.7851,
+      "r_squared": 0.998258,
+      "sse": 6293661.3819,
+      "aic": 147.8287,
+      "bic": 148.2266
+    },
+    "quadratic_log": {
+      "model": "a * n^2 * log(n)",
+      "a": 108.5208,
+      "r_squared": 0.989215,
+      "sse": 38959926.3049,
+      "aic": 167.8816,
+      "bic": 168.2795
+    }
+  }
+}

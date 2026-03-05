@@ -1,0 +1,96 @@
+{
+  "config": {
+    "n_domains": 6,
+    "entities_per_domain": 200,
+    "n_sweeps": 5,
+    "n_seeds": 10,
+    "n_pairs_per_sweep": 15
+  },
+  "sweeps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "overall_mean_norm": [
+    1.0,
+    1.1839,
+    19.3889,
+    786.5736,
+    31228.8527,
+    1243653.4148
+  ],
+  "overall_max_norm": [
+    1.0,
+    2.1066,
+    46.3958,
+    1865.1983,
+    73929.2971,
+    2944690.4961
+  ],
+  "growth_rate_per_sweep_mean": [
+    null,
+    1.1839,
+    19.3889,
+    786.5736,
+    31228.8527,
+    1243653.4148
+  ],
+  "growth_rate_per_sweep_max": [
+    null,
+    2.1066,
+    46.3958,
+    1865.1983,
+    73929.2971,
+    2944690.4961
+  ],
+  "final_growth_factor_mean": 1243653.4148,
+  "final_growth_factor_max": 2944690.4961,
+  "needs_normalization": true,
+  "per_domain_final_sweep": {
+    "security": {
+      "initial_mean_norm": 1.0,
+      "final_mean_norm": 187375.8094,
+      "initial_max_norm": 1.0,
+      "final_max_norm": 252480.7354,
+      "growth_max": 252480.7354
+    },
+    "decision_history": {
+      "initial_mean_norm": 1.0,
+      "final_mean_norm": 452499.876,
+      "initial_max_norm": 1.0,
+      "final_max_norm": 609683.217,
+      "growth_max": 609683.217
+    },
+    "threat_intel": {
+      "initial_mean_norm": 1.0,
+      "final_mean_norm": 905190.2748,
+      "initial_max_norm": 1.0,
+      "final_max_norm": 1219565.6593,
+      "growth_max": 1219565.6593
+    },
+    "network_flow": {
+      "initial_mean_norm": 1.0,
+      "final_mean_norm": 1545446.9992,
+      "initial_max_norm": 1.0,
+      "final_max_norm": 2082128.0743,
+      "growth_max": 2082128.0743
+    },
+    "asset_inventory": {
+      "initial_mean_norm": 1.0,
+      "final_mean_norm": 2185703.7761,
+      "initial_max_norm": 1.0,
+      "final_max_norm": 2944690.4961,
+      "growth_max": 2944690.4961
+    },
+    "user_behavior": {
+      "initial_mean_norm": 1.0,
+      "final_mean_norm": 2185703.7531,
+      "initial_max_norm": 1.0,
+      "final_max_norm": 2944690.4961,
+      "growth_max": 2944690.4961
+    }
+  }
+}
