@@ -1,0 +1,300 @@
+{
+  "l2_centroid": {
+    "mean_ece": 0.189694,
+    "std_ece": 0.006259,
+    "mean_confidence": 0.76,
+    "pct_confidence_gt_095": 8.8,
+    "reliability_bins": [
+      {
+        "bin": 0,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 1,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 2,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 3,
+        "count": 30,
+        "mean_accuracy": 0.4333,
+        "mean_confidence": 0.3767
+      },
+      {
+        "bin": 4,
+        "count": 397,
+        "mean_accuracy": 0.7229,
+        "mean_confidence": 0.4649
+      },
+      {
+        "bin": 5,
+        "count": 1146,
+        "mean_accuracy": 0.8857,
+        "mean_confidence": 0.5536
+      },
+      {
+        "bin": 6,
+        "count": 1859,
+        "mean_accuracy": 0.9677,
+        "mean_confidence": 0.653
+      },
+      {
+        "bin": 7,
+        "count": 2253,
+        "mean_accuracy": 0.9747,
+        "mean_confidence": 0.7505
+      },
+      {
+        "bin": 8,
+        "count": 2289,
+        "mean_accuracy": 0.9664,
+        "mean_confidence": 0.8522
+      },
+      {
+        "bin": 9,
+        "count": 2026,
+        "mean_accuracy": 0.9704,
+        "mean_confidence": 0.9448
+      }
+    ]
+  },
+  "logistic_regression": {
+    "mean_ece": 0.090051,
+    "std_ece": 0.008875,
+    "mean_confidence": 0.8342,
+    "pct_confidence_gt_095": 23.8,
+    "reliability_bins": [
+      {
+        "bin": 0,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 1,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 2,
+        "count": 1,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.2983
+      },
+      {
+        "bin": 3,
+        "count": 38,
+        "mean_accuracy": 0.5,
+        "mean_confidence": 0.371
+      },
+      {
+        "bin": 4,
+        "count": 264,
+        "mean_accuracy": 0.5909,
+        "mean_confidence": 0.4628
+      },
+      {
+        "bin": 5,
+        "count": 665,
+        "mean_accuracy": 0.7308,
+        "mean_confidence": 0.5529
+      },
+      {
+        "bin": 6,
+        "count": 877,
+        "mean_accuracy": 0.8495,
+        "mean_confidence": 0.6515
+      },
+      {
+        "bin": 7,
+        "count": 1358,
+        "mean_accuracy": 0.9271,
+        "mean_confidence": 0.7547
+      },
+      {
+        "bin": 8,
+        "count": 2295,
+        "mean_accuracy": 0.963,
+        "mean_confidence": 0.8561
+      },
+      {
+        "bin": 9,
+        "count": 4502,
+        "mean_accuracy": 0.9694,
+        "mean_confidence": 0.9501
+      }
+    ]
+  },
+  "xgboost": {
+    "mean_ece": 0.015245,
+    "std_ece": 0.005311,
+    "mean_confidence": 0.9538,
+    "pct_confidence_gt_095": 79.4,
+    "reliability_bins": [
+      {
+        "bin": 0,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 1,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 2,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 3,
+        "count": 7,
+        "mean_accuracy": 0.4286,
+        "mean_confidence": 0.3784
+      },
+      {
+        "bin": 4,
+        "count": 48,
+        "mean_accuracy": 0.5417,
+        "mean_confidence": 0.4631
+      },
+      {
+        "bin": 5,
+        "count": 116,
+        "mean_accuracy": 0.5948,
+        "mean_confidence": 0.5538
+      },
+      {
+        "bin": 6,
+        "count": 189,
+        "mean_accuracy": 0.7143,
+        "mean_confidence": 0.6542
+      },
+      {
+        "bin": 7,
+        "count": 273,
+        "mean_accuracy": 0.8315,
+        "mean_confidence": 0.7527
+      },
+      {
+        "bin": 8,
+        "count": 597,
+        "mean_accuracy": 0.933,
+        "mean_confidence": 0.8594
+      },
+      {
+        "bin": 9,
+        "count": 8770,
+        "mean_accuracy": 0.9796,
+        "mean_confidence": 0.9814
+      }
+    ]
+  },
+  "random_forest": {
+    "mean_ece": 0.061383,
+    "std_ece": 0.006897,
+    "mean_confidence": 0.905,
+    "pct_confidence_gt_095": 46.8,
+    "reliability_bins": [
+      {
+        "bin": 0,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 1,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 2,
+        "count": 0,
+        "mean_accuracy": 0.0,
+        "mean_confidence": 0.0
+      },
+      {
+        "bin": 3,
+        "count": 11,
+        "mean_accuracy": 0.5454,
+        "mean_confidence": 0.3764
+      },
+      {
+        "bin": 4,
+        "count": 91,
+        "mean_accuracy": 0.5494,
+        "mean_confidence": 0.47
+      },
+      {
+        "bin": 5,
+        "count": 260,
+        "mean_accuracy": 0.7269,
+        "mean_confidence": 0.5566
+      },
+      {
+        "bin": 6,
+        "count": 470,
+        "mean_accuracy": 0.8808,
+        "mean_confidence": 0.6591
+      },
+      {
+        "bin": 7,
+        "count": 708,
+        "mean_accuracy": 0.9506,
+        "mean_confidence": 0.7587
+      },
+      {
+        "bin": 8,
+        "count": 1710,
+        "mean_accuracy": 0.9684,
+        "mean_confidence": 0.8641
+      },
+      {
+        "bin": 9,
+        "count": 6750,
+        "mean_accuracy": 0.9884,
+        "mean_confidence": 0.9679
+      }
+    ]
+  },
+  "per_category_ece": {
+    "credential_access": 0.144169,
+    "threat_intel_match": 0.208471,
+    "lateral_movement": 0.24941,
+    "data_exfiltration": 0.172971,
+    "insider_threat": 0.18278
+  },
+  "temperature_sensitivity": {
+    "0.1": {
+      "mean_ece": 0.036321,
+      "mean_confidence": 0.9277
+    },
+    "0.25": {
+      "mean_ece": 0.189694,
+      "mean_confidence": 0.76
+    },
+    "0.5": {
+      "mean_ece": 0.377792,
+      "mean_confidence": 0.5712
+    },
+    "1.0": {
+      "mean_ece": 0.527937,
+      "mean_confidence": 0.421
+    }
+  },
+  "verdict": "L2 centroid (tau=0.25) is poorly_calibrated (ECE=0.1897). Best ML baseline: xgboost ECE=0.0152. Optimal tau=0.1 gives ECE=0.0363."
+}

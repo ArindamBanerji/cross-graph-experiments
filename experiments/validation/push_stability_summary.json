@@ -1,0 +1,37 @@
+{
+  "condition_A_normal": {
+    "final_mean_norm": 1.2157,
+    "max_norm_seen": 1.621,
+    "pct_decisions_outside_bounds": 0.0,
+    "max_dims_outside": 0,
+    "decisions_until_first_escape": null
+  },
+  "condition_B_bad_streak": {
+    "final_mean_norm": 1.2269,
+    "max_norm_seen": 65.6184,
+    "pct_decisions_outside_bounds": 65.38,
+    "max_dims_outside": 6,
+    "decisions_until_first_escape": 6
+  },
+  "condition_C_worst_case": {
+    "final_mean_norm": 3748.4845,
+    "max_norm_seen": 4607.8168,
+    "pct_decisions_outside_bounds": 95.4,
+    "max_dims_outside": 6,
+    "decisions_until_first_escape": 6,
+    "final_max_dimension": 2758.2645
+  },
+  "condition_D_clipped": {
+    "final_mean_norm": 1.6039,
+    "max_norm_seen": 2.2361,
+    "pct_decisions_clipped": 96.0,
+    "all_dims_in_bounds": true
+  },
+  "condition_E_margin": {
+    "final_mean_norm": 1.732,
+    "max_norm_seen": 2.2761,
+    "pct_pushes_blocked_by_margin": 81.0,
+    "all_dims_in_bounds": false
+  },
+  "recommendation": "clip"
+}

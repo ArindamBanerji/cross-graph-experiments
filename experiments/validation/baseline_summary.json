@@ -1,0 +1,175 @@
+{
+  "static_comparison": {
+    "l2_centroid": {
+      "mean_accuracy": 0.9478,
+      "std": 0.0079
+    },
+    "l2_centroid_online": {
+      "mean_accuracy": 0.9492,
+      "std": 0.0059
+    },
+    "logistic_regression": {
+      "mean_accuracy": 0.9238,
+      "std": 0.0135
+    },
+    "xgboost": {
+      "mean_accuracy": 0.9224,
+      "std": 0.0122
+    },
+    "random_forest": {
+      "mean_accuracy": 0.932,
+      "std": 0.0093
+    },
+    "knn": {
+      "mean_accuracy": 0.9454,
+      "std": 0.0094
+    },
+    "random": {
+      "mean_accuracy": 0.2496,
+      "std": 0.0204
+    }
+  },
+  "online_comparison": {
+    "l2_centroid": {
+      "accuracy_at_1500": 0.9372,
+      "learning_curve": [
+        {
+          "checkpoint": 400,
+          "mean_cumulative_accuracy": 0.9425,
+          "mean_window_accuracy": 0.942
+        },
+        {
+          "checkpoint": 600,
+          "mean_cumulative_accuracy": 0.941,
+          "mean_window_accuracy": 0.939
+        },
+        {
+          "checkpoint": 800,
+          "mean_cumulative_accuracy": 0.9402,
+          "mean_window_accuracy": 0.932
+        },
+        {
+          "checkpoint": 1000,
+          "mean_cumulative_accuracy": 0.9374,
+          "mean_window_accuracy": 0.93
+        },
+        {
+          "checkpoint": 1200,
+          "mean_cumulative_accuracy": 0.9377,
+          "mean_window_accuracy": 0.937
+        },
+        {
+          "checkpoint": 1500,
+          "mean_cumulative_accuracy": 0.9372,
+          "mean_window_accuracy": 0.951
+        }
+      ]
+    },
+    "logistic_regression_retrain": {
+      "accuracy_at_1500": 0.917,
+      "learning_curve": [
+        {
+          "checkpoint": 400,
+          "mean_cumulative_accuracy": 0.904,
+          "mean_window_accuracy": 0.905
+        },
+        {
+          "checkpoint": 600,
+          "mean_cumulative_accuracy": 0.91,
+          "mean_window_accuracy": 0.917
+        },
+        {
+          "checkpoint": 800,
+          "mean_cumulative_accuracy": 0.913,
+          "mean_window_accuracy": 0.919
+        },
+        {
+          "checkpoint": 1000,
+          "mean_cumulative_accuracy": 0.913,
+          "mean_window_accuracy": 0.914
+        },
+        {
+          "checkpoint": 1200,
+          "mean_cumulative_accuracy": 0.9166,
+          "mean_window_accuracy": 0.931
+        },
+        {
+          "checkpoint": 1500,
+          "mean_cumulative_accuracy": 0.917,
+          "mean_window_accuracy": 0.928
+        }
+      ]
+    },
+    "xgboost_retrain": {
+      "accuracy_at_1500": 0.9149,
+      "learning_curve": [
+        {
+          "checkpoint": 400,
+          "mean_cumulative_accuracy": 0.893,
+          "mean_window_accuracy": 0.901
+        },
+        {
+          "checkpoint": 600,
+          "mean_cumulative_accuracy": 0.9045,
+          "mean_window_accuracy": 0.913
+        },
+        {
+          "checkpoint": 800,
+          "mean_cumulative_accuracy": 0.91,
+          "mean_window_accuracy": 0.919
+        },
+        {
+          "checkpoint": 1000,
+          "mean_cumulative_accuracy": 0.9102,
+          "mean_window_accuracy": 0.912
+        },
+        {
+          "checkpoint": 1200,
+          "mean_cumulative_accuracy": 0.9138,
+          "mean_window_accuracy": 0.927
+        },
+        {
+          "checkpoint": 1500,
+          "mean_cumulative_accuracy": 0.9149,
+          "mean_window_accuracy": 0.925
+        }
+      ]
+    },
+    "random_forest_retrain": {
+      "accuracy_at_1500": 0.9289,
+      "learning_curve": [
+        {
+          "checkpoint": 400,
+          "mean_cumulative_accuracy": 0.9145,
+          "mean_window_accuracy": 0.922
+        },
+        {
+          "checkpoint": 600,
+          "mean_cumulative_accuracy": 0.9193,
+          "mean_window_accuracy": 0.923
+        },
+        {
+          "checkpoint": 800,
+          "mean_cumulative_accuracy": 0.9235,
+          "mean_window_accuracy": 0.93
+        },
+        {
+          "checkpoint": 1000,
+          "mean_cumulative_accuracy": 0.9248,
+          "mean_window_accuracy": 0.936
+        },
+        {
+          "checkpoint": 1200,
+          "mean_cumulative_accuracy": 0.9279,
+          "mean_window_accuracy": 0.939
+        },
+        {
+          "checkpoint": 1500,
+          "mean_cumulative_accuracy": 0.9289,
+          "mean_window_accuracy": 0.939
+        }
+      ]
+    }
+  },
+  "verdict": "competitive: l2_centroid within 2pp of knn (94.8% vs 94.5%)"
+}
