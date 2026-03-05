@@ -1,0 +1,138 @@
+{
+  "methods": {
+    "dot": {
+      "overall_accuracy": 0.60997,
+      "std_accuracy": 0.0043123195614425515,
+      "per_category_accuracy": {
+        "credential_access": 0.7027,
+        "threat_intel_match": 0.52135,
+        "lateral_movement": 0.7745,
+        "data_exfiltration": 0.6008,
+        "insider_threat": 0.4505
+      },
+      "per_category_per_action_accuracy": {
+        "credential_access": {
+          "auto_close": 1.0,
+          "escalate_tier2": 0.09814741821048482,
+          "enrich_and_watch": 0.3010204081632653,
+          "escalate_incident": 1.0
+        },
+        "threat_intel_match": {
+          "auto_close": 1.0,
+          "escalate_tier2": 0.5488192932507118,
+          "enrich_and_watch": 0.03330522765598651,
+          "escalate_incident": 1.0
+        },
+        "lateral_movement": {
+          "auto_close": 1.0,
+          "escalate_tier2": 0.0,
+          "enrich_and_watch": 0.9126197277768442,
+          "escalate_incident": 1.0
+        },
+        "data_exfiltration": {
+          "auto_close": 1.0,
+          "escalate_tier2": 0.0,
+          "enrich_and_watch": 0.0,
+          "escalate_incident": 1.0
+        },
+        "insider_threat": {
+          "auto_close": 0.995382247306311,
+          "escalate_tier2": 0.20524104820964192,
+          "enrich_and_watch": 0.0014249073810202336,
+          "escalate_incident": 1.0
+        }
+      }
+    },
+    "l2": {
+      "overall_accuracy": 0.9788699999999999,
+      "std_accuracy": 0.0013535508856337979,
+      "per_category_accuracy": {
+        "credential_access": 0.99025,
+        "threat_intel_match": 0.98435,
+        "lateral_movement": 0.9495,
+        "data_exfiltration": 0.9918,
+        "insider_threat": 0.97845
+      },
+      "per_category_per_action_accuracy": {
+        "credential_access": {
+          "auto_close": 0.9978387364921031,
+          "escalate_tier2": 0.9735908553409539,
+          "enrich_and_watch": 0.9964285714285714,
+          "escalate_incident": 0.9700854700854701
+        },
+        "threat_intel_match": {
+          "auto_close": 0.9979702300405954,
+          "escalate_tier2": 0.9792329593032992,
+          "enrich_and_watch": 0.9800449690837549,
+          "escalate_incident": 0.989638615112459
+        },
+        "lateral_movement": {
+          "auto_close": 1.0,
+          "escalate_tier2": 0.9308270676691729,
+          "enrich_and_watch": 0.991766089732818,
+          "escalate_incident": 0.9244679678024038
+        },
+        "data_exfiltration": {
+          "auto_close": 1.0,
+          "escalate_tier2": 0.9882234185733513,
+          "enrich_and_watch": 0.9870311252992817,
+          "escalate_incident": 0.9942128583054526
+        },
+        "insider_threat": {
+          "auto_close": 0.9994869163673679,
+          "escalate_tier2": 0.9977995599119824,
+          "enrich_and_watch": 0.969222000569963,
+          "escalate_incident": 0.9663573085846868
+        }
+      }
+    },
+    "cos": {
+      "overall_accuracy": 0.9642199999999999,
+      "std_accuracy": 0.0029164361813693207,
+      "per_category_accuracy": {
+        "credential_access": 0.9847,
+        "threat_intel_match": 0.97565,
+        "lateral_movement": 0.9176,
+        "data_exfiltration": 0.97815,
+        "insider_threat": 0.965
+      },
+      "per_category_per_action_accuracy": {
+        "credential_access": {
+          "auto_close": 0.9989193682460515,
+          "escalate_tier2": 0.9521087899093418,
+          "enrich_and_watch": 0.9892857142857143,
+          "escalate_incident": 0.969017094017094
+        },
+        "threat_intel_match": {
+          "auto_close": 0.9993234100135318,
+          "escalate_tier2": 0.9795679115726009,
+          "enrich_and_watch": 0.9529229904440697,
+          "escalate_incident": 0.9929239322719232
+        },
+        "lateral_movement": {
+          "auto_close": 1.0,
+          "escalate_tier2": 0.843358395989975,
+          "enrich_and_watch": 0.9931104016131742,
+          "escalate_incident": 0.891719042893373
+        },
+        "data_exfiltration": {
+          "auto_close": 1.0,
+          "escalate_tier2": 0.9639973082099597,
+          "enrich_and_watch": 0.9471268954509178,
+          "escalate_incident": 0.9941224342164753
+        },
+        "insider_threat": {
+          "auto_close": 1.0,
+          "escalate_tier2": 0.9925985197039408,
+          "enrich_and_watch": 0.9318894271872328,
+          "escalate_incident": 0.9693404043752072
+        }
+      }
+    }
+  },
+  "best_method": "l2",
+  "best_accuracy": 0.9788699999999999,
+  "n_seeds": 10,
+  "n_per_category": 2000,
+  "n_total_per_seed": 10000
+}
