@@ -1,0 +1,132 @@
+{
+  "transfer_matrix": {
+    "credential_access": {
+      "credential_access": 0.0,
+      "threat_intel_match": 0.9430330050295263,
+      "lateral_movement": 0.870127438904173,
+      "data_exfiltration": 0.9086123551402273,
+      "insider_threat": 0.9014370963423297
+    },
+    "threat_intel_match": {
+      "credential_access": 0.9430175998242615,
+      "threat_intel_match": 0.0,
+      "lateral_movement": 0.8713245477746131,
+      "data_exfiltration": 0.9058252497425162,
+      "insider_threat": 0.8865339615521534
+    },
+    "lateral_movement": {
+      "credential_access": 0.870284308810197,
+      "threat_intel_match": 0.8719219406857915,
+      "lateral_movement": 0.0,
+      "data_exfiltration": 0.9409393229332301,
+      "insider_threat": 0.8823704179718288
+    },
+    "data_exfiltration": {
+      "credential_access": 0.9114651603320021,
+      "threat_intel_match": 0.9084663166531021,
+      "lateral_movement": 0.9429365963663002,
+      "data_exfiltration": 0.0,
+      "insider_threat": 0.8833776401923462
+    },
+    "insider_threat": {
+      "credential_access": 0.9020750054148957,
+      "threat_intel_match": 0.8854572457314894,
+      "lateral_movement": 0.8814773943936167,
+      "data_exfiltration": 0.8809593062794601,
+      "insider_threat": 0.0
+    }
+  },
+  "best_source_per_target": {
+    "credential_access": "threat_intel_match",
+    "threat_intel_match": "credential_access",
+    "lateral_movement": "data_exfiltration",
+    "data_exfiltration": "lateral_movement",
+    "insider_threat": "credential_access"
+  },
+  "per_condition_accuracy_t200": {
+    "credential_access": {
+      "cold": {
+        "mean": 0.9270000000000002,
+        "std": 0.01702938636592638
+      },
+      "config": {
+        "mean": 0.992,
+        "std": 0.010593499054713811
+      },
+      "transfer": {
+        "mean": 0.9719999999999999,
+        "std": 0.010593499054713811
+      }
+    },
+    "threat_intel_match": {
+      "cold": {
+        "mean": 0.8615,
+        "std": 0.024500566886865676
+      },
+      "config": {
+        "mean": 0.9884999999999999,
+        "std": 0.008834905520465723
+      },
+      "transfer": {
+        "mean": 0.9485000000000001,
+        "std": 0.012920698295542852
+      }
+    },
+    "lateral_movement": {
+      "cold": {
+        "mean": 0.8005000000000001,
+        "std": 0.03523334910122635
+      },
+      "config": {
+        "mean": 0.9465,
+        "std": 0.01375378735718514
+      },
+      "transfer": {
+        "mean": 0.853,
+        "std": 0.028007935383466676
+      }
+    },
+    "data_exfiltration": {
+      "cold": {
+        "mean": 0.9289999999999999,
+        "std": 0.013703203194062945
+      },
+      "config": {
+        "mean": 0.994,
+        "std": 0.005676462121975472
+      },
+      "transfer": {
+        "mean": 0.9749999999999999,
+        "std": 0.012692955176439858
+      }
+    },
+    "insider_threat": {
+      "cold": {
+        "mean": 0.9179999999999999,
+        "std": 0.01974841765813148
+      },
+      "config": {
+        "mean": 0.9754999999999999,
+        "std": 0.011413929112175964
+      },
+      "transfer": {
+        "mean": 0.9275,
+        "std": 0.015500896031448547
+      }
+    }
+  },
+  "transfer_vs_config_delta": {
+    "credential_access": -0.02000000000000013,
+    "threat_intel_match": -0.039999999999999813,
+    "lateral_movement": -0.09350000000000003,
+    "data_exfiltration": -0.019000000000000128,
+    "insider_threat": -0.04799999999999993
+  },
+  "transfer_vs_cold_delta": {
+    "credential_access": 0.04499999999999971,
+    "threat_intel_match": 0.08700000000000008,
+    "lateral_movement": 0.05249999999999988,
+    "data_exfiltration": 0.04599999999999993,
+    "insider_threat": 0.009500000000000064
+  }
+}

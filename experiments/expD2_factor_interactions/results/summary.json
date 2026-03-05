@@ -1,0 +1,91 @@
+{
+  "n_significant_interactions": 0,
+  "top_5_interactions": [
+    {
+      "category": "lateral_movement",
+      "factor_i": "asset_criticality",
+      "factor_j": "time_anomaly",
+      "mi_interaction": 0.9709925762484104,
+      "mi_sum": 1.448371846332552,
+      "gain": 0.6704028241366592
+    },
+    {
+      "category": "insider_threat",
+      "factor_i": "asset_criticality",
+      "factor_j": "time_anomaly",
+      "mi_interaction": 0.8322654285907054,
+      "mi_sum": 1.259624892859401,
+      "gain": 0.6607248183507677
+    },
+    {
+      "category": "data_exfiltration",
+      "factor_i": "threat_intel",
+      "factor_j": "time_anomaly",
+      "mi_interaction": 0.8151567822196217,
+      "mi_sum": 1.2384703388449663,
+      "gain": 0.6581964513692279
+    },
+    {
+      "category": "data_exfiltration",
+      "factor_i": "asset_criticality",
+      "factor_j": "threat_intel",
+      "mi_interaction": 0.9375372337129815,
+      "mi_sum": 1.425202921712731,
+      "gain": 0.6578271903347754
+    },
+    {
+      "category": "data_exfiltration",
+      "factor_i": "asset_criticality",
+      "factor_j": "time_anomaly",
+      "mi_interaction": 0.8594130812439923,
+      "mi_sum": 1.3207592346423582,
+      "gain": 0.6506962500335186
+    }
+  ],
+  "augmentation_ran": false,
+  "augmentation_lift": 0.0,
+  "mi_single_matrix": {
+    "credential_access": {
+      "travel_match": 0.934330868295288,
+      "asset_criticality": 0.2966268044218018,
+      "threat_intel": 0.7722144973836416,
+      "time_anomaly": 0.8068107993594937,
+      "device_trust": 0.9246782460886847,
+      "pattern_history": 0.9295883845552068
+    },
+    "threat_intel_match": {
+      "travel_match": 0.728131460634923,
+      "asset_criticality": 0.7053663271656843,
+      "threat_intel": 0.2768959389309721,
+      "time_anomaly": 0.8420106880832605,
+      "device_trust": 0.5634087014494418,
+      "pattern_history": 0.595111869463766
+    },
+    "lateral_movement": {
+      "travel_match": 0.2567986082237773,
+      "asset_criticality": 0.6467405410104721,
+      "threat_intel": 0.8388035323690237,
+      "time_anomaly": 0.8016313053220798,
+      "device_trust": 0.3535109791344182,
+      "pattern_history": 0.36422597388255173
+    },
+    "data_exfiltration": {
+      "travel_match": 0.8533298934901097,
+      "asset_criticality": 0.7537459087550615,
+      "threat_intel": 0.6714570129576695,
+      "time_anomaly": 0.5670133258872967,
+      "device_trust": 0.40241669798888174,
+      "pattern_history": 0.3613459543289778
+    },
+    "insider_threat": {
+      "travel_match": 0.6655572550122912,
+      "asset_criticality": 0.7214816204762311,
+      "threat_intel": 0.8536250267676861,
+      "time_anomaly": 0.5381432723831698,
+      "device_trust": 0.4680560666002804,
+      "pattern_history": 0.7138632373110233
+    }
+  },
+  "mean_baseline_accuracy": 0.0,
+  "mean_augmented_accuracy": 0.0
+}
