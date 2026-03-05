@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(cmd /c \"dir /b /s \"\"C:\\\\Users\\\\baner\\\\CopyFolder\\\\IoT_thoughts\\\\python-projects\\\\kaggle_experiments\\\\claude_projects\\\\cross-graph-experiments\"\"\")",
+      "Bash(python:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+Folder PATH listing for volume Windows-SSD
+Volume serial number is 80E2-4F82
+C:.
+|   .gitignore
+|   CLAUDE.md
+|   docs.txt
+|   EXPERIMENTS.md
+|   experiments_project_structure.md
+|   
++---.claude
+|       settings.local.json
+|       
++---configs
+|       default.yaml
+|       
++---experiments
+|   +---exp1_scoring_convergence
+|   |   |   run.py
+|   |   |   
+|   |   \---results
+|   |           convergence_data.csv
+|   |           weight_evolution.npz
+|   |           
+|   +---exp2_cross_graph_discovery
+|   |   |   run.py
+|   |   |   
+|   |   +---results
+|   |   |       best_configs.json
+|   |   |       discovery_results.csv
+|   |   |       
+|   |   \---__pycache__
+|   |           run.cpython-311.pyc
+|   |           
+|   +---exp3_multidomain_scaling
+|   |   |   run.py
+|   |   |   
+|   |   \---results
+|   |           scaling_data.csv
+|   |           
+|   +---exp3_scaling
+|   |   \---results
+|   \---exp4_sensitivity
+|       |   run.py
+|       |   
+|       \---results
+|               sensitivity_data.csv
+|               
++---notebooks
++---paper_figures
+|       exp1_blog_convergence.pdf
+|       exp1_blog_convergence.png
+|       exp1_convergence.pdf
+|       exp1_convergence.png
+|       exp1_per_action.pdf
+|       exp1_per_action.png
+|       exp1_table.tex
+|       exp1_weight_evolution.pdf
+|       exp1_weight_evolution.png
+|       exp1_window_accuracy.pdf
+|       exp1_window_accuracy.png
+|       exp2_f1_comparison.pdf
+|       exp2_f1_comparison.png
+|       exp2_precision_recall.pdf
+|       exp2_precision_recall.png
+|       exp2_table.tex
+|       exp3_blog_scaling.pdf
+|       exp3_blog_scaling.png
+|       exp3_scaling.pdf
+|       exp3_scaling.png
+|       exp3_table.tex
+|       exp4_sensitivity.pdf
+|       exp4_sensitivity.png
+|       exp4_table.tex
+|       
+\---src
+    |   __init__.py
+    |   
+    +---data
+    |   |   alert_generator.py
+    |   |   entity_generator.py
+    |   |   __init__.py
+    |   |   
+    |   \---__pycache__
+    |           alert_generator.cpython-311.pyc
+    |           entity_generator.cpython-311.pyc
+    |           __init__.cpython-311.pyc
+    |           
+    +---eval
+    |       __init__.py
+    |       
+    +---models
+    |   |   cross_attention.py
+    |   |   scoring_matrix.py
+    |   |   __init__.py
+    |   |   
+    |   \---__pycache__
+    |           cross_attention.cpython-311.pyc
+    |           scoring_matrix.cpython-311.pyc
+    |           __init__.cpython-311.pyc
+    |           
+    +---viz
+    |       exp1_blog_chart.py
+    |       exp1_charts.py
+    |       exp2_charts.py
+    |       exp3_blog_chart.py
+    |       exp3_charts.py
+    |       exp4_charts.py
+    |       __init__.py
+    |       
+    \---__pycache__
+            __init__.cpython-311.pyc
+            
