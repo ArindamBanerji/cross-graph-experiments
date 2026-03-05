@@ -1,0 +1,73 @@
+{
+  "overall_pass": false,
+  "gate_decision": "FAIL",
+  "final_checkpoint": 1000,
+  "va1_simplified_w_only": 0.8779,
+  "va3_realistic_w_only": 0.49260000000000004,
+  "va4_realistic_g_static": 0.4888,
+  "va5_realistic_g_learned": 0.49269999999999997,
+  "va9_augmented": 0.5103000000000001,
+  "va10_per_category": 0.5161,
+  "va10_simplified_per_category": 0.6548,
+  "va6_delta": 0.023499999999999965,
+  "best_g_config": "w_per_category",
+  "cat_means": {
+    "gt_acc_credential": 0.6470601340296815,
+    "gt_acc_threat": 0.43982388020032515,
+    "gt_acc_lateral": 0.5170940100405356,
+    "gt_acc_exfil": 0.5426811363419071,
+    "gt_acc_insider": 0.43286710503009046
+  },
+  "g_top2": {
+    "credential_access": [
+      [
+        "device_trust",
+        1.1624519636606014
+      ],
+      [
+        "pattern_history",
+        1.122886942096621
+      ]
+    ],
+    "threat_intel_match": [
+      [
+        "device_trust",
+        1.0189800349604334
+      ],
+      [
+        "pattern_history",
+        1.0156807573614788
+      ]
+    ],
+    "lateral_movement": [
+      [
+        "asset_criticality",
+        1.0477435738282357
+      ],
+      [
+        "time_anomaly",
+        1.030600343559185
+      ]
+    ],
+    "data_exfiltration": [
+      [
+        "asset_criticality",
+        1.1167644691313114
+      ],
+      [
+        "time_anomaly",
+        1.0426503498051984
+      ]
+    ],
+    "insider_threat": [
+      [
+        "asset_criticality",
+        1.042062398404112
+      ],
+      [
+        "device_trust",
+        0.9954601317648321
+      ]
+    ]
+  }
+}
