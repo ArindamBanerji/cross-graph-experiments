@@ -170,6 +170,172 @@ class ScoringMatrix:
             self.W[action] -= self.alpha_incorrect * effective_rate * factors
         np.clip(self.W, -self.weight_clamp, self.weight_clamp, out=self.W)
 
+    def score_with_gate(
+        self,
+        factors: np.ndarray,
+        gate_vector: np.ndarray,
+    ) -> tuple[int, float]:
+        """
+        Greedy decision using a per-factor gate vector.
+
+        Applies element-wise gating before computing logits so that
+        factors with gate=0 contribute nothing to the action distribution,
+        and factors with gate=1 contribute at full weight.
+
+        Parameters
+        ----------
+        factors : np.ndarray, shape (n_factors,)
+            Raw alert factor values.
+        gate_vector : np.ndarray, shape (n_factors,)
+            Per-factor attention weights, typically in [0, 1].
+
+        Returns
+        -------
+        action_index : int
+            Argmax of the gated action probability distribution.
+        confidence : float
+            Probability assigned to the chosen action.
+        """
+        gated_factors = factors * gate_vector
+        logits = gated_factors @ self.W.T
+        probs = softmax(logits / self.temperature)
+        action_idx = int(np.argmax(probs))
+        return action_idx, float(probs[action_idx])
+
+    def update_with_gated_factors(
+        self,
+        action_idx: int,
+        outcome: int,
+        factors: np.ndarray,
+        gate_vector: np.ndarray,
+        t: int,
+    ) -> np.ndarray:
+        """
+        Asymmetric Hebbian update using gated factors and an explicit time step.
+
+        Unlike ``update()``, this method:
+          - Uses ``outcome`` (+1 / -1) instead of a bool flag.
+          - Accepts an explicit time step ``t`` for the LR decay calculation.
+          - Does **not** increment ``self.step_count`` (bridge experiments
+            manage their own step counter).
+
+        Correct   (outcome > 0) -> W[action_idx] += alpha_correct   * lr(t) * gated_f
+        Incorrect (outcome <= 0) -> W[action_idx] -= alpha_incorrect * lr(t) * gated_f
+
+        All W entries are clamped to [-weight_clamp, +weight_clamp] after update.
+
+        Parameters
+        ----------
+        action_idx : int
+            Index of the action that was taken.
+        outcome : int
+            Oracle feedback: +1 (positive) or -1 (negative).
+        factors : np.ndarray, shape (n_factors,)
+            Raw alert factor values.
+        gate_vector : np.ndarray, shape (n_factors,)
+            Per-factor attention weights (from a gating mechanism).
+        t : int
+            Explicit time step for ``lr(t) = 1 / (1 + decay_rate * t)``.
+
+        Returns
+        -------
+        delta : np.ndarray, shape (n_factors,)
+            The update vector applied to W[action_idx] (before clipping).
+        """
+        gated_f = factors * gate_vector
+        lr = 1.0 / (1.0 + self.decay_rate * t)
+
+        if outcome > 0:
+            delta = self.alpha_correct * lr * gated_f
+        else:
+            delta = -self.alpha_incorrect * lr * gated_f
+
+        self.W[action_idx] += delta
+        np.clip(self.W, -self.weight_clamp, self.weight_clamp, out=self.W)
+        return delta
+
+    def decide_augmented(
+        self,
+        factors: np.ndarray,
+        category_index: int,
+        n_categories: int,
+    ) -> tuple[int, float]:
+        """
+        Score using category-augmented factor vector.
+
+        Appends a one-hot category encoding to the factor vector,
+        then computes softmax(f_aug @ W_aug.T / temperature).
+
+        If W has not been expanded yet (n_factors == original factor size),
+        expand it: add n_categories new columns initialized to small random
+        values.  This is done ONCE on first call; W stays at the new size.
+
+        Parameters
+        ----------
+        factors : np.ndarray, shape (n_factors_original,)
+        category_index : int, 0..n_categories-1
+        n_categories : int
+
+        Returns
+        -------
+        action_idx : int
+        confidence : float (max probability)
+        """
+        f = factors.flatten()
+
+        # Expand W on first call
+        if self.W.shape[1] == len(f):
+            rng = np.random.default_rng(42)
+            W_cat = rng.uniform(-0.01, 0.01, (self.n_actions, n_categories))
+            self.W = np.hstack([self.W, W_cat])
+            self.n_factors = self.W.shape[1]
+
+        # Build augmented factor vector
+        cat_onehot = np.zeros(n_categories)
+        cat_onehot[category_index] = 1.0
+        f_aug = np.concatenate([f, cat_onehot])
+
+        # Score
+        logits = f_aug @ self.W.T / self.temperature
+        probs = np.exp(logits - logits.max())
+        probs = probs / probs.sum()
+        action_idx = int(np.argmax(probs))
+        return action_idx, float(probs[action_idx])
+
+    def update_augmented(
+        self,
+        factors: np.ndarray,
+        category_index: int,
+        n_categories: int,
+        action_idx: int,
+        outcome_positive: bool,
+    ) -> None:
+        """
+        Update W using the augmented factor vector.
+        Same asymmetric Hebbian rule as update(), but with f_aug instead of f.
+        No learning-rate decay applied (matches cold-start augmented training).
+
+        Parameters
+        ----------
+        factors : np.ndarray, shape (n_factors_original,)
+        category_index : int
+        n_categories : int
+        action_idx : int
+        outcome_positive : bool
+        """
+        f = factors.flatten()
+        cat_onehot = np.zeros(n_categories)
+        cat_onehot[category_index] = 1.0
+        f_aug = np.concatenate([f, cat_onehot])
+
+        if outcome_positive:
+            delta = self.alpha_correct * f_aug
+        else:
+            delta = -self.alpha_incorrect * f_aug
+
+        self.W[action_idx, :] += delta
+        self.W = np.clip(self.W, -self.weight_clamp, self.weight_clamp)
+
     # ------------------------------------------------------------------
     # Accessors
     # ------------------------------------------------------------------
@@ -287,5 +453,76 @@ if __name__ == "__main__":
     assert np.allclose(W_init, sm_reset.get_weights()), "Reset did not restore W"
     print(f"\n=== Reset test ===")
     print(f"  W matches initial: True")
+
+    # --- score_with_gate: uniform gate (ones) must match decide() exactly ---
+    factors_gv = np.random.default_rng(7).random(6)
+    sm_gv = ScoringMatrix()
+    act_decide, probs_decide = sm_gv.decide(factors_gv)
+    act_gate, conf_gate = sm_gv.score_with_gate(factors_gv, np.ones(6))
+    assert act_gate == act_decide, (
+        f"score_with_gate(ones) action {act_gate} != decide() {act_decide}"
+    )
+    assert abs(conf_gate - probs_decide[act_decide]) < 1e-10, (
+        f"score_with_gate(ones) confidence {conf_gate} != decide() {probs_decide[act_decide]}"
+    )
+    print(f"\n=== score_with_gate(uniform gate) ===")
+    print(f"  action={act_gate}, confidence={conf_gate:.6f}  (matches decide())")
+
+    # --- score_with_gate: zero gate -> all logits zero -> uniform probs -> conf=0.25 ---
+    _, conf_zero = sm_gv.score_with_gate(factors_gv, np.zeros(6))
+    assert abs(conf_zero - 0.25) < 1e-6, (
+        f"score_with_gate(zeros) confidence {conf_zero:.6f} != 0.25"
+    )
+    print(f"\n=== score_with_gate(zero gate) ===")
+    print(f"  confidence={conf_zero:.6f}  (expected 0.25 uniform)")
+
+    # --- update_with_gated_factors: gated-off factors produce zero delta ---
+    factors_gu = np.random.default_rng(11).random(6)   # all values in (0, 1)
+    gate_mask = np.array([1.0, 1.0, 0.0, 0.0, 0.5, 0.5])
+
+    # outcome = +1
+    sm_gu = ScoringMatrix()
+    delta_pos = sm_gu.update_with_gated_factors(0, +1, factors_gu, gate_mask, t=1)
+    assert delta_pos[2] == 0.0, f"FAIL: delta[2]={delta_pos[2]} (gate=0 should give delta=0)"
+    assert delta_pos[3] == 0.0, f"FAIL: delta[3]={delta_pos[3]} (gate=0 should give delta=0)"
+    assert delta_pos[0] > 0.0,  f"FAIL: delta[0]={delta_pos[0]} should be > 0"
+    assert delta_pos[1] > 0.0,  f"FAIL: delta[1]={delta_pos[1]} should be > 0"
+    assert sm_gu.step_count == 0, (
+        f"FAIL: step_count={sm_gu.step_count} (update_with_gated_factors must not increment)"
+    )
+    print(f"\n=== update_with_gated_factors(outcome=+1, gate=[1,1,0,0,0.5,0.5]) ===")
+    print(f"  delta      = {np.round(delta_pos, 6)}")
+    print(f"  delta[2]==0: {delta_pos[2]==0.0},  delta[3]==0: {delta_pos[3]==0.0}")
+    print(f"  step_count = {sm_gu.step_count}  (not incremented)")
+
+    # outcome = -1
+    sm_gu2 = ScoringMatrix()
+    delta_neg = sm_gu2.update_with_gated_factors(0, -1, factors_gu, gate_mask, t=1)
+    assert delta_neg[0] < 0.0,  f"FAIL: delta[0]={delta_neg[0]} should be < 0"
+    assert delta_neg[2] == 0.0, f"FAIL: delta[2]={delta_neg[2]} (gate=0 should give delta=0)"
+    print(f"\n=== update_with_gated_factors(outcome=-1) ===")
+    print(f"  delta      = {np.round(delta_neg, 6)}")
+    print(f"  delta[0]<0: {delta_neg[0]<0.0},  delta[2]==0: {delta_neg[2]==0.0}")
+
+    # --- augmented scoring: W expands to (4, 11), update keeps same shape ---
+    print("\n--- augmented scoring test ---")
+    sm_aug = ScoringMatrix(n_actions=4, n_factors=6, temperature=0.25)
+    rng_aug = np.random.default_rng(99)
+    act_aug, conf_aug = sm_aug.decide_augmented(
+        rng_aug.random(6), category_index=0, n_categories=5
+    )
+    assert sm_aug.W.shape == (4, 11), (
+        f"FAIL: W.shape={sm_aug.W.shape} after decide_augmented, expected (4, 11)"
+    )
+    sm_aug.update_augmented(
+        rng_aug.random(6), category_index=0, n_categories=5,
+        action_idx=act_aug, outcome_positive=True,
+    )
+    assert sm_aug.W.shape == (4, 11), (
+        f"FAIL: W.shape={sm_aug.W.shape} after update_augmented, expected (4, 11)"
+    )
+    print(f"  W.shape after decide_augmented: {sm_aug.W.shape}  (4, 11) OK")
+    print(f"  W.shape after update_augmented: {sm_aug.W.shape}  (4, 11) OK")
+    print("augmented scoring check passed")
 
     print("\nAll checks passed")

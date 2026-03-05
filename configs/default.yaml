@@ -103,3 +103,250 @@ visualization:
     label: 11
     tick: 9
     annotation: 8.5
+
+# ============================================================
+# Bridge Layer Experiments (EXP 5-9)
+# ============================================================
+
+bridge_common:
+  n_categories: 5
+  n_factors: 6
+  n_actions: 4
+  categories: ["credential_access", "threat_intel_match", "lateral_movement",
+               "data_exfiltration", "insider_threat"]
+  actions: ["auto_close", "escalate_tier2", "enrich_and_watch", "escalate_incident"]
+  factors: ["travel_match", "asset_criticality", "threat_intel",
+            "time_anomaly", "device_trust", "pattern_history"]
+  seeds: [42, 123, 456, 789, 1024, 2048, 3072, 4096, 5120, 6144]
+
+  scoring:
+    temperature: 0.25
+    alpha_correct: 0.02
+    alpha_incorrect: 0.04
+    weight_clamp: 5.0
+    decay_rate: 0.001
+
+  factor_sigma: 0.15
+
+  category_gt_distributions:
+    credential_access:    [0.60, 0.25, 0.10, 0.05]
+    threat_intel_match:   [0.15, 0.30, 0.35, 0.20]
+    lateral_movement:     [0.05, 0.20, 0.30, 0.45]
+    data_exfiltration:    [0.05, 0.15, 0.25, 0.55]
+    insider_threat:       [0.10, 0.25, 0.35, 0.30]
+
+  # Action-conditional profiles: factors = [travel_match, asset_criticality, threat_intel,
+  #   time_anomaly, device_trust, pattern_history]
+  # Each action is assigned orthogonal primary factors for linear separability:
+  #   auto_close        -> HIGH device_trust(4) + pattern_history(5); others low
+  #   escalate_tier2    -> HIGH travel_match(0) + time_anomaly(3);   others low
+  #   enrich_and_watch  -> HIGH threat_intel(2); LOW asset_crit + time_anomaly
+  #   escalate_incident -> HIGH asset_crit(1) + time_anomaly(3); LOW threat_intel
+  action_conditional_profiles:
+    credential_access:
+      auto_close:        [0.70, 0.15, 0.10, 0.15, 0.85, 0.85]
+      escalate_tier2:    [0.80, 0.30, 0.20, 0.70, 0.25, 0.20]
+      enrich_and_watch:  [0.55, 0.25, 0.90, 0.30, 0.25, 0.20]
+      escalate_incident: [0.65, 0.80, 0.30, 0.75, 0.15, 0.10]
+    threat_intel_match:
+      auto_close:        [0.15, 0.15, 0.70, 0.15, 0.80, 0.80]
+      escalate_tier2:    [0.75, 0.25, 0.70, 0.65, 0.20, 0.20]
+      enrich_and_watch:  [0.15, 0.20, 0.95, 0.25, 0.20, 0.15]
+      escalate_incident: [0.20, 0.85, 0.35, 0.85, 0.15, 0.10]
+    lateral_movement:
+      auto_close:        [0.10, 0.55, 0.10, 0.15, 0.85, 0.85]
+      escalate_tier2:    [0.15, 0.55, 0.20, 0.70, 0.25, 0.25]
+      enrich_and_watch:  [0.10, 0.60, 0.90, 0.30, 0.20, 0.15]
+      escalate_incident: [0.15, 0.90, 0.30, 0.85, 0.10, 0.10]
+    data_exfiltration:
+      auto_close:        [0.10, 0.50, 0.10, 0.15, 0.85, 0.85]
+      escalate_tier2:    [0.15, 0.65, 0.20, 0.70, 0.25, 0.25]
+      enrich_and_watch:  [0.10, 0.65, 0.90, 0.30, 0.20, 0.15]
+      escalate_incident: [0.15, 0.90, 0.30, 0.85, 0.10, 0.10]
+    insider_threat:
+      auto_close:        [0.60, 0.15, 0.10, 0.50, 0.85, 0.85]
+      escalate_tier2:    [0.80, 0.30, 0.20, 0.75, 0.20, 0.20]
+      enrich_and_watch:  [0.25, 0.25, 0.90, 0.55, 0.20, 0.15]
+      escalate_incident: [0.25, 0.75, 0.30, 0.85, 0.15, 0.10]
+
+# ============================================================
+# Realistic Profiles for EXP-A (Capacity Ceiling)
+# ============================================================
+# Category-varying profiles: same factor -> different actions in different categories.
+# Designed to exceed the capacity of a shared scoring matrix W (Eq. 4).
+# Key cross-category conflicts (prevent W-only from reaching >60%):
+#   travel_match:    escalate_tier2 in credential_access vs auto_close in lateral_movement
+#   threat_intel:    auto_close in credential_access vs escalate_incident in data_exfiltration
+#   pattern_history: auto_close in credential_access vs escalate_incident in insider_threat
+# Per-category gating (G matrix) can partially resolve these contradictions by
+# amplifying distinct factors per category, giving a lift over W-only.
+# ============================================================
+# Simplified Profiles for EXP-A (Capacity Ceiling — Control)
+# ============================================================
+# Truly orthogonal factor signatures, identical across all categories.
+# Each action owns exactly one or two factors (0.85); all others are 0.10.
+# This guarantees linear separability: a shared W can reach ~85%+ without warm-start.
+# Used as the VA.1 control to confirm the mechanism works when profiles are separable.
+#   auto_close:        ONLY high device_trust(f4) + pattern_history(f5)
+#   escalate_tier2:    ONLY high travel_match(f0)
+#   enrich_and_watch:  ONLY high threat_intel(f2)
+#   escalate_incident: ONLY high asset_criticality(f1) + time_anomaly(f3)
+simplified_profiles:
+  category_gt_distributions:
+    credential_access:    [0.60, 0.25, 0.10, 0.05]
+    threat_intel_match:   [0.15, 0.30, 0.35, 0.20]
+    lateral_movement:     [0.05, 0.20, 0.30, 0.45]
+    data_exfiltration:    [0.05, 0.15, 0.25, 0.55]
+    insider_threat:       [0.10, 0.25, 0.35, 0.30]
+  action_conditional_profiles:
+    credential_access:
+      auto_close:        [0.10, 0.10, 0.10, 0.10, 0.85, 0.85]
+      escalate_tier2:    [0.85, 0.10, 0.10, 0.10, 0.10, 0.10]
+      enrich_and_watch:  [0.10, 0.10, 0.85, 0.10, 0.10, 0.10]
+      escalate_incident: [0.10, 0.85, 0.10, 0.85, 0.10, 0.10]
+    threat_intel_match:
+      auto_close:        [0.10, 0.10, 0.10, 0.10, 0.85, 0.85]
+      escalate_tier2:    [0.85, 0.10, 0.10, 0.10, 0.10, 0.10]
+      enrich_and_watch:  [0.10, 0.10, 0.85, 0.10, 0.10, 0.10]
+      escalate_incident: [0.10, 0.85, 0.10, 0.85, 0.10, 0.10]
+    lateral_movement:
+      auto_close:        [0.10, 0.10, 0.10, 0.10, 0.85, 0.85]
+      escalate_tier2:    [0.85, 0.10, 0.10, 0.10, 0.10, 0.10]
+      enrich_and_watch:  [0.10, 0.10, 0.85, 0.10, 0.10, 0.10]
+      escalate_incident: [0.10, 0.85, 0.10, 0.85, 0.10, 0.10]
+    data_exfiltration:
+      auto_close:        [0.10, 0.10, 0.10, 0.10, 0.85, 0.85]
+      escalate_tier2:    [0.85, 0.10, 0.10, 0.10, 0.10, 0.10]
+      enrich_and_watch:  [0.10, 0.10, 0.85, 0.10, 0.10, 0.10]
+      escalate_incident: [0.10, 0.85, 0.10, 0.85, 0.10, 0.10]
+    insider_threat:
+      auto_close:        [0.10, 0.10, 0.10, 0.10, 0.85, 0.85]
+      escalate_tier2:    [0.85, 0.10, 0.10, 0.10, 0.10, 0.10]
+      enrich_and_watch:  [0.10, 0.10, 0.85, 0.10, 0.10, 0.10]
+      escalate_incident: [0.10, 0.85, 0.10, 0.85, 0.10, 0.10]
+
+realistic_profiles:
+  category_gt_distributions:
+    credential_access:    [0.60, 0.25, 0.10, 0.05]
+    threat_intel_match:   [0.15, 0.30, 0.35, 0.20]
+    lateral_movement:     [0.05, 0.20, 0.30, 0.45]
+    data_exfiltration:    [0.05, 0.15, 0.25, 0.55]
+    insider_threat:       [0.10, 0.25, 0.35, 0.30]
+
+  # Factors: [travel_match, asset_criticality, threat_intel,
+  #           time_anomaly, device_trust, pattern_history]
+  action_conditional_profiles:
+    credential_access:
+      auto_close:        [0.15, 0.20, 0.70, 0.15, 0.85, 0.85]
+      escalate_tier2:    [0.85, 0.30, 0.20, 0.70, 0.20, 0.20]
+      enrich_and_watch:  [0.40, 0.25, 0.85, 0.35, 0.30, 0.30]
+      escalate_incident: [0.75, 0.85, 0.35, 0.75, 0.15, 0.10]
+    threat_intel_match:
+      auto_close:        [0.15, 0.15, 0.75, 0.15, 0.80, 0.80]
+      escalate_tier2:    [0.70, 0.30, 0.70, 0.65, 0.20, 0.20]
+      enrich_and_watch:  [0.20, 0.25, 0.95, 0.30, 0.20, 0.20]
+      escalate_incident: [0.25, 0.85, 0.80, 0.80, 0.15, 0.10]
+    lateral_movement:
+      auto_close:        [0.75, 0.20, 0.15, 0.20, 0.80, 0.85]
+      escalate_tier2:    [0.20, 0.55, 0.20, 0.70, 0.25, 0.25]
+      enrich_and_watch:  [0.15, 0.65, 0.85, 0.35, 0.20, 0.20]
+      escalate_incident: [0.20, 0.90, 0.30, 0.85, 0.10, 0.10]
+    data_exfiltration:
+      auto_close:        [0.15, 0.15, 0.20, 0.20, 0.85, 0.85]
+      escalate_tier2:    [0.20, 0.65, 0.20, 0.70, 0.25, 0.25]
+      enrich_and_watch:  [0.15, 0.40, 0.80, 0.40, 0.25, 0.20]
+      escalate_incident: [0.70, 0.85, 0.85, 0.75, 0.10, 0.10]
+    insider_threat:
+      auto_close:        [0.60, 0.15, 0.15, 0.30, 0.85, 0.85]
+      escalate_tier2:    [0.75, 0.30, 0.20, 0.70, 0.20, 0.25]
+      enrich_and_watch:  [0.30, 0.30, 0.80, 0.50, 0.25, 0.80]
+      escalate_incident: [0.30, 0.75, 0.75, 0.80, 0.15, 0.80]
+
+exp5:
+  n_decisions: 1000
+  n_seeds: 10
+  oracle_configs:
+    - {type: "bernoulli"}
+    - {type: "gt_aligned", noise_rate: 0.0}
+    - {type: "gt_aligned", noise_rate: 0.05}
+    - {type: "gt_aligned", noise_rate: 0.15}
+    - {type: "gt_aligned", noise_rate: 0.30}
+  checkpoints: [50, 100, 200, 400, 700, 1000]
+  fm1_noise_boundary: 0.0476
+
+exp6:
+  n_decisions: 500
+  n_seeds: 10
+  mi_bins: 10
+  oracle: {type: "gt_aligned", noise_rate: 0.0}
+
+exp7:
+  n_decisions: 200
+  n_seeds: 10
+  oracle: {type: "gt_aligned", noise_rate: 0.15}
+  gating_configs:
+    - {type: "uniform"}
+    - {type: "hebbian", learning_rate: 0.005, damping: true}
+    - {type: "hebbian", learning_rate: 0.005, damping: false}
+    - {type: "mi_static"}
+  mi_fit_decisions: 100
+  checkpoints: [25, 50, 75, 100, 125, 150, 175, 200]
+
+exp8:
+  n_decisions: 500
+  n_seeds: 10
+  oracle: {type: "gt_aligned", noise_rate: 0.15}
+  alpha_g_ratios: [0.25, 0.10, 0.05, 0.025, 0.01]
+  damping_configs: [true, false]
+  oscillation_window: 20
+  oscillation_threshold: 0.15
+
+exp9:
+  n_decisions: 300
+  n_seeds: 10
+  oracle: {type: "gt_aligned", noise_rate: 0.15}
+  hidden_factor_category: "insider_threat"
+  hidden_factor_strength: 0.6
+  detection_threshold_accuracy: 0.60
+  detection_threshold_g_max: 0.80
+  warmup_decisions: 100
+
+# ============================================================
+# EXP-A: Capacity Ceiling
+# ============================================================
+expA:
+  n_decisions: 1000
+  n_seeds: 10
+  checkpoints: [50, 100, 200, 400, 700, 1000]
+  oracle:
+    type: "gt_aligned"
+    noise_rate: 0.0
+  w_init: "uniform"   # MUST stay uniform — tests whether G eliminates warm-start need
+  # Scoring override: ratio=1 (symmetric) so cold-start is viable.
+  # Break-even at 50% (ratio/(1+ratio)=0.5), reachable from the random-policy 25% baseline.
+  # bridge_common uses ratio=2 (break-even=67%), which keeps the model below break-even
+  # for all 1000 steps — making VA.1 fail without this override.
+  scoring:
+    alpha_correct: 0.06
+    alpha_incorrect: 0.06
+    temperature: 0.25
+    weight_clamp: 5.0
+    decay_rate: 0.001
+  gating:
+    hebbian:
+      learning_rate: 0.005
+      damping: true
+      initial_g: 1.0    # G starts at neutral (1.0); max_gate=2.0 allows amplification
+      max_gate: 2.0     # allow G to amplify above 1.0 for informative factors
+    mi:
+      threshold: 0.1
+      fit_decisions: 200
+  # Validation gate thresholds
+  # VA.1: simplified (truly orthogonal) w_only > 80%
+  # VA.3: realistic w_only < 55%  (capacity ceiling)
+  # VA.6: capacity_gap = simplified_w_only - realistic_w_only >= 25pp
+  #       (demonstrates ceiling significance; G configs reported for context)
+  gates:
+    va1_threshold: 0.80
+    va3_threshold: 0.55
+    va6_gap_threshold: 0.25
