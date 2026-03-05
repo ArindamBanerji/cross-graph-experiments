@@ -1,0 +1,95 @@
+{
+  "small": {
+    "oracle_accuracy": {
+      "mean": 0.9788699999999999,
+      "std": 0.0014267679091802946
+    },
+    "warm_t100pct": {
+      "mean": 0.9822999999999998,
+      "std": 0.0038600518131237604
+    },
+    "cold_t100pct": {
+      "mean": 0.8988999999999999,
+      "std": 0.011732670435819622
+    },
+    "n_categories": 5,
+    "n_actions": 4,
+    "n_factors": 6,
+    "total_centroids": 20,
+    "total_params": 120,
+    "n_decisions": 1000,
+    "mean_separation": 0.99342919119239,
+    "min_separation": 0.4472135954999579
+  },
+  "medium": {
+    "oracle_accuracy": {
+      "mean": 0.98134,
+      "std": 0.0011296016997154263
+    },
+    "warm_t100pct": {
+      "mean": 0.9819999999999999,
+      "std": 0.0025385910352879655
+    },
+    "cold_t100pct": {
+      "mean": 0.8133666666666667,
+      "std": 0.009713742333594037
+    },
+    "n_categories": 10,
+    "n_actions": 6,
+    "n_factors": 10,
+    "total_centroids": 60,
+    "total_params": 600,
+    "n_decisions": 3000,
+    "mean_separation": 0.9679287337860526,
+    "min_separation": 0.5032922112312435
+  },
+  "large": {
+    "oracle_accuracy": {
+      "mean": 0.99763,
+      "std": 0.000266874918683309
+    },
+    "warm_t100pct": {
+      "mean": 0.9973833333333333,
+      "std": 0.0003337959752400051
+    },
+    "cold_t100pct": {
+      "mean": 0.8696333333333334,
+      "std": 0.008519331684215576
+    },
+    "n_categories": 15,
+    "n_actions": 8,
+    "n_factors": 15,
+    "total_centroids": 120,
+    "total_params": 1800,
+    "n_decisions": 6000,
+    "mean_separation": 1.1687686381705373,
+    "min_separation": 0.6527855347689938
+  },
+  "xlarge": {
+    "oracle_accuracy": {
+      "mean": 0.9991399999999999,
+      "std": 0.00042216373863966276
+    },
+    "warm_t100pct": {
+      "mean": 0.99902,
+      "std": 0.0004049691346263109
+    },
+    "cold_t100pct": {
+      "mean": 0.72702,
+      "std": 0.007836921164164755
+    },
+    "n_categories": 20,
+    "n_actions": 10,
+    "n_factors": 20,
+    "total_centroids": 200,
+    "total_params": 4000,
+    "n_decisions": 5000,
+    "mean_separation": 1.277040808285299,
+    "min_separation": 0.7657019119251784
+  },
+  "scaling_trend": {
+    "small_oracle": 0.9788699999999999,
+    "xlarge_oracle": 0.9991399999999999,
+    "degradation_pp": -2.027000000000001
+  }
+}

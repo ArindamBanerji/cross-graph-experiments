@@ -1,0 +1,129 @@
+{
+  "phase1": {
+    "original": {
+      "l2": {
+        "mean_accuracy": 0.9788699999999999,
+        "std_accuracy": 0.0014267679091802946
+      },
+      "cosine": {
+        "mean_accuracy": 0.9642199999999999,
+        "std_accuracy": 0.003074193661216993
+      },
+      "dot": {
+        "mean_accuracy": 0.60997,
+        "std_accuracy": 0.004545583937552294
+      },
+      "mahalanobis": {
+        "mean_accuracy": 0.9766400000000001,
+        "std_accuracy": 0.0017551194957735514
+      },
+      "best_kernel": "l2",
+      "worst_kernel": "dot",
+      "best_accuracy": 0.9788699999999999,
+      "worst_accuracy": 0.60997,
+      "kernel_ranking": [
+        "l2",
+        "mahalanobis",
+        "cosine",
+        "dot"
+      ]
+    },
+    "normalized": {
+      "l2": {
+        "mean_accuracy": 0.97818,
+        "std_accuracy": 0.0017918333255821
+      },
+      "cosine": {
+        "mean_accuracy": 0.9672000000000001,
+        "std_accuracy": 0.001662661855111987
+      },
+      "dot": {
+        "mean_accuracy": 0.9084299999999998,
+        "std_accuracy": 0.0036947560436681494
+      },
+      "mahalanobis": {
+        "mean_accuracy": 0.97456,
+        "std_accuracy": 0.001897483713881197
+      },
+      "best_kernel": "l2",
+      "worst_kernel": "dot",
+      "best_accuracy": 0.97818,
+      "worst_accuracy": 0.9084299999999998,
+      "kernel_ranking": [
+        "l2",
+        "mahalanobis",
+        "cosine",
+        "dot"
+      ]
+    },
+    "mixed_scale": {
+      "l2": {
+        "mean_accuracy": 0.7992200000000002,
+        "std_accuracy": 0.0036495966291571888
+      },
+      "cosine": {
+        "mean_accuracy": 0.6115099999999999,
+        "std_accuracy": 0.0035815732111275688
+      },
+      "dot": {
+        "mean_accuracy": 0.41932,
+        "std_accuracy": 0.0036502054736685732
+      },
+      "mahalanobis": {
+        "mean_accuracy": 0.9288000000000001,
+        "std_accuracy": 0.0030029615012147127
+      },
+      "best_kernel": "mahalanobis",
+      "worst_kernel": "dot",
+      "best_accuracy": 0.9288000000000001,
+      "worst_accuracy": 0.41932,
+      "kernel_ranking": [
+        "mahalanobis",
+        "l2",
+        "cosine",
+        "dot"
+      ]
+    }
+  },
+  "phase2": {
+    "original/l2": {
+      "accuracy_at_t1000_mean": 0.9822999999999998,
+      "accuracy_at_t1000_std": 0.0038600518131237604
+    },
+    "original/dot": {
+      "accuracy_at_t1000_mean": 0.524,
+      "accuracy_at_t1000_std": 0.02220110107379564
+    },
+    "normalized/l2": {
+      "accuracy_at_t1000_mean": 0.9815999999999999,
+      "accuracy_at_t1000_std": 0.0038643671323171872
+    },
+    "normalized/dot": {
+      "accuracy_at_t1000_mean": 0.9054,
+      "accuracy_at_t1000_std": 0.01444683740862032
+    },
+    "mixed_scale/dot": {
+      "accuracy_at_t1000_mean": 0.3891,
+      "accuracy_at_t1000_std": 0.022766691068800988
+    },
+    "mixed_scale/mahalanobis": {
+      "accuracy_at_t1000_mean": 0.9362999999999999,
+      "accuracy_at_t1000_std": 0.0031287200080685708
+    }
+  },
+  "recommendations": {
+    "original": {
+      "recommended_kernel": "l2",
+      "reason": "l2 achieved highest accuracy (0.979) on original distribution"
+    },
+    "normalized": {
+      "recommended_kernel": "l2",
+      "reason": "l2 achieved highest accuracy (0.978) on normalized distribution"
+    },
+    "mixed_scale": {
+      "recommended_kernel": "mahalanobis",
+      "reason": "mahalanobis achieved highest accuracy (0.929) on mixed_scale distribution"
+    }
+  },
+  "gae_guidance": "l2_default_with_cosine_option"
+}
