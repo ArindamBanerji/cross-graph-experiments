@@ -1,0 +1,10 @@
+{
+  "gate": "S1",
+  "pass": false,
+  "best_lambda": 0.1,
+  "improvement_pp": 1.4210854715202004e-14,
+  "p_value": 0.999999999999963,
+  "ece_delta": -0.000515305737696238,
+  "baseline_accuracy": 96.87999999999998,
+  "best_accuracy": 96.88
+}

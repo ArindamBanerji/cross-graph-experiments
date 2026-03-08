@@ -1,0 +1,237 @@
+{
+  "experiment": "EXP-S5b",
+  "option_b_confirmed": true,
+  "lambda_in_product": 0,
+  "gate": "S5b",
+  "pass": true,
+  "llm_f1_mean": 0.8768,
+  "template_f1_mean": 0.5982,
+  "llm_f1_scores": [
+    1.0,
+    0.8571,
+    1.0,
+    0.8571,
+    1.0,
+    0.5,
+    1.0,
+    0.8
+  ],
+  "tmpl_f1_scores": [
+    0.6667,
+    0.2857,
+    1.0,
+    0.6667,
+    0.5,
+    0.5,
+    0.6667,
+    0.5
+  ],
+  "per_artifact": [
+    {
+      "id": "art_01",
+      "type": "email",
+      "source": "CISO",
+      "authority": "high",
+      "llm_f1": 1.0,
+      "tmpl_f1": 0.6667,
+      "llm_claims_count": 2,
+      "tmpl_claims_count": 1,
+      "method": "llm"
+    },
+    {
+      "id": "art_02",
+      "type": "email",
+      "source": "CISO",
+      "authority": "high",
+      "llm_f1": 0.8571,
+      "tmpl_f1": 0.2857,
+      "llm_claims_count": 3,
+      "tmpl_claims_count": 3,
+      "method": "llm"
+    },
+    {
+      "id": "art_03",
+      "type": "slack",
+      "source": "soc_analyst",
+      "authority": "medium",
+      "llm_f1": 1.0,
+      "tmpl_f1": 1.0,
+      "llm_claims_count": 1,
+      "tmpl_claims_count": 1,
+      "method": "llm"
+    },
+    {
+      "id": "art_04",
+      "type": "vendor_advisory",
+      "source": "vendor",
+      "authority": "medium",
+      "llm_f1": 0.8571,
+      "tmpl_f1": 0.6667,
+      "llm_claims_count": 3,
+      "tmpl_claims_count": 2,
+      "method": "llm"
+    },
+    {
+      "id": "art_05",
+      "type": "email",
+      "source": "isac",
+      "authority": "medium",
+      "llm_f1": 1.0,
+      "tmpl_f1": 0.5,
+      "llm_claims_count": 3,
+      "tmpl_claims_count": 1,
+      "method": "llm"
+    },
+    {
+      "id": "art_06",
+      "type": "incident_report",
+      "source": "soc_lead",
+      "authority": "high",
+      "llm_f1": 0.5,
+      "tmpl_f1": 0.5,
+      "llm_claims_count": 1,
+      "tmpl_claims_count": 1,
+      "method": "template_fallback"
+    },
+    {
+      "id": "art_07",
+      "type": "slack",
+      "source": "it_ops",
+      "authority": "medium",
+      "llm_f1": 1.0,
+      "tmpl_f1": 0.6667,
+      "llm_claims_count": 1,
+      "tmpl_claims_count": 2,
+      "method": "llm"
+    },
+    {
+      "id": "art_08",
+      "type": "meeting_notes",
+      "source": "hr_it_liaison",
+      "authority": "low",
+      "llm_f1": 0.8,
+      "tmpl_f1": 0.5,
+      "llm_claims_count": 2,
+      "tmpl_claims_count": 1,
+      "method": "llm"
+    }
+  ],
+  "sigma_tensor_llm": [
+    [
+      0.010000000000000064,
+      -0.02399999999999998,
+      -0.06800000000000009,
+      -0.082
+    ],
+    [
+      -1.0,
+      -0.734,
+      1.0,
+      0.09799999999999999
+    ],
+    [
+      -1.0,
+      -0.36700000000000005,
+      1.0,
+      0.18000000000000002
+    ],
+    [
+      -0.20099999999999996,
+      -0.097,
+      0.208,
+      -0.09000000000000001
+    ],
+    [
+      -0.6759999999999999,
+      -0.37700000000000006,
+      1.0,
+      -0.085
+    ]
+  ],
+  "sigma_tensor_template": [
+    [
+      -0.26999999999999996,
+      -0.18000000000000002,
+      0.45000000000000007,
+      -0.18000000000000002
+    ],
+    [
+      -0.27,
+      -0.09000000000000001,
+      0.36000000000000004,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.09000000000000002,
+      -0.09000000000000001,
+      -0.09000000000000002,
+      -0.27
+    ],
+    [
+      -0.17999999999999994,
+      -0.18000000000000002,
+      0.27,
+      -0.27
+    ]
+  ],
+  "active_claims_llm": 16,
+  "active_claims_template": 5,
+  "total_claims_llm": 16,
+  "total_claims_template": 12,
+  "nonzero_sigma_llm": 20,
+  "nonzero_sigma_template": 15,
+  "coherence_failures": [],
+  "gate_checks": {
+    "llm_f1_above_0.7": true,
+    "template_f1_above_0.4": true,
+    "nonzero_sigma_cells_ge_4": true,
+    "no_contradictions": true,
+    "high_authority_claims_extracted": true,
+    "suppress_claims_present": true
+  },
+  "briefing_lines": [
+    "[credential access] 10 claim(s) strongly promote 'escalate' (sigma=-1.000)",
+    "[credential access] 10 claim(s) suppress 'suppress' (sigma=+1.000)",
+    "[threat intel match] 4 claim(s) strongly promote 'escalate' (sigma=-1.000)",
+    "[threat intel match] 4 claim(s) suppress 'suppress' (sigma=+1.000)",
+    "[cloud infrastructure] 5 claim(s) suppress 'suppress' (sigma=+1.000)",
+    "[credential access] 10 claim(s) strongly promote 'investigate' (sigma=-0.734)",
+    "[cloud infrastructure] 5 claim(s) strongly promote 'escalate' (sigma=-0.676)",
+    "[cloud infrastructure] 5 claim(s) strongly promote 'investigate' (sigma=-0.377)",
+    "[threat intel match] 4 claim(s) strongly promote 'investigate' (sigma=-0.367)",
+    "[insider behavioral] 2 claim(s) suppress 'suppress' (sigma=+0.208)",
+    "[insider behavioral] 2 claim(s) strongly promote 'escalate' (sigma=-0.201)",
+    "[threat intel match] 4 claim(s) suppress 'monitor' (sigma=+0.180)",
+    "[credential access] 10 claim(s) weakly suppress 'monitor' (sigma=+0.098)",
+    "[insider behavioral] 2 claim(s) promote 'investigate' (sigma=-0.097)",
+    "[insider behavioral] 2 claim(s) promote 'monitor' (sigma=-0.090)",
+    "[cloud infrastructure] 5 claim(s) promote 'monitor' (sigma=-0.085)",
+    "[travel anomaly] 5 claim(s) promote 'monitor' (sigma=-0.082)",
+    "[travel anomaly] 5 claim(s) promote 'suppress' (sigma=-0.068)",
+    "[travel anomaly] 5 claim(s) promote 'investigate' (sigma=-0.024)",
+    "[travel anomaly] 5 claim(s) weakly suppress 'escalate' (sigma=+0.010)"
+  ],
+  "method_counts": {
+    "llm": 7,
+    "template_fallback": 1
+  },
+  "categories": [
+    "travel_anomaly",
+    "credential_access",
+    "threat_intel_match",
+    "insider_behavioral",
+    "cloud_infrastructure"
+  ],
+  "actions": [
+    "escalate",
+    "investigate",
+    "suppress",
+    "monitor"
+  ]
+}

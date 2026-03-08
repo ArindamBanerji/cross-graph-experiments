@@ -284,6 +284,180 @@ class CategoryAlertGenerator:
 
         return alerts
 
+    def generate_alerts(
+        self,
+        n: int,
+        category_weights: Optional[list[float]] = None,
+    ) -> list[CategoryAlert]:
+        """Alias for generate() for backward compatibility."""
+        return self.generate(n, category_weights=category_weights)
+
+    def generate_campaign(self, n: int, campaign: dict) -> list[CategoryAlert]:
+        """
+        Generate alerts where GT action probabilities shift for specified categories.
+
+        Parameters
+        ----------
+        n : int
+            Total number of alerts to generate.
+        campaign : dict
+            Mapping category_name -> {action_name: probability}.
+            Example::
+
+                {
+                    "credential_access":  {"escalate_incident": 0.80},
+                    "threat_intel_match": {"escalate_incident": 0.75},
+                }
+
+            For categories NOT in campaign: uses normal GT distribution.
+            For categories IN campaign: the named action gets the given probability;
+            remaining probability is split equally among all other actions.
+
+        Returns
+        -------
+        list[CategoryAlert]
+            Alerts with the same fields as generate().  Uses a deterministic
+            RNG seeded from self.seed + 10000 so results are independent of
+            how many times generate() has been called.
+        """
+        # Build overridden GT distributions
+        overridden_gt: dict[str, np.ndarray] = {}
+        for cat in self.categories:
+            if cat in campaign:
+                overrides = campaign[cat]
+                dist = np.zeros(len(self.actions), dtype=np.float64)
+                override_indices: set[int] = set()
+                total_override = 0.0
+                for act_name, prob in overrides.items():
+                    a_idx = self.actions.index(act_name)
+                    dist[a_idx] = float(prob)
+                    override_indices.add(a_idx)
+                    total_override += float(prob)
+                remaining = 1.0 - total_override
+                non_override = [j for j in range(len(self.actions)) if j not in override_indices]
+                if non_override:
+                    per_act = remaining / len(non_override)
+                    for j in non_override:
+                        dist[j] = per_act
+                dist = dist / dist.sum()  # normalize for floating-point safety
+                overridden_gt[cat] = dist
+            else:
+                overridden_gt[cat] = self.gt_distributions[cat]
+
+        # Separate RNG — does not consume the main generator's state
+        rng = np.random.default_rng(self.seed + 10000)
+        categories = self.categories
+        actions = self.actions
+
+        probs = np.ones(len(categories)) / len(categories)
+        cat_indices = rng.choice(len(categories), size=n, p=probs)
+        is_noisy_mask = rng.random(n) < self.noise_rate
+
+        alerts: list[CategoryAlert] = []
+        for i in range(n):
+            cat_idx = int(cat_indices[i])
+            category = categories[cat_idx]
+
+            gt_dist = overridden_gt[category]
+            original_gt_idx = int(rng.choice(len(actions), p=gt_dist))
+            original_gt_action = actions[original_gt_idx]
+
+            mu = self.profiles[category][original_gt_action]
+            factors = rng.normal(loc=mu, scale=self.factor_sigma).clip(0.0, 1.0)
+
+            is_noisy = bool(is_noisy_mask[i])
+            stored_gt_idx = original_gt_idx
+            if is_noisy:
+                other_indices = [j for j in range(len(actions)) if j != original_gt_idx]
+                stored_gt_idx = int(other_indices[rng.integers(0, len(other_indices))])
+
+            alerts.append(CategoryAlert(
+                alert_id=f"cat_alert_{self.seed:04d}_c{i:06d}",
+                category=category,
+                category_index=cat_idx,
+                factors=factors,
+                ground_truth_action=actions[stored_gt_idx],
+                gt_action_index=stored_gt_idx,
+                gt_action_name=original_gt_action,
+                is_noisy=is_noisy,
+            ))
+
+        return alerts
+
+    def generate_precampaign(self, n: int, suppressed_actions: dict) -> list[CategoryAlert]:
+        """
+        Generate alerts where certain (category, action) combinations are historically rare.
+
+        suppressed_actions: dict mapping category_name -> action_name_to_suppress
+        For each suppressed (category, action) pair: that action's GT probability is
+        reduced to 5% and the excess redistributed proportionally to other actions.
+
+        This simulates a pre-campaign period where the target action was rarely
+        the correct answer for these categories, so ProfileScorer never learns it well.
+
+        Uses self.seed + 20000 as RNG seed (independent of generate() state).
+        """
+        # Build overridden GT distributions
+        overridden_gt: dict[str, np.ndarray] = {}
+        for cat in self.categories:
+            if cat in suppressed_actions:
+                act_to_suppress = suppressed_actions[cat]
+                a_idx = self.actions.index(act_to_suppress)
+                orig_dist = self.gt_distributions[cat].copy()
+                suppressed_prob = 0.05
+                excess = float(orig_dist[a_idx]) - suppressed_prob
+                dist = orig_dist.copy()
+                dist[a_idx] = suppressed_prob
+                if excess > 0:
+                    other_indices = [j for j in range(len(self.actions)) if j != a_idx]
+                    other_total = float(sum(orig_dist[j] for j in other_indices))
+                    if other_total > 0:
+                        for j in other_indices:
+                            dist[j] = orig_dist[j] + excess * (float(orig_dist[j]) / other_total)
+                dist = dist / dist.sum()
+                overridden_gt[cat] = dist
+            else:
+                overridden_gt[cat] = self.gt_distributions[cat]
+
+        rng = np.random.default_rng(self.seed + 20000)
+        categories = self.categories
+        actions = self.actions
+
+        probs = np.ones(len(categories)) / len(categories)
+        cat_indices = rng.choice(len(categories), size=n, p=probs)
+        is_noisy_mask = rng.random(n) < self.noise_rate
+
+        alerts: list[CategoryAlert] = []
+        for i in range(n):
+            cat_idx = int(cat_indices[i])
+            category = categories[cat_idx]
+
+            gt_dist = overridden_gt[category]
+            original_gt_idx = int(rng.choice(len(actions), p=gt_dist))
+            original_gt_action = actions[original_gt_idx]
+
+            mu = self.profiles[category][original_gt_action]
+            factors = rng.normal(loc=mu, scale=self.factor_sigma).clip(0.0, 1.0)
+
+            is_noisy = bool(is_noisy_mask[i])
+            stored_gt_idx = original_gt_idx
+            if is_noisy:
+                other_indices = [j for j in range(len(actions)) if j != original_gt_idx]
+                stored_gt_idx = int(other_indices[rng.integers(0, len(other_indices))])
+
+            alerts.append(CategoryAlert(
+                alert_id=f"cat_alert_{self.seed:04d}_q{i:06d}",
+                category=category,
+                category_index=cat_idx,
+                factors=factors,
+                ground_truth_action=actions[stored_gt_idx],
+                gt_action_index=stored_gt_idx,
+                gt_action_name=original_gt_action,
+                is_noisy=is_noisy,
+            ))
+
+        return alerts
+
     def get_weighted_category_means(self) -> np.ndarray:
         """
         Return a (n_categories × n_factors) matrix of GT-distribution-weighted

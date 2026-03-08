@@ -22,7 +22,10 @@ C:.
 |   |           weight_evolution.npz
 |   |           
 |   +---exp2_cross_graph_discovery
+|   |   |   normalization_ablation_results.csv
+|   |   |   normalization_summary.json
 |   |   |   run.py
+|   |   |   run_normalization_ablation.py
 |   |   |   
 |   |   +---results
 |   |   |       best_configs.json
@@ -30,20 +33,126 @@ C:.
 |   |   |       
 |   |   \---__pycache__
 |   |           run.cpython-311.pyc
+|   |           run_normalization_ablation.cpython-311.pyc
 |   |           
 |   +---exp3_multidomain_scaling
+|   |   |   norm_tracking.csv
+|   |   |   norm_tracking_summary.json
 |   |   |   run.py
+|   |   |   run_extended.py
+|   |   |   run_norm_tracking.py
 |   |   |   
-|   |   \---results
-|   |           scaling_data.csv
+|   |   +---results
+|   |   |       extended_scaling_data.csv
+|   |   |       extended_scaling_fit.json
+|   |   |       scaling_data.csv
+|   |   |       
+|   |   \---__pycache__
+|   |           run_extended.cpython-311.pyc
 |   |           
 |   +---exp3_scaling
 |   |   \---results
-|   \---exp4_sensitivity
-|       |   run.py
+|   +---exp4_sensitivity
+|   |   |   run.py
+|   |   |   
+|   |   \---results
+|   |           sensitivity_data.csv
+|   |           
+|   +---exp5_oracle_fix
+|   |   |   run.py
+|   |   |   
+|   |   +---results
+|   |   |       best_config.json
+|   |   |       fm1_analysis.csv
+|   |   |       oracle_comparison.csv
+|   |   |       ratio_sweep.csv
+|   |   |       warmup_comparison.csv
+|   |   |       
+|   |   \---__pycache__
+|   |           run.cpython-311.pyc
+|   |           
+|   +---expA_capacity_ceiling
+|   |   |   run.py
+|   |   |   
+|   |   +---results
+|   |   |       accuracy_trajectories.csv
+|   |   |       g_matrices.csv
+|   |   |       summary.json
+|   |   |       
+|   |   \---__pycache__
+|   |           run.cpython-311.pyc
+|   |           
+|   +---expB1_profile_scoring
+|   |   |   run.py
+|   |   |   
+|   |   \---results
+|   |           accuracy_trajectories.csv
+|   |           summary.json
+|   |           
+|   +---expC1_centroid_oracle
+|   |   |   run.py
+|   |   |   
+|   |   \---results
+|   |           classification_results.csv
+|   |           confusion_matrices.json
+|   |           summary.json
+|   |           
+|   +---expD1_cross_category_transfer
+|   |   |   run.py
+|   |   |   
+|   |   \---results
+|   |           accuracy_trajectories.csv
+|   |           convergence_speed.csv
+|   |           summary.json
+|   |           transfer_matrix.csv
+|   |           
+|   +---expD2_factor_interactions
+|   |   |   run.py
+|   |   |   
+|   |   \---results
+|   |           mi_interaction.csv
+|   |           mi_single.csv
+|   |           summary.json
+|   |           top_interactions.json
+|   |           
+|   +---expE1_kernel_generalization
+|   |   |   run.py
+|   |   |   
+|   |   +---results
+|   |   |       covariance_stats.csv
+|   |   |       phase1_oracle.csv
+|   |   |       phase2_learning.csv
+|   |   |       summary.json
+|   |   |       
+|   |   \---__pycache__
+|   |           run.cpython-311.pyc
+|   |           
+|   +---expE2_scale_test
+|   |   |   run.py
+|   |   |   
+|   |   +---results
+|   |   |       phase1_oracle.csv
+|   |   |       phase2_learning.csv
+|   |   |       phase3_separation.csv
+|   |   |       summary.json
+|   |   |       
+|   |   \---__pycache__
+|   |           run.cpython-311.pyc
+|   |           
+|   \---validation
+|       |   baseline_online_results.csv
+|       |   baseline_static_results.csv
+|       |   baseline_summary.json
+|       |   calibration_results.csv
+|       |   calibration_summary.json
+|       |   push_stability_results.csv
+|       |   push_stability_summary.json
+|       |   run_baseline_comparison.py
+|       |   run_calibration_analysis.py
+|       |   run_push_stability.py
 |       |   
-|       \---results
-|               sensitivity_data.csv
+|       \---__pycache__
+|               run_baseline_comparison.cpython-311.pyc
 |               
 +---notebooks
 +---paper_figures
@@ -71,17 +180,105 @@ C:.
 |       exp4_sensitivity.pdf
 |       exp4_sensitivity.png
 |       exp4_table.tex
+|       exp5_category_heatmap.pdf
+|       exp5_category_heatmap.png
+|       exp5_fm1_boundary.pdf
+|       exp5_fm1_boundary.png
+|       exp5_oracle_accuracy.pdf
+|       exp5_oracle_accuracy.png
+|       exp5_oracle_accuracy_best_ratio.pdf
+|       exp5_oracle_accuracy_best_ratio.png
+|       exp5_ratio_sweep_accuracy.pdf
+|       exp5_ratio_sweep_accuracy.png
+|       exp5_warmup_comparison.pdf
+|       exp5_warmup_comparison.png
+|       exp5_w_entropy_trajectory.pdf
+|       exp5_w_entropy_trajectory.png
+|       exp5_w_stability.pdf
+|       exp5_w_stability.png
+|       expA_category_breakdown.pdf
+|       expA_category_breakdown.png
+|       expA_convergence.pdf
+|       expA_convergence.png
+|       expA_final_accuracy.pdf
+|       expA_final_accuracy.png
+|       expA_g_heatmap.pdf
+|       expA_g_heatmap.png
+|       expB1_comparison_waterfall.pdf
+|       expB1_comparison_waterfall.png
+|       expB1_lr_heatmap.pdf
+|       expB1_lr_heatmap.png
+|       expB1_noise_robustness.pdf
+|       expB1_noise_robustness.png
+|       expB1_profile_drift.pdf
+|       expB1_profile_drift.png
+|       expB1_warm_vs_cold_vs_centroid.pdf
+|       expB1_warm_vs_cold_vs_centroid.png
+|       expC1_category_breakdown.pdf
+|       expC1_category_breakdown.png
+|       expC1_comparison_waterfall.pdf
+|       expC1_comparison_waterfall.png
+|       expC1_confusion_heatmap.pdf
+|       expC1_confusion_heatmap.png
+|       expC1_method_comparison.pdf
+|       expC1_method_comparison.png
+|       expD1_convergence.pdf
+|       expD1_convergence.png
+|       expD1_delta_summary.pdf
+|       expD1_delta_summary.png
+|       expD1_speedup.pdf
+|       expD1_speedup.png
+|       expD1_transfer_matrix.pdf
+|       expD1_transfer_matrix.png
+|       expD2_augmentation.pdf
+|       expD2_augmentation.png
+|       expD2_interaction_gain.pdf
+|       expD2_interaction_gain.png
+|       expD2_single_mi.pdf
+|       expD2_single_mi.png
+|       expD2_top_interactions.pdf
+|       expD2_top_interactions.png
+|       expE1_dot_vs_l2.pdf
+|       expE1_dot_vs_l2.png
+|       expE1_gae_recommendation.pdf
+|       expE1_gae_recommendation.png
+|       expE1_kernel_ranking.pdf
+|       expE1_kernel_ranking.png
+|       expE1_kernel_x_distribution.pdf
+|       expE1_kernel_x_distribution.png
+|       expE1_learning_curves.pdf
+|       expE1_learning_curves.png
+|       expE1_mahalanobis_vs_l2.pdf
+|       expE1_mahalanobis_vs_l2.png
+|       expE1_mixed_scale_impact.pdf
+|       expE1_mixed_scale_impact.png
+|       expE1_per_category_heatmap.pdf
+|       expE1_per_category_heatmap.png
+|       expE2_cold_vs_warm_gap.pdf
+|       expE2_cold_vs_warm_gap.png
+|       expE2_decisions_per_centroid.pdf
+|       expE2_decisions_per_centroid.png
+|       expE2_learning_curves.pdf
+|       expE2_learning_curves.png
+|       expE2_oracle_scaling.pdf
+|       expE2_oracle_scaling.png
+|       expE2_scaling_trend.pdf
+|       expE2_scaling_trend.png
+|       expE2_separation_vs_accuracy.pdf
+|       expE2_separation_vs_accuracy.png
 |       
 \---src
     |   __init__.py
     |   
     +---data
     |   |   alert_generator.py
+    |   |   category_alert_generator.py
     |   |   entity_generator.py
     |   |   __init__.py
     |   |   
     |   \---__pycache__
     |           alert_generator.cpython-311.pyc
+    |           category_alert_generator.cpython-311.pyc
     |           entity_generator.cpython-311.pyc
     |           __init__.cpython-311.pyc
     |           
@@ -90,23 +287,50 @@ C:.
     |       
     +---models
     |   |   cross_attention.py
+    |   |   gating.py
+    |   |   oracle.py
+    |   |   profile_scorer.py
     |   |   scoring_matrix.py
     |   |   __init__.py
     |   |   
     |   \---__pycache__
     |           cross_attention.cpython-311.pyc
+    |           gating.cpython-311.pyc
+    |           oracle.cpython-311.pyc
+    |           profile_scorer.cpython-311.pyc
     |           scoring_matrix.cpython-311.pyc
     |           __init__.cpython-311.pyc
     |           
     +---viz
-    |       exp1_blog_chart.py
-    |       exp1_charts.py
-    |       exp2_charts.py
-    |       exp3_blog_chart.py
-    |       exp3_charts.py
-    |       exp4_charts.py
-    |       __init__.py
-    |       
+    |   |   bridge_common.py
+    |   |   exp1_blog_chart.py
+    |   |   exp1_charts.py
+    |   |   exp2_charts.py
+    |   |   exp3_blog_chart.py
+    |   |   exp3_charts.py
+    |   |   exp4_charts.py
+    |   |   exp5_charts.py
+    |   |   expA_charts.py
+    |   |   expB1_charts.py
+    |   |   expC1_charts.py
+    |   |   expD1_charts.py
+    |   |   expD2_charts.py
+    |   |   expE1_charts.py
+    |   |   expE2_charts.py
+    |   |   __init__.py
+    |   |   
+    |   \---__pycache__
+    |           bridge_common.cpython-311.pyc
+    |           exp5_charts.cpython-311.pyc
+    |           expA_charts.cpython-311.pyc
+    |           expB1_charts.cpython-311.pyc
+    |           expC1_charts.cpython-311.pyc
+    |           expD1_charts.cpython-311.pyc
+    |           expD2_charts.cpython-311.pyc
+    |           expE1_charts.cpython-311.pyc
+    |           expE2_charts.cpython-311.pyc
+    |           __init__.cpython-311.pyc
+    |           
     \---__pycache__
             __init__.cpython-311.pyc
             

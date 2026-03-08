@@ -22,3 +22,4 @@ Thumbs.db
 # Keep paper figures in git
 !paper_figures/*.pdf
 !paper_figures/*.png
+.env

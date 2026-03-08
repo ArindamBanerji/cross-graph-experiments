@@ -1,0 +1,219 @@
+{
+  "experiment": "FX-T5-BREAKDOWN",
+  "n_seeds": 50,
+  "n_alerts": 2000,
+  "tau": 0.1,
+  "mode": "combined",
+  "auto_approve_threshold": 0.9,
+  "cost_ratio": 20.0,
+  "total_band_decisions": 11502,
+  "mean_band_per_seed": 230.04,
+  "q1_action_distribution": {
+    "escalate": {
+      "count": 23,
+      "pct_band": 0.002
+    },
+    "investigate": {
+      "count": 1010,
+      "pct_band": 0.087811
+    },
+    "suppress": {
+      "count": 3463,
+      "pct_band": 0.301078
+    },
+    "monitor": {
+      "count": 7006,
+      "pct_band": 0.609111
+    }
+  },
+  "q2_per_action_accuracy": {
+    "escalate": {
+      "count": 23,
+      "pct_band": 0.002,
+      "accuracy": 1.0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "investigate": {
+      "count": 1010,
+      "pct_band": 0.087811,
+      "accuracy": 0.921807,
+      "ci_lo": 0.907809,
+      "ci_hi": 0.935364
+    },
+    "suppress": {
+      "count": 3463,
+      "pct_band": 0.301078,
+      "accuracy": 0.998617,
+      "ci_lo": 0.99733,
+      "ci_hi": 0.999697
+    },
+    "monitor": {
+      "count": 7006,
+      "pct_band": 0.609111,
+      "accuracy": 0.859454,
+      "ci_lo": 0.851034,
+      "ci_hi": 0.867452
+    }
+  },
+  "q3_error_direction": {
+    "total_errors": 1073,
+    "dangerous": 234,
+    "safe": 819,
+    "over_escalation": 20,
+    "dangerous_error_rate": 0.02034429,
+    "dangerous_pct_of_errors": 0.21808,
+    "dangerous_by_category": {
+      "travel_anomaly": 7,
+      "credential_access": 2,
+      "threat_intel_match": 145,
+      "insider_behavioral": 0,
+      "cloud_infrastructure": 80
+    }
+  },
+  "cost_analysis": {
+    "correct_decisions": 10429,
+    "dangerous_errors": 234,
+    "other_errors": 839,
+    "cost_weighted_score": 4910.0,
+    "cost_weighted_acc": 0.426882,
+    "nominal_acc": 0.906712
+  },
+  "recommended_thresholds": {
+    "escalate": 0.9,
+    "investigate": 0.9,
+    "suppress": 0.9,
+    "monitor": "insufficient_data"
+  },
+  "threshold_scan": {
+    "escalate": {
+      "0.9": {
+        "acc": 1.0,
+        "count": 23,
+        "coverage": 1.0
+      },
+      "0.92": {
+        "acc": 1.0,
+        "count": 3,
+        "coverage": NaN
+      },
+      "0.94": {
+        "acc": 1.0,
+        "count": 1,
+        "coverage": NaN
+      },
+      "0.96": {
+        "acc": NaN,
+        "count": 0,
+        "coverage": NaN
+      },
+      "0.98": {
+        "acc": NaN,
+        "count": 0,
+        "coverage": NaN
+      },
+      "0.99": {
+        "acc": NaN,
+        "count": 0,
+        "coverage": NaN
+      }
+    },
+    "investigate": {
+      "0.9": {
+        "acc": 0.919802,
+        "count": 1010,
+        "coverage": 1.0
+      },
+      "0.92": {
+        "acc": 0.951338,
+        "count": 411,
+        "coverage": NaN
+      },
+      "0.94": {
+        "acc": 0.966102,
+        "count": 59,
+        "coverage": NaN
+      },
+      "0.96": {
+        "acc": NaN,
+        "count": 0,
+        "coverage": NaN
+      },
+      "0.98": {
+        "acc": NaN,
+        "count": 0,
+        "coverage": NaN
+      },
+      "0.99": {
+        "acc": NaN,
+        "count": 0,
+        "coverage": NaN
+      }
+    },
+    "suppress": {
+      "0.9": {
+        "acc": 0.998556,
+        "count": 3463,
+        "coverage": 1.0
+      },
+      "0.92": {
+        "acc": 0.998804,
+        "count": 2509,
+        "coverage": NaN
+      },
+      "0.94": {
+        "acc": 0.998119,
+        "count": 1595,
+        "coverage": NaN
+      },
+      "0.96": {
+        "acc": 0.998715,
+        "count": 778,
+        "coverage": NaN
+      },
+      "0.98": {
+        "acc": 1.0,
+        "count": 204,
+        "coverage": NaN
+      },
+      "0.99": {
+        "acc": 1.0,
+        "count": 20,
+        "coverage": NaN
+      }
+    },
+    "monitor": {
+      "0.9": {
+        "acc": 0.859121,
+        "count": 7006,
+        "coverage": 1.0
+      },
+      "0.92": {
+        "acc": 0.882649,
+        "count": 4576,
+        "coverage": 0.653154
+      },
+      "0.94": {
+        "acc": 0.917899,
+        "count": 2570,
+        "coverage": 0.366828
+      },
+      "0.96": {
+        "acc": 0.941655,
+        "count": 737,
+        "coverage": 0.105196
+      },
+      "0.98": {
+        "acc": NaN,
+        "count": 0,
+        "coverage": 0.0
+      },
+      "0.99": {
+        "acc": NaN,
+        "count": 0,
+        "coverage": NaN
+      }
+    }
+  },
+  "design_verdict": "C"
+}

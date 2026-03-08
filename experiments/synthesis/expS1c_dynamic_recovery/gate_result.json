@@ -1,0 +1,9 @@
+{
+  "gate": "S1c",
+  "pass": false,
+  "best_result": null,
+  "interpretation": "sigma (all lambdas) does not accelerate cold-start recovery by >=50 decisions at p<0.05. Combined with EXP-S1 and EXP-S1b: sigma's benefit is in confidence shaping and briefing display, not raw accuracy or recovery speed.",
+  "s1_finding": "warm_start_ceiling",
+  "s1b_finding": "degraded_no_improvement",
+  "s1c_finding": "sigma_no_loop2_benefit"
+}

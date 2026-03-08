@@ -1,0 +1,3472 @@
+{
+  "experiment": "EXP-S1b",
+  "design": "degraded_profiles",
+  "conditions": [
+    "cold_start",
+    "noise_50pct",
+    "noise_25pct",
+    "warm_start"
+  ],
+  "per_condition": {
+    "cold_start": {
+      "lambda_0.000": [
+        {
+          "accuracy": 21.4,
+          "ece": 0.6734604101276054,
+          "per_category_accuracy": {
+            "credential_access": 14.285714285714285,
+            "threat_intel_match": 35.714285714285715,
+            "lateral_movement": 10.576923076923077,
+            "data_exfiltration": 45.794392523364486,
+            "insider_threat": 1.0752688172043012
+          }
+        },
+        {
+          "accuracy": 30.2,
+          "ece": 0.5432979570988308,
+          "per_category_accuracy": {
+            "credential_access": 38.70967741935484,
+            "threat_intel_match": 31.775700934579437,
+            "lateral_movement": 66.0,
+            "data_exfiltration": 15.306122448979592,
+            "insider_threat": 0.0
+          }
+        },
+        {
+          "accuracy": 51.800000000000004,
+          "ece": 0.2910454666677631,
+          "per_category_accuracy": {
+            "credential_access": 29.78723404255319,
+            "threat_intel_match": 60.0,
+            "lateral_movement": 80.18867924528303,
+            "data_exfiltration": 29.78723404255319,
+            "insider_threat": 54.166666666666664
+          }
+        },
+        {
+          "accuracy": 24.4,
+          "ece": 0.6214430236796955,
+          "per_category_accuracy": {
+            "credential_access": 11.818181818181818,
+            "threat_intel_match": 46.788990825688074,
+            "lateral_movement": 23.300970873786408,
+            "data_exfiltration": 30.952380952380953,
+            "insider_threat": 8.51063829787234
+          }
+        },
+        {
+          "accuracy": 33.4,
+          "ece": 0.44418924168621754,
+          "per_category_accuracy": {
+            "credential_access": 60.0,
+            "threat_intel_match": 3.0,
+            "lateral_movement": 25.862068965517242,
+            "data_exfiltration": 34.090909090909086,
+            "insider_threat": 45.05494505494506
+          }
+        },
+        {
+          "accuracy": 25.4,
+          "ece": 0.5665183722198784,
+          "per_category_accuracy": {
+            "credential_access": 13.793103448275861,
+            "threat_intel_match": 29.411764705882355,
+            "lateral_movement": 16.9811320754717,
+            "data_exfiltration": 1.9607843137254901,
+            "insider_threat": 63.10679611650486
+          }
+        },
+        {
+          "accuracy": 36.6,
+          "ece": 0.4773673365758394,
+          "per_category_accuracy": {
+            "credential_access": 10.377358490566039,
+            "threat_intel_match": 40.0,
+            "lateral_movement": 51.0,
+            "data_exfiltration": 67.85714285714286,
+            "insider_threat": 20.952380952380953
+          }
+        },
+        {
+          "accuracy": 23.599999999999998,
+          "ece": 0.5811646143644741,
+          "per_category_accuracy": {
+            "credential_access": 12.62135922330097,
+            "threat_intel_match": 68.42105263157895,
+            "lateral_movement": 6.741573033707865,
+            "data_exfiltration": 13.26530612244898,
+            "insider_threat": 18.26086956521739
+          }
+        },
+        {
+          "accuracy": 26.400000000000002,
+          "ece": 0.5807750387211916,
+          "per_category_accuracy": {
+            "credential_access": 33.33333333333333,
+            "threat_intel_match": 3.296703296703297,
+            "lateral_movement": 12.962962962962962,
+            "data_exfiltration": 61.53846153846154,
+            "insider_threat": 22.857142857142858
+          }
+        },
+        {
+          "accuracy": 14.6,
+          "ece": 0.6872429621151182,
+          "per_category_accuracy": {
+            "credential_access": 9.00900900900901,
+            "threat_intel_match": 0.0,
+            "lateral_movement": 13.725490196078432,
+            "data_exfiltration": 19.801980198019802,
+            "insider_threat": 27.102803738317753
+          }
+        }
+      ],
+      "lambda_0.050": [
+        {
+          "accuracy": 21.4,
+          "ece": 0.6730253067871275,
+          "per_category_accuracy": {
+            "credential_access": 14.285714285714285,
+            "threat_intel_match": 35.714285714285715,
+            "lateral_movement": 10.576923076923077,
+            "data_exfiltration": 45.794392523364486,
+            "insider_threat": 1.0752688172043012
+          }
+        },
+        {
+          "accuracy": 30.4,
+          "ece": 0.5413431509149274,
+          "per_category_accuracy": {
+            "credential_access": 39.784946236559136,
+            "threat_intel_match": 31.775700934579437,
+            "lateral_movement": 66.0,
+            "data_exfiltration": 15.306122448979592,
+            "insider_threat": 0.0
+          }
+        },
+        {
+          "accuracy": 51.800000000000004,
+          "ece": 0.29019619806302066,
+          "per_category_accuracy": {
+            "credential_access": 29.78723404255319,
+            "threat_intel_match": 60.0,
+            "lateral_movement": 80.18867924528303,
+            "data_exfiltration": 29.78723404255319,
+            "insider_threat": 54.166666666666664
+          }
+        },
+        {
+          "accuracy": 24.6,
+          "ece": 0.619145220297828,
+          "per_category_accuracy": {
+            "credential_access": 12.727272727272727,
+            "threat_intel_match": 46.788990825688074,
+            "lateral_movement": 23.300970873786408,
+            "data_exfiltration": 30.952380952380953,
+            "insider_threat": 8.51063829787234
+          }
+        },
+        {
+          "accuracy": 33.4,
+          "ece": 0.44392190541988513,
+          "per_category_accuracy": {
+            "credential_access": 60.0,
+            "threat_intel_match": 3.0,
+            "lateral_movement": 25.862068965517242,
+            "data_exfiltration": 34.090909090909086,
+            "insider_threat": 45.05494505494506
+          }
+        },
+        {
+          "accuracy": 25.2,
+          "ece": 0.5653615360663592,
+          "per_category_accuracy": {
+            "credential_access": 13.793103448275861,
+            "threat_intel_match": 28.431372549019606,
+            "lateral_movement": 16.9811320754717,
+            "data_exfiltration": 1.9607843137254901,
+            "insider_threat": 63.10679611650486
+          }
+        },
+        {
+          "accuracy": 36.6,
+          "ece": 0.47723923516870126,
+          "per_category_accuracy": {
+            "credential_access": 10.377358490566039,
+            "threat_intel_match": 40.0,
+            "lateral_movement": 51.0,
+            "data_exfiltration": 67.85714285714286,
+            "insider_threat": 20.952380952380953
+          }
+        },
+        {
+          "accuracy": 23.599999999999998,
+          "ece": 0.5807870319955084,
+          "per_category_accuracy": {
+            "credential_access": 12.62135922330097,
+            "threat_intel_match": 68.42105263157895,
+            "lateral_movement": 6.741573033707865,
+            "data_exfiltration": 13.26530612244898,
+            "insider_threat": 18.26086956521739
+          }
+        },
+        {
+          "accuracy": 26.200000000000003,
+          "ece": 0.5827358208017193,
+          "per_category_accuracy": {
+            "credential_access": 33.33333333333333,
+            "threat_intel_match": 3.296703296703297,
+            "lateral_movement": 12.962962962962962,
+            "data_exfiltration": 61.53846153846154,
+            "insider_threat": 21.904761904761905
+          }
+        },
+        {
+          "accuracy": 14.6,
+          "ece": 0.6873835003050015,
+          "per_category_accuracy": {
+            "credential_access": 9.00900900900901,
+            "threat_intel_match": 0.0,
+            "lateral_movement": 13.725490196078432,
+            "data_exfiltration": 19.801980198019802,
+            "insider_threat": 27.102803738317753
+          }
+        }
+      ],
+      "lambda_0.100": [
+        {
+          "accuracy": 21.0,
+          "ece": 0.6756214670081131,
+          "per_category_accuracy": {
+            "credential_access": 14.285714285714285,
+            "threat_intel_match": 35.714285714285715,
+            "lateral_movement": 10.576923076923077,
+            "data_exfiltration": 44.85981308411215,
+            "insider_threat": 0.0
+          }
+        },
+        {
+          "accuracy": 31.0,
+          "ece": 0.5359525096569707,
+          "per_category_accuracy": {
+            "credential_access": 43.01075268817204,
+            "threat_intel_match": 31.775700934579437,
+            "lateral_movement": 66.0,
+            "data_exfiltration": 15.306122448979592,
+            "insider_threat": 0.0
+          }
+        },
+        {
+          "accuracy": 51.4,
+          "ece": 0.2914615795130632,
+          "per_category_accuracy": {
+            "credential_access": 28.723404255319153,
+            "threat_intel_match": 59.09090909090909,
+            "lateral_movement": 80.18867924528303,
+            "data_exfiltration": 29.78723404255319,
+            "insider_threat": 54.166666666666664
+          }
+        },
+        {
+          "accuracy": 24.6,
+          "ece": 0.6180190981695217,
+          "per_category_accuracy": {
+            "credential_access": 13.636363636363635,
+            "threat_intel_match": 46.788990825688074,
+            "lateral_movement": 22.330097087378643,
+            "data_exfiltration": 30.952380952380953,
+            "insider_threat": 8.51063829787234
+          }
+        },
+        {
+          "accuracy": 33.0,
+          "ece": 0.4467918970727463,
+          "per_category_accuracy": {
+            "credential_access": 60.0,
+            "threat_intel_match": 3.0,
+            "lateral_movement": 25.0,
+            "data_exfiltration": 32.95454545454545,
+            "insider_threat": 45.05494505494506
+          }
+        },
+        {
+          "accuracy": 25.2,
+          "ece": 0.5693640638669346,
+          "per_category_accuracy": {
+            "credential_access": 13.793103448275861,
+            "threat_intel_match": 28.431372549019606,
+            "lateral_movement": 16.9811320754717,
+            "data_exfiltration": 1.9607843137254901,
+            "insider_threat": 63.10679611650486
+          }
+        },
+        {
+          "accuracy": 36.199999999999996,
+          "ece": 0.4807991476270289,
+          "per_category_accuracy": {
+            "credential_access": 10.377358490566039,
+            "threat_intel_match": 40.0,
+            "lateral_movement": 50.0,
+            "data_exfiltration": 66.66666666666666,
+            "insider_threat": 20.952380952380953
+          }
+        },
+        {
+          "accuracy": 23.200000000000003,
+          "ece": 0.5835566090685299,
+          "per_category_accuracy": {
+            "credential_access": 11.650485436893204,
+            "threat_intel_match": 68.42105263157895,
+            "lateral_movement": 6.741573033707865,
+            "data_exfiltration": 13.26530612244898,
+            "insider_threat": 17.391304347826086
+          }
+        },
+        {
+          "accuracy": 25.4,
+          "ece": 0.5916939429128891,
+          "per_category_accuracy": {
+            "credential_access": 33.33333333333333,
+            "threat_intel_match": 2.197802197802198,
+            "lateral_movement": 12.962962962962962,
+            "data_exfiltration": 61.53846153846154,
+            "insider_threat": 19.047619047619047
+          }
+        },
+        {
+          "accuracy": 14.000000000000002,
+          "ece": 0.6938626274191013,
+          "per_category_accuracy": {
+            "credential_access": 9.00900900900901,
+            "threat_intel_match": 0.0,
+            "lateral_movement": 13.725490196078432,
+            "data_exfiltration": 17.82178217821782,
+            "insider_threat": 26.168224299065418
+          }
+        }
+      ],
+      "lambda_0.200": [
+        {
+          "accuracy": 20.4,
+          "ece": 0.6765192432108015,
+          "per_category_accuracy": {
+            "credential_access": 15.178571428571427,
+            "threat_intel_match": 35.714285714285715,
+            "lateral_movement": 10.576923076923077,
+            "data_exfiltration": 41.1214953271028,
+            "insider_threat": 0.0
+          }
+        },
+        {
+          "accuracy": 32.2,
+          "ece": 0.5302139039599858,
+          "per_category_accuracy": {
+            "credential_access": 54.83870967741935,
+            "threat_intel_match": 28.971962616822427,
+            "lateral_movement": 64.0,
+            "data_exfiltration": 15.306122448979592,
+            "insider_threat": 0.0
+          }
+        },
+        {
+          "accuracy": 50.8,
+          "ece": 0.29243244548914765,
+          "per_category_accuracy": {
+            "credential_access": 27.659574468085108,
+            "threat_intel_match": 58.18181818181818,
+            "lateral_movement": 79.24528301886792,
+            "data_exfiltration": 29.78723404255319,
+            "insider_threat": 54.166666666666664
+          }
+        },
+        {
+          "accuracy": 25.4,
+          "ece": 0.6065062952703654,
+          "per_category_accuracy": {
+            "credential_access": 21.818181818181817,
+            "threat_intel_match": 47.706422018348626,
+            "lateral_movement": 19.41747572815534,
+            "data_exfiltration": 27.380952380952383,
+            "insider_threat": 8.51063829787234
+          }
+        },
+        {
+          "accuracy": 32.6,
+          "ece": 0.44862042963737453,
+          "per_category_accuracy": {
+            "credential_access": 63.8095238095238,
+            "threat_intel_match": 2.0,
+            "lateral_movement": 25.0,
+            "data_exfiltration": 28.40909090909091,
+            "insider_threat": 43.956043956043956
+          }
+        },
+        {
+          "accuracy": 25.0,
+          "ece": 0.5835504998661682,
+          "per_category_accuracy": {
+            "credential_access": 13.793103448275861,
+            "threat_intel_match": 28.431372549019606,
+            "lateral_movement": 16.9811320754717,
+            "data_exfiltration": 1.9607843137254901,
+            "insider_threat": 62.13592233009708
+          }
+        },
+        {
+          "accuracy": 35.8,
+          "ece": 0.48448573255239546,
+          "per_category_accuracy": {
+            "credential_access": 10.377358490566039,
+            "threat_intel_match": 37.142857142857146,
+            "lateral_movement": 50.0,
+            "data_exfiltration": 67.85714285714286,
+            "insider_threat": 20.952380952380953
+          }
+        },
+        {
+          "accuracy": 22.2,
+          "ece": 0.5879816464796451,
+          "per_category_accuracy": {
+            "credential_access": 10.679611650485436,
+            "threat_intel_match": 67.36842105263158,
+            "lateral_movement": 5.617977528089887,
+            "data_exfiltration": 13.26530612244898,
+            "insider_threat": 15.65217391304348
+          }
+        },
+        {
+          "accuracy": 24.0,
+          "ece": 0.6108184508817454,
+          "per_category_accuracy": {
+            "credential_access": 35.23809523809524,
+            "threat_intel_match": 1.098901098901099,
+            "lateral_movement": 12.962962962962962,
+            "data_exfiltration": 61.53846153846154,
+            "insider_threat": 11.428571428571429
+          }
+        },
+        {
+          "accuracy": 13.200000000000001,
+          "ece": 0.703344064065225,
+          "per_category_accuracy": {
+            "credential_access": 9.00900900900901,
+            "threat_intel_match": 0.0,
+            "lateral_movement": 13.725490196078432,
+            "data_exfiltration": 13.861386138613863,
+            "insider_threat": 26.168224299065418
+          }
+        }
+      ],
+      "lambda_0.300": [
+        {
+          "accuracy": 19.6,
+          "ece": 0.670371290258055,
+          "per_category_accuracy": {
+            "credential_access": 16.964285714285715,
+            "threat_intel_match": 33.33333333333333,
+            "lateral_movement": 11.538461538461538,
+            "data_exfiltration": 35.51401869158878,
+            "insider_threat": 1.0752688172043012
+          }
+        },
+        {
+          "accuracy": 33.6,
+          "ece": 0.5342955583369527,
+          "per_category_accuracy": {
+            "credential_access": 63.44086021505376,
+            "threat_intel_match": 28.971962616822427,
+            "lateral_movement": 63.0,
+            "data_exfiltration": 15.306122448979592,
+            "insider_threat": 0.0
+          }
+        },
+        {
+          "accuracy": 50.0,
+          "ece": 0.2733359221290959,
+          "per_category_accuracy": {
+            "credential_access": 29.78723404255319,
+            "threat_intel_match": 52.72727272727272,
+            "lateral_movement": 78.30188679245283,
+            "data_exfiltration": 29.78723404255319,
+            "insider_threat": 55.208333333333336
+          }
+        },
+        {
+          "accuracy": 26.6,
+          "ece": 0.5916016066119989,
+          "per_category_accuracy": {
+            "credential_access": 33.63636363636363,
+            "threat_intel_match": 48.62385321100918,
+            "lateral_movement": 15.53398058252427,
+            "data_exfiltration": 23.809523809523807,
+            "insider_threat": 7.446808510638298
+          }
+        },
+        {
+          "accuracy": 29.2,
+          "ece": 0.49774858979902786,
+          "per_category_accuracy": {
+            "credential_access": 65.71428571428571,
+            "threat_intel_match": 1.0,
+            "lateral_movement": 20.689655172413794,
+            "data_exfiltration": 15.909090909090908,
+            "insider_threat": 41.75824175824176
+          }
+        },
+        {
+          "accuracy": 24.0,
+          "ece": 0.6004458953566694,
+          "per_category_accuracy": {
+            "credential_access": 13.793103448275861,
+            "threat_intel_match": 25.49019607843137,
+            "lateral_movement": 16.9811320754717,
+            "data_exfiltration": 2.941176470588235,
+            "insider_threat": 59.22330097087378
+          }
+        },
+        {
+          "accuracy": 34.8,
+          "ece": 0.4916500597863651,
+          "per_category_accuracy": {
+            "credential_access": 9.433962264150944,
+            "threat_intel_match": 37.142857142857146,
+            "lateral_movement": 47.0,
+            "data_exfiltration": 66.66666666666666,
+            "insider_threat": 20.952380952380953
+          }
+        },
+        {
+          "accuracy": 19.2,
+          "ece": 0.6145304296935894,
+          "per_category_accuracy": {
+            "credential_access": 7.766990291262135,
+            "threat_intel_match": 66.3157894736842,
+            "lateral_movement": 3.3707865168539324,
+            "data_exfiltration": 14.285714285714285,
+            "insider_threat": 6.956521739130435
+          }
+        },
+        {
+          "accuracy": 22.0,
+          "ece": 0.6400203240284892,
+          "per_category_accuracy": {
+            "credential_access": 35.23809523809524,
+            "threat_intel_match": 0.0,
+            "lateral_movement": 12.962962962962962,
+            "data_exfiltration": 61.53846153846154,
+            "insider_threat": 2.857142857142857
+          }
+        },
+        {
+          "accuracy": 13.200000000000001,
+          "ece": 0.7042975337254362,
+          "per_category_accuracy": {
+            "credential_access": 14.414414414414415,
+            "threat_intel_match": 3.79746835443038,
+            "lateral_movement": 9.803921568627452,
+            "data_exfiltration": 10.891089108910892,
+            "insider_threat": 24.299065420560748
+          }
+        }
+      ],
+      "lambda_0.500": [
+        {
+          "accuracy": 23.400000000000002,
+          "ece": 0.6274368606017471,
+          "per_category_accuracy": {
+            "credential_access": 44.642857142857146,
+            "threat_intel_match": 29.761904761904763,
+            "lateral_movement": 11.538461538461538,
+            "data_exfiltration": 22.429906542056074,
+            "insider_threat": 6.451612903225806
+          }
+        },
+        {
+          "accuracy": 33.0,
+          "ece": 0.5612053728053767,
+          "per_category_accuracy": {
+            "credential_access": 67.74193548387096,
+            "threat_intel_match": 26.168224299065418,
+            "lateral_movement": 60.0,
+            "data_exfiltration": 14.285714285714285,
+            "insider_threat": 0.0
+          }
+        },
+        {
+          "accuracy": 44.4,
+          "ece": 0.35005248375235976,
+          "per_category_accuracy": {
+            "credential_access": 45.744680851063826,
+            "threat_intel_match": 40.0,
+            "lateral_movement": 70.75471698113208,
+            "data_exfiltration": 22.340425531914892,
+            "insider_threat": 40.625
+          }
+        },
+        {
+          "accuracy": 27.400000000000002,
+          "ece": 0.6041134372537389,
+          "per_category_accuracy": {
+            "credential_access": 52.72727272727272,
+            "threat_intel_match": 52.293577981651374,
+            "lateral_movement": 8.737864077669903,
+            "data_exfiltration": 10.714285714285714,
+            "insider_threat": 4.25531914893617
+          }
+        },
+        {
+          "accuracy": 25.0,
+          "ece": 0.5893791175885661,
+          "per_category_accuracy": {
+            "credential_access": 68.57142857142857,
+            "threat_intel_match": 1.0,
+            "lateral_movement": 13.793103448275861,
+            "data_exfiltration": 3.4090909090909087,
+            "insider_threat": 36.26373626373626
+          }
+        },
+        {
+          "accuracy": 24.0,
+          "ece": 0.6193296434039676,
+          "per_category_accuracy": {
+            "credential_access": 13.793103448275861,
+            "threat_intel_match": 25.49019607843137,
+            "lateral_movement": 16.9811320754717,
+            "data_exfiltration": 5.88235294117647,
+            "insider_threat": 56.310679611650485
+          }
+        },
+        {
+          "accuracy": 30.0,
+          "ece": 0.535228593864598,
+          "per_category_accuracy": {
+            "credential_access": 8.49056603773585,
+            "threat_intel_match": 26.666666666666668,
+            "lateral_movement": 41.0,
+            "data_exfiltration": 59.523809523809526,
+            "insider_threat": 20.952380952380953
+          }
+        },
+        {
+          "accuracy": 16.2,
+          "ece": 0.677808835994799,
+          "per_category_accuracy": {
+            "credential_access": 0.9708737864077669,
+            "threat_intel_match": 68.42105263157895,
+            "lateral_movement": 0.0,
+            "data_exfiltration": 15.306122448979592,
+            "insider_threat": 0.0
+          }
+        },
+        {
+          "accuracy": 22.400000000000002,
+          "ece": 0.6404948669894188,
+          "per_category_accuracy": {
+            "credential_access": 40.0,
+            "threat_intel_match": 1.098901098901099,
+            "lateral_movement": 12.962962962962962,
+            "data_exfiltration": 60.43956043956044,
+            "insider_threat": 0.0
+          }
+        },
+        {
+          "accuracy": 17.599999999999998,
+          "ece": 0.6756512744750407,
+          "per_category_accuracy": {
+            "credential_access": 45.94594594594595,
+            "threat_intel_match": 7.59493670886076,
+            "lateral_movement": 5.88235294117647,
+            "data_exfiltration": 1.9801980198019802,
+            "insider_threat": 21.49532710280374
+          }
+        }
+      ]
+    },
+    "noise_50pct": {
+      "lambda_0.000": [
+        {
+          "accuracy": 53.2,
+          "ece": 0.3941984658863471,
+          "per_category_accuracy": {
+            "credential_access": 20.535714285714285,
+            "threat_intel_match": 70.23809523809523,
+            "lateral_movement": 85.57692307692307,
+            "data_exfiltration": 57.943925233644855,
+            "insider_threat": 35.483870967741936
+          }
+        },
+        {
+          "accuracy": 66.60000000000001,
+          "ece": 0.22884046959665996,
+          "per_category_accuracy": {
+            "credential_access": 72.04301075268818,
+            "threat_intel_match": 81.30841121495327,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 58.16326530612245,
+            "insider_threat": 53.92156862745098
+          }
+        },
+        {
+          "accuracy": 81.6,
+          "ece": 0.12211678846561333,
+          "per_category_accuracy": {
+            "credential_access": 77.6595744680851,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 73.58490566037736,
+            "data_exfiltration": 85.1063829787234,
+            "insider_threat": 69.79166666666666
+          }
+        },
+        {
+          "accuracy": 64.8,
+          "ece": 0.22816437719463628,
+          "per_category_accuracy": {
+            "credential_access": 70.0,
+            "threat_intel_match": 55.04587155963303,
+            "lateral_movement": 85.43689320388349,
+            "data_exfiltration": 64.28571428571429,
+            "insider_threat": 47.87234042553192
+          }
+        },
+        {
+          "accuracy": 55.400000000000006,
+          "ece": 0.3558974789395234,
+          "per_category_accuracy": {
+            "credential_access": 80.95238095238095,
+            "threat_intel_match": 56.00000000000001,
+            "lateral_movement": 47.41379310344828,
+            "data_exfiltration": 18.181818181818183,
+            "insider_threat": 71.42857142857143
+          }
+        },
+        {
+          "accuracy": 62.4,
+          "ece": 0.26806163197079175,
+          "per_category_accuracy": {
+            "credential_access": 83.9080459770115,
+            "threat_intel_match": 47.05882352941176,
+            "lateral_movement": 58.490566037735846,
+            "data_exfiltration": 54.90196078431373,
+            "insider_threat": 70.87378640776699
+          }
+        },
+        {
+          "accuracy": 59.8,
+          "ece": 0.2924859162485889,
+          "per_category_accuracy": {
+            "credential_access": 82.0754716981132,
+            "threat_intel_match": 46.666666666666664,
+            "lateral_movement": 69.0,
+            "data_exfiltration": 34.523809523809526,
+            "insider_threat": 61.904761904761905
+          }
+        },
+        {
+          "accuracy": 37.6,
+          "ece": 0.509909067761557,
+          "per_category_accuracy": {
+            "credential_access": 34.95145631067961,
+            "threat_intel_match": 66.3157894736842,
+            "lateral_movement": 29.213483146067414,
+            "data_exfiltration": 13.26530612244898,
+            "insider_threat": 43.47826086956522
+          }
+        },
+        {
+          "accuracy": 64.8,
+          "ece": 0.2522372880532337,
+          "per_category_accuracy": {
+            "credential_access": 52.38095238095239,
+            "threat_intel_match": 94.5054945054945,
+            "lateral_movement": 70.37037037037037,
+            "data_exfiltration": 56.043956043956044,
+            "insider_threat": 53.333333333333336
+          }
+        },
+        {
+          "accuracy": 55.00000000000001,
+          "ece": 0.2915708731770172,
+          "per_category_accuracy": {
+            "credential_access": 63.06306306306306,
+            "threat_intel_match": 46.835443037974684,
+            "lateral_movement": 50.98039215686274,
+            "data_exfiltration": 47.524752475247524,
+            "insider_threat": 63.55140186915887
+          }
+        }
+      ],
+      "lambda_0.050": [
+        {
+          "accuracy": 53.2,
+          "ece": 0.39431437747443293,
+          "per_category_accuracy": {
+            "credential_access": 20.535714285714285,
+            "threat_intel_match": 70.23809523809523,
+            "lateral_movement": 85.57692307692307,
+            "data_exfiltration": 57.943925233644855,
+            "insider_threat": 35.483870967741936
+          }
+        },
+        {
+          "accuracy": 66.60000000000001,
+          "ece": 0.22786745399839803,
+          "per_category_accuracy": {
+            "credential_access": 72.04301075268818,
+            "threat_intel_match": 81.30841121495327,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 58.16326530612245,
+            "insider_threat": 53.92156862745098
+          }
+        },
+        {
+          "accuracy": 81.6,
+          "ece": 0.12215663224272623,
+          "per_category_accuracy": {
+            "credential_access": 77.6595744680851,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 73.58490566037736,
+            "data_exfiltration": 85.1063829787234,
+            "insider_threat": 69.79166666666666
+          }
+        },
+        {
+          "accuracy": 64.60000000000001,
+          "ece": 0.22910130112049118,
+          "per_category_accuracy": {
+            "credential_access": 70.0,
+            "threat_intel_match": 54.12844036697248,
+            "lateral_movement": 85.43689320388349,
+            "data_exfiltration": 64.28571428571429,
+            "insider_threat": 47.87234042553192
+          }
+        },
+        {
+          "accuracy": 55.400000000000006,
+          "ece": 0.3558428764999161,
+          "per_category_accuracy": {
+            "credential_access": 80.95238095238095,
+            "threat_intel_match": 56.00000000000001,
+            "lateral_movement": 47.41379310344828,
+            "data_exfiltration": 18.181818181818183,
+            "insider_threat": 71.42857142857143
+          }
+        },
+        {
+          "accuracy": 62.4,
+          "ece": 0.26789654309696154,
+          "per_category_accuracy": {
+            "credential_access": 83.9080459770115,
+            "threat_intel_match": 47.05882352941176,
+            "lateral_movement": 58.490566037735846,
+            "data_exfiltration": 54.90196078431373,
+            "insider_threat": 70.87378640776699
+          }
+        },
+        {
+          "accuracy": 59.8,
+          "ece": 0.2924993978395575,
+          "per_category_accuracy": {
+            "credential_access": 82.0754716981132,
+            "threat_intel_match": 46.666666666666664,
+            "lateral_movement": 69.0,
+            "data_exfiltration": 34.523809523809526,
+            "insider_threat": 61.904761904761905
+          }
+        },
+        {
+          "accuracy": 37.6,
+          "ece": 0.5099509764984536,
+          "per_category_accuracy": {
+            "credential_access": 34.95145631067961,
+            "threat_intel_match": 66.3157894736842,
+            "lateral_movement": 29.213483146067414,
+            "data_exfiltration": 13.26530612244898,
+            "insider_threat": 43.47826086956522
+          }
+        },
+        {
+          "accuracy": 64.8,
+          "ece": 0.2522801800920887,
+          "per_category_accuracy": {
+            "credential_access": 52.38095238095239,
+            "threat_intel_match": 94.5054945054945,
+            "lateral_movement": 70.37037037037037,
+            "data_exfiltration": 56.043956043956044,
+            "insider_threat": 53.333333333333336
+          }
+        },
+        {
+          "accuracy": 55.00000000000001,
+          "ece": 0.2924602283226205,
+          "per_category_accuracy": {
+            "credential_access": 63.06306306306306,
+            "threat_intel_match": 46.835443037974684,
+            "lateral_movement": 50.98039215686274,
+            "data_exfiltration": 47.524752475247524,
+            "insider_threat": 63.55140186915887
+          }
+        }
+      ],
+      "lambda_0.100": [
+        {
+          "accuracy": 53.0,
+          "ece": 0.3959917480904252,
+          "per_category_accuracy": {
+            "credential_access": 20.535714285714285,
+            "threat_intel_match": 69.04761904761905,
+            "lateral_movement": 85.57692307692307,
+            "data_exfiltration": 57.943925233644855,
+            "insider_threat": 35.483870967741936
+          }
+        },
+        {
+          "accuracy": 66.4,
+          "ece": 0.23109315732115168,
+          "per_category_accuracy": {
+            "credential_access": 72.04301075268818,
+            "threat_intel_match": 80.37383177570094,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 58.16326530612245,
+            "insider_threat": 53.92156862745098
+          }
+        },
+        {
+          "accuracy": 81.8,
+          "ece": 0.12028877083700495,
+          "per_category_accuracy": {
+            "credential_access": 78.72340425531915,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 73.58490566037736,
+            "data_exfiltration": 85.1063829787234,
+            "insider_threat": 69.79166666666666
+          }
+        },
+        {
+          "accuracy": 64.4,
+          "ece": 0.23125597220895844,
+          "per_category_accuracy": {
+            "credential_access": 70.0,
+            "threat_intel_match": 54.12844036697248,
+            "lateral_movement": 84.46601941747572,
+            "data_exfiltration": 64.28571428571429,
+            "insider_threat": 47.87234042553192
+          }
+        },
+        {
+          "accuracy": 55.400000000000006,
+          "ece": 0.3577209791886249,
+          "per_category_accuracy": {
+            "credential_access": 80.95238095238095,
+            "threat_intel_match": 56.99999999999999,
+            "lateral_movement": 47.41379310344828,
+            "data_exfiltration": 18.181818181818183,
+            "insider_threat": 70.32967032967034
+          }
+        },
+        {
+          "accuracy": 62.4,
+          "ece": 0.2674590425657507,
+          "per_category_accuracy": {
+            "credential_access": 83.9080459770115,
+            "threat_intel_match": 47.05882352941176,
+            "lateral_movement": 58.490566037735846,
+            "data_exfiltration": 54.90196078431373,
+            "insider_threat": 70.87378640776699
+          }
+        },
+        {
+          "accuracy": 59.8,
+          "ece": 0.29245984009583476,
+          "per_category_accuracy": {
+            "credential_access": 82.0754716981132,
+            "threat_intel_match": 46.666666666666664,
+            "lateral_movement": 69.0,
+            "data_exfiltration": 34.523809523809526,
+            "insider_threat": 61.904761904761905
+          }
+        },
+        {
+          "accuracy": 37.6,
+          "ece": 0.5099360310857621,
+          "per_category_accuracy": {
+            "credential_access": 34.95145631067961,
+            "threat_intel_match": 66.3157894736842,
+            "lateral_movement": 29.213483146067414,
+            "data_exfiltration": 13.26530612244898,
+            "insider_threat": 43.47826086956522
+          }
+        },
+        {
+          "accuracy": 64.8,
+          "ece": 0.2523713599038276,
+          "per_category_accuracy": {
+            "credential_access": 52.38095238095239,
+            "threat_intel_match": 94.5054945054945,
+            "lateral_movement": 70.37037037037037,
+            "data_exfiltration": 56.043956043956044,
+            "insider_threat": 53.333333333333336
+          }
+        },
+        {
+          "accuracy": 55.2,
+          "ece": 0.29303588445484763,
+          "per_category_accuracy": {
+            "credential_access": 63.96396396396396,
+            "threat_intel_match": 46.835443037974684,
+            "lateral_movement": 50.98039215686274,
+            "data_exfiltration": 47.524752475247524,
+            "insider_threat": 63.55140186915887
+          }
+        }
+      ],
+      "lambda_0.200": [
+        {
+          "accuracy": 52.800000000000004,
+          "ece": 0.39777792538209067,
+          "per_category_accuracy": {
+            "credential_access": 20.535714285714285,
+            "threat_intel_match": 69.04761904761905,
+            "lateral_movement": 85.57692307692307,
+            "data_exfiltration": 57.009345794392516,
+            "insider_threat": 35.483870967741936
+          }
+        },
+        {
+          "accuracy": 66.60000000000001,
+          "ece": 0.226448420261247,
+          "per_category_accuracy": {
+            "credential_access": 70.96774193548387,
+            "threat_intel_match": 82.2429906542056,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 58.16326530612245,
+            "insider_threat": 53.92156862745098
+          }
+        },
+        {
+          "accuracy": 82.0,
+          "ece": 0.11826964808636856,
+          "per_category_accuracy": {
+            "credential_access": 78.72340425531915,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 73.58490566037736,
+            "data_exfiltration": 85.1063829787234,
+            "insider_threat": 70.83333333333334
+          }
+        },
+        {
+          "accuracy": 64.8,
+          "ece": 0.22815791353294423,
+          "per_category_accuracy": {
+            "credential_access": 70.9090909090909,
+            "threat_intel_match": 54.12844036697248,
+            "lateral_movement": 84.46601941747572,
+            "data_exfiltration": 64.28571428571429,
+            "insider_threat": 48.93617021276596
+          }
+        },
+        {
+          "accuracy": 54.0,
+          "ece": 0.3622124992555879,
+          "per_category_accuracy": {
+            "credential_access": 80.0,
+            "threat_intel_match": 55.00000000000001,
+            "lateral_movement": 47.41379310344828,
+            "data_exfiltration": 17.045454545454543,
+            "insider_threat": 67.03296703296702
+          }
+        },
+        {
+          "accuracy": 62.6,
+          "ece": 0.26861886516985717,
+          "per_category_accuracy": {
+            "credential_access": 83.9080459770115,
+            "threat_intel_match": 47.05882352941176,
+            "lateral_movement": 58.490566037735846,
+            "data_exfiltration": 55.88235294117647,
+            "insider_threat": 70.87378640776699
+          }
+        },
+        {
+          "accuracy": 60.0,
+          "ece": 0.2934629894540151,
+          "per_category_accuracy": {
+            "credential_access": 82.0754716981132,
+            "threat_intel_match": 47.61904761904761,
+            "lateral_movement": 69.0,
+            "data_exfiltration": 34.523809523809526,
+            "insider_threat": 61.904761904761905
+          }
+        },
+        {
+          "accuracy": 37.0,
+          "ece": 0.5149893431910982,
+          "per_category_accuracy": {
+            "credential_access": 34.95145631067961,
+            "threat_intel_match": 66.3157894736842,
+            "lateral_movement": 29.213483146067414,
+            "data_exfiltration": 10.204081632653061,
+            "insider_threat": 43.47826086956522
+          }
+        },
+        {
+          "accuracy": 65.2,
+          "ece": 0.24857965538100849,
+          "per_category_accuracy": {
+            "credential_access": 54.285714285714285,
+            "threat_intel_match": 94.5054945054945,
+            "lateral_movement": 70.37037037037037,
+            "data_exfiltration": 56.043956043956044,
+            "insider_threat": 53.333333333333336
+          }
+        },
+        {
+          "accuracy": 55.2,
+          "ece": 0.3027996355973378,
+          "per_category_accuracy": {
+            "credential_access": 63.96396396396396,
+            "threat_intel_match": 46.835443037974684,
+            "lateral_movement": 50.98039215686274,
+            "data_exfiltration": 47.524752475247524,
+            "insider_threat": 63.55140186915887
+          }
+        }
+      ],
+      "lambda_0.300": [
+        {
+          "accuracy": 52.2,
+          "ece": 0.40064177612180457,
+          "per_category_accuracy": {
+            "credential_access": 20.535714285714285,
+            "threat_intel_match": 69.04761904761905,
+            "lateral_movement": 85.57692307692307,
+            "data_exfiltration": 54.20560747663551,
+            "insider_threat": 35.483870967741936
+          }
+        },
+        {
+          "accuracy": 65.8,
+          "ece": 0.23102902040189985,
+          "per_category_accuracy": {
+            "credential_access": 68.81720430107528,
+            "threat_intel_match": 80.37383177570094,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 58.16326530612245,
+            "insider_threat": 53.92156862745098
+          }
+        },
+        {
+          "accuracy": 82.6,
+          "ece": 0.11258263492624311,
+          "per_category_accuracy": {
+            "credential_access": 79.7872340425532,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 75.47169811320755,
+            "data_exfiltration": 85.1063829787234,
+            "insider_threat": 70.83333333333334
+          }
+        },
+        {
+          "accuracy": 63.6,
+          "ece": 0.23709091095592238,
+          "per_category_accuracy": {
+            "credential_access": 70.9090909090909,
+            "threat_intel_match": 55.04587155963303,
+            "lateral_movement": 79.6116504854369,
+            "data_exfiltration": 63.095238095238095,
+            "insider_threat": 47.87234042553192
+          }
+        },
+        {
+          "accuracy": 52.800000000000004,
+          "ece": 0.3706598668179405,
+          "per_category_accuracy": {
+            "credential_access": 80.0,
+            "threat_intel_match": 52.0,
+            "lateral_movement": 47.41379310344828,
+            "data_exfiltration": 13.636363636363635,
+            "insider_threat": 67.03296703296702
+          }
+        },
+        {
+          "accuracy": 62.2,
+          "ece": 0.26433249694936656,
+          "per_category_accuracy": {
+            "credential_access": 83.9080459770115,
+            "threat_intel_match": 45.09803921568628,
+            "lateral_movement": 58.490566037735846,
+            "data_exfiltration": 56.86274509803921,
+            "insider_threat": 69.90291262135922
+          }
+        },
+        {
+          "accuracy": 59.599999999999994,
+          "ece": 0.29055110302444187,
+          "per_category_accuracy": {
+            "credential_access": 82.0754716981132,
+            "threat_intel_match": 48.57142857142857,
+            "lateral_movement": 69.0,
+            "data_exfiltration": 34.523809523809526,
+            "insider_threat": 59.04761904761905
+          }
+        },
+        {
+          "accuracy": 36.4,
+          "ece": 0.5214633118918424,
+          "per_category_accuracy": {
+            "credential_access": 34.95145631067961,
+            "threat_intel_match": 64.21052631578948,
+            "lateral_movement": 29.213483146067414,
+            "data_exfiltration": 7.142857142857142,
+            "insider_threat": 45.21739130434783
+          }
+        },
+        {
+          "accuracy": 65.60000000000001,
+          "ece": 0.24448496178186166,
+          "per_category_accuracy": {
+            "credential_access": 55.23809523809524,
+            "threat_intel_match": 94.5054945054945,
+            "lateral_movement": 70.37037037037037,
+            "data_exfiltration": 56.043956043956044,
+            "insider_threat": 54.285714285714285
+          }
+        },
+        {
+          "accuracy": 54.6,
+          "ece": 0.3194984620102683,
+          "per_category_accuracy": {
+            "credential_access": 62.16216216216216,
+            "threat_intel_match": 45.56962025316456,
+            "lateral_movement": 50.98039215686274,
+            "data_exfiltration": 47.524752475247524,
+            "insider_threat": 63.55140186915887
+          }
+        }
+      ],
+      "lambda_0.500": [
+        {
+          "accuracy": 52.6,
+          "ece": 0.39139474165815646,
+          "per_category_accuracy": {
+            "credential_access": 24.107142857142858,
+            "threat_intel_match": 69.04761904761905,
+            "lateral_movement": 83.65384615384616,
+            "data_exfiltration": 54.20560747663551,
+            "insider_threat": 35.483870967741936
+          }
+        },
+        {
+          "accuracy": 63.0,
+          "ece": 0.2589674932082681,
+          "per_category_accuracy": {
+            "credential_access": 66.66666666666666,
+            "threat_intel_match": 71.96261682242991,
+            "lateral_movement": 65.0,
+            "data_exfiltration": 58.16326530612245,
+            "insider_threat": 52.94117647058824
+          }
+        },
+        {
+          "accuracy": 83.39999999999999,
+          "ece": 0.10234276701417579,
+          "per_category_accuracy": {
+            "credential_access": 81.91489361702128,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 76.41509433962264,
+            "data_exfiltration": 84.04255319148936,
+            "insider_threat": 72.91666666666666
+          }
+        },
+        {
+          "accuracy": 63.2,
+          "ece": 0.24978506090358582,
+          "per_category_accuracy": {
+            "credential_access": 70.9090909090909,
+            "threat_intel_match": 55.96330275229357,
+            "lateral_movement": 74.75728155339806,
+            "data_exfiltration": 63.095238095238095,
+            "insider_threat": 50.0
+          }
+        },
+        {
+          "accuracy": 48.6,
+          "ece": 0.41744329123629,
+          "per_category_accuracy": {
+            "credential_access": 77.14285714285715,
+            "threat_intel_match": 42.0,
+            "lateral_movement": 47.41379310344828,
+            "data_exfiltration": 9.090909090909092,
+            "insider_threat": 62.637362637362635
+          }
+        },
+        {
+          "accuracy": 60.8,
+          "ece": 0.2736215139935914,
+          "per_category_accuracy": {
+            "credential_access": 83.9080459770115,
+            "threat_intel_match": 40.19607843137255,
+            "lateral_movement": 58.490566037735846,
+            "data_exfiltration": 57.84313725490197,
+            "insider_threat": 66.99029126213593
+          }
+        },
+        {
+          "accuracy": 56.599999999999994,
+          "ece": 0.3074080017473933,
+          "per_category_accuracy": {
+            "credential_access": 79.24528301886792,
+            "threat_intel_match": 49.523809523809526,
+            "lateral_movement": 68.0,
+            "data_exfiltration": 33.33333333333333,
+            "insider_threat": 48.57142857142857
+          }
+        },
+        {
+          "accuracy": 34.2,
+          "ece": 0.5481218762993031,
+          "per_category_accuracy": {
+            "credential_access": 34.95145631067961,
+            "threat_intel_match": 61.05263157894737,
+            "lateral_movement": 28.08988764044944,
+            "data_exfiltration": 2.0408163265306123,
+            "insider_threat": 43.47826086956522
+          }
+        },
+        {
+          "accuracy": 65.8,
+          "ece": 0.24154773287634856,
+          "per_category_accuracy": {
+            "credential_access": 60.0,
+            "threat_intel_match": 90.10989010989012,
+            "lateral_movement": 70.37037037037037,
+            "data_exfiltration": 56.043956043956044,
+            "insider_threat": 54.285714285714285
+          }
+        },
+        {
+          "accuracy": 53.400000000000006,
+          "ece": 0.33365607594806446,
+          "per_category_accuracy": {
+            "credential_access": 62.16216216216216,
+            "threat_intel_match": 37.9746835443038,
+            "lateral_movement": 50.98039215686274,
+            "data_exfiltration": 47.524752475247524,
+            "insider_threat": 63.55140186915887
+          }
+        }
+      ]
+    },
+    "noise_25pct": {
+      "lambda_0.000": [
+        {
+          "accuracy": 78.0,
+          "ece": 0.11195195097114682,
+          "per_category_accuracy": {
+            "credential_access": 50.89285714285714,
+            "threat_intel_match": 95.23809523809523,
+            "lateral_movement": 92.3076923076923,
+            "data_exfiltration": 85.04672897196261,
+            "insider_threat": 70.96774193548387
+          }
+        },
+        {
+          "accuracy": 87.4,
+          "ece": 0.035889279231240336,
+          "per_category_accuracy": {
+            "credential_access": 91.39784946236558,
+            "threat_intel_match": 99.06542056074767,
+            "lateral_movement": 91.0,
+            "data_exfiltration": 77.55102040816327,
+            "insider_threat": 77.45098039215686
+          }
+        },
+        {
+          "accuracy": 92.4,
+          "ece": 0.033949486019670135,
+          "per_category_accuracy": {
+            "credential_access": 96.80851063829788,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 81.13207547169812,
+            "data_exfiltration": 88.29787234042553,
+            "insider_threat": 95.83333333333334
+          }
+        },
+        {
+          "accuracy": 79.80000000000001,
+          "ece": 0.11586146644765609,
+          "per_category_accuracy": {
+            "credential_access": 82.72727272727273,
+            "threat_intel_match": 70.64220183486239,
+            "lateral_movement": 94.1747572815534,
+            "data_exfiltration": 79.76190476190477,
+            "insider_threat": 71.27659574468085
+          }
+        },
+        {
+          "accuracy": 77.4,
+          "ece": 0.12104308350359969,
+          "per_category_accuracy": {
+            "credential_access": 94.28571428571428,
+            "threat_intel_match": 96.0,
+            "lateral_movement": 61.206896551724135,
+            "data_exfiltration": 40.909090909090914,
+            "insider_threat": 93.4065934065934
+          }
+        },
+        {
+          "accuracy": 87.4,
+          "ece": 0.02358836824587141,
+          "per_category_accuracy": {
+            "credential_access": 95.40229885057471,
+            "threat_intel_match": 91.17647058823529,
+            "lateral_movement": 72.64150943396226,
+            "data_exfiltration": 85.29411764705883,
+            "insider_threat": 94.1747572815534
+          }
+        },
+        {
+          "accuracy": 80.0,
+          "ece": 0.08417140638034429,
+          "per_category_accuracy": {
+            "credential_access": 89.62264150943396,
+            "threat_intel_match": 70.47619047619048,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 77.38095238095238,
+            "insider_threat": 94.28571428571428
+          }
+        },
+        {
+          "accuracy": 82.6,
+          "ece": 0.0317142755610313,
+          "per_category_accuracy": {
+            "credential_access": 85.43689320388349,
+            "threat_intel_match": 96.84210526315789,
+            "lateral_movement": 62.92134831460674,
+            "data_exfiltration": 74.48979591836735,
+            "insider_threat": 90.43478260869566
+          }
+        },
+        {
+          "accuracy": 81.8,
+          "ece": 0.06748094645582424,
+          "per_category_accuracy": {
+            "credential_access": 79.04761904761905,
+            "threat_intel_match": 98.9010989010989,
+            "lateral_movement": 87.03703703703704,
+            "data_exfiltration": 67.03296703296702,
+            "insider_threat": 77.14285714285715
+          }
+        },
+        {
+          "accuracy": 75.2,
+          "ece": 0.10376692819669153,
+          "per_category_accuracy": {
+            "credential_access": 79.27927927927928,
+            "threat_intel_match": 82.27848101265823,
+            "lateral_movement": 71.56862745098039,
+            "data_exfiltration": 56.43564356435643,
+            "insider_threat": 86.91588785046729
+          }
+        }
+      ],
+      "lambda_0.050": [
+        {
+          "accuracy": 78.0,
+          "ece": 0.10980592715811019,
+          "per_category_accuracy": {
+            "credential_access": 50.89285714285714,
+            "threat_intel_match": 95.23809523809523,
+            "lateral_movement": 92.3076923076923,
+            "data_exfiltration": 85.04672897196261,
+            "insider_threat": 70.96774193548387
+          }
+        },
+        {
+          "accuracy": 87.4,
+          "ece": 0.03595850742347578,
+          "per_category_accuracy": {
+            "credential_access": 91.39784946236558,
+            "threat_intel_match": 99.06542056074767,
+            "lateral_movement": 91.0,
+            "data_exfiltration": 77.55102040816327,
+            "insider_threat": 77.45098039215686
+          }
+        },
+        {
+          "accuracy": 92.60000000000001,
+          "ece": 0.03679059392021799,
+          "per_category_accuracy": {
+            "credential_access": 96.80851063829788,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 82.0754716981132,
+            "data_exfiltration": 88.29787234042553,
+            "insider_threat": 95.83333333333334
+          }
+        },
+        {
+          "accuracy": 79.80000000000001,
+          "ece": 0.11254736486900865,
+          "per_category_accuracy": {
+            "credential_access": 82.72727272727273,
+            "threat_intel_match": 70.64220183486239,
+            "lateral_movement": 94.1747572815534,
+            "data_exfiltration": 79.76190476190477,
+            "insider_threat": 71.27659574468085
+          }
+        },
+        {
+          "accuracy": 77.4,
+          "ece": 0.12079668084158252,
+          "per_category_accuracy": {
+            "credential_access": 94.28571428571428,
+            "threat_intel_match": 96.0,
+            "lateral_movement": 61.206896551724135,
+            "data_exfiltration": 40.909090909090914,
+            "insider_threat": 93.4065934065934
+          }
+        },
+        {
+          "accuracy": 87.4,
+          "ece": 0.023613636478037485,
+          "per_category_accuracy": {
+            "credential_access": 95.40229885057471,
+            "threat_intel_match": 91.17647058823529,
+            "lateral_movement": 72.64150943396226,
+            "data_exfiltration": 85.29411764705883,
+            "insider_threat": 94.1747572815534
+          }
+        },
+        {
+          "accuracy": 80.0,
+          "ece": 0.0841335407437749,
+          "per_category_accuracy": {
+            "credential_access": 89.62264150943396,
+            "threat_intel_match": 70.47619047619048,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 77.38095238095238,
+            "insider_threat": 94.28571428571428
+          }
+        },
+        {
+          "accuracy": 82.6,
+          "ece": 0.03362805844397823,
+          "per_category_accuracy": {
+            "credential_access": 85.43689320388349,
+            "threat_intel_match": 96.84210526315789,
+            "lateral_movement": 62.92134831460674,
+            "data_exfiltration": 74.48979591836735,
+            "insider_threat": 90.43478260869566
+          }
+        },
+        {
+          "accuracy": 81.8,
+          "ece": 0.06758484366818815,
+          "per_category_accuracy": {
+            "credential_access": 79.04761904761905,
+            "threat_intel_match": 98.9010989010989,
+            "lateral_movement": 87.03703703703704,
+            "data_exfiltration": 67.03296703296702,
+            "insider_threat": 77.14285714285715
+          }
+        },
+        {
+          "accuracy": 75.2,
+          "ece": 0.10368330547047601,
+          "per_category_accuracy": {
+            "credential_access": 79.27927927927928,
+            "threat_intel_match": 82.27848101265823,
+            "lateral_movement": 71.56862745098039,
+            "data_exfiltration": 56.43564356435643,
+            "insider_threat": 86.91588785046729
+          }
+        }
+      ],
+      "lambda_0.100": [
+        {
+          "accuracy": 78.2,
+          "ece": 0.09861065399229432,
+          "per_category_accuracy": {
+            "credential_access": 51.78571428571429,
+            "threat_intel_match": 95.23809523809523,
+            "lateral_movement": 92.3076923076923,
+            "data_exfiltration": 85.04672897196261,
+            "insider_threat": 70.96774193548387
+          }
+        },
+        {
+          "accuracy": 87.4,
+          "ece": 0.03574406212235366,
+          "per_category_accuracy": {
+            "credential_access": 91.39784946236558,
+            "threat_intel_match": 99.06542056074767,
+            "lateral_movement": 91.0,
+            "data_exfiltration": 77.55102040816327,
+            "insider_threat": 77.45098039215686
+          }
+        },
+        {
+          "accuracy": 92.4,
+          "ece": 0.03201958327780129,
+          "per_category_accuracy": {
+            "credential_access": 96.80851063829788,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 81.13207547169812,
+            "data_exfiltration": 88.29787234042553,
+            "insider_threat": 95.83333333333334
+          }
+        },
+        {
+          "accuracy": 79.60000000000001,
+          "ece": 0.11638581765129653,
+          "per_category_accuracy": {
+            "credential_access": 82.72727272727273,
+            "threat_intel_match": 70.64220183486239,
+            "lateral_movement": 93.20388349514563,
+            "data_exfiltration": 79.76190476190477,
+            "insider_threat": 71.27659574468085
+          }
+        },
+        {
+          "accuracy": 77.4,
+          "ece": 0.11989627458904643,
+          "per_category_accuracy": {
+            "credential_access": 94.28571428571428,
+            "threat_intel_match": 96.0,
+            "lateral_movement": 61.206896551724135,
+            "data_exfiltration": 40.909090909090914,
+            "insider_threat": 93.4065934065934
+          }
+        },
+        {
+          "accuracy": 87.4,
+          "ece": 0.023667938912354792,
+          "per_category_accuracy": {
+            "credential_access": 95.40229885057471,
+            "threat_intel_match": 91.17647058823529,
+            "lateral_movement": 72.64150943396226,
+            "data_exfiltration": 85.29411764705883,
+            "insider_threat": 94.1747572815534
+          }
+        },
+        {
+          "accuracy": 80.0,
+          "ece": 0.08400149363049962,
+          "per_category_accuracy": {
+            "credential_access": 89.62264150943396,
+            "threat_intel_match": 70.47619047619048,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 77.38095238095238,
+            "insider_threat": 94.28571428571428
+          }
+        },
+        {
+          "accuracy": 82.6,
+          "ece": 0.03310357078751022,
+          "per_category_accuracy": {
+            "credential_access": 85.43689320388349,
+            "threat_intel_match": 96.84210526315789,
+            "lateral_movement": 62.92134831460674,
+            "data_exfiltration": 74.48979591836735,
+            "insider_threat": 90.43478260869566
+          }
+        },
+        {
+          "accuracy": 81.8,
+          "ece": 0.06787987394113378,
+          "per_category_accuracy": {
+            "credential_access": 79.04761904761905,
+            "threat_intel_match": 98.9010989010989,
+            "lateral_movement": 87.03703703703704,
+            "data_exfiltration": 67.03296703296702,
+            "insider_threat": 77.14285714285715
+          }
+        },
+        {
+          "accuracy": 75.2,
+          "ece": 0.1013968625945363,
+          "per_category_accuracy": {
+            "credential_access": 79.27927927927928,
+            "threat_intel_match": 82.27848101265823,
+            "lateral_movement": 71.56862745098039,
+            "data_exfiltration": 56.43564356435643,
+            "insider_threat": 86.91588785046729
+          }
+        }
+      ],
+      "lambda_0.200": [
+        {
+          "accuracy": 79.4,
+          "ece": 0.07457100343944717,
+          "per_category_accuracy": {
+            "credential_access": 57.14285714285714,
+            "threat_intel_match": 95.23809523809523,
+            "lateral_movement": 92.3076923076923,
+            "data_exfiltration": 85.98130841121495,
+            "insider_threat": 69.89247311827957
+          }
+        },
+        {
+          "accuracy": 87.0,
+          "ece": 0.03714074463132996,
+          "per_category_accuracy": {
+            "credential_access": 89.24731182795699,
+            "threat_intel_match": 99.06542056074767,
+            "lateral_movement": 91.0,
+            "data_exfiltration": 77.55102040816327,
+            "insider_threat": 77.45098039215686
+          }
+        },
+        {
+          "accuracy": 92.4,
+          "ece": 0.038072136596638544,
+          "per_category_accuracy": {
+            "credential_access": 96.80851063829788,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 81.13207547169812,
+            "data_exfiltration": 88.29787234042553,
+            "insider_threat": 95.83333333333334
+          }
+        },
+        {
+          "accuracy": 79.60000000000001,
+          "ece": 0.11679395192685042,
+          "per_category_accuracy": {
+            "credential_access": 82.72727272727273,
+            "threat_intel_match": 70.64220183486239,
+            "lateral_movement": 93.20388349514563,
+            "data_exfiltration": 79.76190476190477,
+            "insider_threat": 71.27659574468085
+          }
+        },
+        {
+          "accuracy": 77.2,
+          "ece": 0.11744078929331489,
+          "per_category_accuracy": {
+            "credential_access": 94.28571428571428,
+            "threat_intel_match": 93.0,
+            "lateral_movement": 61.206896551724135,
+            "data_exfiltration": 40.909090909090914,
+            "insider_threat": 95.6043956043956
+          }
+        },
+        {
+          "accuracy": 87.4,
+          "ece": 0.02208863011481171,
+          "per_category_accuracy": {
+            "credential_access": 95.40229885057471,
+            "threat_intel_match": 91.17647058823529,
+            "lateral_movement": 72.64150943396226,
+            "data_exfiltration": 85.29411764705883,
+            "insider_threat": 94.1747572815534
+          }
+        },
+        {
+          "accuracy": 80.0,
+          "ece": 0.08406121037369627,
+          "per_category_accuracy": {
+            "credential_access": 89.62264150943396,
+            "threat_intel_match": 70.47619047619048,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 77.38095238095238,
+            "insider_threat": 94.28571428571428
+          }
+        },
+        {
+          "accuracy": 82.8,
+          "ece": 0.03372607711556514,
+          "per_category_accuracy": {
+            "credential_access": 86.40776699029125,
+            "threat_intel_match": 96.84210526315789,
+            "lateral_movement": 62.92134831460674,
+            "data_exfiltration": 74.48979591836735,
+            "insider_threat": 90.43478260869566
+          }
+        },
+        {
+          "accuracy": 82.0,
+          "ece": 0.06703226653243953,
+          "per_category_accuracy": {
+            "credential_access": 80.0,
+            "threat_intel_match": 98.9010989010989,
+            "lateral_movement": 87.03703703703704,
+            "data_exfiltration": 67.03296703296702,
+            "insider_threat": 77.14285714285715
+          }
+        },
+        {
+          "accuracy": 75.2,
+          "ece": 0.10112281112306772,
+          "per_category_accuracy": {
+            "credential_access": 79.27927927927928,
+            "threat_intel_match": 82.27848101265823,
+            "lateral_movement": 71.56862745098039,
+            "data_exfiltration": 56.43564356435643,
+            "insider_threat": 86.91588785046729
+          }
+        }
+      ],
+      "lambda_0.300": [
+        {
+          "accuracy": 83.6,
+          "ece": 0.047434622116129435,
+          "per_category_accuracy": {
+            "credential_access": 75.89285714285714,
+            "threat_intel_match": 95.23809523809523,
+            "lateral_movement": 92.3076923076923,
+            "data_exfiltration": 85.98130841121495,
+            "insider_threat": 69.89247311827957
+          }
+        },
+        {
+          "accuracy": 86.6,
+          "ece": 0.039026916378409285,
+          "per_category_accuracy": {
+            "credential_access": 87.09677419354838,
+            "threat_intel_match": 99.06542056074767,
+            "lateral_movement": 91.0,
+            "data_exfiltration": 77.55102040816327,
+            "insider_threat": 77.45098039215686
+          }
+        },
+        {
+          "accuracy": 92.60000000000001,
+          "ece": 0.030465968756006212,
+          "per_category_accuracy": {
+            "credential_access": 96.80851063829788,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 82.0754716981132,
+            "data_exfiltration": 88.29787234042553,
+            "insider_threat": 95.83333333333334
+          }
+        },
+        {
+          "accuracy": 78.8,
+          "ece": 0.11904037030477548,
+          "per_category_accuracy": {
+            "credential_access": 82.72727272727273,
+            "threat_intel_match": 70.64220183486239,
+            "lateral_movement": 90.29126213592234,
+            "data_exfiltration": 79.76190476190477,
+            "insider_threat": 70.2127659574468
+          }
+        },
+        {
+          "accuracy": 74.8,
+          "ece": 0.13278163449820216,
+          "per_category_accuracy": {
+            "credential_access": 94.28571428571428,
+            "threat_intel_match": 81.0,
+            "lateral_movement": 61.206896551724135,
+            "data_exfiltration": 40.909090909090914,
+            "insider_threat": 95.6043956043956
+          }
+        },
+        {
+          "accuracy": 87.4,
+          "ece": 0.026909416303848816,
+          "per_category_accuracy": {
+            "credential_access": 95.40229885057471,
+            "threat_intel_match": 91.17647058823529,
+            "lateral_movement": 72.64150943396226,
+            "data_exfiltration": 85.29411764705883,
+            "insider_threat": 94.1747572815534
+          }
+        },
+        {
+          "accuracy": 80.0,
+          "ece": 0.08374713486635482,
+          "per_category_accuracy": {
+            "credential_access": 89.62264150943396,
+            "threat_intel_match": 70.47619047619048,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 77.38095238095238,
+            "insider_threat": 94.28571428571428
+          }
+        },
+        {
+          "accuracy": 82.19999999999999,
+          "ece": 0.03940150598312179,
+          "per_category_accuracy": {
+            "credential_access": 86.40776699029125,
+            "threat_intel_match": 96.84210526315789,
+            "lateral_movement": 62.92134831460674,
+            "data_exfiltration": 72.44897959183673,
+            "insider_threat": 89.56521739130436
+          }
+        },
+        {
+          "accuracy": 82.19999999999999,
+          "ece": 0.06624702675518945,
+          "per_category_accuracy": {
+            "credential_access": 80.95238095238095,
+            "threat_intel_match": 98.9010989010989,
+            "lateral_movement": 87.03703703703704,
+            "data_exfiltration": 67.03296703296702,
+            "insider_threat": 77.14285714285715
+          }
+        },
+        {
+          "accuracy": 74.8,
+          "ece": 0.10979754625909328,
+          "per_category_accuracy": {
+            "credential_access": 77.47747747747748,
+            "threat_intel_match": 82.27848101265823,
+            "lateral_movement": 71.56862745098039,
+            "data_exfiltration": 56.43564356435643,
+            "insider_threat": 86.91588785046729
+          }
+        }
+      ],
+      "lambda_0.500": [
+        {
+          "accuracy": 85.2,
+          "ece": 0.04191352073823081,
+          "per_category_accuracy": {
+            "credential_access": 91.96428571428571,
+            "threat_intel_match": 90.47619047619048,
+            "lateral_movement": 89.42307692307693,
+            "data_exfiltration": 85.04672897196261,
+            "insider_threat": 67.74193548387096
+          }
+        },
+        {
+          "accuracy": 85.6,
+          "ece": 0.04070721163336381,
+          "per_category_accuracy": {
+            "credential_access": 83.87096774193549,
+            "threat_intel_match": 96.26168224299066,
+            "lateral_movement": 91.0,
+            "data_exfiltration": 77.55102040816327,
+            "insider_threat": 78.43137254901961
+          }
+        },
+        {
+          "accuracy": 92.4,
+          "ece": 0.03875276379024924,
+          "per_category_accuracy": {
+            "credential_access": 97.87234042553192,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 79.24528301886792,
+            "data_exfiltration": 88.29787234042553,
+            "insider_threat": 96.875
+          }
+        },
+        {
+          "accuracy": 77.2,
+          "ece": 0.12431420490869931,
+          "per_category_accuracy": {
+            "credential_access": 81.81818181818183,
+            "threat_intel_match": 70.64220183486239,
+            "lateral_movement": 84.46601941747572,
+            "data_exfiltration": 79.76190476190477,
+            "insider_threat": 69.14893617021278
+          }
+        },
+        {
+          "accuracy": 70.0,
+          "ece": 0.17261133455304092,
+          "per_category_accuracy": {
+            "credential_access": 93.33333333333333,
+            "threat_intel_match": 61.0,
+            "lateral_movement": 61.206896551724135,
+            "data_exfiltration": 37.5,
+            "insider_threat": 95.6043956043956
+          }
+        },
+        {
+          "accuracy": 85.0,
+          "ece": 0.03729851166780129,
+          "per_category_accuracy": {
+            "credential_access": 95.40229885057471,
+            "threat_intel_match": 85.29411764705883,
+            "lateral_movement": 72.64150943396226,
+            "data_exfiltration": 83.33333333333334,
+            "insider_threat": 90.29126213592234
+          }
+        },
+        {
+          "accuracy": 79.4,
+          "ece": 0.08531206708635285,
+          "per_category_accuracy": {
+            "credential_access": 86.79245283018868,
+            "threat_intel_match": 70.47619047619048,
+            "lateral_movement": 67.0,
+            "data_exfiltration": 77.38095238095238,
+            "insider_threat": 94.28571428571428
+          }
+        },
+        {
+          "accuracy": 80.0,
+          "ece": 0.07111340665993364,
+          "per_category_accuracy": {
+            "credential_access": 93.20388349514563,
+            "threat_intel_match": 94.73684210526315,
+            "lateral_movement": 62.92134831460674,
+            "data_exfiltration": 59.183673469387756,
+            "insider_threat": 86.95652173913044
+          }
+        },
+        {
+          "accuracy": 82.19999999999999,
+          "ece": 0.06804670344562858,
+          "per_category_accuracy": {
+            "credential_access": 81.9047619047619,
+            "threat_intel_match": 97.8021978021978,
+            "lateral_movement": 87.03703703703704,
+            "data_exfiltration": 67.03296703296702,
+            "insider_threat": 77.14285714285715
+          }
+        },
+        {
+          "accuracy": 73.2,
+          "ece": 0.12916727306307427,
+          "per_category_accuracy": {
+            "credential_access": 70.27027027027027,
+            "threat_intel_match": 82.27848101265823,
+            "lateral_movement": 71.56862745098039,
+            "data_exfiltration": 56.43564356435643,
+            "insider_threat": 86.91588785046729
+          }
+        }
+      ]
+    },
+    "warm_start": {
+      "lambda_0.000": [
+        {
+          "accuracy": 97.8,
+          "ece": 0.05082838834605583,
+          "per_category_accuracy": {
+            "credential_access": 100.0,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.1923076923077,
+            "data_exfiltration": 94.39252336448598,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 97.8,
+          "ece": 0.04839649558381114,
+          "per_category_accuracy": {
+            "credential_access": 97.84946236559139,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 98.0,
+            "data_exfiltration": 92.85714285714286,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.05332144322460304,
+          "per_category_accuracy": {
+            "credential_access": 97.87234042553192,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 96.22641509433963,
+            "data_exfiltration": 89.36170212765957,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.051793949424394574,
+          "per_category_accuracy": {
+            "credential_access": 98.18181818181819,
+            "threat_intel_match": 98.1651376146789,
+            "lateral_movement": 97.0873786407767,
+            "data_exfiltration": 90.47619047619048,
+            "insider_threat": 98.93617021276596
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.05391579175629772,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 99.0,
+            "lateral_movement": 92.24137931034483,
+            "data_exfiltration": 93.18181818181817,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 95.6,
+          "ece": 0.04251241375511428,
+          "per_category_accuracy": {
+            "credential_access": 100.0,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 89.62264150943396,
+            "data_exfiltration": 92.15686274509804,
+            "insider_threat": 97.0873786407767
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.048068047996478555,
+          "per_category_accuracy": {
+            "credential_access": 98.11320754716981,
+            "threat_intel_match": 98.09523809523809,
+            "lateral_movement": 94.0,
+            "data_exfiltration": 91.66666666666666,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.03600719977850416,
+          "per_category_accuracy": {
+            "credential_access": 98.05825242718447,
+            "threat_intel_match": 98.94736842105263,
+            "lateral_movement": 94.3820224719101,
+            "data_exfiltration": 91.83673469387756,
+            "insider_threat": 99.1304347826087
+          }
+        },
+        {
+          "accuracy": 97.8,
+          "ece": 0.052966057039872054,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.37037037037037,
+            "data_exfiltration": 95.6043956043956,
+            "insider_threat": 99.04761904761905
+          }
+        },
+        {
+          "accuracy": 96.39999999999999,
+          "ece": 0.05338617339413243,
+          "per_category_accuracy": {
+            "credential_access": 98.1981981981982,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.09803921568627,
+            "data_exfiltration": 91.0891089108911,
+            "insider_threat": 98.13084112149532
+          }
+        }
+      ],
+      "lambda_0.050": [
+        {
+          "accuracy": 97.8,
+          "ece": 0.050845943168847045,
+          "per_category_accuracy": {
+            "credential_access": 100.0,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.1923076923077,
+            "data_exfiltration": 94.39252336448598,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 97.8,
+          "ece": 0.048425090416940895,
+          "per_category_accuracy": {
+            "credential_access": 97.84946236559139,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 98.0,
+            "data_exfiltration": 92.85714285714286,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.05331886658078549,
+          "per_category_accuracy": {
+            "credential_access": 97.87234042553192,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 96.22641509433963,
+            "data_exfiltration": 89.36170212765957,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.05177219618714403,
+          "per_category_accuracy": {
+            "credential_access": 98.18181818181819,
+            "threat_intel_match": 98.1651376146789,
+            "lateral_movement": 97.0873786407767,
+            "data_exfiltration": 90.47619047619048,
+            "insider_threat": 98.93617021276596
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.05391421327276384,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 99.0,
+            "lateral_movement": 92.24137931034483,
+            "data_exfiltration": 93.18181818181817,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 95.6,
+          "ece": 0.04248196467987961,
+          "per_category_accuracy": {
+            "credential_access": 100.0,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 89.62264150943396,
+            "data_exfiltration": 92.15686274509804,
+            "insider_threat": 97.0873786407767
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.04807341550020432,
+          "per_category_accuracy": {
+            "credential_access": 98.11320754716981,
+            "threat_intel_match": 98.09523809523809,
+            "lateral_movement": 94.0,
+            "data_exfiltration": 91.66666666666666,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.03601050635774775,
+          "per_category_accuracy": {
+            "credential_access": 98.05825242718447,
+            "threat_intel_match": 98.94736842105263,
+            "lateral_movement": 94.3820224719101,
+            "data_exfiltration": 91.83673469387756,
+            "insider_threat": 99.1304347826087
+          }
+        },
+        {
+          "accuracy": 97.8,
+          "ece": 0.052958261872749934,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.37037037037037,
+            "data_exfiltration": 95.6043956043956,
+            "insider_threat": 99.04761904761905
+          }
+        },
+        {
+          "accuracy": 96.39999999999999,
+          "ece": 0.05336251162369968,
+          "per_category_accuracy": {
+            "credential_access": 98.1981981981982,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.09803921568627,
+            "data_exfiltration": 91.0891089108911,
+            "insider_threat": 98.13084112149532
+          }
+        }
+      ],
+      "lambda_0.100": [
+        {
+          "accuracy": 97.8,
+          "ece": 0.05090995003158238,
+          "per_category_accuracy": {
+            "credential_access": 100.0,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.1923076923077,
+            "data_exfiltration": 94.39252336448598,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 97.8,
+          "ece": 0.04853692697893571,
+          "per_category_accuracy": {
+            "credential_access": 97.84946236559139,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 98.0,
+            "data_exfiltration": 92.85714285714286,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.053314365945869684,
+          "per_category_accuracy": {
+            "credential_access": 97.87234042553192,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 96.22641509433963,
+            "data_exfiltration": 89.36170212765957,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.05171141339280621,
+          "per_category_accuracy": {
+            "credential_access": 98.18181818181819,
+            "threat_intel_match": 98.1651376146789,
+            "lateral_movement": 97.0873786407767,
+            "data_exfiltration": 90.47619047619048,
+            "insider_threat": 98.93617021276596
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.05391883240635044,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 99.0,
+            "lateral_movement": 92.24137931034483,
+            "data_exfiltration": 93.18181818181817,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 95.6,
+          "ece": 0.04240539070188352,
+          "per_category_accuracy": {
+            "credential_access": 100.0,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 89.62264150943396,
+            "data_exfiltration": 92.15686274509804,
+            "insider_threat": 97.0873786407767
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.04809601365871113,
+          "per_category_accuracy": {
+            "credential_access": 98.11320754716981,
+            "threat_intel_match": 98.09523809523809,
+            "lateral_movement": 94.0,
+            "data_exfiltration": 91.66666666666666,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.03602295502633423,
+          "per_category_accuracy": {
+            "credential_access": 98.05825242718447,
+            "threat_intel_match": 98.94736842105263,
+            "lateral_movement": 94.3820224719101,
+            "data_exfiltration": 91.83673469387756,
+            "insider_threat": 99.1304347826087
+          }
+        },
+        {
+          "accuracy": 97.8,
+          "ece": 0.05294176834155506,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.37037037037037,
+            "data_exfiltration": 95.6043956043956,
+            "insider_threat": 99.04761904761905
+          }
+        },
+        {
+          "accuracy": 96.39999999999999,
+          "ece": 0.05330323434327255,
+          "per_category_accuracy": {
+            "credential_access": 98.1981981981982,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.09803921568627,
+            "data_exfiltration": 91.0891089108911,
+            "insider_threat": 98.13084112149532
+          }
+        }
+      ],
+      "lambda_0.200": [
+        {
+          "accuracy": 97.6,
+          "ece": 0.04922095826442435,
+          "per_category_accuracy": {
+            "credential_access": 99.10714285714286,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.1923076923077,
+            "data_exfiltration": 94.39252336448598,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 97.8,
+          "ece": 0.04941395874511977,
+          "per_category_accuracy": {
+            "credential_access": 97.84946236559139,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 98.0,
+            "data_exfiltration": 92.85714285714286,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.05334759665428788,
+          "per_category_accuracy": {
+            "credential_access": 97.87234042553192,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 96.22641509433963,
+            "data_exfiltration": 89.36170212765957,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.051528934690415744,
+          "per_category_accuracy": {
+            "credential_access": 98.18181818181819,
+            "threat_intel_match": 98.1651376146789,
+            "lateral_movement": 97.0873786407767,
+            "data_exfiltration": 90.47619047619048,
+            "insider_threat": 98.93617021276596
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.05408963118410112,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 99.0,
+            "lateral_movement": 92.24137931034483,
+            "data_exfiltration": 93.18181818181817,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 95.6,
+          "ece": 0.04410124647104894,
+          "per_category_accuracy": {
+            "credential_access": 100.0,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 89.62264150943396,
+            "data_exfiltration": 92.15686274509804,
+            "insider_threat": 97.0873786407767
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.05034581635945784,
+          "per_category_accuracy": {
+            "credential_access": 98.11320754716981,
+            "threat_intel_match": 98.09523809523809,
+            "lateral_movement": 94.0,
+            "data_exfiltration": 91.66666666666666,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.03611919227503855,
+          "per_category_accuracy": {
+            "credential_access": 98.05825242718447,
+            "threat_intel_match": 98.94736842105263,
+            "lateral_movement": 94.3820224719101,
+            "data_exfiltration": 91.83673469387756,
+            "insider_threat": 99.1304347826087
+          }
+        },
+        {
+          "accuracy": 97.8,
+          "ece": 0.052993377551426336,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.37037037037037,
+            "data_exfiltration": 95.6043956043956,
+            "insider_threat": 99.04761904761905
+          }
+        },
+        {
+          "accuracy": 96.39999999999999,
+          "ece": 0.051344806597834,
+          "per_category_accuracy": {
+            "credential_access": 98.1981981981982,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.09803921568627,
+            "data_exfiltration": 91.0891089108911,
+            "insider_threat": 98.13084112149532
+          }
+        }
+      ],
+      "lambda_0.300": [
+        {
+          "accuracy": 97.6,
+          "ece": 0.04923258141840302,
+          "per_category_accuracy": {
+            "credential_access": 99.10714285714286,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.1923076923077,
+            "data_exfiltration": 94.39252336448598,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 98.0,
+          "ece": 0.05402784753094018,
+          "per_category_accuracy": {
+            "credential_access": 98.9247311827957,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 98.0,
+            "data_exfiltration": 92.85714285714286,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.05364225435283439,
+          "per_category_accuracy": {
+            "credential_access": 97.87234042553192,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 96.22641509433963,
+            "data_exfiltration": 89.36170212765957,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.05145647995421901,
+          "per_category_accuracy": {
+            "credential_access": 98.18181818181819,
+            "threat_intel_match": 98.1651376146789,
+            "lateral_movement": 97.0873786407767,
+            "data_exfiltration": 90.47619047619048,
+            "insider_threat": 98.93617021276596
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.05519111113399223,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 99.0,
+            "lateral_movement": 92.24137931034483,
+            "data_exfiltration": 93.18181818181817,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 95.39999999999999,
+          "ece": 0.04415929660040485,
+          "per_category_accuracy": {
+            "credential_access": 100.0,
+            "threat_intel_match": 99.01960784313727,
+            "lateral_movement": 89.62264150943396,
+            "data_exfiltration": 92.15686274509804,
+            "insider_threat": 97.0873786407767
+          }
+        },
+        {
+          "accuracy": 96.39999999999999,
+          "ece": 0.04943530745637988,
+          "per_category_accuracy": {
+            "credential_access": 98.11320754716981,
+            "threat_intel_match": 98.09523809523809,
+            "lateral_movement": 94.0,
+            "data_exfiltration": 91.66666666666666,
+            "insider_threat": 99.04761904761905
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.036557608389847146,
+          "per_category_accuracy": {
+            "credential_access": 98.05825242718447,
+            "threat_intel_match": 98.94736842105263,
+            "lateral_movement": 94.3820224719101,
+            "data_exfiltration": 91.83673469387756,
+            "insider_threat": 99.1304347826087
+          }
+        },
+        {
+          "accuracy": 97.8,
+          "ece": 0.053741540861570784,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.37037037037037,
+            "data_exfiltration": 95.6043956043956,
+            "insider_threat": 99.04761904761905
+          }
+        },
+        {
+          "accuracy": 96.39999999999999,
+          "ece": 0.05206088458912923,
+          "per_category_accuracy": {
+            "credential_access": 98.1981981981982,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.09803921568627,
+            "data_exfiltration": 91.0891089108911,
+            "insider_threat": 98.13084112149532
+          }
+        }
+      ],
+      "lambda_0.500": [
+        {
+          "accuracy": 97.2,
+          "ece": 0.04930779272186237,
+          "per_category_accuracy": {
+            "credential_access": 98.21428571428571,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 94.23076923076923,
+            "data_exfiltration": 94.39252336448598,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.2,
+          "ece": 0.04514580602971025,
+          "per_category_accuracy": {
+            "credential_access": 98.9247311827957,
+            "threat_intel_match": 91.58878504672897,
+            "lateral_movement": 98.0,
+            "data_exfiltration": 92.85714285714286,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.39999999999999,
+          "ece": 0.05709654015240863,
+          "per_category_accuracy": {
+            "credential_access": 96.80851063829788,
+            "threat_intel_match": 100.0,
+            "lateral_movement": 95.28301886792453,
+            "data_exfiltration": 89.36170212765957,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 96.8,
+          "ece": 0.05560470741629132,
+          "per_category_accuracy": {
+            "credential_access": 98.18181818181819,
+            "threat_intel_match": 98.1651376146789,
+            "lateral_movement": 97.0873786407767,
+            "data_exfiltration": 90.47619047619048,
+            "insider_threat": 98.93617021276596
+          }
+        },
+        {
+          "accuracy": 96.39999999999999,
+          "ece": 0.055387625672939124,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 98.0,
+            "lateral_movement": 92.24137931034483,
+            "data_exfiltration": 93.18181818181817,
+            "insider_threat": 100.0
+          }
+        },
+        {
+          "accuracy": 94.8,
+          "ece": 0.0380676765987983,
+          "per_category_accuracy": {
+            "credential_access": 100.0,
+            "threat_intel_match": 97.05882352941177,
+            "lateral_movement": 89.62264150943396,
+            "data_exfiltration": 92.15686274509804,
+            "insider_threat": 96.11650485436894
+          }
+        },
+        {
+          "accuracy": 95.19999999999999,
+          "ece": 0.045576192668128214,
+          "per_category_accuracy": {
+            "credential_access": 98.11320754716981,
+            "threat_intel_match": 94.28571428571428,
+            "lateral_movement": 94.0,
+            "data_exfiltration": 90.47619047619048,
+            "insider_threat": 98.09523809523809
+          }
+        },
+        {
+          "accuracy": 96.39999999999999,
+          "ece": 0.039530559393798986,
+          "per_category_accuracy": {
+            "credential_access": 98.05825242718447,
+            "threat_intel_match": 98.94736842105263,
+            "lateral_movement": 94.3820224719101,
+            "data_exfiltration": 91.83673469387756,
+            "insider_threat": 98.26086956521739
+          }
+        },
+        {
+          "accuracy": 96.6,
+          "ece": 0.050607082402420664,
+          "per_category_accuracy": {
+            "credential_access": 99.04761904761905,
+            "threat_intel_match": 94.5054945054945,
+            "lateral_movement": 95.37037037037037,
+            "data_exfiltration": 95.6043956043956,
+            "insider_threat": 98.09523809523809
+          }
+        },
+        {
+          "accuracy": 95.6,
+          "ece": 0.051032067976061704,
+          "per_category_accuracy": {
+            "credential_access": 97.2972972972973,
+            "threat_intel_match": 96.20253164556962,
+            "lateral_movement": 95.09803921568627,
+            "data_exfiltration": 91.0891089108911,
+            "insider_threat": 98.13084112149532
+          }
+        }
+      ]
+    }
+  },
+  "aggregated": {
+    "cold_start": {
+      "lambda_0.000": {
+        "mean_accuracy": 28.78,
+        "std_accuracy": 9.659585912449872,
+        "mean_ece": 0.5466504423256614,
+        "std_ece": 0.11172958188695198,
+        "per_seed_accuracies": [
+          21.4,
+          30.2,
+          51.800000000000004,
+          24.4,
+          33.4,
+          25.4,
+          36.6,
+          23.599999999999998,
+          26.400000000000002,
+          14.6
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 23.373497107028932,
+          "threat_intel_match": 31.84084981087178,
+          "lateral_movement": 30.733980042973077,
+          "data_exfiltration": 32.0354714087986,
+          "insider_threat": 26.10875120662522
+        }
+      },
+      "lambda_0.050": {
+        "mean_accuracy": 28.78,
+        "std_accuracy": 9.666209184576962,
+        "mean_ece": 0.5461138905820079,
+        "std_ece": 0.11180992575376182,
+        "per_seed_accuracies": [
+          21.4,
+          30.4,
+          51.800000000000004,
+          24.6,
+          33.4,
+          25.2,
+          36.6,
+          23.599999999999998,
+          26.200000000000003,
+          14.6
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 23.571933079658457,
+          "threat_intel_match": 31.742810595185507,
+          "lateral_movement": 30.733980042973077,
+          "data_exfiltration": 32.0354714087986,
+          "insider_threat": 26.013513111387123
+        }
+      },
+      "lambda_0.100": {
+        "mean_accuracy": 28.5,
+        "std_accuracy": 9.697937925146768,
+        "mean_ece": 0.5487122942314899,
+        "std_ece": 0.11260849860671272,
+        "per_seed_accuracies": [
+          21.0,
+          31.0,
+          51.4,
+          24.6,
+          33.0,
+          25.2,
+          36.199999999999996,
+          23.200000000000003,
+          25.4,
+          14.000000000000002
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 23.781952458364653,
+          "threat_intel_match": 31.54201139438631,
+          "lateral_movement": 30.450685767780577,
+          "data_exfiltration": 31.511309680209177,
+          "insider_threat": 25.439857478288044
+        }
+      },
+      "lambda_0.200": {
+        "mean_accuracy": 28.159999999999997,
+        "std_accuracy": 9.805223097920821,
+        "mean_ece": 0.5524472711412853,
+        "std_ece": 0.11411581295727946,
+        "per_seed_accuracies": [
+          20.4,
+          32.2,
+          50.8,
+          25.4,
+          32.6,
+          25.0,
+          35.8,
+          22.2,
+          24.0,
+          13.200000000000001
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 26.240173903821308,
+          "threat_intel_match": 30.661604037468436,
+          "lateral_movement": 29.75272445865494,
+          "data_exfiltration": 30.048797607907158,
+          "insider_threat": 24.29706218437413
+        }
+      },
+      "lambda_0.300": {
+        "mean_accuracy": 27.22,
+        "std_accuracy": 9.889165788882295,
+        "mean_ece": 0.5618297209725679,
+        "std_ece": 0.11677561279563155,
+        "per_seed_accuracies": [
+          19.6,
+          33.6,
+          50.0,
+          26.6,
+          29.2,
+          24.0,
+          34.8,
+          19.2,
+          22.0,
+          13.200000000000001
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 29.01895949787406,
+          "threat_intel_match": 29.74027329378408,
+          "lateral_movement": 27.91827872097685,
+          "data_exfiltration": 27.664909797207788,
+          "insider_threat": 21.977706435950644
+        }
+      },
+      "lambda_0.500": {
+        "mean_accuracy": 26.339999999999996,
+        "std_accuracy": 7.718056750244845,
+        "mean_ece": 0.5880700486729612,
+        "std_ece": 0.09023535123649304,
+        "per_seed_accuracies": [
+          23.400000000000002,
+          33.0,
+          44.4,
+          27.400000000000002,
+          25.0,
+          24.0,
+          30.0,
+          16.2,
+          22.400000000000002,
+          17.599999999999998
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 38.86286639948587,
+          "threat_intel_match": 27.84954602270604,
+          "lateral_movement": 24.16505940251505,
+          "data_exfiltration": 21.631146635638988,
+          "insider_threat": 18.635405598273344
+        }
+      }
+    },
+    "noise_50pct": {
+      "lambda_0.000": {
+        "mean_accuracy": 60.11999999999999,
+        "std_accuracy": 10.751818450848209,
+        "mean_ece": 0.29434823572939683,
+        "std_ece": 0.10051646209318293,
+        "per_seed_accuracies": [
+          53.2,
+          66.60000000000001,
+          81.6,
+          64.8,
+          55.400000000000006,
+          62.4,
+          59.8,
+          37.6,
+          64.8,
+          55.00000000000001
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 63.756966988868825,
+          "threat_intel_match": 66.39745952259133,
+          "lateral_movement": 63.70673267556687,
+          "data_exfiltration": 48.994089093579895,
+          "insider_threat": 57.16395625005492
+        }
+      },
+      "lambda_0.050": {
+        "mean_accuracy": 60.1,
+        "std_accuracy": 10.743276967480638,
+        "mean_ece": 0.2944369967185646,
+        "std_ece": 0.10052983866959636,
+        "per_seed_accuracies": [
+          53.2,
+          66.60000000000001,
+          81.6,
+          64.60000000000001,
+          55.400000000000006,
+          62.4,
+          59.8,
+          37.6,
+          64.8,
+          55.00000000000001
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 63.756966988868825,
+          "threat_intel_match": 66.30571640332528,
+          "lateral_movement": 63.70673267556687,
+          "data_exfiltration": 48.994089093579895,
+          "insider_threat": 57.16395625005492
+        }
+      },
+      "lambda_0.100": {
+        "mean_accuracy": 60.080000000000005,
+        "std_accuracy": 10.767060880295977,
+        "mean_ece": 0.2951612785752188,
+        "std_ece": 0.10079082618708787,
+        "per_seed_accuracies": [
+          53.0,
+          66.4,
+          81.8,
+          64.4,
+          55.400000000000006,
+          62.4,
+          59.8,
+          37.6,
+          64.8,
+          55.2
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 63.953440057682315,
+          "threat_intel_match": 66.19321084035242,
+          "lateral_movement": 63.60964529692609,
+          "data_exfiltration": 48.994089093579895,
+          "insider_threat": 57.05406614016481
+        }
+      },
+      "lambda_0.200": {
+        "mean_accuracy": 60.02000000000002,
+        "std_accuracy": 11.064700628575542,
+        "mean_ece": 0.29613168953115554,
+        "std_ece": 0.10333350675823227,
+        "per_seed_accuracies": [
+          52.800000000000004,
+          66.60000000000001,
+          82.0,
+          64.8,
+          54.0,
+          62.6,
+          60.0,
+          37.0,
+          65.2,
+          55.2
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 64.03206036210908,
+          "threat_intel_match": 66.27536482344098,
+          "lateral_movement": 63.60964529692609,
+          "data_exfiltration": 48.57891155272498,
+          "insider_threat": 56.93494545588455
+        }
+      },
+      "lambda_0.300": {
+        "mean_accuracy": 59.54,
+        "std_accuracy": 11.359595063205376,
+        "mean_ece": 0.2992334544881591,
+        "std_ece": 0.10621915393792343,
+        "per_seed_accuracies": [
+          52.2,
+          65.8,
+          82.6,
+          63.6,
+          52.800000000000004,
+          62.2,
+          59.599999999999994,
+          36.4,
+          65.60000000000001,
+          54.6
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 63.83844749244955,
+          "threat_intel_match": 65.44224312445165,
+          "lateral_movement": 63.31288764900522,
+          "data_exfiltration": 47.630497777699254,
+          "insider_threat": 56.714911951522446
+        }
+      },
+      "lambda_0.500": {
+        "mean_accuracy": 58.15999999999999,
+        "std_accuracy": 12.135501637756882,
+        "mean_ece": 0.3124288554885177,
+        "std_ece": 0.1143412947878386,
+        "per_seed_accuracies": [
+          52.6,
+          63.0,
+          83.39999999999999,
+          63.2,
+          48.6,
+          60.8,
+          56.599999999999994,
+          34.2,
+          65.8,
+          53.400000000000006
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 64.10075986615001,
+          "threat_intel_match": 61.78306318106659,
+          "lateral_movement": 62.317123135573354,
+          "data_exfiltration": 46.53835685943639,
+          "insider_threat": 55.08561736003624
+        }
+      }
+    },
+    "noise_25pct": {
+      "lambda_0.000": {
+        "mean_accuracy": 82.2,
+        "std_accuracy": 5.086452594883787,
+        "mean_ece": 0.07294171910130759,
+        "std_ece": 0.03716516712294458,
+        "per_seed_accuracies": [
+          78.0,
+          87.4,
+          92.4,
+          79.80000000000001,
+          77.4,
+          87.4,
+          80.0,
+          82.6,
+          81.8,
+          75.2
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 84.49009361472982,
+          "threat_intel_match": 90.06200638750461,
+          "lateral_movement": 78.09899438492543,
+          "data_exfiltration": 73.22000939352492,
+          "insider_threat": 85.1889243981536
+        }
+      },
+      "lambda_0.050": {
+        "mean_accuracy": 82.22,
+        "std_accuracy": 5.126753358608156,
+        "mean_ece": 0.072854245901685,
+        "std_ece": 0.03601399925848035,
+        "per_seed_accuracies": [
+          78.0,
+          87.4,
+          92.60000000000001,
+          79.80000000000001,
+          77.4,
+          87.4,
+          80.0,
+          82.6,
+          81.8,
+          75.2
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 84.49009361472982,
+          "threat_intel_match": 90.06200638750461,
+          "lateral_movement": 78.19333400756696,
+          "data_exfiltration": 73.22000939352492,
+          "insider_threat": 85.1889243981536
+        }
+      },
+      "lambda_0.100": {
+        "mean_accuracy": 82.2,
+        "std_accuracy": 5.080157477874088,
+        "mean_ece": 0.0712706131498827,
+        "std_ece": 0.03571273538647843,
+        "per_seed_accuracies": [
+          78.2,
+          87.4,
+          92.4,
+          79.60000000000001,
+          77.4,
+          87.4,
+          80.0,
+          82.6,
+          81.8,
+          75.2
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 84.57937932901552,
+          "threat_intel_match": 90.06200638750461,
+          "lateral_movement": 78.00190700628465,
+          "data_exfiltration": 73.22000939352492,
+          "insider_threat": 85.1889243981536
+        }
+      },
+      "lambda_0.200": {
+        "mean_accuracy": 82.3,
+        "std_accuracy": 4.978554006938159,
+        "mean_ece": 0.06920496211471613,
+        "std_ece": 0.033675578788873936,
+        "per_seed_accuracies": [
+          79.4,
+          87.0,
+          92.4,
+          79.60000000000001,
+          77.2,
+          87.4,
+          80.0,
+          82.8,
+          82.0,
+          75.2
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 85.09236532516783,
+          "threat_intel_match": 89.76200638750461,
+          "lateral_movement": 78.00190700628465,
+          "data_exfiltration": 73.31346733745013,
+          "insider_threat": 85.30117773621339
+        }
+      },
+      "lambda_0.300": {
+        "mean_accuracy": 82.3,
+        "std_accuracy": 5.313567539798476,
+        "mean_ece": 0.06948521422211308,
+        "std_ece": 0.03735677819784227,
+        "per_seed_accuracies": [
+          83.6,
+          86.6,
+          92.60000000000001,
+          78.8,
+          74.8,
+          87.4,
+          80.0,
+          82.19999999999999,
+          82.19999999999999,
+          74.8
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 86.66736947678488,
+          "threat_intel_match": 88.56200638750461,
+          "lateral_movement": 77.80498449300384,
+          "data_exfiltration": 73.10938570479708,
+          "insider_threat": 85.10783823575086
+        }
+      },
+      "lambda_0.500": {
+        "mean_accuracy": 81.02000000000001,
+        "std_accuracy": 6.213179540299797,
+        "mean_ece": 0.08092369975463747,
+        "std_ece": 0.044405880454986904,
+        "per_seed_accuracies": [
+          85.2,
+          85.6,
+          92.4,
+          77.2,
+          70.0,
+          85.0,
+          79.4,
+          80.0,
+          82.19999999999999,
+          73.2
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 87.64327763842095,
+          "threat_intel_match": 84.8967903597412,
+          "lateral_movement": 76.65097981477311,
+          "data_exfiltration": 71.1524096263453,
+          "insider_threat": 84.33938829615904
+        }
+      }
+    },
+    "warm_start": {
+      "lambda_0.000": {
+        "mean_accuracy": 96.87999999999998,
+        "std_accuracy": 0.6823488843692804,
+        "mean_ece": 0.049119596029926375,
+        "std_ece": 0.0054858774671491875,
+        "per_seed_accuracies": [
+          97.8,
+          97.8,
+          96.8,
+          96.8,
+          96.6,
+          95.6,
+          96.6,
+          96.6,
+          97.8,
+          96.39999999999999
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 98.6368517240732,
+          "threat_intel_match": 99.42077441309695,
+          "lateral_movement": 94.72205543051696,
+          "data_exfiltration": 92.2623145628226,
+          "insider_threat": 99.23324438052657
+        }
+      },
+      "lambda_0.050": {
+        "mean_accuracy": 96.87999999999998,
+        "std_accuracy": 0.6823488843692804,
+        "mean_ece": 0.04911629696607626,
+        "std_ece": 0.005485066843465643,
+        "per_seed_accuracies": [
+          97.8,
+          97.8,
+          96.8,
+          96.8,
+          96.6,
+          95.6,
+          96.6,
+          96.6,
+          97.8,
+          96.39999999999999
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 98.6368517240732,
+          "threat_intel_match": 99.42077441309695,
+          "lateral_movement": 94.72205543051696,
+          "data_exfiltration": 92.2623145628226,
+          "insider_threat": 99.23324438052657
+        }
+      },
+      "lambda_0.100": {
+        "mean_accuracy": 96.87999999999998,
+        "std_accuracy": 0.6823488843692804,
+        "mean_ece": 0.04911608508273009,
+        "std_ece": 0.005483184653512757,
+        "per_seed_accuracies": [
+          97.8,
+          97.8,
+          96.8,
+          96.8,
+          96.6,
+          95.6,
+          96.6,
+          96.6,
+          97.8,
+          96.39999999999999
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 98.6368517240732,
+          "threat_intel_match": 99.42077441309695,
+          "lateral_movement": 94.72205543051696,
+          "data_exfiltration": 92.2623145628226,
+          "insider_threat": 99.23324438052657
+        }
+      },
+      "lambda_0.200": {
+        "mean_accuracy": 96.85999999999999,
+        "std_accuracy": 0.6575712889109449,
+        "mean_ece": 0.04925055187931545,
+        "std_ece": 0.005137735615907406,
+        "per_seed_accuracies": [
+          97.6,
+          97.8,
+          96.8,
+          96.8,
+          96.6,
+          95.6,
+          96.6,
+          96.6,
+          97.8,
+          96.39999999999999
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 98.54756600978747,
+          "threat_intel_match": 99.42077441309695,
+          "lateral_movement": 94.72205543051696,
+          "data_exfiltration": 92.2623145628226,
+          "insider_threat": 99.23324438052657
+        }
+      },
+      "lambda_0.300": {
+        "mean_accuracy": 96.84,
+        "std_accuracy": 0.7364781055808809,
+        "mean_ece": 0.04995049122877207,
+        "std_ece": 0.005408326179520996,
+        "per_seed_accuracies": [
+          97.6,
+          98.0,
+          96.8,
+          96.8,
+          96.6,
+          95.39999999999999,
+          96.39999999999999,
+          96.6,
+          97.8,
+          96.39999999999999
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 98.65509289150792,
+          "threat_intel_match": 99.3227351974107,
+          "lateral_movement": 94.72205543051696,
+          "data_exfiltration": 92.2623145628226,
+          "insider_threat": 99.13800628528848
+        }
+      },
+      "lambda_0.500": {
+        "mean_accuracy": 96.16,
+        "std_accuracy": 0.7031358332498794,
+        "mean_ece": 0.04873560510324196,
+        "std_ece": 0.006259783193002915,
+        "per_seed_accuracies": [
+          97.2,
+          96.2,
+          96.39999999999999,
+          96.8,
+          96.39999999999999,
+          94.8,
+          95.19999999999999,
+          96.39999999999999,
+          96.6,
+          95.6
+        ],
+        "per_category_mean_accuracy": {
+          "credential_access": 98.36933410840871,
+          "threat_intel_match": 96.87538550486506,
+          "lateral_movement": 94.5315619617216,
+          "data_exfiltration": 92.14326694377498,
+          "insider_threat": 98.76348619443237
+        }
+      }
+    }
+  },
+  "statistical": {
+    "cold_start": {
+      "lambda_0.050": {
+        "improvement_pp": 0.0,
+        "p_value": 0.9999999999999934,
+        "t_stat": 8.426000324584075e-15,
+        "baseline_mean": 28.78,
+        "treatment_mean": 28.78
+      },
+      "lambda_0.100": {
+        "improvement_pp": -0.28000000000000114,
+        "p_value": 0.09973576000996606,
+        "t_stat": -1.8347785189881762,
+        "baseline_mean": 28.78,
+        "treatment_mean": 28.5
+      },
+      "lambda_0.200": {
+        "improvement_pp": -0.6200000000000045,
+        "p_value": 0.15396308711786566,
+        "t_stat": -1.5567170231501004,
+        "baseline_mean": 28.78,
+        "treatment_mean": 28.159999999999997
+      },
+      "lambda_0.300": {
+        "improvement_pp": -1.5600000000000023,
+        "p_value": 0.09301924504670736,
+        "t_stat": -1.8785638983504425,
+        "baseline_mean": 28.78,
+        "treatment_mean": 27.22
+      },
+      "lambda_0.500": {
+        "improvement_pp": -2.440000000000005,
+        "p_value": 0.14626149973259853,
+        "t_stat": -1.590162486070245,
+        "baseline_mean": 28.78,
+        "treatment_mean": 26.339999999999996
+      }
+    },
+    "noise_50pct": {
+      "lambda_0.050": {
+        "improvement_pp": -0.019999999999988916,
+        "p_value": 0.34343639613791366,
+        "t_stat": -0.9999999999999998,
+        "baseline_mean": 60.11999999999999,
+        "treatment_mean": 60.1
+      },
+      "lambda_0.100": {
+        "improvement_pp": -0.039999999999984936,
+        "p_value": 0.5086464915963427,
+        "t_stat": -0.6882472016116885,
+        "baseline_mean": 60.11999999999999,
+        "treatment_mean": 60.080000000000005
+      },
+      "lambda_0.200": {
+        "improvement_pp": -0.099999999999973,
+        "p_value": 0.5859232529428621,
+        "t_stat": -0.5649326828660253,
+        "baseline_mean": 60.11999999999999,
+        "treatment_mean": 60.02000000000002
+      },
+      "lambda_0.300": {
+        "improvement_pp": -0.5799999999999912,
+        "p_value": 0.11261217446627546,
+        "t_stat": -1.7580242445966494,
+        "baseline_mean": 60.11999999999999,
+        "treatment_mean": 59.54
+      },
+      "lambda_0.500": {
+        "improvement_pp": -1.9600000000000009,
+        "p_value": 0.03329184738023102,
+        "t_stat": -2.5103460459349445,
+        "baseline_mean": 60.11999999999999,
+        "treatment_mean": 58.15999999999999
+      }
+    },
+    "noise_25pct": {
+      "lambda_0.050": {
+        "improvement_pp": 0.01999999999999602,
+        "p_value": 0.34343639613791355,
+        "t_stat": 1.0,
+        "baseline_mean": 82.2,
+        "treatment_mean": 82.22
+      },
+      "lambda_0.100": {
+        "improvement_pp": 0.0,
+        "p_value": 1.0,
+        "t_stat": 0.0,
+        "baseline_mean": 82.2,
+        "treatment_mean": 82.2
+      },
+      "lambda_0.200": {
+        "improvement_pp": 0.09999999999999432,
+        "p_value": 0.5365520414552889,
+        "t_stat": 0.6425294053171754,
+        "baseline_mean": 82.2,
+        "treatment_mean": 82.3
+      },
+      "lambda_0.300": {
+        "improvement_pp": 0.09999999999999432,
+        "p_value": 0.8843302087089137,
+        "t_stat": 0.14966363480775818,
+        "baseline_mean": 82.2,
+        "treatment_mean": 82.3
+      },
+      "lambda_0.500": {
+        "improvement_pp": -1.1799999999999926,
+        "p_value": 0.332963049052269,
+        "t_stat": -1.0231213872832388,
+        "baseline_mean": 82.2,
+        "treatment_mean": 81.02000000000001
+      }
+    },
+    "warm_start": {
+      "lambda_0.050": {
+        "improvement_pp": 0.0,
+        "p_value": 1.0,
+        "t_stat": NaN,
+        "baseline_mean": 96.87999999999998,
+        "treatment_mean": 96.87999999999998
+      },
+      "lambda_0.100": {
+        "improvement_pp": 0.0,
+        "p_value": 1.0,
+        "t_stat": NaN,
+        "baseline_mean": 96.87999999999998,
+        "treatment_mean": 96.87999999999998
+      },
+      "lambda_0.200": {
+        "improvement_pp": -0.01999999999999602,
+        "p_value": 0.34343639613791355,
+        "t_stat": -1.0,
+        "baseline_mean": 96.87999999999998,
+        "treatment_mean": 96.85999999999999
+      },
+      "lambda_0.300": {
+        "improvement_pp": -0.03999999999997783,
+        "p_value": 0.34343639613791355,
+        "t_stat": -1.0,
+        "baseline_mean": 96.87999999999998,
+        "treatment_mean": 96.84
+      },
+      "lambda_0.500": {
+        "improvement_pp": -0.7199999999999847,
+        "p_value": 0.0023369131191947404,
+        "t_stat": -4.191212838814207,
+        "baseline_mean": 96.87999999999998,
+        "treatment_mean": 96.16
+      }
+    }
+  },
+  "gate": {
+    "S1b_passed": false,
+    "best_result": null
+  }
+}

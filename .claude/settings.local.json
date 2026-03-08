@@ -4,7 +4,13 @@
       "Bash(dir:*)",
       "Bash(cmd /c \"dir /b /s \"\"C:\\\\Users\\\\baner\\\\CopyFolder\\\\IoT_thoughts\\\\python-projects\\\\kaggle_experiments\\\\claude_projects\\\\cross-graph-experiments\"\"\")",
       "Bash(python:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(PYTHONUTF8=1 python:*)",
+      "Bash(tasklist:*)",
+      "Bash(set PYTHONUTF8=1:*)",
+      "Bash(mkdir:*)",
+      "Bash(\"C:\\\\Users\\\\baner\\\\CopyFolder\\\\IoT_thoughts\\\\python-projects\\\\kaggle_experiments\\\\claude_projects\\\\cross-graph-experiments\\\\experiments\\\\synthesis\\\\expS5a_real_threat_intel\\\\__init__.py\":*)",
+      "Bash(rm:*)"
     ]
   }
 }

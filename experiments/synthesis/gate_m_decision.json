@@ -1,0 +1,45 @@
+{
+  "gate_m_decision": "FAIL",
+  "recommended_lambda": 0.05,
+  "safe_range": [
+    0.0,
+    0.0
+  ],
+  "per_experiment": {
+    "S1": {
+      "improvement_pp": 1.4210854715202004e-14,
+      "p_value": 0.999999999999986,
+      "ece_degradation": -0.10752738681166873,
+      "best_lambda": 0.05,
+      "passed": false
+    },
+    "S2": {
+      "poison_20pct_degradation_pp": -1.4210854715202004e-14,
+      "safety_effectiveness": 1.0000000000000002,
+      "passed": true
+    },
+    "S3": {
+      "mean_relative_frobenius": 0.0027878256714590106,
+      "mean_accuracy_diff_pp": 0.05,
+      "passed": true,
+      "implication": "No centroid contamination through indirect path \u2014 update() API unchanged"
+    },
+    "S4": {
+      "plateau_width": 0.0,
+      "lambda_peak": 0.05,
+      "peak_accuracy": 96.88,
+      "passed": false,
+      "implication": "FAIL: narrow spike \u2014 per-category \u03bb[c] or adaptive coupling needed (changes SynthesisBias)"
+    }
+  },
+  "gate_d_early": {
+    "S5a": {
+      "status": "not_run"
+    },
+    "S5b": {
+      "status": "not_run"
+    },
+    "feasibility": "SKIPPED"
+  },
+  "timestamp": "2026-03-07T02:28:20.528164+00:00"
+}

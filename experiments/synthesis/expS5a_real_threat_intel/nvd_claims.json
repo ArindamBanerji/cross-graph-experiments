@@ -1,0 +1,362 @@
+[
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-23623",
+    "source": "NVD",
+    "tier": 2,
+    "direction": 1,
+    "strength": 0.45,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.45,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "investigate",
+      "monitor"
+    ],
+    "description": "Collabora Online is a collaborative online office suite based on LibreOffice technology. Prior to Collabora Online Development Edition version 25.04.08.2 and prior to Collabora Online versions 23.05.2",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 5.3,
+    "severity": "MEDIUM",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1971",
+    "source": "NVD",
+    "tier": 3,
+    "direction": 1,
+    "strength": 0.15,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.15,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "monitor"
+    ],
+    "description": "A vulnerability has been found in Edimax BR-6288ACL up to 1.12. Impacted is the function wiz_WISP24gmanual of the file wiz_WISP24gmanual.asp. Such manipulation of the argument manualssid leads to cros",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 2.4,
+    "severity": "LOW",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1972",
+    "source": "NVD",
+    "tier": 2,
+    "direction": 1,
+    "strength": 0.45,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.45,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "investigate",
+      "monitor"
+    ],
+    "description": "A vulnerability was found in Edimax BR-6208AC 2_1.02. The affected element is the function auth_check_userpass2. Performing a manipulation of the argument Username/Password results in use of default c",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 5.3,
+    "severity": "MEDIUM",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1973",
+    "source": "NVD",
+    "tier": 2,
+    "direction": 1,
+    "strength": 0.45,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.45,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "investigate",
+      "monitor"
+    ],
+    "description": "A vulnerability was determined in Free5GC up to 4.1.0. The impacted element is the function establishPfcpSession of the component SMF. Executing a manipulation can lead to null pointer dereference. Th",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 5.3,
+    "severity": "MEDIUM",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1974",
+    "source": "NVD",
+    "tier": 2,
+    "direction": 1,
+    "strength": 0.45,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.45,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "investigate",
+      "monitor"
+    ],
+    "description": "A vulnerability was identified in Free5GC up to 4.1.0. This affects the function ResolveNodeIdToIp of the file internal/sbi/processor/datapath.go of the component SMF. The manipulation leads to denial",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 5.3,
+    "severity": "MEDIUM",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1228",
+    "source": "NVD",
+    "tier": 2,
+    "direction": 1,
+    "strength": 0.45,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.45,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "investigate",
+      "monitor"
+    ],
+    "description": "The Timeline Block \u2013 Beautiful Timeline Builder for WordPress (Vertical & Horizontal Timelines) plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and includ",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 4.3,
+    "severity": "MEDIUM",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1975",
+    "source": "NVD",
+    "tier": 2,
+    "direction": 1,
+    "strength": 0.45,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.45,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "investigate",
+      "monitor"
+    ],
+    "description": "A security flaw has been discovered in Free5GC up to 4.1.0. This impacts the function identityTriggerType of the file pfcp_reports.go. The manipulation results in null pointer dereference. The attack ",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 5.3,
+    "severity": "MEDIUM",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1976",
+    "source": "NVD",
+    "tier": 2,
+    "direction": 1,
+    "strength": 0.45,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.45,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "investigate",
+      "monitor"
+    ],
+    "description": "A weakness has been identified in Free5GC up to 4.1.0. Affected is the function SessionDeletionResponse of the component SMF. This manipulation causes null pointer dereference. The attack is possible ",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 5.3,
+    "severity": "MEDIUM",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2025-15566",
+    "source": "NVD",
+    "tier": 1,
+    "direction": 1,
+    "strength": 0.75,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.75,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure"
+    ],
+    "actions_promoted": [
+      "escalate",
+      "investigate"
+    ],
+    "description": "A security issue was discovered in ingress-nginx\u00a0where the `nginx.ingress.kubernetes.io/auth-proxy-set-headers` Ingress annotation can be used to inject configuration into nginx. This can lead to arbi",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 8.8,
+    "severity": "HIGH",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1977",
+    "source": "NVD",
+    "tier": 2,
+    "direction": 1,
+    "strength": 0.45,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.45,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "investigate",
+      "monitor"
+    ],
+    "description": "A security vulnerability has been detected in isaacwasserman mcp-vegalite-server up to 16aefed598b8cd897b78e99b907f6e2984572c61. Affected by this vulnerability is the function eval of the component vi",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 6.3,
+    "severity": "MEDIUM",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1978",
+    "source": "NVD",
+    "tier": 2,
+    "direction": 1,
+    "strength": 0.45,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.45,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "investigate",
+      "monitor"
+    ],
+    "description": "A vulnerability was detected in kalyan02 NanoCMS up to 0.4. Affected by this issue is some unknown functionality of the file /data/pagesdata.txt of the component User Information Handler. Performing a",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 5.3,
+    "severity": "MEDIUM",
+    "attack_vector": "NETWORK",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1979",
+    "source": "NVD",
+    "tier": 2,
+    "direction": 1,
+    "strength": 0.45,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.45,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "investigate",
+      "monitor"
+    ],
+    "description": "A flaw has been found in mruby up to 3.4.0. This affects the function mrb_vm_exec of the file src/vm.c of the component JMPNOT-to-JMPIF Optimization. Executing a manipulation can lead to use after fre",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 5.3,
+    "severity": "MEDIUM",
+    "attack_vector": "LOCAL",
+    "published": "2026-02-06"
+  },
+  {
+    "type": "cve_published",
+    "cve_id": "CVE-2026-1990",
+    "source": "NVD",
+    "tier": 3,
+    "direction": 1,
+    "strength": 0.15,
+    "confidence": 0.9,
+    "extraction_confidence": 1.0,
+    "urgency": 0.15,
+    "age_days": 30,
+    "decay_class": "standard",
+    "categories_affected": [
+      "cloud_infrastructure",
+      "credential_access"
+    ],
+    "actions_promoted": [
+      "monitor"
+    ],
+    "description": "A security vulnerability has been detected in oatpp up to 1.3.1. This impacts the function oatpp::data::type::ObjectWrapper::ObjectWrapper of the file src/oatpp/data/type/Type.hpp. The manipulation le",
+    "vendor": "",
+    "product": "",
+    "cvss_score": 3.3,
+    "severity": "LOW",
+    "attack_vector": "LOCAL",
+    "published": "2026-02-06"
+  }
+]

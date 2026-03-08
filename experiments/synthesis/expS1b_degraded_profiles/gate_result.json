@@ -1,0 +1,8 @@
+{
+  "gate": "S1b",
+  "pass": false,
+  "finding": "sigma_no_effect",
+  "best_result": null,
+  "s1_finding": "warm_start_ceiling_confirmed",
+  "combined_interpretation": "Synthesis bias sigma does not provide >=3pp statistically significant improvement even under degraded profile conditions. Combined with EXP-S1 (warm-start ceiling), this suggests sigma's value lies in non-accuracy dimensions (confidence shaping, briefing display)."
+}

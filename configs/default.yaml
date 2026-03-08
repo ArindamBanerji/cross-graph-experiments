@@ -350,3 +350,56 @@ expA:
     va1_threshold: 0.80
     va3_threshold: 0.55
     va6_gap_threshold: 0.25
+
+# ============================================================
+# SYNTHESIS SECTION — add to configs/default.yaml
+# ============================================================
+# Add this block at the end of your existing default.yaml file.
+# Do NOT replace existing content — append only.
+# ============================================================
+
+synthesis:
+  # Lambda sweep values for EXP-S1 and EXP-S4
+  lambda_values: [0.0, 0.05, 0.1, 0.2]
+
+  # Fine-grained lambda sweep for EXP-S4 sensitivity analysis
+  lambda_sweep_fine: [
+    0.0, 0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175,
+    0.2, 0.225, 0.25, 0.275, 0.3, 0.35, 0.4, 0.45, 0.5
+  ]
+
+  # Sigma clipping bound — each σ[c,a] clipped to [-sigma_max, +sigma_max]
+  sigma_max: 1.0
+
+  # Minimum effective confidence (confidence × extraction_confidence) to project a claim
+  extraction_threshold: 0.8
+
+  # Claim generation parameters
+  n_claims_correct: 10
+  n_claims_poison_20pct: [8, 2]   # [n_correct, n_poison] for 20% poison condition
+  n_claims_poison_40pct: [6, 4]   # [n_correct, n_poison] for 40% poison condition
+
+  # Random seeds (10 seeds for all synthesis experiments)
+  seeds: [42, 123, 456, 789, 1024, 2048, 3072, 4096, 5120, 6144]
+
+  # Alert counts
+  n_decisions: 500              # EXP-S1, S2, S4
+  n_decisions_independence: 300 # EXP-S3 (centroid trajectory)
+  n_test_alerts: 200            # EXP-S3 centroids-alone test
+
+  # Gate thresholds (from intelligence_layer_design_v1 §4)
+  gates:
+    S1_min_accuracy_improvement_pp: 3.0
+    S1_max_p_value: 0.05
+    S1_max_ece_degradation: 0.02
+    S2_max_poison_20pct_degradation_pp: 2.0
+    S2_min_safety_effectiveness: 0.50
+    S3_max_frobenius_relative: 0.05
+    S3_max_accuracy_diff_pp: 1.0
+    S4_min_plateau_width: 0.05
+    S5a_min_claims_extracted: 5
+    S5a_min_sigma_nonzero: 3
+    S5b_min_llm_f1: 0.7
+    S5b_min_template_f1: 0.4
+    S5b_min_sigma_nonzero: 4
+

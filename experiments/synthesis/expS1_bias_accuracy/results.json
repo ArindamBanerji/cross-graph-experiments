@@ -1,0 +1,874 @@
+{
+  "experiment": "EXP-S1",
+  "design": "warm_start",
+  "per_lambda": {
+    "lambda_0.000": [
+      {
+        "accuracy": 97.8,
+        "ece": 0.050828389633217085,
+        "per_category_accuracy": {
+          "credential_access": 100.0,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 95.1923076923077,
+          "data_exfiltration": 94.39252336448598,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.204,
+          "escalate_tier2": 0.22,
+          "enrich_and_watch": 0.276,
+          "escalate_incident": 0.3
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 97.8,
+        "ece": 0.048396496434011796,
+        "per_category_accuracy": {
+          "credential_access": 97.84946236559139,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 98.0,
+          "data_exfiltration": 92.85714285714286,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.186,
+          "escalate_tier2": 0.25,
+          "enrich_and_watch": 0.29,
+          "escalate_incident": 0.274
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.8,
+        "ece": 0.05332144445574679,
+        "per_category_accuracy": {
+          "credential_access": 97.87234042553192,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 96.22641509433963,
+          "data_exfiltration": 89.36170212765957,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.166,
+          "escalate_tier2": 0.256,
+          "enrich_and_watch": 0.278,
+          "escalate_incident": 0.3
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.8,
+        "ece": 0.05179395039045259,
+        "per_category_accuracy": {
+          "credential_access": 98.18181818181819,
+          "threat_intel_match": 98.1651376146789,
+          "lateral_movement": 97.0873786407767,
+          "data_exfiltration": 90.47619047619048,
+          "insider_threat": 98.93617021276596
+        },
+        "action_distribution": {
+          "auto_close": 0.242,
+          "escalate_tier2": 0.228,
+          "enrich_and_watch": 0.236,
+          "escalate_incident": 0.294
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.6,
+        "ece": 0.05391579207075614,
+        "per_category_accuracy": {
+          "credential_access": 99.04761904761905,
+          "threat_intel_match": 99.0,
+          "lateral_movement": 92.24137931034483,
+          "data_exfiltration": 93.18181818181817,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.234,
+          "enrich_and_watch": 0.272,
+          "escalate_incident": 0.304
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 95.6,
+        "ece": 0.0425124147952413,
+        "per_category_accuracy": {
+          "credential_access": 100.0,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 89.62264150943396,
+          "data_exfiltration": 92.15686274509804,
+          "insider_threat": 97.0873786407767
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.244,
+          "enrich_and_watch": 0.26,
+          "escalate_incident": 0.306
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.6,
+        "ece": 0.04806804825385259,
+        "per_category_accuracy": {
+          "credential_access": 98.11320754716981,
+          "threat_intel_match": 98.09523809523809,
+          "lateral_movement": 94.0,
+          "data_exfiltration": 91.66666666666666,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.196,
+          "escalate_tier2": 0.266,
+          "enrich_and_watch": 0.256,
+          "escalate_incident": 0.282
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.6,
+        "ece": 0.036007200225923165,
+        "per_category_accuracy": {
+          "credential_access": 98.05825242718447,
+          "threat_intel_match": 98.94736842105263,
+          "lateral_movement": 94.3820224719101,
+          "data_exfiltration": 91.83673469387756,
+          "insider_threat": 99.1304347826087
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.228,
+          "enrich_and_watch": 0.288,
+          "escalate_incident": 0.294
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 97.8,
+        "ece": 0.052966057626136535,
+        "per_category_accuracy": {
+          "credential_access": 99.04761904761905,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 95.37037037037037,
+          "data_exfiltration": 95.6043956043956,
+          "insider_threat": 99.04761904761905
+        },
+        "action_distribution": {
+          "auto_close": 0.218,
+          "escalate_tier2": 0.232,
+          "enrich_and_watch": 0.254,
+          "escalate_incident": 0.296
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.39999999999999,
+        "ece": 0.053386174667325134,
+        "per_category_accuracy": {
+          "credential_access": 98.1981981981982,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 95.09803921568627,
+          "data_exfiltration": 91.0891089108911,
+          "insider_threat": 98.13084112149532
+        },
+        "action_distribution": {
+          "auto_close": 0.194,
+          "escalate_tier2": 0.232,
+          "enrich_and_watch": 0.238,
+          "escalate_incident": 0.336
+        },
+        "n_alerts": 500
+      }
+    ],
+    "lambda_0.050": [
+      {
+        "accuracy": 97.8,
+        "ece": 0.050838039903501296,
+        "per_category_accuracy": {
+          "credential_access": 100.0,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 95.1923076923077,
+          "data_exfiltration": 94.39252336448598,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.204,
+          "escalate_tier2": 0.22,
+          "enrich_and_watch": 0.276,
+          "escalate_incident": 0.3
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 97.8,
+        "ece": 0.04839977127063104,
+        "per_category_accuracy": {
+          "credential_access": 97.84946236559139,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 98.0,
+          "data_exfiltration": 92.85714285714286,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.186,
+          "escalate_tier2": 0.25,
+          "enrich_and_watch": 0.29,
+          "escalate_incident": 0.274
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.8,
+        "ece": 0.053315025295529166,
+        "per_category_accuracy": {
+          "credential_access": 97.87234042553192,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 96.22641509433963,
+          "data_exfiltration": 89.36170212765957,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.166,
+          "escalate_tier2": 0.256,
+          "enrich_and_watch": 0.278,
+          "escalate_incident": 0.3
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.8,
+        "ece": 0.051786627773799214,
+        "per_category_accuracy": {
+          "credential_access": 98.18181818181819,
+          "threat_intel_match": 98.1651376146789,
+          "lateral_movement": 97.0873786407767,
+          "data_exfiltration": 90.47619047619048,
+          "insider_threat": 98.93617021276596
+        },
+        "action_distribution": {
+          "auto_close": 0.242,
+          "escalate_tier2": 0.228,
+          "enrich_and_watch": 0.236,
+          "escalate_incident": 0.294
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.6,
+        "ece": 0.05235200165093802,
+        "per_category_accuracy": {
+          "credential_access": 99.04761904761905,
+          "threat_intel_match": 99.0,
+          "lateral_movement": 92.24137931034483,
+          "data_exfiltration": 93.18181818181817,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.234,
+          "enrich_and_watch": 0.272,
+          "escalate_incident": 0.304
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 95.6,
+        "ece": 0.04564774943347034,
+        "per_category_accuracy": {
+          "credential_access": 100.0,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 89.62264150943396,
+          "data_exfiltration": 92.15686274509804,
+          "insider_threat": 97.0873786407767
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.244,
+          "enrich_and_watch": 0.26,
+          "escalate_incident": 0.306
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.6,
+        "ece": 0.04805998848230266,
+        "per_category_accuracy": {
+          "credential_access": 98.11320754716981,
+          "threat_intel_match": 98.09523809523809,
+          "lateral_movement": 94.0,
+          "data_exfiltration": 91.66666666666666,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.196,
+          "escalate_tier2": 0.266,
+          "enrich_and_watch": 0.256,
+          "escalate_incident": 0.282
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.6,
+        "ece": 0.03603828174082568,
+        "per_category_accuracy": {
+          "credential_access": 98.05825242718447,
+          "threat_intel_match": 98.94736842105263,
+          "lateral_movement": 94.3820224719101,
+          "data_exfiltration": 91.83673469387756,
+          "insider_threat": 99.1304347826087
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.228,
+          "enrich_and_watch": 0.288,
+          "escalate_incident": 0.294
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 97.8,
+        "ece": 0.05298350617394462,
+        "per_category_accuracy": {
+          "credential_access": 99.04761904761905,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 95.37037037037037,
+          "data_exfiltration": 95.6043956043956,
+          "insider_threat": 99.04761904761905
+        },
+        "action_distribution": {
+          "auto_close": 0.218,
+          "escalate_tier2": 0.232,
+          "enrich_and_watch": 0.254,
+          "escalate_incident": 0.296
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.2,
+        "ece": 0.051375451433632834,
+        "per_category_accuracy": {
+          "credential_access": 98.1981981981982,
+          "threat_intel_match": 98.73417721518987,
+          "lateral_movement": 95.09803921568627,
+          "data_exfiltration": 91.0891089108911,
+          "insider_threat": 98.13084112149532
+        },
+        "action_distribution": {
+          "auto_close": 0.194,
+          "escalate_tier2": 0.234,
+          "enrich_and_watch": 0.236,
+          "escalate_incident": 0.336
+        },
+        "n_alerts": 500
+      }
+    ],
+    "lambda_0.100": [
+      {
+        "accuracy": 97.8,
+        "ece": 0.05088133376647464,
+        "per_category_accuracy": {
+          "credential_access": 100.0,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 95.1923076923077,
+          "data_exfiltration": 94.39252336448598,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.204,
+          "escalate_tier2": 0.22,
+          "enrich_and_watch": 0.276,
+          "escalate_incident": 0.3
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 97.8,
+        "ece": 0.048469570546249216,
+        "per_category_accuracy": {
+          "credential_access": 97.84946236559139,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 98.0,
+          "data_exfiltration": 92.85714285714286,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.186,
+          "escalate_tier2": 0.25,
+          "enrich_and_watch": 0.29,
+          "escalate_incident": 0.274
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.8,
+        "ece": 0.05330290417884851,
+        "per_category_accuracy": {
+          "credential_access": 97.87234042553192,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 96.22641509433963,
+          "data_exfiltration": 89.36170212765957,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.166,
+          "escalate_tier2": 0.256,
+          "enrich_and_watch": 0.278,
+          "escalate_incident": 0.3
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 97.0,
+        "ece": 0.04979445424977994,
+        "per_category_accuracy": {
+          "credential_access": 98.18181818181819,
+          "threat_intel_match": 99.08256880733946,
+          "lateral_movement": 97.0873786407767,
+          "data_exfiltration": 90.47619047619048,
+          "insider_threat": 98.93617021276596
+        },
+        "action_distribution": {
+          "auto_close": 0.242,
+          "escalate_tier2": 0.23,
+          "enrich_and_watch": 0.234,
+          "escalate_incident": 0.294
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.6,
+        "ece": 0.05235299076596793,
+        "per_category_accuracy": {
+          "credential_access": 99.04761904761905,
+          "threat_intel_match": 99.0,
+          "lateral_movement": 92.24137931034483,
+          "data_exfiltration": 93.18181818181817,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.234,
+          "enrich_and_watch": 0.272,
+          "escalate_incident": 0.304
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 95.6,
+        "ece": 0.04544418779551945,
+        "per_category_accuracy": {
+          "credential_access": 100.0,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 89.62264150943396,
+          "data_exfiltration": 92.15686274509804,
+          "insider_threat": 97.0873786407767
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.244,
+          "enrich_and_watch": 0.26,
+          "escalate_incident": 0.306
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.6,
+        "ece": 0.045323794065487796,
+        "per_category_accuracy": {
+          "credential_access": 98.11320754716981,
+          "threat_intel_match": 98.09523809523809,
+          "lateral_movement": 94.0,
+          "data_exfiltration": 91.66666666666666,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.196,
+          "escalate_tier2": 0.266,
+          "enrich_and_watch": 0.256,
+          "escalate_incident": 0.282
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.6,
+        "ece": 0.036137036980367084,
+        "per_category_accuracy": {
+          "credential_access": 98.05825242718447,
+          "threat_intel_match": 98.94736842105263,
+          "lateral_movement": 94.3820224719101,
+          "data_exfiltration": 91.83673469387756,
+          "insider_threat": 99.1304347826087
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.228,
+          "enrich_and_watch": 0.288,
+          "escalate_incident": 0.294
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 97.8,
+        "ece": 0.0530724373852715,
+        "per_category_accuracy": {
+          "credential_access": 99.04761904761905,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 95.37037037037037,
+          "data_exfiltration": 95.6043956043956,
+          "insider_threat": 99.04761904761905
+        },
+        "action_distribution": {
+          "auto_close": 0.218,
+          "escalate_tier2": 0.232,
+          "enrich_and_watch": 0.254,
+          "escalate_incident": 0.296
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.2,
+        "ece": 0.051264201441734644,
+        "per_category_accuracy": {
+          "credential_access": 98.1981981981982,
+          "threat_intel_match": 98.73417721518987,
+          "lateral_movement": 95.09803921568627,
+          "data_exfiltration": 91.0891089108911,
+          "insider_threat": 98.13084112149532
+        },
+        "action_distribution": {
+          "auto_close": 0.194,
+          "escalate_tier2": 0.234,
+          "enrich_and_watch": 0.236,
+          "escalate_incident": 0.336
+        },
+        "n_alerts": 500
+      }
+    ],
+    "lambda_0.200": [
+      {
+        "accuracy": 97.6,
+        "ece": 0.04915394253400481,
+        "per_category_accuracy": {
+          "credential_access": 99.10714285714286,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 95.1923076923077,
+          "data_exfiltration": 94.39252336448598,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.206,
+          "escalate_tier2": 0.218,
+          "enrich_and_watch": 0.276,
+          "escalate_incident": 0.3
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 97.6,
+        "ece": 0.048340920626331496,
+        "per_category_accuracy": {
+          "credential_access": 97.84946236559139,
+          "threat_intel_match": 99.06542056074767,
+          "lateral_movement": 98.0,
+          "data_exfiltration": 92.85714285714286,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.186,
+          "escalate_tier2": 0.252,
+          "enrich_and_watch": 0.288,
+          "escalate_incident": 0.274
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.8,
+        "ece": 0.05336409286852721,
+        "per_category_accuracy": {
+          "credential_access": 97.87234042553192,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 96.22641509433963,
+          "data_exfiltration": 89.36170212765957,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.166,
+          "escalate_tier2": 0.256,
+          "enrich_and_watch": 0.278,
+          "escalate_incident": 0.3
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 97.0,
+        "ece": 0.05245776505496548,
+        "per_category_accuracy": {
+          "credential_access": 98.18181818181819,
+          "threat_intel_match": 99.08256880733946,
+          "lateral_movement": 97.0873786407767,
+          "data_exfiltration": 90.47619047619048,
+          "insider_threat": 98.93617021276596
+        },
+        "action_distribution": {
+          "auto_close": 0.242,
+          "escalate_tier2": 0.23,
+          "enrich_and_watch": 0.234,
+          "escalate_incident": 0.294
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.0,
+        "ece": 0.05356518722763041,
+        "per_category_accuracy": {
+          "credential_access": 99.04761904761905,
+          "threat_intel_match": 96.0,
+          "lateral_movement": 92.24137931034483,
+          "data_exfiltration": 93.18181818181817,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.24,
+          "enrich_and_watch": 0.266,
+          "escalate_incident": 0.304
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 95.6,
+        "ece": 0.042590088286284945,
+        "per_category_accuracy": {
+          "credential_access": 100.0,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 89.62264150943396,
+          "data_exfiltration": 92.15686274509804,
+          "insider_threat": 97.0873786407767
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.244,
+          "enrich_and_watch": 0.26,
+          "escalate_incident": 0.306
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.2,
+        "ece": 0.046521374250524584,
+        "per_category_accuracy": {
+          "credential_access": 98.11320754716981,
+          "threat_intel_match": 96.19047619047619,
+          "lateral_movement": 94.0,
+          "data_exfiltration": 91.66666666666666,
+          "insider_threat": 100.0
+        },
+        "action_distribution": {
+          "auto_close": 0.196,
+          "escalate_tier2": 0.27,
+          "enrich_and_watch": 0.252,
+          "escalate_incident": 0.282
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.39999999999999,
+        "ece": 0.036376631102943,
+        "per_category_accuracy": {
+          "credential_access": 98.05825242718447,
+          "threat_intel_match": 97.89473684210527,
+          "lateral_movement": 94.3820224719101,
+          "data_exfiltration": 91.83673469387756,
+          "insider_threat": 99.1304347826087
+        },
+        "action_distribution": {
+          "auto_close": 0.19,
+          "escalate_tier2": 0.23,
+          "enrich_and_watch": 0.286,
+          "escalate_incident": 0.294
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 97.8,
+        "ece": 0.05397859285332633,
+        "per_category_accuracy": {
+          "credential_access": 99.04761904761905,
+          "threat_intel_match": 100.0,
+          "lateral_movement": 95.37037037037037,
+          "data_exfiltration": 95.6043956043956,
+          "insider_threat": 99.04761904761905
+        },
+        "action_distribution": {
+          "auto_close": 0.218,
+          "escalate_tier2": 0.232,
+          "enrich_and_watch": 0.254,
+          "escalate_incident": 0.296
+        },
+        "n_alerts": 500
+      },
+      {
+        "accuracy": 96.2,
+        "ece": 0.05133765203261649,
+        "per_category_accuracy": {
+          "credential_access": 98.1981981981982,
+          "threat_intel_match": 98.73417721518987,
+          "lateral_movement": 95.09803921568627,
+          "data_exfiltration": 91.0891089108911,
+          "insider_threat": 98.13084112149532
+        },
+        "action_distribution": {
+          "auto_close": 0.194,
+          "escalate_tier2": 0.234,
+          "enrich_and_watch": 0.236,
+          "escalate_incident": 0.336
+        },
+        "n_alerts": 500
+      }
+    ]
+  },
+  "aggregated": {
+    "lambda_0.000": {
+      "mean_accuracy": 96.87999999999998,
+      "std_accuracy": 0.6823488843692804,
+      "mean_ece": 0.04911959685526631,
+      "std_ece": 0.0054858775679007534,
+      "per_seed_accuracies": [
+        97.8,
+        97.8,
+        96.8,
+        96.8,
+        96.6,
+        95.6,
+        96.6,
+        96.6,
+        97.8,
+        96.39999999999999
+      ],
+      "per_category_mean_accuracy": {
+        "credential_access": 98.6368517240732,
+        "threat_intel_match": 99.42077441309695,
+        "lateral_movement": 94.72205543051696,
+        "data_exfiltration": 92.2623145628226,
+        "insider_threat": 99.23324438052657
+      },
+      "mean_action_distribution": {
+        "auto_close": 0.1976,
+        "escalate_tier2": 0.23900000000000002,
+        "enrich_and_watch": 0.26480000000000004,
+        "escalate_incident": 0.2986
+      }
+    },
+    "lambda_0.050": {
+      "mean_accuracy": 96.85999999999999,
+      "std_accuracy": 0.6988562083862462,
+      "mean_ece": 0.04907964431585749,
+      "std_ece": 0.004928836804545411,
+      "per_seed_accuracies": [
+        97.8,
+        97.8,
+        96.8,
+        96.8,
+        96.6,
+        95.6,
+        96.6,
+        96.6,
+        97.8,
+        96.2
+      ],
+      "per_category_mean_accuracy": {
+        "credential_access": 98.6368517240732,
+        "threat_intel_match": 99.29419213461594,
+        "lateral_movement": 94.72205543051696,
+        "data_exfiltration": 92.2623145628226,
+        "insider_threat": 99.23324438052657
+      },
+      "mean_action_distribution": {
+        "auto_close": 0.1976,
+        "escalate_tier2": 0.2392,
+        "enrich_and_watch": 0.2646,
+        "escalate_incident": 0.2986
+      }
+    },
+    "lambda_0.100": {
+      "mean_accuracy": 96.88,
+      "std_accuracy": 0.6997142273814364,
+      "mean_ece": 0.04860429111757007,
+      "std_ece": 0.004959526877944971,
+      "per_seed_accuracies": [
+        97.8,
+        97.8,
+        96.8,
+        97.0,
+        96.6,
+        95.6,
+        96.6,
+        96.6,
+        97.8,
+        96.2
+      ],
+      "per_category_mean_accuracy": {
+        "credential_access": 98.6368517240732,
+        "threat_intel_match": 99.38593525388201,
+        "lateral_movement": 94.72205543051696,
+        "data_exfiltration": 92.2623145628226,
+        "insider_threat": 99.23324438052657
+      },
+      "mean_action_distribution": {
+        "auto_close": 0.1976,
+        "escalate_tier2": 0.2394,
+        "enrich_and_watch": 0.2644,
+        "escalate_incident": 0.2986
+      }
+    },
+    "lambda_0.200": {
+      "mean_accuracy": 96.72,
+      "std_accuracy": 0.7222188034107105,
+      "mean_ece": 0.04876862468371548,
+      "std_ece": 0.005372114282459578,
+      "per_seed_accuracies": [
+        97.6,
+        97.6,
+        96.8,
+        97.0,
+        96.0,
+        95.6,
+        96.2,
+        96.39999999999999,
+        97.8,
+        96.2
+      ],
+      "per_category_mean_accuracy": {
+        "credential_access": 98.54756600978747,
+        "threat_intel_match": 98.69673796158585,
+        "lateral_movement": 94.72205543051696,
+        "data_exfiltration": 92.2623145628226,
+        "insider_threat": 99.23324438052657
+      },
+      "mean_action_distribution": {
+        "auto_close": 0.1978,
+        "escalate_tier2": 0.2406,
+        "enrich_and_watch": 0.263,
+        "escalate_incident": 0.2986
+      }
+    }
+  },
+  "statistical_test": {
+    "best_lambda": 0.1,
+    "improvement_pp": 1.4210854715202004e-14,
+    "p_value": 0.999999999999963,
+    "ece_delta": -0.000515305737696238,
+    "baseline_mean_accuracy": 96.87999999999998,
+    "best_mean_accuracy": 96.88
+  },
+  "gate": {
+    "S1_passed": false,
+    "improvement_pp": 1.4210854715202004e-14,
+    "p_value": 0.999999999999963,
+    "ece_delta": -0.000515305737696238
+  }
+}

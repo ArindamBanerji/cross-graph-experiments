@@ -1,0 +1,35 @@
+{
+  "gate": "S1d",
+  "pass": false,
+  "design_resolution": "option_b",
+  "warmup_decisions": 500,
+  "eval_decisions": 500,
+  "baseline_accuracy": 0.9725999999999999,
+  "best_lambda": 0.1,
+  "best_delta_pp": -0.019999999999986695,
+  "best_p_value": 0.34343639613791355,
+  "gateop_ref_delta_pp": 0.41000000000000003,
+  "interpretation": "sigma does not achieve >=0.3pp improvement at p<0.05 in GATE-OP-matched conditions. Best: delta=-0.020pp (lambda=0.10, p=0.3434). GATE-OP reference: delta=+0.41pp. DI-02 resolution: OPTION B \u2014 display-only.",
+  "all_results": [
+    {
+      "lambda": 0.1,
+      "delta_pp": -0.019999999999986695,
+      "p_value": 0.34343639613791355
+    },
+    {
+      "lambda": 0.2,
+      "delta_pp": -0.07999999999999119,
+      "p_value": 0.26949945378301204
+    },
+    {
+      "lambda": 0.3,
+      "delta_pp": -0.21999999999999797,
+      "p_value": 0.15381019950923538
+    },
+    {
+      "lambda": 0.5,
+      "delta_pp": -1.1199999999999988,
+      "p_value": 0.003668104349296674
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "experiment": "EXP-S3",
+  "lambda_used": 0.05,
+  "per_seed": [
+    {
+      "frobenius_diff": 0.011513355840677121,
+      "frobenius_norm": 5.518267926351315,
+      "relative_diff": 0.0020864075456897514,
+      "per_category_diff": {
+        "credential_access": 0.0,
+        "threat_intel_match": 0.0,
+        "lateral_movement": 0.0,
+        "data_exfiltration": 0.011513355840677121,
+        "insider_threat": 0.0
+      },
+      "snapshot_relative_diffs": {
+        "50": 0.0,
+        "100": 0.0,
+        "150": 0.0,
+        "200": 0.0,
+        "250": 0.002407898021361491,
+        "300": 0.0020864075456897514
+      },
+      "accuracy_with_synthesis_centroids": 98.0,
+      "accuracy_without_synthesis_centroids": 98.0,
+      "accuracy_diff": 0.0
+    },
+    {
+      "frobenius_diff": 0.018930874856047487,
+      "frobenius_norm": 5.5175642644793195,
+      "relative_diff": 0.003431020274275673,
+      "per_category_diff": {
+        "credential_access": 0.0,
+        "threat_intel_match": 0.0,
+        "lateral_movement": 0.0,
+        "data_exfiltration": 0.018930874856047487,
+        "insider_threat": 0.0
+      },
+      "snapshot_relative_diffs": {
+        "50": 0.0,
+        "100": 0.0,
+        "150": 0.0,
+        "200": 0.0033476515015582963,
+        "250": 0.0037851585836290017,
+        "300": 0.003431020274275673
+      },
+      "accuracy_with_synthesis_centroids": 97.0,
+      "accuracy_without_synthesis_centroids": 97.0,
+      "accuracy_diff": 0.0
+    },
+    {
+      "frobenius_diff": 0.0,
+      "frobenius_norm": 5.5131464610253,
+      "relative_diff": 0.0,
+      "per_category_diff": {
+        "credential_access": 0.0,
+        "threat_intel_match": 0.0,
+        "lateral_movement": 0.0,
+        "data_exfiltration": 0.0,
+        "insider_threat": 0.0
+      },
+      "snapshot_relative_diffs": {
+        "50": 0.0,
+        "100": 0.0,
+        "150": 0.0,
+        "200": 0.0,
+        "250": 0.0,
+        "300": 0.0
+      },
+      "accuracy_with_synthesis_centroids": 96.5,
+      "accuracy_without_synthesis_centroids": 96.5,
+      "accuracy_diff": 0.0
+    },
+    {
+      "frobenius_diff": 0.0,
+      "frobenius_norm": 5.488571583604749,
+      "relative_diff": 0.0,
+      "per_category_diff": {
+        "credential_access": 0.0,
+        "threat_intel_match": 0.0,
+        "lateral_movement": 0.0,
+        "data_exfiltration": 0.0,
+        "insider_threat": 0.0
+      },
+      "snapshot_relative_diffs": {
+        "50": 0.0,
+        "100": 0.0,
+        "150": 0.0,
+        "200": 0.0,
+        "250": 0.0,
+        "300": 0.0
+      },
+      "accuracy_with_synthesis_centroids": 97.5,
+      "accuracy_without_synthesis_centroids": 97.5,
+      "accuracy_diff": 0.0
+    },
+    {
+      "frobenius_diff": 0.022029458956068646,
+      "frobenius_norm": 5.479901637896539,
+      "relative_diff": 0.004020046419031101,
+      "per_category_diff": {
+        "credential_access": 0.0,
+        "threat_intel_match": 0.0,
+        "lateral_movement": 0.022029458956068646,
+        "data_exfiltration": 0.0,
+        "insider_threat": 0.0
+      },
+      "snapshot_relative_diffs": {
+        "50": 0.0,
+        "100": 0.0,
+        "150": 0.0,
+        "200": 0.0,
+        "250": 0.0,
+        "300": 0.004020046419031101
+      },
+      "accuracy_with_synthesis_centroids": 95.0,
+      "accuracy_without_synthesis_centroids": 94.5,
+      "accuracy_diff": 0.5
+    },
+    {
+      "frobenius_diff": 0.01599535748518327,
+      "frobenius_norm": 5.540506074667343,
+      "relative_diff": 0.0028869849197202886,
+      "per_category_diff": {
+        "credential_access": 0.0,
+        "threat_intel_match": 0.0,
+        "lateral_movement": 0.012291494075083753,
+        "data_exfiltration": 0.010235752755952511,
+        "insider_threat": 0.0
+      },
+      "snapshot_relative_diffs": {
+        "50": 0.0,
+        "100": 0.0,
+        "150": 0.0033256718164090516,
+        "200": 0.0027250303053298354,
+        "250": 0.0032227078959016723,
+        "300": 0.0028869849197202886
+      },
+      "accuracy_with_synthesis_centroids": 97.0,
+      "accuracy_without_synthesis_centroids": 97.0,
+      "accuracy_diff": 0.0
+    },
+    {
+      "frobenius_diff": 0.021398898262455116,
+      "frobenius_norm": 5.529969557596721,
+      "relative_diff": 0.003869623157881343,
+      "per_category_diff": {
+        "credential_access": 0.0138592761745694,
+        "threat_intel_match": 0.0,
+        "lateral_movement": 0.0,
+        "data_exfiltration": 0.016304395443067415,
+        "insider_threat": 0.0
+      },
+      "snapshot_relative_diffs": {
+        "50": 0.0,
+        "100": 0.0,
+        "150": 0.0033382232355823357,
+        "200": 0.0028807823045598167,
+        "250": 0.0027506365177251313,
+        "300": 0.003869623157881343
+      },
+      "accuracy_with_synthesis_centroids": 92.5,
+      "accuracy_without_synthesis_centroids": 92.5,
+      "accuracy_diff": 0.0
+    },
+    {
+      "frobenius_diff": 0.025135609030727948,
+      "frobenius_norm": 5.525433856775201,
+      "relative_diff": 0.004549074277652796,
+      "per_category_diff": {
+        "credential_access": 0.025135609030727948,
+        "threat_intel_match": 0.0,
+        "lateral_movement": 0.0,
+        "data_exfiltration": 0.0,
+        "insider_threat": 0.0
+      },
+      "snapshot_relative_diffs": {
+        "50": 0.0,
+        "100": 0.0,
+        "150": 0.0,
+        "200": 0.0,
+        "250": 0.004567147036925922,
+        "300": 0.004549074277652796
+      },
+      "accuracy_with_synthesis_centroids": 96.0,
+      "accuracy_without_synthesis_centroids": 96.0,
+      "accuracy_diff": 0.0
+    },
+    {
+      "frobenius_diff": 0.009305516991010246,
+      "frobenius_norm": 5.495142302641153,
+      "relative_diff": 0.0016934078279533717,
+      "per_category_diff": {
+        "credential_access": 0.0,
+        "threat_intel_match": 0.0,
+        "lateral_movement": 0.0,
+        "data_exfiltration": 0.009305516991010246,
+        "insider_threat": 0.0
+      },
+      "snapshot_relative_diffs": {
+        "50": 0.0,
+        "100": 0.0,
+        "150": 0.0036321198101633544,
+        "200": 0.002836426838220274,
+        "250": 0.0019443876546386342,
+        "300": 0.0016934078279533717
+      },
+      "accuracy_with_synthesis_centroids": 97.5,
+      "accuracy_without_synthesis_centroids": 97.5,
+      "accuracy_diff": 0.0
+    },
+    {
+      "frobenius_diff": 0.029466936333398974,
+      "frobenius_norm": 5.5164046748634465,
+      "relative_diff": 0.0053416922923857834,
+      "per_category_diff": {
+        "credential_access": 0.0,
+        "threat_intel_match": 0.0,
+        "lateral_movement": 0.01661015567922735,
+        "data_exfiltration": 0.024339331650405274,
+        "insider_threat": 0.0
+      },
+      "snapshot_relative_diffs": {
+        "50": 0.0,
+        "100": 0.0,
+        "150": 0.0,
+        "200": 0.0028392270692523948,
+        "250": 0.0047165011478736306,
+        "300": 0.0053416922923857834
+      },
+      "accuracy_with_synthesis_centroids": 95.5,
+      "accuracy_without_synthesis_centroids": 95.5,
+      "accuracy_diff": 0.0
+    }
+  ],
+  "aggregated": {
+    "mean_relative_frobenius": 0.0027878256714590106,
+    "std_relative_frobenius": 0.0017311874175987263,
+    "mean_accuracy_diff_pp": 0.05,
+    "mean_acc_with_synthesis_centroids": 96.25,
+    "mean_acc_without_synthesis_centroids": 96.2,
+    "snapshot_mean_relative_diffs": {
+      "50": 0.0,
+      "100": 0.0,
+      "150": 0.0010296014862154743,
+      "200": 0.0014629118018920618,
+      "250": 0.0023394436858055483,
+      "300": 0.0027878256714590106
+    },
+    "per_seed_relative_diffs": [
+      0.0020864075456897514,
+      0.003431020274275673,
+      0.0,
+      0.0,
+      0.004020046419031101,
+      0.0028869849197202886,
+      0.003869623157881343,
+      0.004549074277652796,
+      0.0016934078279533717,
+      0.0053416922923857834
+    ],
+    "per_seed_accuracy_diffs": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "gate": {
+    "S3_passed": true,
+    "mean_relative_frobenius": 0.0027878256714590106,
+    "mean_accuracy_diff_pp": 0.05,
+    "threshold_frobenius": 0.05,
+    "threshold_accuracy_diff_pp": 1.0,
+    "interpretation": "PASS: \u03c3 does not significantly contaminate \u03bc through indirect path"
+  }
+}

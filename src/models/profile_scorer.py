@@ -9,7 +9,25 @@ Updated online via asymmetric centroid pull/push.
 """
 from __future__ import annotations
 
+from dataclasses import dataclass
+from typing import Optional, Tuple
+
 import numpy as np
+
+try:
+    from src.models.synthesis import SynthesisBias
+except ImportError:
+    SynthesisBias = None  # Graceful degradation — experiments without synthesis installed
+
+
+@dataclass
+class ScoringResult:
+    """Return type for ProfileScorer.score()."""
+    probabilities: np.ndarray    # shape (n_actions,)
+    action_index: int            # argmax action
+    confidence: float            # probability of chosen action
+    distances: np.ndarray        # raw squared L2 distances, shape (n_actions,)
+    synthesis_active: bool = False
 
 
 class ProfileScorer:
@@ -18,12 +36,14 @@ class ProfileScorer:
 
     Parameters
     ----------
-    n_categories : int
-        Number of alert categories (5).
-    n_actions : int
-        Number of possible actions (4).
-    n_factors : int
-        Dimensionality of the factor vector (6).
+    n_categories : int or np.ndarray
+        Number of alert categories (5), OR a mu array of shape
+        (n_categories, n_actions, n_factors) for direct initialization.
+    n_actions : int or list[str]
+        Number of possible actions (4), OR a list of action name strings
+        (used only when n_categories is an ndarray; names are not stored).
+    n_factors : int or None
+        Dimensionality of the factor vector (6). Inferred from ndarray if given.
     tau : float
         Softmax temperature.  Lower = sharper distribution (more greedy).
     eta : float
@@ -36,14 +56,23 @@ class ProfileScorer:
 
     def __init__(
         self,
-        n_categories: int,
-        n_actions: int,
-        n_factors: int,
+        n_categories,
+        n_actions=None,
+        n_factors=None,
         tau: float = 0.25,
         eta: float = 0.05,
         eta_neg: float = 0.01,
         seed: int = 42,
     ) -> None:
+        if isinstance(n_categories, np.ndarray):
+            # New-style: ProfileScorer(mu_array, action_names_or_n_actions)
+            init_mu = n_categories
+            n_categories = init_mu.shape[0]
+            n_actions    = init_mu.shape[1]
+            n_factors    = init_mu.shape[2]
+        else:
+            init_mu = None
+
         self.n_categories = n_categories
         self.n_actions    = n_actions
         self.n_factors    = n_factors
@@ -53,7 +82,10 @@ class ProfileScorer:
         self.rng          = np.random.default_rng(seed)
 
         # Profile centroids: mu[c, a, :] = expected factor vector for (category c, action a)
-        self.mu = np.full((n_categories, n_actions, n_factors), 0.5, dtype=np.float64)
+        if init_mu is not None:
+            self.mu = init_mu.copy().astype(np.float64)
+        else:
+            self.mu = np.full((n_categories, n_actions, n_factors), 0.5, dtype=np.float64)
 
         # Decision counts per (category, action) for count-based learning-rate decay
         self.counts = np.zeros((n_categories, n_actions), dtype=np.int64)
@@ -92,9 +124,23 @@ class ProfileScorer:
         self,
         factors: np.ndarray,
         category_index: int,
-    ) -> tuple[int, np.ndarray, np.ndarray]:
+        synthesis: Optional["SynthesisBias"] = None,
+        lambda_coupling: float = 0.0,
+    ) -> ScoringResult:
         """
         Score all actions for this alert using L2 distance.
+
+        When synthesis is None OR synthesis.lambda_coupling == 0:
+            Behavior is IDENTICAL to the original Eq. 4-final:
+            P(a|f,c) = softmax(-||f - mu[c,a,:]||^2 / tau)
+
+        When synthesis is active (lambda > 0 and active_claims > 0):
+            Implements Eq. 4-synthesis:
+            P(a|f,c,sigma) = softmax(-(||f - mu[c,a,:]||^2 + lambda * sigma[c,a]) / (tau * tau_mod))
+
+        The experience term ||f - mu||^2 is UNCHANGED.
+        sigma adds an awareness bias on top.
+        lambda=0 is the kill switch — exact Eq. 4-final restored.
 
         Parameters
         ----------
@@ -102,15 +148,14 @@ class ProfileScorer:
             Factor vector, shape (n_factors,) or (n_factors, 1).
         category_index : int
             Category index of the alert.
+        synthesis : SynthesisBias or None
+            Optional synthesis bias. None or lambda=0 gives identical result
+            to calling without synthesis.
 
         Returns
         -------
-        action_idx : int
-            Argmax (greedy) action.
-        probs : np.ndarray, shape (n_actions,)
-            Softmax probabilities.
-        distances : np.ndarray, shape (n_actions,)
-            Raw squared L2 distances to each centroid.
+        ScoringResult
+            probabilities, action_index, confidence, distances, synthesis_active.
         """
         f    = factors.flatten()
         mu_c = self.mu[category_index]        # (n_actions, n_factors)
@@ -118,13 +163,73 @@ class ProfileScorer:
         diffs     = mu_c - f                  # (n_actions, n_factors)
         distances = np.sum(diffs ** 2, axis=1)  # (n_actions,)
 
-        neg_dist = -distances / self.tau
+        # --- Apply synthesis bias (only when active) ---
+        synthesis_active = False
+        tau_eff = self.tau
+
+        if synthesis is not None:
+            # Resolve effective lambda.
+            # New-style SynthesisBias (src/synthesis/): no lambda_coupling field;
+            #   lambda is passed as the `lambda_coupling` kwarg.
+            # Old-style SynthesisBias (src/models/synthesis): has lambda_coupling field;
+            #   kwarg default of 0.0 means "use the field".
+            if lambda_coupling > 0.0:
+                # Explicit kwarg: new-style path (also overrides old-style)
+                eff_lambda = lambda_coupling
+                is_active = bool(np.any(synthesis.sigma != 0))
+            elif hasattr(synthesis, "lambda_coupling") and synthesis.lambda_coupling > 0.0:
+                # Old-style frozen dataclass path
+                eff_lambda = synthesis.lambda_coupling
+                is_active = (getattr(synthesis, "active_claims", 1) > 0)
+            else:
+                eff_lambda = 0.0
+                is_active = False
+
+            if eff_lambda > 0.0 and is_active:
+                sigma_slice = synthesis.sigma[category_index, :]   # shape: (n_actions,)
+                distances = distances + eff_lambda * sigma_slice
+                synthesis_active = True
+
+        neg_dist = -distances / tau_eff
         neg_dist -= neg_dist.max()            # numerically stable softmax
         exp_vals = np.exp(neg_dist)
         probs    = exp_vals / (exp_vals.sum() + 1e-10)
 
-        action_idx = int(np.argmax(probs))
-        return action_idx, probs, distances
+        action_index = int(np.argmax(probs))
+        confidence   = float(probs[action_index])
+
+        return ScoringResult(
+            probabilities=probs,
+            action_index=action_index,
+            confidence=confidence,
+            distances=distances,
+            synthesis_active=synthesis_active,
+        )
+
+    def score_counterfactual(
+        self,
+        f: np.ndarray,
+        category_index: int,
+        synthesis: "SynthesisBias",
+    ) -> Tuple[ScoringResult, ScoringResult]:
+        """
+        Return (result_with_synthesis, result_without_synthesis).
+
+        Enables counterfactual advisory logging:
+            "Without the active campaign intelligence, the system
+             would have suppressed this alert. With it, it escalates."
+
+        Used by:
+        - EXP-S3 (loop independence): track which actions change due to sigma
+        - Tab 5 (display): "synthesis changed this decision"
+        - Future: counterfactual-aware update if S3 fails
+
+        IMPORTANT: Both results use the SAME mu snapshot.
+        This is a pure read operation — no centroid updates happen here.
+        """
+        result_with    = self.score(f, category_index, synthesis)
+        result_without = self.score(f, category_index, None)
+        return result_with, result_without
 
     def score_stochastic(
         self,
@@ -153,9 +258,9 @@ class ProfileScorer:
         distances : np.ndarray, shape (n_actions,)
             Raw squared L2 distances.
         """
-        _, probs, distances = self.score(factors, category_index)
-        action_idx = int(rng.choice(self.n_actions, p=probs))
-        return action_idx, probs, distances
+        result     = self.score(factors, category_index)
+        action_idx = int(rng.choice(self.n_actions, p=result.probabilities))
+        return action_idx, result.probabilities, result.distances
 
     # ------------------------------------------------------------------
     # Online update
@@ -207,7 +312,7 @@ class ProfileScorer:
     # ------------------------------------------------------------------
 
     def get_profile_snapshot(self) -> np.ndarray:
-        """Return a copy of the current mu matrix (shape n_categories × n_actions × n_factors)."""
+        """Return a copy of the current mu matrix (shape n_categories x n_actions x n_factors)."""
         return self.mu.copy()
 
     def get_profile_drift(self, initial_mu: np.ndarray) -> np.ndarray:
@@ -268,7 +373,8 @@ if __name__ == "__main__":
     # -----------------------------------------------------------------------
     # Factor vector close to credential_access / auto_close profile
     f_test = np.array([0.15, 0.20, 0.70, 0.15, 0.85, 0.85])
-    action_idx, probs, distances = scorer.score(f_test, category_index=0)
+    result = scorer.score(f_test, category_index=0)
+    action_idx, probs, distances = result.action_index, result.probabilities, result.distances
     print(f"  score test: predicted action {action_idx}, probs={[f'{p:.2f}' for p in probs]}")
     assert action_idx == 0, f"Expected action 0 (auto_close), got {action_idx}"
     print("  score: OK")
@@ -310,7 +416,7 @@ if __name__ == "__main__":
     l2_correct  = 0
     dot_correct = 0
     for alert in alerts:
-        a_l2, _, _ = scorer.score(alert.factors, alert.category_index)
+        a_l2 = scorer.score(alert.factors, alert.category_index).action_index
         if a_l2 == alert.gt_action_index:
             l2_correct += 1
 
