@@ -1,0 +1,317 @@
+{
+  "d0.00_w200": {
+    "delta": 0.0,
+    "warmup": 200,
+    "mean_shift_from_mu0": 0.0,
+    "mean_centroid_drift": 0.052563,
+    "learning": {
+      "overall_accuracy": 0.6901,
+      "threshold_star": 0.7000000000000002,
+      "coverage_at_star": 0.372,
+      "margin_star": 0.5,
+      "margin_coverage": 0.3425
+    },
+    "frozen": {
+      "overall_accuracy": 0.7319,
+      "threshold_star": 0.5800000000000001,
+      "coverage_at_star": 0.5277,
+      "margin_star": 0.3,
+      "margin_coverage": 0.5122
+    },
+    "learning_lift": -0.0418
+  },
+  "d0.00_w500": {
+    "delta": 0.0,
+    "warmup": 500,
+    "mean_shift_from_mu0": 0.0,
+    "mean_centroid_drift": 0.102346,
+    "learning": {
+      "overall_accuracy": 0.6273,
+      "threshold_star": 0.9200000000000004,
+      "coverage_at_star": 0.0832,
+      "margin_star": null,
+      "margin_coverage": null
+    },
+    "frozen": {
+      "overall_accuracy": 0.7208,
+      "threshold_star": 0.6000000000000001,
+      "coverage_at_star": 0.4913,
+      "margin_star": 0.5,
+      "margin_coverage": 0.3148
+    },
+    "learning_lift": -0.0935
+  },
+  "d0.00_w1000": {
+    "delta": 0.0,
+    "warmup": 1000,
+    "mean_shift_from_mu0": 0.0,
+    "mean_centroid_drift": 0.183506,
+    "learning": {
+      "overall_accuracy": 0.545,
+      "threshold_star": null,
+      "coverage_at_star": null,
+      "margin_star": null,
+      "margin_coverage": null
+    },
+    "frozen": {
+      "overall_accuracy": 0.7207,
+      "threshold_star": 0.5800000000000001,
+      "coverage_at_star": 0.5325,
+      "margin_star": 0.3,
+      "margin_coverage": 0.5116
+    },
+    "learning_lift": -0.1757
+  },
+  "d0.05_w200": {
+    "delta": 0.05,
+    "warmup": 200,
+    "mean_shift_from_mu0": 0.05,
+    "mean_centroid_drift": 0.053589,
+    "learning": {
+      "overall_accuracy": 0.6852,
+      "threshold_star": 0.7200000000000002,
+      "coverage_at_star": 0.3461,
+      "margin_star": 0.7,
+      "margin_coverage": 0.1899
+    },
+    "frozen": {
+      "overall_accuracy": 0.7287,
+      "threshold_star": 0.56,
+      "coverage_at_star": 0.5684,
+      "margin_star": 0.3,
+      "margin_coverage": 0.5097
+    },
+    "learning_lift": -0.0435
+  },
+  "d0.05_w500": {
+    "delta": 0.05,
+    "warmup": 500,
+    "mean_shift_from_mu0": 0.05,
+    "mean_centroid_drift": 0.105632,
+    "learning": {
+      "overall_accuracy": 0.6253,
+      "threshold_star": 0.9200000000000004,
+      "coverage_at_star": 0.0875,
+      "margin_star": null,
+      "margin_coverage": null
+    },
+    "frozen": {
+      "overall_accuracy": 0.7143,
+      "threshold_star": 0.6000000000000001,
+      "coverage_at_star": 0.4893,
+      "margin_star": 0.3,
+      "margin_coverage": 0.5063
+    },
+    "learning_lift": -0.089
+  },
+  "d0.05_w1000": {
+    "delta": 0.05,
+    "warmup": 1000,
+    "mean_shift_from_mu0": 0.05,
+    "mean_centroid_drift": 0.191497,
+    "learning": {
+      "overall_accuracy": 0.5429,
+      "threshold_star": null,
+      "coverage_at_star": null,
+      "margin_star": null,
+      "margin_coverage": null
+    },
+    "frozen": {
+      "overall_accuracy": 0.7195,
+      "threshold_star": 0.5800000000000001,
+      "coverage_at_star": 0.5269,
+      "margin_star": 0.3,
+      "margin_coverage": 0.5106
+    },
+    "learning_lift": -0.1766
+  },
+  "d0.10_w200": {
+    "delta": 0.1,
+    "warmup": 200,
+    "mean_shift_from_mu0": 0.1,
+    "mean_centroid_drift": 0.056534,
+    "learning": {
+      "overall_accuracy": 0.677,
+      "threshold_star": 0.7400000000000002,
+      "coverage_at_star": 0.3308,
+      "margin_star": 0.7,
+      "margin_coverage": 0.2047
+    },
+    "frozen": {
+      "overall_accuracy": 0.7182,
+      "threshold_star": 0.5800000000000001,
+      "coverage_at_star": 0.5247,
+      "margin_star": 0.3,
+      "margin_coverage": 0.5101
+    },
+    "learning_lift": -0.0412
+  },
+  "d0.10_w500": {
+    "delta": 0.1,
+    "warmup": 500,
+    "mean_shift_from_mu0": 0.1,
+    "mean_centroid_drift": 0.113676,
+    "learning": {
+      "overall_accuracy": 0.6119,
+      "threshold_star": 0.9400000000000004,
+      "coverage_at_star": 0.0723,
+      "margin_star": null,
+      "margin_coverage": null
+    },
+    "frozen": {
+      "overall_accuracy": 0.7047,
+      "threshold_star": 0.5800000000000001,
+      "coverage_at_star": 0.5222,
+      "margin_star": 0.3,
+      "margin_coverage": 0.5065
+    },
+    "learning_lift": -0.0928
+  },
+  "d0.10_w1000": {
+    "delta": 0.1,
+    "warmup": 1000,
+    "mean_shift_from_mu0": 0.1,
+    "mean_centroid_drift": 0.209779,
+    "learning": {
+      "overall_accuracy": 0.5403,
+      "threshold_star": null,
+      "coverage_at_star": null,
+      "margin_star": null,
+      "margin_coverage": null
+    },
+    "frozen": {
+      "overall_accuracy": 0.7103,
+      "threshold_star": 0.5800000000000001,
+      "coverage_at_star": 0.5191,
+      "margin_star": 0.3,
+      "margin_coverage": 0.5015
+    },
+    "learning_lift": -0.17
+  },
+  "d0.15_w200": {
+    "delta": 0.15,
+    "warmup": 200,
+    "mean_shift_from_mu0": 0.1499,
+    "mean_centroid_drift": 0.061123,
+    "learning": {
+      "overall_accuracy": 0.6609,
+      "threshold_star": 0.8000000000000003,
+      "coverage_at_star": 0.2637,
+      "margin_star": 0.7,
+      "margin_coverage": 0.2168
+    },
+    "frozen": {
+      "overall_accuracy": 0.6988,
+      "threshold_star": 0.5800000000000001,
+      "coverage_at_star": 0.5175,
+      "margin_star": 0.3,
+      "margin_coverage": 0.5043
+    },
+    "learning_lift": -0.0379
+  },
+  "d0.15_w500": {
+    "delta": 0.15,
+    "warmup": 500,
+    "mean_shift_from_mu0": 0.1499,
+    "mean_centroid_drift": 0.125544,
+    "learning": {
+      "overall_accuracy": 0.6019,
+      "threshold_star": 0.9800000000000004,
+      "coverage_at_star": 0.0299,
+      "margin_star": null,
+      "margin_coverage": null
+    },
+    "frozen": {
+      "overall_accuracy": 0.6867,
+      "threshold_star": 0.6000000000000001,
+      "coverage_at_star": 0.4783,
+      "margin_star": 0.3,
+      "margin_coverage": 0.5004
+    },
+    "learning_lift": -0.0848
+  },
+  "d0.15_w1000": {
+    "delta": 0.15,
+    "warmup": 1000,
+    "mean_shift_from_mu0": 0.1499,
+    "mean_centroid_drift": 0.239992,
+    "learning": {
+      "overall_accuracy": 0.5551,
+      "threshold_star": null,
+      "coverage_at_star": null,
+      "margin_star": null,
+      "margin_coverage": null
+    },
+    "frozen": {
+      "overall_accuracy": 0.6933,
+      "threshold_star": 0.5800000000000001,
+      "coverage_at_star": 0.5091,
+      "margin_star": 0.3,
+      "margin_coverage": 0.4945
+    },
+    "learning_lift": -0.1382
+  },
+  "d0.20_w200": {
+    "delta": 0.2,
+    "warmup": 200,
+    "mean_shift_from_mu0": 0.199,
+    "mean_centroid_drift": 0.067266,
+    "learning": {
+      "overall_accuracy": 0.6377,
+      "threshold_star": 0.8600000000000003,
+      "coverage_at_star": 0.2053,
+      "margin_star": 0.8,
+      "margin_coverage": 0.1602
+    },
+    "frozen": {
+      "overall_accuracy": 0.68,
+      "threshold_star": 0.6000000000000001,
+      "coverage_at_star": 0.4728,
+      "margin_star": 0.3,
+      "margin_coverage": 0.4927
+    },
+    "learning_lift": -0.0423
+  },
+  "d0.20_w500": {
+    "delta": 0.2,
+    "warmup": 500,
+    "mean_shift_from_mu0": 0.199,
+    "mean_centroid_drift": 0.143711,
+    "learning": {
+      "overall_accuracy": 0.5928,
+      "threshold_star": null,
+      "coverage_at_star": null,
+      "margin_star": null,
+      "margin_coverage": null
+    },
+    "frozen": {
+      "overall_accuracy": 0.665,
+      "threshold_star": 0.6200000000000001,
+      "coverage_at_star": 0.4317,
+      "margin_star": 0.5,
+      "margin_coverage": 0.3145
+    },
+    "learning_lift": -0.0722
+  },
+  "d0.20_w1000": {
+    "delta": 0.2,
+    "warmup": 1000,
+    "mean_shift_from_mu0": 0.199,
+    "mean_centroid_drift": 0.271457,
+    "learning": {
+      "overall_accuracy": 0.5691,
+      "threshold_star": null,
+      "coverage_at_star": null,
+      "margin_star": null,
+      "margin_coverage": null
+    },
+    "frozen": {
+      "overall_accuracy": 0.6692,
+      "threshold_star": 0.6000000000000001,
+      "coverage_at_star": 0.4637,
+      "margin_star": 0.5,
+      "margin_coverage": 0.3132
+    },
+    "learning_lift": -0.1001
+  }
+}

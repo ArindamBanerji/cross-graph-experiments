@@ -9,6 +9,7 @@ Updated online via asymmetric centroid pull/push.
 """
 from __future__ import annotations
 
+import warnings
 from dataclasses import dataclass
 from typing import Optional, Tuple
 
@@ -272,12 +273,21 @@ class ProfileScorer:
         category_index: int,
         action_idx: int,
         correct: bool,
+        gt_action_index: Optional[int] = None,
     ) -> None:
         """
         Update profile centroid based on outcome.
 
-        If correct:   pull mu[c, action_taken, :] toward f.
-        If incorrect: push mu[c, action_taken, :] away from f.
+        If correct:
+            Pull mu[c, action_idx, :] toward factors.
+
+        If incorrect AND gt_action_index is provided:
+            Push mu[c, action_idx, :]      (predicted / wrong)  away  from factors.
+            Pull mu[c, gt_action_index, :] (correct)            toward factors.
+
+        If incorrect AND gt_action_index is None (backward compat):
+            Push mu[c, action_idx, :] away from factors only.
+            Emits DeprecationWarning — pass gt_action_index to use the dual update.
 
         Uses count-based decay: effective_eta = eta / (1 + count * 0.001)
         Early updates are large (fast learning); late updates are small (stable).
@@ -289,23 +299,59 @@ class ProfileScorer:
         category_index : int
             Category index of the alert.
         action_idx : int
-            Action that was taken.
+            Action that was predicted (taken) by the scorer.
         correct : bool
-            Whether the oracle signalled the action was correct.
+            Whether the prediction was correct (action_idx == gt_action_index).
+        gt_action_index : int or None
+            Ground-truth action index.  Required for the dual push/pull fix.
+            If None, falls back to push-only (old behaviour) with a DeprecationWarning.
         """
-        f     = factors.flatten()
-        c, a  = category_index, action_idx
-        count = int(self.counts[c, a])
+        f = factors.flatten()
+        c = category_index
 
         if correct:
+            # Pull predicted (== GT) centroid toward f
+            a     = action_idx
+            count = int(self.counts[c, a])
             effective_eta = self.eta / (1.0 + count * 0.001)
             self.mu[c, a] += effective_eta * (f - self.mu[c, a])
-        else:
-            effective_eta = self.eta_neg / (1.0 + count * 0.001)
-            self.mu[c, a] -= effective_eta * (f - self.mu[c, a])
+            np.clip(self.mu[c, a], 0.0, 1.0, out=self.mu[c, a])
+            self.counts[c, a] += 1
 
-        np.clip(self.mu[c, a], 0.0, 1.0, out=self.mu[c, a])
-        self.counts[c, a] += 1
+        else:
+            if gt_action_index is None:
+                warnings.warn(
+                    "update() called with correct=False but gt_action_index was not "
+                    "provided.  Pass gt_action_index=<int> to enable the dual push/pull "
+                    "fix (push predicted centroid away AND pull GT centroid toward f).  "
+                    "Falling back to push-only on action_idx for backward compatibility.",
+                    DeprecationWarning,
+                    stacklevel=2,
+                )
+                # Push predicted centroid away (backward-compat path)
+                a     = action_idx
+                count = int(self.counts[c, a])
+                effective_eta = self.eta_neg / (1.0 + count * 0.001)
+                self.mu[c, a] -= effective_eta * (f - self.mu[c, a])
+                np.clip(self.mu[c, a], 0.0, 1.0, out=self.mu[c, a])
+                self.counts[c, a] += 1
+
+            else:
+                # Push predicted (wrong) centroid away from f
+                a_pred     = action_idx
+                count_pred = int(self.counts[c, a_pred])
+                eta_push   = self.eta_neg / (1.0 + count_pred * 0.001)
+                self.mu[c, a_pred] -= eta_push * (f - self.mu[c, a_pred])
+                np.clip(self.mu[c, a_pred], 0.0, 1.0, out=self.mu[c, a_pred])
+                self.counts[c, a_pred] += 1
+
+                # Pull GT (correct) centroid toward f
+                a_gt     = gt_action_index
+                count_gt = int(self.counts[c, a_gt])
+                eta_pull = self.eta / (1.0 + count_gt * 0.001)
+                self.mu[c, a_gt] += eta_pull * (f - self.mu[c, a_gt])
+                np.clip(self.mu[c, a_gt], 0.0, 1.0, out=self.mu[c, a_gt])
+                self.counts[c, a_gt] += 1
 
     # ------------------------------------------------------------------
     # Diagnostics

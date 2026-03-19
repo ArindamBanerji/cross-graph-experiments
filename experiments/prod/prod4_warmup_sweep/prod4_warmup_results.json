@@ -1,0 +1,292 @@
+{
+  "200": {
+    "n_warmup": 200,
+    "overall_accuracy": 0.6741,
+    "confidence_thresholds": {
+      "credential_access": {
+        "threshold_star": 0.7200000000000002,
+        "accuracy_at_star": 0.8517,
+        "coverage_at_star": 0.0668
+      },
+      "threat_intel_match": {
+        "threshold_star": 0.8100000000000003,
+        "accuracy_at_star": 0.8517,
+        "coverage_at_star": 0.0325
+      },
+      "lateral_movement": {
+        "threshold_star": 0.7900000000000003,
+        "accuracy_at_star": 0.8506,
+        "coverage_at_star": 0.0434
+      },
+      "data_exfiltration": {
+        "threshold_star": 0.7300000000000002,
+        "accuracy_at_star": 0.8538,
+        "coverage_at_star": 0.0718
+      },
+      "insider_threat": {
+        "threshold_star": 0.8700000000000003,
+        "accuracy_at_star": 0.8521,
+        "coverage_at_star": 0.0196
+      },
+      "cloud_infrastructure": {
+        "threshold_star": 0.8200000000000003,
+        "accuracy_at_star": 0.8506,
+        "coverage_at_star": 0.0294
+      }
+    },
+    "margin_thresholds": {
+      "credential_access": {
+        "margin_star": 0.6,
+        "accuracy_at_star": 0.8596,
+        "coverage_at_star": 0.0536
+      },
+      "threat_intel_match": {
+        "margin_star": 0.8,
+        "accuracy_at_star": 0.8663,
+        "coverage_at_star": 0.0161
+      },
+      "lateral_movement": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.8621,
+        "coverage_at_star": 0.0348
+      },
+      "data_exfiltration": {
+        "margin_star": 0.6,
+        "accuracy_at_star": 0.8693,
+        "coverage_at_star": 0.0587
+      },
+      "insider_threat": {
+        "margin_star": null,
+        "accuracy_at_star": null,
+        "coverage_at_star": null
+      },
+      "cloud_infrastructure": {
+        "margin_star": 0.8,
+        "accuracy_at_star": 0.8622,
+        "coverage_at_star": 0.0161
+      }
+    }
+  },
+  "500": {
+    "n_warmup": 500,
+    "overall_accuracy": 0.674,
+    "confidence_thresholds": {
+      "credential_access": {
+        "threshold_star": 0.7000000000000002,
+        "accuracy_at_star": 0.8523,
+        "coverage_at_star": 0.0695
+      },
+      "threat_intel_match": {
+        "threshold_star": 0.8100000000000003,
+        "accuracy_at_star": 0.8505,
+        "coverage_at_star": 0.0349
+      },
+      "lateral_movement": {
+        "threshold_star": 0.7900000000000003,
+        "accuracy_at_star": 0.8526,
+        "coverage_at_star": 0.0484
+      },
+      "data_exfiltration": {
+        "threshold_star": 0.6800000000000002,
+        "accuracy_at_star": 0.8519,
+        "coverage_at_star": 0.0826
+      },
+      "insider_threat": {
+        "threshold_star": 0.8000000000000003,
+        "accuracy_at_star": 0.8536,
+        "coverage_at_star": 0.0325
+      },
+      "cloud_infrastructure": {
+        "threshold_star": 0.7900000000000003,
+        "accuracy_at_star": 0.8515,
+        "coverage_at_star": 0.0389
+      }
+    },
+    "margin_thresholds": {
+      "credential_access": {
+        "margin_star": 0.6,
+        "accuracy_at_star": 0.8658,
+        "coverage_at_star": 0.0541
+      },
+      "threat_intel_match": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.8561,
+        "coverage_at_star": 0.03
+      },
+      "lateral_movement": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.8619,
+        "coverage_at_star": 0.0389
+      },
+      "data_exfiltration": {
+        "margin_star": 0.5,
+        "accuracy_at_star": 0.8595,
+        "coverage_at_star": 0.0725
+      },
+      "insider_threat": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.8526,
+        "coverage_at_star": 0.026
+      },
+      "cloud_infrastructure": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.8559,
+        "coverage_at_star": 0.0302
+      }
+    }
+  },
+  "1000": {
+    "n_warmup": 1000,
+    "overall_accuracy": 0.6668,
+    "confidence_thresholds": {
+      "credential_access": {
+        "threshold_star": 0.7400000000000002,
+        "accuracy_at_star": 0.8538,
+        "coverage_at_star": 0.0631
+      },
+      "threat_intel_match": {
+        "threshold_star": 0.7800000000000002,
+        "accuracy_at_star": 0.8518,
+        "coverage_at_star": 0.0417
+      },
+      "lateral_movement": {
+        "threshold_star": 0.7400000000000002,
+        "accuracy_at_star": 0.852,
+        "coverage_at_star": 0.0578
+      },
+      "data_exfiltration": {
+        "threshold_star": 0.7300000000000002,
+        "accuracy_at_star": 0.8529,
+        "coverage_at_star": 0.0684
+      },
+      "insider_threat": {
+        "threshold_star": 0.7700000000000002,
+        "accuracy_at_star": 0.8503,
+        "coverage_at_star": 0.0425
+      },
+      "cloud_infrastructure": {
+        "threshold_star": 0.7800000000000002,
+        "accuracy_at_star": 0.8507,
+        "coverage_at_star": 0.0401
+      }
+    },
+    "margin_thresholds": {
+      "credential_access": {
+        "margin_star": 0.6,
+        "accuracy_at_star": 0.857,
+        "coverage_at_star": 0.0563
+      },
+      "threat_intel_match": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.8618,
+        "coverage_at_star": 0.031
+      },
+      "lateral_movement": {
+        "margin_star": 0.6,
+        "accuracy_at_star": 0.8549,
+        "coverage_at_star": 0.0505
+      },
+      "data_exfiltration": {
+        "margin_star": 0.6,
+        "accuracy_at_star": 0.8687,
+        "coverage_at_star": 0.0564
+      },
+      "insider_threat": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.8694,
+        "coverage_at_star": 0.0306
+      },
+      "cloud_infrastructure": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.869,
+        "coverage_at_star": 0.0292
+      }
+    }
+  },
+  "2000": {
+    "n_warmup": 2000,
+    "overall_accuracy": 0.6615,
+    "confidence_thresholds": {
+      "credential_access": {
+        "threshold_star": 0.7000000000000002,
+        "accuracy_at_star": 0.851,
+        "coverage_at_star": 0.0688
+      },
+      "threat_intel_match": {
+        "threshold_star": 0.7500000000000002,
+        "accuracy_at_star": 0.8509,
+        "coverage_at_star": 0.0454
+      },
+      "lateral_movement": {
+        "threshold_star": 0.7800000000000002,
+        "accuracy_at_star": 0.8512,
+        "coverage_at_star": 0.0475
+      },
+      "data_exfiltration": {
+        "threshold_star": 0.7500000000000002,
+        "accuracy_at_star": 0.8502,
+        "coverage_at_star": 0.0603
+      },
+      "insider_threat": {
+        "threshold_star": 0.7900000000000003,
+        "accuracy_at_star": 0.8551,
+        "coverage_at_star": 0.037
+      },
+      "cloud_infrastructure": {
+        "threshold_star": 0.8000000000000003,
+        "accuracy_at_star": 0.8563,
+        "coverage_at_star": 0.0373
+      }
+    },
+    "margin_thresholds": {
+      "credential_access": {
+        "margin_star": 0.6,
+        "accuracy_at_star": 0.8694,
+        "coverage_at_star": 0.0542
+      },
+      "threat_intel_match": {
+        "margin_star": 0.6,
+        "accuracy_at_star": 0.851,
+        "coverage_at_star": 0.0406
+      },
+      "lateral_movement": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.8737,
+        "coverage_at_star": 0.0372
+      },
+      "data_exfiltration": {
+        "margin_star": 0.6,
+        "accuracy_at_star": 0.8548,
+        "coverage_at_star": 0.0543
+      },
+      "insider_threat": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.8586,
+        "coverage_at_star": 0.0296
+      },
+      "cloud_infrastructure": {
+        "margin_star": 0.7,
+        "accuracy_at_star": 0.8613,
+        "coverage_at_star": 0.031
+      }
+    }
+  },
+  "meta": {
+    "experiment": "PROD-4-WARMUP",
+    "regime": "centroidal_synthetic",
+    "domain_config": "soc_product_v50",
+    "warmup_levels": [
+      200,
+      500,
+      1000,
+      2000
+    ],
+    "n_seeds": 50,
+    "n_eval": 1000,
+    "tau": 0.1,
+    "eta": 0.05,
+    "eta_neg": 0.05,
+    "noise_rate": 0.1,
+    "accuracy_gate": 0.85
+  }
+}

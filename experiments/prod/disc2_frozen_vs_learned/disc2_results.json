@@ -1,0 +1,182 @@
+{
+  "noise0.00_delta0.00_frozen": {
+    "condition": "frozen",
+    "noise_rate": 0.0,
+    "delta": 0.0,
+    "overall_accuracy": 0.8027,
+    "centroid_drift": 0.0,
+    "confidence_coverage_85": 0.9202,
+    "composite_coverage_85": 0.9407,
+    "composite_lift": 0.0205
+  },
+  "noise0.00_delta0.00_learned": {
+    "condition": "learned",
+    "noise_rate": 0.0,
+    "delta": 0.0,
+    "overall_accuracy": 0.7904,
+    "centroid_drift": 0.052239,
+    "confidence_coverage_85": 0.8808,
+    "composite_coverage_85": 0.9056,
+    "composite_lift": 0.0248
+  },
+  "noise0.00_delta0.10_frozen": {
+    "condition": "frozen",
+    "noise_rate": 0.0,
+    "delta": 0.1,
+    "overall_accuracy": 0.7847,
+    "centroid_drift": 0.0,
+    "confidence_coverage_85": 0.9046,
+    "composite_coverage_85": 0.9285,
+    "composite_lift": 0.0239
+  },
+  "noise0.00_delta0.10_learned": {
+    "condition": "learned",
+    "noise_rate": 0.0,
+    "delta": 0.1,
+    "overall_accuracy": 0.807,
+    "centroid_drift": 0.074454,
+    "confidence_coverage_85": 0.9335,
+    "composite_coverage_85": 0.95,
+    "composite_lift": 0.0165
+  },
+  "noise0.00_delta0.20_frozen": {
+    "condition": "frozen",
+    "noise_rate": 0.0,
+    "delta": 0.2,
+    "overall_accuracy": 0.7407,
+    "centroid_drift": 0.0,
+    "confidence_coverage_85": 0.8559,
+    "composite_coverage_85": 0.8831,
+    "composite_lift": 0.0271
+  },
+  "noise0.00_delta0.20_learned": {
+    "condition": "learned",
+    "noise_rate": 0.0,
+    "delta": 0.2,
+    "overall_accuracy": 0.8459,
+    "centroid_drift": 0.116249,
+    "confidence_coverage_85": 0.9966,
+    "composite_coverage_85": 0.999,
+    "composite_lift": 0.0024
+  },
+  "noise0.05_delta0.00_frozen": {
+    "condition": "frozen",
+    "noise_rate": 0.05,
+    "delta": 0.0,
+    "overall_accuracy": 0.7658,
+    "centroid_drift": 0.0,
+    "confidence_coverage_85": 0.8328,
+    "composite_coverage_85": 0.8606,
+    "composite_lift": 0.0279
+  },
+  "noise0.05_delta0.00_learned": {
+    "condition": "learned",
+    "noise_rate": 0.05,
+    "delta": 0.0,
+    "overall_accuracy": 0.7502,
+    "centroid_drift": 0.059677,
+    "confidence_coverage_85": 0.7449,
+    "composite_coverage_85": 0.8033,
+    "composite_lift": 0.0583
+  },
+  "noise0.05_delta0.10_frozen": {
+    "condition": "frozen",
+    "noise_rate": 0.05,
+    "delta": 0.1,
+    "overall_accuracy": 0.752,
+    "centroid_drift": 0.0,
+    "confidence_coverage_85": 0.8277,
+    "composite_coverage_85": 0.8558,
+    "composite_lift": 0.0281
+  },
+  "noise0.05_delta0.10_learned": {
+    "condition": "learned",
+    "noise_rate": 0.05,
+    "delta": 0.1,
+    "overall_accuracy": 0.768,
+    "centroid_drift": 0.078308,
+    "confidence_coverage_85": 0.8301,
+    "composite_coverage_85": 0.8611,
+    "composite_lift": 0.031
+  },
+  "noise0.05_delta0.20_frozen": {
+    "condition": "frozen",
+    "noise_rate": 0.05,
+    "delta": 0.2,
+    "overall_accuracy": 0.7084,
+    "centroid_drift": 0.0,
+    "confidence_coverage_85": 0.7811,
+    "composite_coverage_85": 0.8078,
+    "composite_lift": 0.0267
+  },
+  "noise0.05_delta0.20_learned": {
+    "condition": "learned",
+    "noise_rate": 0.05,
+    "delta": 0.2,
+    "overall_accuracy": 0.8017,
+    "centroid_drift": 0.115013,
+    "confidence_coverage_85": 0.9207,
+    "composite_coverage_85": 0.9386,
+    "composite_lift": 0.0179
+  },
+  "noise0.10_delta0.00_frozen": {
+    "condition": "frozen",
+    "noise_rate": 0.1,
+    "delta": 0.0,
+    "overall_accuracy": 0.7281,
+    "centroid_drift": 0.0,
+    "confidence_coverage_85": 0.6567,
+    "composite_coverage_85": 0.7265,
+    "composite_lift": 0.0697
+  },
+  "noise0.10_delta0.00_learned": {
+    "condition": "learned",
+    "noise_rate": 0.1,
+    "delta": 0.0,
+    "overall_accuracy": 0.7096,
+    "centroid_drift": 0.072014,
+    "confidence_coverage_85": 0.5495,
+    "composite_coverage_85": 0.6433,
+    "composite_lift": 0.0938
+  },
+  "noise0.10_delta0.10_frozen": {
+    "condition": "frozen",
+    "noise_rate": 0.1,
+    "delta": 0.1,
+    "overall_accuracy": 0.7141,
+    "centroid_drift": 0.0,
+    "confidence_coverage_85": 0.6807,
+    "composite_coverage_85": 0.7316,
+    "composite_lift": 0.0509
+  },
+  "noise0.10_delta0.10_learned": {
+    "condition": "learned",
+    "noise_rate": 0.1,
+    "delta": 0.1,
+    "overall_accuracy": 0.7252,
+    "centroid_drift": 0.086483,
+    "confidence_coverage_85": 0.6447,
+    "composite_coverage_85": 0.7162,
+    "composite_lift": 0.0715
+  },
+  "noise0.10_delta0.20_frozen": {
+    "condition": "frozen",
+    "noise_rate": 0.1,
+    "delta": 0.2,
+    "overall_accuracy": 0.6749,
+    "centroid_drift": 0.0,
+    "confidence_coverage_85": 0.6232,
+    "composite_coverage_85": 0.6704,
+    "composite_lift": 0.0472
+  },
+  "noise0.10_delta0.20_learned": {
+    "condition": "learned",
+    "noise_rate": 0.1,
+    "delta": 0.2,
+    "overall_accuracy": 0.7551,
+    "centroid_drift": 0.117411,
+    "confidence_coverage_85": 0.7574,
+    "composite_coverage_85": 0.81,
+    "composite_lift": 0.0526
+  }
+}

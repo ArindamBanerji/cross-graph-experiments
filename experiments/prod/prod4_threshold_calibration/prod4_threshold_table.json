@@ -1,0 +1,1876 @@
+{
+  "regime": "centroidal_synthetic",
+  "domain_config": "soc_product_v50",
+  "n_seeds": 50,
+  "n_warmup": 200,
+  "n_decisions": 1000,
+  "noise_rate": 0.1,
+  "tau": 0.1,
+  "accuracy_gate": 0.85,
+  "ontology": {
+    "C": 6,
+    "A": 5,
+    "d": 6
+  },
+  "categories": {
+    "credential_access": {
+      "threshold_star": null,
+      "accuracy_at_star": null,
+      "coverage_at_star": null,
+      "accuracy_ci_at_star": null
+    },
+    "threat_intel_match": {
+      "threshold_star": null,
+      "accuracy_at_star": null,
+      "coverage_at_star": null,
+      "accuracy_ci_at_star": null
+    },
+    "lateral_movement": {
+      "threshold_star": null,
+      "accuracy_at_star": null,
+      "coverage_at_star": null,
+      "accuracy_ci_at_star": null
+    },
+    "data_exfiltration": {
+      "threshold_star": null,
+      "accuracy_at_star": null,
+      "coverage_at_star": null,
+      "accuracy_ci_at_star": null
+    },
+    "insider_threat": {
+      "threshold_star": null,
+      "accuracy_at_star": null,
+      "coverage_at_star": null,
+      "accuracy_ci_at_star": null
+    },
+    "cloud_infrastructure": {
+      "threshold_star": null,
+      "accuracy_at_star": null,
+      "coverage_at_star": null,
+      "accuracy_ci_at_star": null
+    }
+  },
+  "gate_verdict": "0/6 categories pass",
+  "refer_to_analyst_floors": {
+    "credential_access": 0.93,
+    "threat_intel_match": 0.95,
+    "lateral_movement": 0.97,
+    "data_exfiltration": 0.95,
+    "insider_threat": 0.96,
+    "cloud_infrastructure": 0.95
+  },
+  "sweep_data": {
+    "credential_access": {
+      "0.50": {
+        "accuracy_mean": 0.40922490230800485,
+        "accuracy_ci_low": 0.39049694516049527,
+        "accuracy_ci_high": 0.42876408505306013,
+        "coverage_mean": 0.15846
+      },
+      "0.51": {
+        "accuracy_mean": 0.4099698483180033,
+        "accuracy_ci_low": 0.3912859034222582,
+        "accuracy_ci_high": 0.4294032084567958,
+        "coverage_mean": 0.1574
+      },
+      "0.52": {
+        "accuracy_mean": 0.41106606372082316,
+        "accuracy_ci_low": 0.39209647807483367,
+        "accuracy_ci_high": 0.4303660247127148,
+        "coverage_mean": 0.15626
+      },
+      "0.53": {
+        "accuracy_mean": 0.4112250847407074,
+        "accuracy_ci_low": 0.39205188946509206,
+        "accuracy_ci_high": 0.4314914677178171,
+        "coverage_mean": 0.15494
+      },
+      "0.54": {
+        "accuracy_mean": 0.41036236126936776,
+        "accuracy_ci_low": 0.39092716248267567,
+        "accuracy_ci_high": 0.4301832319449248,
+        "coverage_mean": 0.15374000000000002
+      },
+      "0.55": {
+        "accuracy_mean": 0.41153557267736496,
+        "accuracy_ci_low": 0.39229448806667666,
+        "accuracy_ci_high": 0.4314989475791634,
+        "coverage_mean": 0.15276
+      },
+      "0.56": {
+        "accuracy_mean": 0.41175522307524537,
+        "accuracy_ci_low": 0.3923848672277253,
+        "accuracy_ci_high": 0.43175839853877335,
+        "coverage_mean": 0.15152
+      },
+      "0.57": {
+        "accuracy_mean": 0.411755721442188,
+        "accuracy_ci_low": 0.3924009609325582,
+        "accuracy_ci_high": 0.4316537502655324,
+        "coverage_mean": 0.15054
+      },
+      "0.58": {
+        "accuracy_mean": 0.41010331813992806,
+        "accuracy_ci_low": 0.3904367993160719,
+        "accuracy_ci_high": 0.43052956296838435,
+        "coverage_mean": 0.14946
+      },
+      "0.59": {
+        "accuracy_mean": 0.4105774716878085,
+        "accuracy_ci_low": 0.39043209102112436,
+        "accuracy_ci_high": 0.431469027562962,
+        "coverage_mean": 0.1484
+      },
+      "0.60": {
+        "accuracy_mean": 0.41144138281493,
+        "accuracy_ci_low": 0.39098841629250114,
+        "accuracy_ci_high": 0.4325578199957155,
+        "coverage_mean": 0.14701999999999998
+      },
+      "0.61": {
+        "accuracy_mean": 0.41068375371935856,
+        "accuracy_ci_low": 0.3899960979986869,
+        "accuracy_ci_high": 0.4325889763354056,
+        "coverage_mean": 0.14586
+      },
+      "0.62": {
+        "accuracy_mean": 0.4111851355360494,
+        "accuracy_ci_low": 0.39022723144408844,
+        "accuracy_ci_high": 0.432971571373249,
+        "coverage_mean": 0.14470000000000002
+      },
+      "0.63": {
+        "accuracy_mean": 0.41216344161241336,
+        "accuracy_ci_low": 0.39147099013614983,
+        "accuracy_ci_high": 0.4339336733511511,
+        "coverage_mean": 0.14382
+      },
+      "0.64": {
+        "accuracy_mean": 0.4121028228089837,
+        "accuracy_ci_low": 0.3912492831879431,
+        "accuracy_ci_high": 0.4341266363480223,
+        "coverage_mean": 0.14300000000000002
+      },
+      "0.65": {
+        "accuracy_mean": 0.4111329014653303,
+        "accuracy_ci_low": 0.3899524215220311,
+        "accuracy_ci_high": 0.43314664294278366,
+        "coverage_mean": 0.14198
+      },
+      "0.66": {
+        "accuracy_mean": 0.4113043420702457,
+        "accuracy_ci_low": 0.3897858780844529,
+        "accuracy_ci_high": 0.43333163955289444,
+        "coverage_mean": 0.14112
+      },
+      "0.67": {
+        "accuracy_mean": 0.41151158803804927,
+        "accuracy_ci_low": 0.39031305703329827,
+        "accuracy_ci_high": 0.43283110966496136,
+        "coverage_mean": 0.13990000000000002
+      },
+      "0.68": {
+        "accuracy_mean": 0.411583684728657,
+        "accuracy_ci_low": 0.3902638710698272,
+        "accuracy_ci_high": 0.4334922456739203,
+        "coverage_mean": 0.13878000000000001
+      },
+      "0.69": {
+        "accuracy_mean": 0.4114747864288411,
+        "accuracy_ci_low": 0.3900245210640636,
+        "accuracy_ci_high": 0.43398532783496796,
+        "coverage_mean": 0.13784000000000002
+      },
+      "0.70": {
+        "accuracy_mean": 0.41109964912559316,
+        "accuracy_ci_low": 0.38943177240917354,
+        "accuracy_ci_high": 0.4337752273886161,
+        "coverage_mean": 0.13626000000000002
+      },
+      "0.71": {
+        "accuracy_mean": 0.411677709294419,
+        "accuracy_ci_low": 0.3898346799742843,
+        "accuracy_ci_high": 0.4345360139779711,
+        "coverage_mean": 0.13526000000000002
+      },
+      "0.72": {
+        "accuracy_mean": 0.4126987775334074,
+        "accuracy_ci_low": 0.39067555444811086,
+        "accuracy_ci_high": 0.4359240638927874,
+        "coverage_mean": 0.13434000000000001
+      },
+      "0.73": {
+        "accuracy_mean": 0.4138542526294202,
+        "accuracy_ci_low": 0.3916476891532128,
+        "accuracy_ci_high": 0.43743389419943807,
+        "coverage_mean": 0.13296000000000002
+      },
+      "0.74": {
+        "accuracy_mean": 0.41457348045478887,
+        "accuracy_ci_low": 0.39240351449583155,
+        "accuracy_ci_high": 0.43810989376891696,
+        "coverage_mean": 0.13164
+      },
+      "0.75": {
+        "accuracy_mean": 0.41484133539658885,
+        "accuracy_ci_low": 0.3923363741837234,
+        "accuracy_ci_high": 0.4384542878861507,
+        "coverage_mean": 0.13044
+      },
+      "0.76": {
+        "accuracy_mean": 0.41494859473061163,
+        "accuracy_ci_low": 0.39203130137731085,
+        "accuracy_ci_high": 0.4394084212894769,
+        "coverage_mean": 0.12896000000000002
+      },
+      "0.77": {
+        "accuracy_mean": 0.41428899479589826,
+        "accuracy_ci_low": 0.3904259171553247,
+        "accuracy_ci_high": 0.4390726876186185,
+        "coverage_mean": 0.12718
+      },
+      "0.78": {
+        "accuracy_mean": 0.4160806287734725,
+        "accuracy_ci_low": 0.3922144254268596,
+        "accuracy_ci_high": 0.4409559982208496,
+        "coverage_mean": 0.12564
+      },
+      "0.79": {
+        "accuracy_mean": 0.41742340018498547,
+        "accuracy_ci_low": 0.3927008121857061,
+        "accuracy_ci_high": 0.4428751318364666,
+        "coverage_mean": 0.12405999999999999
+      },
+      "0.80": {
+        "accuracy_mean": 0.4171951260267772,
+        "accuracy_ci_low": 0.3926585376745855,
+        "accuracy_ci_high": 0.4428678500957734,
+        "coverage_mean": 0.12288
+      },
+      "0.81": {
+        "accuracy_mean": 0.4173727004973369,
+        "accuracy_ci_low": 0.3922224183039638,
+        "accuracy_ci_high": 0.4433431341218288,
+        "coverage_mean": 0.12137999999999999
+      },
+      "0.82": {
+        "accuracy_mean": 0.41780752783712827,
+        "accuracy_ci_low": 0.39291659933736595,
+        "accuracy_ci_high": 0.44333929269029904,
+        "coverage_mean": 0.11997999999999998
+      },
+      "0.83": {
+        "accuracy_mean": 0.41680309830314144,
+        "accuracy_ci_low": 0.3913823364486758,
+        "accuracy_ci_high": 0.4433248147318799,
+        "coverage_mean": 0.11828
+      },
+      "0.84": {
+        "accuracy_mean": 0.4179920686480397,
+        "accuracy_ci_low": 0.39231383562565036,
+        "accuracy_ci_high": 0.44497238520084537,
+        "coverage_mean": 0.11684
+      },
+      "0.85": {
+        "accuracy_mean": 0.41906661575185034,
+        "accuracy_ci_low": 0.393220989975221,
+        "accuracy_ci_high": 0.4467703109473512,
+        "coverage_mean": 0.11559999999999998
+      },
+      "0.86": {
+        "accuracy_mean": 0.4175281935515426,
+        "accuracy_ci_low": 0.39066336568325694,
+        "accuracy_ci_high": 0.445722513690304,
+        "coverage_mean": 0.11394
+      },
+      "0.87": {
+        "accuracy_mean": 0.419370838763505,
+        "accuracy_ci_low": 0.3920895516325612,
+        "accuracy_ci_high": 0.44715854110259645,
+        "coverage_mean": 0.11212
+      },
+      "0.88": {
+        "accuracy_mean": 0.42062518690832135,
+        "accuracy_ci_low": 0.3930271592413213,
+        "accuracy_ci_high": 0.44813697847609824,
+        "coverage_mean": 0.1103
+      },
+      "0.89": {
+        "accuracy_mean": 0.4227463696637928,
+        "accuracy_ci_low": 0.3945970834594301,
+        "accuracy_ci_high": 0.4519637153620488,
+        "coverage_mean": 0.10820000000000002
+      },
+      "0.90": {
+        "accuracy_mean": 0.42238780075754695,
+        "accuracy_ci_low": 0.3945377532493491,
+        "accuracy_ci_high": 0.4520652319921169,
+        "coverage_mean": 0.10624
+      },
+      "0.91": {
+        "accuracy_mean": 0.4237915154237146,
+        "accuracy_ci_low": 0.3957737981747708,
+        "accuracy_ci_high": 0.4535959906571547,
+        "coverage_mean": 0.10442
+      },
+      "0.92": {
+        "accuracy_mean": 0.4263951301590507,
+        "accuracy_ci_low": 0.39886402674173554,
+        "accuracy_ci_high": 0.45640912736261263,
+        "coverage_mean": 0.10222000000000002
+      },
+      "0.93": {
+        "accuracy_mean": 0.42822093882171225,
+        "accuracy_ci_low": 0.3998490546168872,
+        "accuracy_ci_high": 0.4590621058309803,
+        "coverage_mean": 0.09988
+      },
+      "0.94": {
+        "accuracy_mean": 0.430849450334006,
+        "accuracy_ci_low": 0.4017810701338292,
+        "accuracy_ci_high": 0.4627189236715113,
+        "coverage_mean": 0.09746
+      },
+      "0.95": {
+        "accuracy_mean": 0.4327007542427769,
+        "accuracy_ci_low": 0.40276348043266236,
+        "accuracy_ci_high": 0.46439627232170616,
+        "coverage_mean": 0.09459999999999999
+      },
+      "0.96": {
+        "accuracy_mean": 0.4332522940370466,
+        "accuracy_ci_low": 0.40248286270663775,
+        "accuracy_ci_high": 0.4656214163357335,
+        "coverage_mean": 0.09086
+      },
+      "0.97": {
+        "accuracy_mean": 0.43675577361618617,
+        "accuracy_ci_low": 0.40421732598919113,
+        "accuracy_ci_high": 0.46981808553821364,
+        "coverage_mean": 0.08624000000000001
+      },
+      "0.98": {
+        "accuracy_mean": 0.4359562537504068,
+        "accuracy_ci_low": 0.40170105406132917,
+        "accuracy_ci_high": 0.4711209046546737,
+        "coverage_mean": 0.08045999999999999
+      },
+      "0.99": {
+        "accuracy_mean": 0.4412187978935674,
+        "accuracy_ci_low": 0.4033269234854209,
+        "accuracy_ci_high": 0.48160354893074414,
+        "coverage_mean": 0.07150000000000001
+      }
+    },
+    "threat_intel_match": {
+      "0.50": {
+        "accuracy_mean": 0.3635498754176505,
+        "accuracy_ci_low": 0.34341009464683303,
+        "accuracy_ci_high": 0.3836394631286203,
+        "coverage_mean": 0.1585
+      },
+      "0.51": {
+        "accuracy_mean": 0.3635431835074369,
+        "accuracy_ci_low": 0.3435216161849396,
+        "accuracy_ci_high": 0.3836460859532136,
+        "coverage_mean": 0.15738000000000002
+      },
+      "0.52": {
+        "accuracy_mean": 0.36419031001286667,
+        "accuracy_ci_low": 0.3436977966003492,
+        "accuracy_ci_high": 0.38436257437861937,
+        "coverage_mean": 0.15632000000000001
+      },
+      "0.53": {
+        "accuracy_mean": 0.36465148989362106,
+        "accuracy_ci_low": 0.34346778306705067,
+        "accuracy_ci_high": 0.3852137538321703,
+        "coverage_mean": 0.15503999999999998
+      },
+      "0.54": {
+        "accuracy_mean": 0.3648357307770397,
+        "accuracy_ci_low": 0.34364249182668744,
+        "accuracy_ci_high": 0.3848869247569014,
+        "coverage_mean": 0.15392000000000003
+      },
+      "0.55": {
+        "accuracy_mean": 0.36609219165734225,
+        "accuracy_ci_low": 0.3444205663225988,
+        "accuracy_ci_high": 0.38677245458649107,
+        "coverage_mean": 0.15272000000000002
+      },
+      "0.56": {
+        "accuracy_mean": 0.36622404431003774,
+        "accuracy_ci_low": 0.34436450886957914,
+        "accuracy_ci_high": 0.38719342968274595,
+        "coverage_mean": 0.15173999999999999
+      },
+      "0.57": {
+        "accuracy_mean": 0.36643969529839304,
+        "accuracy_ci_low": 0.34496917455643433,
+        "accuracy_ci_high": 0.38751541328333916,
+        "coverage_mean": 0.15056
+      },
+      "0.58": {
+        "accuracy_mean": 0.3664502954519176,
+        "accuracy_ci_low": 0.34492956469435143,
+        "accuracy_ci_high": 0.387277423126426,
+        "coverage_mean": 0.14942
+      },
+      "0.59": {
+        "accuracy_mean": 0.3659504027564165,
+        "accuracy_ci_low": 0.34391619638237203,
+        "accuracy_ci_high": 0.3873816241545494,
+        "coverage_mean": 0.1484
+      },
+      "0.60": {
+        "accuracy_mean": 0.36590930100811003,
+        "accuracy_ci_low": 0.3441945122981749,
+        "accuracy_ci_high": 0.3876066260850255,
+        "coverage_mean": 0.14718
+      },
+      "0.61": {
+        "accuracy_mean": 0.36602514950809495,
+        "accuracy_ci_low": 0.34453799364481363,
+        "accuracy_ci_high": 0.38777326364849113,
+        "coverage_mean": 0.14614000000000002
+      },
+      "0.62": {
+        "accuracy_mean": 0.36678062626769986,
+        "accuracy_ci_low": 0.3449405511246614,
+        "accuracy_ci_high": 0.38884071028573064,
+        "coverage_mean": 0.14524
+      },
+      "0.63": {
+        "accuracy_mean": 0.3671845727687822,
+        "accuracy_ci_low": 0.3456184622873515,
+        "accuracy_ci_high": 0.3891672960614609,
+        "coverage_mean": 0.14418
+      },
+      "0.64": {
+        "accuracy_mean": 0.36615726434123097,
+        "accuracy_ci_low": 0.3444004818623152,
+        "accuracy_ci_high": 0.3882257680800703,
+        "coverage_mean": 0.1431
+      },
+      "0.65": {
+        "accuracy_mean": 0.36609037983621434,
+        "accuracy_ci_low": 0.3446540804826132,
+        "accuracy_ci_high": 0.3881148459049981,
+        "coverage_mean": 0.14192000000000002
+      },
+      "0.66": {
+        "accuracy_mean": 0.36561997853278055,
+        "accuracy_ci_low": 0.34426570992840794,
+        "accuracy_ci_high": 0.3878569613826734,
+        "coverage_mean": 0.14088000000000003
+      },
+      "0.67": {
+        "accuracy_mean": 0.36514232736385543,
+        "accuracy_ci_low": 0.3435830800047467,
+        "accuracy_ci_high": 0.3871372396610514,
+        "coverage_mean": 0.13996
+      },
+      "0.68": {
+        "accuracy_mean": 0.3659341326937735,
+        "accuracy_ci_low": 0.3441676854502524,
+        "accuracy_ci_high": 0.38738874024766407,
+        "coverage_mean": 0.1389
+      },
+      "0.69": {
+        "accuracy_mean": 0.3651877247524077,
+        "accuracy_ci_low": 0.34344269810776906,
+        "accuracy_ci_high": 0.3872868373866942,
+        "coverage_mean": 0.13776
+      },
+      "0.70": {
+        "accuracy_mean": 0.36543224285989256,
+        "accuracy_ci_low": 0.3434912815421506,
+        "accuracy_ci_high": 0.3872814228308042,
+        "coverage_mean": 0.13666
+      },
+      "0.71": {
+        "accuracy_mean": 0.3654173420558514,
+        "accuracy_ci_low": 0.34339891855039956,
+        "accuracy_ci_high": 0.38720964331742747,
+        "coverage_mean": 0.13578
+      },
+      "0.72": {
+        "accuracy_mean": 0.3647399982182322,
+        "accuracy_ci_low": 0.3421608905645055,
+        "accuracy_ci_high": 0.38666672367975563,
+        "coverage_mean": 0.13455999999999999
+      },
+      "0.73": {
+        "accuracy_mean": 0.3656479950208974,
+        "accuracy_ci_low": 0.3435933467061568,
+        "accuracy_ci_high": 0.3874953926037308,
+        "coverage_mean": 0.13330000000000003
+      },
+      "0.74": {
+        "accuracy_mean": 0.36647288231185754,
+        "accuracy_ci_low": 0.3443609812720649,
+        "accuracy_ci_high": 0.38829589881766313,
+        "coverage_mean": 0.13242
+      },
+      "0.75": {
+        "accuracy_mean": 0.3676300997074899,
+        "accuracy_ci_low": 0.34496524846386895,
+        "accuracy_ci_high": 0.3893239282041561,
+        "coverage_mean": 0.13096
+      },
+      "0.76": {
+        "accuracy_mean": 0.3685121015090851,
+        "accuracy_ci_low": 0.3458290166888185,
+        "accuracy_ci_high": 0.3903605612333341,
+        "coverage_mean": 0.12984
+      },
+      "0.77": {
+        "accuracy_mean": 0.36875346588176794,
+        "accuracy_ci_low": 0.3459406566426782,
+        "accuracy_ci_high": 0.3912921378563109,
+        "coverage_mean": 0.12866
+      },
+      "0.78": {
+        "accuracy_mean": 0.3699447626165838,
+        "accuracy_ci_low": 0.3465583299385692,
+        "accuracy_ci_high": 0.39271914757358106,
+        "coverage_mean": 0.12747999999999998
+      },
+      "0.79": {
+        "accuracy_mean": 0.3694040384545039,
+        "accuracy_ci_low": 0.34643911115654275,
+        "accuracy_ci_high": 0.39248615765447453,
+        "coverage_mean": 0.12616
+      },
+      "0.80": {
+        "accuracy_mean": 0.36877719417680127,
+        "accuracy_ci_low": 0.34582022369058973,
+        "accuracy_ci_high": 0.392006385580746,
+        "coverage_mean": 0.1251
+      },
+      "0.81": {
+        "accuracy_mean": 0.36924473877425695,
+        "accuracy_ci_low": 0.3454815490011371,
+        "accuracy_ci_high": 0.3925918006626967,
+        "coverage_mean": 0.12384
+      },
+      "0.82": {
+        "accuracy_mean": 0.36948787451535686,
+        "accuracy_ci_low": 0.34581567681993985,
+        "accuracy_ci_high": 0.39296920395148066,
+        "coverage_mean": 0.12274000000000002
+      },
+      "0.83": {
+        "accuracy_mean": 0.3692024861587509,
+        "accuracy_ci_low": 0.34512516424167256,
+        "accuracy_ci_high": 0.39332796311971685,
+        "coverage_mean": 0.12152000000000002
+      },
+      "0.84": {
+        "accuracy_mean": 0.3678789029293928,
+        "accuracy_ci_low": 0.34394240116616487,
+        "accuracy_ci_high": 0.39188937646710464,
+        "coverage_mean": 0.1201
+      },
+      "0.85": {
+        "accuracy_mean": 0.3672549523570015,
+        "accuracy_ci_low": 0.34325813268630684,
+        "accuracy_ci_high": 0.3914385005599654,
+        "coverage_mean": 0.11867999999999998
+      },
+      "0.86": {
+        "accuracy_mean": 0.36785038928323893,
+        "accuracy_ci_low": 0.34400654117866275,
+        "accuracy_ci_high": 0.392369014276925,
+        "coverage_mean": 0.1171
+      },
+      "0.87": {
+        "accuracy_mean": 0.369002231536084,
+        "accuracy_ci_low": 0.34503454508667675,
+        "accuracy_ci_high": 0.3937106534474577,
+        "coverage_mean": 0.11528
+      },
+      "0.88": {
+        "accuracy_mean": 0.3686703017346963,
+        "accuracy_ci_low": 0.3442923396300716,
+        "accuracy_ci_high": 0.39393676490340845,
+        "coverage_mean": 0.11366
+      },
+      "0.89": {
+        "accuracy_mean": 0.3696086164999277,
+        "accuracy_ci_low": 0.34527571508469923,
+        "accuracy_ci_high": 0.3947300809685737,
+        "coverage_mean": 0.11193999999999998
+      },
+      "0.90": {
+        "accuracy_mean": 0.36870768342833693,
+        "accuracy_ci_low": 0.3438057351764636,
+        "accuracy_ci_high": 0.3944446261381364,
+        "coverage_mean": 0.11032
+      },
+      "0.91": {
+        "accuracy_mean": 0.36849584761058607,
+        "accuracy_ci_low": 0.3429412614033395,
+        "accuracy_ci_high": 0.39429029791576936,
+        "coverage_mean": 0.10826000000000001
+      },
+      "0.92": {
+        "accuracy_mean": 0.36891218458123254,
+        "accuracy_ci_low": 0.34217465274997433,
+        "accuracy_ci_high": 0.3961533844552333,
+        "coverage_mean": 0.1057
+      },
+      "0.93": {
+        "accuracy_mean": 0.3702088916905781,
+        "accuracy_ci_low": 0.3437562320824028,
+        "accuracy_ci_high": 0.39766549688167874,
+        "coverage_mean": 0.10326
+      },
+      "0.94": {
+        "accuracy_mean": 0.371107247375939,
+        "accuracy_ci_low": 0.3436026227934932,
+        "accuracy_ci_high": 0.39869636968371874,
+        "coverage_mean": 0.10060000000000001
+      },
+      "0.95": {
+        "accuracy_mean": 0.3734350402599582,
+        "accuracy_ci_low": 0.3459463306008945,
+        "accuracy_ci_high": 0.40153007673532637,
+        "coverage_mean": 0.09754000000000002
+      },
+      "0.96": {
+        "accuracy_mean": 0.37324078137957756,
+        "accuracy_ci_low": 0.34489685136148435,
+        "accuracy_ci_high": 0.4024952914273083,
+        "coverage_mean": 0.09418000000000001
+      },
+      "0.97": {
+        "accuracy_mean": 0.37525765474863493,
+        "accuracy_ci_low": 0.3464869447205226,
+        "accuracy_ci_high": 0.4051058396954973,
+        "coverage_mean": 0.09027999999999999
+      },
+      "0.98": {
+        "accuracy_mean": 0.3783568946064379,
+        "accuracy_ci_low": 0.34892673834390825,
+        "accuracy_ci_high": 0.4091690150420953,
+        "coverage_mean": 0.08462000000000001
+      },
+      "0.99": {
+        "accuracy_mean": 0.38043686967382273,
+        "accuracy_ci_low": 0.3470676774625085,
+        "accuracy_ci_high": 0.4140589009447703,
+        "coverage_mean": 0.07586
+      }
+    },
+    "lateral_movement": {
+      "0.50": {
+        "accuracy_mean": 0.4060649889442625,
+        "accuracy_ci_low": 0.38672339029624786,
+        "accuracy_ci_high": 0.4246904336659026,
+        "coverage_mean": 0.15806
+      },
+      "0.51": {
+        "accuracy_mean": 0.40669627642554523,
+        "accuracy_ci_low": 0.38703271509752785,
+        "accuracy_ci_high": 0.42525107943860435,
+        "coverage_mean": 0.15706
+      },
+      "0.52": {
+        "accuracy_mean": 0.40741830532806433,
+        "accuracy_ci_low": 0.38763753639184173,
+        "accuracy_ci_high": 0.42634817205815434,
+        "coverage_mean": 0.1559
+      },
+      "0.53": {
+        "accuracy_mean": 0.4085138801633637,
+        "accuracy_ci_low": 0.3889550003305492,
+        "accuracy_ci_high": 0.42717040600891343,
+        "coverage_mean": 0.155
+      },
+      "0.54": {
+        "accuracy_mean": 0.40922631602266635,
+        "accuracy_ci_low": 0.3891016388552882,
+        "accuracy_ci_high": 0.4282002502521817,
+        "coverage_mean": 0.15403999999999998
+      },
+      "0.55": {
+        "accuracy_mean": 0.4094722678153996,
+        "accuracy_ci_low": 0.3891299580575263,
+        "accuracy_ci_high": 0.42866524977790565,
+        "coverage_mean": 0.15304
+      },
+      "0.56": {
+        "accuracy_mean": 0.40959013486813606,
+        "accuracy_ci_low": 0.38960264500004,
+        "accuracy_ci_high": 0.4287371432962588,
+        "coverage_mean": 0.15204
+      },
+      "0.57": {
+        "accuracy_mean": 0.4098340276330004,
+        "accuracy_ci_low": 0.39001480970472346,
+        "accuracy_ci_high": 0.42898907688513627,
+        "coverage_mean": 0.15098
+      },
+      "0.58": {
+        "accuracy_mean": 0.40983118837975363,
+        "accuracy_ci_low": 0.38939419568346895,
+        "accuracy_ci_high": 0.4287904280962564,
+        "coverage_mean": 0.14968
+      },
+      "0.59": {
+        "accuracy_mean": 0.41039996067565404,
+        "accuracy_ci_low": 0.39002498548091336,
+        "accuracy_ci_high": 0.4297474983351155,
+        "coverage_mean": 0.14862
+      },
+      "0.60": {
+        "accuracy_mean": 0.41052653159000074,
+        "accuracy_ci_low": 0.390176815033718,
+        "accuracy_ci_high": 0.43020077164220694,
+        "coverage_mean": 0.14776
+      },
+      "0.61": {
+        "accuracy_mean": 0.41062285975919205,
+        "accuracy_ci_low": 0.39029070006366545,
+        "accuracy_ci_high": 0.43023255264866767,
+        "coverage_mean": 0.14684000000000003
+      },
+      "0.62": {
+        "accuracy_mean": 0.41004233955741776,
+        "accuracy_ci_low": 0.3891369019899963,
+        "accuracy_ci_high": 0.4302921135187026,
+        "coverage_mean": 0.14586
+      },
+      "0.63": {
+        "accuracy_mean": 0.41010160822188996,
+        "accuracy_ci_low": 0.38935109374681304,
+        "accuracy_ci_high": 0.43051131534797593,
+        "coverage_mean": 0.14470000000000002
+      },
+      "0.64": {
+        "accuracy_mean": 0.4105354885049728,
+        "accuracy_ci_low": 0.38979741577584304,
+        "accuracy_ci_high": 0.4309121628113273,
+        "coverage_mean": 0.14372
+      },
+      "0.65": {
+        "accuracy_mean": 0.4108753675801489,
+        "accuracy_ci_low": 0.38969688945821457,
+        "accuracy_ci_high": 0.4314536547724343,
+        "coverage_mean": 0.14273999999999998
+      },
+      "0.66": {
+        "accuracy_mean": 0.4114404655725524,
+        "accuracy_ci_low": 0.3899504666613736,
+        "accuracy_ci_high": 0.431997292060175,
+        "coverage_mean": 0.14182
+      },
+      "0.67": {
+        "accuracy_mean": 0.41092119210262296,
+        "accuracy_ci_low": 0.3900226943304098,
+        "accuracy_ci_high": 0.43157693250724555,
+        "coverage_mean": 0.14078000000000002
+      },
+      "0.68": {
+        "accuracy_mean": 0.41133373368724074,
+        "accuracy_ci_low": 0.3895408648402775,
+        "accuracy_ci_high": 0.43176582727503343,
+        "coverage_mean": 0.13996
+      },
+      "0.69": {
+        "accuracy_mean": 0.41212699170571915,
+        "accuracy_ci_low": 0.38990150758122216,
+        "accuracy_ci_high": 0.4332226804957741,
+        "coverage_mean": 0.13888
+      },
+      "0.70": {
+        "accuracy_mean": 0.4121870752926181,
+        "accuracy_ci_low": 0.3901949378876024,
+        "accuracy_ci_high": 0.4333043142197484,
+        "coverage_mean": 0.13798
+      },
+      "0.71": {
+        "accuracy_mean": 0.4125663804152538,
+        "accuracy_ci_low": 0.3902924035884576,
+        "accuracy_ci_high": 0.4333254583111548,
+        "coverage_mean": 0.1368
+      },
+      "0.72": {
+        "accuracy_mean": 0.41362454952640315,
+        "accuracy_ci_low": 0.39150484440923755,
+        "accuracy_ci_high": 0.4341242492701089,
+        "coverage_mean": 0.13596000000000003
+      },
+      "0.73": {
+        "accuracy_mean": 0.41256235140447667,
+        "accuracy_ci_low": 0.38955185150553673,
+        "accuracy_ci_high": 0.43387065492205396,
+        "coverage_mean": 0.13492
+      },
+      "0.74": {
+        "accuracy_mean": 0.41299633665397045,
+        "accuracy_ci_low": 0.3904548907118997,
+        "accuracy_ci_high": 0.4337917194787788,
+        "coverage_mean": 0.13398000000000004
+      },
+      "0.75": {
+        "accuracy_mean": 0.4129743794654743,
+        "accuracy_ci_low": 0.39001791578467504,
+        "accuracy_ci_high": 0.43423650529671387,
+        "coverage_mean": 0.13296000000000002
+      },
+      "0.76": {
+        "accuracy_mean": 0.4132334055446924,
+        "accuracy_ci_low": 0.3904700490186615,
+        "accuracy_ci_high": 0.4343535483348638,
+        "coverage_mean": 0.13204
+      },
+      "0.77": {
+        "accuracy_mean": 0.4131014249038379,
+        "accuracy_ci_low": 0.390340420222444,
+        "accuracy_ci_high": 0.4339489600541808,
+        "coverage_mean": 0.131
+      },
+      "0.78": {
+        "accuracy_mean": 0.41392011542719503,
+        "accuracy_ci_low": 0.3908830099045481,
+        "accuracy_ci_high": 0.43523251389325385,
+        "coverage_mean": 0.13014
+      },
+      "0.79": {
+        "accuracy_mean": 0.4148039470194984,
+        "accuracy_ci_low": 0.391406419664014,
+        "accuracy_ci_high": 0.4365887775013492,
+        "coverage_mean": 0.12904
+      },
+      "0.80": {
+        "accuracy_mean": 0.4147223385581873,
+        "accuracy_ci_low": 0.3911099453104328,
+        "accuracy_ci_high": 0.436617436557007,
+        "coverage_mean": 0.12814
+      },
+      "0.81": {
+        "accuracy_mean": 0.41482369272697356,
+        "accuracy_ci_low": 0.39106358441042477,
+        "accuracy_ci_high": 0.4374584117128944,
+        "coverage_mean": 0.12678
+      },
+      "0.82": {
+        "accuracy_mean": 0.41567659120193956,
+        "accuracy_ci_low": 0.39178174118431963,
+        "accuracy_ci_high": 0.43840081500934625,
+        "coverage_mean": 0.12584
+      },
+      "0.83": {
+        "accuracy_mean": 0.4174979877207756,
+        "accuracy_ci_low": 0.39314376101774495,
+        "accuracy_ci_high": 0.4404217401844642,
+        "coverage_mean": 0.12465999999999999
+      },
+      "0.84": {
+        "accuracy_mean": 0.4177399252748976,
+        "accuracy_ci_low": 0.39290204853035193,
+        "accuracy_ci_high": 0.44065885163651775,
+        "coverage_mean": 0.12362000000000002
+      },
+      "0.85": {
+        "accuracy_mean": 0.4182704551799618,
+        "accuracy_ci_low": 0.3935336197012257,
+        "accuracy_ci_high": 0.44128496401209316,
+        "coverage_mean": 0.12244
+      },
+      "0.86": {
+        "accuracy_mean": 0.419446331863126,
+        "accuracy_ci_low": 0.394728012908267,
+        "accuracy_ci_high": 0.4423028268888127,
+        "coverage_mean": 0.12128000000000001
+      },
+      "0.87": {
+        "accuracy_mean": 0.4199558337412933,
+        "accuracy_ci_low": 0.3950554077612853,
+        "accuracy_ci_high": 0.4425331021491309,
+        "coverage_mean": 0.12002
+      },
+      "0.88": {
+        "accuracy_mean": 0.41951212262776816,
+        "accuracy_ci_low": 0.39473739925139445,
+        "accuracy_ci_high": 0.4431107687757402,
+        "coverage_mean": 0.1184
+      },
+      "0.89": {
+        "accuracy_mean": 0.4194748526551001,
+        "accuracy_ci_low": 0.39349093372675803,
+        "accuracy_ci_high": 0.44315038978724447,
+        "coverage_mean": 0.11661999999999999
+      },
+      "0.90": {
+        "accuracy_mean": 0.4213570357418316,
+        "accuracy_ci_low": 0.3955971258888255,
+        "accuracy_ci_high": 0.44501410662884455,
+        "coverage_mean": 0.11495999999999999
+      },
+      "0.91": {
+        "accuracy_mean": 0.42171107440000083,
+        "accuracy_ci_low": 0.3950748021648351,
+        "accuracy_ci_high": 0.4463244093657889,
+        "coverage_mean": 0.11314
+      },
+      "0.92": {
+        "accuracy_mean": 0.4229344406498828,
+        "accuracy_ci_low": 0.3957494240888482,
+        "accuracy_ci_high": 0.4479706225171932,
+        "coverage_mean": 0.11116
+      },
+      "0.93": {
+        "accuracy_mean": 0.423391395024648,
+        "accuracy_ci_low": 0.3962863256116588,
+        "accuracy_ci_high": 0.44829894865811715,
+        "coverage_mean": 0.10926
+      },
+      "0.94": {
+        "accuracy_mean": 0.4234420529945465,
+        "accuracy_ci_low": 0.3960450720461323,
+        "accuracy_ci_high": 0.4492456205115282,
+        "coverage_mean": 0.10665999999999999
+      },
+      "0.95": {
+        "accuracy_mean": 0.4259569732922066,
+        "accuracy_ci_low": 0.3987406036340416,
+        "accuracy_ci_high": 0.4521595479765893,
+        "coverage_mean": 0.10385999999999998
+      },
+      "0.96": {
+        "accuracy_mean": 0.4287393059914104,
+        "accuracy_ci_low": 0.40034816488410935,
+        "accuracy_ci_high": 0.4560027477525237,
+        "coverage_mean": 0.1004
+      },
+      "0.97": {
+        "accuracy_mean": 0.4322591194123767,
+        "accuracy_ci_low": 0.4026138706223666,
+        "accuracy_ci_high": 0.460452495013542,
+        "coverage_mean": 0.09555999999999999
+      },
+      "0.98": {
+        "accuracy_mean": 0.43742288252099726,
+        "accuracy_ci_low": 0.40636459742501885,
+        "accuracy_ci_high": 0.4689716788745199,
+        "coverage_mean": 0.0895
+      },
+      "0.99": {
+        "accuracy_mean": 0.4460682545973013,
+        "accuracy_ci_low": 0.4126639534762662,
+        "accuracy_ci_high": 0.48032876355757104,
+        "coverage_mean": 0.08038000000000001
+      }
+    },
+    "data_exfiltration": {
+      "0.50": {
+        "accuracy_mean": 0.42245220878281864,
+        "accuracy_ci_low": 0.39778122377569947,
+        "accuracy_ci_high": 0.4449814144207183,
+        "coverage_mean": 0.16147999999999998
+      },
+      "0.51": {
+        "accuracy_mean": 0.42261880296144194,
+        "accuracy_ci_low": 0.3976133705943841,
+        "accuracy_ci_high": 0.44555547542640306,
+        "coverage_mean": 0.16020000000000004
+      },
+      "0.52": {
+        "accuracy_mean": 0.4233821708300146,
+        "accuracy_ci_low": 0.3978555128608351,
+        "accuracy_ci_high": 0.44605542198547166,
+        "coverage_mean": 0.15922
+      },
+      "0.53": {
+        "accuracy_mean": 0.42416748099682977,
+        "accuracy_ci_low": 0.3985614091693906,
+        "accuracy_ci_high": 0.44738198557069037,
+        "coverage_mean": 0.15824
+      },
+      "0.54": {
+        "accuracy_mean": 0.4239794686958016,
+        "accuracy_ci_low": 0.3982814312999508,
+        "accuracy_ci_high": 0.4479823055826148,
+        "coverage_mean": 0.15722
+      },
+      "0.55": {
+        "accuracy_mean": 0.42432655552384246,
+        "accuracy_ci_low": 0.3987067464610018,
+        "accuracy_ci_high": 0.4479589980402162,
+        "coverage_mean": 0.15606
+      },
+      "0.56": {
+        "accuracy_mean": 0.4245469002249239,
+        "accuracy_ci_low": 0.398765638326579,
+        "accuracy_ci_high": 0.44837861915677696,
+        "coverage_mean": 0.15506000000000003
+      },
+      "0.57": {
+        "accuracy_mean": 0.42532050223041556,
+        "accuracy_ci_low": 0.39922455744920166,
+        "accuracy_ci_high": 0.4496032477237992,
+        "coverage_mean": 0.15410000000000001
+      },
+      "0.58": {
+        "accuracy_mean": 0.4248605400145179,
+        "accuracy_ci_low": 0.39874348745673055,
+        "accuracy_ci_high": 0.44914159662390285,
+        "coverage_mean": 0.15290000000000004
+      },
+      "0.59": {
+        "accuracy_mean": 0.4251761946725474,
+        "accuracy_ci_low": 0.39835436333728297,
+        "accuracy_ci_high": 0.45002920225252757,
+        "coverage_mean": 0.15184000000000003
+      },
+      "0.60": {
+        "accuracy_mean": 0.4252775038388259,
+        "accuracy_ci_low": 0.3982656328615482,
+        "accuracy_ci_high": 0.4496576106701299,
+        "coverage_mean": 0.15096
+      },
+      "0.61": {
+        "accuracy_mean": 0.42485795285971484,
+        "accuracy_ci_low": 0.3979112411205161,
+        "accuracy_ci_high": 0.4499112637950679,
+        "coverage_mean": 0.14978000000000002
+      },
+      "0.62": {
+        "accuracy_mean": 0.4255189165798184,
+        "accuracy_ci_low": 0.3985137081138384,
+        "accuracy_ci_high": 0.45011681352378646,
+        "coverage_mean": 0.14866000000000001
+      },
+      "0.63": {
+        "accuracy_mean": 0.4254793438159251,
+        "accuracy_ci_low": 0.3983323215939701,
+        "accuracy_ci_high": 0.45031274888922374,
+        "coverage_mean": 0.14744
+      },
+      "0.64": {
+        "accuracy_mean": 0.42536865113554795,
+        "accuracy_ci_low": 0.3980385750202196,
+        "accuracy_ci_high": 0.4498803375931577,
+        "coverage_mean": 0.14590000000000003
+      },
+      "0.65": {
+        "accuracy_mean": 0.42590869490141986,
+        "accuracy_ci_low": 0.3983963476852438,
+        "accuracy_ci_high": 0.45053600089154394,
+        "coverage_mean": 0.14478000000000002
+      },
+      "0.66": {
+        "accuracy_mean": 0.4264544040011568,
+        "accuracy_ci_low": 0.3991483383387855,
+        "accuracy_ci_high": 0.45113285312716206,
+        "coverage_mean": 0.14372000000000001
+      },
+      "0.67": {
+        "accuracy_mean": 0.4272155263548726,
+        "accuracy_ci_low": 0.39938408671890463,
+        "accuracy_ci_high": 0.4530841137231915,
+        "coverage_mean": 0.1423
+      },
+      "0.68": {
+        "accuracy_mean": 0.4267769236565064,
+        "accuracy_ci_low": 0.39919150583487556,
+        "accuracy_ci_high": 0.45294865570649134,
+        "coverage_mean": 0.14132000000000003
+      },
+      "0.69": {
+        "accuracy_mean": 0.4276916636585914,
+        "accuracy_ci_low": 0.39960522665800147,
+        "accuracy_ci_high": 0.45399663251542627,
+        "coverage_mean": 0.14
+      },
+      "0.70": {
+        "accuracy_mean": 0.42781487519364836,
+        "accuracy_ci_low": 0.399665973257078,
+        "accuracy_ci_high": 0.4541757912978952,
+        "coverage_mean": 0.13894
+      },
+      "0.71": {
+        "accuracy_mean": 0.42790983639808927,
+        "accuracy_ci_low": 0.39972512686385214,
+        "accuracy_ci_high": 0.4543923311477831,
+        "coverage_mean": 0.13764
+      },
+      "0.72": {
+        "accuracy_mean": 0.42820461502749557,
+        "accuracy_ci_low": 0.40006693444693303,
+        "accuracy_ci_high": 0.45468953080911767,
+        "coverage_mean": 0.13654
+      },
+      "0.73": {
+        "accuracy_mean": 0.42817619210975116,
+        "accuracy_ci_low": 0.399991339254947,
+        "accuracy_ci_high": 0.4552635480878423,
+        "coverage_mean": 0.13536
+      },
+      "0.74": {
+        "accuracy_mean": 0.42832856636636935,
+        "accuracy_ci_low": 0.3990902499676609,
+        "accuracy_ci_high": 0.4560971005469365,
+        "coverage_mean": 0.13414
+      },
+      "0.75": {
+        "accuracy_mean": 0.4284920455501648,
+        "accuracy_ci_low": 0.3987262368030755,
+        "accuracy_ci_high": 0.4570431872738407,
+        "coverage_mean": 0.13308
+      },
+      "0.76": {
+        "accuracy_mean": 0.42902922102740876,
+        "accuracy_ci_low": 0.39896319533262675,
+        "accuracy_ci_high": 0.4575527911143395,
+        "coverage_mean": 0.13172
+      },
+      "0.77": {
+        "accuracy_mean": 0.43118029052737566,
+        "accuracy_ci_low": 0.40125610856001764,
+        "accuracy_ci_high": 0.4589848737193139,
+        "coverage_mean": 0.13056
+      },
+      "0.78": {
+        "accuracy_mean": 0.42984935271007435,
+        "accuracy_ci_low": 0.3994321263105256,
+        "accuracy_ci_high": 0.4586938613344051,
+        "coverage_mean": 0.1292
+      },
+      "0.79": {
+        "accuracy_mean": 0.43095083362240094,
+        "accuracy_ci_low": 0.400364801741724,
+        "accuracy_ci_high": 0.45975191746375577,
+        "coverage_mean": 0.12812
+      },
+      "0.80": {
+        "accuracy_mean": 0.4312063175772677,
+        "accuracy_ci_low": 0.399915426107648,
+        "accuracy_ci_high": 0.4600022150650394,
+        "coverage_mean": 0.12704000000000001
+      },
+      "0.81": {
+        "accuracy_mean": 0.4314422586910651,
+        "accuracy_ci_low": 0.3999694984735061,
+        "accuracy_ci_high": 0.46071602156875835,
+        "coverage_mean": 0.12562
+      },
+      "0.82": {
+        "accuracy_mean": 0.4317199682374053,
+        "accuracy_ci_low": 0.39968026572676374,
+        "accuracy_ci_high": 0.46078849428800495,
+        "coverage_mean": 0.12418
+      },
+      "0.83": {
+        "accuracy_mean": 0.4318896849070933,
+        "accuracy_ci_low": 0.3999805192757483,
+        "accuracy_ci_high": 0.4617072981664354,
+        "coverage_mean": 0.12251999999999999
+      },
+      "0.84": {
+        "accuracy_mean": 0.4318850734525178,
+        "accuracy_ci_low": 0.4002415653667749,
+        "accuracy_ci_high": 0.4622018337155701,
+        "coverage_mean": 0.12138
+      },
+      "0.85": {
+        "accuracy_mean": 0.4325901039583684,
+        "accuracy_ci_low": 0.39996939970908935,
+        "accuracy_ci_high": 0.46369528899447326,
+        "coverage_mean": 0.11978
+      },
+      "0.86": {
+        "accuracy_mean": 0.43161766306391874,
+        "accuracy_ci_low": 0.39880267241903716,
+        "accuracy_ci_high": 0.46290326142168287,
+        "coverage_mean": 0.11820000000000003
+      },
+      "0.87": {
+        "accuracy_mean": 0.43160906415304773,
+        "accuracy_ci_low": 0.3984308109071463,
+        "accuracy_ci_high": 0.4633637995411215,
+        "coverage_mean": 0.11662
+      },
+      "0.88": {
+        "accuracy_mean": 0.43266395552634157,
+        "accuracy_ci_low": 0.3989841483054521,
+        "accuracy_ci_high": 0.4644151821174554,
+        "coverage_mean": 0.11498
+      },
+      "0.89": {
+        "accuracy_mean": 0.43394040923356897,
+        "accuracy_ci_low": 0.39951688007909575,
+        "accuracy_ci_high": 0.4668100800367047,
+        "coverage_mean": 0.11318
+      },
+      "0.90": {
+        "accuracy_mean": 0.4345696268408563,
+        "accuracy_ci_low": 0.399046538080327,
+        "accuracy_ci_high": 0.46813437521126594,
+        "coverage_mean": 0.11139999999999999
+      },
+      "0.91": {
+        "accuracy_mean": 0.4350891938832958,
+        "accuracy_ci_low": 0.3996649463247791,
+        "accuracy_ci_high": 0.4688803050934429,
+        "coverage_mean": 0.10927999999999999
+      },
+      "0.92": {
+        "accuracy_mean": 0.4356385275075106,
+        "accuracy_ci_low": 0.39936973108405616,
+        "accuracy_ci_high": 0.47048624709202913,
+        "coverage_mean": 0.10728
+      },
+      "0.93": {
+        "accuracy_mean": 0.43615396103977844,
+        "accuracy_ci_low": 0.3988330048568446,
+        "accuracy_ci_high": 0.47134516272131427,
+        "coverage_mean": 0.10520000000000002
+      },
+      "0.94": {
+        "accuracy_mean": 0.438212627743518,
+        "accuracy_ci_low": 0.4014222747024205,
+        "accuracy_ci_high": 0.47348514546311066,
+        "coverage_mean": 0.10257999999999999
+      },
+      "0.95": {
+        "accuracy_mean": 0.4403789166129451,
+        "accuracy_ci_low": 0.401774764861286,
+        "accuracy_ci_high": 0.47659927199154595,
+        "coverage_mean": 0.09978
+      },
+      "0.96": {
+        "accuracy_mean": 0.44083260905910854,
+        "accuracy_ci_low": 0.4026979588598846,
+        "accuracy_ci_high": 0.47773634097683776,
+        "coverage_mean": 0.09680000000000001
+      },
+      "0.97": {
+        "accuracy_mean": 0.4436470817823993,
+        "accuracy_ci_low": 0.40282603032665326,
+        "accuracy_ci_high": 0.48262746626168945,
+        "coverage_mean": 0.09224
+      },
+      "0.98": {
+        "accuracy_mean": 0.4489251869080302,
+        "accuracy_ci_low": 0.40683839952710943,
+        "accuracy_ci_high": 0.4890068866530516,
+        "coverage_mean": 0.08672
+      },
+      "0.99": {
+        "accuracy_mean": 0.45488358808241025,
+        "accuracy_ci_low": 0.40897765786749984,
+        "accuracy_ci_high": 0.49833756095750054,
+        "coverage_mean": 0.07724
+      }
+    },
+    "insider_threat": {
+      "0.50": {
+        "accuracy_mean": 0.3634535446669823,
+        "accuracy_ci_low": 0.3439804040717573,
+        "accuracy_ci_high": 0.38487972106965423,
+        "coverage_mean": 0.16432
+      },
+      "0.51": {
+        "accuracy_mean": 0.36411466196331893,
+        "accuracy_ci_low": 0.3446189683937096,
+        "accuracy_ci_high": 0.3853639425313177,
+        "coverage_mean": 0.16302
+      },
+      "0.52": {
+        "accuracy_mean": 0.36492181414411873,
+        "accuracy_ci_low": 0.3450408541435789,
+        "accuracy_ci_high": 0.386068121380924,
+        "coverage_mean": 0.16188000000000002
+      },
+      "0.53": {
+        "accuracy_mean": 0.365894137375821,
+        "accuracy_ci_low": 0.34571295096870447,
+        "accuracy_ci_high": 0.38756074556085585,
+        "coverage_mean": 0.16094
+      },
+      "0.54": {
+        "accuracy_mean": 0.3654691483854778,
+        "accuracy_ci_low": 0.3452661402997393,
+        "accuracy_ci_high": 0.38748088764510047,
+        "coverage_mean": 0.15974000000000002
+      },
+      "0.55": {
+        "accuracy_mean": 0.365913495431397,
+        "accuracy_ci_low": 0.34559424390085397,
+        "accuracy_ci_high": 0.38782842232141923,
+        "coverage_mean": 0.15870000000000004
+      },
+      "0.56": {
+        "accuracy_mean": 0.3657629208771062,
+        "accuracy_ci_low": 0.34534688895394344,
+        "accuracy_ci_high": 0.38785087128068874,
+        "coverage_mean": 0.15756
+      },
+      "0.57": {
+        "accuracy_mean": 0.3662161212547314,
+        "accuracy_ci_low": 0.34557852004539164,
+        "accuracy_ci_high": 0.388244908191604,
+        "coverage_mean": 0.15616000000000002
+      },
+      "0.58": {
+        "accuracy_mean": 0.3660328577461558,
+        "accuracy_ci_low": 0.34470721310020647,
+        "accuracy_ci_high": 0.38812444592620243,
+        "coverage_mean": 0.15516000000000002
+      },
+      "0.59": {
+        "accuracy_mean": 0.3663248607909015,
+        "accuracy_ci_low": 0.34469829235179317,
+        "accuracy_ci_high": 0.3886435194962335,
+        "coverage_mean": 0.1542
+      },
+      "0.60": {
+        "accuracy_mean": 0.3674934560688981,
+        "accuracy_ci_low": 0.34577471809790317,
+        "accuracy_ci_high": 0.3896092136133765,
+        "coverage_mean": 0.15298
+      },
+      "0.61": {
+        "accuracy_mean": 0.36726373806575574,
+        "accuracy_ci_low": 0.34523301747515117,
+        "accuracy_ci_high": 0.389307510472949,
+        "coverage_mean": 0.15198
+      },
+      "0.62": {
+        "accuracy_mean": 0.367215738525899,
+        "accuracy_ci_low": 0.34518492652532834,
+        "accuracy_ci_high": 0.38945459007998157,
+        "coverage_mean": 0.15104
+      },
+      "0.63": {
+        "accuracy_mean": 0.36697055522666777,
+        "accuracy_ci_low": 0.34473542191703566,
+        "accuracy_ci_high": 0.3895572975788518,
+        "coverage_mean": 0.15002000000000001
+      },
+      "0.64": {
+        "accuracy_mean": 0.3673846760067997,
+        "accuracy_ci_low": 0.3451167104577763,
+        "accuracy_ci_high": 0.38990897490667614,
+        "coverage_mean": 0.14916000000000001
+      },
+      "0.65": {
+        "accuracy_mean": 0.3678750724166251,
+        "accuracy_ci_low": 0.34540211732907505,
+        "accuracy_ci_high": 0.3907911862702915,
+        "coverage_mean": 0.14816000000000001
+      },
+      "0.66": {
+        "accuracy_mean": 0.3676677491300865,
+        "accuracy_ci_low": 0.3454943252648095,
+        "accuracy_ci_high": 0.3907716584927484,
+        "coverage_mean": 0.14704
+      },
+      "0.67": {
+        "accuracy_mean": 0.3682645068760869,
+        "accuracy_ci_low": 0.3455146257922143,
+        "accuracy_ci_high": 0.3913601086683518,
+        "coverage_mean": 0.14592000000000002
+      },
+      "0.68": {
+        "accuracy_mean": 0.36853259301144525,
+        "accuracy_ci_low": 0.34593665266554435,
+        "accuracy_ci_high": 0.39161661266205006,
+        "coverage_mean": 0.14464000000000002
+      },
+      "0.69": {
+        "accuracy_mean": 0.36928487576965174,
+        "accuracy_ci_low": 0.34705356760325207,
+        "accuracy_ci_high": 0.3923337003253998,
+        "coverage_mean": 0.14352
+      },
+      "0.70": {
+        "accuracy_mean": 0.3693422677151807,
+        "accuracy_ci_low": 0.34697928389698046,
+        "accuracy_ci_high": 0.3924235702616142,
+        "coverage_mean": 0.14266
+      },
+      "0.71": {
+        "accuracy_mean": 0.36946647405719707,
+        "accuracy_ci_low": 0.3465590809851007,
+        "accuracy_ci_high": 0.3928037034168562,
+        "coverage_mean": 0.14168
+      },
+      "0.72": {
+        "accuracy_mean": 0.3701089040066182,
+        "accuracy_ci_low": 0.34739264338399634,
+        "accuracy_ci_high": 0.3930694274299456,
+        "coverage_mean": 0.14056000000000002
+      },
+      "0.73": {
+        "accuracy_mean": 0.36992205470336315,
+        "accuracy_ci_low": 0.346907582815453,
+        "accuracy_ci_high": 0.39299082553702236,
+        "coverage_mean": 0.1398
+      },
+      "0.74": {
+        "accuracy_mean": 0.3710312009264149,
+        "accuracy_ci_low": 0.34818917053405424,
+        "accuracy_ci_high": 0.3947877630733409,
+        "coverage_mean": 0.13828000000000001
+      },
+      "0.75": {
+        "accuracy_mean": 0.3718704572180392,
+        "accuracy_ci_low": 0.34877374161908864,
+        "accuracy_ci_high": 0.3957292462068331,
+        "coverage_mean": 0.13724
+      },
+      "0.76": {
+        "accuracy_mean": 0.3725574753168443,
+        "accuracy_ci_low": 0.34934137971929546,
+        "accuracy_ci_high": 0.3962831250789177,
+        "coverage_mean": 0.13595999999999997
+      },
+      "0.77": {
+        "accuracy_mean": 0.3723339834909051,
+        "accuracy_ci_low": 0.3490153373905698,
+        "accuracy_ci_high": 0.39622711762544843,
+        "coverage_mean": 0.13498
+      },
+      "0.78": {
+        "accuracy_mean": 0.37283818092848087,
+        "accuracy_ci_low": 0.3492105257018146,
+        "accuracy_ci_high": 0.39689773012367097,
+        "coverage_mean": 0.1335
+      },
+      "0.79": {
+        "accuracy_mean": 0.37368151105807174,
+        "accuracy_ci_low": 0.3495379108934431,
+        "accuracy_ci_high": 0.3982671193180733,
+        "coverage_mean": 0.13241999999999998
+      },
+      "0.80": {
+        "accuracy_mean": 0.37351852263247387,
+        "accuracy_ci_low": 0.3494070752979688,
+        "accuracy_ci_high": 0.39815652211643826,
+        "coverage_mean": 0.13114
+      },
+      "0.81": {
+        "accuracy_mean": 0.373344409818413,
+        "accuracy_ci_low": 0.3495774835594367,
+        "accuracy_ci_high": 0.3983311001722737,
+        "coverage_mean": 0.12984
+      },
+      "0.82": {
+        "accuracy_mean": 0.37364469780571435,
+        "accuracy_ci_low": 0.34944739378868894,
+        "accuracy_ci_high": 0.39881866054928145,
+        "coverage_mean": 0.12838000000000002
+      },
+      "0.83": {
+        "accuracy_mean": 0.3737441227871432,
+        "accuracy_ci_low": 0.3494568448953565,
+        "accuracy_ci_high": 0.39908813733777804,
+        "coverage_mean": 0.12696
+      },
+      "0.84": {
+        "accuracy_mean": 0.37415967898730634,
+        "accuracy_ci_low": 0.34932268491995144,
+        "accuracy_ci_high": 0.3991604528280129,
+        "coverage_mean": 0.12561999999999998
+      },
+      "0.85": {
+        "accuracy_mean": 0.37524501057606685,
+        "accuracy_ci_low": 0.34985203953975236,
+        "accuracy_ci_high": 0.40018229639906194,
+        "coverage_mean": 0.12412000000000001
+      },
+      "0.86": {
+        "accuracy_mean": 0.3767109902730117,
+        "accuracy_ci_low": 0.35160035717931226,
+        "accuracy_ci_high": 0.40192400024456426,
+        "coverage_mean": 0.12258
+      },
+      "0.87": {
+        "accuracy_mean": 0.37688669089760224,
+        "accuracy_ci_low": 0.35162001542266696,
+        "accuracy_ci_high": 0.4025802118535778,
+        "coverage_mean": 0.12074
+      },
+      "0.88": {
+        "accuracy_mean": 0.37770276967861593,
+        "accuracy_ci_low": 0.3521289499322052,
+        "accuracy_ci_high": 0.403778019954747,
+        "coverage_mean": 0.11853999999999999
+      },
+      "0.89": {
+        "accuracy_mean": 0.3792568076272205,
+        "accuracy_ci_low": 0.3526283291691463,
+        "accuracy_ci_high": 0.4056999407633516,
+        "coverage_mean": 0.11632000000000002
+      },
+      "0.90": {
+        "accuracy_mean": 0.38121858712905693,
+        "accuracy_ci_low": 0.3542862812363482,
+        "accuracy_ci_high": 0.4075236751873928,
+        "coverage_mean": 0.11456
+      },
+      "0.91": {
+        "accuracy_mean": 0.38297750457126084,
+        "accuracy_ci_low": 0.3553209715588566,
+        "accuracy_ci_high": 0.4098379117627912,
+        "coverage_mean": 0.11252
+      },
+      "0.92": {
+        "accuracy_mean": 0.38541461273625827,
+        "accuracy_ci_low": 0.3576099085762066,
+        "accuracy_ci_high": 0.4134290599057239,
+        "coverage_mean": 0.11027999999999999
+      },
+      "0.93": {
+        "accuracy_mean": 0.38571684329415457,
+        "accuracy_ci_low": 0.3567954127721165,
+        "accuracy_ci_high": 0.41401821607196404,
+        "coverage_mean": 0.10769999999999999
+      },
+      "0.94": {
+        "accuracy_mean": 0.3857210125261814,
+        "accuracy_ci_low": 0.35671893664343385,
+        "accuracy_ci_high": 0.41460050402164766,
+        "coverage_mean": 0.10515999999999998
+      },
+      "0.95": {
+        "accuracy_mean": 0.3870144686757848,
+        "accuracy_ci_low": 0.35726582133053236,
+        "accuracy_ci_high": 0.4165061189043276,
+        "coverage_mean": 0.10206
+      },
+      "0.96": {
+        "accuracy_mean": 0.39076215771856687,
+        "accuracy_ci_low": 0.35987611032333094,
+        "accuracy_ci_high": 0.4213206249223881,
+        "coverage_mean": 0.09815999999999998
+      },
+      "0.97": {
+        "accuracy_mean": 0.3918074910950651,
+        "accuracy_ci_low": 0.36079982419142304,
+        "accuracy_ci_high": 0.42271442793205055,
+        "coverage_mean": 0.09399999999999999
+      },
+      "0.98": {
+        "accuracy_mean": 0.393789826164747,
+        "accuracy_ci_low": 0.3623032775579322,
+        "accuracy_ci_high": 0.4255287087667438,
+        "coverage_mean": 0.08742
+      },
+      "0.99": {
+        "accuracy_mean": 0.39987273587056116,
+        "accuracy_ci_low": 0.36424247677363114,
+        "accuracy_ci_high": 0.43552848140577527,
+        "coverage_mean": 0.07728
+      }
+    },
+    "cloud_infrastructure": {
+      "0.50": {
+        "accuracy_mean": 0.3719427340055422,
+        "accuracy_ci_low": 0.35412756037269566,
+        "accuracy_ci_high": 0.3939525328898942,
+        "coverage_mean": 0.16192
+      },
+      "0.51": {
+        "accuracy_mean": 0.3724000041262771,
+        "accuracy_ci_low": 0.354048825375377,
+        "accuracy_ci_high": 0.3944291842026153,
+        "coverage_mean": 0.16082000000000002
+      },
+      "0.52": {
+        "accuracy_mean": 0.372508117158108,
+        "accuracy_ci_low": 0.3540112036453667,
+        "accuracy_ci_high": 0.3944024476188882,
+        "coverage_mean": 0.15972
+      },
+      "0.53": {
+        "accuracy_mean": 0.373034254462136,
+        "accuracy_ci_low": 0.3543363658272247,
+        "accuracy_ci_high": 0.3948586705117705,
+        "coverage_mean": 0.15884
+      },
+      "0.54": {
+        "accuracy_mean": 0.37334431302759535,
+        "accuracy_ci_low": 0.35461539151899785,
+        "accuracy_ci_high": 0.3950564648088068,
+        "coverage_mean": 0.15772000000000003
+      },
+      "0.55": {
+        "accuracy_mean": 0.37389046409388654,
+        "accuracy_ci_low": 0.35503110147773437,
+        "accuracy_ci_high": 0.3953950982072869,
+        "coverage_mean": 0.15656000000000003
+      },
+      "0.56": {
+        "accuracy_mean": 0.3741081937490292,
+        "accuracy_ci_low": 0.355420897612502,
+        "accuracy_ci_high": 0.39612220765453987,
+        "coverage_mean": 0.15542
+      },
+      "0.57": {
+        "accuracy_mean": 0.37416621920352333,
+        "accuracy_ci_low": 0.3554075407596556,
+        "accuracy_ci_high": 0.3964965716722376,
+        "coverage_mean": 0.15439999999999998
+      },
+      "0.58": {
+        "accuracy_mean": 0.3752859897375729,
+        "accuracy_ci_low": 0.3564486945642156,
+        "accuracy_ci_high": 0.3977708084084442,
+        "coverage_mean": 0.15306
+      },
+      "0.59": {
+        "accuracy_mean": 0.3753770211023184,
+        "accuracy_ci_low": 0.3563509732388572,
+        "accuracy_ci_high": 0.39834908655796253,
+        "coverage_mean": 0.15226
+      },
+      "0.60": {
+        "accuracy_mean": 0.37568663212249365,
+        "accuracy_ci_low": 0.3565333100111606,
+        "accuracy_ci_high": 0.3986633983254674,
+        "coverage_mean": 0.15088000000000001
+      },
+      "0.61": {
+        "accuracy_mean": 0.37551654905618476,
+        "accuracy_ci_low": 0.35667481894369374,
+        "accuracy_ci_high": 0.39822796522608894,
+        "coverage_mean": 0.14954
+      },
+      "0.62": {
+        "accuracy_mean": 0.37548898858088814,
+        "accuracy_ci_low": 0.3557376451399997,
+        "accuracy_ci_high": 0.3989174145497081,
+        "coverage_mean": 0.14876
+      },
+      "0.63": {
+        "accuracy_mean": 0.3751000676916844,
+        "accuracy_ci_low": 0.35529737116761795,
+        "accuracy_ci_high": 0.39905602021676284,
+        "coverage_mean": 0.14752
+      },
+      "0.64": {
+        "accuracy_mean": 0.375085835262332,
+        "accuracy_ci_low": 0.3555352686052145,
+        "accuracy_ci_high": 0.39886709589418146,
+        "coverage_mean": 0.14645999999999998
+      },
+      "0.65": {
+        "accuracy_mean": 0.37561375600097113,
+        "accuracy_ci_low": 0.3556670685753272,
+        "accuracy_ci_high": 0.3993739784095315,
+        "coverage_mean": 0.14536000000000002
+      },
+      "0.66": {
+        "accuracy_mean": 0.37652026107507036,
+        "accuracy_ci_low": 0.357071133587286,
+        "accuracy_ci_high": 0.40062698560755733,
+        "coverage_mean": 0.14392000000000002
+      },
+      "0.67": {
+        "accuracy_mean": 0.3770067333625044,
+        "accuracy_ci_low": 0.35693528503229355,
+        "accuracy_ci_high": 0.40136316411276857,
+        "coverage_mean": 0.14286000000000001
+      },
+      "0.68": {
+        "accuracy_mean": 0.37648883996431237,
+        "accuracy_ci_low": 0.3566483160244245,
+        "accuracy_ci_high": 0.40114530254849334,
+        "coverage_mean": 0.14196
+      },
+      "0.69": {
+        "accuracy_mean": 0.37646409384827684,
+        "accuracy_ci_low": 0.35658202678953727,
+        "accuracy_ci_high": 0.4015841504864585,
+        "coverage_mean": 0.14090000000000003
+      },
+      "0.70": {
+        "accuracy_mean": 0.3764370178319452,
+        "accuracy_ci_low": 0.3564597414562831,
+        "accuracy_ci_high": 0.4016535621605937,
+        "coverage_mean": 0.13992
+      },
+      "0.71": {
+        "accuracy_mean": 0.37657505374852124,
+        "accuracy_ci_low": 0.35646569996610694,
+        "accuracy_ci_high": 0.40191709777985735,
+        "coverage_mean": 0.1386
+      },
+      "0.72": {
+        "accuracy_mean": 0.3765138525417496,
+        "accuracy_ci_low": 0.3562292543021901,
+        "accuracy_ci_high": 0.4021838632550771,
+        "coverage_mean": 0.13754000000000002
+      },
+      "0.73": {
+        "accuracy_mean": 0.37616835558812184,
+        "accuracy_ci_low": 0.3556675780101918,
+        "accuracy_ci_high": 0.40193390419710356,
+        "coverage_mean": 0.13654000000000002
+      },
+      "0.74": {
+        "accuracy_mean": 0.37642891619021346,
+        "accuracy_ci_low": 0.3558671031096401,
+        "accuracy_ci_high": 0.40240834526099467,
+        "coverage_mean": 0.13546000000000002
+      },
+      "0.75": {
+        "accuracy_mean": 0.37624756303920814,
+        "accuracy_ci_low": 0.3552400481738014,
+        "accuracy_ci_high": 0.40277322387116965,
+        "coverage_mean": 0.13428
+      },
+      "0.76": {
+        "accuracy_mean": 0.3762650208251791,
+        "accuracy_ci_low": 0.35534320638118033,
+        "accuracy_ci_high": 0.4028696382947827,
+        "coverage_mean": 0.13308
+      },
+      "0.77": {
+        "accuracy_mean": 0.375650835549125,
+        "accuracy_ci_low": 0.3542654726728325,
+        "accuracy_ci_high": 0.402355041955541,
+        "coverage_mean": 0.13172000000000003
+      },
+      "0.78": {
+        "accuracy_mean": 0.37680951370706167,
+        "accuracy_ci_low": 0.35507802371631875,
+        "accuracy_ci_high": 0.40454061832557386,
+        "coverage_mean": 0.13038000000000002
+      },
+      "0.79": {
+        "accuracy_mean": 0.3762956847154724,
+        "accuracy_ci_low": 0.35414751279611006,
+        "accuracy_ci_high": 0.4041118539340353,
+        "coverage_mean": 0.12912
+      },
+      "0.80": {
+        "accuracy_mean": 0.37590587151638233,
+        "accuracy_ci_low": 0.3535894423773235,
+        "accuracy_ci_high": 0.4032856600882078,
+        "coverage_mean": 0.12761999999999998
+      },
+      "0.81": {
+        "accuracy_mean": 0.37529032978142934,
+        "accuracy_ci_low": 0.3526667377380453,
+        "accuracy_ci_high": 0.402937081931702,
+        "coverage_mean": 0.12642
+      },
+      "0.82": {
+        "accuracy_mean": 0.37515554257367056,
+        "accuracy_ci_low": 0.3524646877562256,
+        "accuracy_ci_high": 0.4029026365135458,
+        "coverage_mean": 0.12522
+      },
+      "0.83": {
+        "accuracy_mean": 0.375716418230858,
+        "accuracy_ci_low": 0.3529392039284945,
+        "accuracy_ci_high": 0.4035234304359013,
+        "coverage_mean": 0.1237
+      },
+      "0.84": {
+        "accuracy_mean": 0.37609658670137525,
+        "accuracy_ci_low": 0.3527408170519312,
+        "accuracy_ci_high": 0.4044698478549189,
+        "coverage_mean": 0.12214
+      },
+      "0.85": {
+        "accuracy_mean": 0.3766786856627139,
+        "accuracy_ci_low": 0.35337444955234776,
+        "accuracy_ci_high": 0.4059516497716386,
+        "coverage_mean": 0.12057999999999998
+      },
+      "0.86": {
+        "accuracy_mean": 0.37547421672566855,
+        "accuracy_ci_low": 0.352064549810082,
+        "accuracy_ci_high": 0.4039508118655184,
+        "coverage_mean": 0.11902000000000001
+      },
+      "0.87": {
+        "accuracy_mean": 0.37522295474515827,
+        "accuracy_ci_low": 0.352002964834559,
+        "accuracy_ci_high": 0.4038528136212888,
+        "coverage_mean": 0.11738
+      },
+      "0.88": {
+        "accuracy_mean": 0.37485107031154313,
+        "accuracy_ci_low": 0.35133843709432316,
+        "accuracy_ci_high": 0.40352752288503624,
+        "coverage_mean": 0.11557999999999997
+      },
+      "0.89": {
+        "accuracy_mean": 0.376278731582484,
+        "accuracy_ci_low": 0.3522629356597755,
+        "accuracy_ci_high": 0.4056401474598617,
+        "coverage_mean": 0.1134
+      },
+      "0.90": {
+        "accuracy_mean": 0.3776129212504469,
+        "accuracy_ci_low": 0.3530898305209799,
+        "accuracy_ci_high": 0.40736669852064217,
+        "coverage_mean": 0.11162
+      },
+      "0.91": {
+        "accuracy_mean": 0.3789339305546434,
+        "accuracy_ci_low": 0.35369520387633596,
+        "accuracy_ci_high": 0.4079061459709386,
+        "coverage_mean": 0.10966
+      },
+      "0.92": {
+        "accuracy_mean": 0.37791989282105826,
+        "accuracy_ci_low": 0.3532705676390808,
+        "accuracy_ci_high": 0.40737442953857395,
+        "coverage_mean": 0.10727999999999999
+      },
+      "0.93": {
+        "accuracy_mean": 0.3786851941442081,
+        "accuracy_ci_low": 0.35288966471831973,
+        "accuracy_ci_high": 0.40808100395720887,
+        "coverage_mean": 0.10489999999999998
+      },
+      "0.94": {
+        "accuracy_mean": 0.3773594944500472,
+        "accuracy_ci_low": 0.3503348596127646,
+        "accuracy_ci_high": 0.4065480849623066,
+        "coverage_mean": 0.10203999999999999
+      },
+      "0.95": {
+        "accuracy_mean": 0.3770643466977999,
+        "accuracy_ci_low": 0.35035085924904463,
+        "accuracy_ci_high": 0.4074899217362273,
+        "coverage_mean": 0.09895999999999999
+      },
+      "0.96": {
+        "accuracy_mean": 0.37760861312179483,
+        "accuracy_ci_low": 0.34916497083976555,
+        "accuracy_ci_high": 0.4089242981333934,
+        "coverage_mean": 0.09581999999999999
+      },
+      "0.97": {
+        "accuracy_mean": 0.3811694196710984,
+        "accuracy_ci_low": 0.3528186423774939,
+        "accuracy_ci_high": 0.4118176987501898,
+        "coverage_mean": 0.09126
+      },
+      "0.98": {
+        "accuracy_mean": 0.37952931362514586,
+        "accuracy_ci_low": 0.34947488212616595,
+        "accuracy_ci_high": 0.41299928957674226,
+        "coverage_mean": 0.08476
+      },
+      "0.99": {
+        "accuracy_mean": 0.37871199742735223,
+        "accuracy_ci_low": 0.3446034205399909,
+        "accuracy_ci_high": 0.4145620366090534,
+        "coverage_mean": 0.07592
+      }
+    }
+  }
+}

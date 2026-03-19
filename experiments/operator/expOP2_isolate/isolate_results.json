@@ -1,0 +1,178 @@
+{
+  "A_both_fixed_op0": {
+    "arm": "A_both_fixed",
+    "op_accuracy": 0.0,
+    "eta_neg": 0.05,
+    "pass_gt": true,
+    "nr_rate": 0.584,
+    "nr_ci": 0.0224,
+    "nr_std": 0.0809,
+    "post_accuracy": 0.7939,
+    "post_acc_ci": 0.0063
+  },
+  "A_both_fixed_op50": {
+    "arm": "A_both_fixed",
+    "op_accuracy": 0.5,
+    "eta_neg": 0.05,
+    "pass_gt": true,
+    "nr_rate": 0.5387,
+    "nr_ci": 0.024,
+    "nr_std": 0.0868,
+    "post_accuracy": 0.795,
+    "post_acc_ci": 0.0061
+  },
+  "A_both_fixed_op75": {
+    "arm": "A_both_fixed",
+    "op_accuracy": 0.75,
+    "eta_neg": 0.05,
+    "pass_gt": true,
+    "nr_rate": 0.5293,
+    "nr_ci": 0.0252,
+    "nr_std": 0.0908,
+    "post_accuracy": 0.7966,
+    "post_acc_ci": 0.0062
+  },
+  "A_both_fixed_op100": {
+    "arm": "A_both_fixed",
+    "op_accuracy": 1.0,
+    "eta_neg": 0.05,
+    "pass_gt": true,
+    "nr_rate": 0.5147,
+    "nr_ci": 0.0237,
+    "nr_std": 0.0857,
+    "post_accuracy": 0.7952,
+    "post_acc_ci": 0.0065
+  },
+  "B_eta_fixed_only_op0": {
+    "arm": "B_eta_fixed_only",
+    "op_accuracy": 0.0,
+    "eta_neg": 0.05,
+    "pass_gt": false,
+    "nr_rate": 0.5253,
+    "nr_ci": 0.0211,
+    "nr_std": 0.0762,
+    "post_accuracy": 0.7948,
+    "post_acc_ci": 0.0065
+  },
+  "B_eta_fixed_only_op50": {
+    "arm": "B_eta_fixed_only",
+    "op_accuracy": 0.5,
+    "eta_neg": 0.05,
+    "pass_gt": false,
+    "nr_rate": 0.492,
+    "nr_ci": 0.023,
+    "nr_std": 0.0831,
+    "post_accuracy": 0.7958,
+    "post_acc_ci": 0.0069
+  },
+  "B_eta_fixed_only_op75": {
+    "arm": "B_eta_fixed_only",
+    "op_accuracy": 0.75,
+    "eta_neg": 0.05,
+    "pass_gt": false,
+    "nr_rate": 0.48,
+    "nr_ci": 0.0223,
+    "nr_std": 0.0806,
+    "post_accuracy": 0.7974,
+    "post_acc_ci": 0.0069
+  },
+  "B_eta_fixed_only_op100": {
+    "arm": "B_eta_fixed_only",
+    "op_accuracy": 1.0,
+    "eta_neg": 0.05,
+    "pass_gt": false,
+    "nr_rate": 0.4713,
+    "nr_ci": 0.0229,
+    "nr_std": 0.0825,
+    "post_accuracy": 0.796,
+    "post_acc_ci": 0.0071
+  },
+  "C_update_fixed_only_op0": {
+    "arm": "C_update_fixed_only",
+    "op_accuracy": 0.0,
+    "eta_neg": 1.0,
+    "pass_gt": true,
+    "nr_rate": 0.9813,
+    "nr_ci": 0.0077,
+    "nr_std": 0.0276,
+    "post_accuracy": 0.5655,
+    "post_acc_ci": 0.0093
+  },
+  "C_update_fixed_only_op50": {
+    "arm": "C_update_fixed_only",
+    "op_accuracy": 0.5,
+    "eta_neg": 1.0,
+    "pass_gt": true,
+    "nr_rate": 0.9807,
+    "nr_ci": 0.0081,
+    "nr_std": 0.0291,
+    "post_accuracy": 0.5703,
+    "post_acc_ci": 0.0105
+  },
+  "C_update_fixed_only_op75": {
+    "arm": "C_update_fixed_only",
+    "op_accuracy": 0.75,
+    "eta_neg": 1.0,
+    "pass_gt": true,
+    "nr_rate": 0.9813,
+    "nr_ci": 0.0072,
+    "nr_std": 0.026,
+    "post_accuracy": 0.5834,
+    "post_acc_ci": 0.009
+  },
+  "C_update_fixed_only_op100": {
+    "arm": "C_update_fixed_only",
+    "op_accuracy": 1.0,
+    "eta_neg": 1.0,
+    "pass_gt": true,
+    "nr_rate": 0.9833,
+    "nr_ci": 0.0067,
+    "nr_std": 0.0243,
+    "post_accuracy": 0.5972,
+    "post_acc_ci": 0.0103
+  },
+  "D_both_legacy_op0": {
+    "arm": "D_both_legacy",
+    "op_accuracy": 0.0,
+    "eta_neg": 1.0,
+    "pass_gt": false,
+    "nr_rate": 0.9607,
+    "nr_ci": 0.0116,
+    "nr_std": 0.042,
+    "post_accuracy": 0.535,
+    "post_acc_ci": 0.0093
+  },
+  "D_both_legacy_op50": {
+    "arm": "D_both_legacy",
+    "op_accuracy": 0.5,
+    "eta_neg": 1.0,
+    "pass_gt": false,
+    "nr_rate": 0.9647,
+    "nr_ci": 0.0112,
+    "nr_std": 0.0402,
+    "post_accuracy": 0.5522,
+    "post_acc_ci": 0.0096
+  },
+  "D_both_legacy_op75": {
+    "arm": "D_both_legacy",
+    "op_accuracy": 0.75,
+    "eta_neg": 1.0,
+    "pass_gt": false,
+    "nr_rate": 0.9647,
+    "nr_ci": 0.0108,
+    "nr_std": 0.0391,
+    "post_accuracy": 0.5678,
+    "post_acc_ci": 0.0104
+  },
+  "D_both_legacy_op100": {
+    "arm": "D_both_legacy",
+    "op_accuracy": 1.0,
+    "eta_neg": 1.0,
+    "pass_gt": false,
+    "nr_rate": 0.9673,
+    "nr_ci": 0.0104,
+    "nr_std": 0.0374,
+    "post_accuracy": 0.5777,
+    "post_acc_ci": 0.0122
+  }
+}
