@@ -1,0 +1,59 @@
+{
+  "tr_sigma_f_3d_observed": 0.17242493515850157,
+  "tr_sigma_f_6d_extrapolated": 0.34484987031700315,
+  "per_factor_variances_observed": {
+    "threat_intel_enrichment": 0.09686625241636138,
+    "asset_criticality": 0.05045150631854125,
+    "pattern_history": 0.02510717642359894
+  },
+  "per_factor_variances_note": "Only 3 of 6 SOC factors have real-data coverage. travel_match, time_anomaly, device_trust are not present in CISA KEV / NVD / MITRE ATT&CK and are therefore excluded.",
+  "mapped_factors": [
+    "threat_intel_enrichment",
+    "asset_criticality",
+    "pattern_history"
+  ],
+  "unmapped_factors": [
+    "travel_match",
+    "time_anomaly",
+    "device_trust"
+  ],
+  "Sigma_f_matrix_3d": [
+    [
+      0.09686625241636138,
+      0.018538628997690803,
+      -0.030443388996470963
+    ],
+    [
+      0.018538628997690803,
+      0.05045150631854125,
+      -0.004431491604362239
+    ],
+    [
+      -0.030443388996470963,
+      -0.004431491604362239,
+      0.02510717642359894
+    ]
+  ],
+  "Sigma_f_matrix_note": "3x3 covariance for [threat_intel_enrichment, asset_criticality, pattern_history] \u2014 SOC indices [2, 1, 3]",
+  "steady_state_mse_3d": 0.004421152183551323,
+  "e_inf_per_component_3d": 0.03838902700664745,
+  "steady_state_mse_6d_extrapolated": 0.008842304367102646,
+  "e_inf_per_component_6d_extrapolated": 0.03838902700664745,
+  "eta_used": 0.05,
+  "n_samples": 2430,
+  "source": "FX-1-PROXY-REAL (CISA KEV 1542 + NVD 200 + MITRE ATT&CK 691)",
+  "design_estimate_6d": 0.24,
+  "delta_3d_pct": 43.68744596541798,
+  "delta_6d_extrapolated_pct": 43.68744596541798,
+  "a4_note": "Computed on 6D factor space (3 observed factors only). Action count (A=4 after Phase 0a refer_to_analyst removal) does not affect factor covariance. Sigma_f is factor-space only.",
+  "eta_confirmation": {
+    "eta_pos_code_default": 0.05,
+    "eta_neg_code_default": 0.01,
+    "eta_pos_canonical": 0.05,
+    "eta_neg_canonical": 0.05,
+    "n_half_pos": 13.513,
+    "n_half_neg": 13.513,
+    "eta_neg_default_matches_canonical": false,
+    "flag_eta_neg_default": "eta_neg default in code (0.01) != canonical product value (0.05). All validated experiments explicitly set eta_neg=0.05. CLAIM-35 (eta_neg=1.0 FORBIDDEN) is upheld in all prod runs."
+  }
+}

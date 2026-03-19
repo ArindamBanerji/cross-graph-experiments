@@ -1,0 +1,121 @@
+{
+  "experiment": "FX-T5-A4",
+  "domain_config": "soc_product_v50",
+  "n_seeds": 50,
+  "n_warmup": 500,
+  "n_decisions": 1000,
+  "tau": 0.1,
+  "eta": 0.05,
+  "eta_neg": 0.05,
+  "noise_rate": 0.1,
+  "band_threshold": 0.9,
+  "cost_ratio": 20.0,
+  "ontology": {
+    "C": 6,
+    "A": 4,
+    "d": 6
+  },
+  "total_band_decisions": 7652,
+  "mean_band_per_seed": 153.04,
+  "band_pct_of_all": 0.15304,
+  "q1_action_distribution": {
+    "escalate": {
+      "count": 4702,
+      "pct_band": 0.61448
+    },
+    "investigate": {
+      "count": 831,
+      "pct_band": 0.108599
+    },
+    "suppress": {
+      "count": 1743,
+      "pct_band": 0.227784
+    },
+    "monitor": {
+      "count": 376,
+      "pct_band": 0.049137
+    }
+  },
+  "q2_per_action_accuracy": {
+    "escalate": {
+      "count": 4702,
+      "pct_band": 0.61448,
+      "accuracy": 0.997075,
+      "ci_lo": 0.995159,
+      "ci_hi": 0.99868
+    },
+    "investigate": {
+      "count": 831,
+      "pct_band": 0.108599,
+      "accuracy": 0.991977,
+      "ci_lo": 0.981901,
+      "ci_hi": 0.99931
+    },
+    "suppress": {
+      "count": 1743,
+      "pct_band": 0.227784,
+      "accuracy": 0.998793,
+      "ci_lo": 0.996919,
+      "ci_hi": 1.0
+    },
+    "monitor": {
+      "count": 376,
+      "pct_band": 0.049137,
+      "accuracy": 1.0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    }
+  },
+  "q3_error_direction": {
+    "total_errors": 20,
+    "dangerous": 0,
+    "safe": 20,
+    "over_escalation": 0,
+    "dangerous_error_rate": 0.0,
+    "dangerous_by_category": {
+      "credential_access": 0,
+      "threat_intel_match": 0,
+      "lateral_movement": 0,
+      "data_exfiltration": 0,
+      "insider_threat": 0,
+      "cloud_infrastructure": 0
+    }
+  },
+  "cost_analysis": {
+    "correct_decisions": 7632,
+    "dangerous_errors": 0,
+    "other_errors": 20,
+    "cost_weighted_score": 7612.0,
+    "cost_weighted_acc": 0.994773,
+    "nominal_acc": 0.997386
+  },
+  "recommended_thresholds": {
+    "escalate": 0.9,
+    "investigate": 0.9,
+    "suppress": 0.9,
+    "monitor": 0.9
+  },
+  "design_verdict": "A",
+  "a5_reference": {
+    "escalate": {
+      "accuracy": 1.0,
+      "pct_band": 0.002
+    },
+    "investigate": {
+      "accuracy": 0.9218,
+      "pct_band": 0.0878
+    },
+    "suppress": {
+      "accuracy": 0.9986,
+      "pct_band": 0.3011
+    },
+    "monitor": {
+      "accuracy": 0.8595,
+      "pct_band": 0.6091
+    },
+    "total_band": 11502,
+    "mean_band_per_seed": 230.04,
+    "dangerous_count": 234,
+    "dangerous_rate": 0.0203
+  }
+}
