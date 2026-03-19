@@ -1,0 +1,127 @@
+{
+  "config": {
+    "n_seeds": 200,
+    "baseline_quality": 0.7,
+    "delta_min": 0.05,
+    "promo_threshold": 0.95,
+    "power_target": 0.8,
+    "fp_target": 0.05,
+    "days_per_decision": 5.0,
+    "pilot_days": 90
+  },
+  "n_values": [
+    50,
+    100,
+    150,
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "inflation_values": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.3
+  ],
+  "rates": {
+    "N50_infl0pp": 0.02,
+    "N50_infl5pp": 0.05,
+    "N50_infl10pp": 0.11,
+    "N50_infl15pp": 0.15,
+    "N50_infl20pp": 0.35,
+    "N50_infl30pp": 0.73,
+    "N100_infl0pp": 0.0,
+    "N100_infl5pp": 0.06,
+    "N100_infl10pp": 0.13,
+    "N100_infl15pp": 0.255,
+    "N100_infl20pp": 0.575,
+    "N100_infl30pp": 0.995,
+    "N150_infl0pp": 0.02,
+    "N150_infl5pp": 0.05,
+    "N150_infl10pp": 0.16,
+    "N150_infl15pp": 0.415,
+    "N150_infl20pp": 0.73,
+    "N150_infl30pp": 1.0,
+    "N200_infl0pp": 0.0,
+    "N200_infl5pp": 0.035,
+    "N200_infl10pp": 0.185,
+    "N200_infl15pp": 0.545,
+    "N200_infl20pp": 0.84,
+    "N200_infl30pp": 1.0,
+    "N300_infl0pp": 0.0,
+    "N300_infl5pp": 0.06,
+    "N300_infl10pp": 0.265,
+    "N300_infl15pp": 0.665,
+    "N300_infl20pp": 0.95,
+    "N300_infl30pp": 1.0,
+    "N500_infl0pp": 0.0,
+    "N500_infl5pp": 0.045,
+    "N500_infl10pp": 0.345,
+    "N500_infl15pp": 0.86,
+    "N500_infl20pp": 1.0,
+    "N500_infl30pp": 1.0,
+    "N750_infl0pp": 0.005,
+    "N750_infl5pp": 0.05,
+    "N750_infl10pp": 0.455,
+    "N750_infl15pp": 0.975,
+    "N750_infl20pp": 1.0,
+    "N750_infl30pp": 1.0,
+    "N1000_infl0pp": 0.0,
+    "N1000_infl5pp": 0.025,
+    "N1000_infl10pp": 0.565,
+    "N1000_infl15pp": 0.975,
+    "N1000_infl20pp": 1.0,
+    "N1000_infl30pp": 1.0
+  },
+  "power_table": [
+    {
+      "inflation_pp": 5,
+      "min_n_80pct": null,
+      "days_at_5perday": null,
+      "feasible_90d": null
+    },
+    {
+      "inflation_pp": 10,
+      "min_n_80pct": null,
+      "days_at_5perday": null,
+      "feasible_90d": null
+    },
+    {
+      "inflation_pp": 15,
+      "min_n_80pct": 500,
+      "days_at_5perday": 100.0,
+      "feasible_90d": false
+    },
+    {
+      "inflation_pp": 20,
+      "min_n_80pct": 200,
+      "days_at_5perday": 40.0,
+      "feasible_90d": true
+    },
+    {
+      "inflation_pp": 30,
+      "min_n_80pct": 100,
+      "days_at_5perday": 20.0,
+      "feasible_90d": true
+    }
+  ],
+  "false_positive": {
+    "50": 0.02,
+    "100": 0.0,
+    "150": 0.02,
+    "200": 0.0,
+    "300": 0.0,
+    "500": 0.0,
+    "750": 0.005,
+    "1000": 0.0
+  },
+  "interpretation": {
+    "min_n_10pp": null,
+    "min_n_5pp": null,
+    "fp_at_n200": 0.0
+  }
+}
