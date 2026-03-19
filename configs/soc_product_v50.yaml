@@ -1,0 +1,80 @@
+categories:
+  - credential_access
+  - threat_intel_match
+  - lateral_movement
+  - data_exfiltration
+  - insider_threat
+  - cloud_infrastructure
+
+actions:
+  - escalate
+  - investigate
+  - suppress
+  - monitor
+
+factors:
+  - travel_match
+  - asset_criticality
+  - threat_intel_enrichment
+  - pattern_history
+  - time_anomaly
+  - device_trust
+
+# Ground-truth centroid profiles — (6 categories × 4 actions × 6 factors)
+# Source: SOC_PROFILE_CENTROIDS from gen-ai-roi-demo-v4-v50 config.py
+# Verified March 14, 2026. Phase 0a: refer_to_analyst removed (Option B — gate-only referral).
+action_conditional_profiles:
+  credential_access:
+    escalate:           [0.72, 0.85, 0.80, 0.60, 0.65, 0.15]
+    investigate:        [0.40, 0.60, 0.55, 0.55, 0.50, 0.40]
+    suppress:           [0.20, 0.25, 0.15, 0.20, 0.25, 0.85]
+    monitor:            [0.30, 0.45, 0.25, 0.35, 0.35, 0.65]
+  threat_intel_match:
+    escalate:           [0.35, 0.80, 0.90, 0.55, 0.60, 0.20]
+    investigate:        [0.30, 0.55, 0.75, 0.50, 0.50, 0.40]
+    suppress:           [0.20, 0.20, 0.20, 0.15, 0.20, 0.90]
+    monitor:            [0.25, 0.40, 0.45, 0.30, 0.35, 0.70]
+  lateral_movement:
+    escalate:           [0.50, 0.80, 0.70, 0.85, 0.70, 0.20]
+    investigate:        [0.45, 0.60, 0.50, 0.65, 0.55, 0.40]
+    suppress:           [0.85, 0.25, 0.15, 0.20, 0.25, 0.80]
+    monitor:            [0.40, 0.40, 0.30, 0.40, 0.35, 0.65]
+  data_exfiltration:
+    escalate:           [0.30, 0.90, 0.75, 0.70, 0.80, 0.15]
+    investigate:        [0.35, 0.75, 0.50, 0.55, 0.60, 0.45]
+    suppress:           [0.20, 0.30, 0.10, 0.15, 0.20, 0.90]
+    monitor:            [0.25, 0.40, 0.25, 0.30, 0.35, 0.70]
+  insider_threat:
+    escalate:           [0.40, 0.75, 0.65, 0.85, 0.80, 0.15]
+    investigate:        [0.45, 0.60, 0.50, 0.70, 0.60, 0.40]
+    suppress:           [0.30, 0.25, 0.15, 0.20, 0.20, 0.85]
+    monitor:            [0.35, 0.40, 0.30, 0.45, 0.35, 0.65]
+  cloud_infrastructure:
+    escalate:           [0.25, 0.85, 0.80, 0.60, 0.75, 0.20]
+    investigate:        [0.30, 0.65, 0.55, 0.50, 0.55, 0.45]
+    suppress:           [0.20, 0.25, 0.10, 0.15, 0.20, 0.90]
+    monitor:            [0.25, 0.45, 0.30, 0.30, 0.35, 0.70]
+
+# GT action distributions per category.
+# refer_to_analyst (was 0.10 per category) redistributed proportionally to remaining 4 actions.
+# Probabilities sum to 1.0 per row (escalate, investigate, suppress, monitor).
+category_gt_distributions:
+  credential_access:    [0.2778, 0.3889, 0.1667, 0.1666]
+  threat_intel_match:   [0.2222, 0.3333, 0.2222, 0.2223]
+  lateral_movement:     [0.3333, 0.3333, 0.1111, 0.2223]
+  data_exfiltration:    [0.3889, 0.3333, 0.1111, 0.1667]
+  insider_threat:       [0.2222, 0.3889, 0.1667, 0.2222]
+  cloud_infrastructure: [0.1667, 0.3333, 0.2778, 0.2222]
+
+# Metadata
+domain: soc
+version: "v5.0"
+tensor_shape: [6, 4, 6]
+notes: >
+  SOC product ontology — 4-action scorer (Phase 0a: refer_to_analyst removed).
+  refer_to_analyst is handled by a policy/gate layer, not the scorer.
+  Centroid values from SOC_PROFILE_CENTROIDS in gen-ai-roi-demo-v4-v50 (unchanged).
+  GT distributions: refer_to_analyst mass (0.10) redistributed proportionally.
+  Backup of A=5 config preserved as soc_product_v50_A5_backup.yaml.
+  Use with: CategoryAlertGenerator(**config["generator_kwargs"])
+  or via load_domain_config("soc_product_v50").

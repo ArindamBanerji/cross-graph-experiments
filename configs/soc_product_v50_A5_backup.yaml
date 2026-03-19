@@ -1,0 +1,87 @@
+categories:
+  - credential_access
+  - threat_intel_match
+  - lateral_movement
+  - data_exfiltration
+  - insider_threat
+  - cloud_infrastructure
+
+actions:
+  - escalate
+  - investigate
+  - suppress
+  - monitor
+  - refer_to_analyst
+
+factors:
+  - travel_match
+  - asset_criticality
+  - threat_intel_enrichment
+  - pattern_history
+  - time_anomaly
+  - device_trust
+
+# Ground-truth centroid profiles — (6 categories × 5 actions × 6 factors)
+# Source: SOC_PROFILE_CENTROIDS from gen-ai-roi-demo-v4-v50 config.py
+# Verified March 14, 2026. LLM judge consensus centroids for refer_to_analyst.
+action_conditional_profiles:
+  credential_access:
+    escalate:           [0.72, 0.85, 0.80, 0.60, 0.65, 0.15]
+    investigate:        [0.40, 0.60, 0.55, 0.55, 0.50, 0.40]
+    suppress:           [0.20, 0.25, 0.15, 0.20, 0.25, 0.85]
+    monitor:            [0.30, 0.45, 0.25, 0.35, 0.35, 0.65]
+    refer_to_analyst:   [0.35, 0.52, 0.35, 0.43, 0.42, 0.55]
+  threat_intel_match:
+    escalate:           [0.35, 0.80, 0.90, 0.55, 0.60, 0.20]
+    investigate:        [0.30, 0.55, 0.75, 0.50, 0.50, 0.40]
+    suppress:           [0.20, 0.20, 0.20, 0.15, 0.20, 0.90]
+    monitor:            [0.25, 0.40, 0.45, 0.30, 0.35, 0.70]
+    refer_to_analyst:   [0.27, 0.47, 0.53, 0.38, 0.42, 0.58]
+  lateral_movement:
+    escalate:           [0.50, 0.80, 0.70, 0.85, 0.70, 0.20]
+    investigate:        [0.45, 0.60, 0.50, 0.65, 0.55, 0.40]
+    suppress:           [0.85, 0.25, 0.15, 0.20, 0.25, 0.80]
+    monitor:            [0.40, 0.40, 0.30, 0.40, 0.35, 0.65]
+    refer_to_analyst:   [0.43, 0.48, 0.38, 0.50, 0.43, 0.55]
+  data_exfiltration:
+    escalate:           [0.30, 0.90, 0.75, 0.70, 0.80, 0.15]
+    investigate:        [0.35, 0.75, 0.50, 0.55, 0.60, 0.45]
+    suppress:           [0.20, 0.30, 0.10, 0.15, 0.20, 0.90]
+    monitor:            [0.25, 0.40, 0.25, 0.30, 0.35, 0.70]
+    refer_to_analyst:   [0.28, 0.55, 0.35, 0.40, 0.45, 0.55]
+  insider_threat:
+    escalate:           [0.40, 0.75, 0.65, 0.85, 0.80, 0.15]
+    investigate:        [0.45, 0.60, 0.50, 0.70, 0.60, 0.40]
+    suppress:           [0.30, 0.25, 0.15, 0.20, 0.20, 0.85]
+    monitor:            [0.35, 0.40, 0.30, 0.45, 0.35, 0.65]
+    refer_to_analyst:   [0.38, 0.48, 0.38, 0.55, 0.45, 0.55]
+  cloud_infrastructure:
+    escalate:           [0.25, 0.85, 0.80, 0.60, 0.75, 0.20]
+    investigate:        [0.30, 0.65, 0.55, 0.50, 0.55, 0.45]
+    suppress:           [0.20, 0.25, 0.10, 0.15, 0.20, 0.90]
+    monitor:            [0.25, 0.45, 0.30, 0.30, 0.35, 0.70]
+    refer_to_analyst:   [0.27, 0.53, 0.40, 0.38, 0.43, 0.58]
+
+# GT action distributions per category.
+# Reflects realistic SOC workload: most alerts are low-severity (monitor/suppress);
+# credential_access and lateral_movement see more escalations.
+# Probabilities sum to 1.0 per row (escalate, investigate, suppress, monitor, refer_to_analyst).
+category_gt_distributions:
+  credential_access:    [0.25, 0.35, 0.15, 0.15, 0.10]
+  threat_intel_match:   [0.20, 0.30, 0.20, 0.20, 0.10]
+  lateral_movement:     [0.30, 0.30, 0.10, 0.20, 0.10]
+  data_exfiltration:    [0.35, 0.30, 0.10, 0.15, 0.10]
+  insider_threat:       [0.20, 0.35, 0.15, 0.20, 0.10]
+  cloud_infrastructure: [0.15, 0.30, 0.25, 0.20, 0.10]
+
+# Metadata
+domain: soc
+version: "v5.0-refer"
+tensor_shape: [6, 5, 6]
+notes: >
+  SOC product ontology with refer_to_analyst (5th action).
+  Centroid values from SOC_PROFILE_CENTROIDS in gen-ai-roi-demo-v4-v50.
+  refer_to_analyst centroids: LLM judge consensus (Opus-derived, March 2026).
+  GT distributions reflect realistic SOC workload volumes.
+  Use with: CategoryAlertGenerator(**config["generator_kwargs"])
+  or via load_domain_config("soc_product_v50").
