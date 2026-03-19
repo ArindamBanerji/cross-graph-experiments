@@ -1,0 +1,127 @@
+{
+  "config": {
+    "n_seeds": 50,
+    "n_days": 90,
+    "delta": 0.05,
+    "theta_min": 0.434,
+    "v_nominal": 60.0,
+    "alpha_params": [
+      6.0,
+      14.0
+    ],
+    "q_params": [
+      16.0,
+      4.0
+    ],
+    "bootstrap_n": 10000,
+    "w_engineering": 14
+  },
+  "signal_stats": {
+    "mean": 14.401132479720761,
+    "std": 5.562264475717699,
+    "var": 30.93878609783109,
+    "min": 1.9860603667788947,
+    "max": 41.239716319325055,
+    "range": 39.25365595254616,
+    "mult_theta": 33.1823329025824
+  },
+  "w_table": [
+    {
+      "label": "Healthy (\u03bc)",
+      "signal": 14.401132479720761,
+      "epsilon": 13.967132479720762,
+      "mult_theta": 33.1823329025824,
+      "w_hoeffding": 11.830925535243518,
+      "w_chebyshev": 3.17189469495656,
+      "regime": "trivial"
+    },
+    {
+      "label": "2\u00d7 \u03b8_min",
+      "signal": 0.868,
+      "epsilon": 0.434,
+      "mult_theta": 2.0,
+      "w_hoeffding": 12253.319758165506,
+      "w_chebyshev": 3285.1394272368375,
+      "regime": "trivial"
+    },
+    {
+      "label": "1.5\u00d7 \u03b8_min",
+      "signal": 0.651,
+      "epsilon": 0.21700000000000003,
+      "mult_theta": 1.5,
+      "w_hoeffding": 49013.27903266201,
+      "w_chebyshev": 13140.557708947348,
+      "regime": "easy"
+    },
+    {
+      "label": "1.2\u00d7 \u03b8_min",
+      "signal": 0.5207999999999999,
+      "epsilon": 0.08679999999999993,
+      "mult_theta": 1.2,
+      "w_hoeffding": 306332.99395413813,
+      "w_chebyshev": 82128.48568092108,
+      "regime": "moderate"
+    },
+    {
+      "label": "1.1\u00d7 \u03b8_min",
+      "signal": 0.47740000000000005,
+      "epsilon": 0.04340000000000005,
+      "mult_theta": 1.1,
+      "w_hoeffding": 1225331.9758165476,
+      "w_chebyshev": 328513.942723683,
+      "regime": "marginal"
+    },
+    {
+      "label": "1.05\u00d7 \u03b8_min",
+      "signal": 0.4557,
+      "epsilon": 0.021699999999999997,
+      "mult_theta": 1.05,
+      "w_hoeffding": 4901327.903266204,
+      "w_chebyshev": 1314055.7708947356,
+      "regime": "dangerous"
+    },
+    {
+      "label": "At \u03b8_min",
+      "signal": 0.434,
+      "epsilon": 0.0,
+      "mult_theta": 1.0,
+      "w_hoeffding": Infinity,
+      "w_chebyshev": Infinity,
+      "regime": "breached"
+    }
+  ],
+  "bootstrap_table": [
+    {
+      "W": 7,
+      "false_breach_rate": 0.2748,
+      "adequate": false
+    },
+    {
+      "W": 10,
+      "false_breach_rate": 0.2376,
+      "adequate": false
+    },
+    {
+      "W": 14,
+      "false_breach_rate": 0.187,
+      "adequate": false
+    },
+    {
+      "W": 21,
+      "false_breach_rate": 0.1325,
+      "adequate": false
+    },
+    {
+      "W": 28,
+      "false_breach_rate": 0.1038,
+      "adequate": false
+    }
+  ],
+  "w_hoeffding_marginal": 1225331.9758165476,
+  "w_chebyshev_marginal": 328513.942723683,
+  "verdict": {
+    "result": "insufficient",
+    "fbr_at_W14": 0.187,
+    "recommended_W": null
+  }
+}
