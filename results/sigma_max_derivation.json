@@ -1,0 +1,71 @@
+{
+  "sigma_max": 0.034224004048157966,
+  "percentile_used": 10,
+  "margin_distribution": {
+    "min": 2.92542237353699e-05,
+    "p5": 0.01757730920600041,
+    "p10": 0.034224004048157966,
+    "p25": 0.08239859302158233,
+    "p50": 0.1498691325705594,
+    "p75": 0.21360823452159186,
+    "p90": 0.2937456950822941,
+    "mean": 0.1593109946348712,
+    "std": 0.10304238882418414,
+    "max": 0.7173167586676059
+  },
+  "max_synthesis_influence_at_lambda_05": 0.017112002024078983,
+  "median_margin": 0.1498691325705594,
+  "experience_dominates": true,
+  "dominance_factor": 8.758129665931113,
+  "n_samples": 25000,
+  "n_seeds": 50,
+  "n_alerts_per_seed": 500,
+  "noise_rate": 0.1,
+  "lambda_ref": 0.5,
+  "config": "soc_product_v50 A=4",
+  "per_category": {
+    "credential_access": {
+      "p10": 0.039953239630305795,
+      "p50": 0.1657619395601511,
+      "mean": 0.18641494071674672,
+      "std": 0.1270882946622828,
+      "n": 4199
+    },
+    "threat_intel_match": {
+      "p10": 0.027903469225469164,
+      "p50": 0.12792801496895514,
+      "mean": 0.13371416154845148,
+      "std": 0.08298235577677654,
+      "n": 4139
+    },
+    "lateral_movement": {
+      "p10": 0.037900599546139294,
+      "p50": 0.16146236779146142,
+      "mean": 0.17329526935343412,
+      "std": 0.1101265587306943,
+      "n": 4087
+    },
+    "data_exfiltration": {
+      "p10": 0.04165480453541452,
+      "p50": 0.17026022021153597,
+      "mean": 0.178670666876176,
+      "std": 0.10776387493436403,
+      "n": 4234
+    },
+    "insider_threat": {
+      "p10": 0.030953743289168112,
+      "p50": 0.13524715295757023,
+      "mean": 0.13870611856199516,
+      "std": 0.08309982824496925,
+      "n": 4268
+    },
+    "cloud_infrastructure": {
+      "p10": 0.032240883972529964,
+      "p50": 0.14329090683526657,
+      "mean": 0.14481427245993392,
+      "std": 0.08591172346017314,
+      "n": 4073
+    }
+  },
+  "interpretation": "At \u03c3_max=0.0342 and \u03bb=0.5, synthesis influence is 0.0171 distance units vs median margin of 0.1499. Experience dominates by factor 8.76\u00d7. Only 10% of decisions have a margin below \u03c3_max \u2014 for those, a strong operator signal could influence the outcome. Design default \u03c3_max=1.0 should be reduced to 0.0342."
+}
