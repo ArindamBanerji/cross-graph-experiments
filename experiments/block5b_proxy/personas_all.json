@@ -1,0 +1,347 @@
+[
+  {
+    "persona_id": "G1",
+    "judge": "grok",
+    "name": "Mid-Market Bank SOC",
+    "industry": "Financial Services",
+    "company_size": "850",
+    "siem": "both",
+    "alerts_per_day": 280,
+    "category_distribution": {
+      "credential_access": 0.32,
+      "lateral_movement": 0.18,
+      "data_exfiltration": 0.22,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.08,
+      "threat_intel_match": 0.05
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 8, "override_rate": 0.14, "override_quality": 0.92, "shift": "day", "fatigue_factor": 0.15, "specialization": "insider_threat"},
+      {"id": "analyst_2", "experience_level": "senior", "years_experience": 6, "override_rate": 0.12, "override_quality": 0.88, "shift": "swing", "fatigue_factor": 0.22, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 3, "override_rate": 0.28, "override_quality": 0.78, "shift": "day", "fatigue_factor": 0.18, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_4", "experience_level": "mid", "years_experience": 4, "override_rate": 0.25, "override_quality": 0.81, "shift": "night", "fatigue_factor": 0.35, "specialization": "credential_access"},
+      {"id": "analyst_5", "experience_level": "junior", "years_experience": 1, "override_rate": 0.42, "override_quality": 0.62, "shift": "swing", "fatigue_factor": 0.28, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Global banking staff travel frequently"},
+      "asset_criticality": {"base_noise": 0.09, "note": "Clear regulatory classification"},
+      "threat_intel_enrichment": {"base_noise": 0.07, "note": "Premium feeds (FS-ISAC)"},
+      "time_anomaly": {"base_noise": 0.18, "note": "24/7 trading desk"},
+      "pattern_history": {"base_noise": 0.11, "note": "Stable user base"},
+      "device_trust": {"base_noise": 0.15, "note": "Hybrid cloud + BYOD"}
+    },
+    "environment_shifts": [
+      {"day": 12, "type": "campaign", "description": "Q4 phishing wave", "category_impact": {"credential_access": 1.75, "data_exfiltration": 1.4}, "duration_days": 9},
+      {"day": 41, "type": "reorg", "description": "Merger integration of fintech", "category_impact": {"lateral_movement": 1.6, "insider_threat": 1.45}, "duration_days": 18},
+      {"day": 67, "type": "staffing", "description": "Year-end auditor access surge", "category_impact": {"insider_threat": 1.55}, "duration_days": 12}
+    ],
+    "graph_state": {"initial_entities": 1450, "threat_indicators": 85, "siem_sources": 2, "entity_resolution_completeness": 0.88},
+    "business_context": "Regional bank with strong regulatory oversight. Heavy use of cloud for customer-facing apps but core banking still on-prem."
+  },
+  {
+    "persona_id": "G2",
+    "judge": "grok",
+    "name": "Regional Hospital System SOC",
+    "industry": "Healthcare",
+    "company_size": "2400",
+    "siem": "Splunk",
+    "alerts_per_day": 360,
+    "category_distribution": {
+      "credential_access": 0.19,
+      "lateral_movement": 0.14,
+      "data_exfiltration": 0.21,
+      "insider_threat": 0.23,
+      "cloud_infrastructure": 0.17,
+      "threat_intel_match": 0.06
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 7, "override_rate": 0.11, "override_quality": 0.91, "shift": "day", "fatigue_factor": 0.19, "specialization": "insider_threat"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 3, "override_rate": 0.26, "override_quality": 0.76, "shift": "night", "fatigue_factor": 0.31, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 4, "override_rate": 0.29, "override_quality": 0.79, "shift": "swing", "fatigue_factor": 0.24, "specialization": "generalist"},
+      {"id": "analyst_4", "experience_level": "junior", "years_experience": 1, "override_rate": 0.45, "override_quality": 0.61, "shift": "day", "fatigue_factor": 0.27, "specialization": "data_exfiltration"},
+      {"id": "analyst_5", "experience_level": "junior", "years_experience": 1, "override_rate": 0.48, "override_quality": 0.58, "shift": "night", "fatigue_factor": 0.42, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.22, "note": "Medical staff travel between campuses"},
+      "asset_criticality": {"base_noise": 0.19, "note": "HIPAA patient-safety weighting"},
+      "threat_intel_enrichment": {"base_noise": 0.14, "note": "H-ISAC feeds good but device vendors lag"},
+      "time_anomaly": {"base_noise": 0.26, "note": "24/7 ER and device telemetry"},
+      "pattern_history": {"base_noise": 0.21, "note": "High patient turnover"},
+      "device_trust": {"base_noise": 0.29, "note": "Thousands of IoMT devices"}
+    },
+    "environment_shifts": [
+      {"day": 8, "type": "seasonal", "description": "Flu season ER surge + ransomware campaign", "category_impact": {"data_exfiltration": 1.65, "cloud_infrastructure": 1.8}, "duration_days": 14},
+      {"day": 33, "type": "incident", "description": "Vendor patch for infusion pumps", "category_impact": {"cloud_infrastructure": 2.1}, "duration_days": 7},
+      {"day": 72, "type": "reorg", "description": "Merger with smaller clinic network", "category_impact": {"insider_threat": 1.55, "lateral_movement": 1.4}, "duration_days": 21}
+    ],
+    "graph_state": {"initial_entities": 3200, "threat_indicators": 65, "siem_sources": 1, "entity_resolution_completeness": 0.71},
+    "business_context": "Large regional hospital network with 11 facilities. Heavy regulatory burden under HIPAA. IoMT and connected patient systems create massive device telemetry volume."
+  },
+  {
+    "persona_id": "G3",
+    "judge": "grok",
+    "name": "Series-B SaaS Startup SOC",
+    "industry": "Technology",
+    "company_size": "48",
+    "siem": "Sentinel",
+    "alerts_per_day": 55,
+    "category_distribution": {
+      "credential_access": 0.26,
+      "lateral_movement": 0.12,
+      "data_exfiltration": 0.11,
+      "insider_threat": 0.07,
+      "cloud_infrastructure": 0.33,
+      "threat_intel_match": 0.11
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "mid", "years_experience": 3, "override_rate": 0.31, "override_quality": 0.74, "shift": "day", "fatigue_factor": 0.28, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_2", "experience_level": "junior", "years_experience": 1, "override_rate": 0.46, "override_quality": 0.59, "shift": "swing", "fatigue_factor": 0.39, "specialization": "credential_access"},
+      {"id": "analyst_3", "experience_level": "junior", "years_experience": 1, "override_rate": 0.49, "override_quality": 0.56, "shift": "night", "fatigue_factor": 0.45, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.27, "note": "Remote-first culture with frequent international travel"},
+      "asset_criticality": {"base_noise": 0.24, "note": "Rapid product iterations change asset importance weekly"},
+      "threat_intel_enrichment": {"base_noise": 0.19, "note": "Limited budget for premium feeds"},
+      "time_anomaly": {"base_noise": 0.31, "note": "Global engineering team works async"},
+      "pattern_history": {"base_noise": 0.28, "note": "Short company history means thin baselines"},
+      "device_trust": {"base_noise": 0.25, "note": "Heavy use of personal laptops"}
+    },
+    "environment_shifts": [
+      {"day": 19, "type": "staffing", "description": "Post-funding hiring spree", "category_impact": {"credential_access": 1.9, "insider_threat": 1.6}, "duration_days": 15},
+      {"day": 54, "type": "incident", "description": "Public GitHub credential leak", "category_impact": {"credential_access": 2.3, "lateral_movement": 1.7}, "duration_days": 6},
+      {"day": 78, "type": "campaign", "description": "Supply-chain attack on product launch", "category_impact": {"cloud_infrastructure": 1.85}, "duration_days": 11}
+    ],
+    "graph_state": {"initial_entities": 320, "threat_indicators": 22, "siem_sources": 1, "entity_resolution_completeness": 0.54},
+    "business_context": "Early-stage B2B SaaS company with fully remote engineering team. Very limited security headcount and budget."
+  },
+  {
+    "persona_id": "O1",
+    "judge": "gpt4o",
+    "name": "Mid-Market Regional Bank with Hybrid Cloud",
+    "industry": "Financial Services",
+    "company_size": "4200",
+    "siem": "both",
+    "alerts_per_day": 185,
+    "category_distribution": {
+      "credential_access": 0.31,
+      "lateral_movement": 0.12,
+      "data_exfiltration": 0.11,
+      "insider_threat": 0.08,
+      "cloud_infrastructure": 0.18,
+      "threat_intel_match": 0.20
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 9, "override_rate": 0.14, "override_quality": 0.91, "shift": "day", "fatigue_factor": 0.18, "specialization": "credential_access"},
+      {"id": "analyst_2", "experience_level": "senior", "years_experience": 7, "override_rate": 0.12, "override_quality": 0.89, "shift": "day", "fatigue_factor": 0.16, "specialization": "threat_intel_match"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 4, "override_rate": 0.24, "override_quality": 0.82, "shift": "swing", "fatigue_factor": 0.29, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_4", "experience_level": "mid", "years_experience": 3, "override_rate": 0.27, "override_quality": 0.78, "shift": "day", "fatigue_factor": 0.25, "specialization": "generalist"},
+      {"id": "analyst_5", "experience_level": "junior", "years_experience": 1, "override_rate": 0.41, "override_quality": 0.66, "shift": "night", "fatigue_factor": 0.44, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.11, "note": "VPN egress points known but exec travel adds ambiguity"},
+      "asset_criticality": {"base_noise": 0.10, "note": "Regulatory control mapping, some cloud workloads lag"},
+      "threat_intel_enrichment": {"base_noise": 0.14, "note": "Feed duplication and stale IP reputations"},
+      "time_anomaly": {"base_noise": 0.12, "note": "Global support staff and third-party admins"},
+      "pattern_history": {"base_noise": 0.16, "note": "Inconsistent labeling across inherited workflows"},
+      "device_trust": {"base_noise": 0.09, "note": "Mature endpoint posture except contractor laptops"}
+    },
+    "environment_shifts": [
+      {"day": 18, "type": "campaign", "description": "Credential phishing targeting finance users", "category_impact": {"credential_access": 1.45, "threat_intel_match": 1.25}, "duration_days": 12},
+      {"day": 47, "type": "staffing", "description": "Senior analyst leaves, swing shifts to mid-level", "category_impact": {"lateral_movement": 1.10, "cloud_infrastructure": 1.15}, "duration_days": 21},
+      {"day": 71, "type": "seasonal", "description": "Quarter-end audit and vendor access surge", "category_impact": {"credential_access": 1.18, "cloud_infrastructure": 1.22, "insider_threat": 1.10}, "duration_days": 14}
+    ],
+    "graph_state": {"initial_entities": 148000, "threat_indicators": 23600, "siem_sources": 2, "entity_resolution_completeness": 0.83},
+    "business_context": "Regulated regional bank running hybrid environment. Strong pressure to reduce false negatives around account takeover."
+  },
+  {
+    "persona_id": "O2",
+    "judge": "gpt4o",
+    "name": "Integrated Healthcare Delivery Network",
+    "industry": "Healthcare",
+    "company_size": "11800",
+    "siem": "Splunk",
+    "alerts_per_day": 260,
+    "category_distribution": {
+      "credential_access": 0.24,
+      "lateral_movement": 0.10,
+      "data_exfiltration": 0.13,
+      "insider_threat": 0.14,
+      "cloud_infrastructure": 0.11,
+      "threat_intel_match": 0.28
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 8, "override_rate": 0.15, "override_quality": 0.90, "shift": "day", "fatigue_factor": 0.22, "specialization": "insider_threat"},
+      {"id": "analyst_2", "experience_level": "senior", "years_experience": 6, "override_rate": 0.17, "override_quality": 0.87, "shift": "day", "fatigue_factor": 0.20, "specialization": "threat_intel_match"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 4, "override_rate": 0.25, "override_quality": 0.80, "shift": "swing", "fatigue_factor": 0.31, "specialization": "credential_access"},
+      {"id": "analyst_4", "experience_level": "mid", "years_experience": 3, "override_rate": 0.29, "override_quality": 0.76, "shift": "night", "fatigue_factor": 0.39, "specialization": "generalist"},
+      {"id": "analyst_5", "experience_level": "junior", "years_experience": 1, "override_rate": 0.43, "override_quality": 0.62, "shift": "day", "fatigue_factor": 0.36, "specialization": "generalist"},
+      {"id": "analyst_6", "experience_level": "junior", "years_experience": 1, "override_rate": 0.46, "override_quality": 0.58, "shift": "night", "fatigue_factor": 0.48, "specialization": "cloud_infrastructure"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.18, "note": "Clinicians and outsourced billing staff"},
+      "asset_criticality": {"base_noise": 0.22, "note": "Clinical devices unevenly tagged"},
+      "threat_intel_enrichment": {"base_noise": 0.17, "note": "NAT-heavy egress patterns"},
+      "time_anomaly": {"base_noise": 0.20, "note": "24x7 rotating staff and emergency access"},
+      "pattern_history": {"base_noise": 0.19, "note": "EHR workflows and acquisitions"},
+      "device_trust": {"base_noise": 0.28, "note": "Shared workstations and vendor-managed systems"}
+    },
+    "environment_shifts": [
+      {"day": 12, "type": "seasonal", "description": "Respiratory illness surge drives staffing churn", "category_impact": {"credential_access": 1.20, "insider_threat": 1.12}, "duration_days": 18},
+      {"day": 39, "type": "incident", "description": "Ransomware at peer hospital triggers elevated feeds", "category_impact": {"threat_intel_match": 1.40, "lateral_movement": 1.25, "data_exfiltration": 1.18}, "duration_days": 10},
+      {"day": 63, "type": "reorg", "description": "Acquired outpatient network onboarded with incomplete mapping", "category_impact": {"cloud_infrastructure": 1.15, "credential_access": 1.10, "insider_threat": 1.20}, "duration_days": 24}
+    ],
+    "graph_state": {"initial_entities": 212000, "threat_indicators": 18400, "siem_sources": 1, "entity_resolution_completeness": 0.71},
+    "business_context": "Multi-site healthcare system. HIPAA pressure high, device hygiene uneven. IoMT and connected patient systems."
+  },
+  {
+    "persona_id": "O3",
+    "judge": "gpt4o",
+    "name": "Series B SaaS Startup with Lean Security Team",
+    "industry": "Technology",
+    "company_size": "230",
+    "siem": "Sentinel",
+    "alerts_per_day": 52,
+    "category_distribution": {
+      "credential_access": 0.27,
+      "lateral_movement": 0.08,
+      "data_exfiltration": 0.09,
+      "insider_threat": 0.06,
+      "cloud_infrastructure": 0.34,
+      "threat_intel_match": 0.16
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 6, "override_rate": 0.18, "override_quality": 0.88, "shift": "day", "fatigue_factor": 0.28, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 3, "override_rate": 0.31, "override_quality": 0.77, "shift": "swing", "fatigue_factor": 0.34, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "junior", "years_experience": 1, "override_rate": 0.47, "override_quality": 0.61, "shift": "night", "fatigue_factor": 0.52, "specialization": "credential_access"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.21, "note": "Fully remote engineers with frequent travel"},
+      "asset_criticality": {"base_noise": 0.24, "note": "Rapid product iterations change asset importance"},
+      "threat_intel_enrichment": {"base_noise": 0.15, "note": "Limited tuning, noisy shared hosting hits"},
+      "time_anomaly": {"base_noise": 0.23, "note": "Global engineering deploys at all hours"},
+      "pattern_history": {"base_noise": 0.27, "note": "Limited history, sparse labeling, frequent tool changes"},
+      "device_trust": {"base_noise": 0.19, "note": "Managed laptops but BYOD exceptions and contractor machines"}
+    },
+    "environment_shifts": [
+      {"day": 22, "type": "campaign", "description": "Targeted OAuth phishing against engineering", "category_impact": {"credential_access": 1.35, "threat_intel_match": 1.22}, "duration_days": 9},
+      {"day": 44, "type": "reorg", "description": "Offshore engineering hub adds new cloud accounts", "category_impact": {"cloud_infrastructure": 1.30, "credential_access": 1.12}, "duration_days": 20},
+      {"day": 73, "type": "staffing", "description": "Junior on-call while senior on audit support", "category_impact": {"data_exfiltration": 1.10, "cloud_infrastructure": 1.12, "lateral_movement": 1.08}, "duration_days": 14}
+    ],
+    "graph_state": {"initial_entities": 18500, "threat_indicators": 4200, "siem_sources": 1, "entity_resolution_completeness": 0.58},
+    "business_context": "Early-stage SaaS with cloud-first stack, tiny security team. Focus on protecting customer data and intellectual property."
+  },
+  {
+    "persona_id": "M1",
+    "judge": "gemini",
+    "name": "Mid-Atlantic Regional Bank",
+    "industry": "Financial Services",
+    "company_size": "3200",
+    "siem": "both",
+    "alerts_per_day": 340,
+    "category_distribution": {
+      "credential_access": 0.45,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.10,
+      "insider_threat": 0.05,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 8, "override_rate": 0.12, "override_quality": 0.94, "shift": "day", "fatigue_factor": 0.25, "specialization": "credential_access"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 3, "override_rate": 0.28, "override_quality": 0.78, "shift": "day", "fatigue_factor": 0.35, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 4, "override_rate": 0.22, "override_quality": 0.82, "shift": "swing", "fatigue_factor": 0.40, "specialization": "lateral_movement"},
+      {"id": "analyst_4", "experience_level": "junior", "years_experience": 1, "override_rate": 0.45, "override_quality": 0.62, "shift": "night", "fatigue_factor": 0.55, "specialization": "generalist"},
+      {"id": "analyst_5", "experience_level": "junior", "years_experience": 1, "override_rate": 0.48, "override_quality": 0.58, "shift": "swing", "fatigue_factor": 0.45, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.28, "note": "Executive travel and widespread VPN exit points"},
+      "asset_criticality": {"base_noise": 0.08, "note": "Rigorous audited CMDB for regulatory compliance"},
+      "threat_intel_enrichment": {"base_noise": 0.12, "note": "FS-ISAC feeds but occasional false positives"},
+      "time_anomaly": {"base_noise": 0.15, "note": "Batch processing jobs trigger baseline shifts"},
+      "pattern_history": {"base_noise": 0.20, "note": "Seasonal shifts in customer login behavior"},
+      "device_trust": {"base_noise": 0.10, "note": "Strict managed-device policy with Intune/Jamf"}
+    },
+    "environment_shifts": [
+      {"day": 15, "type": "campaign", "description": "Tax-season spear-phishing targeting finance", "category_impact": {"credential_access": 2.5, "threat_intel_match": 1.8}, "duration_days": 10},
+      {"day": 60, "type": "incident", "description": "Misconfigured Azure Blob triggers cloud alerts", "category_impact": {"cloud_infrastructure": 4.0, "data_exfiltration": 1.5}, "duration_days": 3}
+    ],
+    "graph_state": {"initial_entities": 12400, "threat_indicators": 45000, "siem_sources": 2, "entity_resolution_completeness": 0.88},
+    "business_context": "Bank migrating from Splunk to Sentinel. Extreme regulatory scrutiny. High explainability requirements."
+  },
+  {
+    "persona_id": "M2",
+    "judge": "gemini",
+    "name": "St. Jude Health Network",
+    "industry": "Healthcare",
+    "company_size": "14500",
+    "siem": "Splunk",
+    "alerts_per_day": 820,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.10,
+      "data_exfiltration": 0.15,
+      "insider_threat": 0.20,
+      "cloud_infrastructure": 0.10,
+      "threat_intel_match": 0.20
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 10, "override_rate": 0.11, "override_quality": 0.95, "shift": "day", "fatigue_factor": 0.30, "specialization": "insider_threat"},
+      {"id": "analyst_2", "experience_level": "senior", "years_experience": 6, "override_rate": 0.18, "override_quality": 0.88, "shift": "night", "fatigue_factor": 0.50, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 3, "override_rate": 0.25, "override_quality": 0.81, "shift": "day", "fatigue_factor": 0.20, "specialization": "generalist"},
+      {"id": "analyst_4", "experience_level": "mid", "years_experience": 2, "override_rate": 0.32, "override_quality": 0.74, "shift": "swing", "fatigue_factor": 0.40, "specialization": "data_exfiltration"},
+      {"id": "analyst_5", "experience_level": "junior", "years_experience": 1, "override_rate": 0.42, "override_quality": 0.68, "shift": "day", "fatigue_factor": 0.15, "specialization": "generalist"},
+      {"id": "analyst_6", "experience_level": "junior", "years_experience": 0, "override_rate": 0.50, "override_quality": 0.56, "shift": "night", "fatigue_factor": 0.65, "specialization": "generalist"},
+      {"id": "analyst_7", "experience_level": "junior", "years_experience": 1, "override_rate": 0.44, "override_quality": 0.61, "shift": "swing", "fatigue_factor": 0.45, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.10, "note": "Clinical staff geographically static across three campuses"},
+      "asset_criticality": {"base_noise": 0.30, "note": "Medical IoT devices poorly inventoried"},
+      "threat_intel_enrichment": {"base_noise": 0.25, "note": "Frequent hits on benign medical vendor portals"},
+      "time_anomaly": {"base_noise": 0.28, "note": "24/7 nursing shifts and ER surges"},
+      "pattern_history": {"base_noise": 0.22, "note": "Medical student rotations and visiting specialists"},
+      "device_trust": {"base_noise": 0.30, "note": "Legacy medical systems and unauthenticated IoT"}
+    },
+    "environment_shifts": [
+      {"day": 30, "type": "staffing", "description": "Nurses strike — temporary traveling staff", "category_impact": {"credential_access": 2.0, "insider_threat": 1.5}, "duration_days": 14},
+      {"day": 75, "type": "incident", "description": "Emotet variant across partner clinics", "category_impact": {"threat_intel_match": 3.5, "lateral_movement": 2.0}, "duration_days": 7}
+    ],
+    "graph_state": {"initial_entities": 48000, "threat_indicators": 112000, "siem_sources": 1, "entity_resolution_completeness": 0.62},
+    "business_context": "Chaotic mix of modern EMR systems and ancient X-ray machines. HIPAA drives high insider threat concern."
+  },
+  {
+    "persona_id": "M3",
+    "judge": "gemini",
+    "name": "CloudScale AI (Series B)",
+    "industry": "Technology",
+    "company_size": "145",
+    "siem": "Sentinel",
+    "alerts_per_day": 55,
+    "category_distribution": {
+      "credential_access": 0.15,
+      "lateral_movement": 0.05,
+      "data_exfiltration": 0.10,
+      "insider_threat": 0.05,
+      "cloud_infrastructure": 0.60,
+      "threat_intel_match": 0.05
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "mid", "years_experience": 4, "override_rate": 0.24, "override_quality": 0.84, "shift": "day", "fatigue_factor": 0.45, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_2", "experience_level": "junior", "years_experience": 1, "override_rate": 0.38, "override_quality": 0.69, "shift": "day", "fatigue_factor": 0.30, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "junior", "years_experience": 1, "override_rate": 0.41, "override_quality": 0.64, "shift": "swing", "fatigue_factor": 0.35, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.15, "note": "Fully remote but mostly domestic/fixed locations"},
+      "asset_criticality": {"base_noise": 0.25, "note": "Everything is a priority — tagging fatigue"},
+      "threat_intel_enrichment": {"base_noise": 0.05, "note": "Few hits on specialized cloud-native stack"},
+      "time_anomaly": {"base_noise": 0.30, "note": "Developers push code at all hours including weekends"},
+      "pattern_history": {"base_noise": 0.30, "note": "18-month-old company, normal still being defined"},
+      "device_trust": {"base_noise": 0.05, "note": "100% MacBook fleet with strict Jamf/Okta enforcement"}
+    },
+    "environment_shifts": [
+      {"day": 10, "type": "reorg", "description": "Series B hiring surge — 30% headcount increase", "category_impact": {"credential_access": 2.2, "cloud_infrastructure": 1.4}, "duration_days": 20},
+      {"day": 50, "type": "incident", "description": "Developer leaks AWS key to public GitHub", "category_impact": {"cloud_infrastructure": 5.0, "data_exfiltration": 2.0}, "duration_days": 5}
+    ],
+    "graph_state": {"initial_entities": 850, "threat_indicators": 1200, "siem_sources": 1, "entity_resolution_completeness": 0.95},
+    "business_context": "Cloud-only shop with almost no legacy baggage but high architectural churn. Small overstretched security team."
+  }
+]
