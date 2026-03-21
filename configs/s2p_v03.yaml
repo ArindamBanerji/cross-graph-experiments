@@ -1,0 +1,108 @@
+categories:
+  - single_source_risk
+  - logistics_disruption
+  - demand_volatility
+  - compliance_violation
+  - cost_overrun
+
+actions:
+  - escalate
+  - investigate
+  - hedge
+  - accept
+  - diversify
+
+factors:
+  - supplier_risk
+  - logistics_risk
+  - demand_risk
+  - inventory_risk
+  - regulatory_risk
+  - geopolitical_risk
+  - financial_risk
+  - environmental_risk
+
+# Placeholder centroids — structured init in [0.2, 0.8].
+# Factor ordering: supplier_risk, logistics_risk, demand_risk, inventory_risk,
+#                  regulatory_risk, geopolitical_risk, financial_risk, environmental_risk
+# Design logic: base = (category_risk + action_risk) / 2, offset by factor relevance.
+# No real S2P training data yet — replace with calibrated values after factorial.
+action_conditional_profiles:
+  single_source_risk:
+    escalate:    [0.80, 0.68, 0.63, 0.78, 0.68, 0.80, 0.78, 0.68]
+    investigate: [0.75, 0.55, 0.50, 0.65, 0.55, 0.70, 0.65, 0.55]
+    hedge:       [0.72, 0.53, 0.48, 0.63, 0.53, 0.68, 0.63, 0.53]
+    accept:      [0.60, 0.40, 0.35, 0.50, 0.40, 0.55, 0.50, 0.40]
+    diversify:   [0.78, 0.58, 0.53, 0.68, 0.58, 0.73, 0.68, 0.58]
+
+  logistics_disruption:
+    escalate:    [0.65, 0.80, 0.65, 0.80, 0.65, 0.75, 0.65, 0.80]
+    investigate: [0.53, 0.73, 0.53, 0.68, 0.53, 0.63, 0.53, 0.68]
+    hedge:       [0.50, 0.70, 0.50, 0.65, 0.50, 0.60, 0.50, 0.65]
+    accept:      [0.38, 0.58, 0.38, 0.53, 0.38, 0.48, 0.38, 0.53]
+    diversify:   [0.55, 0.75, 0.55, 0.70, 0.55, 0.65, 0.55, 0.70]
+
+  demand_volatility:
+    escalate:    [0.63, 0.63, 0.80, 0.78, 0.58, 0.58, 0.73, 0.58]
+    investigate: [0.50, 0.50, 0.75, 0.65, 0.45, 0.45, 0.60, 0.45]
+    hedge:       [0.48, 0.48, 0.73, 0.63, 0.43, 0.43, 0.58, 0.43]
+    accept:      [0.35, 0.35, 0.60, 0.50, 0.30, 0.30, 0.45, 0.30]
+    diversify:   [0.53, 0.53, 0.78, 0.68, 0.48, 0.48, 0.63, 0.48]
+
+  compliance_violation:
+    escalate:    [0.70, 0.65, 0.60, 0.65, 0.80, 0.80, 0.80, 0.65]
+    investigate: [0.58, 0.53, 0.48, 0.53, 0.78, 0.73, 0.68, 0.53]
+    hedge:       [0.55, 0.50, 0.45, 0.50, 0.75, 0.70, 0.65, 0.50]
+    accept:      [0.43, 0.38, 0.33, 0.38, 0.63, 0.58, 0.53, 0.38]
+    diversify:   [0.60, 0.55, 0.50, 0.55, 0.80, 0.75, 0.70, 0.55]
+
+  cost_overrun:
+    escalate:    [0.73, 0.68, 0.68, 0.73, 0.68, 0.73, 0.80, 0.63]
+    investigate: [0.60, 0.55, 0.55, 0.60, 0.55, 0.60, 0.70, 0.50]
+    hedge:       [0.58, 0.53, 0.53, 0.58, 0.53, 0.58, 0.68, 0.48]
+    accept:      [0.45, 0.40, 0.40, 0.45, 0.40, 0.45, 0.55, 0.35]
+    diversify:   [0.63, 0.58, 0.58, 0.63, 0.58, 0.63, 0.73, 0.53]
+
+# Ground-truth action distributions per category.
+# Placeholder: loosely calibrated until domain expert review.
+# Order: escalate, investigate, hedge, accept, diversify
+category_gt_distributions:
+  single_source_risk:   [0.20, 0.25, 0.25, 0.15, 0.15]
+  logistics_disruption: [0.20, 0.20, 0.25, 0.15, 0.20]
+  demand_volatility:    [0.15, 0.25, 0.25, 0.20, 0.15]
+  compliance_violation: [0.30, 0.25, 0.20, 0.15, 0.10]
+  cost_overrun:         [0.15, 0.25, 0.25, 0.20, 0.15]
+
+# Correlation prior — Regime A (baseline, no active disruption).
+# Two-judge research, 28 correlation pairs.
+# Factor ordering: supplier_risk (SUP), logistics_risk (LOG), demand_risk (DEM),
+#   inventory_risk (INV), regulatory_risk (REG), geopolitical_risk (GEO),
+#   financial_risk (FIN), environmental_risk (ENV).
+# Used by the synthetic data generator; not consumed by the scorer directly.
+correlation_prior:
+  - [1.00, 0.48, 0.35, 0.62, 0.45, 0.58, 0.70, 0.50]
+  - [0.48, 1.00, 0.42, 0.60, 0.40, 0.55, 0.38, 0.65]
+  - [0.35, 0.42, 1.00, 0.65, 0.18, 0.28, 0.40, 0.25]
+  - [0.62, 0.60, 0.65, 1.00, 0.30, 0.30, 0.48, 0.35]
+  - [0.45, 0.40, 0.18, 0.30, 1.00, 0.72, 0.52, 0.30]
+  - [0.58, 0.55, 0.28, 0.30, 0.72, 1.00, 0.68, 0.35]
+  - [0.70, 0.38, 0.40, 0.48, 0.52, 0.68, 1.00, 0.35]
+  - [0.50, 0.65, 0.25, 0.35, 0.30, 0.35, 0.35, 1.00]
+
+# Scorer hyperparameters
+tau: 0.10
+eta: 0.05
+eta_neg: 0.05
+eta_override: 0.01
+penalty_ratio: 5.0
+
+# Metadata
+domain: s2p
+version: "v0.3"
+tensor_shape: [5, 5, 8]
+notes: >
+  Supply-to-Pay (S2P) domain — 5 risk categories, 5 actions, 8 domain-level factor scores.
+  Centroids are structured placeholders (no real S2P training data).
+  Correlation prior from two-judge research (Regime A baseline, 28 pairs).
+  Replace action_conditional_profiles with calibrated values after factorial.
+  correlation_prior is used by synthetic generators, not the ProfileScorer directly.

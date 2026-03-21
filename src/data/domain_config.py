@@ -55,7 +55,7 @@ def load_domain_config(name: str) -> dict[str, Any]:
         for a_idx, act in enumerate(actions):
             mu[c_idx, a_idx, :] = profiles[cat][act]
 
-    return {
+    result = {
         "categories": categories,
         "actions": actions,
         "factors": factors,
@@ -78,6 +78,15 @@ def load_domain_config(name: str) -> dict[str, Any]:
             "notes": raw.get("notes", ""),
         },
     }
+
+    # Optional fields — pass through if present
+    if "correlation_prior" in raw:
+        result["correlation_prior"] = np.array(raw["correlation_prior"], dtype=np.float64)
+    for key in ("tau", "eta", "eta_neg", "eta_override", "penalty_ratio"):
+        if key in raw:
+            result[key] = raw[key]
+
+    return result
 
 
 def list_domain_configs() -> list[str]:
