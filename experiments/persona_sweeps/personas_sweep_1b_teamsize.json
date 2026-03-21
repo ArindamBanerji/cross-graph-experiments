@@ -1,0 +1,537 @@
+[
+  {
+    "persona_id": "1B-T1",
+    "judge": "strategy_session",
+    "name": "Skeleton Crew — 2 Analysts",
+    "industry": "Technology",
+    "company_size": "200",
+    "siem": "sentinel",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 6,
+        "override_rate": 0.16,
+        "override_quality": 0.88,
+        "shift": "day",
+        "fatigue_factor": 0.18,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.28,
+        "override_quality": 0.76,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.14, "note": "Controlled — same across team size sweep"},
+      "asset_criticality": {"base_noise": 0.10, "note": "Controlled"},
+      "threat_intel_enrichment": {"base_noise": 0.09, "note": "Controlled"},
+      "time_anomaly": {"base_noise": 0.16, "note": "Controlled"},
+      "pattern_history": {"base_noise": 0.12, "note": "Controlled"},
+      "device_trust": {"base_noise": 0.13, "note": "Controlled"}
+    },
+    "environment_shifts": [
+      {
+        "day": 30,
+        "type": "campaign",
+        "description": "BEC campaign targeting executives",
+        "category_impact": {"credential_access": 1.4, "insider_threat": 1.3},
+        "duration_days": 8
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 2500,
+      "threat_indicators": 90,
+      "siem_sources": 1,
+      "entity_resolution_completeness": 0.78
+    },
+    "business_context": "Team size sweep: 2 analysts at 200 alerts/day. Each analyst handles 100/day — heavy load. B-A Phase B hash split gives 1 analyst per group — A/B is meaningless. Conservation law: at 30% verification rate, V_verified ≈ 60/day but split across 2 analysts → 30 each. With α=0.22, q=0.82: signal = 0.22 × 0.82 × 60 = 10.8. Above θ_min but daily variance is HIGH with only 2 data points."
+  },
+  {
+    "persona_id": "1B-T2",
+    "judge": "strategy_session",
+    "name": "Small Team — 4 Analysts",
+    "industry": "Technology",
+    "company_size": "500",
+    "siem": "sentinel",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 6,
+        "override_rate": 0.16,
+        "override_quality": 0.88,
+        "shift": "day",
+        "fatigue_factor": 0.14,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.28,
+        "override_quality": 0.76,
+        "shift": "day",
+        "fatigue_factor": 0.18,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.25,
+        "override_quality": 0.80,
+        "shift": "swing",
+        "fatigue_factor": 0.27,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.64,
+        "shift": "swing",
+        "fatigue_factor": 0.32,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.14, "note": "Controlled"},
+      "asset_criticality": {"base_noise": 0.10, "note": "Controlled"},
+      "threat_intel_enrichment": {"base_noise": 0.09, "note": "Controlled"},
+      "time_anomaly": {"base_noise": 0.16, "note": "Controlled"},
+      "pattern_history": {"base_noise": 0.12, "note": "Controlled"},
+      "device_trust": {"base_noise": 0.13, "note": "Controlled"}
+    },
+    "environment_shifts": [
+      {
+        "day": 30,
+        "type": "campaign",
+        "description": "BEC campaign targeting executives",
+        "category_impact": {"credential_access": 1.4, "insider_threat": 1.3},
+        "duration_days": 8
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 2500,
+      "threat_indicators": 90,
+      "siem_sources": 1,
+      "entity_resolution_completeness": 0.78
+    },
+    "business_context": "Team size sweep: 4 analysts (1 senior, 2 mid, 1 junior proportional to 30/40/30). B-A hash split gives 2 per group. Conservation law GATE: no false breach at team size ≥ 4. Finding 3 showed 3-analyst teams breach intermittently — does 4 cross the threshold?"
+  },
+  {
+    "persona_id": "1B-T3",
+    "judge": "strategy_session",
+    "name": "Standard Team — 6 Analysts",
+    "industry": "Technology",
+    "company_size": "1500",
+    "siem": "sentinel",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.14,
+        "override_quality": 0.91,
+        "shift": "day",
+        "fatigue_factor": 0.13,
+        "specialization": "insider_threat"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 5,
+        "override_rate": 0.17,
+        "override_quality": 0.86,
+        "shift": "swing",
+        "fatigue_factor": 0.24,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.27,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.17,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.81,
+        "shift": "day",
+        "fatigue_factor": 0.16,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.42,
+        "override_quality": 0.63,
+        "shift": "swing",
+        "fatigue_factor": 0.33,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_6",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.38,
+        "override_quality": 0.66,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.14, "note": "Controlled"},
+      "asset_criticality": {"base_noise": 0.10, "note": "Controlled"},
+      "threat_intel_enrichment": {"base_noise": 0.09, "note": "Controlled"},
+      "time_anomaly": {"base_noise": 0.16, "note": "Controlled"},
+      "pattern_history": {"base_noise": 0.12, "note": "Controlled"},
+      "device_trust": {"base_noise": 0.13, "note": "Controlled"}
+    },
+    "environment_shifts": [
+      {
+        "day": 30,
+        "type": "campaign",
+        "description": "BEC campaign targeting executives",
+        "category_impact": {"credential_access": 1.4, "insider_threat": 1.3},
+        "duration_days": 8
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 2500,
+      "threat_indicators": 90,
+      "siem_sources": 1,
+      "entity_resolution_completeness": 0.78
+    },
+    "business_context": "Team size sweep: 6 analysts (2 senior, 2 mid, 2 junior). Standard mid-market SOC. B-A hash split gives 3 per group — minimum viable for A/B. Conservation law should be comfortably above threshold."
+  },
+  {
+    "persona_id": "1B-T4",
+    "judge": "strategy_session",
+    "name": "Full Team — 8 Analysts",
+    "industry": "Technology",
+    "company_size": "4000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.13,
+        "override_quality": 0.92,
+        "shift": "day",
+        "fatigue_factor": 0.11,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 6,
+        "override_rate": 0.16,
+        "override_quality": 0.87,
+        "shift": "day",
+        "fatigue_factor": 0.15,
+        "specialization": "insider_threat"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.25,
+        "override_quality": 0.80,
+        "shift": "day",
+        "fatigue_factor": 0.16,
+        "specialization": "data_exfiltration"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.28,
+        "override_quality": 0.77,
+        "shift": "swing",
+        "fatigue_factor": 0.26,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.79,
+        "shift": "swing",
+        "fatigue_factor": 0.25,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_6",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.41,
+        "override_quality": 0.64,
+        "shift": "day",
+        "fatigue_factor": 0.21,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_7",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.39,
+        "override_quality": 0.66,
+        "shift": "swing",
+        "fatigue_factor": 0.32,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_8",
+        "experience_level": "junior",
+        "years_experience": 0,
+        "override_rate": 0.45,
+        "override_quality": 0.58,
+        "shift": "night",
+        "fatigue_factor": 0.42,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.14, "note": "Controlled"},
+      "asset_criticality": {"base_noise": 0.10, "note": "Controlled"},
+      "threat_intel_enrichment": {"base_noise": 0.09, "note": "Controlled"},
+      "time_anomaly": {"base_noise": 0.16, "note": "Controlled"},
+      "pattern_history": {"base_noise": 0.12, "note": "Controlled"},
+      "device_trust": {"base_noise": 0.13, "note": "Controlled"}
+    },
+    "environment_shifts": [
+      {
+        "day": 30,
+        "type": "campaign",
+        "description": "BEC campaign targeting executives",
+        "category_impact": {"credential_access": 1.4, "insider_threat": 1.3},
+        "duration_days": 8
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 2500,
+      "threat_indicators": 90,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.78
+    },
+    "business_context": "Team size sweep: 8 analysts (2 senior, 3 mid, 3 junior) including one night shift junior. B-A gives 4 per group — sufficient for statistical power. Introduces night shift fatigue factor (0.42) to test shift-dependent quality incidentally."
+  },
+  {
+    "persona_id": "1B-T5",
+    "judge": "strategy_session",
+    "name": "Large Team — 12 Analysts",
+    "industry": "Technology",
+    "company_size": "10000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 10,
+        "override_rate": 0.12,
+        "override_quality": 0.93,
+        "shift": "day",
+        "fatigue_factor": 0.10,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.89,
+        "shift": "day",
+        "fatigue_factor": 0.13,
+        "specialization": "insider_threat"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 6,
+        "override_rate": 0.16,
+        "override_quality": 0.87,
+        "shift": "swing",
+        "fatigue_factor": 0.22,
+        "specialization": "data_exfiltration"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 5,
+        "override_rate": 0.18,
+        "override_quality": 0.85,
+        "shift": "night",
+        "fatigue_factor": 0.35,
+        "specialization": "lateral_movement"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.81,
+        "shift": "day",
+        "fatigue_factor": 0.15,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_6",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.27,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.17,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_7",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.76,
+        "shift": "swing",
+        "fatigue_factor": 0.27,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_8",
+        "experience_level": "mid",
+        "years_experience": 2,
+        "override_rate": 0.30,
+        "override_quality": 0.74,
+        "shift": "swing",
+        "fatigue_factor": 0.29,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_9",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.65,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_10",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.42,
+        "override_quality": 0.63,
+        "shift": "swing",
+        "fatigue_factor": 0.33,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_11",
+        "experience_level": "junior",
+        "years_experience": 0,
+        "override_rate": 0.46,
+        "override_quality": 0.58,
+        "shift": "night",
+        "fatigue_factor": 0.45,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_12",
+        "experience_level": "junior",
+        "years_experience": 0,
+        "override_rate": 0.48,
+        "override_quality": 0.56,
+        "shift": "night",
+        "fatigue_factor": 0.48,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.14, "note": "Controlled"},
+      "asset_criticality": {"base_noise": 0.10, "note": "Controlled"},
+      "threat_intel_enrichment": {"base_noise": 0.09, "note": "Controlled"},
+      "time_anomaly": {"base_noise": 0.16, "note": "Controlled"},
+      "pattern_history": {"base_noise": 0.12, "note": "Controlled"},
+      "device_trust": {"base_noise": 0.13, "note": "Controlled"}
+    },
+    "environment_shifts": [
+      {
+        "day": 30,
+        "type": "campaign",
+        "description": "BEC campaign targeting executives",
+        "category_impact": {"credential_access": 1.4, "insider_threat": 1.3},
+        "duration_days": 8
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 2500,
+      "threat_indicators": 90,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.78
+    },
+    "business_context": "Team size sweep upper bound: 12 analysts (4 senior, 4 mid, 4 junior) across day/swing/night shifts. B-A gives 6 per group — excellent power. Tests whether large team with night-shift juniors (fatigue 0.45-0.48) creates shift-dependent quality issues incidentally. Also tests whether 12-analyst verification volume creates super-healthy conservation signal."
+  }
+]

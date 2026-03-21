@@ -1,0 +1,5726 @@
+[
+  {
+    "cell_id": "SOC-l2-s08-q60-v50-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.9545,
+    "day30_accuracy": 0.9859,
+    "day60_accuracy": 0.9889,
+    "delta_d1_d60": 0.0345,
+    "cats_converged": 2,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 45.6,
+        "pct_converged": 0.7
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 42.0,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 50.0,
+        "pct_converged": 0.4
+      },
+      "insider_threat": {
+        "mean_conv_day": 47.8,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 49.4,
+        "pct_converged": 0.5
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 36.74,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q60-v50-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9581,
+    "day30_accuracy": 0.9855,
+    "day60_accuracy": 0.9828,
+    "delta_d1_d60": 0.0247,
+    "cats_converged": 1,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 42.0,
+        "pct_converged": 0.8
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 45.2,
+        "pct_converged": 0.4
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 49.5,
+        "pct_converged": 0.4
+      },
+      "insider_threat": {
+        "mean_conv_day": 49.5,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 46.2,
+        "pct_converged": 0.4
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 47.32,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q60-v50-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.9509,
+    "day30_accuracy": 0.9757,
+    "day60_accuracy": 0.9789,
+    "delta_d1_d60": 0.0281,
+    "cats_converged": 1,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 41.5,
+        "pct_converged": 0.8
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 42.5,
+        "pct_converged": 0.4
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 48.2,
+        "pct_converged": 0.4
+      },
+      "insider_threat": {
+        "mean_conv_day": 53.0,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 44.3,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 75.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q60-v200-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.954,
+    "day30_accuracy": 0.9884,
+    "day60_accuracy": 0.9952,
+    "delta_d1_d60": 0.0411,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.8,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 23.5,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 22.8,
+        "pct_converged": 0.9
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 22.4,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 15.7,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 18.5,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 36.36,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q60-v200-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9512,
+    "day30_accuracy": 0.9843,
+    "day60_accuracy": 0.9898,
+    "delta_d1_d60": 0.0386,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.3,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 25.9,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 25.9,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 18.2,
+        "pct_converged": 0.9
+      },
+      "insider_threat": {
+        "mean_conv_day": 16.5,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 17.3,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 48.29,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q60-v200-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.9438,
+    "day30_accuracy": 0.9796,
+    "day60_accuracy": 0.9792,
+    "delta_d1_d60": 0.0355,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.8,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 25.6,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 25.2,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 14.7,
+        "pct_converged": 0.7
+      },
+      "insider_threat": {
+        "mean_conv_day": 17.1,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 18.0,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 76.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q80-v50-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.9453,
+    "day30_accuracy": 0.9823,
+    "day60_accuracy": 0.9893,
+    "delta_d1_d60": 0.044,
+    "cats_converged": 4,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 44.0,
+        "pct_converged": 0.9
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 60.0,
+        "pct_converged": 0.1
+      },
+      "lateral_movement": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 45.9,
+        "pct_converged": 0.8
+      },
+      "insider_threat": {
+        "mean_conv_day": 50.1,
+        "pct_converged": 0.9
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 42.5,
+        "pct_converged": 0.6
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 35.16,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q80-v50-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9499,
+    "day30_accuracy": 0.9719,
+    "day60_accuracy": 0.9914,
+    "delta_d1_d60": 0.0415,
+    "cats_converged": 4,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 40.4,
+        "pct_converged": 0.7
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 60.0,
+        "pct_converged": 0.1
+      },
+      "lateral_movement": {
+        "mean_conv_day": 44.7,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 47.1,
+        "pct_converged": 0.8
+      },
+      "insider_threat": {
+        "mean_conv_day": 47.9,
+        "pct_converged": 0.7
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 45.3,
+        "pct_converged": 0.6
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 46.6,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q80-v50-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.9441,
+    "day30_accuracy": 0.9615,
+    "day60_accuracy": 0.9747,
+    "delta_d1_d60": 0.0307,
+    "cats_converged": 3,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 37.4,
+        "pct_converged": 0.7
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 58.5,
+        "pct_converged": 0.2
+      },
+      "lateral_movement": {
+        "mean_conv_day": 43.7,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 46.3,
+        "pct_converged": 0.6
+      },
+      "insider_threat": {
+        "mean_conv_day": 45.8,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 47.7,
+        "pct_converged": 0.6
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 75.03,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q80-v200-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.9533,
+    "day30_accuracy": 0.9944,
+    "day60_accuracy": 0.9923,
+    "delta_d1_d60": 0.039,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.1,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 19.9,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 18.4,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 15.4,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 14.2,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 14.8,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 34.9,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q80-v200-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9486,
+    "day30_accuracy": 0.9899,
+    "day60_accuracy": 0.9875,
+    "delta_d1_d60": 0.0388,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.5,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 21.8,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 18.8,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 14.7,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 15.6,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 14.7,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 45.34,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s08-q80-v200-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.941,
+    "day30_accuracy": 0.9801,
+    "day60_accuracy": 0.98,
+    "delta_d1_d60": 0.039,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.9,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 23.0,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 19.1,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 15.1,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 16.5,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 15.7,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 72.28,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q60-v50-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8126,
+    "day30_accuracy": 0.8673,
+    "day60_accuracy": 0.8666,
+    "delta_d1_d60": 0.054,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 56.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 55.0,
+        "pct_converged": 0.1
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 47.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 12.12,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q60-v50-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.7908,
+    "day30_accuracy": 0.8385,
+    "day60_accuracy": 0.8405,
+    "delta_d1_d60": 0.0497,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 48.0,
+        "pct_converged": 0.2
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 52.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 52.0,
+        "pct_converged": 0.1
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 56.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 16.15,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q60-v50-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.7813,
+    "day30_accuracy": 0.8165,
+    "day60_accuracy": 0.8069,
+    "delta_d1_d60": 0.0256,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 50.5,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 27.67,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q60-v200-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8238,
+    "day30_accuracy": 0.8743,
+    "day60_accuracy": 0.8748,
+    "delta_d1_d60": 0.051,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 18.3,
+        "pct_converged": 0.6
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 44.1,
+        "pct_converged": 0.7
+      },
+      "lateral_movement": {
+        "mean_conv_day": 26.8,
+        "pct_converged": 0.8
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 22.4,
+        "pct_converged": 0.5
+      },
+      "insider_threat": {
+        "mean_conv_day": 24.0,
+        "pct_converged": 0.8
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 29.6,
+        "pct_converged": 0.9
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 12.03,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q60-v200-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.8028,
+    "day30_accuracy": 0.8347,
+    "day60_accuracy": 0.8254,
+    "delta_d1_d60": 0.0226,
+    "cats_converged": 4,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 12.5,
+        "pct_converged": 0.4
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 44.5,
+        "pct_converged": 0.6
+      },
+      "lateral_movement": {
+        "mean_conv_day": 32.6,
+        "pct_converged": 0.8
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 19.0,
+        "pct_converged": 0.3
+      },
+      "insider_threat": {
+        "mean_conv_day": 34.6,
+        "pct_converged": 0.5
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 35.4,
+        "pct_converged": 0.7
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 16.38,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q60-v200-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.8014,
+    "day30_accuracy": 0.7758,
+    "day60_accuracy": 0.7515,
+    "delta_d1_d60": -0.05,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 17.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 41.3,
+        "pct_converged": 0.3
+      },
+      "lateral_movement": {
+        "mean_conv_day": 27.7,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 19.5,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 28.49,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q80-v50-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8115,
+    "day30_accuracy": 0.8697,
+    "day60_accuracy": 0.8749,
+    "delta_d1_d60": 0.0634,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 50.0,
+        "pct_converged": 0.2
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 45.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 52.0,
+        "pct_converged": 0.3
+      },
+      "insider_threat": {
+        "mean_conv_day": 60.0,
+        "pct_converged": 0.1
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 11.83,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q80-v50-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.7979,
+    "day30_accuracy": 0.8473,
+    "day60_accuracy": 0.8318,
+    "delta_d1_d60": 0.0338,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 41.0,
+        "pct_converged": 0.2
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 58.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 59.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 15.98,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q80-v50-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.7917,
+    "day30_accuracy": 0.8284,
+    "day60_accuracy": 0.7789,
+    "delta_d1_d60": -0.0128,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 28.18,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q80-v200-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8263,
+    "day30_accuracy": 0.8837,
+    "day60_accuracy": 0.8936,
+    "delta_d1_d60": 0.0673,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 25.2,
+        "pct_converged": 0.9
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 35.9,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 27.1,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 26.2,
+        "pct_converged": 0.9
+      },
+      "insider_threat": {
+        "mean_conv_day": 24.3,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 24.2,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 11.75,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q80-v200-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.8094,
+    "day30_accuracy": 0.834,
+    "day60_accuracy": 0.8349,
+    "delta_d1_d60": 0.0256,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 33.6,
+        "pct_converged": 0.5
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 29.6,
+        "pct_converged": 0.5
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.2,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 21.8,
+        "pct_converged": 0.5
+      },
+      "insider_threat": {
+        "mean_conv_day": 24.1,
+        "pct_converged": 0.8
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 26.6,
+        "pct_converged": 0.9
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 15.56,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s15-q80-v200-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.8012,
+    "day30_accuracy": 0.7648,
+    "day60_accuracy": 0.7214,
+    "delta_d1_d60": -0.0798,
+    "cats_converged": 1,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 49.0,
+        "pct_converged": 0.2
+      },
+      "lateral_movement": {
+        "mean_conv_day": 25.6,
+        "pct_converged": 0.7
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 20.0,
+        "pct_converged": 0.1
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 26.7,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 27.12,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q60-v50-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.6794,
+    "day30_accuracy": 0.7169,
+    "day60_accuracy": 0.7107,
+    "delta_d1_d60": 0.0314,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 6.32,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q60-v50-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6406,
+    "day30_accuracy": 0.6767,
+    "day60_accuracy": 0.699,
+    "delta_d1_d60": 0.0583,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 8.83,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q60-v50-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6433,
+    "day30_accuracy": 0.6491,
+    "day60_accuracy": 0.6328,
+    "delta_d1_d60": -0.0105,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 15.87,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q60-v200-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.7005,
+    "day30_accuracy": 0.7246,
+    "day60_accuracy": 0.7071,
+    "delta_d1_d60": 0.0066,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 47.0,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 27.0,
+        "pct_converged": 0.2
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 6.2,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q60-v200-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6742,
+    "day30_accuracy": 0.661,
+    "day60_accuracy": 0.6378,
+    "delta_d1_d60": -0.0365,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 15.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 8.7,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q60-v200-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6734,
+    "day30_accuracy": 0.586,
+    "day60_accuracy": 0.5639,
+    "delta_d1_d60": -0.1095,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 16.35,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q80-v50-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.7008,
+    "day30_accuracy": 0.7021,
+    "day60_accuracy": 0.6984,
+    "delta_d1_d60": -0.0024,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 6.22,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q80-v50-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6708,
+    "day30_accuracy": 0.6878,
+    "day60_accuracy": 0.6543,
+    "delta_d1_d60": -0.0165,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 8.63,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q80-v50-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6677,
+    "day30_accuracy": 0.6573,
+    "day60_accuracy": 0.5931,
+    "delta_d1_d60": -0.0747,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 16.26,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q80-v200-r0",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.7072,
+    "day30_accuracy": 0.7193,
+    "day60_accuracy": 0.7149,
+    "delta_d1_d60": 0.0077,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 20.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 44.0,
+        "pct_converged": 0.1
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.5,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 33.0,
+        "pct_converged": 0.2
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 28.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 6.26,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q80-v200-r3",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6904,
+    "day30_accuracy": 0.6503,
+    "day60_accuracy": 0.6126,
+    "delta_d1_d60": -0.0778,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 8.4,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-l2-s22-q80-v200-r6",
+    "domain": "soc",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6828,
+    "day30_accuracy": 0.5837,
+    "day60_accuracy": 0.5585,
+    "delta_d1_d60": -0.1243,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 15.82,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q60-v50-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.9545,
+    "day30_accuracy": 0.9859,
+    "day60_accuracy": 0.9889,
+    "delta_d1_d60": 0.0345,
+    "cats_converged": 2,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 45.6,
+        "pct_converged": 0.7
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 42.0,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 50.0,
+        "pct_converged": 0.4
+      },
+      "insider_threat": {
+        "mean_conv_day": 47.8,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 49.4,
+        "pct_converged": 0.5
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 36.74,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q60-v50-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9581,
+    "day30_accuracy": 0.9855,
+    "day60_accuracy": 0.9828,
+    "delta_d1_d60": 0.0247,
+    "cats_converged": 1,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 42.0,
+        "pct_converged": 0.8
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 45.2,
+        "pct_converged": 0.4
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 49.5,
+        "pct_converged": 0.4
+      },
+      "insider_threat": {
+        "mean_conv_day": 49.5,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 46.2,
+        "pct_converged": 0.4
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 47.32,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q60-v50-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.9509,
+    "day30_accuracy": 0.9757,
+    "day60_accuracy": 0.9789,
+    "delta_d1_d60": 0.0281,
+    "cats_converged": 1,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 41.5,
+        "pct_converged": 0.8
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 42.5,
+        "pct_converged": 0.4
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 48.2,
+        "pct_converged": 0.4
+      },
+      "insider_threat": {
+        "mean_conv_day": 53.0,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 44.3,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 75.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q60-v200-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.954,
+    "day30_accuracy": 0.9884,
+    "day60_accuracy": 0.9952,
+    "delta_d1_d60": 0.0411,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.8,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 23.5,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 22.8,
+        "pct_converged": 0.9
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 22.4,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 15.7,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 18.5,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 36.36,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q60-v200-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9512,
+    "day30_accuracy": 0.9843,
+    "day60_accuracy": 0.9898,
+    "delta_d1_d60": 0.0386,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.3,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 25.9,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 25.9,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 18.2,
+        "pct_converged": 0.9
+      },
+      "insider_threat": {
+        "mean_conv_day": 16.5,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 17.3,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 48.29,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q60-v200-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.9438,
+    "day30_accuracy": 0.9796,
+    "day60_accuracy": 0.9792,
+    "delta_d1_d60": 0.0355,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.8,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 25.6,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 25.2,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 14.7,
+        "pct_converged": 0.7
+      },
+      "insider_threat": {
+        "mean_conv_day": 17.1,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 18.0,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 76.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q80-v50-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.9453,
+    "day30_accuracy": 0.9823,
+    "day60_accuracy": 0.9893,
+    "delta_d1_d60": 0.044,
+    "cats_converged": 4,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 44.0,
+        "pct_converged": 0.9
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 60.0,
+        "pct_converged": 0.1
+      },
+      "lateral_movement": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 45.9,
+        "pct_converged": 0.8
+      },
+      "insider_threat": {
+        "mean_conv_day": 50.1,
+        "pct_converged": 0.9
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 42.5,
+        "pct_converged": 0.6
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 35.16,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q80-v50-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9499,
+    "day30_accuracy": 0.9719,
+    "day60_accuracy": 0.9914,
+    "delta_d1_d60": 0.0415,
+    "cats_converged": 4,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 40.4,
+        "pct_converged": 0.7
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 60.0,
+        "pct_converged": 0.1
+      },
+      "lateral_movement": {
+        "mean_conv_day": 44.7,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 47.1,
+        "pct_converged": 0.8
+      },
+      "insider_threat": {
+        "mean_conv_day": 47.9,
+        "pct_converged": 0.7
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 45.3,
+        "pct_converged": 0.6
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 46.6,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q80-v50-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.9441,
+    "day30_accuracy": 0.9615,
+    "day60_accuracy": 0.9747,
+    "delta_d1_d60": 0.0307,
+    "cats_converged": 3,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 37.4,
+        "pct_converged": 0.7
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 58.5,
+        "pct_converged": 0.2
+      },
+      "lateral_movement": {
+        "mean_conv_day": 43.7,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 46.3,
+        "pct_converged": 0.6
+      },
+      "insider_threat": {
+        "mean_conv_day": 45.8,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 47.7,
+        "pct_converged": 0.6
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 75.03,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q80-v200-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.9533,
+    "day30_accuracy": 0.9944,
+    "day60_accuracy": 0.9923,
+    "delta_d1_d60": 0.039,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.1,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 19.9,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 18.4,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 15.4,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 14.2,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 14.8,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 34.9,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q80-v200-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9486,
+    "day30_accuracy": 0.9899,
+    "day60_accuracy": 0.9875,
+    "delta_d1_d60": 0.0388,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.5,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 21.8,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 18.8,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 14.7,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 15.6,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 14.7,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 45.34,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s08-q80-v200-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.941,
+    "day30_accuracy": 0.9801,
+    "day60_accuracy": 0.98,
+    "delta_d1_d60": 0.039,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.9,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 23.0,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 19.1,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 15.1,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 16.5,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 15.7,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 72.28,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q60-v50-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8126,
+    "day30_accuracy": 0.8673,
+    "day60_accuracy": 0.8666,
+    "delta_d1_d60": 0.054,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 56.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 55.0,
+        "pct_converged": 0.1
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 47.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 12.12,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q60-v50-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.7908,
+    "day30_accuracy": 0.8385,
+    "day60_accuracy": 0.8405,
+    "delta_d1_d60": 0.0497,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 48.0,
+        "pct_converged": 0.2
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 52.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 52.0,
+        "pct_converged": 0.1
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 56.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 16.15,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q60-v50-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.7813,
+    "day30_accuracy": 0.8165,
+    "day60_accuracy": 0.8069,
+    "delta_d1_d60": 0.0256,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 50.5,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 27.67,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q60-v200-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8238,
+    "day30_accuracy": 0.8743,
+    "day60_accuracy": 0.8748,
+    "delta_d1_d60": 0.051,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 18.3,
+        "pct_converged": 0.6
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 44.1,
+        "pct_converged": 0.7
+      },
+      "lateral_movement": {
+        "mean_conv_day": 26.8,
+        "pct_converged": 0.8
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 22.4,
+        "pct_converged": 0.5
+      },
+      "insider_threat": {
+        "mean_conv_day": 24.0,
+        "pct_converged": 0.8
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 29.6,
+        "pct_converged": 0.9
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 12.03,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q60-v200-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.8028,
+    "day30_accuracy": 0.8347,
+    "day60_accuracy": 0.8254,
+    "delta_d1_d60": 0.0226,
+    "cats_converged": 4,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 12.5,
+        "pct_converged": 0.4
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 44.5,
+        "pct_converged": 0.6
+      },
+      "lateral_movement": {
+        "mean_conv_day": 32.6,
+        "pct_converged": 0.8
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 19.0,
+        "pct_converged": 0.3
+      },
+      "insider_threat": {
+        "mean_conv_day": 34.6,
+        "pct_converged": 0.5
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 35.4,
+        "pct_converged": 0.7
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 16.38,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q60-v200-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.8014,
+    "day30_accuracy": 0.7758,
+    "day60_accuracy": 0.7515,
+    "delta_d1_d60": -0.05,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 17.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 41.3,
+        "pct_converged": 0.3
+      },
+      "lateral_movement": {
+        "mean_conv_day": 27.7,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 19.5,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 28.49,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q80-v50-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8115,
+    "day30_accuracy": 0.8697,
+    "day60_accuracy": 0.8749,
+    "delta_d1_d60": 0.0634,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 50.0,
+        "pct_converged": 0.2
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 45.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 52.0,
+        "pct_converged": 0.3
+      },
+      "insider_threat": {
+        "mean_conv_day": 60.0,
+        "pct_converged": 0.1
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 11.83,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q80-v50-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.7979,
+    "day30_accuracy": 0.8473,
+    "day60_accuracy": 0.8318,
+    "delta_d1_d60": 0.0338,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 41.0,
+        "pct_converged": 0.2
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 58.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 59.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 15.98,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q80-v50-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.7917,
+    "day30_accuracy": 0.8284,
+    "day60_accuracy": 0.7789,
+    "delta_d1_d60": -0.0128,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 28.18,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q80-v200-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8263,
+    "day30_accuracy": 0.8837,
+    "day60_accuracy": 0.8936,
+    "delta_d1_d60": 0.0673,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 25.2,
+        "pct_converged": 0.9
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 35.9,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 27.1,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 26.2,
+        "pct_converged": 0.9
+      },
+      "insider_threat": {
+        "mean_conv_day": 24.3,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 24.2,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 11.75,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q80-v200-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.8094,
+    "day30_accuracy": 0.834,
+    "day60_accuracy": 0.8349,
+    "delta_d1_d60": 0.0256,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 33.6,
+        "pct_converged": 0.5
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 29.6,
+        "pct_converged": 0.5
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.2,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 21.8,
+        "pct_converged": 0.5
+      },
+      "insider_threat": {
+        "mean_conv_day": 24.1,
+        "pct_converged": 0.8
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 26.6,
+        "pct_converged": 0.9
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 15.56,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s15-q80-v200-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.8012,
+    "day30_accuracy": 0.7648,
+    "day60_accuracy": 0.7214,
+    "delta_d1_d60": -0.0798,
+    "cats_converged": 1,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 49.0,
+        "pct_converged": 0.2
+      },
+      "lateral_movement": {
+        "mean_conv_day": 25.6,
+        "pct_converged": 0.7
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 20.0,
+        "pct_converged": 0.1
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 26.7,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 27.12,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q60-v50-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.6794,
+    "day30_accuracy": 0.7169,
+    "day60_accuracy": 0.7107,
+    "delta_d1_d60": 0.0314,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 6.32,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q60-v50-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6406,
+    "day30_accuracy": 0.6767,
+    "day60_accuracy": 0.699,
+    "delta_d1_d60": 0.0583,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 8.83,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q60-v50-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6433,
+    "day30_accuracy": 0.6491,
+    "day60_accuracy": 0.6328,
+    "delta_d1_d60": -0.0105,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 15.87,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q60-v200-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.7005,
+    "day30_accuracy": 0.7246,
+    "day60_accuracy": 0.7071,
+    "delta_d1_d60": 0.0066,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 47.0,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 27.0,
+        "pct_converged": 0.2
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 6.2,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q60-v200-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6742,
+    "day30_accuracy": 0.661,
+    "day60_accuracy": 0.6378,
+    "delta_d1_d60": -0.0365,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 15.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 8.7,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q60-v200-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6734,
+    "day30_accuracy": 0.586,
+    "day60_accuracy": 0.5639,
+    "delta_d1_d60": -0.1095,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 16.35,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q80-v50-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.7008,
+    "day30_accuracy": 0.7021,
+    "day60_accuracy": 0.6984,
+    "delta_d1_d60": -0.0024,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 6.22,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q80-v50-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6708,
+    "day30_accuracy": 0.6878,
+    "day60_accuracy": 0.6543,
+    "delta_d1_d60": -0.0165,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 8.63,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q80-v50-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6677,
+    "day30_accuracy": 0.6573,
+    "day60_accuracy": 0.5931,
+    "delta_d1_d60": -0.0747,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 16.26,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q80-v200-r0",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.7072,
+    "day30_accuracy": 0.7193,
+    "day60_accuracy": 0.7149,
+    "delta_d1_d60": 0.0077,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 20.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 44.0,
+        "pct_converged": 0.1
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.5,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 33.0,
+        "pct_converged": 0.2
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 28.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 6.26,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q80-v200-r3",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6904,
+    "day30_accuracy": 0.6503,
+    "day60_accuracy": 0.6126,
+    "delta_d1_d60": -0.0778,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 8.4,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-diagonal-s22-q80-v200-r6",
+    "domain": "soc",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6828,
+    "day30_accuracy": 0.5837,
+    "day60_accuracy": 0.5585,
+    "delta_d1_d60": -0.1243,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 15.82,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q60-v50-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.9545,
+    "day30_accuracy": 0.9859,
+    "day60_accuracy": 0.9889,
+    "delta_d1_d60": 0.0345,
+    "cats_converged": 2,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 45.6,
+        "pct_converged": 0.7
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 42.0,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 50.0,
+        "pct_converged": 0.4
+      },
+      "insider_threat": {
+        "mean_conv_day": 47.8,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 49.4,
+        "pct_converged": 0.5
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 36.74,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q60-v50-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9581,
+    "day30_accuracy": 0.9855,
+    "day60_accuracy": 0.9828,
+    "delta_d1_d60": 0.0247,
+    "cats_converged": 1,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 42.0,
+        "pct_converged": 0.8
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 45.2,
+        "pct_converged": 0.4
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 49.5,
+        "pct_converged": 0.4
+      },
+      "insider_threat": {
+        "mean_conv_day": 49.5,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 46.2,
+        "pct_converged": 0.4
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 47.32,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q60-v50-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.9509,
+    "day30_accuracy": 0.9757,
+    "day60_accuracy": 0.9789,
+    "delta_d1_d60": 0.0281,
+    "cats_converged": 1,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 41.5,
+        "pct_converged": 0.8
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 42.5,
+        "pct_converged": 0.4
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 48.2,
+        "pct_converged": 0.4
+      },
+      "insider_threat": {
+        "mean_conv_day": 53.0,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 44.3,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 75.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q60-v200-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.954,
+    "day30_accuracy": 0.9884,
+    "day60_accuracy": 0.9952,
+    "delta_d1_d60": 0.0411,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.8,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 23.5,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 22.8,
+        "pct_converged": 0.9
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 22.4,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 15.7,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 18.5,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 36.36,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q60-v200-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9512,
+    "day30_accuracy": 0.9843,
+    "day60_accuracy": 0.9898,
+    "delta_d1_d60": 0.0386,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.3,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 25.9,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 25.9,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 18.2,
+        "pct_converged": 0.9
+      },
+      "insider_threat": {
+        "mean_conv_day": 16.5,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 17.3,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 48.29,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q60-v200-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.9438,
+    "day30_accuracy": 0.9796,
+    "day60_accuracy": 0.9792,
+    "delta_d1_d60": 0.0355,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.8,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 25.6,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 25.2,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 14.7,
+        "pct_converged": 0.7
+      },
+      "insider_threat": {
+        "mean_conv_day": 17.1,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 18.0,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 76.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q80-v50-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.9453,
+    "day30_accuracy": 0.9823,
+    "day60_accuracy": 0.9893,
+    "delta_d1_d60": 0.044,
+    "cats_converged": 4,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 44.0,
+        "pct_converged": 0.9
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 60.0,
+        "pct_converged": 0.1
+      },
+      "lateral_movement": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 45.9,
+        "pct_converged": 0.8
+      },
+      "insider_threat": {
+        "mean_conv_day": 50.1,
+        "pct_converged": 0.9
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 42.5,
+        "pct_converged": 0.6
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 35.16,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q80-v50-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9499,
+    "day30_accuracy": 0.9719,
+    "day60_accuracy": 0.9914,
+    "delta_d1_d60": 0.0415,
+    "cats_converged": 4,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 40.4,
+        "pct_converged": 0.7
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 60.0,
+        "pct_converged": 0.1
+      },
+      "lateral_movement": {
+        "mean_conv_day": 44.7,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 47.1,
+        "pct_converged": 0.8
+      },
+      "insider_threat": {
+        "mean_conv_day": 47.9,
+        "pct_converged": 0.7
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 45.3,
+        "pct_converged": 0.6
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 46.6,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q80-v50-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.9441,
+    "day30_accuracy": 0.9615,
+    "day60_accuracy": 0.9747,
+    "delta_d1_d60": 0.0307,
+    "cats_converged": 3,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 37.4,
+        "pct_converged": 0.7
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 58.5,
+        "pct_converged": 0.2
+      },
+      "lateral_movement": {
+        "mean_conv_day": 43.7,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 46.3,
+        "pct_converged": 0.6
+      },
+      "insider_threat": {
+        "mean_conv_day": 45.8,
+        "pct_converged": 0.4
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 47.7,
+        "pct_converged": 0.6
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 75.03,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q80-v200-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.9533,
+    "day30_accuracy": 0.9944,
+    "day60_accuracy": 0.9923,
+    "delta_d1_d60": 0.039,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.1,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 19.9,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 18.4,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 15.4,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 14.2,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 14.8,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 34.9,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q80-v200-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.9486,
+    "day30_accuracy": 0.9899,
+    "day60_accuracy": 0.9875,
+    "delta_d1_d60": 0.0388,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.5,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 21.8,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 18.8,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 14.7,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 15.6,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 14.7,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 45.34,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s08-q80-v200-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.941,
+    "day30_accuracy": 0.9801,
+    "day60_accuracy": 0.98,
+    "delta_d1_d60": 0.039,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.9,
+        "pct_converged": 1.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 23.0,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 19.1,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 15.1,
+        "pct_converged": 1.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 16.5,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 15.7,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 72.28,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q60-v50-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8126,
+    "day30_accuracy": 0.8673,
+    "day60_accuracy": 0.8666,
+    "delta_d1_d60": 0.054,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 56.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 55.0,
+        "pct_converged": 0.1
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 47.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 12.12,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q60-v50-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.7908,
+    "day30_accuracy": 0.8385,
+    "day60_accuracy": 0.8405,
+    "delta_d1_d60": 0.0497,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 48.0,
+        "pct_converged": 0.2
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 52.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 52.0,
+        "pct_converged": 0.1
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 56.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 16.15,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q60-v50-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.7813,
+    "day30_accuracy": 0.8165,
+    "day60_accuracy": 0.8069,
+    "delta_d1_d60": 0.0256,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 50.5,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 27.67,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q60-v200-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8238,
+    "day30_accuracy": 0.8743,
+    "day60_accuracy": 0.8748,
+    "delta_d1_d60": 0.051,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 18.3,
+        "pct_converged": 0.6
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 44.1,
+        "pct_converged": 0.7
+      },
+      "lateral_movement": {
+        "mean_conv_day": 26.8,
+        "pct_converged": 0.8
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 22.4,
+        "pct_converged": 0.5
+      },
+      "insider_threat": {
+        "mean_conv_day": 24.0,
+        "pct_converged": 0.8
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 29.6,
+        "pct_converged": 0.9
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 12.03,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q60-v200-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.8028,
+    "day30_accuracy": 0.8347,
+    "day60_accuracy": 0.8254,
+    "delta_d1_d60": 0.0226,
+    "cats_converged": 4,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 12.5,
+        "pct_converged": 0.4
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 44.5,
+        "pct_converged": 0.6
+      },
+      "lateral_movement": {
+        "mean_conv_day": 32.6,
+        "pct_converged": 0.8
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 19.0,
+        "pct_converged": 0.3
+      },
+      "insider_threat": {
+        "mean_conv_day": 34.6,
+        "pct_converged": 0.5
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 35.4,
+        "pct_converged": 0.7
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 16.38,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q60-v200-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.8014,
+    "day30_accuracy": 0.7758,
+    "day60_accuracy": 0.7515,
+    "delta_d1_d60": -0.05,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 17.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 41.3,
+        "pct_converged": 0.3
+      },
+      "lateral_movement": {
+        "mean_conv_day": 27.7,
+        "pct_converged": 0.3
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 19.5,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 28.49,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q80-v50-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8115,
+    "day30_accuracy": 0.8697,
+    "day60_accuracy": 0.8749,
+    "delta_d1_d60": 0.0634,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 50.0,
+        "pct_converged": 0.2
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 45.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 52.0,
+        "pct_converged": 0.3
+      },
+      "insider_threat": {
+        "mean_conv_day": 60.0,
+        "pct_converged": 0.1
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 11.83,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q80-v50-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.7979,
+    "day30_accuracy": 0.8473,
+    "day60_accuracy": 0.8318,
+    "delta_d1_d60": 0.0338,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 41.0,
+        "pct_converged": 0.2
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 58.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 59.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 15.98,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q80-v50-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.7917,
+    "day30_accuracy": 0.8284,
+    "day60_accuracy": 0.7789,
+    "delta_d1_d60": -0.0128,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 28.18,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q80-v200-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.8263,
+    "day30_accuracy": 0.8837,
+    "day60_accuracy": 0.8936,
+    "delta_d1_d60": 0.0673,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 25.2,
+        "pct_converged": 0.9
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 35.9,
+        "pct_converged": 1.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 27.1,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 26.2,
+        "pct_converged": 0.9
+      },
+      "insider_threat": {
+        "mean_conv_day": 24.3,
+        "pct_converged": 1.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 24.2,
+        "pct_converged": 1.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 11.75,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q80-v200-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.8094,
+    "day30_accuracy": 0.834,
+    "day60_accuracy": 0.8349,
+    "delta_d1_d60": 0.0256,
+    "cats_converged": 6,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 33.6,
+        "pct_converged": 0.5
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 29.6,
+        "pct_converged": 0.5
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.2,
+        "pct_converged": 1.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 21.8,
+        "pct_converged": 0.5
+      },
+      "insider_threat": {
+        "mean_conv_day": 24.1,
+        "pct_converged": 0.8
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 26.6,
+        "pct_converged": 0.9
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 15.56,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s15-q80-v200-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.8012,
+    "day30_accuracy": 0.7648,
+    "day60_accuracy": 0.7214,
+    "delta_d1_d60": -0.0798,
+    "cats_converged": 1,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 13.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 49.0,
+        "pct_converged": 0.2
+      },
+      "lateral_movement": {
+        "mean_conv_day": 25.6,
+        "pct_converged": 0.7
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 20.0,
+        "pct_converged": 0.1
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 26.7,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 27.12,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q60-v50-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.6794,
+    "day30_accuracy": 0.7169,
+    "day60_accuracy": 0.7107,
+    "delta_d1_d60": 0.0314,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 6.32,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q60-v50-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6406,
+    "day30_accuracy": 0.6767,
+    "day60_accuracy": 0.699,
+    "delta_d1_d60": 0.0583,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 8.83,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q60-v50-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6433,
+    "day30_accuracy": 0.6491,
+    "day60_accuracy": 0.6328,
+    "delta_d1_d60": -0.0105,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.922,
+    "conservation_min": 1.65,
+    "cov_n_samples": 29972,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 15.87,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 889,
+      "total": 889,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q60-v200-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.7005,
+    "day30_accuracy": 0.7246,
+    "day60_accuracy": 0.7071,
+    "delta_d1_d60": 0.0066,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 47.0,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 27.0,
+        "pct_converged": 0.2
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 6.2,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q60-v200-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6742,
+    "day30_accuracy": 0.661,
+    "day60_accuracy": 0.6378,
+    "delta_d1_d60": -0.0365,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 15.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 8.7,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q60-v200-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6734,
+    "day30_accuracy": 0.586,
+    "day60_accuracy": 0.5639,
+    "delta_d1_d60": -0.1095,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 8.037,
+    "conservation_min": 7.7,
+    "cov_n_samples": 120125,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 16.35,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3544,
+      "total": 3544,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q80-v50-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.7008,
+    "day30_accuracy": 0.7021,
+    "day60_accuracy": 0.6984,
+    "delta_d1_d60": -0.0024,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 6.22,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q80-v50-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6708,
+    "day30_accuracy": 0.6878,
+    "day60_accuracy": 0.6543,
+    "delta_d1_d60": -0.0165,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 8.63,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q80-v50-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6677,
+    "day30_accuracy": 0.6573,
+    "day60_accuracy": 0.5931,
+    "delta_d1_d60": -0.0747,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.932,
+    "conservation_min": 1.7,
+    "cov_n_samples": 29779,
+    "cov_shrinkage_lambda": 0.0002,
+    "cov_condition_number": 16.26,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 897,
+      "total": 897,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q80-v200-r0",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.7072,
+    "day30_accuracy": 0.7193,
+    "day60_accuracy": 0.7149,
+    "delta_d1_d60": 0.0077,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 20.0,
+        "pct_converged": 0.1
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 44.0,
+        "pct_converged": 0.1
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.5,
+        "pct_converged": 0.2
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": 33.0,
+        "pct_converged": 0.2
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 28.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 6.26,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q80-v200-r3",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.6904,
+    "day30_accuracy": 0.6503,
+    "day60_accuracy": 0.6126,
+    "delta_d1_d60": -0.0778,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": 29.0,
+        "pct_converged": 0.1
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 8.4,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "SOC-shrinkage-s22-q80-v200-r6",
+    "domain": "soc",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.6828,
+    "day30_accuracy": 0.5837,
+    "day60_accuracy": 0.5585,
+    "delta_d1_d60": -0.1243,
+    "cats_converged": 0,
+    "cats_total": 6,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "threat_intel_match": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "lateral_movement": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.715,
+    "conservation_min": 7.333,
+    "cov_n_samples": 120178,
+    "cov_shrinkage_lambda": 0.0,
+    "cov_condition_number": 15.82,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3680,
+      "total": 3680,
+      "gate_rate": 0.0
+    }
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "2G-GE1": {
+    "enrich_day": 45,
+    "pre_noise_mean": 0.15,
+    "post_noise_mean": 0.125,
+    "noise_drop": 0.025,
+    "pre_apd": 180,
+    "post_apd": 250,
+    "pre_acc": 0.8551,
+    "post_acc": 0.9261,
+    "delta_acc": 0.0711,
+    "dip_magnitude": 0.0031,
+    "dip_within_gate": true,
+    "boundary_pre": {
+      "credential_access": 0.1613,
+      "threat_intel_match": 0.0927,
+      "lateral_movement": 0.1002,
+      "data_exfiltration": 0.1815,
+      "insider_threat": 0.1122,
+      "cloud_infrastructure": 0.0996
+    },
+    "boundary_post": {
+      "credential_access": 0.1295,
+      "threat_intel_match": 0.0808,
+      "lateral_movement": 0.099,
+      "data_exfiltration": 0.177,
+      "insider_threat": 0.0976,
+      "cloud_infrastructure": 0.0873
+    },
+    "pre_rate": 0.000573,
+    "post_rate": 0.001642,
+    "rate_accelerated": true
+  },
+  "2G-GE2": {
+    "enrich_day": 30,
+    "pre_noise_mean": 0.1917,
+    "post_noise_mean": 0.1467,
+    "noise_drop": 0.045,
+    "pre_apd": 160,
+    "post_apd": 160,
+    "pre_acc": 0.7321,
+    "post_acc": 0.8597,
+    "delta_acc": 0.1276,
+    "dip_magnitude": 0.007,
+    "dip_within_gate": true,
+    "boundary_pre": {
+      "credential_access": 0.2633,
+      "threat_intel_match": 0.1509,
+      "lateral_movement": 0.1832,
+      "data_exfiltration": 0.3013,
+      "insider_threat": 0.1927,
+      "cloud_infrastructure": 0.2147
+    },
+    "boundary_post": {
+      "credential_access": 0.2301,
+      "threat_intel_match": 0.1218,
+      "lateral_movement": 0.1445,
+      "data_exfiltration": 0.2826,
+      "insider_threat": 0.1605,
+      "cloud_infrastructure": 0.1597
+    },
+    "pre_rate": -0.00103,
+    "post_rate": 0.001313,
+    "rate_accelerated": true
+  }
+}

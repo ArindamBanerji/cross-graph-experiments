@@ -1,0 +1,111 @@
+[
+  {
+    "persona_id": "VB1-1",
+    "judge": "validation",
+    "name": "Balanced Team at AMBER Low End (σ=0.120)",
+    "industry": "Financial Services",
+    "company_size": "2000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.35,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.12,
+      "insider_threat": 0.10,
+      "cloud_infrastructure": 0.18,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 7, "override_rate": 0.14, "override_quality": 0.90, "shift": "day", "fatigue_factor": 0.18, "specialization": "credential_access"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 3, "override_rate": 0.26, "override_quality": 0.78, "shift": "swing", "fatigue_factor": 0.28, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 4, "override_rate": 0.24, "override_quality": 0.80, "shift": "day", "fatigue_factor": 0.22, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_4", "experience_level": "junior", "years_experience": 1, "override_rate": 0.42, "override_quality": 0.63, "shift": "night", "fatigue_factor": 0.40, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "AMBER low end"},
+      "asset_criticality": {"base_noise": 0.11, "note": "Just above GREEN"},
+      "threat_intel_enrichment": {"base_noise": 0.10, "note": "At GREEN boundary"},
+      "time_anomaly": {"base_noise": 0.14, "note": "AMBER mid"},
+      "pattern_history": {"base_noise": 0.12, "note": "AMBER low end"},
+      "device_trust": {"base_noise": 0.13, "note": "AMBER low-mid"}
+    },
+    "environment_shifts": [
+      {"day": 25, "type": "campaign", "description": "Phishing campaign increases credential alerts", "category_impact": {"credential_access": 1.4}, "duration_days": 10}
+    ],
+    "graph_state": {"initial_entities": 8000, "threat_indicators": 3000, "siem_sources": 2, "entity_resolution_completeness": 0.80},
+    "business_context": "Validation: balanced team at AMBER low end (σ≈0.12). η_override=0.01 should produce positive learning. If degradation occurs here, AMBER zone is unsafe for learning."
+  },
+  {
+    "persona_id": "VB1-2",
+    "judge": "validation",
+    "name": "Mixed Team at AMBER Mid (σ=0.140)",
+    "industry": "Healthcare",
+    "company_size": "5000",
+    "siem": "Splunk",
+    "alerts_per_day": 300,
+    "category_distribution": {
+      "credential_access": 0.22,
+      "lateral_movement": 0.12,
+      "data_exfiltration": 0.15,
+      "insider_threat": 0.20,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.16
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 6, "override_rate": 0.16, "override_quality": 0.88, "shift": "day", "fatigue_factor": 0.20, "specialization": "insider_threat"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 3, "override_rate": 0.28, "override_quality": 0.76, "shift": "swing", "fatigue_factor": 0.30, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "junior", "years_experience": 1, "override_rate": 0.44, "override_quality": 0.60, "shift": "night", "fatigue_factor": 0.42, "specialization": "generalist"},
+      {"id": "analyst_4", "experience_level": "junior", "years_experience": 1, "override_rate": 0.46, "override_quality": 0.58, "shift": "day", "fatigue_factor": 0.30, "specialization": "data_exfiltration"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.15, "note": "AMBER mid-high"},
+      "asset_criticality": {"base_noise": 0.14, "note": "AMBER mid"},
+      "threat_intel_enrichment": {"base_noise": 0.12, "note": "AMBER low"},
+      "time_anomaly": {"base_noise": 0.16, "note": "Near ceiling"},
+      "pattern_history": {"base_noise": 0.14, "note": "AMBER mid"},
+      "device_trust": {"base_noise": 0.13, "note": "AMBER low-mid"}
+    },
+    "environment_shifts": [
+      {"day": 15, "type": "seasonal", "description": "Flu season staffing changes", "category_impact": {"credential_access": 1.2, "insider_threat": 1.15}, "duration_days": 14}
+    ],
+    "graph_state": {"initial_entities": 25000, "threat_indicators": 8000, "siem_sources": 1, "entity_resolution_completeness": 0.72},
+    "business_context": "Validation: mixed team with 2 juniors at AMBER mid (σ≈0.14). Healthcare noise profile. Tests whether η_override=0.01 holds when noise is moderate AND team quality is mixed."
+  },
+  {
+    "persona_id": "VB1-3",
+    "judge": "validation",
+    "name": "Mixed Team at AMBER Ceiling (σ=0.155)",
+    "industry": "Healthcare",
+    "company_size": "8000",
+    "siem": "Splunk",
+    "alerts_per_day": 250,
+    "category_distribution": {
+      "credential_access": 0.20,
+      "lateral_movement": 0.10,
+      "data_exfiltration": 0.18,
+      "insider_threat": 0.22,
+      "cloud_infrastructure": 0.12,
+      "threat_intel_match": 0.18
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 8, "override_rate": 0.13, "override_quality": 0.91, "shift": "day", "fatigue_factor": 0.20, "specialization": "insider_threat"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 4, "override_rate": 0.25, "override_quality": 0.79, "shift": "swing", "fatigue_factor": 0.32, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "junior", "years_experience": 1, "override_rate": 0.43, "override_quality": 0.62, "shift": "night", "fatigue_factor": 0.48, "specialization": "generalist"},
+      {"id": "analyst_4", "experience_level": "junior", "years_experience": 1, "override_rate": 0.47, "override_quality": 0.57, "shift": "swing", "fatigue_factor": 0.38, "specialization": "generalist"},
+      {"id": "analyst_5", "experience_level": "mid", "years_experience": 3, "override_rate": 0.27, "override_quality": 0.77, "shift": "day", "fatigue_factor": 0.24, "specialization": "data_exfiltration"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.16, "note": "Just below ceiling"},
+      "asset_criticality": {"base_noise": 0.15, "note": "Near ceiling"},
+      "threat_intel_enrichment": {"base_noise": 0.14, "note": "AMBER high"},
+      "time_anomaly": {"base_noise": 0.18, "note": "Above factor ceiling"},
+      "pattern_history": {"base_noise": 0.16, "note": "Just below ceiling"},
+      "device_trust": {"base_noise": 0.14, "note": "AMBER high"}
+    },
+    "environment_shifts": [
+      {"day": 35, "type": "incident", "description": "Ransomware at peer hospital elevates threat feeds", "category_impact": {"threat_intel_match": 1.5, "lateral_movement": 1.3}, "duration_days": 8}
+    ],
+    "graph_state": {"initial_entities": 40000, "threat_indicators": 12000, "siem_sources": 1, "entity_resolution_completeness": 0.68},
+    "business_context": "Validation: mixed team at AMBER ceiling (σ≈0.155). The razor's edge. If this shows degradation, the AMBER zone boundary should be tightened. If it holds, 0.157 is confirmed."
+  }
+]

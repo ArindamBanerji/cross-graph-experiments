@@ -1,0 +1,134 @@
+[
+  {
+    "persona_id": "VB3-1",
+    "judge": "validation",
+    "name": "Junior Team at Noise Ceiling (σ=0.157, q̄=0.60, V=50)",
+    "industry": "Technology",
+    "company_size": "120",
+    "siem": "Sentinel",
+    "alerts_per_day": 50,
+    "category_distribution": {
+      "credential_access": 0.30,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.15,
+      "insider_threat": 0.10,
+      "cloud_infrastructure": 0.20,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "mid", "years_experience": 3, "override_rate": 0.30, "override_quality": 0.72, "shift": "day", "fatigue_factor": 0.25, "specialization": "generalist"},
+      {"id": "analyst_2", "experience_level": "junior", "years_experience": 1, "override_rate": 0.45, "override_quality": 0.58, "shift": "swing", "fatigue_factor": 0.35, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "junior", "years_experience": 1, "override_rate": 0.48, "override_quality": 0.55, "shift": "night", "fatigue_factor": 0.45, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.16, "note": "At ceiling threshold"},
+      "asset_criticality": {"base_noise": 0.15, "note": "At ceiling threshold"},
+      "threat_intel_enrichment": {"base_noise": 0.14, "note": "Slightly below ceiling"},
+      "time_anomaly": {"base_noise": 0.18, "note": "Above ceiling for this factor"},
+      "pattern_history": {"base_noise": 0.16, "note": "At ceiling threshold"},
+      "device_trust": {"base_noise": 0.15, "note": "At ceiling threshold"}
+    },
+    "environment_shifts": [],
+    "graph_state": {"initial_entities": 800, "threat_indicators": 120, "siem_sources": 1, "entity_resolution_completeness": 0.55},
+    "business_context": "Validation persona: tests whether σ=0.157 ceiling holds for junior-heavy teams (q̄≈0.60) at low volume (V=50). The triple stress case."
+  },
+  {
+    "persona_id": "VB3-2",
+    "judge": "validation",
+    "name": "Junior Team Below Ceiling (σ=0.130, q̄=0.60, V=50)",
+    "industry": "Technology",
+    "company_size": "120",
+    "siem": "Sentinel",
+    "alerts_per_day": 50,
+    "category_distribution": {
+      "credential_access": 0.30,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.15,
+      "insider_threat": 0.10,
+      "cloud_infrastructure": 0.20,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "mid", "years_experience": 3, "override_rate": 0.30, "override_quality": 0.72, "shift": "day", "fatigue_factor": 0.25, "specialization": "generalist"},
+      {"id": "analyst_2", "experience_level": "junior", "years_experience": 1, "override_rate": 0.45, "override_quality": 0.58, "shift": "swing", "fatigue_factor": 0.35, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "junior", "years_experience": 1, "override_rate": 0.48, "override_quality": 0.55, "shift": "night", "fatigue_factor": 0.45, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.13, "note": "Below ceiling — safe zone"},
+      "asset_criticality": {"base_noise": 0.12, "note": "Below ceiling"},
+      "threat_intel_enrichment": {"base_noise": 0.12, "note": "Below ceiling"},
+      "time_anomaly": {"base_noise": 0.15, "note": "At ceiling for this factor"},
+      "pattern_history": {"base_noise": 0.13, "note": "Below ceiling"},
+      "device_trust": {"base_noise": 0.13, "note": "Below ceiling"}
+    },
+    "environment_shifts": [],
+    "graph_state": {"initial_entities": 800, "threat_indicators": 120, "siem_sources": 1, "entity_resolution_completeness": 0.55},
+    "business_context": "Validation persona: same junior team and volume as VB3-1 but noise below ceiling (σ≈0.13). Should show learning works. If it doesn't, the ceiling is lower than 0.157 for junior teams."
+  },
+  {
+    "persona_id": "VB3-3",
+    "judge": "validation",
+    "name": "Junior Team Above Ceiling (σ=0.190, q̄=0.60, V=50)",
+    "industry": "Technology",
+    "company_size": "120",
+    "siem": "Sentinel",
+    "alerts_per_day": 50,
+    "category_distribution": {
+      "credential_access": 0.30,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.15,
+      "insider_threat": 0.10,
+      "cloud_infrastructure": 0.20,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "mid", "years_experience": 3, "override_rate": 0.30, "override_quality": 0.72, "shift": "day", "fatigue_factor": 0.25, "specialization": "generalist"},
+      {"id": "analyst_2", "experience_level": "junior", "years_experience": 1, "override_rate": 0.45, "override_quality": 0.58, "shift": "swing", "fatigue_factor": 0.35, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "junior", "years_experience": 1, "override_rate": 0.48, "override_quality": 0.55, "shift": "night", "fatigue_factor": 0.45, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.19, "note": "Above ceiling — should degrade"},
+      "asset_criticality": {"base_noise": 0.18, "note": "Above ceiling"},
+      "threat_intel_enrichment": {"base_noise": 0.17, "note": "Above ceiling"},
+      "time_anomaly": {"base_noise": 0.22, "note": "Well above ceiling"},
+      "pattern_history": {"base_noise": 0.20, "note": "Above ceiling"},
+      "device_trust": {"base_noise": 0.18, "note": "Above ceiling"}
+    },
+    "environment_shifts": [],
+    "graph_state": {"initial_entities": 800, "threat_indicators": 120, "siem_sources": 1, "entity_resolution_completeness": 0.55},
+    "business_context": "Validation persona: same junior team and volume but noise well above ceiling (σ≈0.19). Expected to show degradation. Confirms the RED boundary for junior teams."
+  },
+  {
+    "persona_id": "VB3-4",
+    "judge": "validation",
+    "name": "Junior Team at Ceiling with Higher Volume (σ=0.157, q̄=0.60, V=200)",
+    "industry": "Technology",
+    "company_size": "500",
+    "siem": "Sentinel",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.30,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.15,
+      "insider_threat": 0.10,
+      "cloud_infrastructure": 0.20,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "mid", "years_experience": 3, "override_rate": 0.30, "override_quality": 0.72, "shift": "day", "fatigue_factor": 0.25, "specialization": "generalist"},
+      {"id": "analyst_2", "experience_level": "junior", "years_experience": 1, "override_rate": 0.45, "override_quality": 0.58, "shift": "swing", "fatigue_factor": 0.35, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "junior", "years_experience": 1, "override_rate": 0.48, "override_quality": 0.55, "shift": "night", "fatigue_factor": 0.45, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.16, "note": "At ceiling threshold"},
+      "asset_criticality": {"base_noise": 0.15, "note": "At ceiling threshold"},
+      "threat_intel_enrichment": {"base_noise": 0.14, "note": "Slightly below ceiling"},
+      "time_anomaly": {"base_noise": 0.18, "note": "Above ceiling for this factor"},
+      "pattern_history": {"base_noise": 0.16, "note": "At ceiling threshold"},
+      "device_trust": {"base_noise": 0.15, "note": "At ceiling threshold"}
+    },
+    "environment_shifts": [],
+    "graph_state": {"initial_entities": 3000, "threat_indicators": 500, "siem_sources": 1, "entity_resolution_completeness": 0.65},
+    "business_context": "Validation persona: same noise and team quality as VB3-1 but 4× volume (V=200). Tests whether volume compensates for the triple stress. If VB3-1 fails but VB3-4 passes, the ceiling is volume-dependent for junior teams."
+  }
+]

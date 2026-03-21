@@ -1,0 +1,243 @@
+[
+  {
+    "persona_id": "1D-N1",
+    "judge": "strategy_session",
+    "name": "Ultra-Clean Signal Environment",
+    "industry": "Financial Services",
+    "company_size": "5000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.90,
+        "shift": "day",
+        "fatigue_factor": 0.14,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.17,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.80,
+        "shift": "swing",
+        "fatigue_factor": 0.26,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.65,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.38,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.06, "note": "Ultra-clean: premium HR/travel integration, precise geo data"},
+      "asset_criticality": {"base_noise": 0.05, "note": "Ultra-clean: real-time CMDB, automated discovery"},
+      "threat_intel_enrichment": {"base_noise": 0.05, "note": "Ultra-clean: premium TI feeds, curated IOCs"},
+      "time_anomaly": {"base_noise": 0.08, "note": "Ultra-clean: precise time-zone-aware baseline"},
+      "pattern_history": {"base_noise": 0.06, "note": "Ultra-clean: 24+ months verified history"},
+      "device_trust": {"base_noise": 0.07, "note": "Ultra-clean: full MDM, zero-trust posture"}
+    },
+    "environment_shifts": [
+      {
+        "day": 35,
+        "type": "campaign",
+        "description": "Standard credential campaign",
+        "category_impact": {"credential_access": 1.5},
+        "duration_days": 7
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 6000,
+      "threat_indicators": 200,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.92
+    },
+    "business_context": "Noise sweep: ultra-clean (all noise <0.10). Large bank with premium integrations. Q5 showed financial services benefit most from low η_override. This tests whether ultra-clean signals + τ=0.05 (predicted by TD-034 for low noise) produce the BEST convergence in the sweep. Mean noise: 0.062."
+  },
+  {
+    "persona_id": "1D-N2",
+    "judge": "strategy_session",
+    "name": "Clean Signal Environment",
+    "industry": "Financial Services",
+    "company_size": "3000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 7, "override_rate": 0.15, "override_quality": 0.90, "shift": "day", "fatigue_factor": 0.14, "specialization": "credential_access"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 3, "override_rate": 0.26, "override_quality": 0.78, "shift": "day", "fatigue_factor": 0.17, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 4, "override_rate": 0.24, "override_quality": 0.80, "shift": "swing", "fatigue_factor": 0.26, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_4", "experience_level": "junior", "years_experience": 1, "override_rate": 0.40, "override_quality": 0.65, "shift": "day", "fatigue_factor": 0.20, "specialization": "generalist"},
+      {"id": "analyst_5", "experience_level": "junior", "years_experience": 1, "override_rate": 0.38, "override_quality": 0.62, "shift": "swing", "fatigue_factor": 0.30, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.10, "note": "Clean: good HR integration"},
+      "asset_criticality": {"base_noise": 0.08, "note": "Clean: maintained CMDB"},
+      "threat_intel_enrichment": {"base_noise": 0.09, "note": "Clean: multiple TI feeds"},
+      "time_anomaly": {"base_noise": 0.13, "note": "Clean: timezone-aware, minor edge cases"},
+      "pattern_history": {"base_noise": 0.11, "note": "Clean: 12+ months history"},
+      "device_trust": {"base_noise": 0.12, "note": "Clean: mostly managed fleet"}
+    },
+    "environment_shifts": [
+      {"day": 35, "type": "campaign", "description": "Standard credential campaign", "category_impact": {"credential_access": 1.5}, "duration_days": 7}
+    ],
+    "graph_state": {"initial_entities": 4500, "threat_indicators": 150, "siem_sources": 2, "entity_resolution_completeness": 0.88},
+    "business_context": "Noise sweep: clean (0.08-0.15). Well-maintained enterprise. Expected τ=0.08 from TD-034. Mean noise: 0.105."
+  },
+  {
+    "persona_id": "1D-N3",
+    "judge": "strategy_session",
+    "name": "Moderate Noise Environment",
+    "industry": "Technology",
+    "company_size": "2000",
+    "siem": "sentinel",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 7, "override_rate": 0.15, "override_quality": 0.90, "shift": "day", "fatigue_factor": 0.14, "specialization": "credential_access"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 3, "override_rate": 0.26, "override_quality": 0.78, "shift": "day", "fatigue_factor": 0.17, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 4, "override_rate": 0.24, "override_quality": 0.80, "shift": "swing", "fatigue_factor": 0.26, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_4", "experience_level": "junior", "years_experience": 1, "override_rate": 0.40, "override_quality": 0.65, "shift": "day", "fatigue_factor": 0.20, "specialization": "generalist"},
+      {"id": "analyst_5", "experience_level": "junior", "years_experience": 1, "override_rate": 0.38, "override_quality": 0.62, "shift": "swing", "fatigue_factor": 0.30, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.16, "note": "Moderate: remote-first company, travel data incomplete"},
+      "asset_criticality": {"base_noise": 0.14, "note": "Moderate: cloud assets not fully tagged"},
+      "threat_intel_enrichment": {"base_noise": 0.12, "note": "Moderate: community TI feeds, some noise"},
+      "time_anomaly": {"base_noise": 0.19, "note": "Moderate: global distributed team, irregular hours normal"},
+      "pattern_history": {"base_noise": 0.15, "note": "Moderate: 6 months history, some gaps"},
+      "device_trust": {"base_noise": 0.18, "note": "Moderate: BYOD policy, incomplete MDM"}
+    },
+    "environment_shifts": [
+      {"day": 35, "type": "campaign", "description": "Standard credential campaign", "category_impact": {"credential_access": 1.5}, "duration_days": 7}
+    ],
+    "graph_state": {"initial_entities": 3200, "threat_indicators": 110, "siem_sources": 1, "entity_resolution_completeness": 0.78},
+    "business_context": "Noise sweep: moderate (0.12-0.22). Tech company with cloud-native but incomplete tooling. Expected τ=0.10-0.12 from TD-034. This is where the current default τ=0.10 was calibrated. Mean noise: 0.157."
+  },
+  {
+    "persona_id": "1D-N4",
+    "judge": "strategy_session",
+    "name": "Noisy Signal Environment",
+    "industry": "Healthcare",
+    "company_size": "3000",
+    "siem": "splunk",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 7, "override_rate": 0.15, "override_quality": 0.90, "shift": "day", "fatigue_factor": 0.14, "specialization": "credential_access"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 3, "override_rate": 0.26, "override_quality": 0.78, "shift": "day", "fatigue_factor": 0.17, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 4, "override_rate": 0.24, "override_quality": 0.80, "shift": "swing", "fatigue_factor": 0.26, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_4", "experience_level": "junior", "years_experience": 1, "override_rate": 0.40, "override_quality": 0.65, "shift": "day", "fatigue_factor": 0.20, "specialization": "generalist"},
+      {"id": "analyst_5", "experience_level": "junior", "years_experience": 1, "override_rate": 0.38, "override_quality": 0.62, "shift": "swing", "fatigue_factor": 0.30, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.22, "note": "Noisy: clinicians travel between facilities unpredictably"},
+      "asset_criticality": {"base_noise": 0.20, "note": "Noisy: medical devices with unknown criticality levels"},
+      "threat_intel_enrichment": {"base_noise": 0.18, "note": "Noisy: H-ISAC feeds, healthcare-specific but high FP"},
+      "time_anomaly": {"base_noise": 0.25, "note": "Noisy: 24/7 clinical operations, no 'normal' pattern"},
+      "pattern_history": {"base_noise": 0.20, "note": "Noisy: 3 months history, frequent system changes"},
+      "device_trust": {"base_noise": 0.24, "note": "Noisy: medical devices, BYOD clinical, legacy systems"}
+    },
+    "environment_shifts": [
+      {"day": 35, "type": "campaign", "description": "Standard credential campaign", "category_impact": {"credential_access": 1.5}, "duration_days": 7}
+    ],
+    "graph_state": {"initial_entities": 2800, "threat_indicators": 80, "siem_sources": 1, "entity_resolution_completeness": 0.65},
+    "business_context": "Noise sweep: noisy (0.18-0.28). Healthcare with medical devices, BYOD, 24/7 operations. Q5 healthcare personas showed 0pp improvement — noise-limited regardless of η_override. Expected τ=0.12-0.15 from TD-034. Mean noise: 0.215."
+  },
+  {
+    "persona_id": "1D-N5",
+    "judge": "strategy_session",
+    "name": "Chaotic Signal Environment",
+    "industry": "Healthcare",
+    "company_size": "1200",
+    "siem": "splunk",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 7, "override_rate": 0.15, "override_quality": 0.90, "shift": "day", "fatigue_factor": 0.14, "specialization": "credential_access"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 3, "override_rate": 0.26, "override_quality": 0.78, "shift": "day", "fatigue_factor": 0.17, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 4, "override_rate": 0.24, "override_quality": 0.80, "shift": "swing", "fatigue_factor": 0.26, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_4", "experience_level": "junior", "years_experience": 1, "override_rate": 0.40, "override_quality": 0.65, "shift": "day", "fatigue_factor": 0.20, "specialization": "generalist"},
+      {"id": "analyst_5", "experience_level": "junior", "years_experience": 1, "override_rate": 0.38, "override_quality": 0.62, "shift": "swing", "fatigue_factor": 0.30, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.30, "note": "Chaotic: no travel system integration, badge-only"},
+      "asset_criticality": {"base_noise": 0.28, "note": "Chaotic: no CMDB, flat network, unknown devices"},
+      "threat_intel_enrichment": {"base_noise": 0.25, "note": "Chaotic: free OSINT only, high noise"},
+      "time_anomaly": {"base_noise": 0.32, "note": "Chaotic: rural hospital, irregular everything"},
+      "pattern_history": {"base_noise": 0.27, "note": "Chaotic: <3 months history, SIEM just deployed"},
+      "device_trust": {"base_noise": 0.33, "note": "Chaotic: ancient devices, no MDM, shared credentials"}
+    },
+    "environment_shifts": [
+      {"day": 35, "type": "campaign", "description": "Standard credential campaign", "category_impact": {"credential_access": 1.5}, "duration_days": 7}
+    ],
+    "graph_state": {"initial_entities": 600, "threat_indicators": 25, "siem_sources": 1, "entity_resolution_completeness": 0.40},
+    "business_context": "Noise sweep: chaotic (0.25-0.35). Rural hospital network, recently deployed SIEM, minimal tooling. This tests the FLOOR — at what noise level does the scorer add NO value over random? If TD-034 cannot find any τ with ECE<0.10, the product should honestly report 'signal quality insufficient for calibration.' Mean noise: 0.292."
+  }
+]

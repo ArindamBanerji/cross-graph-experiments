@@ -1,0 +1,195 @@
+[
+  {
+    "persona_id": "2D-CE1",
+    "judge": "strategy_session",
+    "name": "Correlated Error: Phishing Campaign Misclassification",
+    "industry": "Financial Services",
+    "company_size": "3000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.90,
+        "shift": "day",
+        "fatigue_factor": 0.14,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.17,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.80,
+        "shift": "swing",
+        "fatigue_factor": 0.26,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.65,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.38,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Normal baseline noise"},
+      "asset_criticality": {"base_noise": 0.09, "note": "Normal"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Normal pre-campaign"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Normal"},
+      "pattern_history": {"base_noise": 0.10, "note": "Normal"},
+      "device_trust": {"base_noise": 0.11, "note": "Normal"}
+    },
+    "environment_shifts": [
+      {
+        "day": 20,
+        "type": "campaign",
+        "description": "CORRELATED ERROR SCENARIO: Sophisticated spear-phishing campaign using legitimate O365 domains. Campaign alerts look like isolated credential_access events individually. 80% of analysts classify campaign alerts as routine credential_access (auto-close) rather than coordinated attack (escalate). The ERROR IS CORRELATED — all analysts make the SAME systematic mistake because the campaign is designed to evade per-alert analysis. The correct classification only becomes apparent from cross-alert correlation that individual analysts cannot perform in real-time. This tests whether N correlated wrong overrides push the credential_access/auto-close centroid catastrophically toward the phishing pattern.",
+        "category_impact": {"credential_access": 2.5, "data_exfiltration": 1.8},
+        "duration_days": 10
+      },
+      {
+        "day": 55,
+        "type": "campaign",
+        "description": "RECOVERY PHASE: Post-campaign normal operations. Tests whether centroids recover from correlated drift within 2× N_half decisions after campaign ends.",
+        "category_impact": {"credential_access": 1.0},
+        "duration_days": 5
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 4200,
+      "threat_indicators": 150,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.85
+    },
+    "business_context": "THE HIGHEST PRIORITY STRESS CASE. During Days 20-30, credential_access volume is 2.5× normal. 80% of analyst overrides on campaign alerts push credential_access centroids in the WRONG direction (toward auto-close for what should be escalated). All 5 analysts make the same error because the campaign is designed to look benign alert-by-alert. This is √N × worse than independent errors. GATE: conservation monitor fires AMBER within 14 days of campaign onset. Centroids recover within 28 decisions (2× N_half) after campaign ends. Asymmetric η limits campaign-period drift."
+  },
+  {
+    "persona_id": "2D-CE2",
+    "judge": "strategy_session",
+    "name": "Correlated Error: Ransomware Volume Spike",
+    "industry": "Healthcare",
+    "company_size": "5000",
+    "siem": "splunk",
+    "alerts_per_day": 150,
+    "category_distribution": {
+      "credential_access": 0.20,
+      "lateral_movement": 0.18,
+      "data_exfiltration": 0.22,
+      "insider_threat": 0.12,
+      "cloud_infrastructure": 0.18,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.14,
+        "override_quality": 0.91,
+        "shift": "day",
+        "fatigue_factor": 0.13,
+        "specialization": "lateral_movement"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.25,
+        "override_quality": 0.79,
+        "shift": "day",
+        "fatigue_factor": 0.18,
+        "specialization": "data_exfiltration"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.28,
+        "override_quality": 0.76,
+        "shift": "swing",
+        "fatigue_factor": 0.28,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.42,
+        "override_quality": 0.63,
+        "shift": "day",
+        "fatigue_factor": 0.22,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.61,
+        "shift": "swing",
+        "fatigue_factor": 0.32,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.16, "note": "Healthcare — clinicians travel between facilities"},
+      "asset_criticality": {"base_noise": 0.12, "note": "Mixed medical device and IT assets"},
+      "threat_intel_enrichment": {"base_noise": 0.10, "note": "H-ISAC feeds, moderate quality"},
+      "time_anomaly": {"base_noise": 0.20, "note": "24/7 clinical operations, irregular patterns"},
+      "pattern_history": {"base_noise": 0.14, "note": "6 months operational history"},
+      "device_trust": {"base_noise": 0.22, "note": "Medical devices with outdated firmware, BYOD clinical"}
+    },
+    "environment_shifts": [
+      {
+        "day": 15,
+        "type": "campaign",
+        "description": "CORRELATED VOLUME SCENARIO: Ransomware incident. All analysts correctly escalate lateral_movement and data_exfiltration alerts — the ERROR is not in classification but in VOLUME overwhelming category distribution. lateral_movement goes from 18% to 55% of all alerts. Centroids for OTHER categories starve because analyst attention is consumed by the incident. credential_access and insider_threat get almost no verified decisions for 14 days.",
+        "category_impact": {"lateral_movement": 3.0, "data_exfiltration": 2.5, "credential_access": 0.3, "insider_threat": 0.2},
+        "duration_days": 14
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 8500,
+      "threat_indicators": 200,
+      "siem_sources": 1,
+      "entity_resolution_completeness": 0.72
+    },
+    "business_context": "VOLUME CORRELATION stress case. During a ransomware incident, classification is CORRECT (analysts escalate appropriately) but volume DISTRIBUTION shifts dramatically. Lateral_movement and data_exfiltration dominate. Other categories starve. Tests: (1) Does conservation law fire for starved categories (credential_access gets V≈9/day instead of 30/day)? (2) Do starved category centroids DEGRADE from lack of updates? (3) After incident resolves (Day 29+), how quickly do starved categories resume convergence? This is a DIFFERENT correlated error than 2D-CE1 — the error is in resource allocation, not classification."
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "persona_id": "1D-N4",
+  "sigma_mean": 0.22,
+  "factor_mask": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    0.0
+  ],
+  "masked_factors": [
+    "time_anomaly",
+    "device_trust"
+  ],
+  "condition_a": {
+    "acc_day1": 0.7134,
+    "acc_day30": 0.6597,
+    "acc_day60": 0.6395,
+    "delta": -0.0739,
+    "n_cats_converged": 0,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 10.0,
+        "n_converged": 1,
+        "not_converged": 14
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 18.0,
+        "n_converged": 1,
+        "not_converged": 14
+      },
+      "lateral_movement": {
+        "mean_conv_day": 15.5,
+        "n_converged": 4,
+        "not_converged": 11
+      },
+      "data_exfiltration": {
+        "mean_conv_day": null,
+        "n_converged": 0,
+        "not_converged": 15
+      },
+      "insider_threat": {
+        "mean_conv_day": null,
+        "n_converged": 0,
+        "not_converged": 15
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": null,
+        "n_converged": 0,
+        "not_converged": 15
+      }
+    }
+  },
+  "condition_b": {
+    "acc_day1": 0.6564,
+    "acc_day30": 0.6249,
+    "acc_day60": 0.6215,
+    "delta": -0.0349,
+    "n_cats_converged": 0,
+    "convergence": {
+      "credential_access": {
+        "mean_conv_day": 6.5,
+        "n_converged": 4,
+        "not_converged": 11
+      },
+      "threat_intel_match": {
+        "mean_conv_day": 10.2,
+        "n_converged": 4,
+        "not_converged": 11
+      },
+      "lateral_movement": {
+        "mean_conv_day": 15.1,
+        "n_converged": 8,
+        "not_converged": 7
+      },
+      "data_exfiltration": {
+        "mean_conv_day": 11.5,
+        "n_converged": 2,
+        "not_converged": 13
+      },
+      "insider_threat": {
+        "mean_conv_day": 7.0,
+        "n_converged": 1,
+        "not_converged": 14
+      },
+      "cloud_infrastructure": {
+        "mean_conv_day": 16.5,
+        "n_converged": 2,
+        "not_converged": 13
+      }
+    }
+  }
+}

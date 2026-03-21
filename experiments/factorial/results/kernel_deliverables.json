@@ -1,0 +1,995 @@
+{
+  "meta": {
+    "n_seeds_d2": 15,
+    "n_seeds_d3": 10,
+    "days": 60,
+    "eta": 0.05,
+    "eta_override": 0.01,
+    "total_runtime_s": 118.2
+  },
+  "D2": {
+    "deliverable": "D2_vhc_shrinkage",
+    "bc_gap_d60": 0.008,
+    "explanation": "A",
+    "conditions": [
+      {
+        "day1_accuracy": 0.7025,
+        "day30_accuracy": 0.7154,
+        "day60_accuracy": 0.739,
+        "delta_d1_d60": 0.0365,
+        "label": "A: Diagonal",
+        "kernel_name": "Diagonal",
+        "rho_tag": "rho=0.00",
+        "weights": [
+          1.0,
+          0.81,
+          0.8975,
+          0.5184,
+          0.6694,
+          0.4133
+        ]
+      },
+      {
+        "day1_accuracy": 0.6998,
+        "day30_accuracy": 0.7137,
+        "day60_accuracy": 0.731,
+        "delta_d1_d60": 0.0313,
+        "label": "B: Shrinkage rho=0.45",
+        "kernel_name": "Shrinkage_proxy",
+        "rho_tag": "rho=0.45",
+        "weights": [
+          1.0,
+          0.81,
+          0.8975,
+          0.65,
+          0.6694,
+          0.5182
+        ]
+      },
+      {
+        "day1_accuracy": 0.7025,
+        "day30_accuracy": 0.7154,
+        "day60_accuracy": 0.739,
+        "delta_d1_d60": 0.0365,
+        "label": "C: Shrinkage rho=0",
+        "kernel_name": "Shrinkage_proxy",
+        "rho_tag": "rho=0.00",
+        "weights": [
+          1.0,
+          0.81,
+          0.8975,
+          0.5184,
+          0.6694,
+          0.4133
+        ]
+      }
+    ],
+    "convergence": {
+      "A: Diagonal": {
+        "credential_access": {
+          "mean_conv_day": null,
+          "pct_converged": 0.0
+        },
+        "threat_intel_match": {
+          "mean_conv_day": null,
+          "pct_converged": 0.0
+        },
+        "lateral_movement": {
+          "mean_conv_day": 47.0,
+          "pct_converged": 0.133
+        },
+        "data_exfiltration": {
+          "mean_conv_day": 54.0,
+          "pct_converged": 0.067
+        },
+        "insider_threat": {
+          "mean_conv_day": 32.0,
+          "pct_converged": 0.067
+        },
+        "cloud_infrastructure": {
+          "mean_conv_day": 43.0,
+          "pct_converged": 0.133
+        }
+      },
+      "B: Shrinkage rho=0.45": {
+        "credential_access": {
+          "mean_conv_day": 31.0,
+          "pct_converged": 0.067
+        },
+        "threat_intel_match": {
+          "mean_conv_day": 60.0,
+          "pct_converged": 0.067
+        },
+        "lateral_movement": {
+          "mean_conv_day": 52.0,
+          "pct_converged": 0.067
+        },
+        "data_exfiltration": {
+          "mean_conv_day": 38.0,
+          "pct_converged": 0.067
+        },
+        "insider_threat": {
+          "mean_conv_day": null,
+          "pct_converged": 0.0
+        },
+        "cloud_infrastructure": {
+          "mean_conv_day": 37.0,
+          "pct_converged": 0.133
+        }
+      },
+      "C: Shrinkage rho=0": {
+        "credential_access": {
+          "mean_conv_day": null,
+          "pct_converged": 0.0
+        },
+        "threat_intel_match": {
+          "mean_conv_day": null,
+          "pct_converged": 0.0
+        },
+        "lateral_movement": {
+          "mean_conv_day": 47.0,
+          "pct_converged": 0.133
+        },
+        "data_exfiltration": {
+          "mean_conv_day": 54.0,
+          "pct_converged": 0.067
+        },
+        "insider_threat": {
+          "mean_conv_day": 32.0,
+          "pct_converged": 0.067
+        },
+        "cloud_infrastructure": {
+          "mean_conv_day": 43.0,
+          "pct_converged": 0.133
+        }
+      }
+    }
+  },
+  "D3": {
+    "deliverable": "D3_s2p_hetero",
+    "shr_dia_gap": -0.0018,
+    "cells": [
+      {
+        "day1_accuracy": 0.504,
+        "day30_accuracy": 0.5581,
+        "day60_accuracy": 0.5664,
+        "delta_d1_d60": 0.0624,
+        "cell_id": "s2p-l2-s008-q60-hete",
+        "kernel_type": "l2",
+        "sigma_eff": 0.08,
+        "q_bar": 0.6
+      },
+      {
+        "day1_accuracy": 0.4909,
+        "day30_accuracy": 0.5496,
+        "day60_accuracy": 0.5936,
+        "delta_d1_d60": 0.1027,
+        "cell_id": "s2p-diag-s008-q60-hete",
+        "kernel_type": "diagonal",
+        "sigma_eff": 0.08,
+        "q_bar": 0.6
+      },
+      {
+        "day1_accuracy": 0.4966,
+        "day30_accuracy": 0.5538,
+        "day60_accuracy": 0.6012,
+        "delta_d1_d60": 0.1046,
+        "cell_id": "s2p-shri-s008-q60-hete",
+        "kernel_type": "shrinkage",
+        "sigma_eff": 0.08,
+        "q_bar": 0.6
+      },
+      {
+        "day1_accuracy": 0.4901,
+        "day30_accuracy": 0.5501,
+        "day60_accuracy": 0.5736,
+        "delta_d1_d60": 0.0835,
+        "cell_id": "s2p-l2-s008-q80-hete",
+        "kernel_type": "l2",
+        "sigma_eff": 0.08,
+        "q_bar": 0.8
+      },
+      {
+        "day1_accuracy": 0.4786,
+        "day30_accuracy": 0.543,
+        "day60_accuracy": 0.5947,
+        "delta_d1_d60": 0.1161,
+        "cell_id": "s2p-diag-s008-q80-hete",
+        "kernel_type": "diagonal",
+        "sigma_eff": 0.08,
+        "q_bar": 0.8
+      },
+      {
+        "day1_accuracy": 0.4758,
+        "day30_accuracy": 0.5541,
+        "day60_accuracy": 0.6069,
+        "delta_d1_d60": 0.1311,
+        "cell_id": "s2p-shri-s008-q80-hete",
+        "kernel_type": "shrinkage",
+        "sigma_eff": 0.08,
+        "q_bar": 0.8
+      },
+      {
+        "day1_accuracy": 0.4233,
+        "day30_accuracy": 0.4184,
+        "day60_accuracy": 0.4232,
+        "delta_d1_d60": -0.0001,
+        "cell_id": "s2p-l2-s015-q60-hete",
+        "kernel_type": "l2",
+        "sigma_eff": 0.15,
+        "q_bar": 0.6
+      },
+      {
+        "day1_accuracy": 0.4229,
+        "day30_accuracy": 0.4881,
+        "day60_accuracy": 0.5122,
+        "delta_d1_d60": 0.0893,
+        "cell_id": "s2p-diag-s015-q60-hete",
+        "kernel_type": "diagonal",
+        "sigma_eff": 0.15,
+        "q_bar": 0.6
+      },
+      {
+        "day1_accuracy": 0.4181,
+        "day30_accuracy": 0.4747,
+        "day60_accuracy": 0.513,
+        "delta_d1_d60": 0.0949,
+        "cell_id": "s2p-shri-s015-q60-hete",
+        "kernel_type": "shrinkage",
+        "sigma_eff": 0.15,
+        "q_bar": 0.6
+      },
+      {
+        "day1_accuracy": 0.3999,
+        "day30_accuracy": 0.4153,
+        "day60_accuracy": 0.4398,
+        "delta_d1_d60": 0.0399,
+        "cell_id": "s2p-l2-s015-q80-hete",
+        "kernel_type": "l2",
+        "sigma_eff": 0.15,
+        "q_bar": 0.8
+      },
+      {
+        "day1_accuracy": 0.4103,
+        "day30_accuracy": 0.5014,
+        "day60_accuracy": 0.53,
+        "delta_d1_d60": 0.1197,
+        "cell_id": "s2p-diag-s015-q80-hete",
+        "kernel_type": "diagonal",
+        "sigma_eff": 0.15,
+        "q_bar": 0.8
+      },
+      {
+        "day1_accuracy": 0.4009,
+        "day30_accuracy": 0.4702,
+        "day60_accuracy": 0.5168,
+        "delta_d1_d60": 0.1159,
+        "cell_id": "s2p-shri-s015-q80-hete",
+        "kernel_type": "shrinkage",
+        "sigma_eff": 0.15,
+        "q_bar": 0.8
+      },
+      {
+        "day1_accuracy": 0.3634,
+        "day30_accuracy": 0.3395,
+        "day60_accuracy": 0.3305,
+        "delta_d1_d60": -0.0329,
+        "cell_id": "s2p-l2-s022-q60-hete",
+        "kernel_type": "l2",
+        "sigma_eff": 0.22,
+        "q_bar": 0.6
+      },
+      {
+        "day1_accuracy": 0.3737,
+        "day30_accuracy": 0.3949,
+        "day60_accuracy": 0.4316,
+        "delta_d1_d60": 0.0579,
+        "cell_id": "s2p-diag-s022-q60-hete",
+        "kernel_type": "diagonal",
+        "sigma_eff": 0.22,
+        "q_bar": 0.6
+      },
+      {
+        "day1_accuracy": 0.3701,
+        "day30_accuracy": 0.3994,
+        "day60_accuracy": 0.4285,
+        "delta_d1_d60": 0.0583,
+        "cell_id": "s2p-shri-s022-q60-hete",
+        "kernel_type": "shrinkage",
+        "sigma_eff": 0.22,
+        "q_bar": 0.6
+      },
+      {
+        "day1_accuracy": 0.3444,
+        "day30_accuracy": 0.3333,
+        "day60_accuracy": 0.3307,
+        "delta_d1_d60": -0.0137,
+        "cell_id": "s2p-l2-s022-q80-hete",
+        "kernel_type": "l2",
+        "sigma_eff": 0.22,
+        "q_bar": 0.8
+      },
+      {
+        "day1_accuracy": 0.3579,
+        "day30_accuracy": 0.4159,
+        "day60_accuracy": 0.445,
+        "delta_d1_d60": 0.0871,
+        "cell_id": "s2p-diag-s022-q80-hete",
+        "kernel_type": "diagonal",
+        "sigma_eff": 0.22,
+        "q_bar": 0.8
+      },
+      {
+        "day1_accuracy": 0.3521,
+        "day30_accuracy": 0.3928,
+        "day60_accuracy": 0.4301,
+        "delta_d1_d60": 0.0781,
+        "cell_id": "s2p-shri-s022-q80-hete",
+        "kernel_type": "shrinkage",
+        "sigma_eff": 0.22,
+        "q_bar": 0.8
+      }
+    ]
+  },
+  "D4": {
+    "deliverable": "D4_kernel_selector_self_test",
+    "deployment_A": {
+      "label": "Healthcare SOC",
+      "phase2_kernel": "diagonal",
+      "phase2_reason": "Heterogeneous noise (ratio=1.6\u00d7) with low correlation (\u03c1_max=0.15). Diagonal weighting recommended.",
+      "phase4_kernel": "l2",
+      "phase4_method": "empirical",
+      "phase4_reason": "l2 had highest analyst agreement: 59.3% (300/506). Runner-up diagonal: 58.9%. Margin: +0.4%.",
+      "phase4_margin": 0.004,
+      "sufficient_data": true,
+      "stabilized_at": 10,
+      "n_verified": 506,
+      "agreement_rates": {
+        "l2": 0.5929,
+        "diagonal": 0.5889,
+        "shrinkage": 0.5889
+      },
+      "total_decisions": {
+        "l2": 506,
+        "diagonal": 506,
+        "shrinkage": 506
+      },
+      "mean_confidence": {
+        "l2": 0.7562,
+        "diagonal": 0.681,
+        "shrinkage": 0.681
+      }
+    },
+    "deployment_A_trajectory": [
+      {
+        "n_verified": 10,
+        "recommended": "diagonal",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 20,
+        "recommended": "diagonal",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 30,
+        "recommended": "diagonal",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 40,
+        "recommended": "diagonal",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 50,
+        "recommended": "diagonal",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 60,
+        "recommended": "diagonal",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 70,
+        "recommended": "diagonal",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 80,
+        "recommended": "diagonal",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 90,
+        "recommended": "diagonal",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 100,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 110,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 120,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 130,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 140,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 150,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 160,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 170,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 180,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 190,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 200,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 210,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 220,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 230,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 240,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 250,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 260,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 270,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 280,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 290,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 300,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 310,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 320,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 330,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 340,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 350,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 360,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 370,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 380,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 390,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 400,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 410,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 420,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 430,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 440,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 450,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 460,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 470,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 480,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 490,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 500,
+        "recommended": "l2",
+        "method": "empirical",
+        "sufficient_data": true
+      }
+    ],
+    "deployment_B": {
+      "label": "S2P Manufacturing",
+      "phase2_kernel": "shrinkage",
+      "phase2_reason": "Significant factor correlation (\u03c1_max=0.60). Shrinkage kernel recommended to handle off-diagonal structure.",
+      "phase4_kernel": "diagonal",
+      "phase4_method": "empirical",
+      "phase4_reason": "diagonal had highest analyst agreement: 35.7% (181/507). Runner-up shrinkage: 35.7%. Margin: +0.0%.",
+      "phase4_margin": 0.0,
+      "sufficient_data": true,
+      "stabilized_at": 10,
+      "n_verified": 507,
+      "agreement_rates": {
+        "l2": 0.3452,
+        "diagonal": 0.357,
+        "shrinkage": 0.357
+      },
+      "total_decisions": {
+        "l2": 507,
+        "diagonal": 507,
+        "shrinkage": 507
+      },
+      "mean_confidence": {
+        "l2": 0.4875,
+        "diagonal": 0.3159,
+        "shrinkage": 0.3159
+      }
+    },
+    "deployment_B_trajectory": [
+      {
+        "n_verified": 10,
+        "recommended": "shrinkage",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 20,
+        "recommended": "shrinkage",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 30,
+        "recommended": "shrinkage",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 40,
+        "recommended": "shrinkage",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 50,
+        "recommended": "shrinkage",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 60,
+        "recommended": "shrinkage",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 70,
+        "recommended": "shrinkage",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 80,
+        "recommended": "shrinkage",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 90,
+        "recommended": "shrinkage",
+        "method": "rule",
+        "sufficient_data": false
+      },
+      {
+        "n_verified": 100,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 110,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 120,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 130,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 140,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 150,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 160,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 170,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 180,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 190,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 200,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 210,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 220,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 230,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 240,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 250,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 260,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 270,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 280,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 290,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 300,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 310,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 320,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 330,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 340,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 350,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 360,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 370,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 380,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 390,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 400,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 410,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 420,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 430,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 440,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 450,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 460,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 470,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 480,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 490,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      },
+      {
+        "n_verified": 500,
+        "recommended": "diagonal",
+        "method": "empirical",
+        "sufficient_data": true
+      }
+    ]
+  }
+}

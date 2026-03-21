@@ -1,0 +1,397 @@
+{
+  "1C-Q1": {
+    "persona_id": "1C-Q1",
+    "name": "All-Senior SOC Team",
+    "industry": "Financial Services",
+    "q_bar": 0.8778,
+    "td034": {
+      "optimal_tau": 0.05,
+      "ece_at_opt": 0.05758,
+      "ece_at_010": 0.17279,
+      "recalibrate": true
+    },
+    "prod5": {
+      "acc_day1": 0.9341,
+      "acc_day30": 0.9654,
+      "acc_day60": 0.9639,
+      "n_cats_converged": 6,
+      "categories": {
+        "credential_access": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 4.1,
+          "not_converged": 0
+        },
+        "threat_intel_match": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 7.3,
+          "not_converged": 0
+        },
+        "lateral_movement": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 6.2,
+          "not_converged": 0
+        },
+        "data_exfiltration": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 6.3,
+          "not_converged": 0
+        },
+        "insider_threat": {
+          "converge_pct": 93.3,
+          "mean_conv_day": 6.0,
+          "not_converged": 1
+        },
+        "cloud_infrastructure": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 4.8,
+          "not_converged": 0
+        }
+      },
+      "conservation": {
+        "min_signal": 11.0,
+        "mean_signal": 25.384,
+        "mean_breach_days": 0.0,
+        "any_breach": false
+      },
+      "gate_stats": {
+        "override_pct": 0.1458,
+        "override_correct_pct": 0.8741
+      }
+    },
+    "ba": {
+      "delta_reward": 0.0409,
+      "p_value": 1e-05,
+      "promo_rate": 0.533,
+      "mean_decisions_to_promo": 150.0,
+      "breach_rate": 0.067,
+      "n_A_mean": 154.4,
+      "n_B_mean": 226.7,
+      "power_sufficient": false,
+      "group_a_analysts": [
+        "analyst_1",
+        "analyst_2"
+      ],
+      "group_b_analysts": [
+        "analyst_3",
+        "analyst_4",
+        "analyst_5"
+      ]
+    }
+  },
+  "1C-Q2": {
+    "persona_id": "1C-Q2",
+    "name": "Mixed-High Quality SOC Team",
+    "industry": "Financial Services",
+    "q_bar": 0.7996,
+    "td034": {
+      "optimal_tau": 0.05,
+      "ece_at_opt": 0.05758,
+      "ece_at_010": 0.17279,
+      "recalibrate": true
+    },
+    "prod5": {
+      "acc_day1": 0.9323,
+      "acc_day30": 0.97,
+      "acc_day60": 0.9684,
+      "n_cats_converged": 6,
+      "categories": {
+        "credential_access": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 4.3,
+          "not_converged": 0
+        },
+        "threat_intel_match": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 6.9,
+          "not_converged": 0
+        },
+        "lateral_movement": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 5.8,
+          "not_converged": 0
+        },
+        "data_exfiltration": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 6.6,
+          "not_converged": 0
+        },
+        "insider_threat": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 6.1,
+          "not_converged": 0
+        },
+        "cloud_infrastructure": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 5.1,
+          "not_converged": 0
+        }
+      },
+      "conservation": {
+        "min_signal": 19.0,
+        "mean_signal": 35.077,
+        "mean_breach_days": 0.0,
+        "any_breach": false
+      },
+      "gate_stats": {
+        "override_pct": 0.2254,
+        "override_correct_pct": 0.7784
+      }
+    },
+    "ba": {
+      "delta_reward": 0.0325,
+      "p_value": 7e-05,
+      "promo_rate": 0.4,
+      "mean_decisions_to_promo": 108.3,
+      "breach_rate": 0.067,
+      "n_A_mean": 154.1,
+      "n_B_mean": 229.0,
+      "power_sufficient": false,
+      "group_a_analysts": [
+        "analyst_1",
+        "analyst_2"
+      ],
+      "group_b_analysts": [
+        "analyst_3",
+        "analyst_4",
+        "analyst_5"
+      ]
+    }
+  },
+  "1C-Q3": {
+    "persona_id": "1C-Q3",
+    "name": "Balanced Quality SOC Team",
+    "industry": "Financial Services",
+    "q_bar": 0.7187,
+    "td034": {
+      "optimal_tau": 0.05,
+      "ece_at_opt": 0.05758,
+      "ece_at_010": 0.17279,
+      "recalibrate": true
+    },
+    "prod5": {
+      "acc_day1": 0.9288,
+      "acc_day30": 0.9589,
+      "acc_day60": 0.9658,
+      "n_cats_converged": 6,
+      "categories": {
+        "credential_access": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 4.2,
+          "not_converged": 0
+        },
+        "threat_intel_match": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 9.1,
+          "not_converged": 0
+        },
+        "lateral_movement": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 7.9,
+          "not_converged": 0
+        },
+        "data_exfiltration": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 9.7,
+          "not_converged": 0
+        },
+        "insider_threat": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 6.1,
+          "not_converged": 0
+        },
+        "cloud_infrastructure": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 5.7,
+          "not_converged": 0
+        }
+      },
+      "conservation": {
+        "min_signal": 20.0,
+        "mean_signal": 41.749,
+        "mean_breach_days": 0.0,
+        "any_breach": false
+      },
+      "gate_stats": {
+        "override_pct": 0.3037,
+        "override_correct_pct": 0.6872
+      }
+    },
+    "ba": {
+      "delta_reward": -0.0022,
+      "p_value": 0.62588,
+      "promo_rate": 0.4,
+      "mean_decisions_to_promo": 125.0,
+      "breach_rate": 0.333,
+      "n_A_mean": 154.4,
+      "n_B_mean": 227.7,
+      "power_sufficient": false,
+      "group_a_analysts": [
+        "analyst_1",
+        "analyst_2"
+      ],
+      "group_b_analysts": [
+        "analyst_3",
+        "analyst_4",
+        "analyst_5"
+      ]
+    }
+  },
+  "1C-Q4": {
+    "persona_id": "1C-Q4",
+    "name": "Mixed-Low Quality SOC Team",
+    "industry": "Financial Services",
+    "q_bar": 0.6274,
+    "td034": {
+      "optimal_tau": 0.05,
+      "ece_at_opt": 0.05758,
+      "ece_at_010": 0.17279,
+      "recalibrate": true
+    },
+    "prod5": {
+      "acc_day1": 0.9209,
+      "acc_day30": 0.9542,
+      "acc_day60": 0.9455,
+      "n_cats_converged": 4,
+      "categories": {
+        "credential_access": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 12.7,
+          "not_converged": 0
+        },
+        "threat_intel_match": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 11.5,
+          "not_converged": 0
+        },
+        "lateral_movement": {
+          "converge_pct": 73.3,
+          "mean_conv_day": 8.8,
+          "not_converged": 4
+        },
+        "data_exfiltration": {
+          "converge_pct": 53.3,
+          "mean_conv_day": 11.0,
+          "not_converged": 7
+        },
+        "insider_threat": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 9.1,
+          "not_converged": 0
+        },
+        "cloud_infrastructure": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 7.5,
+          "not_converged": 0
+        }
+      },
+      "conservation": {
+        "min_signal": 32.0,
+        "mean_signal": 50.476,
+        "mean_breach_days": 0.0,
+        "any_breach": false
+      },
+      "gate_stats": {
+        "override_pct": 0.4166,
+        "override_correct_pct": 0.6078
+      }
+    },
+    "ba": {
+      "delta_reward": -0.0396,
+      "p_value": 1.0,
+      "promo_rate": 0.467,
+      "mean_decisions_to_promo": 121.4,
+      "breach_rate": 0.8,
+      "n_A_mean": 155.5,
+      "n_B_mean": 228.3,
+      "power_sufficient": false,
+      "group_a_analysts": [
+        "analyst_1",
+        "analyst_2"
+      ],
+      "group_b_analysts": [
+        "analyst_3",
+        "analyst_4",
+        "analyst_5"
+      ]
+    }
+  },
+  "1C-Q5": {
+    "persona_id": "1C-Q5",
+    "name": "All-Junior SOC Team",
+    "industry": "Financial Services",
+    "q_bar": 0.57,
+    "td034": {
+      "optimal_tau": 0.05,
+      "ece_at_opt": 0.05758,
+      "ece_at_010": 0.17279,
+      "recalibrate": true
+    },
+    "prod5": {
+      "acc_day1": 0.9203,
+      "acc_day30": 0.9378,
+      "acc_day60": 0.9249,
+      "n_cats_converged": 4,
+      "categories": {
+        "credential_access": {
+          "converge_pct": 80.0,
+          "mean_conv_day": 9.2,
+          "not_converged": 3
+        },
+        "threat_intel_match": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 17.3,
+          "not_converged": 0
+        },
+        "lateral_movement": {
+          "converge_pct": 73.3,
+          "mean_conv_day": 13.9,
+          "not_converged": 4
+        },
+        "data_exfiltration": {
+          "converge_pct": 40.0,
+          "mean_conv_day": 4.7,
+          "not_converged": 9
+        },
+        "insider_threat": {
+          "converge_pct": 93.3,
+          "mean_conv_day": 16.6,
+          "not_converged": 1
+        },
+        "cloud_infrastructure": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 10.3,
+          "not_converged": 0
+        }
+      },
+      "conservation": {
+        "min_signal": 32.0,
+        "mean_signal": 54.018,
+        "mean_breach_days": 0.0,
+        "any_breach": false
+      },
+      "gate_stats": {
+        "override_pct": 0.4748,
+        "override_correct_pct": 0.5687
+      }
+    },
+    "ba": {
+      "delta_reward": 0.0046,
+      "p_value": 0.29305,
+      "promo_rate": 0.467,
+      "mean_decisions_to_promo": 150.0,
+      "breach_rate": 0.733,
+      "n_A_mean": 154.3,
+      "n_B_mean": 229.9,
+      "power_sufficient": false,
+      "group_a_analysts": [
+        "analyst_1",
+        "analyst_2"
+      ],
+      "group_b_analysts": [
+        "analyst_3",
+        "analyst_4",
+        "analyst_5"
+      ]
+    }
+  }
+}

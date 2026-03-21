@@ -1,0 +1,8804 @@
+[
+  {
+    "persona_id": "S2P-l2-s08-q60-v200-r6-RS",
+    "cell_id": "S2P-l2-s08-q60-v200-r6-RS",
+    "cell_index": 0,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "l2",
+    "factorial_variables": {
+      "kernel": "l2",
+      "sigma_eff": 0.08,
+      "q_bar": 0.6,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-l2-s08-q60-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.56,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.22,
+        "override_quality": 0.6,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.64,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "logistics_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "demand_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "inventory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "financial_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "environmental_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=l2, sigma=0.08, q_bar=0.6, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-l2-s08-q80-v200-r6-RS",
+    "cell_id": "S2P-l2-s08-q80-v200-r6-RS",
+    "cell_index": 1,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "l2",
+    "factorial_variables": {
+      "kernel": "l2",
+      "sigma_eff": 0.08,
+      "q_bar": 0.8,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-l2-s08-q80-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.76,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.16,
+        "override_quality": 0.8,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.82,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.84,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "logistics_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "demand_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "inventory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "financial_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "environmental_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=l2, sigma=0.08, q_bar=0.8, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-l2-s15-q60-v200-r6-RS",
+    "cell_id": "S2P-l2-s15-q60-v200-r6-RS",
+    "cell_index": 2,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "l2",
+    "factorial_variables": {
+      "kernel": "l2",
+      "sigma_eff": 0.15,
+      "q_bar": 0.6,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-l2-s15-q60-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.56,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.22,
+        "override_quality": 0.6,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.64,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "logistics_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "demand_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "inventory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "financial_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "environmental_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=l2, sigma=0.15, q_bar=0.6, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-l2-s15-q80-v200-r6-RS",
+    "cell_id": "S2P-l2-s15-q80-v200-r6-RS",
+    "cell_index": 3,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "l2",
+    "factorial_variables": {
+      "kernel": "l2",
+      "sigma_eff": 0.15,
+      "q_bar": 0.8,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-l2-s15-q80-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.76,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.16,
+        "override_quality": 0.8,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.82,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.84,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "logistics_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "demand_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "inventory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "financial_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "environmental_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=l2, sigma=0.15, q_bar=0.8, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-l2-s22-q60-v200-r6-RS",
+    "cell_id": "S2P-l2-s22-q60-v200-r6-RS",
+    "cell_index": 4,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "l2",
+    "factorial_variables": {
+      "kernel": "l2",
+      "sigma_eff": 0.22,
+      "q_bar": 0.6,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-l2-s22-q60-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.56,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.22,
+        "override_quality": 0.6,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.64,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "logistics_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "demand_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "inventory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "financial_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "environmental_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=l2, sigma=0.22, q_bar=0.6, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-l2-s22-q80-v200-r6-RS",
+    "cell_id": "S2P-l2-s22-q80-v200-r6-RS",
+    "cell_index": 5,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "l2",
+    "factorial_variables": {
+      "kernel": "l2",
+      "sigma_eff": 0.22,
+      "q_bar": 0.8,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-l2-s22-q80-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.76,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.16,
+        "override_quality": 0.8,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.82,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.84,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "logistics_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "demand_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "inventory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "financial_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "environmental_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=l2, sigma=0.22, q_bar=0.8, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-diagonal-s08-q60-v200-r6-RS",
+    "cell_id": "S2P-diagonal-s08-q60-v200-r6-RS",
+    "cell_index": 6,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "diagonal",
+    "factorial_variables": {
+      "kernel": "diagonal",
+      "sigma_eff": 0.08,
+      "q_bar": 0.6,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-diagonal-s08-q60-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.56,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.22,
+        "override_quality": 0.6,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.64,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "logistics_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "demand_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "inventory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "financial_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "environmental_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=diagonal, sigma=0.08, q_bar=0.6, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-diagonal-s08-q80-v200-r6-RS",
+    "cell_id": "S2P-diagonal-s08-q80-v200-r6-RS",
+    "cell_index": 7,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "diagonal",
+    "factorial_variables": {
+      "kernel": "diagonal",
+      "sigma_eff": 0.08,
+      "q_bar": 0.8,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-diagonal-s08-q80-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.76,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.16,
+        "override_quality": 0.8,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.82,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.84,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "logistics_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "demand_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "inventory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "financial_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "environmental_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=diagonal, sigma=0.08, q_bar=0.8, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-diagonal-s15-q60-v200-r6-RS",
+    "cell_id": "S2P-diagonal-s15-q60-v200-r6-RS",
+    "cell_index": 8,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "diagonal",
+    "factorial_variables": {
+      "kernel": "diagonal",
+      "sigma_eff": 0.15,
+      "q_bar": 0.6,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-diagonal-s15-q60-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.56,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.22,
+        "override_quality": 0.6,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.64,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "logistics_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "demand_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "inventory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "financial_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "environmental_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=diagonal, sigma=0.15, q_bar=0.6, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-diagonal-s15-q80-v200-r6-RS",
+    "cell_id": "S2P-diagonal-s15-q80-v200-r6-RS",
+    "cell_index": 9,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "diagonal",
+    "factorial_variables": {
+      "kernel": "diagonal",
+      "sigma_eff": 0.15,
+      "q_bar": 0.8,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-diagonal-s15-q80-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.76,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.16,
+        "override_quality": 0.8,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.82,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.84,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "logistics_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "demand_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "inventory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "financial_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "environmental_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=diagonal, sigma=0.15, q_bar=0.8, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-diagonal-s22-q60-v200-r6-RS",
+    "cell_id": "S2P-diagonal-s22-q60-v200-r6-RS",
+    "cell_index": 10,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "diagonal",
+    "factorial_variables": {
+      "kernel": "diagonal",
+      "sigma_eff": 0.22,
+      "q_bar": 0.6,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-diagonal-s22-q60-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.56,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.22,
+        "override_quality": 0.6,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.64,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "logistics_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "demand_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "inventory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "financial_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "environmental_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=diagonal, sigma=0.22, q_bar=0.6, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-diagonal-s22-q80-v200-r6-RS",
+    "cell_id": "S2P-diagonal-s22-q80-v200-r6-RS",
+    "cell_index": 11,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "diagonal",
+    "factorial_variables": {
+      "kernel": "diagonal",
+      "sigma_eff": 0.22,
+      "q_bar": 0.8,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-diagonal-s22-q80-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.76,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.16,
+        "override_quality": 0.8,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.82,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.84,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "logistics_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "demand_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "inventory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "financial_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "environmental_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=diagonal, sigma=0.22, q_bar=0.8, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-shrinkage-s08-q60-v200-r6-RS",
+    "cell_id": "S2P-shrinkage-s08-q60-v200-r6-RS",
+    "cell_index": 12,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "shrinkage",
+    "factorial_variables": {
+      "kernel": "shrinkage",
+      "sigma_eff": 0.08,
+      "q_bar": 0.6,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-shrinkage-s08-q60-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.56,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.22,
+        "override_quality": 0.6,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.64,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "logistics_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "demand_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "inventory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "financial_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "environmental_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=shrinkage, sigma=0.08, q_bar=0.6, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-shrinkage-s08-q80-v200-r6-RS",
+    "cell_id": "S2P-shrinkage-s08-q80-v200-r6-RS",
+    "cell_index": 13,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "shrinkage",
+    "factorial_variables": {
+      "kernel": "shrinkage",
+      "sigma_eff": 0.08,
+      "q_bar": 0.8,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-shrinkage-s08-q80-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.76,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.16,
+        "override_quality": 0.8,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.82,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.84,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "logistics_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "demand_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "inventory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "financial_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        },
+        "environmental_risk": {
+          "base_noise": 0.08,
+          "note": "Factorial \u03c3_eff=0.08"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=shrinkage, sigma=0.08, q_bar=0.8, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-shrinkage-s15-q60-v200-r6-RS",
+    "cell_id": "S2P-shrinkage-s15-q60-v200-r6-RS",
+    "cell_index": 14,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "shrinkage",
+    "factorial_variables": {
+      "kernel": "shrinkage",
+      "sigma_eff": 0.15,
+      "q_bar": 0.6,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-shrinkage-s15-q60-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.56,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.22,
+        "override_quality": 0.6,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.64,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "logistics_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "demand_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "inventory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "financial_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "environmental_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=shrinkage, sigma=0.15, q_bar=0.6, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-shrinkage-s15-q80-v200-r6-RS",
+    "cell_id": "S2P-shrinkage-s15-q80-v200-r6-RS",
+    "cell_index": 15,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "shrinkage",
+    "factorial_variables": {
+      "kernel": "shrinkage",
+      "sigma_eff": 0.15,
+      "q_bar": 0.8,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-shrinkage-s15-q80-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.76,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.16,
+        "override_quality": 0.8,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.82,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.84,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "logistics_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "demand_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "inventory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "financial_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        },
+        "environmental_risk": {
+          "base_noise": 0.15,
+          "note": "Factorial \u03c3_eff=0.15"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=shrinkage, sigma=0.15, q_bar=0.8, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-shrinkage-s22-q60-v200-r6-RS",
+    "cell_id": "S2P-shrinkage-s22-q60-v200-r6-RS",
+    "cell_index": 16,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "shrinkage",
+    "factorial_variables": {
+      "kernel": "shrinkage",
+      "sigma_eff": 0.22,
+      "q_bar": 0.6,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-shrinkage-s22-q60-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.56,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "junior",
+        "years_experience": 4,
+        "override_rate": 0.23,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.22,
+        "override_quality": 0.6,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 5,
+        "override_rate": 0.21,
+        "override_quality": 0.64,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "logistics_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "demand_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "inventory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "financial_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "environmental_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=shrinkage, sigma=0.22, q_bar=0.6, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  },
+  {
+    "persona_id": "S2P-shrinkage-s22-q80-v200-r6-RS",
+    "cell_id": "S2P-shrinkage-s22-q80-v200-r6-RS",
+    "cell_index": 17,
+    "domain": "s2p",
+    "experiment": "V-MV-REGIME",
+    "judge": "factorial_synthetic",
+    "kernel_type": "shrinkage",
+    "factorial_variables": {
+      "kernel": "shrinkage",
+      "sigma_eff": 0.22,
+      "q_bar": 0.8,
+      "volume": 200,
+      "rho_max": 0.6
+    },
+    "name": "S2P Factorial S2P-shrinkage-s22-q80-v200-r6-RS",
+    "industry": "Manufacturing",
+    "company_size": "5000",
+    "erp": "SAP",
+    "alerts_per_day": 200,
+    "penalty_ratio": 5.0,
+    "category_distribution": {
+      "routine_purchase": 0.3,
+      "high_value_contract": 0.2,
+      "compliance_sensitive": 0.2,
+      "sole_source": 0.15,
+      "emergency_procurement": 0.15
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.76,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "routine_purchase"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.17,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "high_value_contract"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.16,
+        "override_quality": 0.8,
+        "shift": "day",
+        "fatigue_factor": 0.1,
+        "specialization": "compliance_sensitive"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.82,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "sole_source"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.15,
+        "override_quality": 0.84,
+        "shift": "swing",
+        "fatigue_factor": 0.15,
+        "specialization": "emergency_procurement"
+      }
+    ],
+    "factor_count": 8,
+    "factors": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "factor_noise_profile": {
+      "per_factor": {
+        "supplier_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "logistics_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "demand_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "inventory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "regulatory_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "geopolitical_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "financial_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        },
+        "environmental_risk": {
+          "base_noise": 0.22,
+          "note": "Factorial \u03c3_eff=0.22"
+        }
+      },
+      "factor_correlations": {
+        "type": "regime_a_full",
+        "matrix": [
+          [
+            1.0,
+            0.48,
+            0.35,
+            0.62,
+            0.45,
+            0.58,
+            0.7,
+            0.5
+          ],
+          [
+            0.48,
+            1.0,
+            0.42,
+            0.6,
+            0.4,
+            0.55,
+            0.38,
+            0.65
+          ],
+          [
+            0.35,
+            0.42,
+            1.0,
+            0.65,
+            0.18,
+            0.28,
+            0.4,
+            0.25
+          ],
+          [
+            0.62,
+            0.6,
+            0.65,
+            1.0,
+            0.3,
+            0.3,
+            0.48,
+            0.35
+          ],
+          [
+            0.45,
+            0.4,
+            0.18,
+            0.3,
+            1.0,
+            0.72,
+            0.52,
+            0.3
+          ],
+          [
+            0.58,
+            0.55,
+            0.28,
+            0.3,
+            0.72,
+            1.0,
+            0.68,
+            0.35
+          ],
+          [
+            0.7,
+            0.38,
+            0.4,
+            0.48,
+            0.52,
+            0.68,
+            1.0,
+            0.35
+          ],
+          [
+            0.5,
+            0.65,
+            0.25,
+            0.35,
+            0.3,
+            0.35,
+            0.35,
+            1.0
+          ]
+        ],
+        "max_rho": 0.72,
+        "note": "Regime A full matrix (max \u03c1=0.72). Two-judge validated. Block-sparse: policy-statecraft + flow-buffer backbones."
+      }
+    },
+    "correlation_matrix": {
+      "regime_a": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "domain_ordering": [
+        "supplier_risk",
+        "logistics_risk",
+        "demand_risk",
+        "inventory_risk",
+        "regulatory_risk",
+        "geopolitical_risk",
+        "financial_risk",
+        "environmental_risk"
+      ],
+      "note": "8x8 two-judge validated (Opus + GPT-4o). See multivariate_foundation_design_note S7.1."
+    },
+    "environment_shifts": [],
+    "graph_state": {
+      "initial_entities": 2000,
+      "suppliers_tracked": 500,
+      "erp_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "V-MV-KERNEL factorial cell. kernel=shrinkage, sigma=0.22, q_bar=0.8, V=200, rho_max=0.6. S2P domain, 8 factors, REGIME SHIFT A->B at decision 500.",
+    "regime_shift": {
+      "enabled": true,
+      "shift_at_decision": 500,
+      "regime_before": "A",
+      "regime_after": "B",
+      "correlation_matrix_before": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.7,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.42,
+          0.6,
+          0.4,
+          0.55,
+          0.38,
+          0.65
+        ],
+        [
+          0.35,
+          0.42,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.6,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.72,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.55,
+          0.28,
+          0.3,
+          0.72,
+          1.0,
+          0.68,
+          0.35
+        ],
+        [
+          0.7,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.68,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.65,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "correlation_matrix_after": [
+        [
+          1.0,
+          0.48,
+          0.35,
+          0.62,
+          0.45,
+          0.58,
+          0.78,
+          0.5
+        ],
+        [
+          0.48,
+          1.0,
+          0.58,
+          0.72,
+          0.4,
+          0.65,
+          0.38,
+          0.75
+        ],
+        [
+          0.35,
+          0.58,
+          1.0,
+          0.65,
+          0.18,
+          0.28,
+          0.4,
+          0.25
+        ],
+        [
+          0.62,
+          0.72,
+          0.65,
+          1.0,
+          0.3,
+          0.3,
+          0.48,
+          0.35
+        ],
+        [
+          0.45,
+          0.4,
+          0.18,
+          0.3,
+          1.0,
+          0.8,
+          0.52,
+          0.3
+        ],
+        [
+          0.58,
+          0.65,
+          0.28,
+          0.3,
+          0.8,
+          1.0,
+          0.75,
+          0.35
+        ],
+        [
+          0.78,
+          0.38,
+          0.4,
+          0.48,
+          0.52,
+          0.75,
+          1.0,
+          0.35
+        ],
+        [
+          0.5,
+          0.75,
+          0.25,
+          0.35,
+          0.3,
+          0.35,
+          0.35,
+          1.0
+        ]
+      ],
+      "note": "Regime A (normal turbulence) for decisions 1-500, Regime B (compound shock) for 501-1000. Tests covariance estimator tracking."
+    }
+  }
+]

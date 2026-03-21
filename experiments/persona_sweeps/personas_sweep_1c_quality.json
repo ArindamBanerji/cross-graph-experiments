@@ -1,0 +1,467 @@
+[
+  {
+    "persona_id": "1C-Q1",
+    "judge": "strategy_session",
+    "name": "All-Senior SOC Team",
+    "industry": "Financial Services",
+    "company_size": "2000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 10,
+        "override_rate": 0.12,
+        "override_quality": 0.93,
+        "shift": "day",
+        "fatigue_factor": 0.12,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.90,
+        "shift": "day",
+        "fatigue_factor": 0.14,
+        "specialization": "insider_threat"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.13,
+        "override_quality": 0.91,
+        "shift": "swing",
+        "fatigue_factor": 0.22,
+        "specialization": "data_exfiltration"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "senior",
+        "years_experience": 6,
+        "override_rate": 0.16,
+        "override_quality": 0.88,
+        "shift": "day",
+        "fatigue_factor": 0.15,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.14,
+        "override_quality": 0.92,
+        "shift": "swing",
+        "fatigue_factor": 0.20,
+        "specialization": "lateral_movement"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Standard corporate travel patterns, well-documented"},
+      "asset_criticality": {"base_noise": 0.09, "note": "CMDB maintained, asset inventory current"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Premium threat feeds, low noise"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Global operations, some timezone complexity"},
+      "pattern_history": {"base_noise": 0.10, "note": "12+ months of decision history"},
+      "device_trust": {"base_noise": 0.11, "note": "MDM enrolled fleet, good device hygiene"}
+    },
+    "environment_shifts": [
+      {
+        "day": 35,
+        "type": "campaign",
+        "description": "Targeted spear-phishing campaign against finance department",
+        "category_impact": {"credential_access": 1.6, "data_exfiltration": 1.3},
+        "duration_days": 7
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 3200,
+      "threat_indicators": 120,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.85
+    },
+    "business_context": "Established financial services firm with mature SOC. All-senior team hired over 6+ years. Low analyst turnover. This is the best-case deployment scenario — tests whether η_override=0.01 preserves senior correction signal. Team mean override quality: 0.91."
+  },
+  {
+    "persona_id": "1C-Q2",
+    "judge": "strategy_session",
+    "name": "Mixed-High Quality SOC Team",
+    "industry": "Financial Services",
+    "company_size": "2000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 9,
+        "override_rate": 0.13,
+        "override_quality": 0.92,
+        "shift": "day",
+        "fatigue_factor": 0.13,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "senior",
+        "years_experience": 6,
+        "override_rate": 0.16,
+        "override_quality": 0.88,
+        "shift": "day",
+        "fatigue_factor": 0.15,
+        "specialization": "insider_threat"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.82,
+        "shift": "swing",
+        "fatigue_factor": 0.25,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.28,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.18,
+        "specialization": "data_exfiltration"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.76,
+        "shift": "swing",
+        "fatigue_factor": 0.28,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Standard corporate travel patterns"},
+      "asset_criticality": {"base_noise": 0.09, "note": "CMDB maintained"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Premium threat feeds"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Global operations"},
+      "pattern_history": {"base_noise": 0.10, "note": "12+ months history"},
+      "device_trust": {"base_noise": 0.11, "note": "MDM enrolled fleet"}
+    },
+    "environment_shifts": [
+      {
+        "day": 35,
+        "type": "campaign",
+        "description": "Targeted spear-phishing campaign against finance department",
+        "category_impact": {"credential_access": 1.6, "data_exfiltration": 1.3},
+        "duration_days": 7
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 3200,
+      "threat_indicators": 120,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.85
+    },
+    "business_context": "Same deployment profile as 1C-Q1 but with a mixed-high quality team: 2 seniors + 3 mids. No juniors. This represents a well-funded SOC that hires experienced staff. Team mean override quality: 0.83."
+  },
+  {
+    "persona_id": "1C-Q3",
+    "judge": "strategy_session",
+    "name": "Balanced Quality SOC Team",
+    "industry": "Financial Services",
+    "company_size": "2000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.90,
+        "shift": "day",
+        "fatigue_factor": 0.14,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.17,
+        "specialization": "data_exfiltration"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.80,
+        "shift": "swing",
+        "fatigue_factor": 0.26,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.65,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.38,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Standard corporate travel patterns"},
+      "asset_criticality": {"base_noise": 0.09, "note": "CMDB maintained"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Premium threat feeds"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Global operations"},
+      "pattern_history": {"base_noise": 0.10, "note": "12+ months history"},
+      "device_trust": {"base_noise": 0.11, "note": "MDM enrolled fleet"}
+    },
+    "environment_shifts": [
+      {
+        "day": 35,
+        "type": "campaign",
+        "description": "Targeted spear-phishing campaign against finance department",
+        "category_impact": {"credential_access": 1.6, "data_exfiltration": 1.3},
+        "duration_days": 7
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 3200,
+      "threat_indicators": 120,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.85
+    },
+    "business_context": "Same deployment profile but balanced team: 1 senior + 2 mids + 2 juniors. This is the TYPICAL enterprise SOC — the most common deployment scenario. The critical test: does η_override=0.01 prevent the 13-27pp degradation found in Finding 2? Team mean override quality: 0.75."
+  },
+  {
+    "persona_id": "1C-Q4",
+    "judge": "strategy_session",
+    "name": "Mixed-Low Quality SOC Team",
+    "industry": "Financial Services",
+    "company_size": "2000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.28,
+        "override_quality": 0.80,
+        "shift": "day",
+        "fatigue_factor": 0.18,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 2,
+        "override_rate": 0.30,
+        "override_quality": 0.74,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.42,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.32,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.45,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.22,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 0,
+        "override_rate": 0.48,
+        "override_quality": 0.56,
+        "shift": "swing",
+        "fatigue_factor": 0.35,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Standard corporate travel patterns"},
+      "asset_criticality": {"base_noise": 0.09, "note": "CMDB maintained"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Premium threat feeds"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Global operations"},
+      "pattern_history": {"base_noise": 0.10, "note": "12+ months history"},
+      "device_trust": {"base_noise": 0.11, "note": "MDM enrolled fleet"}
+    },
+    "environment_shifts": [
+      {
+        "day": 35,
+        "type": "campaign",
+        "description": "Targeted spear-phishing campaign against finance department",
+        "category_impact": {"credential_access": 1.6, "data_exfiltration": 1.3},
+        "duration_days": 7
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 3200,
+      "threat_indicators": 120,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.85
+    },
+    "business_context": "Same deployment profile but junior-heavy team: 2 mids + 3 juniors. No seniors. This represents an understaffed SOC with high turnover — common in mid-market. THE CRITICAL GATE: Day 60 accuracy must be ≥ Day 1 accuracy. If this persona fails the gate, η_override=0.01 is insufficient for junior-heavy teams. Team mean override quality: 0.66."
+  },
+  {
+    "persona_id": "1C-Q5",
+    "judge": "strategy_session",
+    "name": "All-Junior SOC Team",
+    "industry": "Financial Services",
+    "company_size": "2000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.65,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.42,
+        "override_quality": 0.62,
+        "shift": "day",
+        "fatigue_factor": 0.22,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "junior",
+        "years_experience": 0,
+        "override_rate": 0.48,
+        "override_quality": 0.56,
+        "shift": "swing",
+        "fatigue_factor": 0.35,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 0,
+        "override_rate": 0.46,
+        "override_quality": 0.58,
+        "shift": "day",
+        "fatigue_factor": 0.24,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.44,
+        "override_quality": 0.60,
+        "shift": "swing",
+        "fatigue_factor": 0.33,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Standard corporate travel patterns"},
+      "asset_criticality": {"base_noise": 0.09, "note": "CMDB maintained"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Premium threat feeds"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Global operations"},
+      "pattern_history": {"base_noise": 0.10, "note": "12+ months history"},
+      "device_trust": {"base_noise": 0.11, "note": "MDM enrolled fleet"}
+    },
+    "environment_shifts": [
+      {
+        "day": 35,
+        "type": "campaign",
+        "description": "Targeted spear-phishing campaign against finance department",
+        "category_impact": {"credential_access": 1.6, "data_exfiltration": 1.3},
+        "duration_days": 7
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 3200,
+      "threat_indicators": 120,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.85
+    },
+    "business_context": "Worst-case team quality: all 5 analysts are juniors with 0-1 years experience. This is the lower bound — a freshly hired SOC at a firm that just stood up security operations. Q4 healthcare results (0pp improvement) suggest this team is noise-limited. THE GATE: accuracy must NOT DEGRADE. Zero improvement is acceptable. Degradation is a product-killing failure. Team mean override quality: 0.60."
+  }
+]

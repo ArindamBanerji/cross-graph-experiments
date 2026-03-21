@@ -1,0 +1,5294 @@
+[
+  {
+    "cell_id": "S2P-l2-s08-q60-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4829,
+    "day30_accuracy": 0.5074,
+    "day60_accuracy": 0.5474,
+    "delta_d1_d60": 0.0645,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 12.47,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q60-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4348,
+    "day30_accuracy": 0.4644,
+    "day60_accuracy": 0.4835,
+    "delta_d1_d60": 0.0487,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 100.99,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q60-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4348,
+    "day30_accuracy": 0.4644,
+    "day60_accuracy": 0.4835,
+    "delta_d1_d60": 0.0487,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 100.99,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q60-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4957,
+    "day30_accuracy": 0.5842,
+    "day60_accuracy": 0.6033,
+    "delta_d1_d60": 0.1076,
+    "cats_converged": 1,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 50.8,
+        "pct_converged": 0.5
+      },
+      "logistics_disruption": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.1
+      },
+      "demand_volatility": {
+        "mean_conv_day": 32.7,
+        "pct_converged": 0.3
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 42.0,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 13.24,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q60-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4528,
+    "day30_accuracy": 0.4575,
+    "day60_accuracy": 0.4908,
+    "delta_d1_d60": 0.0381,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 38.0,
+        "pct_converged": 0.2
+      },
+      "compliance_violation": {
+        "mean_conv_day": 59.0,
+        "pct_converged": 0.1
+      },
+      "cost_overrun": {
+        "mean_conv_day": 41.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 112.16,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q60-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4528,
+    "day30_accuracy": 0.4575,
+    "day60_accuracy": 0.4908,
+    "delta_d1_d60": 0.0381,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 38.0,
+        "pct_converged": 0.2
+      },
+      "compliance_violation": {
+        "mean_conv_day": 59.0,
+        "pct_converged": 0.1
+      },
+      "cost_overrun": {
+        "mean_conv_day": 41.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 112.16,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q80-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4691,
+    "day30_accuracy": 0.5571,
+    "day60_accuracy": 0.5505,
+    "delta_d1_d60": 0.0814,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 11.52,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q80-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4345,
+    "day30_accuracy": 0.468,
+    "day60_accuracy": 0.4766,
+    "delta_d1_d60": 0.0421,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 96.84,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q80-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4345,
+    "day30_accuracy": 0.468,
+    "day60_accuracy": 0.4766,
+    "delta_d1_d60": 0.0421,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 96.84,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q80-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4848,
+    "day30_accuracy": 0.5533,
+    "day60_accuracy": 0.5701,
+    "delta_d1_d60": 0.0853,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.3,
+        "pct_converged": 0.3
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 55.5,
+        "pct_converged": 0.4
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 42.3,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 11.43,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q80-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4415,
+    "day30_accuracy": 0.4638,
+    "day60_accuracy": 0.4675,
+    "delta_d1_d60": 0.026,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 46.0,
+        "pct_converged": 0.1
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 100.48,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s08-q80-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4415,
+    "day30_accuracy": 0.4638,
+    "day60_accuracy": 0.4675,
+    "delta_d1_d60": 0.026,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 46.0,
+        "pct_converged": 0.1
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 100.48,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q60-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4147,
+    "day30_accuracy": 0.4707,
+    "day60_accuracy": 0.4497,
+    "delta_d1_d60": 0.035,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 4.53,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q60-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3565,
+    "day30_accuracy": 0.3686,
+    "day60_accuracy": 0.3522,
+    "delta_d1_d60": -0.0042,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 54.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q60-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3565,
+    "day30_accuracy": 0.3686,
+    "day60_accuracy": 0.3522,
+    "delta_d1_d60": -0.0042,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 54.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q60-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.413,
+    "day30_accuracy": 0.4826,
+    "day60_accuracy": 0.4693,
+    "delta_d1_d60": 0.0563,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 4.79,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q60-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3492,
+    "day30_accuracy": 0.363,
+    "day60_accuracy": 0.3654,
+    "delta_d1_d60": 0.0163,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 61.53,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q60-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3492,
+    "day30_accuracy": 0.363,
+    "day60_accuracy": 0.3654,
+    "delta_d1_d60": 0.0163,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 61.53,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q80-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4154,
+    "day30_accuracy": 0.4265,
+    "day60_accuracy": 0.459,
+    "delta_d1_d60": 0.0436,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 4.11,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q80-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3647,
+    "day30_accuracy": 0.3623,
+    "day60_accuracy": 0.3459,
+    "delta_d1_d60": -0.0187,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 55.74,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q80-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3647,
+    "day30_accuracy": 0.3623,
+    "day60_accuracy": 0.3459,
+    "delta_d1_d60": -0.0187,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 55.74,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q80-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4144,
+    "day30_accuracy": 0.4528,
+    "day60_accuracy": 0.4862,
+    "delta_d1_d60": 0.0718,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 4.25,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q80-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3518,
+    "day30_accuracy": 0.3504,
+    "day60_accuracy": 0.3579,
+    "delta_d1_d60": 0.0061,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 55.28,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s15-q80-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3518,
+    "day30_accuracy": 0.3504,
+    "day60_accuracy": 0.3579,
+    "delta_d1_d60": 0.0061,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 55.28,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q60-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.3665,
+    "day30_accuracy": 0.3927,
+    "day60_accuracy": 0.3597,
+    "delta_d1_d60": -0.0068,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 2.8,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q60-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3211,
+    "day30_accuracy": 0.3303,
+    "day60_accuracy": 0.3089,
+    "delta_d1_d60": -0.0121,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 42.11,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q60-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3211,
+    "day30_accuracy": 0.3303,
+    "day60_accuracy": 0.3089,
+    "delta_d1_d60": -0.0121,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 42.11,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q60-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.355,
+    "day30_accuracy": 0.3791,
+    "day60_accuracy": 0.374,
+    "delta_d1_d60": 0.019,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 2.89,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q60-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3089,
+    "day30_accuracy": 0.3126,
+    "day60_accuracy": 0.315,
+    "delta_d1_d60": 0.0062,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 48.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q60-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3089,
+    "day30_accuracy": 0.3126,
+    "day60_accuracy": 0.315,
+    "delta_d1_d60": 0.0062,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 48.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q80-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.376,
+    "day30_accuracy": 0.3752,
+    "day60_accuracy": 0.3753,
+    "delta_d1_d60": -0.0007,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 2.49,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q80-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.316,
+    "day30_accuracy": 0.2979,
+    "day60_accuracy": 0.3013,
+    "delta_d1_d60": -0.0147,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 45.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q80-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.316,
+    "day30_accuracy": 0.2979,
+    "day60_accuracy": 0.3013,
+    "delta_d1_d60": -0.0147,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 45.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q80-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.3587,
+    "day30_accuracy": 0.3729,
+    "day60_accuracy": 0.3906,
+    "delta_d1_d60": 0.0319,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 2.64,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q80-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3098,
+    "day30_accuracy": 0.3094,
+    "day60_accuracy": 0.3086,
+    "delta_d1_d60": -0.0013,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 44.02,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-l2-s22-q80-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "l2",
+    "actual_kernel": "l2",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3098,
+    "day30_accuracy": 0.3094,
+    "day60_accuracy": 0.3086,
+    "delta_d1_d60": -0.0013,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 44.02,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q60-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4829,
+    "day30_accuracy": 0.5074,
+    "day60_accuracy": 0.5474,
+    "delta_d1_d60": 0.0645,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 12.47,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q60-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4348,
+    "day30_accuracy": 0.4644,
+    "day60_accuracy": 0.4835,
+    "delta_d1_d60": 0.0487,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 100.99,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q60-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4348,
+    "day30_accuracy": 0.4644,
+    "day60_accuracy": 0.4835,
+    "delta_d1_d60": 0.0487,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 100.99,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q60-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4957,
+    "day30_accuracy": 0.5842,
+    "day60_accuracy": 0.6033,
+    "delta_d1_d60": 0.1076,
+    "cats_converged": 1,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 50.8,
+        "pct_converged": 0.5
+      },
+      "logistics_disruption": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.1
+      },
+      "demand_volatility": {
+        "mean_conv_day": 32.7,
+        "pct_converged": 0.3
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 42.0,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 13.24,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q60-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4528,
+    "day30_accuracy": 0.4575,
+    "day60_accuracy": 0.4908,
+    "delta_d1_d60": 0.0381,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 38.0,
+        "pct_converged": 0.2
+      },
+      "compliance_violation": {
+        "mean_conv_day": 59.0,
+        "pct_converged": 0.1
+      },
+      "cost_overrun": {
+        "mean_conv_day": 41.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 112.16,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q60-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4528,
+    "day30_accuracy": 0.4575,
+    "day60_accuracy": 0.4908,
+    "delta_d1_d60": 0.0381,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 38.0,
+        "pct_converged": 0.2
+      },
+      "compliance_violation": {
+        "mean_conv_day": 59.0,
+        "pct_converged": 0.1
+      },
+      "cost_overrun": {
+        "mean_conv_day": 41.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 112.16,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q80-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4691,
+    "day30_accuracy": 0.5571,
+    "day60_accuracy": 0.5505,
+    "delta_d1_d60": 0.0814,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 11.52,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q80-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4345,
+    "day30_accuracy": 0.468,
+    "day60_accuracy": 0.4766,
+    "delta_d1_d60": 0.0421,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 96.84,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q80-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4345,
+    "day30_accuracy": 0.468,
+    "day60_accuracy": 0.4766,
+    "delta_d1_d60": 0.0421,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 96.84,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q80-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4848,
+    "day30_accuracy": 0.5533,
+    "day60_accuracy": 0.5701,
+    "delta_d1_d60": 0.0853,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.3,
+        "pct_converged": 0.3
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 55.5,
+        "pct_converged": 0.4
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 42.3,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 11.43,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q80-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4415,
+    "day30_accuracy": 0.4638,
+    "day60_accuracy": 0.4675,
+    "delta_d1_d60": 0.026,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 46.0,
+        "pct_converged": 0.1
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 100.48,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s08-q80-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4415,
+    "day30_accuracy": 0.4638,
+    "day60_accuracy": 0.4675,
+    "delta_d1_d60": 0.026,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 46.0,
+        "pct_converged": 0.1
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 100.48,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q60-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4147,
+    "day30_accuracy": 0.4707,
+    "day60_accuracy": 0.4497,
+    "delta_d1_d60": 0.035,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 4.53,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q60-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3565,
+    "day30_accuracy": 0.3686,
+    "day60_accuracy": 0.3522,
+    "delta_d1_d60": -0.0042,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 54.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q60-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3565,
+    "day30_accuracy": 0.3686,
+    "day60_accuracy": 0.3522,
+    "delta_d1_d60": -0.0042,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 54.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q60-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.413,
+    "day30_accuracy": 0.4826,
+    "day60_accuracy": 0.4693,
+    "delta_d1_d60": 0.0563,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 4.79,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q60-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3492,
+    "day30_accuracy": 0.363,
+    "day60_accuracy": 0.3654,
+    "delta_d1_d60": 0.0163,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 61.53,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q60-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3492,
+    "day30_accuracy": 0.363,
+    "day60_accuracy": 0.3654,
+    "delta_d1_d60": 0.0163,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 61.53,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q80-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4154,
+    "day30_accuracy": 0.4265,
+    "day60_accuracy": 0.459,
+    "delta_d1_d60": 0.0436,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 4.11,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q80-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3647,
+    "day30_accuracy": 0.3623,
+    "day60_accuracy": 0.3459,
+    "delta_d1_d60": -0.0187,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 55.74,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q80-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3647,
+    "day30_accuracy": 0.3623,
+    "day60_accuracy": 0.3459,
+    "delta_d1_d60": -0.0187,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 55.74,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q80-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4144,
+    "day30_accuracy": 0.4528,
+    "day60_accuracy": 0.4862,
+    "delta_d1_d60": 0.0718,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 4.25,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q80-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3518,
+    "day30_accuracy": 0.3504,
+    "day60_accuracy": 0.3579,
+    "delta_d1_d60": 0.0061,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 55.28,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s15-q80-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3518,
+    "day30_accuracy": 0.3504,
+    "day60_accuracy": 0.3579,
+    "delta_d1_d60": 0.0061,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 55.28,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q60-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.3665,
+    "day30_accuracy": 0.3927,
+    "day60_accuracy": 0.3597,
+    "delta_d1_d60": -0.0068,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 2.8,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q60-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3211,
+    "day30_accuracy": 0.3303,
+    "day60_accuracy": 0.3089,
+    "delta_d1_d60": -0.0121,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 42.11,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q60-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3211,
+    "day30_accuracy": 0.3303,
+    "day60_accuracy": 0.3089,
+    "delta_d1_d60": -0.0121,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 42.11,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q60-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.355,
+    "day30_accuracy": 0.3791,
+    "day60_accuracy": 0.374,
+    "delta_d1_d60": 0.019,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 2.89,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q60-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3089,
+    "day30_accuracy": 0.3126,
+    "day60_accuracy": 0.315,
+    "delta_d1_d60": 0.0062,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 48.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q60-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3089,
+    "day30_accuracy": 0.3126,
+    "day60_accuracy": 0.315,
+    "delta_d1_d60": 0.0062,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 48.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q80-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.376,
+    "day30_accuracy": 0.3752,
+    "day60_accuracy": 0.3753,
+    "delta_d1_d60": -0.0007,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 2.49,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q80-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.316,
+    "day30_accuracy": 0.2979,
+    "day60_accuracy": 0.3013,
+    "delta_d1_d60": -0.0147,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 45.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q80-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.316,
+    "day30_accuracy": 0.2979,
+    "day60_accuracy": 0.3013,
+    "delta_d1_d60": -0.0147,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 45.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q80-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.3587,
+    "day30_accuracy": 0.3729,
+    "day60_accuracy": 0.3906,
+    "delta_d1_d60": 0.0319,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 2.64,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q80-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3098,
+    "day30_accuracy": 0.3094,
+    "day60_accuracy": 0.3086,
+    "delta_d1_d60": -0.0013,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 44.02,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-diagonal-s22-q80-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "diagonal",
+    "actual_kernel": "diagonal",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3098,
+    "day30_accuracy": 0.3094,
+    "day60_accuracy": 0.3086,
+    "delta_d1_d60": -0.0013,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 44.02,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q60-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4829,
+    "day30_accuracy": 0.5074,
+    "day60_accuracy": 0.5474,
+    "delta_d1_d60": 0.0645,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 12.47,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q60-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4348,
+    "day30_accuracy": 0.4644,
+    "day60_accuracy": 0.4835,
+    "delta_d1_d60": 0.0487,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 100.99,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q60-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4348,
+    "day30_accuracy": 0.4644,
+    "day60_accuracy": 0.4835,
+    "delta_d1_d60": 0.0487,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 100.99,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q60-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4957,
+    "day30_accuracy": 0.5842,
+    "day60_accuracy": 0.6033,
+    "delta_d1_d60": 0.1076,
+    "cats_converged": 1,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 50.8,
+        "pct_converged": 0.5
+      },
+      "logistics_disruption": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.1
+      },
+      "demand_volatility": {
+        "mean_conv_day": 32.7,
+        "pct_converged": 0.3
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 42.0,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 13.24,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q60-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4528,
+    "day30_accuracy": 0.4575,
+    "day60_accuracy": 0.4908,
+    "delta_d1_d60": 0.0381,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 38.0,
+        "pct_converged": 0.2
+      },
+      "compliance_violation": {
+        "mean_conv_day": 59.0,
+        "pct_converged": 0.1
+      },
+      "cost_overrun": {
+        "mean_conv_day": 41.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 112.16,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q60-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4528,
+    "day30_accuracy": 0.4575,
+    "day60_accuracy": 0.4908,
+    "delta_d1_d60": 0.0381,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 38.0,
+        "pct_converged": 0.2
+      },
+      "compliance_violation": {
+        "mean_conv_day": 59.0,
+        "pct_converged": 0.1
+      },
+      "cost_overrun": {
+        "mean_conv_day": 41.0,
+        "pct_converged": 0.2
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 112.16,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q80-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4691,
+    "day30_accuracy": 0.5571,
+    "day60_accuracy": 0.5505,
+    "delta_d1_d60": 0.0814,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 11.52,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q80-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4345,
+    "day30_accuracy": 0.468,
+    "day60_accuracy": 0.4766,
+    "delta_d1_d60": 0.0421,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 96.84,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q80-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4345,
+    "day30_accuracy": 0.468,
+    "day60_accuracy": 0.4766,
+    "delta_d1_d60": 0.0421,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 96.84,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q80-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4848,
+    "day30_accuracy": 0.5533,
+    "day60_accuracy": 0.5701,
+    "delta_d1_d60": 0.0853,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.3,
+        "pct_converged": 0.3
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 55.5,
+        "pct_converged": 0.4
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 42.3,
+        "pct_converged": 0.3
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 11.43,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q80-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.4415,
+    "day30_accuracy": 0.4638,
+    "day60_accuracy": 0.4675,
+    "delta_d1_d60": 0.026,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 46.0,
+        "pct_converged": 0.1
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 100.48,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s08-q80-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.08,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.4415,
+    "day30_accuracy": 0.4638,
+    "day60_accuracy": 0.4675,
+    "delta_d1_d60": 0.026,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": 43.0,
+        "pct_converged": 0.1
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": 46.0,
+        "pct_converged": 0.1
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": 51.0,
+        "pct_converged": 0.1
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 100.48,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q60-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4147,
+    "day30_accuracy": 0.4707,
+    "day60_accuracy": 0.4497,
+    "delta_d1_d60": 0.035,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 4.53,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q60-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3565,
+    "day30_accuracy": 0.3686,
+    "day60_accuracy": 0.3522,
+    "delta_d1_d60": -0.0042,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 54.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q60-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3565,
+    "day30_accuracy": 0.3686,
+    "day60_accuracy": 0.3522,
+    "delta_d1_d60": -0.0042,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 54.39,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q60-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.413,
+    "day30_accuracy": 0.4826,
+    "day60_accuracy": 0.4693,
+    "delta_d1_d60": 0.0563,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 4.79,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q60-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3492,
+    "day30_accuracy": 0.363,
+    "day60_accuracy": 0.3654,
+    "delta_d1_d60": 0.0163,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 61.53,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q60-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3492,
+    "day30_accuracy": 0.363,
+    "day60_accuracy": 0.3654,
+    "delta_d1_d60": 0.0163,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 61.53,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q80-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4154,
+    "day30_accuracy": 0.4265,
+    "day60_accuracy": 0.459,
+    "delta_d1_d60": 0.0436,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 4.11,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q80-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3647,
+    "day30_accuracy": 0.3623,
+    "day60_accuracy": 0.3459,
+    "delta_d1_d60": -0.0187,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 55.74,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q80-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3647,
+    "day30_accuracy": 0.3623,
+    "day60_accuracy": 0.3459,
+    "delta_d1_d60": -0.0187,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 55.74,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q80-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.4144,
+    "day30_accuracy": 0.4528,
+    "day60_accuracy": 0.4862,
+    "delta_d1_d60": 0.0718,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 4.25,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q80-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3518,
+    "day30_accuracy": 0.3504,
+    "day60_accuracy": 0.3579,
+    "delta_d1_d60": 0.0061,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 55.28,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s15-q80-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.15,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3518,
+    "day30_accuracy": 0.3504,
+    "day60_accuracy": 0.3579,
+    "delta_d1_d60": 0.0061,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 55.28,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q60-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.3665,
+    "day30_accuracy": 0.3927,
+    "day60_accuracy": 0.3597,
+    "delta_d1_d60": -0.0068,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 2.8,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q60-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3211,
+    "day30_accuracy": 0.3303,
+    "day60_accuracy": 0.3089,
+    "delta_d1_d60": -0.0121,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 42.11,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q60-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3211,
+    "day30_accuracy": 0.3303,
+    "day60_accuracy": 0.3089,
+    "delta_d1_d60": -0.0121,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.915,
+    "conservation_min": 1.683,
+    "cov_n_samples": 29842,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 42.11,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 890,
+      "total": 890,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q60-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.355,
+    "day30_accuracy": 0.3791,
+    "day60_accuracy": 0.374,
+    "delta_d1_d60": 0.019,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 2.89,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q60-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3089,
+    "day30_accuracy": 0.3126,
+    "day60_accuracy": 0.315,
+    "delta_d1_d60": 0.0062,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 48.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q60-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.6,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3089,
+    "day30_accuracy": 0.3126,
+    "day60_accuracy": 0.315,
+    "delta_d1_d60": 0.0062,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.92,
+    "conservation_min": 7.383,
+    "cov_n_samples": 120251,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 48.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3674,
+      "total": 3674,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q80-v50-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.376,
+    "day30_accuracy": 0.3752,
+    "day60_accuracy": 0.3753,
+    "delta_d1_d60": -0.0007,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 2.49,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q80-v50-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.316,
+    "day30_accuracy": 0.2979,
+    "day60_accuracy": 0.3013,
+    "delta_d1_d60": -0.0147,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 45.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q80-v50-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 50,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.316,
+    "day30_accuracy": 0.2979,
+    "day60_accuracy": 0.3013,
+    "delta_d1_d60": -0.0147,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 1.815,
+    "conservation_min": 1.533,
+    "cov_n_samples": 29728,
+    "cov_shrinkage_lambda": 0.0003,
+    "cov_condition_number": 45.62,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 884,
+      "total": 884,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q80-v200-r0",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.0,
+    "day1_accuracy": 0.3587,
+    "day30_accuracy": 0.3729,
+    "day60_accuracy": 0.3906,
+    "delta_d1_d60": 0.0319,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 2.64,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q80-v200-r3",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.3,
+    "day1_accuracy": 0.3098,
+    "day30_accuracy": 0.3094,
+    "day60_accuracy": 0.3086,
+    "delta_d1_d60": -0.0013,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 44.02,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  },
+  {
+    "cell_id": "S2P-shrinkage-s22-q80-v200-r6",
+    "domain": "s2p",
+    "kernel_type": "shrinkage",
+    "actual_kernel": "shrinkage_proxy",
+    "sigma_eff": 0.22,
+    "q_bar": 0.8,
+    "volume": 200,
+    "rho_max": 0.6,
+    "day1_accuracy": 0.3098,
+    "day30_accuracy": 0.3094,
+    "day60_accuracy": 0.3086,
+    "delta_d1_d60": -0.0013,
+    "cats_converged": 0,
+    "cats_total": 5,
+    "convergence": {
+      "single_source_risk": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "logistics_disruption": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "demand_volatility": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "compliance_violation": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      },
+      "cost_overrun": {
+        "mean_conv_day": null,
+        "pct_converged": 0.0
+      }
+    },
+    "conservation_mean": 7.687,
+    "conservation_min": 7.367,
+    "cov_n_samples": 119470,
+    "cov_shrinkage_lambda": 0.0001,
+    "cov_condition_number": 44.02,
+    "gate_stats": {
+      "gated": 0,
+      "applied": 3698,
+      "total": 3698,
+      "gate_rate": 0.0
+    }
+  }
+]

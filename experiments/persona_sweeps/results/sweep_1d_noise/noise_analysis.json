@@ -1,0 +1,102 @@
+{
+  "1D-N1": {
+    "mean_noise": 0.0617,
+    "noise_label": "Ultra-Clean",
+    "noise_profile": {
+      "travel_match": 0.06,
+      "asset_criticality": 0.05,
+      "threat_intel_enrichment": 0.05,
+      "time_anomaly": 0.08,
+      "pattern_history": 0.06,
+      "device_trust": 0.07
+    },
+    "optimal_tau": 0.05,
+    "ece_at_opt": 0.04573,
+    "ece_at_010": 0.16873,
+    "acc_day1": 0.9814,
+    "acc_day30": 0.9987,
+    "acc_day60": 0.9976,
+    "n_cats_converged": 6,
+    "ceiling": false
+  },
+  "1D-N2": {
+    "mean_noise": 0.105,
+    "noise_label": "Clean",
+    "noise_profile": {
+      "travel_match": 0.1,
+      "asset_criticality": 0.08,
+      "threat_intel_enrichment": 0.09,
+      "time_anomaly": 0.13,
+      "pattern_history": 0.11,
+      "device_trust": 0.12
+    },
+    "optimal_tau": 0.05,
+    "ece_at_opt": 0.05569,
+    "ece_at_010": 0.17263,
+    "acc_day1": 0.9251,
+    "acc_day30": 0.9565,
+    "acc_day60": 0.966,
+    "n_cats_converged": 6,
+    "ceiling": false
+  },
+  "1D-N3": {
+    "mean_noise": 0.1567,
+    "noise_label": "Moderate",
+    "noise_profile": {
+      "travel_match": 0.16,
+      "asset_criticality": 0.14,
+      "threat_intel_enrichment": 0.12,
+      "time_anomaly": 0.19,
+      "pattern_history": 0.15,
+      "device_trust": 0.18
+    },
+    "optimal_tau": 0.05,
+    "ece_at_opt": 0.03225,
+    "ece_at_010": 0.12101,
+    "acc_day1": 0.818,
+    "acc_day30": 0.8509,
+    "acc_day60": 0.8434,
+    "n_cats_converged": 5,
+    "ceiling": true
+  },
+  "1D-N4": {
+    "mean_noise": 0.215,
+    "noise_label": "Noisy",
+    "noise_profile": {
+      "travel_match": 0.22,
+      "asset_criticality": 0.2,
+      "threat_intel_enrichment": 0.18,
+      "time_anomaly": 0.25,
+      "pattern_history": 0.2,
+      "device_trust": 0.24
+    },
+    "optimal_tau": 0.08,
+    "ece_at_opt": 0.0387,
+    "ece_at_010": 0.04647,
+    "acc_day1": 0.7135,
+    "acc_day30": 0.6829,
+    "acc_day60": 0.668,
+    "n_cats_converged": 0,
+    "ceiling": true
+  },
+  "1D-N5": {
+    "mean_noise": 0.2917,
+    "noise_label": "Chaotic",
+    "noise_profile": {
+      "travel_match": 0.3,
+      "asset_criticality": 0.28,
+      "threat_intel_enrichment": 0.25,
+      "time_anomaly": 0.32,
+      "pattern_history": 0.27,
+      "device_trust": 0.33
+    },
+    "optimal_tau": 0.15,
+    "ece_at_opt": 0.0453,
+    "ece_at_010": 0.08717,
+    "acc_day1": 0.6069,
+    "acc_day30": 0.5437,
+    "acc_day60": 0.5594,
+    "n_cats_converged": 0,
+    "ceiling": true
+  }
+}

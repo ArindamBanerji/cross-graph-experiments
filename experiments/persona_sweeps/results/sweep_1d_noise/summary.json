@@ -1,0 +1,397 @@
+{
+  "1D-N1": {
+    "persona_id": "1D-N1",
+    "name": "Ultra-Clean Signal Environment",
+    "industry": "Financial Services",
+    "q_bar": 0.7187,
+    "td034": {
+      "optimal_tau": 0.05,
+      "ece_at_opt": 0.04573,
+      "ece_at_010": 0.16873,
+      "recalibrate": true
+    },
+    "prod5": {
+      "acc_day1": 0.9814,
+      "acc_day30": 0.9987,
+      "acc_day60": 0.9976,
+      "n_cats_converged": 6,
+      "categories": {
+        "credential_access": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 3.1,
+          "not_converged": 0
+        },
+        "threat_intel_match": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 6.9,
+          "not_converged": 0
+        },
+        "lateral_movement": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 6.8,
+          "not_converged": 0
+        },
+        "data_exfiltration": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 5.3,
+          "not_converged": 0
+        },
+        "insider_threat": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 5.3,
+          "not_converged": 0
+        },
+        "cloud_infrastructure": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 5.1,
+          "not_converged": 0
+        }
+      },
+      "conservation": {
+        "min_signal": 20.0,
+        "mean_signal": 41.749,
+        "mean_breach_days": 0.0,
+        "any_breach": false
+      },
+      "gate_stats": {
+        "override_pct": 0.3037,
+        "override_correct_pct": 0.6872
+      }
+    },
+    "ba": {
+      "delta_reward": -0.0022,
+      "p_value": 0.62588,
+      "promo_rate": 0.4,
+      "mean_decisions_to_promo": 125.0,
+      "breach_rate": 0.333,
+      "n_A_mean": 154.4,
+      "n_B_mean": 227.7,
+      "power_sufficient": false,
+      "group_a_analysts": [
+        "analyst_1",
+        "analyst_2"
+      ],
+      "group_b_analysts": [
+        "analyst_3",
+        "analyst_4",
+        "analyst_5"
+      ]
+    }
+  },
+  "1D-N2": {
+    "persona_id": "1D-N2",
+    "name": "Clean Signal Environment",
+    "industry": "Financial Services",
+    "q_bar": 0.7187,
+    "td034": {
+      "optimal_tau": 0.05,
+      "ece_at_opt": 0.05569,
+      "ece_at_010": 0.17263,
+      "recalibrate": true
+    },
+    "prod5": {
+      "acc_day1": 0.9251,
+      "acc_day30": 0.9565,
+      "acc_day60": 0.966,
+      "n_cats_converged": 6,
+      "categories": {
+        "credential_access": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 4.4,
+          "not_converged": 0
+        },
+        "threat_intel_match": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 9.3,
+          "not_converged": 0
+        },
+        "lateral_movement": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 8.3,
+          "not_converged": 0
+        },
+        "data_exfiltration": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 8.9,
+          "not_converged": 0
+        },
+        "insider_threat": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 6.2,
+          "not_converged": 0
+        },
+        "cloud_infrastructure": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 5.9,
+          "not_converged": 0
+        }
+      },
+      "conservation": {
+        "min_signal": 20.0,
+        "mean_signal": 41.749,
+        "mean_breach_days": 0.0,
+        "any_breach": false
+      },
+      "gate_stats": {
+        "override_pct": 0.3037,
+        "override_correct_pct": 0.6872
+      }
+    },
+    "ba": {
+      "delta_reward": -0.0022,
+      "p_value": 0.62588,
+      "promo_rate": 0.4,
+      "mean_decisions_to_promo": 125.0,
+      "breach_rate": 0.333,
+      "n_A_mean": 154.4,
+      "n_B_mean": 227.7,
+      "power_sufficient": false,
+      "group_a_analysts": [
+        "analyst_1",
+        "analyst_2"
+      ],
+      "group_b_analysts": [
+        "analyst_3",
+        "analyst_4",
+        "analyst_5"
+      ]
+    }
+  },
+  "1D-N3": {
+    "persona_id": "1D-N3",
+    "name": "Moderate Noise Environment",
+    "industry": "Technology",
+    "q_bar": 0.7187,
+    "td034": {
+      "optimal_tau": 0.05,
+      "ece_at_opt": 0.03225,
+      "ece_at_010": 0.12101,
+      "recalibrate": true
+    },
+    "prod5": {
+      "acc_day1": 0.818,
+      "acc_day30": 0.8509,
+      "acc_day60": 0.8434,
+      "n_cats_converged": 5,
+      "categories": {
+        "credential_access": {
+          "converge_pct": 86.7,
+          "mean_conv_day": 13.3,
+          "not_converged": 2
+        },
+        "threat_intel_match": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 18.3,
+          "not_converged": 0
+        },
+        "lateral_movement": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 16.7,
+          "not_converged": 0
+        },
+        "data_exfiltration": {
+          "converge_pct": 46.7,
+          "mean_conv_day": 9.4,
+          "not_converged": 8
+        },
+        "insider_threat": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 15.5,
+          "not_converged": 0
+        },
+        "cloud_infrastructure": {
+          "converge_pct": 100.0,
+          "mean_conv_day": 12.5,
+          "not_converged": 0
+        }
+      },
+      "conservation": {
+        "min_signal": 20.0,
+        "mean_signal": 41.749,
+        "mean_breach_days": 0.0,
+        "any_breach": false
+      },
+      "gate_stats": {
+        "override_pct": 0.3037,
+        "override_correct_pct": 0.6872
+      }
+    },
+    "ba": {
+      "delta_reward": -0.0022,
+      "p_value": 0.62588,
+      "promo_rate": 0.4,
+      "mean_decisions_to_promo": 125.0,
+      "breach_rate": 0.333,
+      "n_A_mean": 154.4,
+      "n_B_mean": 227.7,
+      "power_sufficient": false,
+      "group_a_analysts": [
+        "analyst_1",
+        "analyst_2"
+      ],
+      "group_b_analysts": [
+        "analyst_3",
+        "analyst_4",
+        "analyst_5"
+      ]
+    }
+  },
+  "1D-N4": {
+    "persona_id": "1D-N4",
+    "name": "Noisy Signal Environment",
+    "industry": "Healthcare",
+    "q_bar": 0.7187,
+    "td034": {
+      "optimal_tau": 0.08,
+      "ece_at_opt": 0.0387,
+      "ece_at_010": 0.04647,
+      "recalibrate": true
+    },
+    "prod5": {
+      "acc_day1": 0.7135,
+      "acc_day30": 0.6829,
+      "acc_day60": 0.668,
+      "n_cats_converged": 0,
+      "categories": {
+        "credential_access": {
+          "converge_pct": 13.3,
+          "mean_conv_day": 7.5,
+          "not_converged": 13
+        },
+        "threat_intel_match": {
+          "converge_pct": 20.0,
+          "mean_conv_day": 14.3,
+          "not_converged": 12
+        },
+        "lateral_movement": {
+          "converge_pct": 33.3,
+          "mean_conv_day": 29.4,
+          "not_converged": 10
+        },
+        "data_exfiltration": {
+          "converge_pct": 0.0,
+          "mean_conv_day": null,
+          "not_converged": 15
+        },
+        "insider_threat": {
+          "converge_pct": 6.7,
+          "mean_conv_day": 20.0,
+          "not_converged": 14
+        },
+        "cloud_infrastructure": {
+          "converge_pct": 6.7,
+          "mean_conv_day": 6.0,
+          "not_converged": 14
+        }
+      },
+      "conservation": {
+        "min_signal": 20.0,
+        "mean_signal": 41.749,
+        "mean_breach_days": 0.0,
+        "any_breach": false
+      },
+      "gate_stats": {
+        "override_pct": 0.3037,
+        "override_correct_pct": 0.6872
+      }
+    },
+    "ba": {
+      "delta_reward": -0.0022,
+      "p_value": 0.62588,
+      "promo_rate": 0.4,
+      "mean_decisions_to_promo": 125.0,
+      "breach_rate": 0.333,
+      "n_A_mean": 154.4,
+      "n_B_mean": 227.7,
+      "power_sufficient": false,
+      "group_a_analysts": [
+        "analyst_1",
+        "analyst_2"
+      ],
+      "group_b_analysts": [
+        "analyst_3",
+        "analyst_4",
+        "analyst_5"
+      ]
+    }
+  },
+  "1D-N5": {
+    "persona_id": "1D-N5",
+    "name": "Chaotic Signal Environment",
+    "industry": "Healthcare",
+    "q_bar": 0.7187,
+    "td034": {
+      "optimal_tau": 0.15,
+      "ece_at_opt": 0.0453,
+      "ece_at_010": 0.08717,
+      "recalibrate": true
+    },
+    "prod5": {
+      "acc_day1": 0.6069,
+      "acc_day30": 0.5437,
+      "acc_day60": 0.5594,
+      "n_cats_converged": 0,
+      "categories": {
+        "credential_access": {
+          "converge_pct": 0.0,
+          "mean_conv_day": null,
+          "not_converged": 15
+        },
+        "threat_intel_match": {
+          "converge_pct": 0.0,
+          "mean_conv_day": null,
+          "not_converged": 15
+        },
+        "lateral_movement": {
+          "converge_pct": 0.0,
+          "mean_conv_day": null,
+          "not_converged": 15
+        },
+        "data_exfiltration": {
+          "converge_pct": 0.0,
+          "mean_conv_day": null,
+          "not_converged": 15
+        },
+        "insider_threat": {
+          "converge_pct": 0.0,
+          "mean_conv_day": null,
+          "not_converged": 15
+        },
+        "cloud_infrastructure": {
+          "converge_pct": 0.0,
+          "mean_conv_day": null,
+          "not_converged": 15
+        }
+      },
+      "conservation": {
+        "min_signal": 20.0,
+        "mean_signal": 41.749,
+        "mean_breach_days": 0.0,
+        "any_breach": false
+      },
+      "gate_stats": {
+        "override_pct": 0.3037,
+        "override_correct_pct": 0.6872
+      }
+    },
+    "ba": {
+      "delta_reward": -0.0022,
+      "p_value": 0.62588,
+      "promo_rate": 0.4,
+      "mean_decisions_to_promo": 125.0,
+      "breach_rate": 0.333,
+      "n_A_mean": 154.4,
+      "n_B_mean": 227.7,
+      "power_sufficient": false,
+      "group_a_analysts": [
+        "analyst_1",
+        "analyst_2"
+      ],
+      "group_b_analysts": [
+        "analyst_3",
+        "analyst_4",
+        "analyst_5"
+      ]
+    }
+  }
+}

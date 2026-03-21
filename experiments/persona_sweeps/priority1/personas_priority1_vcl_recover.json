@@ -1,0 +1,73 @@
+[
+  {
+    "persona_id": "VCL-1",
+    "judge": "validation",
+    "name": "Post-Campaign Recovery at Low Volume (V=50)",
+    "industry": "Technology",
+    "company_size": "200",
+    "siem": "Sentinel",
+    "alerts_per_day": 50,
+    "category_distribution": {
+      "credential_access": 0.30,
+      "lateral_movement": 0.12,
+      "data_exfiltration": 0.12,
+      "insider_threat": 0.08,
+      "cloud_infrastructure": 0.28,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 6, "override_rate": 0.16, "override_quality": 0.89, "shift": "day", "fatigue_factor": 0.22, "specialization": "cloud_infrastructure"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 3, "override_rate": 0.28, "override_quality": 0.77, "shift": "swing", "fatigue_factor": 0.30, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "junior", "years_experience": 1, "override_rate": 0.44, "override_quality": 0.62, "shift": "night", "fatigue_factor": 0.42, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Clean — focus is on recovery, not noise"},
+      "asset_criticality": {"base_noise": 0.10, "note": "Clean"},
+      "threat_intel_enrichment": {"base_noise": 0.09, "note": "Clean"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Moderate"},
+      "pattern_history": {"base_noise": 0.11, "note": "Clean"},
+      "device_trust": {"base_noise": 0.12, "note": "Clean"}
+    },
+    "environment_shifts": [
+      {"day": 20, "type": "campaign", "description": "Targeted phishing campaign — 80% of analysts misclassify campaign alerts as isolated incidents", "category_impact": {"credential_access": 1.8, "threat_intel_match": 1.4}, "duration_days": 10}
+    ],
+    "graph_state": {"initial_entities": 1500, "threat_indicators": 400, "siem_sources": 1, "entity_resolution_completeness": 0.62},
+    "business_context": "Validation: at V=50, the 150-decision recovery gate translates to 3 days (50×30% verification×credential_access_weight). Tests whether low-volume SOCs recover within the claimed 3 calendar days. If not, the claim needs volume normalization."
+  },
+  {
+    "persona_id": "VCL-2",
+    "judge": "validation",
+    "name": "Post-Campaign Recovery at Mid Volume (V=100)",
+    "industry": "Financial Services",
+    "company_size": "1500",
+    "siem": "both",
+    "alerts_per_day": 100,
+    "category_distribution": {
+      "credential_access": 0.35,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.12,
+      "insider_threat": 0.08,
+      "cloud_infrastructure": 0.18,
+      "threat_intel_match": 0.12
+    },
+    "analyst_team": [
+      {"id": "analyst_1", "experience_level": "senior", "years_experience": 7, "override_rate": 0.13, "override_quality": 0.91, "shift": "day", "fatigue_factor": 0.18, "specialization": "credential_access"},
+      {"id": "analyst_2", "experience_level": "mid", "years_experience": 4, "override_rate": 0.24, "override_quality": 0.80, "shift": "day", "fatigue_factor": 0.20, "specialization": "generalist"},
+      {"id": "analyst_3", "experience_level": "mid", "years_experience": 3, "override_rate": 0.27, "override_quality": 0.78, "shift": "swing", "fatigue_factor": 0.30, "specialization": "generalist"},
+      {"id": "analyst_4", "experience_level": "junior", "years_experience": 1, "override_rate": 0.42, "override_quality": 0.64, "shift": "night", "fatigue_factor": 0.40, "specialization": "generalist"}
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.11, "note": "Clean — FinServ profile"},
+      "asset_criticality": {"base_noise": 0.09, "note": "Well-tagged assets"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Premium feeds"},
+      "time_anomaly": {"base_noise": 0.13, "note": "Moderate — global support staff"},
+      "pattern_history": {"base_noise": 0.10, "note": "Good baselines"},
+      "device_trust": {"base_noise": 0.10, "note": "Managed devices"}
+    },
+    "environment_shifts": [
+      {"day": 20, "type": "campaign", "description": "Targeted phishing campaign — 80% correlated wrong overrides on credential_access alerts", "category_impact": {"credential_access": 1.8, "threat_intel_match": 1.4}, "duration_days": 10}
+    ],
+    "graph_state": {"initial_entities": 6000, "threat_indicators": 5000, "siem_sources": 2, "entity_resolution_completeness": 0.82},
+    "business_context": "Validation: at V=100, 150 decisions for credential_access takes ~1.5 days. Tests the mid-point between V=50 (slow recovery) and V=200 (fast recovery from 2D-CE1). If recovery scales linearly with 1/V, the claim is volume-normalizable."
+  }
+]

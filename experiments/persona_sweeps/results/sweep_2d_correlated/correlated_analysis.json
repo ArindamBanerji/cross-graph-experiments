@@ -1,0 +1,63 @@
+{
+  "ce1": {
+    "err_day19": 0.0648,
+    "err_day25": 0.1265,
+    "err_day30": 0.1368,
+    "peak_drift": 0.072,
+    "sig_baseline_mean": 42.435,
+    "sig_campaign_mean": 29.006,
+    "relative_threshold_fired": true,
+    "recovery_decs_mean": 57.8,
+    "recovery_within_gate": false,
+    "n_seeds_recovered": 15,
+    "n_seeds_total": 15
+  },
+  "ce2": {
+    "categories": {
+      "credential_access": {
+        "pre_spike_err": 0.1617,
+        "spike_err": 0.1481,
+        "delta": -0.0136,
+        "role": "starved",
+        "volume_mult": 0.3
+      },
+      "threat_intel_match": {
+        "pre_spike_err": 0.1792,
+        "spike_err": 0.1373,
+        "delta": -0.0419,
+        "role": "neutral",
+        "volume_mult": 1.0
+      },
+      "lateral_movement": {
+        "pre_spike_err": 0.1429,
+        "spike_err": 0.1214,
+        "delta": -0.0215,
+        "role": "spiking",
+        "volume_mult": 3.0
+      },
+      "data_exfiltration": {
+        "pre_spike_err": 0.1688,
+        "spike_err": 0.1894,
+        "delta": 0.0206,
+        "role": "spiking",
+        "volume_mult": 2.5
+      },
+      "insider_threat": {
+        "pre_spike_err": 0.1614,
+        "spike_err": 0.1277,
+        "delta": -0.0337,
+        "role": "starved",
+        "volume_mult": 0.2
+      },
+      "cloud_infrastructure": {
+        "pre_spike_err": 0.1488,
+        "spike_err": 0.1245,
+        "delta": -0.0242,
+        "role": "neutral",
+        "volume_mult": 1.0
+      }
+    },
+    "spike_start": 15,
+    "spike_end": 28
+  }
+}

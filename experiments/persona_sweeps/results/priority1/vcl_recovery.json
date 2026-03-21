@@ -1,0 +1,28 @@
+{
+  "VCL-1": {
+    "apd": 50,
+    "cred_frac": 0.3,
+    "cred_per_day": 15.0,
+    "err_pre_campaign": 0.0935,
+    "err_peak": 0.1194,
+    "peak_drift": 0.0259,
+    "recovery_decs_mean": 15.0,
+    "recovery_days_mean": 1.0,
+    "recovery_within_3d": true,
+    "n_seeds_recovered": 15,
+    "n_seeds_total": 15
+  },
+  "VCL-2": {
+    "apd": 100,
+    "cred_frac": 0.35,
+    "cred_per_day": 35.0,
+    "err_pre_campaign": 0.065,
+    "err_peak": 0.1241,
+    "peak_drift": 0.0591,
+    "recovery_decs_mean": 32.5,
+    "recovery_days_mean": 0.93,
+    "recovery_within_3d": true,
+    "n_seeds_recovered": 15,
+    "n_seeds_total": 15
+  }
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "persona_id": "2G-GE1",
+    "judge": "strategy_session",
+    "name": "Graph Enrichment Shock: Sentinel Added at Day 45",
+    "industry": "Financial Services",
+    "company_size": "3000",
+    "siem": "splunk",
+    "alerts_per_day": 180,
+    "category_distribution": {
+      "credential_access": 0.28,
+      "lateral_movement": 0.14,
+      "data_exfiltration": 0.18,
+      "insider_threat": 0.16,
+      "cloud_infrastructure": 0.14,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 8,
+        "override_rate": 0.14,
+        "override_quality": 0.91,
+        "shift": "day",
+        "fatigue_factor": 0.13,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.25,
+        "override_quality": 0.80,
+        "shift": "day",
+        "fatigue_factor": 0.16,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.27,
+        "override_quality": 0.77,
+        "shift": "swing",
+        "fatigue_factor": 0.26,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.64,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.38,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.14, "note": "Pre-enrichment: Splunk-only, limited identity data"},
+      "asset_criticality": {"base_noise": 0.12, "note": "Pre-enrichment: CMDB but no Entra integration"},
+      "threat_intel_enrichment": {"base_noise": 0.15, "note": "Pre-enrichment: Splunk TI only, no Sentinel Defender data"},
+      "time_anomaly": {"base_noise": 0.16, "note": "Pre-enrichment: limited behavioral baseline"},
+      "pattern_history": {"base_noise": 0.13, "note": "Pre-enrichment: Splunk 6 months history"},
+      "device_trust": {"base_noise": 0.20, "note": "Pre-enrichment: no Defender endpoint data, high device noise"}
+    },
+    "environment_shifts": [
+      {
+        "day": 45,
+        "type": "campaign",
+        "description": "GRAPH ENRICHMENT EVENT (not an attack): Customer connects Microsoft Sentinel at Day 45. Entity resolution links 340 new identities (Entra ID → Splunk mapping). Factor noise drops: threat_intel_enrichment from 0.15 to 0.08 (Defender TI feeds added), device_trust from 0.20 to 0.12 (Defender for Endpoint data). Category distribution shifts: cloud_infrastructure increases from 14% to 22% (Sentinel generates cloud-native alerts Splunk didn't see). Total alerts_per_day increases from 180 to 250. The graph goes from 2800 entities to 5200 in one day.",
+        "category_impact": {"cloud_infrastructure": 1.6, "credential_access": 1.2, "threat_intel_match": 1.4},
+        "duration_days": 45
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 2800,
+      "threat_indicators": 95,
+      "siem_sources": 1,
+      "entity_resolution_completeness": 0.62
+    },
+    "business_context": "THE REALISTIC DAY 45 SCENARIO for every v6.0 customer. Customer starts with Splunk. First 45 days: centroids calibrate on Splunk-only data. At Day 45, Sentinel connects. Three simultaneous changes: (1) 340 entity resolution links created, entity_resolution_completeness jumps 0.62→0.88, (2) factor noise drops for threat_intel and device_trust because Defender data is cleaner, (3) category distribution shifts because Sentinel alerts have different mix. QUESTION: Do centroids BENEFIT (lower noise → faster convergence per Bridge B) or TEMPORARILY DEGRADE (calibrated to old noise profile, factor distributions shifted)? This tests the transition dynamics that every multi-SIEM customer will experience."
+  },
+  {
+    "persona_id": "2G-GE2",
+    "judge": "strategy_session",
+    "name": "Graph Enrichment Shock: Defender for Endpoint at Day 30",
+    "industry": "Healthcare",
+    "company_size": "4500",
+    "siem": "sentinel",
+    "alerts_per_day": 160,
+    "category_distribution": {
+      "credential_access": 0.22,
+      "lateral_movement": 0.18,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.12,
+      "cloud_infrastructure": 0.18,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.89,
+        "shift": "day",
+        "fatigue_factor": 0.14,
+        "specialization": "lateral_movement"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.27,
+        "override_quality": 0.77,
+        "shift": "day",
+        "fatigue_factor": 0.18,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.25,
+        "override_quality": 0.79,
+        "shift": "swing",
+        "fatigue_factor": 0.27,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.42,
+        "override_quality": 0.63,
+        "shift": "day",
+        "fatigue_factor": 0.21,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.61,
+        "shift": "swing",
+        "fatigue_factor": 0.32,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.18, "note": "Pre-enrichment: clinician travel unpredictable"},
+      "asset_criticality": {"base_noise": 0.22, "note": "Pre-enrichment: medical devices untagged, no endpoint agent"},
+      "threat_intel_enrichment": {"base_noise": 0.12, "note": "Pre-enrichment: Sentinel TI, decent"},
+      "time_anomaly": {"base_noise": 0.20, "note": "Pre-enrichment: 24/7 clinical, noisy baseline"},
+      "pattern_history": {"base_noise": 0.15, "note": "Pre-enrichment: 4 months Sentinel history"},
+      "device_trust": {"base_noise": 0.28, "note": "Pre-enrichment: NO endpoint agent, medical devices unknown trust"}
+    },
+    "environment_shifts": [
+      {
+        "day": 30,
+        "type": "campaign",
+        "description": "GRAPH ENRICHMENT EVENT (not an attack): Customer enables Defender for Endpoint at Day 30. All managed endpoints get agent. Device trust noise drops from 0.28 to 0.10 (now have real-time device health). Asset criticality noise drops from 0.22 to 0.13 (endpoint agent reports installed software, patch level). No change to category distribution — same alert sources. 1200 new device entities resolve against existing Sentinel identities.",
+        "category_impact": {"cloud_infrastructure": 1.0, "lateral_movement": 1.0},
+        "duration_days": 60
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 5800,
+      "threat_indicators": 140,
+      "siem_sources": 1,
+      "entity_resolution_completeness": 0.68
+    },
+    "business_context": "CLEANER enrichment scenario than 2G-GE1. Only factor noise changes (device_trust and asset_criticality drop dramatically), NOT category distribution. This isolates the noise reduction effect from the category shift effect. If centroids benefit immediately (no accuracy dip), the transition is smooth. If there's a dip, it's because centroids calibrated to NOISY device_trust factors now see CLEAN values at different absolute positions. Bridge B Phase B predicts faster convergence at lower noise — but the TRANSITION may temporarily confuse calibrated centroids."
+  }
+]

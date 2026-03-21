@@ -1,0 +1,467 @@
+[
+  {
+    "persona_id": "1A-V1",
+    "judge": "strategy_session",
+    "name": "Micro SOC — 30 Alerts/Day",
+    "industry": "Financial Services",
+    "company_size": "500",
+    "siem": "splunk",
+    "alerts_per_day": 30,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.90,
+        "shift": "day",
+        "fatigue_factor": 0.12,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.17,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.80,
+        "shift": "swing",
+        "fatigue_factor": 0.26,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.65,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.38,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Controlled — same across volume sweep"},
+      "asset_criticality": {"base_noise": 0.09, "note": "Controlled"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Controlled"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Controlled"},
+      "pattern_history": {"base_noise": 0.10, "note": "Controlled"},
+      "device_trust": {"base_noise": 0.11, "note": "Controlled"}
+    },
+    "environment_shifts": [
+      {
+        "day": 40,
+        "type": "campaign",
+        "description": "Credential stuffing wave",
+        "category_impact": {"credential_access": 1.5},
+        "duration_days": 5
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 800,
+      "threat_indicators": 40,
+      "siem_sources": 1,
+      "entity_resolution_completeness": 0.70
+    },
+    "business_context": "Volume sweep baseline: 30 alerts/day. Small regional bank. At 30/day, insider_threat gets ~4.5 alerts/day and threat_intel_match gets ~3/day. These categories may NEVER converge within 60 days. VALIDATES: volume floor below which specific categories are reported as CALIBRATING."
+  },
+  {
+    "persona_id": "1A-V2",
+    "judge": "strategy_session",
+    "name": "Small SOC — 100 Alerts/Day",
+    "industry": "Financial Services",
+    "company_size": "1200",
+    "siem": "splunk",
+    "alerts_per_day": 100,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.90,
+        "shift": "day",
+        "fatigue_factor": 0.12,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.17,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.80,
+        "shift": "swing",
+        "fatigue_factor": 0.26,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.65,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.38,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Controlled"},
+      "asset_criticality": {"base_noise": 0.09, "note": "Controlled"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Controlled"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Controlled"},
+      "pattern_history": {"base_noise": 0.10, "note": "Controlled"},
+      "device_trust": {"base_noise": 0.11, "note": "Controlled"}
+    },
+    "environment_shifts": [
+      {
+        "day": 40,
+        "type": "campaign",
+        "description": "Credential stuffing wave",
+        "category_impact": {"credential_access": 1.5},
+        "duration_days": 5
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 1800,
+      "threat_indicators": 75,
+      "siem_sources": 1,
+      "entity_resolution_completeness": 0.75
+    },
+    "business_context": "Volume sweep: 100 alerts/day. Mid-market bank. At 100/day, threat_intel_match gets ~10/day — N_half=14 reached in ~10 days. All categories should converge within 60 days."
+  },
+  {
+    "persona_id": "1A-V3",
+    "judge": "strategy_session",
+    "name": "Mid SOC — 200 Alerts/Day",
+    "industry": "Financial Services",
+    "company_size": "2000",
+    "siem": "both",
+    "alerts_per_day": 200,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.90,
+        "shift": "day",
+        "fatigue_factor": 0.12,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.17,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.80,
+        "shift": "swing",
+        "fatigue_factor": 0.26,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.65,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.38,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Controlled"},
+      "asset_criticality": {"base_noise": 0.09, "note": "Controlled"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Controlled"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Controlled"},
+      "pattern_history": {"base_noise": 0.10, "note": "Controlled"},
+      "device_trust": {"base_noise": 0.11, "note": "Controlled"}
+    },
+    "environment_shifts": [
+      {
+        "day": 40,
+        "type": "campaign",
+        "description": "Credential stuffing wave",
+        "category_impact": {"credential_access": 1.5},
+        "duration_days": 5
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 3200,
+      "threat_indicators": 120,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.85
+    },
+    "business_context": "Volume sweep baseline: 200 alerts/day. The ROI calculator reference deployment. This is the control persona — identical to 1C-Q3 (balanced team). All categories should converge comfortably within 60 days."
+  },
+  {
+    "persona_id": "1A-V4",
+    "judge": "strategy_session",
+    "name": "Large SOC — 500 Alerts/Day",
+    "industry": "Financial Services",
+    "company_size": "8000",
+    "siem": "both",
+    "alerts_per_day": 500,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.90,
+        "shift": "day",
+        "fatigue_factor": 0.12,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.17,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.80,
+        "shift": "swing",
+        "fatigue_factor": 0.26,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.65,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.38,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Controlled"},
+      "asset_criticality": {"base_noise": 0.09, "note": "Controlled"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Controlled"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Controlled"},
+      "pattern_history": {"base_noise": 0.10, "note": "Controlled"},
+      "device_trust": {"base_noise": 0.11, "note": "Controlled"}
+    },
+    "environment_shifts": [
+      {
+        "day": 40,
+        "type": "campaign",
+        "description": "Credential stuffing wave",
+        "category_impact": {"credential_access": 1.5},
+        "duration_days": 5
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 12000,
+      "threat_indicators": 350,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.90
+    },
+    "business_context": "Volume sweep: 500 alerts/day. Large bank. At this volume, even threat_intel_match (10%) gets 50/day. All categories converge rapidly. Tests whether high volume + same team creates analyst fatigue effects or conservation law abundance."
+  },
+  {
+    "persona_id": "1A-V5",
+    "judge": "strategy_session",
+    "name": "Enterprise SOC — 1000 Alerts/Day",
+    "industry": "Financial Services",
+    "company_size": "25000",
+    "siem": "both",
+    "alerts_per_day": 1000,
+    "category_distribution": {
+      "credential_access": 0.25,
+      "lateral_movement": 0.15,
+      "data_exfiltration": 0.20,
+      "insider_threat": 0.15,
+      "cloud_infrastructure": 0.15,
+      "threat_intel_match": 0.10
+    },
+    "analyst_team": [
+      {
+        "id": "analyst_1",
+        "experience_level": "senior",
+        "years_experience": 7,
+        "override_rate": 0.15,
+        "override_quality": 0.90,
+        "shift": "day",
+        "fatigue_factor": 0.12,
+        "specialization": "credential_access"
+      },
+      {
+        "id": "analyst_2",
+        "experience_level": "mid",
+        "years_experience": 3,
+        "override_rate": 0.26,
+        "override_quality": 0.78,
+        "shift": "day",
+        "fatigue_factor": 0.17,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_3",
+        "experience_level": "mid",
+        "years_experience": 4,
+        "override_rate": 0.24,
+        "override_quality": 0.80,
+        "shift": "swing",
+        "fatigue_factor": 0.26,
+        "specialization": "cloud_infrastructure"
+      },
+      {
+        "id": "analyst_4",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.40,
+        "override_quality": 0.65,
+        "shift": "day",
+        "fatigue_factor": 0.20,
+        "specialization": "generalist"
+      },
+      {
+        "id": "analyst_5",
+        "experience_level": "junior",
+        "years_experience": 1,
+        "override_rate": 0.38,
+        "override_quality": 0.62,
+        "shift": "swing",
+        "fatigue_factor": 0.30,
+        "specialization": "generalist"
+      }
+    ],
+    "factor_noise_profile": {
+      "travel_match": {"base_noise": 0.12, "note": "Controlled"},
+      "asset_criticality": {"base_noise": 0.09, "note": "Controlled"},
+      "threat_intel_enrichment": {"base_noise": 0.08, "note": "Controlled"},
+      "time_anomaly": {"base_noise": 0.14, "note": "Controlled"},
+      "pattern_history": {"base_noise": 0.10, "note": "Controlled"},
+      "device_trust": {"base_noise": 0.11, "note": "Controlled"}
+    },
+    "environment_shifts": [
+      {
+        "day": 40,
+        "type": "campaign",
+        "description": "Credential stuffing wave",
+        "category_impact": {"credential_access": 1.5},
+        "duration_days": 5
+      }
+    ],
+    "graph_state": {
+      "initial_entities": 45000,
+      "threat_indicators": 1200,
+      "siem_sources": 2,
+      "entity_resolution_completeness": 0.92
+    },
+    "business_context": "Volume sweep upper bound: 1000 alerts/day. Global bank. At this volume the 5-analyst team is overwhelmed — each analyst processes 200/day. Tests whether analyst fatigue at extreme volume degrades override quality AND whether the conservation law signal is super-healthy (V dominates). The $1.07M ROI calculator was built for this profile."
+  }
+]
