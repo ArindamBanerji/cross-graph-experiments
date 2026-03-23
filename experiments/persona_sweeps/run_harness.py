@@ -31,7 +31,7 @@ from src.data.domain_config import load_domain_config
 # ── Harness parameters ────────────────────────────────────────────────────────
 ETA_CONFIRM  = 0.05
 ETA_OVERRIDE = 0.01
-THETA_MIN    = 0.434
+THETA_MIN    = 0.467
 
 # TD-034
 TD_TAU_VALUES  = [0.05, 0.08, 0.10, 0.12, 0.15]

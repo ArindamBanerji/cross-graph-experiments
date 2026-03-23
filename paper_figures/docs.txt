@@ -1,6 +1,42 @@
 Folder PATH listing for volume Windows-SSD
 Volume serial number is 80E2-4F82
 C:.
+    block5b_accuracy_trajectories.pdf
+    block5b_accuracy_trajectories.png
+    block5b_convergence_heatmap.pdf
+    block5b_convergence_heatmap.png
+    block5b_tau_comparison.pdf
+    block5b_tau_comparison.png
+    bridge_a_phase_b_acceptance_trajectory.pdf
+    bridge_a_phase_b_acceptance_trajectory.png
+    bridge_a_phase_b_conservation.pdf
+    bridge_a_phase_b_conservation.png
+    bridge_a_phase_b_reward_distribution.pdf
+    bridge_a_phase_b_reward_distribution.png
+    bridge_b_diagnostic_heatmap.pdf
+    bridge_b_diagnostic_heatmap.png
+    bridge_b_diagnostic_per_factor.pdf
+    bridge_b_diagnostic_per_factor.png
+    bridge_b_phase_b_convergence_curves.pdf
+    bridge_b_phase_b_convergence_curves.png
+    bridge_b_phase_b_reduction_bar.pdf
+    bridge_b_phase_b_reduction_bar.png
+    bridge_b_phase_c_error_trajectory.pdf
+    bridge_b_phase_c_error_trajectory.png
+    bridge_b_phase_c_eta_eff_trajectory.pdf
+    bridge_b_phase_c_eta_eff_trajectory.png
+    bridge_b_phase_c_v2_dual_trajectory.pdf
+    bridge_b_phase_c_v2_dual_trajectory.png
+    bridge_b_phase_c_v2_eta_eff.pdf
+    bridge_b_phase_c_v2_eta_eff.png
+    bridge_b_phase_c_v2_graph_growth.pdf
+    bridge_b_phase_c_v2_graph_growth.png
+    bridge_b_phase_c_v3_error_trajectory.pdf
+    bridge_b_phase_c_v3_error_trajectory.png
+    bridge_b_phase_c_v3_graph_noise.pdf
+    bridge_b_phase_c_v3_graph_noise.png
+    bridge_b_phase_c_v3_reconvergence_comparison.pdf
+    bridge_b_phase_c_v3_reconvergence_comparison.png
     disc1_coverage_trajectory.pdf
     disc1_coverage_trajectory.png
     disc1_feature_correlation_heatmap.pdf
@@ -18,6 +54,10 @@ C:.
     disc2_learning_lift.pdf
     disc2_learning_lift.png
     docs.txt
+    eta_override_sweep_curves.pdf
+    eta_override_sweep_curves.png
+    eta_override_sweep_heatmap.pdf
+    eta_override_sweep_heatmap.png
     exp1_blog_convergence.pdf
     exp1_blog_convergence.png
     exp1_convergence.pdf
@@ -222,6 +262,10 @@ C:.
     expOP3_early_warning_roc.png
     expOP3_per_category_norms.pdf
     expOP3_per_category_norms.png
+    expOP3_recheck_residual_trajectory.pdf
+    expOP3_recheck_residual_trajectory.png
+    expOP3_recheck_roc.pdf
+    expOP3_recheck_roc.png
     expOPm_lambda_sweep.pdf
     expOPm_lambda_sweep.png
     expOPm_margin_distribution.pdf
@@ -286,6 +330,18 @@ C:.
     expS5b_f1_by_type.png
     expS5b_sigma_comparison.pdf
     expS5b_sigma_comparison.png
+    exp_l2_poison_conservation_trajectory.pdf
+    exp_l2_poison_conservation_trajectory.png
+    exp_l2_poison_gate_effectiveness.pdf
+    exp_l2_poison_gate_effectiveness.png
+    exp_l2_poison_promotion_rates.pdf
+    exp_l2_poison_promotion_rates.png
+    exp_l2_poison_subtle_comparison.pdf
+    exp_l2_poison_subtle_comparison.png
+    exp_l2_power_curves.pdf
+    exp_l2_power_curves.png
+    exp_l2_power_heatmap.pdf
+    exp_l2_power_heatmap.png
     fig17_online_learning.pdf
     fig17_online_learning.png
     fig18_normalization_ablation.pdf
@@ -326,6 +382,10 @@ C:.
     fx2_centroid_drift.png
     fx_di07_discount_sweep.pdf
     fx_di07_discount_sweep.png
+    fx_t5_a4_band_distribution.pdf
+    fx_t5_a4_band_distribution.png
+    fx_t5_a4_per_action_accuracy.pdf
+    fx_t5_a4_per_action_accuracy.png
     fx_t5_action_distribution.pdf
     fx_t5_action_distribution.png
     fx_t5_cost_weighted.pdf
@@ -334,6 +394,18 @@ C:.
     fx_t5_error_direction.png
     fx_t5_per_action_accuracy.pdf
     fx_t5_per_action_accuracy.png
+    meta3_bootstrap_validation.pdf
+    meta3_bootstrap_validation.png
+    meta3_w_vs_signal.pdf
+    meta3_w_vs_signal.png
+    nbp_asymmetric_eta.pdf
+    nbp_asymmetric_eta.png
+    nbp_diagonal_healthcare.pdf
+    nbp_diagonal_healthcare.png
+    nbp_diagonal_heatmap.pdf
+    nbp_diagonal_heatmap.png
+    nbp_kernel_progression_extended.pdf
+    nbp_kernel_progression_extended.png
     prod1_iks_at_decision_milestones.pdf
     prod1_iks_at_decision_milestones.png
     prod1_iks_trajectory_by_kappa.pdf
@@ -382,12 +454,20 @@ C:.
     prod4w_overall_accuracy.png
     prod4w_threshold_descent.pdf
     prod4w_threshold_descent.png
+    prod4_a4_coverage_by_category.pdf
+    prod4_a4_coverage_by_category.png
+    prod4_a4_threshold_table.pdf
+    prod4_a4_threshold_table.png
     prod4_accuracy_vs_threshold_by_category.pdf
     prod4_accuracy_vs_threshold_by_category.png
     prod4_coverage_vs_threshold_by_category.pdf
     prod4_coverage_vs_threshold_by_category.png
     prod4_threshold_recommendation_table.pdf
     prod4_threshold_recommendation_table.png
+    prod5_convergence_by_category.pdf
+    prod5_convergence_by_category.png
+    prod5_predicted_vs_simulated.pdf
+    prod5_predicted_vs_simulated.png
     shift1_centroid_drift.pdf
     shift1_centroid_drift.png
     shift1_coverage_by_delta.pdf
@@ -404,6 +484,10 @@ C:.
     shift2_zero_noise_diagnostic.png
     statistical_pass_forest.pdf
     statistical_pass_forest.png
+    td034_ece_vs_tau.pdf
+    td034_ece_vs_tau.png
+    td034_reliability_diagram.pdf
+    td034_reliability_diagram.png
     VAL-1A_residual_plot.pdf
     VAL-1A_residual_plot.png
     VAL-3A-3_data_efficiency_ratio.pdf

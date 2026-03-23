@@ -21,7 +21,7 @@ RESULTS_DIR = EXP_DIR / "results"
 PAPER_FIGS  = REPO_ROOT / "paper_figures"
 PAPER_FIGS.mkdir(parents=True, exist_ok=True)
 
-THETA_MIN = 0.434
+THETA_MIN = 0.467
 DAYS      = 90
 
 plt.rcParams.update({

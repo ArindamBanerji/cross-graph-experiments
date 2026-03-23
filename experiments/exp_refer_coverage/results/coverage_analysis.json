@@ -1,0 +1,741 @@
+{
+  "experiment": "EXP-REFER-COVERAGE",
+  "n_alerts_total": 5000,
+  "n_personas": 5,
+  "conf_gate_threshold": 0.7,
+  "referral_reasons": {
+    "R1": 0.02,
+    "R2": 0.02,
+    "R3": 0.015,
+    "R4": 0.015,
+    "R5": 0.01,
+    "R6": 0.015,
+    "R7": 0.015,
+    "R8": 0.02,
+    "R9": 0.005,
+    "R10": 0.01
+  },
+  "reason_types": {
+    "R1": "RULE",
+    "R2": "RULE",
+    "R3": "RULE",
+    "R4": "RULE",
+    "R5": "RULE",
+    "R6": "RULE",
+    "R7": "CONTEXT",
+    "R8": "EMERGENT",
+    "R9": "CONTEXT",
+    "R10": "EMERGENT"
+  },
+  "total_refer_rate": 0.14500000000000002,
+  "persona_results": [
+    {
+      "persona_id": "P1",
+      "persona_name": "FinServ SOC",
+      "n_alerts": 1000,
+      "total_refer": 151,
+      "total_nonrefer": 849,
+      "refer_rate": 0.151,
+      "s1_accuracy_nonref": 0.9658,
+      "mean_conf_nonref": 0.7783,
+      "reason_counts": {
+        "R10": 11,
+        "R6": 12,
+        "R3": 11,
+        "R4": 14,
+        "R8": 23,
+        "R7": 27,
+        "R2": 21,
+        "R5": 11,
+        "R9": 1,
+        "R1": 20
+      },
+      "layer_stats": {
+        "CONF": {
+          "tp": 41,
+          "fp": 231,
+          "fn": 110,
+          "tn": 618,
+          "DR": 0.2715,
+          "FPR": 0.2721,
+          "coverage_pct": 27.2
+        },
+        "R16_ONLY": {
+          "tp": 86,
+          "fp": 119,
+          "fn": 65,
+          "tn": 730,
+          "DR": 0.5695,
+          "FPR": 0.1402,
+          "coverage_pct": 57.0
+        },
+        "R16": {
+          "tp": 107,
+          "fp": 323,
+          "fn": 44,
+          "tn": 526,
+          "DR": 0.7086,
+          "FPR": 0.3804,
+          "coverage_pct": 70.9
+        },
+        "R17": {
+          "tp": 124,
+          "fp": 323,
+          "fn": 27,
+          "tn": 526,
+          "DR": 0.8212,
+          "FPR": 0.3804,
+          "coverage_pct": 82.1
+        },
+        "R19": {
+          "tp": 128,
+          "fp": 372,
+          "fn": 23,
+          "tn": 477,
+          "DR": 0.8477,
+          "FPR": 0.4382,
+          "coverage_pct": 84.8
+        },
+        "MAX": {
+          "tp": 148,
+          "fp": 372,
+          "fn": 3,
+          "tn": 477,
+          "DR": 0.9801,
+          "FPR": 0.4382,
+          "coverage_pct": 98.0
+        }
+      },
+      "per_reason_conf": {
+        "R3": 2,
+        "R4": 5,
+        "R8": 7,
+        "R7": 8,
+        "R2": 7,
+        "R6": 4,
+        "R9": 1,
+        "R1": 3,
+        "R10": 2,
+        "R5": 2
+      },
+      "per_reason_rules": {
+        "R6": 12,
+        "R3": 11,
+        "R2": 21,
+        "R7": 3,
+        "R5": 11,
+        "R1": 20,
+        "R4": 6,
+        "R8": 1,
+        "R10": 1
+      },
+      "per_reason_total": {
+        "R10": 11,
+        "R6": 12,
+        "R3": 11,
+        "R4": 14,
+        "R8": 23,
+        "R7": 27,
+        "R2": 21,
+        "R5": 11,
+        "R9": 1,
+        "R1": 20
+      }
+    },
+    {
+      "persona_id": "P2",
+      "persona_name": "Healthcare SOC",
+      "n_alerts": 1000,
+      "total_refer": 153,
+      "total_nonrefer": 847,
+      "refer_rate": 0.153,
+      "s1_accuracy_nonref": 0.7521,
+      "mean_conf_nonref": 0.6946,
+      "reason_counts": {
+        "R1": 20,
+        "R2": 21,
+        "R6": 11,
+        "R10": 15,
+        "R5": 13,
+        "R7": 14,
+        "R9": 11,
+        "R8": 17,
+        "R3": 17,
+        "R4": 14
+      },
+      "layer_stats": {
+        "CONF": {
+          "tp": 83,
+          "fp": 439,
+          "fn": 70,
+          "tn": 408,
+          "DR": 0.5425,
+          "FPR": 0.5183,
+          "coverage_pct": 54.2
+        },
+        "R16_ONLY": {
+          "tp": 91,
+          "fp": 105,
+          "fn": 62,
+          "tn": 742,
+          "DR": 0.5948,
+          "FPR": 0.124,
+          "coverage_pct": 59.5
+        },
+        "R16": {
+          "tp": 127,
+          "fp": 478,
+          "fn": 26,
+          "tn": 369,
+          "DR": 0.8301,
+          "FPR": 0.5643,
+          "coverage_pct": 83.0
+        },
+        "R17": {
+          "tp": 133,
+          "fp": 478,
+          "fn": 20,
+          "tn": 369,
+          "DR": 0.8693,
+          "FPR": 0.5643,
+          "coverage_pct": 86.9
+        },
+        "R19": {
+          "tp": 140,
+          "fp": 511,
+          "fn": 13,
+          "tn": 336,
+          "DR": 0.915,
+          "FPR": 0.6033,
+          "coverage_pct": 91.5
+        },
+        "MAX": {
+          "tp": 148,
+          "fp": 511,
+          "fn": 5,
+          "tn": 336,
+          "DR": 0.9673,
+          "FPR": 0.6033,
+          "coverage_pct": 96.7
+        }
+      },
+      "per_reason_conf": {
+        "R1": 8,
+        "R5": 8,
+        "R7": 7,
+        "R9": 5,
+        "R6": 8,
+        "R8": 11,
+        "R3": 10,
+        "R2": 8,
+        "R4": 9,
+        "R10": 9
+      },
+      "per_reason_rules": {
+        "R1": 20,
+        "R2": 21,
+        "R6": 11,
+        "R5": 13,
+        "R3": 17,
+        "R10": 2,
+        "R8": 3,
+        "R7": 2,
+        "R4": 2
+      },
+      "per_reason_total": {
+        "R1": 20,
+        "R2": 21,
+        "R6": 11,
+        "R10": 15,
+        "R5": 13,
+        "R7": 14,
+        "R9": 11,
+        "R8": 17,
+        "R3": 17,
+        "R4": 14
+      }
+    },
+    {
+      "persona_id": "P3",
+      "persona_name": "Technology SOC",
+      "n_alerts": 1000,
+      "total_refer": 144,
+      "total_nonrefer": 856,
+      "refer_rate": 0.144,
+      "s1_accuracy_nonref": 0.9276,
+      "mean_conf_nonref": 0.7911,
+      "reason_counts": {
+        "R3": 17,
+        "R4": 14,
+        "R6": 12,
+        "R5": 14,
+        "R8": 24,
+        "R10": 8,
+        "R7": 12,
+        "R2": 23,
+        "R1": 13,
+        "R9": 7
+      },
+      "layer_stats": {
+        "CONF": {
+          "tp": 50,
+          "fp": 226,
+          "fn": 94,
+          "tn": 630,
+          "DR": 0.3472,
+          "FPR": 0.264,
+          "coverage_pct": 34.7
+        },
+        "R16_ONLY": {
+          "tp": 91,
+          "fp": 83,
+          "fn": 53,
+          "tn": 773,
+          "DR": 0.6319,
+          "FPR": 0.097,
+          "coverage_pct": 63.2
+        },
+        "R16": {
+          "tp": 105,
+          "fp": 283,
+          "fn": 39,
+          "tn": 573,
+          "DR": 0.7292,
+          "FPR": 0.3306,
+          "coverage_pct": 72.9
+        },
+        "R17": {
+          "tp": 114,
+          "fp": 283,
+          "fn": 30,
+          "tn": 573,
+          "DR": 0.7917,
+          "FPR": 0.3306,
+          "coverage_pct": 79.2
+        },
+        "R19": {
+          "tp": 119,
+          "fp": 330,
+          "fn": 25,
+          "tn": 526,
+          "DR": 0.8264,
+          "FPR": 0.3855,
+          "coverage_pct": 82.6
+        },
+        "MAX": {
+          "tp": 139,
+          "fp": 330,
+          "fn": 5,
+          "tn": 526,
+          "DR": 0.9653,
+          "FPR": 0.3855,
+          "coverage_pct": 96.5
+        }
+      },
+      "per_reason_conf": {
+        "R6": 5,
+        "R4": 4,
+        "R5": 6,
+        "R10": 2,
+        "R7": 3,
+        "R3": 9,
+        "R2": 10,
+        "R8": 7,
+        "R1": 3,
+        "R9": 1
+      },
+      "per_reason_rules": {
+        "R3": 17,
+        "R6": 12,
+        "R5": 14,
+        "R4": 7,
+        "R2": 23,
+        "R1": 13,
+        "R10": 1,
+        "R8": 3,
+        "R9": 1
+      },
+      "per_reason_total": {
+        "R3": 17,
+        "R4": 14,
+        "R6": 12,
+        "R5": 14,
+        "R8": 24,
+        "R10": 8,
+        "R7": 12,
+        "R2": 23,
+        "R1": 13,
+        "R9": 7
+      }
+    },
+    {
+      "persona_id": "P4",
+      "persona_name": "Startup SOC",
+      "n_alerts": 1000,
+      "total_refer": 137,
+      "total_nonrefer": 863,
+      "refer_rate": 0.137,
+      "s1_accuracy_nonref": 0.8413,
+      "mean_conf_nonref": 0.6715,
+      "reason_counts": {
+        "R1": 16,
+        "R2": 25,
+        "R10": 15,
+        "R4": 15,
+        "R8": 20,
+        "R3": 11,
+        "R7": 6,
+        "R5": 8,
+        "R6": 20,
+        "R9": 1
+      },
+      "layer_stats": {
+        "CONF": {
+          "tp": 75,
+          "fp": 546,
+          "fn": 62,
+          "tn": 317,
+          "DR": 0.5474,
+          "FPR": 0.6327,
+          "coverage_pct": 54.7
+        },
+        "R16_ONLY": {
+          "tp": 88,
+          "fp": 110,
+          "fn": 49,
+          "tn": 753,
+          "DR": 0.6423,
+          "FPR": 0.1275,
+          "coverage_pct": 64.2
+        },
+        "R16": {
+          "tp": 114,
+          "fp": 577,
+          "fn": 23,
+          "tn": 286,
+          "DR": 0.8321,
+          "FPR": 0.6686,
+          "coverage_pct": 83.2
+        },
+        "R17": {
+          "tp": 117,
+          "fp": 577,
+          "fn": 20,
+          "tn": 286,
+          "DR": 0.854,
+          "FPR": 0.6686,
+          "coverage_pct": 85.4
+        },
+        "R19": {
+          "tp": 119,
+          "fp": 606,
+          "fn": 18,
+          "tn": 257,
+          "DR": 0.8686,
+          "FPR": 0.7022,
+          "coverage_pct": 86.9
+        },
+        "MAX": {
+          "tp": 131,
+          "fp": 606,
+          "fn": 6,
+          "tn": 257,
+          "DR": 0.9562,
+          "FPR": 0.7022,
+          "coverage_pct": 95.6
+        }
+      },
+      "per_reason_conf": {
+        "R1": 11,
+        "R10": 9,
+        "R4": 7,
+        "R2": 15,
+        "R8": 11,
+        "R3": 8,
+        "R7": 3,
+        "R6": 8,
+        "R5": 3
+      },
+      "per_reason_rules": {
+        "R1": 16,
+        "R2": 25,
+        "R4": 6,
+        "R3": 11,
+        "R5": 8,
+        "R6": 20,
+        "R8": 2
+      },
+      "per_reason_total": {
+        "R1": 16,
+        "R2": 25,
+        "R10": 15,
+        "R4": 15,
+        "R8": 20,
+        "R3": 11,
+        "R7": 6,
+        "R5": 8,
+        "R6": 20,
+        "R9": 1
+      }
+    },
+    {
+      "persona_id": "P5",
+      "persona_name": "Enterprise SOC",
+      "n_alerts": 1000,
+      "total_refer": 134,
+      "total_nonrefer": 866,
+      "refer_rate": 0.134,
+      "s1_accuracy_nonref": 0.9538,
+      "mean_conf_nonref": 0.7994,
+      "reason_counts": {
+        "R3": 14,
+        "R5": 8,
+        "R4": 11,
+        "R2": 14,
+        "R7": 18,
+        "R1": 20,
+        "R8": 22,
+        "R6": 16,
+        "R10": 8,
+        "R9": 3
+      },
+      "layer_stats": {
+        "CONF": {
+          "tp": 36,
+          "fp": 215,
+          "fn": 98,
+          "tn": 651,
+          "DR": 0.2687,
+          "FPR": 0.2483,
+          "coverage_pct": 26.9
+        },
+        "R16_ONLY": {
+          "tp": 83,
+          "fp": 99,
+          "fn": 51,
+          "tn": 767,
+          "DR": 0.6194,
+          "FPR": 0.1143,
+          "coverage_pct": 61.9
+        },
+        "R16": {
+          "tp": 95,
+          "fp": 287,
+          "fn": 39,
+          "tn": 579,
+          "DR": 0.709,
+          "FPR": 0.3314,
+          "coverage_pct": 70.9
+        },
+        "R17": {
+          "tp": 109,
+          "fp": 287,
+          "fn": 25,
+          "tn": 579,
+          "DR": 0.8134,
+          "FPR": 0.3314,
+          "coverage_pct": 81.3
+        },
+        "R19": {
+          "tp": 114,
+          "fp": 358,
+          "fn": 20,
+          "tn": 508,
+          "DR": 0.8507,
+          "FPR": 0.4134,
+          "coverage_pct": 85.1
+        },
+        "MAX": {
+          "tp": 132,
+          "fp": 358,
+          "fn": 2,
+          "tn": 508,
+          "DR": 0.9851,
+          "FPR": 0.4134,
+          "coverage_pct": 98.5
+        }
+      },
+      "per_reason_conf": {
+        "R7": 4,
+        "R8": 5,
+        "R6": 5,
+        "R2": 4,
+        "R10": 4,
+        "R3": 4,
+        "R1": 7,
+        "R4": 2,
+        "R5": 1
+      },
+      "per_reason_rules": {
+        "R3": 14,
+        "R5": 8,
+        "R4": 8,
+        "R2": 14,
+        "R1": 20,
+        "R6": 16,
+        "R10": 1,
+        "R9": 1,
+        "R7": 1
+      },
+      "per_reason_total": {
+        "R3": 14,
+        "R5": 8,
+        "R4": 11,
+        "R2": 14,
+        "R7": 18,
+        "R1": 20,
+        "R8": 22,
+        "R6": 16,
+        "R10": 8,
+        "R9": 3
+      }
+    }
+  ],
+  "aggregate": {
+    "layer_stats": {
+      "CONF": {
+        "tp": 285,
+        "fp": 1657,
+        "fn": 434,
+        "tn": 2624,
+        "DR": 0.3964,
+        "FPR": 0.3871
+      },
+      "R16_ONLY": {
+        "tp": 439,
+        "fp": 516,
+        "fn": 280,
+        "tn": 3765,
+        "DR": 0.6106,
+        "FPR": 0.1205
+      },
+      "R16": {
+        "tp": 548,
+        "fp": 1948,
+        "fn": 171,
+        "tn": 2333,
+        "DR": 0.7622,
+        "FPR": 0.455
+      },
+      "R17": {
+        "tp": 597,
+        "fp": 1948,
+        "fn": 122,
+        "tn": 2333,
+        "DR": 0.8303,
+        "FPR": 0.455
+      },
+      "R19": {
+        "tp": 620,
+        "fp": 2177,
+        "fn": 99,
+        "tn": 2104,
+        "DR": 0.8623,
+        "FPR": 0.5085
+      },
+      "MAX": {
+        "tp": 698,
+        "fp": 2177,
+        "fn": 21,
+        "tn": 2104,
+        "DR": 0.9708,
+        "FPR": 0.5085
+      }
+    },
+    "per_reason": {
+      "R1": {
+        "total": 89,
+        "conf_hits": 32,
+        "rule_hits": 89,
+        "conf_dr": 0.3596,
+        "rule_dr": 1.0,
+        "type": "RULE"
+      },
+      "R10": {
+        "total": 57,
+        "conf_hits": 26,
+        "rule_hits": 5,
+        "conf_dr": 0.4561,
+        "rule_dr": 0.0877,
+        "type": "EMERGENT"
+      },
+      "R2": {
+        "total": 104,
+        "conf_hits": 44,
+        "rule_hits": 104,
+        "conf_dr": 0.4231,
+        "rule_dr": 1.0,
+        "type": "RULE"
+      },
+      "R3": {
+        "total": 70,
+        "conf_hits": 33,
+        "rule_hits": 70,
+        "conf_dr": 0.4714,
+        "rule_dr": 1.0,
+        "type": "RULE"
+      },
+      "R4": {
+        "total": 68,
+        "conf_hits": 27,
+        "rule_hits": 29,
+        "conf_dr": 0.3971,
+        "rule_dr": 0.4265,
+        "type": "RULE"
+      },
+      "R5": {
+        "total": 54,
+        "conf_hits": 20,
+        "rule_hits": 54,
+        "conf_dr": 0.3704,
+        "rule_dr": 1.0,
+        "type": "RULE"
+      },
+      "R6": {
+        "total": 71,
+        "conf_hits": 30,
+        "rule_hits": 71,
+        "conf_dr": 0.4225,
+        "rule_dr": 1.0,
+        "type": "RULE"
+      },
+      "R7": {
+        "total": 77,
+        "conf_hits": 25,
+        "rule_hits": 6,
+        "conf_dr": 0.3247,
+        "rule_dr": 0.0779,
+        "type": "CONTEXT"
+      },
+      "R8": {
+        "total": 106,
+        "conf_hits": 41,
+        "rule_hits": 9,
+        "conf_dr": 0.3868,
+        "rule_dr": 0.0849,
+        "type": "EMERGENT"
+      },
+      "R9": {
+        "total": 23,
+        "conf_hits": 7,
+        "rule_hits": 2,
+        "conf_dr": 0.3043,
+        "rule_dr": 0.087,
+        "type": "CONTEXT"
+      }
+    }
+  },
+  "decomposition": {
+    "rule_pct": 65.5,
+    "context_pct": 13.8,
+    "emergent_pct": 20.7,
+    "rule_abs": 9.5,
+    "context_abs": 2.0,
+    "emergent_abs": 3.0
+  },
+  "recommendation": [
+    "RULES PARTIAL. R1-R6 cover 61% of referrals (rules-only FPR=12.0%). Context layer (R7) adds incremental coverage.",
+    "NOTE: Confidence gate alone has FPR=38.7% \u2014 it is noisy (high recall, low precision) and should NOT be the sole referral trigger. Rules are the precision instrument; conf gate is a safety net.",
+    "MODERATE EMERGENT FRACTION (21% of referrals). Override learning useful but not critical."
+  ]
+}

@@ -10,7 +10,17 @@
       "Bash(set PYTHONUTF8=1:*)",
       "Bash(mkdir:*)",
       "Bash(\"C:\\\\Users\\\\baner\\\\CopyFolder\\\\IoT_thoughts\\\\python-projects\\\\kaggle_experiments\\\\claude_projects\\\\cross-graph-experiments\\\\experiments\\\\synthesis\\\\expS5a_real_threat_intel\\\\__init__.py\":*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(python -c \":*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/cross-graph-experiments/**)",
+      "Bash(done)",
+      "Bash(find /c/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/cross-graph-experiments/experiments -type d -name *b5b* -o -type d -name *proxy* -o -type d -name *asymmetric* -o -type d -name *eta*)",
+      "Bash(find /c/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/cross-graph-experiments/experiments/prod -type f \\\\\\(-name *.csv -o -name *.json \\\\\\))"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "code-review-graph"
+  ]
 }

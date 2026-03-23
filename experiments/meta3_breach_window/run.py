@@ -38,7 +38,7 @@ RESULTS_FILE = _REPO_ROOT / "results" / "meta3_breach_window.json"
 N_SEEDS      = 50
 N_DAYS       = 90
 DELTA        = 0.05          # false-alarm probability target
-THETA_MIN    = 0.434         # from derive_theta_min
+THETA_MIN    = 0.467         # from derive_theta_min (T_max=21d, η=0.05, N_half=14)
 
 ALERTS_PER_DAY       = 200
 VERIFICATION_RATE    = 0.30
