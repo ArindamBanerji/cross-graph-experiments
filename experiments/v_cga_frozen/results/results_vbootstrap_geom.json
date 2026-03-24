@@ -1,0 +1,116 @@
+{
+  "experiment": "V-BOOTSTRAP-GEOM",
+  "version": "geometry_aware_gae_0.7.6",
+  "date": "2026-03-23",
+  "n_seeds": 200,
+  "geometry": "A1\u00d7B1 (realistic SOC, threat_intel high-discriminating)",
+  "verdict": "FAIL",
+  "runtime_s": 39.3,
+  "sigma_after": {
+    "travel_match": 0.11,
+    "asset_criticality": 0.06,
+    "threat_intel_enrichment": 0.13,
+    "time_anomaly": 0.07,
+    "pattern_history": 0.1,
+    "device_trust": 0.09
+  },
+  "sigma_before": {
+    "travel_match": 0.27,
+    "asset_criticality": 0.09,
+    "threat_intel_enrichment": 0.27,
+    "time_anomaly": 0.105,
+    "pattern_history": 0.3,
+    "device_trust": 0.24
+  },
+  "w_geom_profile": {
+    "travel_match": 1.6904,
+    "asset_criticality": 0.067,
+    "threat_intel_enrichment": 0.0,
+    "time_anomaly": 0.3032,
+    "pattern_history": 1.1367,
+    "device_trust": 2.8027
+  },
+  "w_geom_notes": {
+    "threat_intel_enrichment": "~0 (attenuated \u2014 dominant_axis\u22481.0)",
+    "device_trust": "dominates (low dominant_axis, large \u0394\u03c3)",
+    "pattern_history": "partially attenuated (dominant_axis\u22480.7)",
+    "mu_current_source": "C0 standard bootstrap \u03bc\u2080 (per seed)"
+  },
+  "parameters": {
+    "n_bootstrap": 1200,
+    "n_post_bootstrap": 500,
+    "theta_min": 0.467,
+    "tau": 0.1,
+    "eta_confirm": 0.05,
+    "eta_override": 0.01,
+    "q_bar": 0.75,
+    "alpha": 0.8
+  },
+  "m2": {
+    "n_half_c0": 73.2,
+    "n_half_c0_ci95": [
+      67.0,
+      79.5
+    ],
+    "n_half_t_geom": 78.0,
+    "n_half_tg_ci95": [
+      71.8,
+      84.1
+    ],
+    "diff_mean": -4.74,
+    "diff_ci95": [
+      -12.63,
+      3.16
+    ],
+    "reduction_pct": -6.47,
+    "p_value": 0.238499,
+    "t_stat": -1.1823,
+    "cohens_d": -0.0838,
+    "pass": false
+  },
+  "m4_enriched_dim5": {
+    "description": "device_trust dimension only (dim 5)",
+    "c0_dist": 0.3261,
+    "t_geom_dist": 0.1317,
+    "reduction_pct": 59.62,
+    "pass": true
+  },
+  "m4_total": {
+    "c0_dist": 0.9349,
+    "t_geom_dist": 1.5206,
+    "pass": false
+  },
+  "day1_accuracy": {
+    "c0": 0.9057,
+    "t_geom": 0.8695,
+    "delta_pp": -3.62
+  },
+  "final_accuracy": {
+    "c0_mean": 0.9291,
+    "tg_mean": 0.9048,
+    "delta_pp": -2.43,
+    "p_value": 0.0
+  },
+  "mean_dominant_axis": {
+    "travel_match": 0.3357,
+    "asset_criticality": 0.9979,
+    "threat_intel_enrichment": 0.867,
+    "time_anomaly": 0.6631,
+    "pattern_history": 0.5601,
+    "device_trust": 0.1143
+  },
+  "power_analysis": {
+    "observed_d": 0.0838,
+    "power_at_n100": 0.0403,
+    "power_at_n150": 0.0595,
+    "power_at_n200": 0.0808
+  },
+  "comparison_to_ceiling_arm_a": {
+    "arm_a_d": 0.23,
+    "arm_a_p": 0.0014,
+    "geom_d": 0.0838,
+    "geom_p": 0.238499,
+    "improvement": "-0.146 (no improvement)"
+  },
+  "claim_status": "INCONCLUSIVE \u2014 Effect present but p or d gate not met."
+}
