@@ -1,0 +1,111 @@
+{
+  "experiment": "V-ENRICHMENT-NEGATIVE",
+  "gae_version": "0.7.6",
+  "date": "2026-03-24",
+  "n_seeds": 20,
+  "safety_gate": "max_degradation_ci_upper <= 3pp",
+  "bootstrap_contamination_tested": false,
+  "personas": {
+    "P1_contradictory_tier1_tier2": {
+      "description": "CISA KEV vs vendor feed contradiction \u2014 same IOC",
+      "sigma_change": {
+        "threat_intel_enrichment": "0.13\u21920.22"
+      },
+      "noise_ratio_before": 1.0,
+      "noise_ratio_after": 1.143,
+      "sigma_mean_after": 0.12,
+      "amber_fires": false,
+      "active_safety_mechanism": "kernel_weight_reduction",
+      "day1_accuracy": {
+        "c0": 0.938,
+        "t_bad": 0.928,
+        "delta_pp": 1.0
+      },
+      "final_accuracy": {
+        "c0": 0.376,
+        "t_bad": 0.3675,
+        "delta_pp": 0.85,
+        "p_value": 0.418
+      },
+      "ci_95_degradation": [
+        -1.3,
+        3.0
+      ],
+      "max_degradation_ci_upper": 3.0,
+      "gate_pass": true,
+      "kernel_weights": {
+        "before": {
+          "travel_match": 30.86,
+          "asset_criticality": 277.78,
+          "threat_intel_enrichment": 59.17,
+          "time_anomaly": 204.08,
+          "pattern_history": 100.0,
+          "device_trust": 123.46
+        },
+        "after": {
+          "travel_match": 30.86,
+          "asset_criticality": 277.78,
+          "threat_intel_enrichment": 20.66,
+          "time_anomaly": 204.08,
+          "pattern_history": 100.0,
+          "device_trust": 123.46
+        }
+      },
+      "kernel_weight_threat_intel_before": 59.17,
+      "kernel_weight_threat_intel_after": 20.66
+    },
+    "P2_osint_bulk_tier4": {
+      "description": "High-volume OSINT degrades threat_intel + pattern_history",
+      "sigma_change": {
+        "threat_intel_enrichment": "0.13\u21920.25",
+        "pattern_history": "0.10\u21920.20"
+      },
+      "noise_ratio_before": 1.0,
+      "noise_ratio_after": 1.349,
+      "sigma_mean_after": 0.1417,
+      "amber_fires": false,
+      "active_safety_mechanism": "kernel_weight_reduction",
+      "day1_accuracy": {
+        "c0": 0.938,
+        "t_bad": 0.927,
+        "delta_pp": 1.1
+      },
+      "final_accuracy": {
+        "c0": 0.376,
+        "t_bad": 0.3495,
+        "delta_pp": 2.65,
+        "p_value": 0.0485
+      },
+      "ci_95_degradation": [
+        0.02,
+        5.28
+      ],
+      "max_degradation_ci_upper": 5.28,
+      "gate_pass": false,
+      "kernel_weights": {
+        "before": {
+          "travel_match": 30.86,
+          "asset_criticality": 277.78,
+          "threat_intel_enrichment": 59.17,
+          "time_anomaly": 204.08,
+          "pattern_history": 100.0,
+          "device_trust": 123.46
+        },
+        "after": {
+          "travel_match": 30.86,
+          "asset_criticality": 277.78,
+          "threat_intel_enrichment": 16.0,
+          "time_anomaly": 204.08,
+          "pattern_history": 25.0,
+          "device_trust": 123.46
+        }
+      },
+      "kernel_weight_threat_intel_before": 59.17,
+      "kernel_weight_threat_intel_after": 16.0,
+      "kernel_weight_pattern_history_before": 100.0,
+      "kernel_weight_pattern_history_after": 25.0
+    }
+  },
+  "overall_verdict": "UNSAFE",
+  "note": "GTM implications discussed with roadmap session before writing"
+}
