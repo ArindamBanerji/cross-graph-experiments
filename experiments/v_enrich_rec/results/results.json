@@ -1,0 +1,303 @@
+{
+  "profiles": {
+    "A": [
+      {
+        "factor": "device_trust",
+        "current_sigma": 0.2,
+        "target_sigma": 0.09,
+        "w_gain": 98.46,
+        "spread": 0.3,
+        "score": 29.54,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "threat_intel",
+        "current_sigma": 0.09,
+        "target_sigma": 0.08,
+        "w_gain": 32.79,
+        "spread": 0.62,
+        "score": 20.33,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "pattern_history",
+        "current_sigma": 0.095,
+        "target_sigma": 0.09,
+        "w_gain": 12.65,
+        "spread": 0.62,
+        "score": 7.85,
+        "priority": "low (<+2pp expected)"
+      },
+      {
+        "factor": "travel_match",
+        "current_sigma": 0.165,
+        "target_sigma": 0.11,
+        "w_gain": 45.91,
+        "spread": 0.1,
+        "score": 4.59,
+        "priority": "low (<+2pp expected)"
+      },
+      {
+        "factor": "time_anomaly",
+        "current_sigma": 0.07,
+        "target_sigma": 0.065,
+        "w_gain": 32.6,
+        "spread": 0.1,
+        "score": 3.26,
+        "priority": "low (<+2pp expected)"
+      },
+      {
+        "factor": "asset_criticality",
+        "current_sigma": 0.06,
+        "target_sigma": 0.06,
+        "w_gain": 0.0,
+        "spread": 0.15,
+        "score": 0.0,
+        "priority": "low (<+2pp expected)"
+      }
+    ],
+    "B": [
+      {
+        "factor": "threat_intel",
+        "current_sigma": 0.21,
+        "target_sigma": 0.08,
+        "w_gain": 133.57,
+        "spread": 0.62,
+        "score": 82.82,
+        "priority": "high (>=+5pp expected)"
+      },
+      {
+        "factor": "pattern_history",
+        "current_sigma": 0.19,
+        "target_sigma": 0.09,
+        "w_gain": 95.76,
+        "spread": 0.62,
+        "score": 59.37,
+        "priority": "high (>=+5pp expected)"
+      },
+      {
+        "factor": "device_trust",
+        "current_sigma": 0.2,
+        "target_sigma": 0.09,
+        "w_gain": 98.46,
+        "spread": 0.3,
+        "score": 29.54,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "travel_match",
+        "current_sigma": 0.165,
+        "target_sigma": 0.11,
+        "w_gain": 45.91,
+        "spread": 0.1,
+        "score": 4.59,
+        "priority": "low (<+2pp expected)"
+      },
+      {
+        "factor": "time_anomaly",
+        "current_sigma": 0.07,
+        "target_sigma": 0.065,
+        "w_gain": 32.6,
+        "spread": 0.1,
+        "score": 3.26,
+        "priority": "low (<+2pp expected)"
+      },
+      {
+        "factor": "asset_criticality",
+        "current_sigma": 0.06,
+        "target_sigma": 0.06,
+        "w_gain": 0.0,
+        "spread": 0.15,
+        "score": 0.0,
+        "priority": "low (<+2pp expected)"
+      }
+    ],
+    "C": [
+      {
+        "factor": "threat_intel",
+        "current_sigma": 0.2,
+        "target_sigma": 0.08,
+        "w_gain": 131.25,
+        "spread": 0.62,
+        "score": 81.38,
+        "priority": "high (>=+5pp expected)"
+      },
+      {
+        "factor": "pattern_history",
+        "current_sigma": 0.19,
+        "target_sigma": 0.09,
+        "w_gain": 95.76,
+        "spread": 0.62,
+        "score": 59.37,
+        "priority": "high (>=+5pp expected)"
+      },
+      {
+        "factor": "asset_criticality",
+        "current_sigma": 0.18,
+        "target_sigma": 0.06,
+        "w_gain": 246.91,
+        "spread": 0.15,
+        "score": 37.04,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "device_trust",
+        "current_sigma": 0.22,
+        "target_sigma": 0.09,
+        "w_gain": 102.8,
+        "spread": 0.3,
+        "score": 30.84,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "time_anomaly",
+        "current_sigma": 0.16,
+        "target_sigma": 0.065,
+        "w_gain": 197.62,
+        "spread": 0.1,
+        "score": 19.76,
+        "priority": "low (<+2pp expected)"
+      },
+      {
+        "factor": "travel_match",
+        "current_sigma": 0.21,
+        "target_sigma": 0.11,
+        "w_gain": 59.97,
+        "spread": 0.1,
+        "score": 6.0,
+        "priority": "low (<+2pp expected)"
+      }
+    ],
+    "D": [
+      {
+        "factor": "pattern_history",
+        "current_sigma": 0.14,
+        "target_sigma": 0.09,
+        "w_gain": 72.44,
+        "spread": 0.62,
+        "score": 44.91,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "device_trust",
+        "current_sigma": 0.2,
+        "target_sigma": 0.09,
+        "w_gain": 98.46,
+        "spread": 0.3,
+        "score": 29.54,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "threat_intel",
+        "current_sigma": 0.09,
+        "target_sigma": 0.08,
+        "w_gain": 32.79,
+        "spread": 0.62,
+        "score": 20.33,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "travel_match",
+        "current_sigma": 0.165,
+        "target_sigma": 0.11,
+        "w_gain": 45.91,
+        "spread": 0.1,
+        "score": 4.59,
+        "priority": "low (<+2pp expected)"
+      },
+      {
+        "factor": "time_anomaly",
+        "current_sigma": 0.07,
+        "target_sigma": 0.065,
+        "w_gain": 32.6,
+        "spread": 0.1,
+        "score": 3.26,
+        "priority": "low (<+2pp expected)"
+      },
+      {
+        "factor": "asset_criticality",
+        "current_sigma": 0.06,
+        "target_sigma": 0.06,
+        "w_gain": 0.0,
+        "spread": 0.15,
+        "score": 0.0,
+        "priority": "low (<+2pp expected)"
+      }
+    ],
+    "E": [
+      {
+        "factor": "regulatory_risk",
+        "current_sigma": 0.15,
+        "target_sigma": 0.07,
+        "w_gain": 159.64,
+        "spread": 0.55,
+        "score": 87.8,
+        "priority": "high (>=+5pp expected)"
+      },
+      {
+        "factor": "logistics_risk",
+        "current_sigma": 0.22,
+        "target_sigma": 0.11,
+        "w_gain": 61.98,
+        "spread": 0.5,
+        "score": 30.99,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "inventory_risk",
+        "current_sigma": 0.16,
+        "target_sigma": 0.09,
+        "w_gain": 84.39,
+        "spread": 0.28,
+        "score": 23.63,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "geopolitical_risk",
+        "current_sigma": 0.2,
+        "target_sigma": 0.12,
+        "w_gain": 44.44,
+        "spread": 0.48,
+        "score": 21.33,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "demand_risk",
+        "current_sigma": 0.18,
+        "target_sigma": 0.1,
+        "w_gain": 69.14,
+        "spread": 0.3,
+        "score": 20.74,
+        "priority": "moderate (+2 to +5pp expected)"
+      },
+      {
+        "factor": "supplier_risk",
+        "current_sigma": 0.12,
+        "target_sigma": 0.08,
+        "w_gain": 86.81,
+        "spread": 0.2,
+        "score": 17.36,
+        "priority": "low (<+2pp expected)"
+      },
+      {
+        "factor": "financial_risk",
+        "current_sigma": 0.12,
+        "target_sigma": 0.08,
+        "w_gain": 86.81,
+        "spread": 0.2,
+        "score": 17.36,
+        "priority": "low (<+2pp expected)"
+      },
+      {
+        "factor": "environmental_risk",
+        "current_sigma": 0.25,
+        "target_sigma": 0.14,
+        "w_gain": 35.02,
+        "spread": 0.45,
+        "score": 15.76,
+        "priority": "low (<+2pp expected)"
+      }
+    ]
+  },
+  "validation_notes": "Profile A: threat_intel/pattern_history at target \u2014 W_gain\u22480 \u2192 low. Profile B: threat_intel score 62.5 (high), pattern_history high. Profile C: multiple HIGH priority factors (greenfield). Profile D: pattern_history moderate (partially improved). Profile E: regulatory_risk and logistics_risk highest priority."
+}

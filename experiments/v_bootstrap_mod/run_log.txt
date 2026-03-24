@@ -1,0 +1,32 @@
+====================================================================
+V-BOOTSTRAP-MOD (WS-2 geometry, GAE 0.7.8)
+====================================================================
+W_max in T2 arm: 204.1 (time_anomaly)
+M1 scale_j values (sqrt(W_max/W_j_post)):
+  travel_match                   scale=2.3571  W_boot_M0=36.73  W_boot_M1=86.58
+  asset_criticality              scale=1.2857  W_boot_M0=123.46  W_boot_M1=158.73
+  threat_intel_enrichment        scale=1.2857  W_boot_M0=672.15  W_boot_M1=864.20
+  time_anomaly                   scale=1.0000  W_boot_M0=204.08  W_boot_M1=204.08
+  pattern_history                scale=1.3571  W_boot_M0=110.80  W_boot_M1=150.38
+  device_trust                   scale=2.8571  W_boot_M0=25.00  W_boot_M1=71.43
+  W_boot_threat_intel: M0=672.15  M1=864.20
+M2 propagation coefficients (corr × W_j/W_k):
+  threat_intel → pattern_history: 0.5014
+  threat_intel → device_trust: 1.7284
+
+Running M0 (standard Δσ)...
+  done [12.9s]
+Running M1 (dominance-aware)...
+  done [12.7s]
+Running M2 (covariance propagation)...
+  done [12.3s]
+All arms complete in 37.8s
+
+Results saved to C:\Users\baner\CopyFolder\IoT_thoughts\python-projects\kaggle_experiments\claude_projects\cross-graph-experiments\experiments\v_bootstrap_mod\results\results.json
+
+====================================================================
+V-BOOTSTRAP-MOD results (WS-2 geometry):
+  M0: d=0.3398  p=0.0000  Day-1=+90.5pp  n_half=58.6
+  M1: d=0.2342  p=0.0011  Day-1=+89.0pp  n_half=62.1  beats_M0=NO
+  M2: d=0.2776  p=0.0001  Day-1=+78.6pp  n_half=86.8  beats_M0=NO
+====================================================================

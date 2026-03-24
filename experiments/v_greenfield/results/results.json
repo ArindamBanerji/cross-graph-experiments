@@ -1,0 +1,21 @@
+{
+  "experiment": "V-GREENFIELD",
+  "gae_version": "0.7.8",
+  "w_enriched_share_pre_pct": 31.75,
+  "w_enriched_share_post_pct": 67.41,
+  "n_half_c0": 70.8,
+  "n_half_t2": 54.2,
+  "cohens_d": 0.4289,
+  "p_value": 0.0,
+  "ci_95": [
+    11.19,
+    22.01
+  ],
+  "day1_delta_pp": 6.74,
+  "final_delta_pp": 0.59,
+  "gate_d_pass": true,
+  "gate_day1_pass": true,
+  "both_gates_pass": true,
+  "greenfield_segment_validated": true,
+  "runtime_s": 24.5
+}

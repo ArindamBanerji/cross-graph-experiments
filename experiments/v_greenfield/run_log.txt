@@ -1,0 +1,20 @@
+====================================================================
+V-GREENFIELD (GAE 0.7.8)
+====================================================================
+W_total_C0=166.0  W_total_T2=347.5
+W_enriched_share_pre=31.8%  W_enriched_share_T2=67.4%
+
+All 200 seeds complete in 24.5s
+
+Sanity checks:
+  Pre-enrichment W-share=31.8% [consistent with Series 1]
+Results saved to C:\Users\baner\CopyFolder\IoT_thoughts\python-projects\kaggle_experiments\claude_projects\cross-graph-experiments\experiments\v_greenfield\results\results.json
+
+====================================================================
+V-GREENFIELD result:
+  W-share pre=31.8%  post=67.4%
+  d=0.4289  p=0.000000  CI=[11.19,22.01]
+  Day-1=+6.74pp  Final=+0.59pp
+  n_half C0=70.8  T2=54.2
+  Gates: d>0.28=PASS  Day-1>+3pp=PASS  Both=PASS
+====================================================================

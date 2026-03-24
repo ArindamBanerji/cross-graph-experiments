@@ -1,0 +1,54 @@
+{
+  "experiment": "V-CLAIM62-B0-P2",
+  "gae_version": "0.7.8",
+  "date": "2026-03-24",
+  "persona": "B0-P2: MDM enrichment, device_trust non-primary",
+  "enriched_factor": "device_trust",
+  "sigma_before": 0.24,
+  "sigma_after": 0.12,
+  "w_boot_values": {
+    "travel_match": 36.7309,
+    "asset_criticality": 277.7778,
+    "threat_intel_enrichment": 123.4568,
+    "time_anomaly": 204.0816,
+    "pattern_history": 100.0,
+    "device_trust": 277.7778
+  },
+  "w_boot_tie_note": "device_trust ties with asset_criticality at 277.7778. Tie is coincidental (sa=0.060 \u2192 1/sa\u00b2=277.78). device_trust elevation vs default: 277.78 vs 69.44 (4\u00d7).",
+  "n_seeds": 200,
+  "cohens_d": 0.1115,
+  "p_value": 0.117281,
+  "ci_95": [
+    -1.06,
+    9.43
+  ],
+  "m2_gate_pass": false,
+  "m4_enriched_pass": true,
+  "m4_note": "tie",
+  "day1_delta_pp": 0.6,
+  "final_delta_pp": -0.16,
+  "sanity_checks_passed": false,
+  "sanity_flags": [
+    "d=0.112 < 0.15 (too small)"
+  ],
+  "n_half_c0": 69.1,
+  "n_half_t2": 64.9,
+  "n_half_diff_ci95": [
+    -1.06,
+    9.43
+  ],
+  "final_accuracy": {
+    "c0_mean": 0.9479,
+    "t2_mean": 0.9463,
+    "delta_pp": -0.16,
+    "p_value": 0.267145
+  },
+  "power_at_n200": 0.1558,
+  "mu_star_spreads": {
+    "threat_intel": 0.2293,
+    "pattern_history": 0.1926,
+    "device_trust": 0.0
+  },
+  "runtime_s": 19.6,
+  "note": "Raw numbers for roadmap session \u2014 no GTM conclusions drawn"
+}

@@ -1,0 +1,57 @@
+{
+  "experiment": "V-BOOTSTRAP-MOD",
+  "gae_version": "0.7.8",
+  "geometry": "WS-2",
+  "w_max_t2": 204.1,
+  "w_max_factor": "time_anomaly",
+  "m1_scale_values": {
+    "travel_match": 2.3571,
+    "asset_criticality": 1.2857,
+    "threat_intel_enrichment": 1.2857,
+    "time_anomaly": 1.0,
+    "pattern_history": 1.3571,
+    "device_trust": 2.8571
+  },
+  "m2_prop_coefficients": {
+    "pattern_history": 0.5014,
+    "device_trust": 1.7284
+  },
+  "arms": {
+    "M0": {
+      "cohens_d": 0.3398,
+      "p": 3e-06,
+      "ci_95": [
+        6.6,
+        15.84
+      ],
+      "day1_pp": 90.55,
+      "n_half": 58.6,
+      "final_pp": 88.48
+    },
+    "M1": {
+      "cohens_d": 0.2342,
+      "p": 0.001131,
+      "ci_95": [
+        3.1,
+        12.28
+      ],
+      "day1_pp": 88.98,
+      "n_half": 62.1,
+      "final_pp": 88.57,
+      "beats_m0": false
+    },
+    "M2": {
+      "cohens_d": 0.2776,
+      "p": 0.000124,
+      "ci_95": [
+        -25.55,
+        -8.43
+      ],
+      "day1_pp": 78.6,
+      "n_half": 86.8,
+      "final_pp": 83.93,
+      "beats_m0": false
+    }
+  },
+  "runtime_s": 37.8
+}

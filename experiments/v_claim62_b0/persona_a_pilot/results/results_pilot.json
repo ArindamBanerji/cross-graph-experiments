@@ -1,0 +1,51 @@
+{
+  "experiment": "V-CLAIM62-B0-PA-pilot",
+  "gae_version": "0.7.8",
+  "date": "2026-03-24",
+  "n_seeds": 20,
+  "spread_verification": {
+    "travel_match": 0.1,
+    "asset_criticality": 0.15,
+    "threat_intel_enrichment": 0.62,
+    "time_anomaly": 0.1,
+    "pattern_history": 0.62,
+    "device_trust": 0.3
+  },
+  "w_boot_device_trust": 400.0,
+  "w_boot_threat_intel": 123.4568,
+  "day1_delta_pp": 0.0,
+  "n_half_c0": 64.0,
+  "n_half_t2": 71.0,
+  "d_estimate": 0.1215,
+  "pilot_gate_checks": {
+    "1_day1_in_range": false,
+    "2_d_in_range": false,
+    "3_c0_n_half_lt_120": true,
+    "4_t2_lt_c0": false
+  },
+  "all_gates_pass": false,
+  "proceed_to_n200": false,
+  "detail": {
+    "n_half_c0_ci95": [
+      51.2,
+      76.8
+    ],
+    "n_half_t2_ci95": [
+      44.2,
+      97.9
+    ],
+    "diff_mean": -7.05,
+    "diff_ci95": [
+      -34.9,
+      20.8
+    ],
+    "p_value": 0.602416,
+    "day1_c0": 0.9,
+    "day1_t2": 0.9,
+    "final_c0": 0.9165,
+    "final_t2": 0.8955,
+    "final_delta_pp": -2.1
+  },
+  "runtime_s": 1.7,
+  "note": "Raw numbers for roadmap session \u2014 no GTM conclusions drawn"
+}
