@@ -1,0 +1,96 @@
+{
+  "experiment": "V-CLAIM60-S2P",
+  "gae_version": "0.7.7",
+  "date": "2026-03-24",
+  "domain": "S2P manufacturing procurement",
+  "n_seeds": 100,
+  "noise_ratio": {
+    "baseline": 2.08,
+    "enriched": 2.29,
+    "soc_reference": 2.6
+  },
+  "m1_s2p": {
+    "factors_with_25pct_reduction": 8,
+    "factor_list": [
+      "supplier_risk",
+      "logistics_risk",
+      "demand_risk",
+      "inventory_risk",
+      "regulatory_risk",
+      "geopolitical_risk",
+      "financial_risk",
+      "environmental_risk"
+    ],
+    "pass": true
+  },
+  "m3_s2p": {
+    "accuracy_c0": 0.9292,
+    "accuracy_t_enrich": 0.9847,
+    "delta_pp": 5.55,
+    "ci_95": [
+      5.11,
+      5.99
+    ],
+    "p_value": 0.0,
+    "pass": true
+  },
+  "day1_accuracy": {
+    "c0": 0.9252,
+    "t_enrich": 0.9772,
+    "delta_pp": 5.2
+  },
+  "linear_scaling_check": {
+    "soc_delta_pp": 5.0,
+    "soc_noise_ratio": 2.6,
+    "s2p_noise_ratio_baseline": 2.08,
+    "s2p_noise_ratio_enriched": 2.29,
+    "predicted_s2p_delta_baseline": 4.0,
+    "predicted_s2p_delta_enriched": 4.4,
+    "actual_s2p_delta": 5.55,
+    "scaling_holds": false,
+    "scaling_label": "holds"
+  },
+  "per_factor_weights": {
+    "before": {
+      "supplier_risk": 69.44,
+      "logistics_risk": 20.66,
+      "demand_risk": 30.86,
+      "inventory_risk": 39.06,
+      "regulatory_risk": 44.44,
+      "geopolitical_risk": 25.0,
+      "financial_risk": 69.44,
+      "environmental_risk": 16.0
+    },
+    "after": {
+      "supplier_risk": 123.46,
+      "logistics_risk": 51.02,
+      "demand_risk": 59.17,
+      "inventory_risk": 82.64,
+      "regulatory_risk": 204.08,
+      "geopolitical_risk": 59.17,
+      "financial_risk": 123.46,
+      "environmental_risk": 39.06
+    },
+    "largest_gain": "regulatory_risk",
+    "per_factor_change_pct": {
+      "supplier_risk": 77.8,
+      "logistics_risk": 146.9,
+      "demand_risk": 91.7,
+      "inventory_risk": 111.6,
+      "regulatory_risk": 359.2,
+      "geopolitical_risk": 136.7,
+      "financial_risk": 77.8,
+      "environmental_risk": 144.1
+    }
+  },
+  "claim60_s2p_status": "VALIDATED",
+  "runtime_s": 21.3,
+  "note": "Raw numbers for roadmap session \u2014 no GTM conclusions drawn",
+  "version": "v2_gradient_fix_gae_0.7.7",
+  "previous_result": {
+    "day1_delta_pp": 5.2,
+    "final_accuracy_delta_pp": -13.5,
+    "cause": "DiagonalKernel gradient oscillation bug (W*(f-mu) produced effective LR=10.2)",
+    "day1_unaffected": true
+  }
+}
