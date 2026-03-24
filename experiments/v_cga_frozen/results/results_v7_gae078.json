@@ -1,0 +1,77 @@
+{
+  "experiment": "V-CGA-FROZEN-v7-GAE-0.7.8",
+  "version": "spot_check_gradient_fix",
+  "gae_version": "0.7.8",
+  "date": "2026-03-24",
+  "n_seeds": 200,
+  "condition": "A1xB1 CD cross-domain B1 ceiling check",
+  "sigma_after": {
+    "travel_match": 0.11,
+    "asset_criticality": 0.06,
+    "threat_intel_enrichment": 0.18,
+    "time_anomaly": 0.07,
+    "pattern_history": 0.2,
+    "device_trust": 0.09
+  },
+  "sigma_before": {
+    "travel_match": 0.27,
+    "asset_criticality": 0.09,
+    "threat_intel_enrichment": 0.27,
+    "time_anomaly": 0.105,
+    "pattern_history": 0.3,
+    "device_trust": 0.24
+  },
+  "w_delta_values": {
+    "travel_match": 1.1554,
+    "asset_criticality": 1.4503,
+    "threat_intel_enrichment": 0.1611,
+    "time_anomaly": 1.0655,
+    "pattern_history": 0.1305,
+    "device_trust": 2.0372
+  },
+  "previous_result": {
+    "d": 0.212,
+    "p": 0.003,
+    "cause_of_rerun": "DiagonalKernel gradient bug"
+  },
+  "m2": {
+    "n_half_c0": 64.0,
+    "n_half_t2": 56.1,
+    "reduction_pct": 12.37,
+    "p": 0.001399,
+    "cohens_d": 0.2297,
+    "ci_95": [
+      3.1,
+      12.72
+    ],
+    "pass": false
+  },
+  "m4_enriched": {
+    "c0": 0.5051,
+    "t2": 0.3016,
+    "pass": true
+  },
+  "day1_accuracy": {
+    "c0": 0.8597,
+    "t2": 0.9004,
+    "delta_pp": 4.07
+  },
+  "final_accuracy": {
+    "c0_mean": 0.8658,
+    "t2_mean": 0.8753,
+    "delta_pp": 0.95,
+    "p_value": 0.0
+  },
+  "power_analysis": {
+    "observed_d": 0.2297,
+    "power_at_n200": 0.7407
+  },
+  "comparison_to_v7": {
+    "v7_d": 0.212,
+    "v7_p": 0.003,
+    "new_d": 0.2297,
+    "new_p": 0.001399,
+    "b1_ceiling_status": "CONFIRMED"
+  },
+  "runtime_s": 26.7
+}
