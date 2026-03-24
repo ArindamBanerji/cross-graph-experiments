@@ -1,0 +1,194 @@
+{
+  "experiment": "V-CEILING",
+  "gae_version": "0.7.5",
+  "date": "2026-03-23",
+  "n_seeds_per_arm": 200,
+  "parameters": {
+    "n_bootstrap": 1200,
+    "n_post_bootstrap": 500,
+    "theta_min": 0.467,
+    "tau": 0.1,
+    "eta_confirm": 0.05,
+    "eta_override": 0.01,
+    "q_bar": 0.75,
+    "alpha": 0.8
+  },
+  "arms": {
+    "A_cd_replication": {
+      "description": "CD condition replication \u2014 confirms v7/V-BOOTSTRAP-W stability",
+      "n_half_c0": 64.0,
+      "n_half_t2": 56.1,
+      "d": 0.2297,
+      "p": 0.001399,
+      "ci_95": [
+        3.1,
+        12.72
+      ],
+      "m4_enriched_pass": true,
+      "day1_delta_pp": 4.07,
+      "sigma_after": {
+        "travel_match": 0.11,
+        "asset_criticality": 0.06,
+        "threat_intel_enrichment": 0.18,
+        "time_anomaly": 0.07,
+        "pattern_history": 0.2,
+        "device_trust": 0.09
+      },
+      "sigma_before": {
+        "travel_match": 0.27,
+        "asset_criticality": 0.09,
+        "threat_intel_enrichment": 0.27,
+        "time_anomaly": 0.105,
+        "pattern_history": 0.3,
+        "device_trust": 0.24
+      }
+    },
+    "B_a1b0_scaled": {
+      "description": "v5 A1\u00d7B0 at N=200 \u2014 low-discrim structured mu* (threat_intel+pattern_history flattened)",
+      "n_half_c0": 83.8,
+      "n_half_t2": 63.2,
+      "d": 0.3568,
+      "p": 1e-06,
+      "ci_95": [
+        12.56,
+        28.74
+      ],
+      "m4_enriched_pass": true,
+      "day1_delta_pp": 5.94,
+      "sigma_after": {
+        "travel_match": 0.11,
+        "asset_criticality": 0.06,
+        "threat_intel_enrichment": 0.18,
+        "time_anomaly": 0.07,
+        "pattern_history": 0.2,
+        "device_trust": 0.09
+      },
+      "sigma_before": {
+        "travel_match": 0.27,
+        "asset_criticality": 0.09,
+        "threat_intel_enrichment": 0.27,
+        "time_anomaly": 0.105,
+        "pattern_history": 0.3,
+        "device_trust": 0.24
+      }
+    },
+    "C_s2p_high_delta": {
+      "ran": false,
+      "w_delta_values": {
+        "supplier_risk": 1.510248871559631,
+        "logistics_risk": 0.5412266769104437,
+        "demand_risk": 0.6712217206931694,
+        "inventory_risk": 0.9665592777981635,
+        "regulatory_risk": 1.7891790972246073,
+        "geopolitical_risk": 0.6016342582453392,
+        "financial_risk": 1.510248871559631,
+        "environmental_risk": 0.40968122600901447
+      },
+      "w_check_all_enriched_gt_fixed": false,
+      "w_check_mean_enriched_gt_fixed": false,
+      "mean_enriched_w": 0.8354,
+      "mean_fixed_w": 1.1646,
+      "note": "W_delta check FAILED: enriched factors do NOT dominate fixed factors. Root cause: small-sigma fixed factors (supplier_risk=0.08, financial_risk=0.08) produce high W_raw = (1.5\u00b7sa)\u00b2/sa\u2074 = 2.25/sa\u00b2 >> enriched-factor W at larger sa. The \u0394\u03c3 scheme upweights low-uncertainty factors regardless of enrichment status when fixed factors have smaller sa than enriched factors. Arm C not run per spec (report and STOP)."
+    }
+  },
+  "full_stats": {
+    "A": {
+      "n_half_c0": 64.0,
+      "n_half_c0_ci95": [
+        58.7,
+        69.3
+      ],
+      "n_half_t2": 56.1,
+      "n_half_t2_ci95": [
+        53.9,
+        58.2
+      ],
+      "diff_mean": 7.91,
+      "diff_ci95": [
+        3.1,
+        12.72
+      ],
+      "reduction_pct": 12.37,
+      "p_value": 0.001399,
+      "cohens_d": 0.2297,
+      "m2_pass": false,
+      "m4_enriched": {
+        "c0_dist": 0.5051,
+        "t2_dist": 0.3016,
+        "reduction": 40.29,
+        "pass": true
+      },
+      "m4_total": {
+        "c0_dist": 0.9349,
+        "t2_dist": 1.2373,
+        "pass": false
+      },
+      "day1_accuracy": {
+        "c0": 0.8597,
+        "t2": 0.9004,
+        "delta_pp": 4.07
+      },
+      "final_accuracy": {
+        "c0": 0.8658,
+        "t2": 0.8753,
+        "delta_pp": 0.95,
+        "p_value": 0.0
+      },
+      "power_at_n200": 0.7407
+    },
+    "B": {
+      "n_half_c0": 83.8,
+      "n_half_c0_ci95": [
+        75.3,
+        92.4
+      ],
+      "n_half_t2": 63.2,
+      "n_half_t2_ci95": [
+        58.2,
+        68.2
+      ],
+      "diff_mean": 20.65,
+      "diff_ci95": [
+        12.56,
+        28.74
+      ],
+      "reduction_pct": 24.63,
+      "p_value": 1e-06,
+      "cohens_d": 0.3568,
+      "m2_pass": true,
+      "m4_enriched": {
+        "c0_dist": 0.5051,
+        "t2_dist": 0.3016,
+        "reduction": 40.29,
+        "pass": true
+      },
+      "m4_total": {
+        "c0_dist": 0.7438,
+        "t2_dist": 0.4898,
+        "pass": true
+      },
+      "day1_accuracy": {
+        "c0": 0.8555,
+        "t2": 0.9149,
+        "delta_pp": 5.94
+      },
+      "final_accuracy": {
+        "c0": 0.8899,
+        "t2": 0.911,
+        "delta_pp": 2.12,
+        "p_value": 0.0
+      },
+      "power_at_n200": 0.9924
+    }
+  },
+  "gate_decision": {
+    "arm_a_d": 0.2297,
+    "arm_b_d": 0.3568,
+    "arm_c_d": null,
+    "arm_c_ran": false,
+    "arm_c_w_check_failure": "W_delta check FAILED: enriched factors do NOT dominate fixed factors. Root cause: small-sigma fixed factors (supplier_risk=0.08, financial_risk=0.08) produce high W_raw = (1.5\u00b7sa)\u00b2/sa\u2074 = 2.25/sa\u00b2 >> enriched-factor W at larger sa. The \u0394\u03c3 scheme upweights low-uncertainty factors regardless of enrichment status when fixed factors have smaller sa than enriched factors. Arm C not run per spec (report and STOP).",
+    "pattern": "A d\u22480.21, B d>0.30, C not run (W check failed) \u2014 low-discrim condition confirmed",
+    "recommendation": "hold gate at d>0.30; Arm C requires revised \u03c3 profile"
+  },
+  "claim_status": "CONDITIONAL \u2014 d>0.30 requires low-discriminating B0 geometry; A1\u00d7B1 ceiling at d\u22480.21."
+}
