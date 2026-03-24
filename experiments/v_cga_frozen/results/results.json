@@ -1,0 +1,156 @@
+{
+  "experiment": "V-CGA-FROZEN",
+  "date": "2026-03-23",
+  "n_seeds": 50,
+  "verdict": "FAIL",
+  "runtime_s": 9.8,
+  "parameters": {
+    "n_bootstrap": 1200,
+    "n_frozen_days": 90,
+    "apd": 10,
+    "n_post_unfreeze": 500,
+    "theta_min": 0.467,
+    "tau": 0.1,
+    "eta_confirm": 0.05,
+    "eta_override": 0.01,
+    "q_bar": 0.75,
+    "alpha": 0.8
+  },
+  "sigma_schedule_day90": {
+    "travel_match": {
+      "A": 0.18,
+      "B": 0.18
+    },
+    "asset_criticality": {
+      "A": 0.06,
+      "B": 0.06
+    },
+    "threat_intel_enrichment": {
+      "A": 0.1333,
+      "B": 0.18
+    },
+    "time_anomaly": {
+      "A": 0.07,
+      "B": 0.07
+    },
+    "pattern_history": {
+      "A": 0.1,
+      "B": 0.2
+    },
+    "device_trust": {
+      "A": 0.112,
+      "B": 0.16
+    }
+  },
+  "metrics": {
+    "overall_pass": false,
+    "sigma_reduction": {
+      "by_factor": {
+        "threat_intel_enrichment": {
+          "mean_sigma_A": 0.12839808727847665,
+          "mean_sigma_B": 0.16631757038294587,
+          "reduction_pct": 22.44,
+          "p_value": 0.0,
+          "effect_size": 2.2503,
+          "individual_pass": true
+        },
+        "pattern_history": {
+          "mean_sigma_A": 0.09656813370912669,
+          "mean_sigma_B": 0.1872601313717999,
+          "reduction_pct": 47.97,
+          "p_value": 0.0,
+          "effect_size": 4.4549,
+          "individual_pass": true
+        },
+        "device_trust": {
+          "mean_sigma_A": 0.10982920100974387,
+          "mean_sigma_B": 0.15208002199092213,
+          "reduction_pct": 26.91,
+          "p_value": 0.0,
+          "effect_size": 2.0625,
+          "individual_pass": true
+        },
+        "travel_match": {
+          "mean_sigma_A": 0.16696780789295546,
+          "mean_sigma_B": 0.167722657106913,
+          "reduction_pct": -0.88,
+          "note": "fixed factor \u2014 reduction expected near 0"
+        },
+        "asset_criticality": {
+          "mean_sigma_A": 0.060457000830124785,
+          "mean_sigma_B": 0.05900322453798683,
+          "reduction_pct": -3.95,
+          "note": "fixed factor \u2014 reduction expected near 0"
+        },
+        "time_anomaly": {
+          "mean_sigma_A": 0.06910739231568436,
+          "mean_sigma_B": 0.06901683650393127,
+          "reduction_pct": -0.65,
+          "note": "fixed factor \u2014 reduction expected near 0"
+        }
+      },
+      "enrichment_factors_passing": 3,
+      "pooled_p_value": 0.0,
+      "pooled_t_stat": 22.6161,
+      "pass": true
+    },
+    "convergence_speed": {
+      "n_half_A_mean": 75.1,
+      "n_half_A_ci95": [
+        64.0,
+        86.1
+      ],
+      "n_half_B_mean": 93.3,
+      "n_half_B_ci95": [
+        71.8,
+        114.8
+      ],
+      "reduction_pct": 19.5,
+      "p_value": 0.097324,
+      "t_stat": 1.6903,
+      "effect_size_d": 0.2415,
+      "pass": false
+    },
+    "iks_trajectory": {
+      "checkpoints": {
+        "100": {
+          "A_mean": 0.0617,
+          "B_mean": 0.055,
+          "delta": 0.0067
+        },
+        "200": {
+          "A_mean": 0.1218,
+          "B_mean": 0.1109,
+          "delta": 0.0109
+        },
+        "300": {
+          "A_mean": 0.1752,
+          "B_mean": 0.1621,
+          "delta": 0.0132
+        },
+        "400": {
+          "A_mean": 0.2269,
+          "B_mean": 0.2147,
+          "delta": 0.0122
+        },
+        "500": {
+          "A_mean": 0.2731,
+          "B_mean": 0.2615,
+          "delta": 0.0116
+        }
+      },
+      "at_300_A": 0.1752,
+      "at_300_B": 0.1621,
+      "at_300_delta": 0.0132,
+      "p_value": 0.000564,
+      "t_stat": 3.6894,
+      "pass": true
+    },
+    "final_accuracy": {
+      "A_mean": 0.9344,
+      "B_mean": 0.8978,
+      "p_value": 0.0
+    }
+  },
+  "design_implications": "DESIGN GAP: GraphAttentionBridge required. Failed metrics: M2 . GTM materials referencing 'graph compounds while centroids wait' must be updated to forward-looking only. GraphAttentionBridge goes to Phase 3 queue."
+}

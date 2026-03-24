@@ -1,0 +1,175 @@
+{
+  "experiment": "V-CGA-FROZEN",
+  "version": "v3_powered_n257",
+  "fix_applied": "GAE 0.7.1 kernel_weight_refresh() called after each 10-day enrichment step in condition A",
+  "date": "2026-03-23",
+  "n_seeds": 257,
+  "verdict": "FAIL",
+  "runtime_s": 55.4,
+  "parameters": {
+    "n_bootstrap": 1200,
+    "n_frozen_days": 90,
+    "apd": 10,
+    "n_post_unfreeze": 500,
+    "theta_min": 0.467,
+    "tau": 0.1,
+    "eta_confirm": 0.05,
+    "eta_override": 0.01,
+    "q_bar": 0.75,
+    "alpha": 0.8
+  },
+  "sigma_schedule_day90": {
+    "travel_match": {
+      "A": 0.18,
+      "B": 0.18
+    },
+    "asset_criticality": {
+      "A": 0.06,
+      "B": 0.06
+    },
+    "threat_intel_enrichment": {
+      "A": 0.1333,
+      "B": 0.18
+    },
+    "time_anomaly": {
+      "A": 0.07,
+      "B": 0.07
+    },
+    "pattern_history": {
+      "A": 0.1,
+      "B": 0.2
+    },
+    "device_trust": {
+      "A": 0.112,
+      "B": 0.16
+    }
+  },
+  "metrics": {
+    "overall_pass": false,
+    "sigma_reduction": {
+      "by_factor": {
+        "threat_intel_enrichment": {
+          "mean_sigma_A": 0.12817306314550345,
+          "mean_sigma_B": 0.16849039652644696,
+          "reduction_pct": 23.43,
+          "p_value": 0.0,
+          "effect_size": 2.2079,
+          "individual_pass": true
+        },
+        "pattern_history": {
+          "mean_sigma_A": 0.09830610927841178,
+          "mean_sigma_B": 0.18385158294136253,
+          "reduction_pct": 46.04,
+          "p_value": 0.0,
+          "effect_size": 4.2711,
+          "individual_pass": true
+        },
+        "device_trust": {
+          "mean_sigma_A": 0.10959168091477155,
+          "mean_sigma_B": 0.15132300335946675,
+          "reduction_pct": 26.94,
+          "p_value": 0.0,
+          "effect_size": 2.3297,
+          "individual_pass": true
+        },
+        "travel_match": {
+          "mean_sigma_A": 0.16717879038083233,
+          "mean_sigma_B": 0.1684530116869613,
+          "reduction_pct": -0.19,
+          "note": "fixed factor \u2014 reduction expected near 0"
+        },
+        "asset_criticality": {
+          "mean_sigma_A": 0.05864178474729894,
+          "mean_sigma_B": 0.058537023012690315,
+          "reduction_pct": -1.23,
+          "note": "fixed factor \u2014 reduction expected near 0"
+        },
+        "time_anomaly": {
+          "mean_sigma_A": 0.06920780894591944,
+          "mean_sigma_B": 0.06944993277601517,
+          "reduction_pct": -0.53,
+          "note": "fixed factor \u2014 reduction expected near 0"
+        }
+      },
+      "enrichment_factors_passing": 3,
+      "pooled_p_value": 0.0,
+      "pooled_t_stat": 55.0615,
+      "pass": true
+    },
+    "convergence_speed": {
+      "n_half_A_mean": 78.8,
+      "n_half_A_ci95": [
+        72.6,
+        85.0
+      ],
+      "n_half_B_mean": 78.1,
+      "n_half_B_ci95": [
+        72.0,
+        84.3
+      ],
+      "reduction_pct": -0.9,
+      "p_value": 0.872845,
+      "t_stat": -0.1602,
+      "effect_size_d": -0.01,
+      "pass": false
+    },
+    "iks_trajectory": {
+      "checkpoints": {
+        "100": {
+          "A_mean": 0.0624,
+          "B_mean": 0.058,
+          "delta": 0.0044
+        },
+        "200": {
+          "A_mean": 0.1213,
+          "B_mean": 0.1147,
+          "delta": 0.0066
+        },
+        "300": {
+          "A_mean": 0.1772,
+          "B_mean": 0.1667,
+          "delta": 0.0105
+        },
+        "400": {
+          "A_mean": 0.2276,
+          "B_mean": 0.2171,
+          "delta": 0.0105
+        },
+        "500": {
+          "A_mean": 0.2754,
+          "B_mean": 0.2633,
+          "delta": 0.0121
+        }
+      },
+      "at_300_A": 0.1772,
+      "at_300_B": 0.1667,
+      "at_300_delta": 0.0105,
+      "p_value": 0.0,
+      "t_stat": 5.5509,
+      "pass": true
+    },
+    "final_accuracy": {
+      "A_mean": 0.9405,
+      "B_mean": 0.8909,
+      "p_value": 0.0
+    }
+  },
+  "design_implications": "DESIGN GAP: GraphAttentionBridge required. Failed metrics: M2 . GTM materials referencing 'graph compounds while centroids wait' must be updated to forward-looking only. GraphAttentionBridge goes to Phase 3 queue.",
+  "power_analysis": {
+    "effect_size_d": 0.241,
+    "alpha": 0.01,
+    "power_target": 0.9,
+    "n_required": 257,
+    "n_actual": 257
+  },
+  "comparison_to_v1v2": {
+    "m2_p_value_v1v2": 0.097324,
+    "m2_p_value_v3": 0.872845,
+    "m2_effect_size_v1v2": 0.2415,
+    "m2_effect_size_v3": -0.01,
+    "n_half_a_v1v2": 75.1,
+    "n_half_a_v3": 78.8,
+    "n_half_b_v1v2": 93.3,
+    "n_half_b_v3": 78.1
+  }
+}

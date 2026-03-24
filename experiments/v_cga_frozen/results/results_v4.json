@@ -1,0 +1,72 @@
+{
+  "experiment": "V-CGA-FROZEN-v4",
+  "version": "v4_empirical_bayes_bootstrap",
+  "date": "2026-03-23",
+  "n_seeds": 100,
+  "verdict": "FAIL",
+  "runtime_s": 6.5,
+  "parameters": {
+    "n_bootstrap_hist": 200,
+    "n_post_bootstrap": 500,
+    "theta_min": 0.467,
+    "tau": 0.1,
+    "eta_confirm": 0.05,
+    "eta_override": 0.01,
+    "q_bar": 0.75,
+    "alpha": 0.8
+  },
+  "sigma_profiles": {
+    "enriched": {
+      "threat_intel_enrichment": 0.13,
+      "pattern_history": 0.1,
+      "device_trust": 0.11,
+      "travel_match": 0.18,
+      "asset_criticality": 0.06,
+      "time_anomaly": 0.07
+    },
+    "unenriched": {
+      "travel_match": 0.18,
+      "asset_criticality": 0.06,
+      "threat_intel_enrichment": 0.195,
+      "time_anomaly": 0.07,
+      "pattern_history": 0.15000000000000002,
+      "device_trust": 0.165
+    },
+    "unenrich_multiplier": 1.5
+  },
+  "m2": {
+    "n_half_c0_mean": 72.6,
+    "n_half_c0_ci95": [
+      64.2,
+      81.0
+    ],
+    "n_half_t2_mean": 223.5,
+    "n_half_t2_ci95": [
+      209.9,
+      237.1
+    ],
+    "reduction_pct": -207.8,
+    "p_value": 0.0,
+    "t_stat": -20.1297,
+    "cohens_d": -2.0231,
+    "pass": false
+  },
+  "m4": {
+    "starting_error_c0": 1.837,
+    "starting_error_t2": 2.4012,
+    "reduction_pct": -30.72,
+    "pass": false
+  },
+  "day1_accuracy": {
+    "c0": 0.9104,
+    "t2": 0.4032,
+    "delta_pp": -50.72
+  },
+  "final_accuracy": {
+    "c0_mean": 0.9443,
+    "t2_mean": 0.9368,
+    "delta_pp": -0.75,
+    "p_value": 0.000146
+  },
+  "claim_status": "CLAIM-62/63 REMAINS CONDITIONAL"
+}
