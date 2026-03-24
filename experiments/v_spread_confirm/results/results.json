@@ -1,0 +1,24 @@
+{
+  "experiment": "V-SPREAD-CONFIRM",
+  "gae_version": "0.7.8",
+  "enriched_factor": "device_trust",
+  "enriched_factor_spread": 0.3,
+  "primary_factor_spread": 0.62,
+  "w_share_post_pct": 11.88,
+  "day1_delta_pp": -0.88,
+  "cohens_d": 0.0065,
+  "p_value": 0.948547,
+  "ci_95": [
+    -11.72,
+    10.98
+  ],
+  "n_half_c0": 69.2,
+  "n_half_t2": 69.6,
+  "final_delta_pp": -1.67,
+  "spread_hypothesis_confirmed": true,
+  "vcga_v3_asset_crit_sigma": 0.06,
+  "vcga_v3_time_anomaly_sigma": 0.07,
+  "b0p2_device_trust_spread": 0.0,
+  "runtime_s": 9.2,
+  "note": "Raw numbers for roadmap session only"
+}

@@ -1,0 +1,36 @@
+{
+  "gsa": {
+    "n_half_c0": 74.1,
+    "n_half_t2": 57.3,
+    "cohens_d": 0.3342,
+    "p_value": 5e-06,
+    "ci_95": [
+      9.81,
+      23.91
+    ],
+    "day1_delta_pp": 6.79,
+    "final_delta_pp": 1.76,
+    "enriched_factor": "threat_intel",
+    "spread": 0.62,
+    "w_share_pct": 46.69
+  },
+  "gsb": {
+    "n_half_c0": 67.7,
+    "n_half_t2": 60.4,
+    "cohens_d": 0.2133,
+    "p_value": 0.002954,
+    "ci_95": [
+      2.51,
+      12.07
+    ],
+    "day1_delta_pp": 4.5,
+    "final_delta_pp": 0.93,
+    "enriched_factor": "device_trust",
+    "spread": 0.3,
+    "w_share_pct": 40.77,
+    "w_boot": 484.0,
+    "runtime_s": 18.5
+  },
+  "interaction_finding": "unclear",
+  "stop_reason": "GS-A gate was single-factor; gate rescinded"
+}
