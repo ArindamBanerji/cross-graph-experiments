@@ -1,0 +1,121 @@
+{
+  "experiment": "V-CGA-FROZEN-v7",
+  "version": "v7_CD_corrected_N200",
+  "date": "2026-03-23",
+  "n_seeds": 200,
+  "verdict": "FAIL",
+  "runtime_s": 17.8,
+  "condition": "CD_cross_domain_enriched_factors_only",
+  "sigma_cd_enriched": {
+    "travel_match": 0.11,
+    "asset_criticality": 0.06,
+    "threat_intel_enrichment": 0.18,
+    "time_anomaly": 0.07,
+    "pattern_history": 0.2,
+    "device_trust": 0.09
+  },
+  "sigma_cd_unenriched": {
+    "travel_match": 0.165,
+    "asset_criticality": 0.06,
+    "threat_intel_enrichment": 0.18,
+    "time_anomaly": 0.07,
+    "pattern_history": 0.2,
+    "device_trust": 0.135
+  },
+  "parameters": {
+    "n_bootstrap_hist": 200,
+    "n_post_bootstrap": 500,
+    "theta_min": 0.467,
+    "tau": 0.1,
+    "eta_confirm": 0.05,
+    "eta_override": 0.01,
+    "q_bar": 0.75,
+    "alpha": 0.8
+  },
+  "m2": {
+    "n_half_c0": 77.2,
+    "n_half_c0_ci95": [
+      69.7,
+      84.7
+    ],
+    "n_half_c1": 68.8,
+    "n_half_c1_ci95": [
+      63.5,
+      74.1
+    ],
+    "diff_mean": 8.4,
+    "diff_ci95": [
+      2.87,
+      13.93
+    ],
+    "reduction_pct": 10.88,
+    "p_value": 0.003064,
+    "t_stat": 2.998,
+    "cohens_d": 0.2125,
+    "pass": false
+  },
+  "m4_cd": {
+    "description": "per-dim distance travel_match(0) + device_trust(5) only",
+    "c0_partial_dist": 0.9107,
+    "c1_partial_dist": 0.9448,
+    "reduction_pct": -3.75,
+    "pass": false
+  },
+  "m4_total": {
+    "description": "total distance all 6 dims (v6 metric for comparison)",
+    "c0_total_dist": 1.7936,
+    "c1_total_dist": 1.9001,
+    "reduction_pct": -5.94,
+    "pass": false
+  },
+  "day1_accuracy": {
+    "c0": 0.8154,
+    "c1": 0.8399,
+    "delta_pp": 2.45
+  },
+  "final_accuracy": {
+    "c0_mean": 0.8381,
+    "c1_mean": 0.848,
+    "delta_pp": 0.98,
+    "p_value": 0.0
+  },
+  "per_dim_n_half": {
+    "travel_match": {
+      "c0": 436.9,
+      "c1": 437.6,
+      "delta": -0.7
+    },
+    "asset_criticality": {
+      "c0": 448.0,
+      "c1": 448.5,
+      "delta": -0.5
+    },
+    "threat_intel_enrichment": {
+      "c0": 444.2,
+      "c1": 446.0,
+      "delta": -1.8
+    },
+    "time_anomaly": {
+      "c0": 447.4,
+      "c1": 447.8,
+      "delta": -0.5
+    },
+    "pattern_history": {
+      "c0": 441.4,
+      "c1": 442.9,
+      "delta": -1.5
+    },
+    "device_trust": {
+      "c0": 434.9,
+      "c1": 435.1,
+      "delta": -0.2
+    }
+  },
+  "power_analysis": {
+    "observed_d": 0.2125,
+    "power_at_n100": 0.3134,
+    "power_at_n150": 0.4992,
+    "power_at_n200": 0.6571
+  },
+  "option2_status": "INCONCLUSIVE"
+}

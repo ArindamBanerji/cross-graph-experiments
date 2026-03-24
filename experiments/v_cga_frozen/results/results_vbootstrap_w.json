@@ -1,0 +1,101 @@
+{
+  "experiment": "V-BOOTSTRAP-W",
+  "version": "delta_sigma_weighted_gae_0.7.5",
+  "date": "2026-03-23",
+  "n_seeds": 200,
+  "verdict": "FAIL",
+  "runtime_s": 11.6,
+  "w_delta_values": {
+    "travel_match": 1.1554,
+    "asset_criticality": 1.4503,
+    "threat_intel_enrichment": 0.1611,
+    "time_anomaly": 1.0655,
+    "pattern_history": 0.1305,
+    "device_trust": 2.0372
+  },
+  "sigma_after": {
+    "travel_match": 0.11,
+    "asset_criticality": 0.06,
+    "threat_intel_enrichment": 0.18,
+    "time_anomaly": 0.07,
+    "pattern_history": 0.2,
+    "device_trust": 0.09
+  },
+  "sigma_before": {
+    "travel_match": 0.27,
+    "asset_criticality": 0.09,
+    "threat_intel_enrichment": 0.27,
+    "time_anomaly": 0.105,
+    "pattern_history": 0.3,
+    "device_trust": 0.24
+  },
+  "parameters": {
+    "n_bootstrap_hist": 200,
+    "n_post_bootstrap": 500,
+    "theta_min": 0.467,
+    "tau": 0.1,
+    "eta_confirm": 0.05,
+    "eta_override": 0.01,
+    "q_bar": 0.75,
+    "alpha": 0.8
+  },
+  "m2": {
+    "n_half_c0": 77.4,
+    "n_half_c0_ci95": [
+      70.1,
+      84.7
+    ],
+    "n_half_t_delta": 68.7,
+    "n_half_td_ci95": [
+      63.7,
+      73.7
+    ],
+    "diff_mean": 8.69,
+    "diff_ci95": [
+      2.5,
+      14.88
+    ],
+    "reduction_pct": 11.23,
+    "p_value": 0.00616,
+    "t_stat": 2.7687,
+    "cohens_d": 0.1963,
+    "pass": false
+  },
+  "m4_enriched": {
+    "c0_partial_dist": 0.937,
+    "t_delta_partial_dist": 0.8275,
+    "reduction_pct": 11.68,
+    "pass": true
+  },
+  "m4_total": {
+    "c0_total_dist": 1.8299,
+    "t_delta_total_dist": 1.9329,
+    "reduction_pct": -5.63,
+    "pass": false
+  },
+  "day1_accuracy": {
+    "c0": 0.8133,
+    "t_delta": 0.8287,
+    "delta_pp": 1.54
+  },
+  "final_accuracy": {
+    "c0_mean": 0.8377,
+    "td_mean": 0.8442,
+    "delta_pp": 0.66,
+    "p_value": 8.1e-05
+  },
+  "power_analysis": {
+    "observed_d": 0.1963,
+    "power_at_n100": 0.2592,
+    "power_at_n150": 0.4212,
+    "power_at_n200": 0.5701
+  },
+  "comparison_to_v7": {
+    "v7_d": 0.212,
+    "v7_p": 0.003,
+    "vbootstrap_w_d": 0.1963,
+    "vbootstrap_w_p": 0.00616,
+    "improvement": "-0.016 (worse or same)"
+  },
+  "claim_status": "INCONCLUSIVE \u2014 p<0.01 but d<0.3; effect real, mechanism partially confirmed."
+}

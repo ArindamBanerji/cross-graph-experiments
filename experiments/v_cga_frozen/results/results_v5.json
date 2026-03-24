@@ -1,0 +1,188 @@
+{
+  "experiment": "V-CGA-FROZEN-v5",
+  "version": "v5_factorial_2x2x2",
+  "date": "2026-03-23",
+  "n_seeds_per_cell": 100,
+  "n_cells": 4,
+  "verdict": "FAIL",
+  "runtime_s": 103.8,
+  "parameters": {
+    "n_bootstrap_hist": 200,
+    "n_post_bootstrap": 500,
+    "theta_min": 0.467,
+    "tau": 0.1,
+    "eta_confirm": 0.05,
+    "eta_override": 0.01,
+    "q_bar": 0.75,
+    "alpha": 0.8
+  },
+  "sigma_profiles": {
+    "enriched": {
+      "threat_intel_enrichment": 0.13,
+      "pattern_history": 0.1,
+      "device_trust": 0.11,
+      "travel_match": 0.18,
+      "asset_criticality": 0.06,
+      "time_anomaly": 0.07
+    },
+    "unenriched": {
+      "travel_match": 0.18,
+      "asset_criticality": 0.06,
+      "threat_intel_enrichment": 0.195,
+      "time_anomaly": 0.07,
+      "pattern_history": 0.15000000000000002,
+      "device_trust": 0.165
+    },
+    "unenrich_multiplier": 1.5
+  },
+  "cells": {
+    "A0_B0": {
+      "n_half_c0": 75.5,
+      "n_half_c0_ci95": [
+        67.7,
+        83.2
+      ],
+      "n_half_c1": 70.0,
+      "n_half_c1_ci95": [
+        63.8,
+        76.3
+      ],
+      "reduction_pct": 7.18,
+      "p_value": 0.178548,
+      "cohens_d": 0.1362,
+      "m2_pass": false,
+      "m4": {
+        "starting_error_c0": 1.8077,
+        "starting_error_c1": 1.878,
+        "reduction_pct": -3.89,
+        "pass": false
+      },
+      "day1_accuracy": {
+        "c0": 0.9236,
+        "c1": 0.9234,
+        "delta_pp": -0.02
+      },
+      "final_accuracy": {
+        "c0_mean": 0.9537,
+        "c1_mean": 0.9544,
+        "delta_pp": 0.07,
+        "p_value": 0.594963
+      }
+    },
+    "A0_B1": {
+      "n_half_c0": 75.5,
+      "n_half_c0_ci95": [
+        67.7,
+        83.2
+      ],
+      "n_half_c1": 70.0,
+      "n_half_c1_ci95": [
+        63.8,
+        76.3
+      ],
+      "reduction_pct": 7.18,
+      "p_value": 0.178548,
+      "cohens_d": 0.1362,
+      "m2_pass": false,
+      "m4": {
+        "starting_error_c0": 1.8077,
+        "starting_error_c1": 1.878,
+        "reduction_pct": -3.89,
+        "pass": false
+      },
+      "day1_accuracy": {
+        "c0": 0.9236,
+        "c1": 0.9234,
+        "delta_pp": -0.02
+      },
+      "final_accuracy": {
+        "c0_mean": 0.9537,
+        "c1_mean": 0.9544,
+        "delta_pp": 0.07,
+        "p_value": 0.594963
+      }
+    },
+    "A1_B0": {
+      "n_half_c0": 81.4,
+      "n_half_c0_ci95": [
+        71.2,
+        91.6
+      ],
+      "n_half_c1": 68.0,
+      "n_half_c1_ci95": [
+        60.6,
+        75.4
+      ],
+      "reduction_pct": 16.44,
+      "p_value": 0.002596,
+      "cohens_d": 0.3106,
+      "m2_pass": true,
+      "m4": {
+        "starting_error_c0": 1.4118,
+        "starting_error_c1": 1.3925,
+        "reduction_pct": 1.37,
+        "pass": true
+      },
+      "day1_accuracy": {
+        "c0": 0.788,
+        "c1": 0.834,
+        "delta_pp": 4.6
+      },
+      "final_accuracy": {
+        "c0_mean": 0.8423,
+        "c1_mean": 0.8476,
+        "delta_pp": 0.53,
+        "p_value": 0.017581
+      }
+    },
+    "A1_B1": {
+      "n_half_c0": 90.3,
+      "n_half_c0_ci95": [
+        78.7,
+        101.9
+      ],
+      "n_half_c1": 82.9,
+      "n_half_c1_ci95": [
+        72.4,
+        93.3
+      ],
+      "reduction_pct": 8.2,
+      "p_value": 0.233569,
+      "cohens_d": 0.1205,
+      "m2_pass": false,
+      "m4": {
+        "starting_error_c0": 1.7939,
+        "starting_error_c1": 1.8477,
+        "reduction_pct": -3.0,
+        "pass": false
+      },
+      "day1_accuracy": {
+        "c0": 0.8144,
+        "c1": 0.8372,
+        "delta_pp": 2.28
+      },
+      "final_accuracy": {
+        "c0_mean": 0.8722,
+        "c1_mean": 0.8739,
+        "delta_pp": 0.17,
+        "p_value": 0.475683
+      }
+    }
+  },
+  "hypothesis_verdicts": {
+    "H1": {
+      "verdict": "REJECTED",
+      "evidence": "A1xB1: d=0.120, p=0.2336, M4=FAIL"
+    },
+    "H2": {
+      "verdict": "REJECTED",
+      "evidence": "A1xB1 d=0.120 vs A1xB0 d=0.311  (diff=-0.190; need B1>>B0)"
+    },
+    "H3": {
+      "verdict": "REJECTED",
+      "evidence": "At least one cell passes M2: A1_B0"
+    },
+    "claim_recommendation": "CONDITIONAL \u2014 effect exists in some cells; domain-specificity required."
+  },
+  "claim_recommendation": "CONDITIONAL \u2014 effect exists in some cells; domain-specificity required."
+}

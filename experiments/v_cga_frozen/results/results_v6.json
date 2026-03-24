@@ -1,0 +1,109 @@
+{
+  "experiment": "V-CGA-FROZEN-v6",
+  "version": "v6_option2_option3",
+  "date": "2026-03-23",
+  "n_seeds": 100,
+  "runtime_s": 13.7,
+  "gae_change": {
+    "param_added": "weight_exponent: float = 1.0",
+    "function": "compute_enriched_bootstrap_prior() in gae/calibration.py",
+    "tests_passing": 490,
+    "backward_compatible": true
+  },
+  "mu_star_geometry": "A1\u00d7B1 structured SOC (v5 A1_B1 \u2014 high-discriminating)",
+  "parameters": {
+    "n_bootstrap_hist": 200,
+    "n_post_bootstrap": 500,
+    "theta_min": 0.467,
+    "tau": 0.1,
+    "eta_confirm": 0.05,
+    "eta_override": 0.01,
+    "q_bar": 0.75,
+    "alpha": 0.8
+  },
+  "conditions": {
+    "CD_cross_domain": {
+      "description": "Enrich non-discriminating factors only (travel_match, device_trust)",
+      "weight_exponent": 1.0,
+      "sigma_enriched": {
+        "travel_match": 0.11,
+        "asset_criticality": 0.06,
+        "threat_intel_enrichment": 0.18,
+        "time_anomaly": 0.07,
+        "pattern_history": 0.2,
+        "device_trust": 0.09
+      },
+      "sigma_unenriched": {
+        "travel_match": 0.165,
+        "asset_criticality": 0.06,
+        "threat_intel_enrichment": 0.18,
+        "time_anomaly": 0.07,
+        "pattern_history": 0.2,
+        "device_trust": 0.135
+      },
+      "n_half_c0": 78.9,
+      "n_half_c0_ci95": [
+        67.4,
+        90.4
+      ],
+      "n_half_c1": 69.6,
+      "n_half_c1_ci95": [
+        61.2,
+        77.9
+      ],
+      "reduction_pct": 11.84,
+      "p": 0.008395,
+      "d": 0.2703,
+      "m2_pass": false,
+      "m4_pass": false,
+      "m4_err_c0": 1.7959,
+      "m4_err_c1": 1.8963,
+      "day1_delta_pp": 2.6,
+      "final_acc_c0": 0.836,
+      "final_acc_c1": 0.8478
+    },
+    "DW_dampened_weights": {
+      "description": "sqrt(1/sigma^2) weighting (exponent=0.5) \u2014 same enriched dims as v5",
+      "weight_exponent": 0.5,
+      "sigma_enriched": {
+        "threat_intel_enrichment": 0.13,
+        "pattern_history": 0.1,
+        "device_trust": 0.11,
+        "travel_match": 0.18,
+        "asset_criticality": 0.06,
+        "time_anomaly": 0.07
+      },
+      "sigma_unenriched": {
+        "travel_match": 0.18,
+        "asset_criticality": 0.06,
+        "threat_intel_enrichment": 0.195,
+        "time_anomaly": 0.07,
+        "pattern_history": 0.15000000000000002,
+        "device_trust": 0.165
+      },
+      "n_half_c0": 81.3,
+      "n_half_c0_ci95": [
+        70.9,
+        91.8
+      ],
+      "n_half_c1": 78.0,
+      "n_half_c1_ci95": [
+        67.0,
+        88.9
+      ],
+      "reduction_pct": 4.17,
+      "p": 0.420384,
+      "d": 0.0813,
+      "m2_pass": false,
+      "m4_pass": true,
+      "m4_err_c0": 1.7955,
+      "m4_err_c1": 1.7929,
+      "day1_delta_pp": 0.76,
+      "final_acc_c0": 0.8648,
+      "final_acc_c1": 0.8708
+    }
+  },
+  "option2_verdict": "REJECTED",
+  "option3_verdict": "REJECTED",
+  "claim_recommendation": "RETIRE \u2014 enriched bootstrap prior provides no measurable N_half benefit in realistic A1\u00d7B1 SOC geometry under any tested weighting scheme or enrichment strategy. Effect is confined to the narrow A1\u00d7B0 regime (structured mu*, non-discriminating enriched factors)."
+}

@@ -1,0 +1,77 @@
+{
+  "experiment": "V-CGA-FROZEN-v4b",
+  "version": "v4b_corrected_gradient_gae_0.7.4",
+  "fix_applied": "W_normalized*(f-mu) gradient \u2014 not f*W_normalized",
+  "comparison_to_v4a": {
+    "v4a_verdict": "FAIL \u2014 implementation error",
+    "v4b_verdict": "FAIL"
+  },
+  "date": "2026-03-23",
+  "n_seeds": 100,
+  "verdict": "FAIL",
+  "runtime_s": 24.5,
+  "parameters": {
+    "n_bootstrap_hist": 200,
+    "n_post_bootstrap": 500,
+    "theta_min": 0.467,
+    "tau": 0.1,
+    "eta_confirm": 0.05,
+    "eta_override": 0.01,
+    "q_bar": 0.75,
+    "alpha": 0.8
+  },
+  "sigma_profiles": {
+    "enriched": {
+      "threat_intel_enrichment": 0.13,
+      "pattern_history": 0.1,
+      "device_trust": 0.11,
+      "travel_match": 0.18,
+      "asset_criticality": 0.06,
+      "time_anomaly": 0.07
+    },
+    "unenriched": {
+      "travel_match": 0.18,
+      "asset_criticality": 0.06,
+      "threat_intel_enrichment": 0.195,
+      "time_anomaly": 0.07,
+      "pattern_history": 0.15000000000000002,
+      "device_trust": 0.165
+    },
+    "unenrich_multiplier": 1.5
+  },
+  "m2": {
+    "n_half_c0_mean": 72.6,
+    "n_half_c0_ci95": [
+      64.2,
+      81.0
+    ],
+    "n_half_t2_mean": 69.2,
+    "n_half_t2_ci95": [
+      63.3,
+      75.1
+    ],
+    "reduction_pct": 4.67,
+    "p_value": 0.445924,
+    "t_stat": 0.7653,
+    "cohens_d": 0.0769,
+    "pass": false
+  },
+  "m4": {
+    "starting_error_c0": 1.837,
+    "starting_error_t2": 1.9041,
+    "reduction_pct": -3.65,
+    "pass": false
+  },
+  "day1_accuracy": {
+    "c0": 0.9104,
+    "t2": 0.9188,
+    "delta_pp": 0.84
+  },
+  "final_accuracy": {
+    "c0_mean": 0.9443,
+    "t2_mean": 0.9463,
+    "delta_pp": 0.2,
+    "p_value": 0.151986
+  },
+  "claim_status": "CLAIM-62/63 REMAINS CONDITIONAL"
+}
