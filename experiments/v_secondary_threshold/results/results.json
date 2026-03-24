@@ -1,0 +1,51 @@
+{
+  "experiment": "V-SECONDARY-THRESHOLD",
+  "gae_version": "0.7.8",
+  "enriched_factor": "device_trust",
+  "enriched_factor_spread": 0.3,
+  "reference_points": {
+    "spread_confirm": {
+      "w_share_pct": 13.0,
+      "day1_pp": 0.0,
+      "d": 0.12
+    },
+    "gs_b": {
+      "w_share_pct": 40.8,
+      "day1_pp": 4.5,
+      "d": 0.213
+    }
+  },
+  "arms": {
+    "ST-1": {
+      "asset_crit_sigma": 0.12,
+      "w_share_pct": 35.2,
+      "day1_delta_pp": 4.64,
+      "cohens_d": 0.1397,
+      "p_value": 0.167528,
+      "ci_95": [
+        -1.64,
+        9.32
+      ],
+      "n_half_c0": 64.5,
+      "n_half_t2": 60.7,
+      "runtime_s": 11.5
+    },
+    "ST-2": {
+      "asset_crit_sigma": 0.15,
+      "w_share_pct": 38.6,
+      "day1_delta_pp": 4.62,
+      "cohens_d": 0.2001,
+      "p_value": 0.049276,
+      "ci_95": [
+        0.02,
+        11.76
+      ],
+      "n_half_c0": 65.3,
+      "n_half_t2": 59.4,
+      "runtime_s": 11.3
+    }
+  },
+  "transition_point_w_share_pct": 35.2,
+  "monotonic": false,
+  "anomaly_arm": "ST-2"
+}

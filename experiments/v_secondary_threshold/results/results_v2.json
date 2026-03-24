@@ -1,0 +1,65 @@
+{
+  "experiment": "V-SECONDARY-THRESHOLD-2",
+  "gae_version": "0.7.8",
+  "target_band": "13-35% W-share",
+  "reference_points": {
+    "spread_confirm": {
+      "w_share_pct": 13.0,
+      "day1_pp": 0.0
+    },
+    "st1": {
+      "w_share_pct": 35.2,
+      "day1_pp": 4.64
+    },
+    "gs_b": {
+      "w_share_pct": 40.8,
+      "day1_pp": 4.5
+    }
+  },
+  "arms": {
+    "ST2-1": {
+      "ac_sigma": 0.061,
+      "actual_w_share_pct": 20.7,
+      "day1_delta_pp": 5.8,
+      "cohens_d": 0.1035,
+      "p_value": 0.305543,
+      "ci_95": [
+        -3.58,
+        11.3
+      ],
+      "n_half_c0": 66.2,
+      "n_half_t2": 62.3,
+      "runtime_s": 12.0
+    },
+    "ST2-2": {
+      "ac_sigma": 0.076,
+      "actual_w_share_pct": 25.8,
+      "day1_delta_pp": 5.4,
+      "cohens_d": 0.3249,
+      "p_value": 0.001664,
+      "ci_95": [
+        3.02,
+        12.64
+      ],
+      "n_half_c0": 66.3,
+      "n_half_t2": 58.5,
+      "runtime_s": 11.3
+    },
+    "ST2-3": {
+      "ac_sigma": 0.098,
+      "actual_w_share_pct": 31.4,
+      "day1_delta_pp": 4.98,
+      "cohens_d": 0.196,
+      "p_value": 0.053983,
+      "ci_95": [
+        -0.13,
+        14.61
+      ],
+      "n_half_c0": 66.6,
+      "n_half_t2": 59.4,
+      "runtime_s": 11.3
+    }
+  },
+  "transition_point_w_share_pct": 20.7,
+  "monotonic": true
+}
