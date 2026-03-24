@@ -1,0 +1,93 @@
+{
+  "experiment": "V-CEILING-ARM-B-v2",
+  "version": "v2_gradient_fix_gae_0.7.8",
+  "gae_version": "0.7.8",
+  "date": "2026-03-24",
+  "n_seeds": 200,
+  "condition": "A1xB0 structured mu*, low-discriminating enriched factors",
+  "sigma_after": {
+    "travel_match": 0.11,
+    "asset_criticality": 0.06,
+    "threat_intel_enrichment": 0.13,
+    "time_anomaly": 0.07,
+    "pattern_history": 0.1,
+    "device_trust": 0.09
+  },
+  "sigma_before": {
+    "travel_match": 0.165,
+    "asset_criticality": 0.09,
+    "threat_intel_enrichment": 0.195,
+    "time_anomaly": 0.105,
+    "pattern_history": 0.15,
+    "device_trust": 0.135
+  },
+  "w_delta_values": {
+    "travel_match": 0.5853,
+    "asset_criticality": 1.9674,
+    "threat_intel_enrichment": 0.4191,
+    "time_anomaly": 1.4455,
+    "pattern_history": 0.7083,
+    "device_trust": 0.8744
+  },
+  "previous_result": {
+    "d": 0.357,
+    "p": "<0.0001",
+    "m2_pass": true,
+    "cause_of_rerun": "DiagonalKernel gradient bug"
+  },
+  "m2": {
+    "n_half_c0": 78.8,
+    "n_half_c0_ci95": [
+      70.7,
+      86.8
+    ],
+    "n_half_t2": 64.8,
+    "n_half_t2_ci95": [
+      60.0,
+      69.6
+    ],
+    "diff_mean": 13.96,
+    "diff_ci95": [
+      7.67,
+      20.24
+    ],
+    "reduction_pct": 17.72,
+    "p_value": 2e-05,
+    "t_stat": 4.3757,
+    "cohens_d": 0.3102,
+    "pass": true
+  },
+  "m4_enriched": {
+    "c0": 0.4249,
+    "t2": 0.5312,
+    "reduction_pct": -25.02,
+    "pass": false
+  },
+  "m4_total": {
+    "c0_dist": 0.6594,
+    "t2_dist": 0.6011,
+    "pass": true
+  },
+  "day1_accuracy": {
+    "c0": 0.8926,
+    "t2": 0.9221,
+    "delta_pp": 2.95
+  },
+  "final_accuracy": {
+    "c0_mean": 0.9194,
+    "t2_mean": 0.9316,
+    "delta_pp": 1.22,
+    "p_value": 0.0
+  },
+  "power_analysis": {
+    "observed_d": 0.3102,
+    "power_at_n200": 0.962
+  },
+  "comparison_to_v1": {
+    "v1_d": 0.357,
+    "v2_d": 0.3102,
+    "verdict": "CONFIRMED"
+  },
+  "claim62_b0_status": "CLAIM-62 B0 CONDITIONAL-MET confirmed at GAE 0.7.8. d>0.30 holds with fixed gradient.",
+  "runtime_s": 23.1
+}
