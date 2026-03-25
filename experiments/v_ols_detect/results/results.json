@@ -1,0 +1,38 @@
+{
+  "experiment": "V-OLS-DETECT",
+  "gae_version": "0.7.11",
+  "n_seeds": 30,
+  "initial_ols_mean_A": 1.6268,
+  "initial_ols_mean_B": 2.0241,
+  "condition_A": {
+    "q_range": "0.85->0.4",
+    "alpha_override": 0.8,
+    "n_decisions": 500,
+    "plateau_frac": 0.4,
+    "lead_p10": 104.0,
+    "lead_p50": 179.5,
+    "lead_p90": 408.5,
+    "miss_rate": 0.0,
+    "n_ols_fires": 30,
+    "n_damage_fires": 23,
+    "n_conservation_fires": 30,
+    "gate_lead_pass": true,
+    "gate_miss_pass": true
+  },
+  "condition_B": {
+    "q_range": "0.85->0.55",
+    "alpha_override": 0.25,
+    "n_decisions": 300,
+    "plateau_frac": 0.4,
+    "lead_p10": 69.3,
+    "lead_p50": 136.5,
+    "lead_p90": 215.6,
+    "miss_rate": 0.0,
+    "n_ols_fires": 30,
+    "n_damage_fires": 18,
+    "n_conservation_fires": 0,
+    "gate_lead_pass": true,
+    "gate_miss_pass": true
+  },
+  "gate_pass": true
+}
