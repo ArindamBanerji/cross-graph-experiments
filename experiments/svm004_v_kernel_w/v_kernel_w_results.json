@@ -1,0 +1,35 @@
+{
+  "experiment": "SVM-004-V-KERNEL-W",
+  "gae_version": "0.7.18",
+  "generated": "2026-03-26T23:45:35.676381",
+  "gate": {
+    "min_correlation": 0.6
+  },
+  "implementation_note": "DiagonalKernel not in GAE 0.7.18 public API \u2014 analytical validation only. Fisher path theoretical until DiagonalKernel implemented.",
+  "profiles": {
+    "high_noise": {
+      "base_sigma_mean": 0.2067,
+      "eta_eff_by_level": [
+        0.039,
+        0.0539,
+        0.0795,
+        0.1288
+      ],
+      "pearson_r": 0.9669,
+      "gate_pass": true
+    },
+    "low_noise": {
+      "base_sigma_mean": 0.1017,
+      "eta_eff_by_level": [
+        0.0328,
+        0.0454,
+        0.0669,
+        0.1083
+      ],
+      "pearson_r": 0.9669,
+      "gate_pass": true
+    }
+  },
+  "both_profiles_pass": true,
+  "claim_result": "CLAIM-64 CONDITIONAL \u2014 gate PASS (r=0.9669 >> 0.6), but DiagonalKernel not yet in GAE 0.7.18. Mathematical relationship validated analytically. Promote to UNCONDITIONAL when DiagonalKernel implemented and empirically validated."
+}
