@@ -1,0 +1,241 @@
+{
+  "version": "2.0",
+  "gae_version": "0.7.18",
+  "generated": "2026-03-25",
+  "sources": {
+    "mitre_attack": "fetched",
+    "cisa_kev": "fetched"
+  },
+  "categories": {
+    "lateral_movement": {
+      "technique_count": 34,
+      "factor_distributions": {
+        "travel_match": {
+          "mean": 0.3,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "asset_criticality": {
+          "mean": 0.85,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        },
+        "threat_intel_enrichment": {
+          "mean": 0.2514,
+          "sigma": 0.12,
+          "source": "mitre_attack"
+        },
+        "time_anomaly": {
+          "mean": 0.35,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "pattern_history": {
+          "mean": 0.4875,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "device_trust": {
+          "mean": 0.25,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        }
+      },
+      "kl_vs_fx1": 7.587,
+      "kl_within_bound": false
+    },
+    "credential_access": {
+      "technique_count": 80,
+      "factor_distributions": {
+        "travel_match": {
+          "mean": 0.35,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "asset_criticality": {
+          "mean": 0.85,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        },
+        "threat_intel_enrichment": {
+          "mean": 0.3466,
+          "sigma": 0.12,
+          "source": "mitre_attack"
+        },
+        "time_anomaly": {
+          "mean": 0.4,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "pattern_history": {
+          "mean": 0.47,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "device_trust": {
+          "mean": 0.25,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        }
+      },
+      "kl_vs_fx1": 7.0792,
+      "kl_within_bound": false
+    },
+    "data_exfiltration": {
+      "technique_count": 21,
+      "factor_distributions": {
+        "travel_match": {
+          "mean": 0.3,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "asset_criticality": {
+          "mean": 0.85,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        },
+        "threat_intel_enrichment": {
+          "mean": 0.234,
+          "sigma": 0.12,
+          "source": "mitre_attack"
+        },
+        "time_anomaly": {
+          "mean": 0.35,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "pattern_history": {
+          "mean": 0.49,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "device_trust": {
+          "mean": 0.25,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        }
+      },
+      "kl_vs_fx1": 7.8417,
+      "kl_within_bound": false
+    },
+    "cloud_infrastructure": {
+      "technique_count": 181,
+      "factor_distributions": {
+        "travel_match": {
+          "mean": 0.28,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "asset_criticality": {
+          "mean": 0.85,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        },
+        "threat_intel_enrichment": {
+          "mean": 0.5091,
+          "sigma": 0.12,
+          "source": "mitre_attack"
+        },
+        "time_anomaly": {
+          "mean": 0.38,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "pattern_history": {
+          "mean": 0.43,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "device_trust": {
+          "mean": 0.25,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        }
+      },
+      "kl_vs_fx1": 6.9622,
+      "kl_within_bound": false
+    },
+    "insider_threat": {
+      "technique_count": 79,
+      "factor_distributions": {
+        "travel_match": {
+          "mean": 0.25,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "asset_criticality": {
+          "mean": 0.85,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        },
+        "threat_intel_enrichment": {
+          "mean": 0.3208,
+          "sigma": 0.12,
+          "source": "mitre_attack"
+        },
+        "time_anomaly": {
+          "mean": 0.3,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "pattern_history": {
+          "mean": 0.455,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "device_trust": {
+          "mean": 0.25,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        }
+      },
+      "kl_vs_fx1": 6.5066,
+      "kl_within_bound": false
+    },
+    "threat_intel_match": {
+      "technique_count": 332,
+      "factor_distributions": {
+        "travel_match": {
+          "mean": 0.32,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "asset_criticality": {
+          "mean": 0.85,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        },
+        "threat_intel_enrichment": {
+          "mean": 0.808,
+          "sigma": 0.12,
+          "source": "mitre_attack"
+        },
+        "time_anomaly": {
+          "mean": 0.36,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "pattern_history": {
+          "mean": 0.4725,
+          "sigma": 0.15,
+          "source": "fx1_fallback"
+        },
+        "device_trust": {
+          "mean": 0.25,
+          "sigma": 0.05,
+          "source": "cisa_kev"
+        }
+      },
+      "kl_vs_fx1": 8.2286,
+      "kl_within_bound": false
+    }
+  },
+  "summary": {
+    "categories_covered": 6,
+    "factors_from_real_data": 18,
+    "factors_from_fx1_fallback": 18,
+    "max_kl_divergence": 8.2286,
+    "kl_all_within_3_0": false,
+    "methodology": "ATT&CK technique frequency + CISA KEV severity mapping. Factors: threat_intel_enrichment from ATT&CK normalised count, asset_criticality and device_trust from CISA KEV CVSS. Remaining factors: FX-1 baseline (MU_STAR mean, sigma=0.15)."
+  }
+}
