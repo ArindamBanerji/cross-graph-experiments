@@ -1,6 +1,6 @@
 {
   "experiment": "V-OLS-DETECT",
-  "gae_version": "0.7.11",
+  "gae_version": "0.7.18",
   "n_seeds": 30,
   "initial_ols_mean_A": 1.6268,
   "initial_ols_mean_B": 2.0241,

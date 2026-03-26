@@ -1,0 +1,30 @@
+{
+  "experiment": "V-MV-CONVERGENCE",
+  "n_cells": 216,
+  "r_squared": 0.305,
+  "residual_std_days": 10.254,
+  "coefficients": {
+    "sigma": -140.8004,
+    "V": -0.0521,
+    "q_bar": -10.6706,
+    "kernel": -0.0,
+    "rho": -6.6379,
+    "sigma_x_V": 0.2893,
+    "sigma_x_kernel": -0.0,
+    "q_bar_x_V": 0.0586,
+    "intercept": 40.9927
+  },
+  "top_coefficients": [
+    "sigma",
+    "q_bar",
+    "rho",
+    "sigma_x_V",
+    "q_bar_x_V",
+    "V",
+    "kernel",
+    "sigma_x_kernel"
+  ],
+  "gate_pass": false,
+  "calendar_predictions": {},
+  "data_note": "N_half interpolated from day1/day30/day60 snapshots; V not in factorial \u2192 extrapolation for profile B(V=100)"
+}

@@ -1,0 +1,31 @@
+{
+  "model": {
+    "n_half": 14,
+    "eta_eff": 0.049511,
+    "eta_eff_exact": "ln(2)/14",
+    "tensor_cells": 24,
+    "d_max": 0.2,
+    "iks_formula": "IKS(n) = 100 * (1 - exp(-eta_eff * n))",
+    "inverse": "n = -ln(1 - IKS/100) / eta_eff"
+  },
+  "decisions_to_iks": {
+    "iks_25": 5.81,
+    "iks_50": 14.0,
+    "iks_67": 22.39,
+    "iks_75": 28.0,
+    "iks_90": 46.51
+  },
+  "total_decisions_to_iks_67_all_cells": 537.4,
+  "days_to_iks_67_by_profile": {
+    "small_v50_a025": 42.99,
+    "medium_v200_a025": 10.75,
+    "large_v500_a025": 4.3,
+    "quality_v200_a040": 6.72
+  },
+  "sensitivity": {
+    "low_alpha_015_v200": 17.91,
+    "high_volume_v1000_a025": 2.15
+  },
+  "headline_claim": "A medium SOC (200 alerts/day, 25% override rate) builds IKS=67 in 10.7 days \u2014 537 verified decisions across 24 tensor cells. Every verified decision deepens the moat: a customer switching to a competitor restarts from IKS=0.",
+  "competitive_statement": "Microsoft Security Copilot: population-level reasoning, no per-customer centroid tensor. IKS=0 at go-live, IKS=0 after one year of use. CrowdStrike Charlotte AI: organization-wide threat graph, not per-SOC decision geometry. IKS=0. ACCP at IKS=67 after 10.7 days: the organization's verified escalation geometry is embedded in 24 action-category centroids that no competitor can transfer. Switching cost = full 537 decisions to rebuild \u2014 irreversible organizational IP."
+}

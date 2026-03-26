@@ -1,0 +1,43 @@
+{
+  "experiment": "V-UCL-VALUE",
+  "n_cells": 216,
+  "iks_proxy": "delta_d1_d60 (total accuracy improvement, 0\u219260 days)",
+  "model_1_features": [
+    "sigma_eff",
+    "volume",
+    "q_bar",
+    "rho_max",
+    "kernel"
+  ],
+  "model_1_r2": 0.5857,
+  "model_2_features": [
+    "sigma_eff",
+    "volume",
+    "q_bar",
+    "rho_max",
+    "kernel",
+    "pct_converged",
+    "conservation_mean"
+  ],
+  "model_2_r2": 0.6049,
+  "best_model": "model_2",
+  "r_squared": 0.6049,
+  "coefficients": {
+    "sigma_eff": -0.410777,
+    "volume": 0.003359,
+    "q_bar": -0.11527,
+    "rho_max": -0.082113,
+    "kernel": 0.0,
+    "pct_converged": 0.006033,
+    "conservation_mean": -0.085976,
+    "intercept": 0.181078
+  },
+  "dominant_predictors": [
+    "sigma_eff",
+    "q_bar",
+    "conservation_mean"
+  ],
+  "gate_pass": true,
+  "ucl_claim_supported": true,
+  "data_available_note": "entity_count and enrichment_level NOT present in factorial results; delta_d1_d60 used as IKS proxy; pct_converged (cats_converged/cats_total) and conservation_mean added as available graph-like stats; sigma_eff, volume, q_bar, rho_max used as available deployment parameters"
+}

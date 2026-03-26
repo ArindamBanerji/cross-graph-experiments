@@ -1,0 +1,113 @@
+{
+  "experiment": "V-MV-CONSERVATION-v6",
+  "gae_version": "0.7.14",
+  "detector": "VarQMonitor",
+  "varq_window": 30,
+  "n_cells": 48,
+  "n_seeds": 20,
+  "n_decisions": 350,
+  "threshold_sweep": {
+    "0.05": {
+      "precision": 0.5931,
+      "recall": 0.9384,
+      "f1": 0.7268,
+      "tp": 548,
+      "fp": 376,
+      "fn": 36,
+      "mean_lag": 49.5,
+      "gate_pass": false
+    },
+    "0.08": {
+      "precision": 0.5108,
+      "recall": 0.6376,
+      "f1": 0.5672,
+      "tp": 380,
+      "fp": 364,
+      "fn": 216,
+      "mean_lag": 60.1,
+      "gate_pass": false
+    },
+    "0.1": {
+      "precision": 0.3008,
+      "recall": 0.2403,
+      "f1": 0.2671,
+      "tp": 148,
+      "fp": 344,
+      "fn": 468,
+      "mean_lag": 73.8,
+      "gate_pass": false
+    },
+    "0.12": {
+      "precision": 0.0909,
+      "recall": 0.0143,
+      "f1": 0.0247,
+      "tp": 12,
+      "fp": 120,
+      "fn": 828,
+      "mean_lag": 81.7,
+      "gate_pass": false
+    },
+    "0.15": {
+      "precision": 1.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 960,
+      "mean_lag": null,
+      "gate_pass": false
+    },
+    "0.18": {
+      "precision": 1.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 960,
+      "mean_lag": null,
+      "gate_pass": false
+    },
+    "0.2": {
+      "precision": 1.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 960,
+      "mean_lag": null,
+      "gate_pass": false
+    },
+    "0.25": {
+      "precision": 1.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 960,
+      "mean_lag": null,
+      "gate_pass": false
+    }
+  },
+  "optimal_threshold": 0.05,
+  "optimal_precision": 0.5931,
+  "optimal_recall": 0.9384,
+  "optimal_f1": 0.7268,
+  "gate_pass": false,
+  "by_onset_time": {
+    "50": {
+      "precision": 0.7342,
+      "recall": 0.9831,
+      "f1": 0.8406
+    },
+    "100": {
+      "precision": 0.7215,
+      "recall": 0.9828,
+      "f1": 0.8321
+    },
+    "200": {
+      "precision": 0.3014,
+      "recall": 0.7586,
+      "f1": 0.4314
+    }
+  }
+}

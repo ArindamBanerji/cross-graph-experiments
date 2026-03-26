@@ -1,0 +1,858 @@
+{
+  "experiment": "V-MV-CONSERVATION-v10",
+  "gae_version": "0.7.17",
+  "detector": "VarQMonitor",
+  "persistence": 3,
+  "threshold": 0.05,
+  "window": 30,
+  "baseline_window_overrides": 10,
+  "n_cells": 48,
+  "n_seeds": 20,
+  "n_decisions": 350,
+  "varq": {
+    "precision": 0.6138,
+    "recall": 0.4837,
+    "f1": 0.541,
+    "mean_lag_decisions": 63.1,
+    "gate_pass": false,
+    "by_onset_time": {
+      "50": {
+        "precision": 0.6863,
+        "recall": 0.5469,
+        "f1": 0.6087,
+        "mean_lag": 81.4
+      },
+      "100": {
+        "precision": 0.75,
+        "recall": 0.5294,
+        "f1": 0.6207,
+        "mean_lag": 47.8
+      },
+      "200": {
+        "precision": 0.3913,
+        "recall": 0.3462,
+        "f1": 0.3673,
+        "mean_lag": 58.2
+      }
+    }
+  },
+  "series_complete": true,
+  "cells": [
+    {
+      "cell_idx": 0,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 11,
+        "fp": 2,
+        "fn": 7,
+        "precision": 0.8462,
+        "recall": 0.6111,
+        "f1": 0.7097,
+        "mean_lag": 79.1
+      }
+    },
+    {
+      "cell_idx": 1,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 11,
+        "fp": 2,
+        "fn": 7,
+        "precision": 0.8462,
+        "recall": 0.6111,
+        "f1": 0.7097,
+        "mean_lag": 79.1
+      }
+    },
+    {
+      "cell_idx": 2,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 11,
+        "fp": 2,
+        "fn": 7,
+        "precision": 0.8462,
+        "recall": 0.6111,
+        "f1": 0.7097,
+        "mean_lag": 79.1
+      }
+    },
+    {
+      "cell_idx": 3,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 11,
+        "fp": 2,
+        "fn": 7,
+        "precision": 0.8462,
+        "recall": 0.6111,
+        "f1": 0.7097,
+        "mean_lag": 79.1
+      }
+    },
+    {
+      "cell_idx": 4,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 12,
+        "fp": 2,
+        "fn": 6,
+        "precision": 0.8571,
+        "recall": 0.6667,
+        "f1": 0.75,
+        "mean_lag": 77.5
+      }
+    },
+    {
+      "cell_idx": 5,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 12,
+        "fp": 2,
+        "fn": 6,
+        "precision": 0.8571,
+        "recall": 0.6667,
+        "f1": 0.75,
+        "mean_lag": 77.5
+      }
+    },
+    {
+      "cell_idx": 6,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 12,
+        "fp": 2,
+        "fn": 6,
+        "precision": 0.8571,
+        "recall": 0.6667,
+        "f1": 0.75,
+        "mean_lag": 77.5
+      }
+    },
+    {
+      "cell_idx": 7,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 12,
+        "fp": 2,
+        "fn": 6,
+        "precision": 0.8571,
+        "recall": 0.6667,
+        "f1": 0.75,
+        "mean_lag": 77.5
+      }
+    },
+    {
+      "cell_idx": 8,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 8,
+        "precision": 0.5,
+        "recall": 0.4286,
+        "f1": 0.4615,
+        "mean_lag": 86.2
+      }
+    },
+    {
+      "cell_idx": 9,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 8,
+        "precision": 0.5,
+        "recall": 0.4286,
+        "f1": 0.4615,
+        "mean_lag": 86.2
+      }
+    },
+    {
+      "cell_idx": 10,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 8,
+        "precision": 0.5,
+        "recall": 0.4286,
+        "f1": 0.4615,
+        "mean_lag": 86.2
+      }
+    },
+    {
+      "cell_idx": 11,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 8,
+        "precision": 0.5,
+        "recall": 0.4286,
+        "f1": 0.4615,
+        "mean_lag": 86.2
+      }
+    },
+    {
+      "cell_idx": 12,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 8,
+        "precision": 0.5,
+        "recall": 0.4286,
+        "f1": 0.4615,
+        "mean_lag": 88.5
+      }
+    },
+    {
+      "cell_idx": 13,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 8,
+        "precision": 0.5,
+        "recall": 0.4286,
+        "f1": 0.4615,
+        "mean_lag": 88.5
+      }
+    },
+    {
+      "cell_idx": 14,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 8,
+        "precision": 0.5,
+        "recall": 0.4286,
+        "f1": 0.4615,
+        "mean_lag": 88.5
+      }
+    },
+    {
+      "cell_idx": 15,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 8,
+        "precision": 0.5,
+        "recall": 0.4286,
+        "f1": 0.4615,
+        "mean_lag": 88.5
+      }
+    },
+    {
+      "cell_idx": 16,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.9231,
+        "recall": 0.6316,
+        "f1": 0.75,
+        "mean_lag": 50.1
+      }
+    },
+    {
+      "cell_idx": 17,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.9231,
+        "recall": 0.6316,
+        "f1": 0.75,
+        "mean_lag": 50.1
+      }
+    },
+    {
+      "cell_idx": 18,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.9231,
+        "recall": 0.6316,
+        "f1": 0.75,
+        "mean_lag": 50.1
+      }
+    },
+    {
+      "cell_idx": 19,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.9231,
+        "recall": 0.6316,
+        "f1": 0.75,
+        "mean_lag": 50.1
+      }
+    },
+    {
+      "cell_idx": 20,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.9231,
+        "recall": 0.6316,
+        "f1": 0.75,
+        "mean_lag": 51.7
+      }
+    },
+    {
+      "cell_idx": 21,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.9231,
+        "recall": 0.6316,
+        "f1": 0.75,
+        "mean_lag": 51.7
+      }
+    },
+    {
+      "cell_idx": 22,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.9231,
+        "recall": 0.6316,
+        "f1": 0.75,
+        "mean_lag": 51.7
+      }
+    },
+    {
+      "cell_idx": 23,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.9231,
+        "recall": 0.6316,
+        "f1": 0.75,
+        "mean_lag": 51.7
+      }
+    },
+    {
+      "cell_idx": 24,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 6,
+        "fp": 5,
+        "fn": 9,
+        "precision": 0.5455,
+        "recall": 0.4,
+        "f1": 0.4615,
+        "mean_lag": 41.7
+      }
+    },
+    {
+      "cell_idx": 25,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 6,
+        "fp": 5,
+        "fn": 9,
+        "precision": 0.5455,
+        "recall": 0.4,
+        "f1": 0.4615,
+        "mean_lag": 41.7
+      }
+    },
+    {
+      "cell_idx": 26,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 6,
+        "fp": 5,
+        "fn": 9,
+        "precision": 0.5455,
+        "recall": 0.4,
+        "f1": 0.4615,
+        "mean_lag": 41.7
+      }
+    },
+    {
+      "cell_idx": 27,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 6,
+        "fp": 5,
+        "fn": 9,
+        "precision": 0.5455,
+        "recall": 0.4,
+        "f1": 0.4615,
+        "mean_lag": 41.7
+      }
+    },
+    {
+      "cell_idx": 28,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 6,
+        "fp": 5,
+        "fn": 9,
+        "precision": 0.5455,
+        "recall": 0.4,
+        "f1": 0.4615,
+        "mean_lag": 41.7
+      }
+    },
+    {
+      "cell_idx": 29,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 6,
+        "fp": 5,
+        "fn": 9,
+        "precision": 0.5455,
+        "recall": 0.4,
+        "f1": 0.4615,
+        "mean_lag": 41.7
+      }
+    },
+    {
+      "cell_idx": 30,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 6,
+        "fp": 5,
+        "fn": 9,
+        "precision": 0.5455,
+        "recall": 0.4,
+        "f1": 0.4615,
+        "mean_lag": 41.7
+      }
+    },
+    {
+      "cell_idx": 31,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 6,
+        "fp": 5,
+        "fn": 9,
+        "precision": 0.5455,
+        "recall": 0.4,
+        "f1": 0.4615,
+        "mean_lag": 41.7
+      }
+    },
+    {
+      "cell_idx": 32,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 7,
+        "fp": 6,
+        "fn": 7,
+        "precision": 0.5385,
+        "recall": 0.5,
+        "f1": 0.5185,
+        "mean_lag": 59.9
+      }
+    },
+    {
+      "cell_idx": 33,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 7,
+        "fp": 6,
+        "fn": 7,
+        "precision": 0.5385,
+        "recall": 0.5,
+        "f1": 0.5185,
+        "mean_lag": 59.9
+      }
+    },
+    {
+      "cell_idx": 34,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 7,
+        "fp": 6,
+        "fn": 7,
+        "precision": 0.5385,
+        "recall": 0.5,
+        "f1": 0.5185,
+        "mean_lag": 59.9
+      }
+    },
+    {
+      "cell_idx": 35,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 7,
+        "fp": 6,
+        "fn": 7,
+        "precision": 0.5385,
+        "recall": 0.5,
+        "f1": 0.5185,
+        "mean_lag": 59.9
+      }
+    },
+    {
+      "cell_idx": 36,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 5,
+        "fp": 6,
+        "fn": 9,
+        "precision": 0.4545,
+        "recall": 0.3571,
+        "f1": 0.4,
+        "mean_lag": 65.2
+      }
+    },
+    {
+      "cell_idx": 37,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 5,
+        "fp": 6,
+        "fn": 9,
+        "precision": 0.4545,
+        "recall": 0.3571,
+        "f1": 0.4,
+        "mean_lag": 65.2
+      }
+    },
+    {
+      "cell_idx": 38,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 5,
+        "fp": 6,
+        "fn": 9,
+        "precision": 0.4545,
+        "recall": 0.3571,
+        "f1": 0.4,
+        "mean_lag": 65.2
+      }
+    },
+    {
+      "cell_idx": 39,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 5,
+        "fp": 6,
+        "fn": 9,
+        "precision": 0.4545,
+        "recall": 0.3571,
+        "f1": 0.4,
+        "mean_lag": 65.2
+      }
+    },
+    {
+      "cell_idx": 40,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 3,
+        "fp": 8,
+        "fn": 9,
+        "precision": 0.2727,
+        "recall": 0.25,
+        "f1": 0.2609,
+        "mean_lag": 50.3
+      }
+    },
+    {
+      "cell_idx": 41,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 3,
+        "fp": 8,
+        "fn": 9,
+        "precision": 0.2727,
+        "recall": 0.25,
+        "f1": 0.2609,
+        "mean_lag": 50.3
+      }
+    },
+    {
+      "cell_idx": 42,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 3,
+        "fp": 8,
+        "fn": 9,
+        "precision": 0.2727,
+        "recall": 0.25,
+        "f1": 0.2609,
+        "mean_lag": 50.3
+      }
+    },
+    {
+      "cell_idx": 43,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 3,
+        "fp": 8,
+        "fn": 9,
+        "precision": 0.2727,
+        "recall": 0.25,
+        "f1": 0.2609,
+        "mean_lag": 50.3
+      }
+    },
+    {
+      "cell_idx": 44,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "varq": {
+        "tp": 3,
+        "fp": 8,
+        "fn": 9,
+        "precision": 0.2727,
+        "recall": 0.25,
+        "f1": 0.2609,
+        "mean_lag": 50.3
+      }
+    },
+    {
+      "cell_idx": 45,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "varq": {
+        "tp": 3,
+        "fp": 8,
+        "fn": 9,
+        "precision": 0.2727,
+        "recall": 0.25,
+        "f1": 0.2609,
+        "mean_lag": 50.3
+      }
+    },
+    {
+      "cell_idx": 46,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "varq": {
+        "tp": 3,
+        "fp": 8,
+        "fn": 9,
+        "precision": 0.2727,
+        "recall": 0.25,
+        "f1": 0.2609,
+        "mean_lag": 50.3
+      }
+    },
+    {
+      "cell_idx": 47,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "varq": {
+        "tp": 3,
+        "fp": 8,
+        "fn": 9,
+        "precision": 0.2727,
+        "recall": 0.25,
+        "f1": 0.2609,
+        "mean_lag": 50.3
+      }
+    }
+  ]
+}

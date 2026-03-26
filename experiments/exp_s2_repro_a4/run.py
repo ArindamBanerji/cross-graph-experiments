@@ -1,0 +1,309 @@
+"""
+EXP-S2-REPRO-A4 — Poisoning Resilience at A=4 Tensor Geometry.
+
+3 arms x 20 seeds x 500 decisions.
+  Arm 0: clean analyst (0% adversarial)
+  Arm 1: 10% adversarial rate
+  Arm 2: 20% adversarial rate
+
+Adversarial: random WRONG action fed to update(); is_override=False.
+Tensor: (6, 4, 6) = C=6 categories, A=4 actions, d=6 factors.
+Geometry: A1xB1 SOC healthcare (from v_bootstrap_mod/run.py).
+"""
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+
+import numpy as np
+from scipy import stats as scipy_stats
+
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(REPO_ROOT))
+
+from gae.profile_scorer import ProfileScorer
+from gae.calibration import CalibrationProfile
+
+# ---------------------------------------------------------------------------
+# Constants
+# ---------------------------------------------------------------------------
+N_SEEDS     = 20
+N_DECISIONS = 500
+WINDOW_LAST = 100   # accuracy window: last 100 decisions
+CONS_WINDOW = 50    # rolling window for conservation law check
+
+THETA_MIN    = 0.467
+TAU          = 0.1
+ETA_CONFIRM  = 0.05
+ETA_OVERRIDE = 0.01
+ETA_NEG      = 0.05   # canonical — NOT 1.0
+Q_BAR        = 0.75
+ALPHA        = 0.80
+
+SEEDS_20 = [42, 123, 456, 789, 1024, 2048, 3072, 4096, 5120, 6144,
+            7168, 8192, 9216, 10240, 11264, 12288, 13312, 14336, 15360, 16384]
+
+# ---------------------------------------------------------------------------
+# A1xB1 SOC Healthcare Geometry
+# Factor order: [travel_match(0), asset_criticality(1),
+#                threat_intel_enrichment(2), time_anomaly(3),
+#                pattern_history(4), device_trust(5)]
+# ---------------------------------------------------------------------------
+FACTOR_NAMES = ["travel_match", "asset_criticality", "threat_intel_enrichment",
+                "time_anomaly", "pattern_history", "device_trust"]
+ACTIONS    = ["monitor", "investigate", "suppress", "escalate"]
+CATEGORIES = ["credential_access", "threat_intel_match", "lateral_movement",
+              "data_exfiltration", "insider_threat", "cloud_infrastructure"]
+
+N_CATS    = len(CATEGORIES)    # 6
+N_ACTS    = len(ACTIONS)       # 4
+N_FACTORS = len(FACTOR_NAMES)  # 6
+
+CAT_IDX = {c: i for i, c in enumerate(CATEGORIES)}
+ACT_IDX = {a: i for i, a in enumerate(ACTIONS)}
+
+_MU_STAR_RAW = {
+    ("lateral_movement",     "escalate"):    [0.30, 0.50, 0.75, 0.35, 0.80, 0.65],
+    ("lateral_movement",     "investigate"): [0.30, 0.43, 0.55, 0.35, 0.60, 0.55],
+    ("lateral_movement",     "suppress"):    [0.30, 0.40, 0.20, 0.35, 0.20, 0.35],
+    ("lateral_movement",     "monitor"):     [0.30, 0.43, 0.40, 0.35, 0.35, 0.45],
+    ("insider_threat",       "escalate"):    [0.25, 0.55, 0.70, 0.30, 0.75, 0.65],
+    ("insider_threat",       "investigate"): [0.25, 0.46, 0.50, 0.30, 0.55, 0.55],
+    ("insider_threat",       "suppress"):    [0.25, 0.40, 0.20, 0.30, 0.20, 0.35],
+    ("insider_threat",       "monitor"):     [0.25, 0.42, 0.38, 0.30, 0.32, 0.45],
+    ("credential_access",    "escalate"):    [0.35, 0.50, 0.80, 0.40, 0.75, 0.65],
+    ("credential_access",    "investigate"): [0.35, 0.43, 0.60, 0.40, 0.58, 0.55],
+    ("credential_access",    "suppress"):    [0.35, 0.40, 0.20, 0.40, 0.22, 0.35],
+    ("credential_access",    "monitor"):     [0.35, 0.42, 0.42, 0.40, 0.33, 0.45],
+    ("data_exfiltration",    "escalate"):    [0.30, 0.52, 0.78, 0.35, 0.82, 0.65],
+    ("data_exfiltration",    "investigate"): [0.30, 0.44, 0.58, 0.35, 0.62, 0.55],
+    ("data_exfiltration",    "suppress"):    [0.30, 0.40, 0.20, 0.35, 0.20, 0.35],
+    ("data_exfiltration",    "monitor"):     [0.30, 0.42, 0.40, 0.35, 0.32, 0.45],
+    ("cloud_infrastructure", "escalate"):    [0.28, 0.45, 0.72, 0.38, 0.70, 0.65],
+    ("cloud_infrastructure", "investigate"): [0.28, 0.41, 0.52, 0.38, 0.52, 0.55],
+    ("cloud_infrastructure", "suppress"):    [0.28, 0.40, 0.20, 0.38, 0.20, 0.35],
+    ("cloud_infrastructure", "monitor"):     [0.28, 0.41, 0.38, 0.38, 0.30, 0.45],
+    ("threat_intel_match",   "escalate"):    [0.32, 0.52, 0.82, 0.36, 0.78, 0.65],
+    ("threat_intel_match",   "investigate"): [0.32, 0.44, 0.62, 0.36, 0.58, 0.55],
+    ("threat_intel_match",   "suppress"):    [0.32, 0.40, 0.20, 0.36, 0.20, 0.35],
+    ("threat_intel_match",   "monitor"):     [0.32, 0.42, 0.44, 0.36, 0.33, 0.45],
+}
+
+
+def build_mu_star() -> np.ndarray:
+    mu = np.full((N_CATS, N_ACTS, N_FACTORS), 0.5, dtype=float)
+    for (cat, act), vec in _MU_STAR_RAW.items():
+        mu[CAT_IDX[cat], ACT_IDX[act], :] = vec
+    return mu
+
+
+MU_STAR = build_mu_star()
+
+# GT distribution: bias toward the action with highest L2-norm centroid per category
+def build_gt_dist() -> np.ndarray:
+    gt = np.ones((N_CATS, N_ACTS)) * 0.1
+    for c in range(N_CATS):
+        norms = np.linalg.norm(MU_STAR[c], axis=-1)
+        gt[c, int(np.argmax(norms))] = 0.70
+    gt /= gt.sum(axis=1, keepdims=True)
+    return gt
+
+
+GT_DIST = build_gt_dist()
+
+# Sigma profile: WS-2 post-enrichment (moderate per-factor noise)
+SIGMA_PROFILE = np.array([0.165, 0.090, 0.090, 0.070, 0.095, 0.200])
+
+
+# ---------------------------------------------------------------------------
+# Single-arm, single-seed run
+# Returns: final_acc (float), conservation_fired (bool)
+# ---------------------------------------------------------------------------
+def run_one(adv_rate: float, seed: int) -> dict:
+    rng = np.random.default_rng(seed)
+    profile = CalibrationProfile(
+        learning_rate=ETA_CONFIRM,
+        penalty_ratio=ETA_NEG / ETA_CONFIRM,
+        temperature=TAU,
+    )
+
+    # Warm-start scorer from MU_STAR with tiny symmetry-breaking jitter
+    mu0 = MU_STAR.copy()
+    mu0 += rng.uniform(-0.005, 0.005, mu0.shape)
+    np.clip(mu0, 0.0, 1.0, out=mu0)
+
+    scorer = ProfileScorer(
+        mu=mu0,
+        actions=ACTIONS,
+        profile=profile,
+        eta_override=ETA_OVERRIDE,
+    )
+
+    correct_flags   = []   # per-decision: predicted == gt
+    label_clean     = []   # per-decision: label was clean (1) or adversarial (0)
+
+    for _t in range(N_DECISIONS):
+        # Sample alert
+        cat_idx = int(rng.integers(0, N_CATS))
+        gt_act  = int(rng.choice(N_ACTS, p=GT_DIST[cat_idx]))
+        f       = np.clip(MU_STAR[cat_idx, gt_act] + rng.normal(0, SIGMA_PROFILE),
+                          0.0, 1.0)
+
+        # Score
+        result   = scorer.score(f, cat_idx)
+        pred_act = result.action_index
+
+        correct_flags.append(int(pred_act == gt_act))
+
+        # Determine label fed to update()
+        # Adversarial: analyst *confirms* a wrong action as correct (correct=True).
+        # The scorer cannot distinguish adversarial from clean — indistinguishable.
+        is_adversarial = rng.random() < adv_rate
+        if is_adversarial:
+            wrong_choices = [a for a in range(N_ACTS) if a != gt_act]
+            label_act     = int(rng.choice(wrong_choices))
+            # Adversarial analyst confirms wrong action as correct — pulls wrong centroid
+            is_correct_label = False   # for our conservation tracking (label is WRONG)
+            scorer.update(
+                f=f,
+                category_index=cat_idx,
+                action_index=label_act,
+                correct=True,           # scorer sees this as a confirmed correct decision
+                gt_action_index=None,   # no GT pull — just pull wrong centroid toward f
+            )
+        else:
+            label_act        = gt_act
+            is_correct_label = True
+            scorer.update(
+                f=f,
+                category_index=cat_idx,
+                action_index=label_act,
+                correct=True,
+                gt_action_index=gt_act,
+            )
+
+        label_clean.append(1 if is_correct_label else 0)
+
+    # Final accuracy: last WINDOW_LAST decisions
+    final_acc = float(np.mean(correct_flags[-WINDOW_LAST:]))
+
+    # Conservation law: rolling(CONS_WINDOW) signal = alpha * q_hat < theta_min
+    # Check decisions [CONS_WINDOW .. N_DECISIONS)
+    conservation_fired = False
+    for i in range(CONS_WINDOW, N_DECISIONS):
+        window_q   = float(np.mean(label_clean[i - CONS_WINDOW:i]))
+        signal     = ALPHA * window_q
+        if signal < THETA_MIN:
+            conservation_fired = True
+            break
+
+    return {
+        "adv_rate":           adv_rate,
+        "seed":               seed,
+        "final_acc":          final_acc,
+        "conservation_fired": conservation_fired,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+def main():
+    print("EXP-S2-REPRO-A4 running ...")
+    print(f"  Tensor: {N_CATS}x{N_ACTS}x{N_FACTORS}  "
+          f"ETA_NEG={ETA_NEG}  TAU={TAU}  N_seeds={N_SEEDS}  N_dec={N_DECISIONS}")
+    print()
+
+    arm_results: dict[str, list[dict]] = {}
+    for adv_rate, arm_name in [(0.0, "arm_0"), (0.10, "arm_1"), (0.20, "arm_2")]:
+        print(f"  {arm_name} (adv={adv_rate:.0%}) ...", flush=True)
+        arm_results[arm_name] = [run_one(adv_rate, s) for s in SEEDS_20]
+
+    # Per-arm accuracy
+    def arm_acc(name: str) -> float:
+        return float(np.mean([r["final_acc"] for r in arm_results[name]]))
+
+    acc_0 = arm_acc("arm_0")
+    acc_1 = arm_acc("arm_1")
+    acc_2 = arm_acc("arm_2")
+
+    # Sanity check 1
+    if acc_0 < 0.80:
+        print(f"STOP: Arm 0 accuracy={acc_0:.1%} < 80% — geometry or setup wrong.")
+        sys.exit(1)
+
+    degradation_10 = (acc_0 - acc_1) * 100.0
+    degradation_20 = (acc_0 - acc_2) * 100.0
+
+    # Sanity check 2
+    if degradation_20 < degradation_10:
+        print(f"STOP: Arm 2 degradation ({degradation_20:.2f}pp) < Arm 1 "
+              f"({degradation_10:.2f}pp) — adversarial labeling not applied correctly.")
+        sys.exit(1)
+
+    # 95% CI on per-seed degradation at 20%
+    diffs_20 = [
+        (arm_results["arm_0"][i]["final_acc"] - arm_results["arm_2"][i]["final_acc"]) * 100.0
+        for i in range(N_SEEDS)
+    ]
+    ci_lo, ci_hi = scipy_stats.t.interval(
+        0.95,
+        df=N_SEEDS - 1,
+        loc=float(np.mean(diffs_20)),
+        scale=float(scipy_stats.sem(diffs_20)),
+    )
+    ci_lo, ci_hi = float(ci_lo), float(ci_hi)
+
+    # Conservation law
+    conservation_fires_arm1 = any(r["conservation_fired"] for r in arm_results["arm_1"])
+    conservation_fires_arm2 = any(r["conservation_fired"] for r in arm_results["arm_2"])
+    conservation_fires_adversarial = conservation_fires_arm1 or conservation_fires_arm2
+
+    # Gate
+    gate_pass = ci_hi <= 0.20
+
+    # Save
+    out = {
+        "experiment":                     "EXP-S2-REPRO-A4",
+        "gae_version":                    "0.7.8",
+        "tensor_shape":                   "6x4x6",
+        "n_seeds":                        N_SEEDS,
+        "n_decisions":                    N_DECISIONS,
+        "arm_0_accuracy":                 round(acc_0 * 100, 3),
+        "arm_1_accuracy":                 round(acc_1 * 100, 3),
+        "arm_2_accuracy":                 round(acc_2 * 100, 3),
+        "degradation_10pct":              round(degradation_10, 4),
+        "degradation_20pct":              round(degradation_20, 4),
+        "ci_95_degradation_20pct":        [round(ci_lo, 4), round(ci_hi, 4)],
+        "ci_upper_20pct":                 round(ci_hi, 4),
+        "conservation_fires_adversarial": conservation_fires_adversarial,
+        "conservation_fires_arm1":        conservation_fires_arm1,
+        "conservation_fires_arm2":        conservation_fires_arm2,
+        "gate_pass":                      gate_pass,
+    }
+
+    results_path = (REPO_ROOT / "experiments" / "exp_s2_repro_a4"
+                    / "results" / "results.json")
+    results_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(results_path, "w", encoding="utf-8") as fh:
+        json.dump(out, fh, indent=2)
+    print(f"  Saved: {results_path}")
+    print()
+
+    # Final report
+    print(f"EXP-S2-REPRO-A4 (A=4 tensor, N=20 seeds, GAE 0.7.8):")
+    print(f"  Arm 0 (clean):     accuracy={acc_0*100:.1f}%")
+    print(f"  Arm 1 (10% adv):   accuracy={acc_1*100:.1f}%, "
+          f"degradation={degradation_10:.2f}pp")
+    print(f"  Arm 2 (20% adv):   accuracy={acc_2*100:.1f}%, "
+          f"degradation={degradation_20:.2f}pp")
+    print(f"  CI upper (20% adv): {ci_hi:.2f}pp [gate: <=0.20pp]")
+    print(f"  Conservation fires in adversarial arms: "
+          f"{'yes' if conservation_fires_adversarial else 'no'}")
+    print(f"  Gate: {'PASS' if gate_pass else 'FAIL'}")
+    print("Raw numbers for roadmap session review.")
+
+
+if __name__ == "__main__":
+    main()

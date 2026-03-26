@@ -8,7 +8,7 @@
       0.7,
       0.8
     ],
-    "theta_min": 0.434,
+    "theta_min": 0.467,
     "gate_interval": 50,
     "gate_min_decisions": 100,
     "gate_min_v1": 50,
@@ -173,9 +173,9 @@
     ]
   },
   "conservation": {
-    "theta_min": 0.434,
-    "breach_rate": 0.033,
-    "breach_seeds": 1,
+    "theta_min": 0.467,
+    "breach_rate": 0.067,
+    "breach_seeds": 2,
     "mean_signal_by_day": [
       2.513571428571429,
       2.488576298743139,
@@ -16558,5 +16558,6 @@
       1.0,
       0.6
     ]
-  }
+  },
+  "gae_version": "0.7.18"
 }

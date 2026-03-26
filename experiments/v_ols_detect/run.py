@@ -345,6 +345,8 @@ def run_seed(condition: str, seed: int) -> dict:
 # ---------------------------------------------------------------------------
 def main():
     import gae
+    assert gae.__version__ == "0.7.18", \
+        f"Expected GAE 0.7.18, got {gae.__version__}. Re-run with correct version."
     print(f"V-OLS-DETECT running ... (GAE {gae.__version__})")
     print(f"  N={N_SEEDS} seeds x (A={N_DEC_A}dec + B={N_DEC_B}dec)", flush=True)
     print()

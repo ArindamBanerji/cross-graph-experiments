@@ -458,6 +458,9 @@ def main():
         },
     }
 
+    import gae
+    output["gae_version"] = gae.__version__
+
     out_path = RESULTS_DIR / "bridge_a_phase_b.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)

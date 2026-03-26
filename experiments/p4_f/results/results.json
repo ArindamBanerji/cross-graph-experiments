@@ -1,0 +1,21 @@
+{
+  "experiment": "P4-F",
+  "gae_version": "0.7.8",
+  "n_seeds": 30,
+  "n_decisions": 500,
+  "lead_time_p10": -251.8,
+  "lead_time_p50": -119.0,
+  "lead_time_p90": 86.8,
+  "miss_rate": 0.8333,
+  "false_positive_rate": 0.0,
+  "amber_never_fires": false,
+  "baseline_accuracy": 88.6,
+  "accuracy_at_t_detect_mean": 86.47,
+  "accuracy_at_t_damage_mean": 82.69,
+  "gate_lead_time_pass": false,
+  "gate_miss_rate_pass": false,
+  "both_gates_pass": false,
+  "n_seeds_amber_fires": 30,
+  "n_seeds_damage_occurs": 29,
+  "n_seeds_lead_time_computed": 30
+}

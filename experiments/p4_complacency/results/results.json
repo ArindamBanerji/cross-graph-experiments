@@ -1,0 +1,58 @@
+{
+  "experiment": "P4-COMPLACENCY",
+  "gae_version": "0.7.8",
+  "n_seeds": 30,
+  "n_decisions": 300,
+  "conservation_fires": false,
+  "optimal_threshold": 0.005,
+  "false_negative_rate": 0.0,
+  "false_positive_rate": 0.9,
+  "mean_detection_lag": -166.8,
+  "lead_time_p50": 166.5,
+  "gate_pass": true,
+  "baseline_accuracy": 89.27,
+  "q_final_rolling": 0.582,
+  "cons_at_q_end": 41.25,
+  "threshold_sweep": {
+    "0.005": {
+      "fn_rate": 0.0,
+      "fp_rate": 0.9,
+      "f1": 1.0,
+      "n_detected": 30,
+      "mean_detection_lag": -166.8,
+      "lead_time_p50": 166.5
+    },
+    "0.01": {
+      "fn_rate": 0.0,
+      "fp_rate": 0.9,
+      "f1": 1.0,
+      "n_detected": 30,
+      "mean_detection_lag": -166.8,
+      "lead_time_p50": 166.5
+    },
+    "0.02": {
+      "fn_rate": 0.0,
+      "fp_rate": 0.9,
+      "f1": 1.0,
+      "n_detected": 30,
+      "mean_detection_lag": -166.8,
+      "lead_time_p50": 166.5
+    },
+    "0.03": {
+      "fn_rate": 0.0,
+      "fp_rate": 0.9,
+      "f1": 1.0,
+      "n_detected": 30,
+      "mean_detection_lag": -166.8,
+      "lead_time_p50": 166.5
+    },
+    "0.05": {
+      "fn_rate": 0.0,
+      "fp_rate": 0.9,
+      "f1": 1.0,
+      "n_detected": 30,
+      "mean_detection_lag": -166.7,
+      "lead_time_p50": 165.5
+    }
+  }
+}

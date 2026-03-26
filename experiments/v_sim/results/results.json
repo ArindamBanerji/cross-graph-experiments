@@ -1,0 +1,119 @@
+{
+  "experiment": "V-SIM",
+  "gae_version": "0.7.8",
+  "streams": [
+    {
+      "industry": "A_healthcare",
+      "judge": "A",
+      "sigma_mean": 0.1175,
+      "noise_ratio": 3.6667,
+      "kernel_selected": "diagonal",
+      "kernel_correct": true,
+      "gate_classification": "GREEN",
+      "gate_correct": true,
+      "rollover_stable_by_200": true,
+      "rollover_switches_200_250": 0
+    },
+    {
+      "industry": "A_healthcare",
+      "judge": "B",
+      "sigma_mean": 0.1175,
+      "noise_ratio": 3.6667,
+      "kernel_selected": "diagonal",
+      "kernel_correct": true,
+      "gate_classification": "GREEN",
+      "gate_correct": true,
+      "rollover_stable_by_200": false,
+      "rollover_switches_200_250": 9
+    },
+    {
+      "industry": "A_healthcare",
+      "judge": "C",
+      "sigma_mean": 0.1175,
+      "noise_ratio": 3.6667,
+      "kernel_selected": "diagonal",
+      "kernel_correct": true,
+      "gate_classification": "GREEN",
+      "gate_correct": true,
+      "rollover_stable_by_200": true,
+      "rollover_switches_200_250": 0
+    },
+    {
+      "industry": "B_finserv",
+      "judge": "A",
+      "sigma_mean": 0.0942,
+      "noise_ratio": 1.375,
+      "kernel_selected": "diagonal",
+      "kernel_correct": false,
+      "gate_classification": "GREEN",
+      "gate_correct": true,
+      "rollover_stable_by_200": true,
+      "rollover_switches_200_250": 2
+    },
+    {
+      "industry": "B_finserv",
+      "judge": "B",
+      "sigma_mean": 0.0942,
+      "noise_ratio": 1.375,
+      "kernel_selected": "l2",
+      "kernel_correct": true,
+      "gate_classification": "GREEN",
+      "gate_correct": true,
+      "rollover_stable_by_200": true,
+      "rollover_switches_200_250": 2
+    },
+    {
+      "industry": "B_finserv",
+      "judge": "C",
+      "sigma_mean": 0.0942,
+      "noise_ratio": 1.375,
+      "kernel_selected": "diagonal",
+      "kernel_correct": false,
+      "gate_classification": "GREEN",
+      "gate_correct": true,
+      "rollover_stable_by_200": true,
+      "rollover_switches_200_250": 0
+    },
+    {
+      "industry": "C_manufacturing",
+      "judge": "A",
+      "sigma_mean": 0.1075,
+      "noise_ratio": 2.2857,
+      "kernel_selected": "diagonal",
+      "kernel_correct": true,
+      "gate_classification": "GREEN",
+      "gate_correct": true,
+      "rollover_stable_by_200": true,
+      "rollover_switches_200_250": 0
+    },
+    {
+      "industry": "C_manufacturing",
+      "judge": "B",
+      "sigma_mean": 0.1075,
+      "noise_ratio": 2.2857,
+      "kernel_selected": "l2",
+      "kernel_correct": false,
+      "gate_classification": "AMBER",
+      "gate_correct": true,
+      "rollover_stable_by_200": true,
+      "rollover_switches_200_250": 0
+    },
+    {
+      "industry": "C_manufacturing",
+      "judge": "C",
+      "sigma_mean": 0.1075,
+      "noise_ratio": 2.2857,
+      "kernel_selected": "diagonal",
+      "kernel_correct": true,
+      "gate_classification": "GREEN",
+      "gate_correct": true,
+      "rollover_stable_by_200": true,
+      "rollover_switches_200_250": 0
+    }
+  ],
+  "kernelselector_accuracy": "6/9",
+  "gate_accuracy": "9/9",
+  "g1_pass": false,
+  "g2_pass": true,
+  "both_pass": false
+}

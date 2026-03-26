@@ -1,0 +1,28 @@
+{
+  "experiment": "V-MV-RISK",
+  "n_cells": 216,
+  "success_rate": 0.2917,
+  "auc_r_score": 0.986,
+  "auc_discrete_gate": 0.986,
+  "coefficients": {
+    "sigma_eff": -0.1242,
+    "volume": -1.6406,
+    "q_bar": -0.3214,
+    "kernel": -0.0,
+    "slope": 1.3044,
+    "rho_max": 0.3131,
+    "pct_converged": 3.1137
+  },
+  "top_features": [
+    "pct_converged",
+    "volume",
+    "slope",
+    "q_bar",
+    "rho_max",
+    "sigma_eff",
+    "kernel"
+  ],
+  "gate_pass": true,
+  "data_source": "factorial_soc_results + factorial_s2p_results",
+  "data_note": "trajectory_slope = (day30-day1)/29; final_accuracy=day60; no per-decision trajectories in factorial data"
+}

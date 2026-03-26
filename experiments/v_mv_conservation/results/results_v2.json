@@ -1,0 +1,1299 @@
+{
+  "experiment": "V-MV-CONSERVATION-v2",
+  "gae_version": "0.7.11",
+  "design": {
+    "n_cells": 48,
+    "n_seeds": 20,
+    "n_decisions": 350,
+    "alpha": 0.25,
+    "mu0_sigma": 0.3,
+    "q_healthy": 0.85,
+    "tp_window": [
+      -30,
+      100
+    ],
+    "det1_params": {
+      "h": 5.0,
+      "lam": 0.1,
+      "k_offset": 0.1,
+      "window": 30,
+      "baseline_n": 50
+    },
+    "det2_params": {
+      "window": 30,
+      "threshold": 0.05,
+      "q_baseline": "fixed Q_HEALTHY=0.85"
+    }
+  },
+  "sanity": {
+    "mean_initial_ols": 1.9699,
+    "initial_ols_gt1": true,
+    "level1_note": "L1 fires=88/960 (expected: low \u2014 NOT the Level 1 alpha*q*V check, this is CUSUM-YELLOW on per-decision quality)"
+  },
+  "detector_1_ols": {
+    "macro_precision": 0.5429,
+    "macro_recall": 0.8071,
+    "gate_precision": false,
+    "gate_recall": true,
+    "gate_pass": false
+  },
+  "detector_2_varq": {
+    "macro_precision": 0.5831,
+    "macro_recall": 0.9019,
+    "gate_precision": false,
+    "gate_recall": true,
+    "gate_pass": false
+  },
+  "overall_gate_pass": false,
+  "cells": [
+    {
+      "cell_idx": 0,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 13,
+        "fp": 5,
+        "fn": 2,
+        "precision": 0.7222,
+        "recall": 0.8667,
+        "f1": 0.7879
+      },
+      "det2": {
+        "tp": 18,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9474
+      },
+      "level1_fires": 6,
+      "init_ols_mean": 1.8228
+    },
+    {
+      "cell_idx": 1,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 15,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "det2": {
+        "tp": 18,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9474
+      },
+      "level1_fires": 6,
+      "init_ols_mean": 1.9797
+    },
+    {
+      "cell_idx": 2,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 14,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.7368,
+        "recall": 0.9333,
+        "f1": 0.8235
+      },
+      "det2": {
+        "tp": 18,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9474
+      },
+      "level1_fires": 6,
+      "init_ols_mean": 1.9836
+    },
+    {
+      "cell_idx": 3,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 13,
+        "fp": 6,
+        "fn": 1,
+        "precision": 0.6842,
+        "recall": 0.9286,
+        "f1": 0.7879
+      },
+      "det2": {
+        "tp": 18,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9474
+      },
+      "level1_fires": 6,
+      "init_ols_mean": 1.9864
+    },
+    {
+      "cell_idx": 4,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 14,
+        "fp": 4,
+        "fn": 2,
+        "precision": 0.7778,
+        "recall": 0.875,
+        "f1": 0.8235
+      },
+      "det2": {
+        "tp": 16,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.8376
+    },
+    {
+      "cell_idx": 5,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 13,
+        "fp": 6,
+        "fn": 1,
+        "precision": 0.6842,
+        "recall": 0.9286,
+        "f1": 0.7879
+      },
+      "det2": {
+        "tp": 16,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.9961
+    },
+    {
+      "cell_idx": 6,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 11,
+        "fp": 8,
+        "fn": 1,
+        "precision": 0.5789,
+        "recall": 0.9167,
+        "f1": 0.7097
+      },
+      "det2": {
+        "tp": 16,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.999
+    },
+    {
+      "cell_idx": 7,
+      "onset_time": 50,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 11,
+        "fp": 8,
+        "fn": 1,
+        "precision": 0.5789,
+        "recall": 0.9167,
+        "f1": 0.7097
+      },
+      "det2": {
+        "tp": 16,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0058
+    },
+    {
+      "cell_idx": 8,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 12,
+        "fp": 5,
+        "fn": 3,
+        "precision": 0.7059,
+        "recall": 0.8,
+        "f1": 0.75
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.6316,
+        "recall": 0.9231,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.8504
+    },
+    {
+      "cell_idx": 9,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 13,
+        "fp": 5,
+        "fn": 2,
+        "precision": 0.7222,
+        "recall": 0.8667,
+        "f1": 0.7879
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.6316,
+        "recall": 0.9231,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0101
+    },
+    {
+      "cell_idx": 10,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 12,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.6316,
+        "recall": 0.9231,
+        "f1": 0.75
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.6316,
+        "recall": 0.9231,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0125
+    },
+    {
+      "cell_idx": 11,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 9,
+        "fp": 9,
+        "fn": 2,
+        "precision": 0.5,
+        "recall": 0.8182,
+        "f1": 0.6207
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.6316,
+        "recall": 0.9231,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0215
+    },
+    {
+      "cell_idx": 12,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 11,
+        "fp": 6,
+        "fn": 3,
+        "precision": 0.6471,
+        "recall": 0.7857,
+        "f1": 0.7097
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.8504
+    },
+    {
+      "cell_idx": 13,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 13,
+        "fp": 5,
+        "fn": 2,
+        "precision": 0.7222,
+        "recall": 0.8667,
+        "f1": 0.7879
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0101
+    },
+    {
+      "cell_idx": 14,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 12,
+        "fp": 6,
+        "fn": 2,
+        "precision": 0.6667,
+        "recall": 0.8571,
+        "f1": 0.75
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0125
+    },
+    {
+      "cell_idx": 15,
+      "onset_time": 50,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 9,
+        "fp": 8,
+        "fn": 3,
+        "precision": 0.5294,
+        "recall": 0.75,
+        "f1": 0.6207
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0215
+    },
+    {
+      "cell_idx": 16,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 14,
+        "fp": 4,
+        "fn": 2,
+        "precision": 0.7778,
+        "recall": 0.875,
+        "f1": 0.8235
+      },
+      "det2": {
+        "tp": 17,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.85,
+        "recall": 1.0,
+        "f1": 0.9189
+      },
+      "level1_fires": 3,
+      "init_ols_mean": 1.8504
+    },
+    {
+      "cell_idx": 17,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 14,
+        "fp": 6,
+        "fn": 0,
+        "precision": 0.7,
+        "recall": 1.0,
+        "f1": 0.8235
+      },
+      "det2": {
+        "tp": 17,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.85,
+        "recall": 1.0,
+        "f1": 0.9189
+      },
+      "level1_fires": 3,
+      "init_ols_mean": 2.0101
+    },
+    {
+      "cell_idx": 18,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 15,
+        "fp": 4,
+        "fn": 1,
+        "precision": 0.7895,
+        "recall": 0.9375,
+        "f1": 0.8571
+      },
+      "det2": {
+        "tp": 17,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.85,
+        "recall": 1.0,
+        "f1": 0.9189
+      },
+      "level1_fires": 3,
+      "init_ols_mean": 2.0125
+    },
+    {
+      "cell_idx": 19,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 11,
+        "fp": 8,
+        "fn": 1,
+        "precision": 0.5789,
+        "recall": 0.9167,
+        "f1": 0.7097
+      },
+      "det2": {
+        "tp": 17,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.85,
+        "recall": 1.0,
+        "f1": 0.9189
+      },
+      "level1_fires": 3,
+      "init_ols_mean": 2.0215
+    },
+    {
+      "cell_idx": 20,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 14,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.7368,
+        "recall": 0.9333,
+        "f1": 0.8235
+      },
+      "det2": {
+        "tp": 16,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.8504
+    },
+    {
+      "cell_idx": 21,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 15,
+        "fp": 3,
+        "fn": 2,
+        "precision": 0.8333,
+        "recall": 0.8824,
+        "f1": 0.8571
+      },
+      "det2": {
+        "tp": 16,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0101
+    },
+    {
+      "cell_idx": 22,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 14,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.7368,
+        "recall": 0.9333,
+        "f1": 0.8235
+      },
+      "det2": {
+        "tp": 16,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0125
+    },
+    {
+      "cell_idx": 23,
+      "onset_time": 100,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 10,
+        "fp": 9,
+        "fn": 1,
+        "precision": 0.5263,
+        "recall": 0.9091,
+        "f1": 0.6667
+      },
+      "det2": {
+        "tp": 16,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0215
+    },
+    {
+      "cell_idx": 24,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 12,
+        "fp": 5,
+        "fn": 3,
+        "precision": 0.7059,
+        "recall": 0.8,
+        "f1": 0.75
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.8504
+    },
+    {
+      "cell_idx": 25,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 13,
+        "fp": 6,
+        "fn": 1,
+        "precision": 0.6842,
+        "recall": 0.9286,
+        "f1": 0.7879
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0101
+    },
+    {
+      "cell_idx": 26,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 11,
+        "fp": 7,
+        "fn": 2,
+        "precision": 0.6111,
+        "recall": 0.8462,
+        "f1": 0.7097
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0125
+    },
+    {
+      "cell_idx": 27,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 10,
+        "fp": 7,
+        "fn": 3,
+        "precision": 0.5882,
+        "recall": 0.7692,
+        "f1": 0.6667
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0215
+    },
+    {
+      "cell_idx": 28,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 12,
+        "fp": 6,
+        "fn": 2,
+        "precision": 0.6667,
+        "recall": 0.8571,
+        "f1": 0.75
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.6316,
+        "recall": 0.9231,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.8504
+    },
+    {
+      "cell_idx": 29,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 13,
+        "fp": 6,
+        "fn": 1,
+        "precision": 0.6842,
+        "recall": 0.9286,
+        "f1": 0.7879
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.6316,
+        "recall": 0.9231,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0101
+    },
+    {
+      "cell_idx": 30,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 11,
+        "fp": 6,
+        "fn": 3,
+        "precision": 0.6471,
+        "recall": 0.7857,
+        "f1": 0.7097
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.6316,
+        "recall": 0.9231,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0125
+    },
+    {
+      "cell_idx": 31,
+      "onset_time": 100,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 10,
+        "fp": 6,
+        "fn": 4,
+        "precision": 0.625,
+        "recall": 0.7143,
+        "f1": 0.6667
+      },
+      "det2": {
+        "tp": 12,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.6316,
+        "recall": 0.9231,
+        "f1": 0.75
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0215
+    },
+    {
+      "cell_idx": 32,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 4,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.2353,
+        "recall": 0.5714,
+        "f1": 0.3333
+      },
+      "det2": {
+        "tp": 9,
+        "fp": 11,
+        "fn": 0,
+        "precision": 0.45,
+        "recall": 1.0,
+        "f1": 0.6207
+      },
+      "level1_fires": 4,
+      "init_ols_mean": 1.8504
+    },
+    {
+      "cell_idx": 33,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 4,
+        "fp": 15,
+        "fn": 1,
+        "precision": 0.2105,
+        "recall": 0.8,
+        "f1": 0.3333
+      },
+      "det2": {
+        "tp": 9,
+        "fp": 11,
+        "fn": 0,
+        "precision": 0.45,
+        "recall": 1.0,
+        "f1": 0.6207
+      },
+      "level1_fires": 4,
+      "init_ols_mean": 2.0101
+    },
+    {
+      "cell_idx": 34,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 8,
+        "fp": 11,
+        "fn": 1,
+        "precision": 0.4211,
+        "recall": 0.8889,
+        "f1": 0.5714
+      },
+      "det2": {
+        "tp": 9,
+        "fp": 11,
+        "fn": 0,
+        "precision": 0.45,
+        "recall": 1.0,
+        "f1": 0.6207
+      },
+      "level1_fires": 4,
+      "init_ols_mean": 2.0125
+    },
+    {
+      "cell_idx": 35,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 8,
+        "fp": 11,
+        "fn": 1,
+        "precision": 0.4211,
+        "recall": 0.8889,
+        "f1": 0.5714
+      },
+      "det2": {
+        "tp": 9,
+        "fp": 11,
+        "fn": 0,
+        "precision": 0.45,
+        "recall": 1.0,
+        "f1": 0.6207
+      },
+      "level1_fires": 4,
+      "init_ols_mean": 2.0215
+    },
+    {
+      "cell_idx": 36,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 4,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.2353,
+        "recall": 0.5714,
+        "f1": 0.3333
+      },
+      "det2": {
+        "tp": 5,
+        "fp": 14,
+        "fn": 1,
+        "precision": 0.2632,
+        "recall": 0.8333,
+        "f1": 0.4
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.8504
+    },
+    {
+      "cell_idx": 37,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 4,
+        "fp": 14,
+        "fn": 2,
+        "precision": 0.2222,
+        "recall": 0.6667,
+        "f1": 0.3333
+      },
+      "det2": {
+        "tp": 5,
+        "fp": 14,
+        "fn": 1,
+        "precision": 0.2632,
+        "recall": 0.8333,
+        "f1": 0.4
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0101
+    },
+    {
+      "cell_idx": 38,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 7,
+        "fp": 12,
+        "fn": 1,
+        "precision": 0.3684,
+        "recall": 0.875,
+        "f1": 0.5185
+      },
+      "det2": {
+        "tp": 5,
+        "fp": 14,
+        "fn": 1,
+        "precision": 0.2632,
+        "recall": 0.8333,
+        "f1": 0.4
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0125
+    },
+    {
+      "cell_idx": 39,
+      "onset_time": 200,
+      "deg_profile": "step",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 7,
+        "fp": 11,
+        "fn": 2,
+        "precision": 0.3889,
+        "recall": 0.7778,
+        "f1": 0.5185
+      },
+      "det2": {
+        "tp": 5,
+        "fp": 14,
+        "fn": 1,
+        "precision": 0.2632,
+        "recall": 0.8333,
+        "f1": 0.4
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0215
+    },
+    {
+      "cell_idx": 40,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 3,
+        "fp": 14,
+        "fn": 3,
+        "precision": 0.1765,
+        "recall": 0.5,
+        "f1": 0.2609
+      },
+      "det2": {
+        "tp": 4,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.2353,
+        "recall": 0.5714,
+        "f1": 0.3333
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.8504
+    },
+    {
+      "cell_idx": 41,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 3,
+        "fp": 15,
+        "fn": 2,
+        "precision": 0.1667,
+        "recall": 0.6,
+        "f1": 0.2609
+      },
+      "det2": {
+        "tp": 4,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.2353,
+        "recall": 0.5714,
+        "f1": 0.3333
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0101
+    },
+    {
+      "cell_idx": 42,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 5,
+        "fp": 12,
+        "fn": 3,
+        "precision": 0.2941,
+        "recall": 0.625,
+        "f1": 0.4
+      },
+      "det2": {
+        "tp": 4,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.2353,
+        "recall": 0.5714,
+        "f1": 0.3333
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0125
+    },
+    {
+      "cell_idx": 43,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.65,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 6,
+        "fp": 10,
+        "fn": 4,
+        "precision": 0.375,
+        "recall": 0.6,
+        "f1": 0.4615
+      },
+      "det2": {
+        "tp": 4,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.2353,
+        "recall": 0.5714,
+        "f1": 0.3333
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0215
+    },
+    {
+      "cell_idx": 44,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.1,
+      "V": 200,
+      "det1": {
+        "tp": 3,
+        "fp": 14,
+        "fn": 3,
+        "precision": 0.1765,
+        "recall": 0.5,
+        "f1": 0.2609
+      },
+      "det2": {
+        "tp": 4,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.2353,
+        "recall": 0.5714,
+        "f1": 0.3333
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 1.8504
+    },
+    {
+      "cell_idx": 45,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.15,
+      "V": 200,
+      "det1": {
+        "tp": 3,
+        "fp": 15,
+        "fn": 2,
+        "precision": 0.1667,
+        "recall": 0.6,
+        "f1": 0.2609
+      },
+      "det2": {
+        "tp": 4,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.2353,
+        "recall": 0.5714,
+        "f1": 0.3333
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0101
+    },
+    {
+      "cell_idx": 46,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.2,
+      "V": 100,
+      "det1": {
+        "tp": 5,
+        "fp": 12,
+        "fn": 3,
+        "precision": 0.2941,
+        "recall": 0.625,
+        "f1": 0.4
+      },
+      "det2": {
+        "tp": 4,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.2353,
+        "recall": 0.5714,
+        "f1": 0.3333
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0125
+    },
+    {
+      "cell_idx": 47,
+      "onset_time": 200,
+      "deg_profile": "linear",
+      "q_endpoint": 0.7,
+      "sigma_eff": 0.25,
+      "V": 50,
+      "det1": {
+        "tp": 6,
+        "fp": 10,
+        "fn": 4,
+        "precision": 0.375,
+        "recall": 0.6,
+        "f1": 0.4615
+      },
+      "det2": {
+        "tp": 4,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.2353,
+        "recall": 0.5714,
+        "f1": 0.3333
+      },
+      "level1_fires": 1,
+      "init_ols_mean": 2.0215
+    }
+  ],
+  "notes": "D1 (OLSMonitor) validated against V-OLS-DETECT design. D2 (VarQMonitor) uses single-threshold on compute_normalized_var_q; precision bounded by Bernoulli noise in healthy-state 30-override windows. D2 gate failure (if any) indicates CUSUM integration needed for precision. Level 1 count reports ConservationMonitor CUSUM-YELLOW (per-decision q), not the alpha*q*V Level 1 check (which never fires at these volumes)."
+}

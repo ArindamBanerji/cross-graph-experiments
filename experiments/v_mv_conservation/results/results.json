@@ -1,0 +1,17 @@
+{
+  "experiment": "V-MV-CONSERVATION",
+  "n_cells": 216,
+  "n_degraded_cells": 108,
+  "degradation_rate": 0.5,
+  "optimal_threshold": 0.001,
+  "precision": 0.5,
+  "recall": 1.0,
+  "f1": 0.6667,
+  "false_alarm_rate": 1.0,
+  "precision_pass": false,
+  "recall_pass": true,
+  "gate_pass": false,
+  "scale_note": "NORM=12.5 empirically derived: cons_mean = ALPHA * q_bar * volume / NORM",
+  "recommended_action": "Conservation signal insufficient for P>0.70 + R>0.80; per-window q_bar tracking required",
+  "data_note": "No per-window q_bar time series in factorial results. Proxy: var_proxy = (cons_mean - cons_min)/cons_mean; degradation = q_bar_min_proxy drop >10pp using NORM=12.5 scale. Full precision/recall requires per-checkpoint data."
+}

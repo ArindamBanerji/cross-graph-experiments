@@ -15,6 +15,7 @@ from scipy import stats as scipy_stats
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
+import gae
 from src.data.domain_config import load_domain_config
 
 # ── Harness parameters ────────────────────────────────────────────────────────
@@ -666,6 +667,7 @@ def main():
             "n_personas":  len(personas),
             "persona_ids": ids,
             "runtime_s":   round(elapsed, 1),
+            "gae_version": gae.__version__,
             "harness_config": {
                 "td034": {"tau_values": TD_TAU_VALUES,
                           "n_seeds": TD_N_SEEDS, "n_decisions": TD_N_DECISIONS},

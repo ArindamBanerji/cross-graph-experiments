@@ -1,0 +1,95 @@
+{
+  "experiment": "TD-034",
+  "gae_version": "0.7.8",
+  "n_seeds": 10,
+  "perturb_sigma": 0.2,
+  "streams": {
+    "healthcare": {
+      "tau_sweep": {
+        "0.05": {
+          "ece": 0.161778,
+          "accuracy": 0.718
+        },
+        "0.08": {
+          "ece": 0.103118,
+          "accuracy": 0.718
+        },
+        "0.1": {
+          "ece": 0.082063,
+          "accuracy": 0.718
+        },
+        "0.12": {
+          "ece": 0.080343,
+          "accuracy": 0.718
+        },
+        "0.15": {
+          "ece": 0.079391,
+          "accuracy": 0.718
+        }
+      },
+      "optimal_tau": 0.15,
+      "ece_at_tau_01": 0.082063,
+      "gate_pass": false
+    },
+    "finserv": {
+      "tau_sweep": {
+        "0.05": {
+          "ece": 0.167556,
+          "accuracy": 0.7
+        },
+        "0.08": {
+          "ece": 0.110239,
+          "accuracy": 0.7
+        },
+        "0.1": {
+          "ece": 0.095636,
+          "accuracy": 0.7
+        },
+        "0.12": {
+          "ece": 0.091514,
+          "accuracy": 0.7
+        },
+        "0.15": {
+          "ece": 0.10406,
+          "accuracy": 0.7
+        }
+      },
+      "optimal_tau": 0.12,
+      "ece_at_tau_01": 0.095636,
+      "gate_pass": false
+    },
+    "enterprise": {
+      "tau_sweep": {
+        "0.05": {
+          "ece": 0.205574,
+          "accuracy": 0.657
+        },
+        "0.08": {
+          "ece": 0.132976,
+          "accuracy": 0.657
+        },
+        "0.1": {
+          "ece": 0.10242,
+          "accuracy": 0.657
+        },
+        "0.12": {
+          "ece": 0.085164,
+          "accuracy": 0.657
+        },
+        "0.15": {
+          "ece": 0.084128,
+          "accuracy": 0.657
+        }
+      },
+      "optimal_tau": 0.15,
+      "ece_at_tau_01": 0.10242,
+      "gate_pass": false
+    }
+  },
+  "tau_01_gate_streams_pass": 0,
+  "overall_gate_pass": false,
+  "per_deployment_sweep_required": true,
+  "sanity_1_tau005_gt_tau010_count": 3,
+  "sanity_2_tau015_gt_tau010_count": 1,
+  "flag_optimal_tau_out_of_range": false
+}

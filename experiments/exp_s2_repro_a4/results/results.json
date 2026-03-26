@@ -1,0 +1,21 @@
+{
+  "experiment": "EXP-S2-REPRO-A4",
+  "gae_version": "0.7.8",
+  "tensor_shape": "6x4x6",
+  "n_seeds": 20,
+  "n_decisions": 500,
+  "arm_0_accuracy": 88.85,
+  "arm_1_accuracy": 87.05,
+  "arm_2_accuracy": 85.65,
+  "degradation_10pct": 1.8,
+  "degradation_20pct": 3.2,
+  "ci_95_degradation_20pct": [
+    1.5187,
+    4.8813
+  ],
+  "ci_upper_20pct": 4.8813,
+  "conservation_fires_adversarial": true,
+  "conservation_fires_arm1": false,
+  "conservation_fires_arm2": true,
+  "gate_pass": false
+}

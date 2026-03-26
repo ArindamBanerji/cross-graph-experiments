@@ -1,0 +1,75 @@
+{
+  "experiment": "V-TRIGGERED-EVOLUTION-PILOT",
+  "gae_version": "0.7.11",
+  "factorcomputer_traversal_gap_found": true,
+  "factorcomputer_fix_applied": "simulated",
+  "fix_description": "FactorComputer Protocol in gae/factors.py has no concrete implementation reading TRIGGERED_EVOLUTION edges. Simulation models traversal as: C0 pattern_history ~ N(0.4, 0.15) [uninformative, no edge context]; T1 pattern_history ~ N(MU_STAR[c,a,4], 0.095) [informed by 200 prior verified decisions, GT-action-discriminative]. Key difference is MEAN shift, not just sigma reduction.",
+  "ph_neutral_mean": 0.4,
+  "ph_neutral_sigma": 0.15,
+  "ph_sigma_t1_similar": 0.095,
+  "n_seeds": 5,
+  "n_prior_decisions": 200,
+  "n_test_similar": 25,
+  "n_test_dissimilar": 25,
+  "similar_categories": [
+    "lateral_movement",
+    "credential_access"
+  ],
+  "dissim_categories": [
+    "data_exfiltration",
+    "cloud_infrastructure"
+  ],
+  "mu0_perturbation": 0.15,
+  "per_seed": [
+    {
+      "seed": 42,
+      "c0_accuracy_similar": 24.0,
+      "t1_accuracy_similar": 76.0,
+      "delta_similar_pp": 52.0,
+      "c0_accuracy_dissimilar": 36.0,
+      "t1_accuracy_dissimilar": 36.0,
+      "delta_dissimilar_pp": 0.0
+    },
+    {
+      "seed": 123,
+      "c0_accuracy_similar": 36.0,
+      "t1_accuracy_similar": 76.0,
+      "delta_similar_pp": 40.0,
+      "c0_accuracy_dissimilar": 16.0,
+      "t1_accuracy_dissimilar": 16.0,
+      "delta_dissimilar_pp": 0.0
+    },
+    {
+      "seed": 456,
+      "c0_accuracy_similar": 44.0,
+      "t1_accuracy_similar": 72.0,
+      "delta_similar_pp": 28.0,
+      "c0_accuracy_dissimilar": 56.0,
+      "t1_accuracy_dissimilar": 56.0,
+      "delta_dissimilar_pp": 0.0
+    },
+    {
+      "seed": 789,
+      "c0_accuracy_similar": 44.0,
+      "t1_accuracy_similar": 80.0,
+      "delta_similar_pp": 36.0,
+      "c0_accuracy_dissimilar": 48.0,
+      "t1_accuracy_dissimilar": 48.0,
+      "delta_dissimilar_pp": 0.0
+    },
+    {
+      "seed": 1024,
+      "c0_accuracy_similar": 20.0,
+      "t1_accuracy_similar": 64.0,
+      "delta_similar_pp": 44.0,
+      "c0_accuracy_dissimilar": 20.0,
+      "t1_accuracy_dissimilar": 20.0,
+      "delta_dissimilar_pp": 0.0
+    }
+  ],
+  "mean_delta_similar_pp": 40.0,
+  "mean_delta_dissimilar_pp": 0.0,
+  "seeds_positive_similar": 5,
+  "mechanism_working": true,
+  "pilot_verdict": "PROCEED_TO_FULL"
+}

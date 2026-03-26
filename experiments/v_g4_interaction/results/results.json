@@ -1,0 +1,98 @@
+{
+  "experiment": "V-G4-INTERACTION",
+  "n_cells": 8,
+  "n_seeds": 20,
+  "n_decisions": 500,
+  "cells": [
+    {
+      "q_bar": 0.65,
+      "team": 5,
+      "campaign": false,
+      "accuracy_mean": 88.05,
+      "accuracy_ci": [
+        86.39,
+        89.71
+      ]
+    },
+    {
+      "q_bar": 0.65,
+      "team": 5,
+      "campaign": true,
+      "accuracy_mean": 88.6,
+      "accuracy_ci": [
+        86.68,
+        90.52
+      ]
+    },
+    {
+      "q_bar": 0.65,
+      "team": 15,
+      "campaign": false,
+      "accuracy_mean": 88.35,
+      "accuracy_ci": [
+        86.95,
+        89.75
+      ]
+    },
+    {
+      "q_bar": 0.65,
+      "team": 15,
+      "campaign": true,
+      "accuracy_mean": 88.35,
+      "accuracy_ci": [
+        86.77,
+        89.93
+      ]
+    },
+    {
+      "q_bar": 0.85,
+      "team": 5,
+      "campaign": false,
+      "accuracy_mean": 89.75,
+      "accuracy_ci": [
+        88.33,
+        91.17
+      ]
+    },
+    {
+      "q_bar": 0.85,
+      "team": 5,
+      "campaign": true,
+      "accuracy_mean": 89.1,
+      "accuracy_ci": [
+        87.88,
+        90.32
+      ]
+    },
+    {
+      "q_bar": 0.85,
+      "team": 15,
+      "campaign": false,
+      "accuracy_mean": 88.65,
+      "accuracy_ci": [
+        87.2,
+        90.1
+      ]
+    },
+    {
+      "q_bar": 0.85,
+      "team": 15,
+      "campaign": true,
+      "accuracy_mean": 88.8,
+      "accuracy_ci": [
+        87.47,
+        90.13
+      ]
+    }
+  ],
+  "interactions": {
+    "q_by_team": -0.73,
+    "q_by_campaign": -0.53,
+    "team_by_campaign": 0.12,
+    "three_way": 1.35
+  },
+  "max_interaction_pp": 1.35,
+  "product_boundaries": [],
+  "any_cell_below_75pct": false,
+  "large_interactions_over_5pp": {}
+}

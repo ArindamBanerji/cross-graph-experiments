@@ -1,0 +1,20 @@
+{
+  "experiment": "P4-F-v2",
+  "gae_version": "0.7.9",
+  "layer2_active": true,
+  "n_seeds": 30,
+  "baseline_accuracy": 88.6,
+  "layer1_lead_time_p10": -212.3,
+  "layer1_lead_time_p50": -38.0,
+  "layer1_lead_time_p90": 173.1,
+  "layer1_miss_rate": 0.6,
+  "layer2_lead_time_p10": 12.9,
+  "layer2_lead_time_p50": 151.5,
+  "layer2_lead_time_p90": 358.2,
+  "layer2_miss_rate": 0.0,
+  "layer2_false_positive_rate": 0.5,
+  "layer2_gate_pass": true,
+  "n_seeds_layer1_fires": 30,
+  "n_seeds_layer2_fires": 30,
+  "n_seeds_damage_occurs": 29
+}
