@@ -1,0 +1,556 @@
+{
+  "experiment": "V-POISONING-FACTORIAL",
+  "gae_version": "0.7.20",
+  "generated": "2026-03-27T09:35:26.153731",
+  "scale_note": "5 noise profiles, 30 seeds (scaled from 3 profiles, 30 seeds per queue v1.1 scale rule)",
+  "n_seeds": 30,
+  "n_decisions": 300,
+  "adversarial_rates": [
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "sigma_profiles": {
+    "tight": 0.05,
+    "low": 0.08,
+    "medium_low": 0.12,
+    "medium": 0.15,
+    "high": 0.22
+  },
+  "gates": {
+    "label_5pct_threshold_pp": 1.0,
+    "sigma_5pct_threshold_pp": 0.3,
+    "note": "5% rate is the realistic insider threat scenario"
+  },
+  "results": [
+    {
+      "sigma_profile": "tight",
+      "sigma_value": 0.05,
+      "adversarial_rate": 0.05,
+      "poison_type": "label",
+      "mean_degradation_pp": 1.5,
+      "std_degradation_pp": 2.32387,
+      "ci_95": [
+        0.63225,
+        2.36775
+      ],
+      "gate_5pct_pass": false
+    },
+    {
+      "sigma_profile": "tight",
+      "sigma_value": 0.05,
+      "adversarial_rate": 0.05,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 0.47778,
+      "std_degradation_pp": 2.7483,
+      "ci_95": [
+        -0.54845,
+        1.50401
+      ],
+      "gate_5pct_pass": false
+    },
+    {
+      "sigma_profile": "tight",
+      "sigma_value": 0.05,
+      "adversarial_rate": 0.1,
+      "poison_type": "label",
+      "mean_degradation_pp": 3.16667,
+      "std_degradation_pp": 2.51242,
+      "ci_95": [
+        2.22851,
+        4.10482
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "tight",
+      "sigma_value": 0.05,
+      "adversarial_rate": 0.1,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 0.82222,
+      "std_degradation_pp": 2.77611,
+      "ci_95": [
+        -0.21439,
+        1.85884
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "tight",
+      "sigma_value": 0.05,
+      "adversarial_rate": 0.2,
+      "poison_type": "label",
+      "mean_degradation_pp": 5.73333,
+      "std_degradation_pp": 3.57449,
+      "ci_95": [
+        4.3986,
+        7.06807
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "tight",
+      "sigma_value": 0.05,
+      "adversarial_rate": 0.2,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 1.88889,
+      "std_degradation_pp": 2.89051,
+      "ci_95": [
+        0.80955,
+        2.96822
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "tight",
+      "sigma_value": 0.05,
+      "adversarial_rate": 0.3,
+      "poison_type": "label",
+      "mean_degradation_pp": 11.76667,
+      "std_degradation_pp": 4.69054,
+      "ci_95": [
+        10.01519,
+        13.51814
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "tight",
+      "sigma_value": 0.05,
+      "adversarial_rate": 0.3,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 2.85556,
+      "std_degradation_pp": 3.16311,
+      "ci_95": [
+        1.67443,
+        4.03668
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "low",
+      "sigma_value": 0.08,
+      "adversarial_rate": 0.05,
+      "poison_type": "label",
+      "mean_degradation_pp": 1.32222,
+      "std_degradation_pp": 2.11088,
+      "ci_95": [
+        0.53401,
+        2.11044
+      ],
+      "gate_5pct_pass": false
+    },
+    {
+      "sigma_profile": "low",
+      "sigma_value": 0.08,
+      "adversarial_rate": 0.05,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 0.95556,
+      "std_degradation_pp": 3.33303,
+      "ci_95": [
+        -0.28902,
+        2.20013
+      ],
+      "gate_5pct_pass": false
+    },
+    {
+      "sigma_profile": "low",
+      "sigma_value": 0.08,
+      "adversarial_rate": 0.1,
+      "poison_type": "label",
+      "mean_degradation_pp": 3.2,
+      "std_degradation_pp": 2.54251,
+      "ci_95": [
+        2.25061,
+        4.14939
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "low",
+      "sigma_value": 0.08,
+      "adversarial_rate": 0.1,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 1.46667,
+      "std_degradation_pp": 3.36605,
+      "ci_95": [
+        0.20976,
+        2.72357
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "low",
+      "sigma_value": 0.08,
+      "adversarial_rate": 0.2,
+      "poison_type": "label",
+      "mean_degradation_pp": 5.67778,
+      "std_degradation_pp": 3.6656,
+      "ci_95": [
+        4.30902,
+        7.04654
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "low",
+      "sigma_value": 0.08,
+      "adversarial_rate": 0.2,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 2.84444,
+      "std_degradation_pp": 3.43604,
+      "ci_95": [
+        1.56141,
+        4.12748
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "low",
+      "sigma_value": 0.08,
+      "adversarial_rate": 0.3,
+      "poison_type": "label",
+      "mean_degradation_pp": 11.02222,
+      "std_degradation_pp": 3.92256,
+      "ci_95": [
+        9.55751,
+        12.48693
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "low",
+      "sigma_value": 0.08,
+      "adversarial_rate": 0.3,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 4.15556,
+      "std_degradation_pp": 3.45273,
+      "ci_95": [
+        2.86629,
+        5.44483
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium_low",
+      "sigma_value": 0.12,
+      "adversarial_rate": 0.05,
+      "poison_type": "label",
+      "mean_degradation_pp": 1.33333,
+      "std_degradation_pp": 1.88765,
+      "ci_95": [
+        0.62847,
+        2.03819
+      ],
+      "gate_5pct_pass": false
+    },
+    {
+      "sigma_profile": "medium_low",
+      "sigma_value": 0.12,
+      "adversarial_rate": 0.05,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 0.61111,
+      "std_degradation_pp": 4.09381,
+      "ci_95": [
+        -0.91754,
+        2.13976
+      ],
+      "gate_5pct_pass": false
+    },
+    {
+      "sigma_profile": "medium_low",
+      "sigma_value": 0.12,
+      "adversarial_rate": 0.1,
+      "poison_type": "label",
+      "mean_degradation_pp": 2.7,
+      "std_degradation_pp": 2.36894,
+      "ci_95": [
+        1.81542,
+        3.58458
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium_low",
+      "sigma_value": 0.12,
+      "adversarial_rate": 0.1,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 1.28889,
+      "std_degradation_pp": 4.03123,
+      "ci_95": [
+        -0.2164,
+        2.79418
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium_low",
+      "sigma_value": 0.12,
+      "adversarial_rate": 0.2,
+      "poison_type": "label",
+      "mean_degradation_pp": 4.9,
+      "std_degradation_pp": 3.09882,
+      "ci_95": [
+        3.74288,
+        6.05712
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium_low",
+      "sigma_value": 0.12,
+      "adversarial_rate": 0.2,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 2.87778,
+      "std_degradation_pp": 4.12681,
+      "ci_95": [
+        1.3368,
+        4.41875
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium_low",
+      "sigma_value": 0.12,
+      "adversarial_rate": 0.3,
+      "poison_type": "label",
+      "mean_degradation_pp": 9.12222,
+      "std_degradation_pp": 3.08063,
+      "ci_95": [
+        7.9719,
+        10.27255
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium_low",
+      "sigma_value": 0.12,
+      "adversarial_rate": 0.3,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 4.57778,
+      "std_degradation_pp": 4.01809,
+      "ci_95": [
+        3.0774,
+        6.07816
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium",
+      "sigma_value": 0.15,
+      "adversarial_rate": 0.05,
+      "poison_type": "label",
+      "mean_degradation_pp": 1.33333,
+      "std_degradation_pp": 2.05853,
+      "ci_95": [
+        0.56467,
+        2.102
+      ],
+      "gate_5pct_pass": false
+    },
+    {
+      "sigma_profile": "medium",
+      "sigma_value": 0.15,
+      "adversarial_rate": 0.05,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 0.62222,
+      "std_degradation_pp": 3.98823,
+      "ci_95": [
+        -0.86701,
+        2.11145
+      ],
+      "gate_5pct_pass": false
+    },
+    {
+      "sigma_profile": "medium",
+      "sigma_value": 0.15,
+      "adversarial_rate": 0.1,
+      "poison_type": "label",
+      "mean_degradation_pp": 2.3,
+      "std_degradation_pp": 1.99875,
+      "ci_95": [
+        1.55365,
+        3.04635
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium",
+      "sigma_value": 0.15,
+      "adversarial_rate": 0.1,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 1.38889,
+      "std_degradation_pp": 3.98665,
+      "ci_95": [
+        -0.09975,
+        2.87753
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium",
+      "sigma_value": 0.15,
+      "adversarial_rate": 0.2,
+      "poison_type": "label",
+      "mean_degradation_pp": 4.07778,
+      "std_degradation_pp": 2.91473,
+      "ci_95": [
+        2.9894,
+        5.16616
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium",
+      "sigma_value": 0.15,
+      "adversarial_rate": 0.2,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 3.04444,
+      "std_degradation_pp": 4.30515,
+      "ci_95": [
+        1.43687,
+        4.65202
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium",
+      "sigma_value": 0.15,
+      "adversarial_rate": 0.3,
+      "poison_type": "label",
+      "mean_degradation_pp": 7.87778,
+      "std_degradation_pp": 2.6731,
+      "ci_95": [
+        6.87963,
+        8.87593
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "medium",
+      "sigma_value": 0.15,
+      "adversarial_rate": 0.3,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 4.27778,
+      "std_degradation_pp": 4.45332,
+      "ci_95": [
+        2.61488,
+        5.94067
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "high",
+      "sigma_value": 0.22,
+      "adversarial_rate": 0.05,
+      "poison_type": "label",
+      "mean_degradation_pp": 1.08889,
+      "std_degradation_pp": 1.55101,
+      "ci_95": [
+        0.50973,
+        1.66804
+      ],
+      "gate_5pct_pass": false
+    },
+    {
+      "sigma_profile": "high",
+      "sigma_value": 0.22,
+      "adversarial_rate": 0.05,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 0.42222,
+      "std_degradation_pp": 4.12444,
+      "ci_95": [
+        -1.11787,
+        1.96231
+      ],
+      "gate_5pct_pass": false
+    },
+    {
+      "sigma_profile": "high",
+      "sigma_value": 0.22,
+      "adversarial_rate": 0.1,
+      "poison_type": "label",
+      "mean_degradation_pp": 1.63333,
+      "std_degradation_pp": 1.72285,
+      "ci_95": [
+        0.99001,
+        2.27665
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "high",
+      "sigma_value": 0.22,
+      "adversarial_rate": 0.1,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 1.16667,
+      "std_degradation_pp": 4.39152,
+      "ci_95": [
+        -0.47315,
+        2.80649
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "high",
+      "sigma_value": 0.22,
+      "adversarial_rate": 0.2,
+      "poison_type": "label",
+      "mean_degradation_pp": 3.06667,
+      "std_degradation_pp": 2.37387,
+      "ci_95": [
+        2.18025,
+        3.95308
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "high",
+      "sigma_value": 0.22,
+      "adversarial_rate": 0.2,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 2.25556,
+      "std_degradation_pp": 4.78798,
+      "ci_95": [
+        0.46769,
+        4.04342
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "high",
+      "sigma_value": 0.22,
+      "adversarial_rate": 0.3,
+      "poison_type": "label",
+      "mean_degradation_pp": 5.63333,
+      "std_degradation_pp": 3.29559,
+      "ci_95": [
+        4.40274,
+        6.86393
+      ],
+      "gate_5pct_pass": null
+    },
+    {
+      "sigma_profile": "high",
+      "sigma_value": 0.22,
+      "adversarial_rate": 0.3,
+      "poison_type": "sigma",
+      "mean_degradation_pp": 2.97778,
+      "std_degradation_pp": 4.78898,
+      "ci_95": [
+        1.18954,
+        4.76601
+      ],
+      "gate_5pct_pass": null
+    }
+  ],
+  "realistic_gate": {
+    "label_5pct_mean_pp": 1.31555,
+    "sigma_5pct_mean_pp": 0.61778,
+    "label_5pct_pass": false,
+    "sigma_5pct_pass": false,
+    "overall_pass": false
+  },
+  "claim_result": "CONDITIONAL \u2014 5% gate label FAIL sigma FAIL."
+}
