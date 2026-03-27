@@ -1,0 +1,100 @@
+{
+  "experiment": "SVM-004b-V-KERNEL-W-EMPIRICAL-CORRECTED",
+  "gae_version": "0.7.20",
+  "generated": "2026-03-27T03:09:15.371983",
+  "method": "DiagonalKernel.raw_weights (GAE 0.7.20) \u2014 truly empirical",
+  "normalization": "baseline-anchored: raw_W / raw_W_baseline.max()",
+  "gate": {
+    "min_correlation": 0.6
+  },
+  "profiles": {
+    "high_noise": {
+      "base_sigma_mean": 0.20666666666666667,
+      "level_details": [
+        {
+          "level": 0,
+          "sigma_scale": 1.0,
+          "sigma_mean": 0.2067,
+          "eta_eff": 0.038951
+        },
+        {
+          "level": 1,
+          "sigma_scale": 0.85,
+          "sigma_mean": 0.1757,
+          "eta_eff": 0.053911
+        },
+        {
+          "level": 2,
+          "sigma_scale": 0.7,
+          "sigma_mean": 0.1447,
+          "eta_eff": 0.079492
+        },
+        {
+          "level": 3,
+          "sigma_scale": 0.55,
+          "sigma_mean": 0.1137,
+          "eta_eff": 0.128764
+        }
+      ],
+      "eta_eff_by_level": [
+        0.038951,
+        0.053911,
+        0.079492,
+        0.128764
+      ],
+      "pearson_r": 0.96692,
+      "p_value": 0.03308,
+      "gate_pass": true
+    },
+    "low_noise": {
+      "base_sigma_mean": 0.10166666666666667,
+      "level_details": [
+        {
+          "level": 0,
+          "sigma_scale": 1.0,
+          "sigma_mean": 0.1017,
+          "eta_eff": 0.03277
+        },
+        {
+          "level": 1,
+          "sigma_scale": 0.85,
+          "sigma_mean": 0.0864,
+          "eta_eff": 0.045357
+        },
+        {
+          "level": 2,
+          "sigma_scale": 0.7,
+          "sigma_mean": 0.0712,
+          "eta_eff": 0.066878
+        },
+        {
+          "level": 3,
+          "sigma_scale": 0.55,
+          "sigma_mean": 0.0559,
+          "eta_eff": 0.108331
+        }
+      ],
+      "eta_eff_by_level": [
+        0.03277,
+        0.045357,
+        0.066878,
+        0.108331
+      ],
+      "pearson_r": 0.96692,
+      "p_value": 0.03308,
+      "gate_pass": true
+    }
+  },
+  "version_history": {
+    "svm004_gae_version": "0.7.18",
+    "svm004_method": "analytical scaffolding \u2014 DiagonalKernel not in GAE",
+    "svm004_analytical_r": 0.9669,
+    "svm004b_gae_version": "0.7.20",
+    "svm004b_method": "DiagonalKernel.raw_weights \u2014 truly empirical",
+    "svm004b_empirical_r": 0.96692,
+    "delta": 2e-05,
+    "method_note": "raw_weights vs scaffolding mathematically equivalent \u2014 empirical confirms analytical"
+  },
+  "both_profiles_pass": true,
+  "claim_result": "CLAIM-64 UNCONDITIONAL \u2014 Fisher path empirically confirmed with DiagonalKernel.raw_weights (GAE 0.7.20)"
+}
