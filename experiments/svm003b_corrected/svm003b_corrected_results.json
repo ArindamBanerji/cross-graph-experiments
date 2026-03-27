@@ -1,0 +1,42 @@
+{
+  "experiment": "SVM-003b-CORRECTED",
+  "gae_version": "0.7.20",
+  "generated": "2026-03-27T06:31:29.351813",
+  "correction": "other_sigmas[1] changed from 0.85 (copy-paste artifact) to 0.05 (calibrated CISA KEV \u03c3)",
+  "n_seeds": 30,
+  "n_decisions": 300,
+  "day1_window": 50,
+  "profiles": [
+    {
+      "profile": "SOC-healthcare-corrected",
+      "artifact_note": "other_sigmas[1] corrected: 0.85 \u2192 0.05 (asset_criticality \u03c3, CISA KEV)",
+      "l2_lift_pp": 64.4,
+      "l2_p": 0.0,
+      "l2_gate": true,
+      "diag_lift_pp": 63.8,
+      "diag_p": 0.0,
+      "additional_pp": -0.6,
+      "svm003b_additional_pp": 4.13
+    },
+    {
+      "profile": "SOC-finserv-corrected",
+      "artifact_note": "other_sigmas[1] corrected: 0.85 \u2192 0.05 (asset_criticality \u03c3, CISA KEV)",
+      "l2_lift_pp": 55.267,
+      "l2_p": 0.0,
+      "l2_gate": true,
+      "diag_lift_pp": 55.733,
+      "diag_p": 0.0,
+      "additional_pp": 0.467,
+      "svm003b_additional_pp": 1.47
+    }
+  ],
+  "overall_l2_pass": true,
+  "mean_additional_pp": -0.066,
+  "svm003b_reference": {
+    "mean_additional_pp_with_artifact": 1.76,
+    "healthcare_additional_pp": 4.13,
+    "finserv_additional_pp": 1.47
+  },
+  "sigma_contrast_path": "B \u2014 DiagonalKernel additional lift near zero (<1pp). No \u03c3-contrast equation. Initialization dominates.",
+  "claim_note": "CLAIM-62 B0 decomposition: L2 initialization advantage (+40.93pp) dominant. DiagonalKernel additional contribution: -0.07pp (corrected, artifact removed). CLAIM-62 B0 headline unchanged. CLAIM-64 unchanged."
+}
