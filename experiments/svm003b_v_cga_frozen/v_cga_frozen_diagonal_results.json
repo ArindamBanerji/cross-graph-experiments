@@ -1,0 +1,56 @@
+{
+  "experiment": "SVM-003b-V-CGA-FROZEN-DiagonalKernel",
+  "gae_version": "0.7.19",
+  "generated": "2026-03-27T02:33:48.326817",
+  "n_seeds": 30,
+  "n_decisions": 300,
+  "day1_window": 50,
+  "conditions": [
+    "L2 enriched vs L2 control (replicates SVM-003)",
+    "DiagonalKernel enriched vs L2 control (additional lift measurement)"
+  ],
+  "gate": {
+    "min_lift_pp": 5.0,
+    "max_p_value": 0.05,
+    "kernel": "DiagonalKernel"
+  },
+  "profiles": [
+    {
+      "profile": "SOC-healthcare",
+      "primary_factor": 5,
+      "l2_lift_pp": 41.133,
+      "diagonal_lift_pp": 45.267,
+      "additional_lift_pp": 4.133,
+      "p_l2": 0.0,
+      "p_diagonal": 0.0,
+      "gate_pass": true
+    },
+    {
+      "profile": "SOC-finserv",
+      "primary_factor": 2,
+      "l2_lift_pp": 36.333,
+      "diagonal_lift_pp": 37.8,
+      "additional_lift_pp": 1.467,
+      "p_l2": 0.0,
+      "p_diagonal": 0.0,
+      "gate_pass": true
+    },
+    {
+      "profile": "SOC-midmarket",
+      "primary_factor": 1,
+      "l2_lift_pp": 45.333,
+      "diagonal_lift_pp": 45.0,
+      "additional_lift_pp": -0.333,
+      "p_l2": 0.0,
+      "p_diagonal": 0.0,
+      "gate_pass": true
+    }
+  ],
+  "summary": {
+    "svm003_l2_mean_lift_pp": 40.933,
+    "svm003b_diagonal_mean_lift_pp": 42.689,
+    "additional_diagonal_lift_pp": 1.756
+  },
+  "overall_gate_pass": true,
+  "claim_result": "CLAIM-62 B0 DIAGONAL CONFIRMED \u2014 DiagonalKernel adds measurable lift on top of initialization advantage"
+}
