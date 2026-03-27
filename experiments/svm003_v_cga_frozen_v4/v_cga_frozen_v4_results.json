@@ -1,0 +1,54 @@
+{
+  "experiment": "SVM-003-V-CGA-FROZEN-v4",
+  "gae_version": "0.7.18",
+  "generated": "2026-03-27T00:10:18.563210",
+  "n_seeds_per_profile": 30,
+  "n_decisions": 300,
+  "day1_window": 50,
+  "kernel": "L2 (DiagonalKernel not in GAE 0.7.18 public API)",
+  "gate": {
+    "min_lift_pp": 5.0,
+    "max_p_value": 0.05
+  },
+  "profiles": [
+    {
+      "profile": "SOC-healthcare",
+      "primary_factor_index": 5,
+      "primary_sigma_unenriched": 0.28,
+      "primary_sigma_enriched": 0.08,
+      "n_seeds": 30,
+      "enriched_day1_mean": 0.6847,
+      "control_day1_mean": 0.2733,
+      "lift_pp": 41.133,
+      "p_value": 0.0,
+      "gate_pass": true
+    },
+    {
+      "profile": "SOC-finserv",
+      "primary_factor_index": 2,
+      "primary_sigma_unenriched": 0.09,
+      "primary_sigma_enriched": 0.04,
+      "n_seeds": 30,
+      "enriched_day1_mean": 0.6887,
+      "control_day1_mean": 0.3253,
+      "lift_pp": 36.333,
+      "p_value": 0.0,
+      "gate_pass": true
+    },
+    {
+      "profile": "SOC-midmarket",
+      "primary_factor_index": 1,
+      "primary_sigma_unenriched": 0.21,
+      "primary_sigma_enriched": 0.07,
+      "n_seeds": 30,
+      "enriched_day1_mean": 0.7627,
+      "control_day1_mean": 0.3093,
+      "lift_pp": 45.333,
+      "p_value": 0.0,
+      "gate_pass": true
+    }
+  ],
+  "overall_gate_pass": true,
+  "mean_lift_pp": 40.933,
+  "claim_result": "CLAIM-62 B0 UNCONDITIONAL"
+}
