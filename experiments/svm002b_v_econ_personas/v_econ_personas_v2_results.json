@@ -1,0 +1,265 @@
+{
+  "experiment": "SVM-002b-V-ECON-PERSONAS-SANS-CALIBRATED",
+  "gae_version": "0.7.18",
+  "generated": "2026-03-27T02:08:47.891572",
+  "fixes_applied": [
+    "SANS 44 min/alert anchor in Opus prompt",
+    "Midmarket diversity profiles (10 distinct profiles)",
+    "5-persona calibration pre-pass before full run",
+    "Diversity gate: std(GPT-4o) >= 5.0 min (not agreement rate)"
+  ],
+  "n_personas": 30,
+  "n_errors": 0,
+  "gate_evaluation": {
+    "mean_time_saved_min": 30.854,
+    "ci_95": [
+      29.896,
+      31.812
+    ],
+    "gate_mean_pass": true,
+    "gate_ci_pass": true,
+    "both_gates_pass": true
+  },
+  "distribution_characterization": {
+    "generated_baseline_mean_min": 43.91,
+    "generated_baseline_std_min": 3.07,
+    "sans_benchmark_mean_min": 44.0,
+    "kl_divergence": 0.8961,
+    "kl_gate_pass": true
+  },
+  "roi_by_industry": [
+    {
+      "industry": "SOC-healthcare",
+      "mean_time_saved_min": 30.62,
+      "annual_savings_usd": 829210.0
+    },
+    {
+      "industry": "SOC-finserv",
+      "mean_time_saved_min": 31.54,
+      "annual_savings_usd": 2792516.0
+    },
+    {
+      "industry": "SOC-midmarket",
+      "mean_time_saved_min": 30.4,
+      "annual_savings_usd": 522586.0
+    }
+  ],
+  "per_persona_time_saved": [
+    {
+      "persona_id": 1,
+      "industry": "SOC-healthcare",
+      "baseline_min": 43.1,
+      "ai_assisted_min": 12.7,
+      "time_saved_min": 30.41
+    },
+    {
+      "persona_id": 2,
+      "industry": "SOC-healthcare",
+      "baseline_min": 43.65,
+      "ai_assisted_min": 12.97,
+      "time_saved_min": 30.68
+    },
+    {
+      "persona_id": 3,
+      "industry": "SOC-healthcare",
+      "baseline_min": 43.65,
+      "ai_assisted_min": 13.07,
+      "time_saved_min": 30.57
+    },
+    {
+      "persona_id": 4,
+      "industry": "SOC-healthcare",
+      "baseline_min": 43.65,
+      "ai_assisted_min": 13.07,
+      "time_saved_min": 30.57
+    },
+    {
+      "persona_id": 5,
+      "industry": "SOC-healthcare",
+      "baseline_min": 43.1,
+      "ai_assisted_min": 12.74,
+      "time_saved_min": 30.36
+    },
+    {
+      "persona_id": 6,
+      "industry": "SOC-healthcare",
+      "baseline_min": 43.65,
+      "ai_assisted_min": 12.91,
+      "time_saved_min": 30.73
+    },
+    {
+      "persona_id": 7,
+      "industry": "SOC-healthcare",
+      "baseline_min": 43.75,
+      "ai_assisted_min": 12.89,
+      "time_saved_min": 30.86
+    },
+    {
+      "persona_id": 8,
+      "industry": "SOC-healthcare",
+      "baseline_min": 43.65,
+      "ai_assisted_min": 12.77,
+      "time_saved_min": 30.88
+    },
+    {
+      "persona_id": 9,
+      "industry": "SOC-healthcare",
+      "baseline_min": 43.1,
+      "ai_assisted_min": 12.67,
+      "time_saved_min": 30.43
+    },
+    {
+      "persona_id": 10,
+      "industry": "SOC-healthcare",
+      "baseline_min": 43.75,
+      "ai_assisted_min": 13.07,
+      "time_saved_min": 30.68
+    },
+    {
+      "persona_id": 11,
+      "industry": "SOC-finserv",
+      "baseline_min": 44.55,
+      "ai_assisted_min": 11.88,
+      "time_saved_min": 32.68
+    },
+    {
+      "persona_id": 12,
+      "industry": "SOC-finserv",
+      "baseline_min": 43.85,
+      "ai_assisted_min": 12.18,
+      "time_saved_min": 31.68
+    },
+    {
+      "persona_id": 13,
+      "industry": "SOC-finserv",
+      "baseline_min": 42.75,
+      "ai_assisted_min": 11.76,
+      "time_saved_min": 30.99
+    },
+    {
+      "persona_id": 14,
+      "industry": "SOC-finserv",
+      "baseline_min": 44.55,
+      "ai_assisted_min": 12.96,
+      "time_saved_min": 31.6
+    },
+    {
+      "persona_id": 15,
+      "industry": "SOC-finserv",
+      "baseline_min": 43.85,
+      "ai_assisted_min": 12.15,
+      "time_saved_min": 31.7
+    },
+    {
+      "persona_id": 16,
+      "industry": "SOC-finserv",
+      "baseline_min": 43.85,
+      "ai_assisted_min": 12.15,
+      "time_saved_min": 31.7
+    },
+    {
+      "persona_id": 17,
+      "industry": "SOC-finserv",
+      "baseline_min": 43.85,
+      "ai_assisted_min": 11.62,
+      "time_saved_min": 32.23
+    },
+    {
+      "persona_id": 18,
+      "industry": "SOC-finserv",
+      "baseline_min": 43.85,
+      "ai_assisted_min": 12.74,
+      "time_saved_min": 31.12
+    },
+    {
+      "persona_id": 19,
+      "industry": "SOC-finserv",
+      "baseline_min": 42.75,
+      "ai_assisted_min": 11.86,
+      "time_saved_min": 30.89
+    },
+    {
+      "persona_id": 20,
+      "industry": "SOC-finserv",
+      "baseline_min": 42.65,
+      "ai_assisted_min": 11.85,
+      "time_saved_min": 30.8
+    },
+    {
+      "persona_id": 21,
+      "industry": "SOC-midmarket",
+      "baseline_min": 42.5,
+      "ai_assisted_min": 15.18,
+      "time_saved_min": 27.32
+    },
+    {
+      "persona_id": 22,
+      "industry": "SOC-midmarket",
+      "baseline_min": 47.0,
+      "ai_assisted_min": 14.92,
+      "time_saved_min": 32.08
+    },
+    {
+      "persona_id": 23,
+      "industry": "SOC-midmarket",
+      "baseline_min": 45.35,
+      "ai_assisted_min": 14.97,
+      "time_saved_min": 30.38
+    },
+    {
+      "persona_id": 24,
+      "industry": "SOC-midmarket",
+      "baseline_min": 44.55,
+      "ai_assisted_min": 13.97,
+      "time_saved_min": 30.57
+    },
+    {
+      "persona_id": 25,
+      "industry": "SOC-midmarket",
+      "baseline_min": 35.85,
+      "ai_assisted_min": 11.72,
+      "time_saved_min": 24.12
+    },
+    {
+      "persona_id": 26,
+      "industry": "SOC-midmarket",
+      "baseline_min": 41.15,
+      "ai_assisted_min": 13.88,
+      "time_saved_min": 27.27
+    },
+    {
+      "persona_id": 27,
+      "industry": "SOC-midmarket",
+      "baseline_min": 40.7,
+      "ai_assisted_min": 12.28,
+      "time_saved_min": 28.43
+    },
+    {
+      "persona_id": 28,
+      "industry": "SOC-midmarket",
+      "baseline_min": 50.7,
+      "ai_assisted_min": 15.53,
+      "time_saved_min": 35.18
+    },
+    {
+      "persona_id": 29,
+      "industry": "SOC-midmarket",
+      "baseline_min": 42.75,
+      "ai_assisted_min": 13.9,
+      "time_saved_min": 28.85
+    },
+    {
+      "persona_id": 30,
+      "industry": "SOC-midmarket",
+      "baseline_min": 55.35,
+      "ai_assisted_min": 15.5,
+      "time_saved_min": 39.85
+    }
+  ],
+  "svm002_comparison": {
+    "svm002_mean_min": 15.32,
+    "svm002b_mean_min": 30.85,
+    "improvement": 15.53
+  },
+  "claim_result": "CL-ECON-MEASURED UNCONDITIONAL"
+}
