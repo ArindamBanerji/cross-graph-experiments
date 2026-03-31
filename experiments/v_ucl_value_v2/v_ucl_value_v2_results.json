@@ -1,0 +1,546 @@
+{
+  "experiment": "V-UCL-VALUE-v2",
+  "generated": "2026-03-31T18:58:53.118751",
+  "authority": "MAP v5.3",
+  "v1_changes": [
+    "LAMBDA_BASE 0.0012 -> 0.0003 (4x lower)",
+    "Primary metric: ioc_coverage vs -n_to_67 (speed, not ceiling)",
+    "IOC coverage sigmoid formula for better spread",
+    "N_DECISIONS_SIM 3000 -> 6000 (extended window)"
+  ],
+  "parameters": {
+    "n_deployments": 50,
+    "lambda_base": 0.0003,
+    "lambda_ioc_boost": 0.0008,
+    "gate_corr": 0.7,
+    "gate_p": 0.001,
+    "n_decisions_sim": 6000
+  },
+  "correlations": {
+    "primary_ioc_vs_speed": {
+      "r": 0.807,
+      "p": 0.0
+    },
+    "secondary_density_vs_speed": {
+      "r": 0.5813,
+      "p": 9.58e-06
+    },
+    "tertiary_ioc_vs_ceiling": {
+      "r": 0.815,
+      "p": 0.0
+    }
+  },
+  "commercial_headline": {
+    "pct_faster": 23.0,
+    "days_saved_v200_a025": 7.2,
+    "n_to_67_bottom_q": 1558.0,
+    "n_to_67_top_q": 1200.0,
+    "days_bottom_q": 31.0,
+    "days_top_q": 24.0
+  },
+  "never_reached_count": 0,
+  "gate_pass": true,
+  "claim_note": "CLAIM-UCL-01 UNCONDITIONAL: ioc_coverage vs speed r=0.81. High IOC coverage reaches IKS=67 in ~23% fewer decisions (~7 working days at V=200 alpha=0.25).",
+  "deployments": [
+    {
+      "entity_count": 50,
+      "relationship_count": 166,
+      "ioc_node_count": 21,
+      "ioc_coverage": 0.31828818376151763,
+      "graph_density": 8300.0,
+      "n_decisions_to_iks67": 1900,
+      "final_iks": 97.05,
+      "never_reached": false
+    },
+    {
+      "entity_count": 65,
+      "relationship_count": 164,
+      "ioc_node_count": 38,
+      "ioc_coverage": 0.4356533939132004,
+      "graph_density": 10710.204081632653,
+      "n_decisions_to_iks67": 1600,
+      "final_iks": 98.54,
+      "never_reached": false
+    },
+    {
+      "entity_count": 80,
+      "relationship_count": 205,
+      "ioc_node_count": 35,
+      "ioc_coverage": 0.43814664512823775,
+      "graph_density": 16525.510204081635,
+      "n_decisions_to_iks67": 1550,
+      "final_iks": 98.78,
+      "never_reached": false
+    },
+    {
+      "entity_count": 95,
+      "relationship_count": 304,
+      "ioc_node_count": 52,
+      "ioc_coverage": 0.5238292018361888,
+      "graph_density": 29159.183673469386,
+      "n_decisions_to_iks67": 1700,
+      "final_iks": 98.1,
+      "never_reached": false
+    },
+    {
+      "entity_count": 111,
+      "relationship_count": 340,
+      "ioc_node_count": 35,
+      "ioc_coverage": 0.4381182149215711,
+      "graph_density": 37816.32653061225,
+      "n_decisions_to_iks67": 1650,
+      "final_iks": 98.27,
+      "never_reached": false
+    },
+    {
+      "entity_count": 126,
+      "relationship_count": 418,
+      "ioc_node_count": 51,
+      "ioc_coverage": 0.5416267352097258,
+      "graph_density": 52889.795918367345,
+      "n_decisions_to_iks67": 1400,
+      "final_iks": 99.27,
+      "never_reached": false
+    },
+    {
+      "entity_count": 141,
+      "relationship_count": 472,
+      "ioc_node_count": 50,
+      "ioc_coverage": 0.5159692755666004,
+      "graph_density": 66946.93877551019,
+      "n_decisions_to_iks67": 1850,
+      "final_iks": 97.51,
+      "never_reached": false
+    },
+    {
+      "entity_count": 157,
+      "relationship_count": 406,
+      "ioc_node_count": 79,
+      "ioc_coverage": 0.6766525288013077,
+      "graph_density": 63800.0,
+      "n_decisions_to_iks67": 1200,
+      "final_iks": 99.68,
+      "never_reached": false
+    },
+    {
+      "entity_count": 172,
+      "relationship_count": 481,
+      "ioc_node_count": 70,
+      "ioc_coverage": 0.6018127160105983,
+      "graph_density": 82947.95918367348,
+      "n_decisions_to_iks67": 1600,
+      "final_iks": 98.58,
+      "never_reached": false
+    },
+    {
+      "entity_count": 187,
+      "relationship_count": 479,
+      "ioc_node_count": 83,
+      "ioc_coverage": 0.5993257139052027,
+      "graph_density": 89934.69387755102,
+      "n_decisions_to_iks67": 1400,
+      "final_iks": 99.27,
+      "never_reached": false
+    },
+    {
+      "entity_count": 203,
+      "relationship_count": 593,
+      "ioc_node_count": 111,
+      "ioc_coverage": 0.6543051386779437,
+      "graph_density": 120415.30612244896,
+      "n_decisions_to_iks67": 1450,
+      "final_iks": 99.06,
+      "never_reached": false
+    },
+    {
+      "entity_count": 218,
+      "relationship_count": 742,
+      "ioc_node_count": 118,
+      "ioc_coverage": 0.7058815266551742,
+      "graph_density": 162028.57142857142,
+      "n_decisions_to_iks67": 1400,
+      "final_iks": 99.22,
+      "never_reached": false
+    },
+    {
+      "entity_count": 233,
+      "relationship_count": 752,
+      "ioc_node_count": 79,
+      "ioc_coverage": 0.6327705076673507,
+      "graph_density": 175722.44897959183,
+      "n_decisions_to_iks67": 1650,
+      "final_iks": 98.38,
+      "never_reached": false
+    },
+    {
+      "entity_count": 248,
+      "relationship_count": 832,
+      "ioc_node_count": 124,
+      "ioc_coverage": 0.6689290035652495,
+      "graph_density": 207151.02040816325,
+      "n_decisions_to_iks67": 1250,
+      "final_iks": 99.56,
+      "never_reached": false
+    },
+    {
+      "entity_count": 264,
+      "relationship_count": 779,
+      "ioc_node_count": 124,
+      "ioc_coverage": 0.7043894106241191,
+      "graph_density": 205878.57142857142,
+      "n_decisions_to_iks67": 1500,
+      "final_iks": 98.98,
+      "never_reached": false
+    },
+    {
+      "entity_count": 279,
+      "relationship_count": 895,
+      "ioc_node_count": 123,
+      "ioc_coverage": 0.6604965658110634,
+      "graph_density": 250234.693877551,
+      "n_decisions_to_iks67": 1250,
+      "final_iks": 99.53,
+      "never_reached": false
+    },
+    {
+      "entity_count": 294,
+      "relationship_count": 932,
+      "ioc_node_count": 137,
+      "ioc_coverage": 0.7539571182494007,
+      "graph_density": 274844.89795918367,
+      "n_decisions_to_iks67": 1350,
+      "final_iks": 99.39,
+      "never_reached": false
+    },
+    {
+      "entity_count": 310,
+      "relationship_count": 755,
+      "ioc_node_count": 133,
+      "ioc_coverage": 0.7525152327218676,
+      "graph_density": 234204.08163265308,
+      "n_decisions_to_iks67": 1300,
+      "final_iks": 99.48,
+      "never_reached": false
+    },
+    {
+      "entity_count": 325,
+      "relationship_count": 1114,
+      "ioc_node_count": 120,
+      "ioc_coverage": 0.6782987843611282,
+      "graph_density": 362618.36734693876,
+      "n_decisions_to_iks67": 1450,
+      "final_iks": 99.11,
+      "never_reached": false
+    },
+    {
+      "entity_count": 340,
+      "relationship_count": 938,
+      "ioc_node_count": 169,
+      "ioc_coverage": 0.758871918326799,
+      "graph_density": 319685.71428571426,
+      "n_decisions_to_iks67": 1150,
+      "final_iks": 99.73,
+      "never_reached": false
+    },
+    {
+      "entity_count": 356,
+      "relationship_count": 1138,
+      "ioc_node_count": 150,
+      "ioc_coverage": 0.7637032571267224,
+      "graph_density": 405267.3469387755,
+      "n_decisions_to_iks67": 1400,
+      "final_iks": 99.27,
+      "never_reached": false
+    },
+    {
+      "entity_count": 371,
+      "relationship_count": 901,
+      "ioc_node_count": 121,
+      "ioc_coverage": 0.6717271498136154,
+      "graph_density": 334657.1428571429,
+      "n_decisions_to_iks67": 1350,
+      "final_iks": 99.3,
+      "never_reached": false
+    },
+    {
+      "entity_count": 386,
+      "relationship_count": 1003,
+      "ioc_node_count": 174,
+      "ioc_coverage": 0.7912081140528916,
+      "graph_density": 387894.89795918367,
+      "n_decisions_to_iks67": 1150,
+      "final_iks": 99.73,
+      "never_reached": false
+    },
+    {
+      "entity_count": 402,
+      "relationship_count": 1180,
+      "ioc_node_count": 166,
+      "ioc_coverage": 0.7558195691571938,
+      "graph_density": 474408.1632653061,
+      "n_decisions_to_iks67": 1200,
+      "final_iks": 99.64,
+      "never_reached": false
+    },
+    {
+      "entity_count": 417,
+      "relationship_count": 1182,
+      "ioc_node_count": 136,
+      "ioc_coverage": 0.6915018073282927,
+      "graph_density": 493304.081632653,
+      "n_decisions_to_iks67": 1150,
+      "final_iks": 99.71,
+      "never_reached": false
+    },
+    {
+      "entity_count": 432,
+      "relationship_count": 1510,
+      "ioc_node_count": 220,
+      "ioc_coverage": 0.8034699381936331,
+      "graph_density": 653306.1224489795,
+      "n_decisions_to_iks67": 1050,
+      "final_iks": 99.84,
+      "never_reached": false
+    },
+    {
+      "entity_count": 447,
+      "relationship_count": 1493,
+      "ioc_node_count": 230,
+      "ioc_coverage": 0.7934200410282751,
+      "graph_density": 668803.0612244898,
+      "n_decisions_to_iks67": 1300,
+      "final_iks": 99.46,
+      "never_reached": false
+    },
+    {
+      "entity_count": 463,
+      "relationship_count": 1165,
+      "ioc_node_count": 264,
+      "ioc_coverage": 0.865973575333913,
+      "graph_density": 539704.081632653,
+      "n_decisions_to_iks67": 1250,
+      "final_iks": 99.56,
+      "never_reached": false
+    },
+    {
+      "entity_count": 478,
+      "relationship_count": 1324,
+      "ioc_node_count": 226,
+      "ioc_coverage": 0.801016081039241,
+      "graph_density": 633628.5714285714,
+      "n_decisions_to_iks67": 1100,
+      "final_iks": 99.81,
+      "never_reached": false
+    },
+    {
+      "entity_count": 493,
+      "relationship_count": 1634,
+      "ioc_node_count": 254,
+      "ioc_coverage": 0.8425066021301147,
+      "graph_density": 806995.9183673469,
+      "n_decisions_to_iks67": 1100,
+      "final_iks": 99.77,
+      "never_reached": false
+    },
+    {
+      "entity_count": 509,
+      "relationship_count": 1578,
+      "ioc_node_count": 252,
+      "ioc_coverage": 0.8037321613140593,
+      "graph_density": 803491.8367346938,
+      "n_decisions_to_iks67": 1250,
+      "final_iks": 99.6,
+      "never_reached": false
+    },
+    {
+      "entity_count": 524,
+      "relationship_count": 1284,
+      "ioc_node_count": 235,
+      "ioc_coverage": 0.8496147408862093,
+      "graph_density": 673444.8979591837,
+      "n_decisions_to_iks67": 1300,
+      "final_iks": 99.48,
+      "never_reached": false
+    },
+    {
+      "entity_count": 539,
+      "relationship_count": 1362,
+      "ioc_node_count": 257,
+      "ioc_coverage": 0.817941004506107,
+      "graph_density": 735202.0408163266,
+      "n_decisions_to_iks67": 1050,
+      "final_iks": 99.84,
+      "never_reached": false
+    },
+    {
+      "entity_count": 555,
+      "relationship_count": 1719,
+      "ioc_node_count": 224,
+      "ioc_coverage": 0.8365727765796146,
+      "graph_density": 954220.4081632652,
+      "n_decisions_to_iks67": 1350,
+      "final_iks": 99.31,
+      "never_reached": false
+    },
+    {
+      "entity_count": 570,
+      "relationship_count": 2025,
+      "ioc_node_count": 253,
+      "ioc_coverage": 0.8443889137733408,
+      "graph_density": 1155076.530612245,
+      "n_decisions_to_iks67": 1300,
+      "final_iks": 99.4,
+      "never_reached": false
+    },
+    {
+      "entity_count": 585,
+      "relationship_count": 1747,
+      "ioc_node_count": 261,
+      "ioc_coverage": 0.8516605788182157,
+      "graph_density": 1023242.857142857,
+      "n_decisions_to_iks67": 1150,
+      "final_iks": 99.76,
+      "never_reached": false
+    },
+    {
+      "entity_count": 601,
+      "relationship_count": 1783,
+      "ioc_node_count": 228,
+      "ioc_coverage": 0.7957556520327765,
+      "graph_density": 1071619.387755102,
+      "n_decisions_to_iks67": 1200,
+      "final_iks": 99.65,
+      "never_reached": false
+    },
+    {
+      "entity_count": 616,
+      "relationship_count": 1803,
+      "ioc_node_count": 188,
+      "ioc_coverage": 0.8218953733101839,
+      "graph_density": 1111236.7346938776,
+      "n_decisions_to_iks67": 1050,
+      "final_iks": 99.84,
+      "never_reached": false
+    },
+    {
+      "entity_count": 631,
+      "relationship_count": 1622,
+      "ioc_node_count": 294,
+      "ioc_coverage": 0.8044106744495669,
+      "graph_density": 1024508.163265306,
+      "n_decisions_to_iks67": 1150,
+      "final_iks": 99.74,
+      "never_reached": false
+    },
+    {
+      "entity_count": 646,
+      "relationship_count": 1770,
+      "ioc_node_count": 322,
+      "ioc_coverage": 0.9186292952568589,
+      "graph_density": 1145081.6326530613,
+      "n_decisions_to_iks67": 1000,
+      "final_iks": 99.88,
+      "never_reached": false
+    },
+    {
+      "entity_count": 662,
+      "relationship_count": 1675,
+      "ioc_node_count": 380,
+      "ioc_coverage": 0.8481726172400474,
+      "graph_density": 1109260.2040816327,
+      "n_decisions_to_iks67": 1350,
+      "final_iks": 99.36,
+      "never_reached": false
+    },
+    {
+      "entity_count": 677,
+      "relationship_count": 2077,
+      "ioc_node_count": 278,
+      "ioc_coverage": 0.8229193752330245,
+      "graph_density": 1407273.469387755,
+      "n_decisions_to_iks67": 1100,
+      "final_iks": 99.81,
+      "never_reached": false
+    },
+    {
+      "entity_count": 692,
+      "relationship_count": 1926,
+      "ioc_node_count": 405,
+      "ioc_coverage": 0.901658419093066,
+      "graph_density": 1334442.8571428573,
+      "n_decisions_to_iks67": 1100,
+      "final_iks": 99.79,
+      "never_reached": false
+    },
+    {
+      "entity_count": 708,
+      "relationship_count": 1917,
+      "ioc_node_count": 411,
+      "ioc_coverage": 0.9049222961963063,
+      "graph_density": 1357548.9795918367,
+      "n_decisions_to_iks67": 1300,
+      "final_iks": 99.5,
+      "never_reached": false
+    },
+    {
+      "entity_count": 723,
+      "relationship_count": 2114,
+      "ioc_node_count": 432,
+      "ioc_coverage": 0.9014431976976387,
+      "graph_density": 1529414.2857142857,
+      "n_decisions_to_iks67": 1050,
+      "final_iks": 99.86,
+      "never_reached": false
+    },
+    {
+      "entity_count": 738,
+      "relationship_count": 2562,
+      "ioc_node_count": 419,
+      "ioc_coverage": 0.9019649760857309,
+      "graph_density": 1892742.857142857,
+      "n_decisions_to_iks67": 1150,
+      "final_iks": 99.69,
+      "never_reached": false
+    },
+    {
+      "entity_count": 754,
+      "relationship_count": 2508,
+      "ioc_node_count": 375,
+      "ioc_coverage": 0.9155416024782672,
+      "graph_density": 1891236.7346938774,
+      "n_decisions_to_iks67": 1250,
+      "final_iks": 99.57,
+      "never_reached": false
+    },
+    {
+      "entity_count": 769,
+      "relationship_count": 2536,
+      "ioc_node_count": 291,
+      "ioc_coverage": 0.8166383630659804,
+      "graph_density": 1951167.3469387756,
+      "n_decisions_to_iks67": 1300,
+      "final_iks": 99.49,
+      "never_reached": false
+    },
+    {
+      "entity_count": 784,
+      "relationship_count": 1998,
+      "ioc_node_count": 431,
+      "ioc_coverage": 0.890664319651418,
+      "graph_density": 1567818.3673469387,
+      "n_decisions_to_iks67": 1250,
+      "final_iks": 99.59,
+      "never_reached": false
+    },
+    {
+      "entity_count": 800,
+      "relationship_count": 2495,
+      "ioc_node_count": 449,
+      "ioc_coverage": 0.9419610539527358,
+      "graph_density": 1996000.0,
+      "n_decisions_to_iks67": 1150,
+      "final_iks": 99.74,
+      "never_reached": false
+    }
+  ]
+}
