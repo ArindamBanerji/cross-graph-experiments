@@ -1,0 +1,18 @@
+{
+  "experiment": "G.3-V-UCL-VALUE",
+  "notebook_version": "v3",
+  "generated": "2026-04-06T20:33:02.232143",
+  "input_file": "v_cga_frozen_two_stream_v2.json",
+  "measure_day": 60,
+  "n_seeds": 30,
+  "cap_threshold": 1250.0,
+  "seeds_above_cap": 22,
+  "entity_count_min": 1085,
+  "entity_count_max": 1850,
+  "accuracy_min": 0.7947,
+  "accuracy_max": 0.8162,
+  "spearman_r": 0.4684,
+  "p_val": 0.009,
+  "verdict": "FAIL",
+  "subcase": "NO \u2014 defer, UCL directional claim stands (r < 0.50)"
+}
