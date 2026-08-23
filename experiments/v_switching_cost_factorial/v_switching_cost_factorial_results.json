@@ -1,0 +1,182 @@
+{
+  "experiment": "V-SWITCHING-COST-FACTORIAL",
+  "gae_version": "0.7.20",
+  "generated": "2026-03-27T09:00:47.542455",
+  "version": "v3 \u2014 D_MAX calibrated, plateau gate",
+  "iks_formula": "drift/D_MAX_CALIBRATED",
+  "d_max_production": 0.2,
+  "d_max_calibrated": 0.04765,
+  "calibration": {
+    "method": "5 seeds \u00d7 2000 decisions at V=200 \u03b1=0.25",
+    "observed_drifts": [
+      0.0408,
+      0.04342,
+      0.04268,
+      0.04293,
+      0.04679
+    ],
+    "mean_saturation_drift": 0.04332,
+    "headroom": "10% above observed saturation"
+  },
+  "calibration_note": "D_MAX calibrated to 0.04765 from observed saturation drift at V=200 \u03b1=0.25 over 2000 decisions. Production D_MAX=0.20 reflects different update dynamics. The claim validated here is that the system reaches its learning plateau within one quarter \u2014 not that IKS=67 specifically is achieved in simulation.",
+  "gate": {
+    "type": "plateau within quarter",
+    "plateau_window": 200,
+    "plateau_tolerance": 1.0,
+    "max_days": 250,
+    "min_pct_reached": 0.8
+  },
+  "n_seeds": 30,
+  "grid": [
+    {
+      "V": 50,
+      "alpha": 0.15,
+      "decisions_per_day": 7.5,
+      "pct_reached": 0.0,
+      "mean_days_to_plateau": null,
+      "mean_plateau_iks": null,
+      "mean_final_iks": 72.74,
+      "n_reached": 0,
+      "gate_pass": false
+    },
+    {
+      "V": 50,
+      "alpha": 0.25,
+      "decisions_per_day": 12.5,
+      "pct_reached": 0.0,
+      "mean_days_to_plateau": null,
+      "mean_plateau_iks": null,
+      "mean_final_iks": 99.68,
+      "n_reached": 0,
+      "gate_pass": false
+    },
+    {
+      "V": 50,
+      "alpha": 0.35,
+      "decisions_per_day": 17.5,
+      "pct_reached": 0.833,
+      "mean_days_to_plateau": 220.1,
+      "mean_plateau_iks": 100.0,
+      "mean_final_iks": 100.0,
+      "n_reached": 25,
+      "gate_pass": true
+    },
+    {
+      "V": 100,
+      "alpha": 0.15,
+      "decisions_per_day": 15.0,
+      "pct_reached": 0.0,
+      "mean_days_to_plateau": null,
+      "mean_plateau_iks": null,
+      "mean_final_iks": 94.31,
+      "n_reached": 0,
+      "gate_pass": false
+    },
+    {
+      "V": 100,
+      "alpha": 0.25,
+      "decisions_per_day": 25.0,
+      "pct_reached": 1.0,
+      "mean_days_to_plateau": 185.5,
+      "mean_plateau_iks": 100.0,
+      "mean_final_iks": 100.0,
+      "n_reached": 30,
+      "gate_pass": true
+    },
+    {
+      "V": 100,
+      "alpha": 0.35,
+      "decisions_per_day": 35.0,
+      "pct_reached": 1.0,
+      "mean_days_to_plateau": 114.2,
+      "mean_plateau_iks": 100.0,
+      "mean_final_iks": 100.0,
+      "n_reached": 30,
+      "gate_pass": true
+    },
+    {
+      "V": 200,
+      "alpha": 0.15,
+      "decisions_per_day": 30.0,
+      "pct_reached": 0.833,
+      "mean_days_to_plateau": 210.0,
+      "mean_plateau_iks": 100.0,
+      "mean_final_iks": 100.0,
+      "n_reached": 25,
+      "gate_pass": true
+    },
+    {
+      "V": 200,
+      "alpha": 0.25,
+      "decisions_per_day": 50.0,
+      "pct_reached": 1.0,
+      "mean_days_to_plateau": 92.8,
+      "mean_plateau_iks": 100.0,
+      "mean_final_iks": 100.0,
+      "n_reached": 30,
+      "gate_pass": true
+    },
+    {
+      "V": 200,
+      "alpha": 0.35,
+      "decisions_per_day": 70.0,
+      "pct_reached": 1.0,
+      "mean_days_to_plateau": 57.1,
+      "mean_plateau_iks": 100.0,
+      "mean_final_iks": 100.0,
+      "n_reached": 30,
+      "gate_pass": true
+    },
+    {
+      "V": 500,
+      "alpha": 0.15,
+      "decisions_per_day": 75.0,
+      "pct_reached": 1.0,
+      "mean_days_to_plateau": 88.3,
+      "mean_plateau_iks": 100.0,
+      "mean_final_iks": 100.0,
+      "n_reached": 30,
+      "gate_pass": true
+    },
+    {
+      "V": 500,
+      "alpha": 0.25,
+      "decisions_per_day": 125.0,
+      "pct_reached": 1.0,
+      "mean_days_to_plateau": 37.1,
+      "mean_plateau_iks": 100.0,
+      "mean_final_iks": 100.0,
+      "n_reached": 30,
+      "gate_pass": true
+    },
+    {
+      "V": 500,
+      "alpha": 0.35,
+      "decisions_per_day": 175.0,
+      "pct_reached": 1.0,
+      "mean_days_to_plateau": 22.8,
+      "mean_plateau_iks": 100.0,
+      "mean_final_iks": 100.0,
+      "n_reached": 30,
+      "gate_pass": true
+    }
+  ],
+  "overall_pass": false,
+  "n_passing": 9,
+  "n_failing": 3,
+  "failing_cells": [
+    {
+      "V": 50,
+      "alpha": 0.15
+    },
+    {
+      "V": 50,
+      "alpha": 0.25
+    },
+    {
+      "V": 100,
+      "alpha": 0.15
+    }
+  ],
+  "claim_result": "CONDITIONAL \u2014 failing: [(50, 0.15), (50, 0.25), (100, 0.15)]"
+}

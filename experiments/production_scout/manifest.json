@@ -1,0 +1,35 @@
+{
+  "schema": "production-scout-artifacts-v1",
+  "files": [
+    {
+      "path": "experiments/production_scout/gap_by_day.csv",
+      "bytes": 6306,
+      "sha256": "dbd2ca05605aedd69d9d9b1398785111808383721362986c8384ded58ebd387c"
+    },
+    {
+      "path": "experiments/production_scout/gap_by_day_bin.csv",
+      "bytes": 361,
+      "sha256": "36c9db361b05ba2238d57ffa5f9a095f929f82ff6588dad00a639f0fb5d906de"
+    },
+    {
+      "path": "experiments/production_scout/gap_vs_day.png",
+      "bytes": 164254,
+      "sha256": "1402de230beb9b307a810cb882390326dc2bdfbd7df7a8911b341f70b82ab8ca"
+    },
+    {
+      "path": "experiments/production_scout/derived_summary.json",
+      "bytes": 2661,
+      "sha256": "c3c0d99a4b7b9a8594af7bb78450f997a64e6a7a775697d8b101c3e480a0a98a"
+    },
+    {
+      "path": "results_production_scout.md",
+      "bytes": 6615,
+      "sha256": "fd126c671f142111189339789dc8844d1cae8c81581b5b0c865d530f2e05dd8b"
+    }
+  ],
+  "source_input": {
+    "path": "experiments/v_cga_frozen_two_stream_v2.json",
+    "bytes": 1129594,
+    "sha256": "1a9ace7ba1b17a5d2d2f4dd265c8874d8dc5aa9ce8140e0b4d0e2e4e97867f29"
+  }
+}

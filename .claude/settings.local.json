@@ -17,7 +17,27 @@
       "Read(//c/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/cross-graph-experiments/**)",
       "Bash(done)",
       "Bash(find /c/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/cross-graph-experiments/experiments -type d -name *b5b* -o -type d -name *proxy* -o -type d -name *asymmetric* -o -type d -name *eta*)",
-      "Bash(find /c/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/cross-graph-experiments/experiments/prod -type f \\\\\\(-name *.csv -o -name *.json \\\\\\))"
+      "Bash(find /c/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/cross-graph-experiments/experiments/prod -type f \\\\\\(-name *.csv -o -name *.json \\\\\\))",
+      "Bash(PYTHONUTF8=1 grep -r \"CalibrationProfile\\\\|AsymmetricScorer\\\\|learning_enabled\\\\|learning_rate\" experiments/block5b_proxy/ experiments/factorial/ --include=\"*.py\" -l)",
+      "Bash(find . -path */ci_platform/qualification/deployment_qualification.py)",
+      "Bash(find . -name math_synopsis*)",
+      "Bash(find . -name *.py)",
+      "Bash(xargs grep:*)",
+      "Read(//c/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/graph-attention-engine-v50/**)",
+      "Bash(GAE_ROOT=\"C:/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/graph-attention-engine-v50\" grep -n \"n_half\\\\|N_half\\\\|asymptot\\\\|ln\\(2\\)\\\\|log\\(2\\)\\\\|convergence\\\\|N_min\" \"$GAE_ROOT/gae/calibration.py\")",
+      "Bash(GAE_ROOT=C:/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/graph-attention-engine-v50 find $GAE_ROOT -name deployment_qualification.py 2)",
+      "Bash(/dev/null find:*)",
+      "Bash(GAE_ROOT=\"C:/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/graph-attention-engine-v50\" grep -n \"shadow\\\\|live.*buffer\\\\|qualified\\\\|p28\\\\|P28\\\\|bootstrap\\\\|go.live\\\\|go_live\" \"$GAE_ROOT/gae/bootstrap.py\")",
+      "Bash(GAE_ROOT=\"C:/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/graph-attention-engine-v50\" grep -n \"N_min\\\\|n_min\\\\|50%\\\\|asymptot\\\\|within.*asymptot\\\\|fraction\" \"$GAE_ROOT/gae/convergence.py\")",
+      "Bash(GAE_ROOT=\"C:/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/graph-attention-engine-v50\" grep -n \"IKS\\\\|D_MAX\\\\|anchor\\\\|0\\\\.20\\\\|saturate\\\\|iks_anchor\\\\|bootstrap_anchor\" \"$GAE_ROOT/gae/scoring.py\")",
+      "Bash(GAE_ROOT=\"C:/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/graph-attention-engine-v50\" grep -rn \"IKS\\\\|D_MAX\\\\|iks_anchor\\\\|iks_score\\\\|100.*min\" \"$GAE_ROOT/gae/\")",
+      "Bash(GAE_ROOT=\"C:/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/graph-attention-engine-v50\" grep -n \"IKS\\\\|D_MAX\\\\|D_expert\\\\|anchor\\\\|saturate\\\\|0\\\\.20\\\\|d_max\" \"$GAE_ROOT/gae/profile_scorer.py\")",
+      "Bash(GAE_ROOT=\"C:/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/graph-attention-engine-v50\" cd \"$GAE_ROOT\")",
+      "Bash(head -20 python -c \"import gae; print\\(gae.KernelType.__members__\\)\")",
+      "Bash(grep -r \"V-MV-KERNEL\\\\|v_mv_kernel\\\\|mv_kernel\" /c/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/cross-graph-experiments/experiments --include=*.json)",
+      "Bash(grep:*)",
+      "Bash(python3:*)",
+      "Bash(find /c/Users/baner/CopyFolder/IoT_thoughts/python-projects/kaggle_experiments/claude_projects/cross-graph-experiments -name *.py -path */gae/*)"
     ]
   },
   "enabledMcpjsonServers": [

@@ -1,0 +1,115 @@
+{
+  "input": "experiments/v_cga_frozen_two_stream_v2.json",
+  "n_rows": 2700,
+  "n_seeds": 30,
+  "days": 90,
+  "supported_measurement": "deployment-day natural-decay descriptive gap",
+  "not_supported": [
+    "per-decision sigma-coupling rate",
+    "mean-update direction check",
+    "factor-specific delta_f or enriched-factor dependence",
+    "decision-count bins (only day bins are persisted)"
+  ],
+  "bin_summary": [
+    {
+      "bin": "1-10",
+      "day_start": 1,
+      "day_end": 10,
+      "n_seeds": 30,
+      "gap_mean": -0.033391,
+      "ci95_low": -0.03341042380361446,
+      "ci95_high": -0.03337157619638553,
+      "positive_seed_count": 0,
+      "negative_seed_count": 30,
+      "zero_seed_count": 0
+    },
+    {
+      "bin": "11-50",
+      "day_start": 11,
+      "day_end": 50,
+      "n_seeds": 30,
+      "gap_mean": -0.1820080833333333,
+      "ci95_low": -0.18219068452351897,
+      "ci95_high": -0.18182548214314762,
+      "positive_seed_count": 0,
+      "negative_seed_count": 30,
+      "zero_seed_count": 0
+    },
+    {
+      "bin": "51-90",
+      "day_start": 51,
+      "day_end": 90,
+      "n_seeds": 30,
+      "gap_mean": -0.028545916666666667,
+      "ci95_low": -0.02914269093875014,
+      "ci95_high": -0.027949142394583196,
+      "positive_seed_count": 0,
+      "negative_seed_count": 30,
+      "zero_seed_count": 0
+    }
+  ],
+  "daily_slope": {
+    "slope_per_day": 0.0015354887434662712,
+    "intercept": -0.16715440449438201,
+    "r2": 0.21215328322577084,
+    "p_value": 4.922431183638484e-06,
+    "se": 0.0003154287588581955
+  },
+  "minimum_gap": {
+    "day": 45,
+    "gap": -0.22654
+  },
+  "maximum_absolute_gap": {
+    "day": 45,
+    "gap": -0.22654
+  },
+  "post_peak_recovery_slope": {
+    "slope_per_day": 0.004777421112138966,
+    "intercept": -0.37469251927227876,
+    "r2": 0.7204479873908254,
+    "p_value": 9.279617545295663e-14,
+    "se": 0.0004486391628736971
+  },
+  "enrichment_state": {
+    "control_unique": [
+      false
+    ],
+    "treatment_unique": [
+      true
+    ],
+    "control_varies_by_day": false,
+    "treatment_varies_by_day": false
+  },
+  "metadata_seed_enrichment_rates": {
+    "0": 13,
+    "1": 28,
+    "2": 21,
+    "3": 22,
+    "4": 16,
+    "5": 29,
+    "6": 27,
+    "7": 17,
+    "8": 18,
+    "9": 14,
+    "10": 20,
+    "11": 27,
+    "12": 14,
+    "13": 24,
+    "14": 21,
+    "15": 23,
+    "16": 14,
+    "17": 24,
+    "18": 29,
+    "19": 26,
+    "20": 25,
+    "21": 13,
+    "22": 28,
+    "23": 24,
+    "24": 30,
+    "25": 14,
+    "26": 24,
+    "27": 28,
+    "28": 16,
+    "29": 20
+  }
+}
